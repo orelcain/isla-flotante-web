@@ -375,6 +375,13 @@
     "confianza": "media",
     "nota": "se usa el punto medio del largo"
   },
+  "raiz_tallo_razon": {
+    "valor": 0.46,
+    "unidad": "kg de raíz (gruesa + fina) por kg de parte aérea",
+    "fuente": "Mokany, Raison & Prokushkin 2006, «Critical analysis of root:shoot ratios in terrestrial biomes», Global Change Biology 12:84-96, doi:10.1111/j.1365-2486.2005.001043.x (cita verificada en Crossref). El valor 0,46 (latifoliadas templadas con poca biomasa aérea, < 75 t/ha) es DE MEMORIA vía IPCC 2006, vol. 4, tabla 4.4, que usa ese artículo: verificar en la tabla",
+    "confianza": "baja",
+    "nota": "el modelo guarda las raíces gruesas dentro de «Tallo»; con esta razón se separan para el refuerzo del suelo en el borde (MotorBorde). La razón baja con la edad y la altura del rodal (Mokany 2006)"
+  },
   "raiz_resistencia_traccion_mpa": {
     "valor": 32.6,
     "unidad": "MPa (resistencia a la tracción de raíces vivas)",
