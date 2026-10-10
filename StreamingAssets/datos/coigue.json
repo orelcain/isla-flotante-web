@@ -375,6 +375,13 @@
     "confianza": "media",
     "nota": "se usa el punto medio del largo"
   },
+  "raiz_resistencia_traccion_mpa": {
+    "valor": 32.6,
+    "unidad": "MPa (resistencia a la tracción de raíces vivas)",
+    "fuente": "O'Loughlin C. & Watson A. 1981, N.Z. J. For. Sci. 11(2):183-185: raíces de Nothofagus de Nueva Zelanda (32,6 MPa vivas; 12,2 MPa a los 44 meses de la tala). Mismo género, no N. nitida; leído vía resumen (investigacion_borde.json)",
+    "confianza": "media",
+    "nota": "con la fracción de suelo ocupada por raíces (RAR) da la resistencia a la tracción del suelo enraizado: σ_t = T_r·RAR (Wu, McKinnell & Swanston 1979, Can. Geotech. J. 16:19-33, doi:10.1139/t79-003). Solo se cuentan las raíces finas del modelo (las gruesas van en el tallo): subestima"
+  },
   "densidad_madera_kg_m3": {
     "valor": 590,
     "unidad": "kg/m3",

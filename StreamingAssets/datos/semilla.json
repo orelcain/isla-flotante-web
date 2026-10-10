@@ -239,6 +239,49 @@
     "confianza": "alta",
     "nota": "Rango 1,88-2,47 g/cm3; densidad de grano media 2,92 g/cm3; porosidad media 24,7 % (15,0-36,7 %)."
   },
+  "gravedad_m_s2": {
+    "valor": 9.81,
+    "unidad": "m/s2",
+    "fuente": "gravedad estándar en la superficie terrestre (la isla flota en el clima de Chiloé: su peso propio es terrestre; la «gravedad de la semilla» es solo el atajo que atrae polvo)",
+    "confianza": "alta"
+  },
+  "borde_halo_peso": {
+    "valor": 1,
+    "unidad": "peso relativo por celda (la tierra pesa 1)",
+    "fuente": "decisión de diseño sobre una fórmula estándar: la semilla atrae polvo de un área mayor que ella (enfoque gravitacional, σ = πR²(1 + v_esc²/v∞²), Safronov 1972, NASA TT F-677). Con la gravedad ficticia el factor es de diseño: aquí cada celda de vacío junto al borde recibe el mismo flujo por área que la tierra (investigacion_borde.json)",
+    "confianza": "baja"
+  },
+  "borde_retencion_suelo_desnudo": {
+    "valor": 0.15,
+    "unidad": "fracción del polvo que cae junto al borde y se queda",
+    "fuente": "SUPUESTO de diseño (rango 0,05–0,3 en investigacion_borde.json): sin medición de velocidad de depósito sobre suelo desnudo para polvo de 10–100 µm. Reemplazo serio: Zhang et al. 2001, Atmos. Environ. 35:549-560 (doi:10.1016/S1352-2310(00)00326-5) con la rugosidad de cada cobertura",
+    "confianza": "baja"
+  },
+  "borde_retencion_musgo": {
+    "valor": 0.8,
+    "unidad": "fracción del polvo que cae junto a un borde cubierto de musgo y se queda",
+    "fuente": "SUPUESTO de diseño (rango 0,6–0,95 en investigacion_borde.json): el musgo rugoso y húmedo retiene más que el suelo liso; cualitativo, el musgo reduce el desprendimiento de suelo 2–20 veces (Zhang, Ding, Pu et al. 2020, J. Mountain Sci., doi:10.1007/s11629-020-6200-6). Sin cifra de retención de polvo",
+    "confianza": "baja"
+  },
+  "cementacion_tiempo_real_anios": {
+    "valor": 3000,
+    "unidad": "años para que un suelo húmedo forme una costra de óxidos de hierro (horizonte plácico)",
+    "fuente": "orden de magnitud: horizontes plácicos de 2,2–4,8 mil años (datación 14C, SO de Polonia; resumen recuperado, autores no confirmados) y el «fierrillo» de los suelos ñadi del sur de Chile, posterior a la glaciación Llanquihue (Zúñiga, Dec, Valle et al. 2019, Catena, doi:10.1016/j.catena.2018.10.003: 36 % de Fe, goetita y ferrihidrita). Sin velocidad medida en Chile (investigacion_borde.json)",
+    "confianza": "baja"
+  },
+  "factor_atajo_cementacion": {
+    "valor": 100,
+    "unidad": "veces la velocidad real",
+    "fuente": "decisión de diseño: ATAJO DIDÁCTICO como el del polvo (con «¿qué pasaría en la realidad?» vuelve a 1): la costra tarda milenios y el juego dura décadas",
+    "confianza": "alta",
+    "nota": "con 3000 años reales, un borde se cementa en ~30 años de juego"
+  },
+  "cementacion_fraccion_a_roca": {
+    "valor": 0.3,
+    "unidad": "fracción del regolito de la celda que pasa a costra (roca) al cementarse",
+    "fuente": "SUPUESTO de diseño: el fierrillo es una capa delgada y dura bajo el suelo; aquí basta con que la celda tenga roca para anclar el voladizo siguiente. El resto sigue siendo suelo para las plantas",
+    "confianza": "baja"
+  },
   "densidad_regolito": {
     "valor": 1330,
     "unidad": "kg/m3",

@@ -1,0 +1,138 @@
+{
+  "nota": "10-10-2026. Investigacion para modelar el CRECIMIENTO LATERAL de la isla (captura de polvo en el borde, cohesion que sostiene suelo sobre el vacio, cementacion por oxidos de hierro). Contexto: condrita CI ~4x4 m, celdas de 0,25 m, clima de Chiloe (~42 S, ~2000 mm/ano), musgo Racomitrium lanuginosum, nalca Gunnera tinctoria, coigue de Chiloe Nothofagus nitida. HONESTIDAD: se hicieron busquedas web acotadas (no lectura de textos completos). Las fuentes marcadas 'verificada en busqueda' se vieron como cita/resumen; las marcadas 'de memoria' (formulas de texto clasico, DOIs) NO se re-verificaron en esta sesion: comprobar antes de citar en publico. Donde no hay fuente se dice 'SIN FUENTE' y se marca confianza baja. Valores 'derivado' son calculos propios a partir de fisica estandar, no mediciones.",
+
+  "captura_seccion_eficaz_safronov": {
+    "valor": "sigma = pi*R^2*(1 + v_esc^2 / v_inf^2)",
+    "unidad": "m^2 (v_esc = sqrt(2*G*M/R); con gravedad ficticia g: v_esc = sqrt(2*g*R))",
+    "fuente": "Safronov V.S. 1972, Evolution of the protoplanetary cloud and formation of the Earth and the planets, NASA TT F-677 (traduccion; sin DOI). Formula estandar de enfoque gravitacional, de memoria; no re-verificada en esta sesion.",
+    "confianza": "alta",
+    "nota": "La formula es fisica estandar. Con la gravedad ficticia de la semilla el factor de enfoque 1+v_esc^2/v_inf^2 es un parametro de DISENO: para una roca real de 4 m, v_esc ~ mm/s y el enfoque es despreciable salvo que v_inf sea ~mm/s. Si el juego quiere polvo 'atraido' hacia la isla, se elige g ficticia y v_inf explicitos y se declaran como diseno."
+  },
+  "captura_velocidad_sedimentacion_stokes": {
+    "valor": { "10_um": 0.76, "30_um": 6.8, "100_um": [25, 30] },
+    "unidad": "cm/s (particula mineral rho=2500 kg/m3, aire 20 C, g=9,81 m/s2)",
+    "fuente": "Derivado: Stokes v=rho*g*d^2/(18*mu) con mu=1,8e-5 Pa s (valido Re<1, d<~80 um); a 100 um corregido por arrastre (Schiller-Naumann) -> ~25-30 cm/s. Coincide en orden de magnitud con la tendencia reportada (EPA NCER abstract 373: velocidades de deposito de particulas >1 um crecen hasta ~30 cm/s para tamanos mayores).",
+    "confianza": "media",
+    "nota": "Para 10-100 um domina la sedimentacion gravitacional, no la difusion ni la impaccion. v_s escala linealmente con g: con gravedad ficticia g' multiplicar por g'/9,81. Cuanto polvo 'cae' sobre una celda depende de v_s*concentracion; cuanto se QUEDA depende de la retencion (ver abajo)."
+  },
+  "captura_velocidad_deposito_musgo_vs_suelo": {
+    "valor": "NO ENCONTRADO",
+    "unidad": "cm/s",
+    "fuente": "SIN FUENTE para musgo, hojarasca ni suelo desnudo a 10-100 um. Esquema de referencia: Zhang L., Gong S., Padro J., Barrie L. 2001, A size-segregated particle dry deposition scheme for an atmospheric aerosol module, Atmos. Environ. 35(3):549-560, doi:10.1016/S1352-2310(00)00326-5 (DOI verificado en busqueda; tablas no leidas). Tambien Slinn W.G.N. 1982, Atmos. Environ. 16:1785-1794 y Petroff A. et al. 2008, Atmos. Environ. 42:3625-3653 (de memoria).",
+    "confianza": "baja",
+    "nota": "Estos esquemas dan Vd = v_s + 1/(Ra+Rs) con parametros por tipo de cobertura; para >10 um lo dominante es v_s, y la incertidumbre en particulas gruesas es ~factor 2 segun Zhang & He 2014 (ACP 14:3729). Se encontro una resena que advierte sobreestimacion del esquema de 2001 frente a datos de tunel de viento. Que reemplazaria esto: leer las tablas de Zhang 2001 (rugosidad/colector por categoria de uso de suelo) o medidas de tunel de viento sobre musgo."
+  },
+  "captura_retencion_borde_propuesta": {
+    "valor": { "suelo_desnudo": [0.05, 0.3], "musgo": [0.6, 0.95], "vegetacion_alta_copa": [0.3, 0.7] },
+    "unidad": "fraccion del polvo que pasa junto a la celda de borde y queda retenido",
+    "fuente": "SIN FUENTE. Valores de DISENO ordenados cualitativamente (musgo/follaje rugoso y humedo retiene mas que suelo seco y liso; rebote de particulas gruesas sobre superficies duras es conocido en la literatura de deposito seco, p. ej. Slinn 1982).",
+    "confianza": "baja",
+    "nota": "Marcar en la UI como 'aproximacion de diseno'. Reemplazo serio: Vd de Zhang 2001 / Petroff 2008 con rugosidad z0 del musgo y LAI de copa, o experimentos de tunel de viento."
+  },
+
+  "cohesion_suelo_suelto_sin_raices": {
+    "valor": { "angulo_friccion_phi": [30, 35], "cohesion_c": [0, 5], "peso_unitario_mineral": [15, 19], "peso_unitario_organico_humus": [8, 13] },
+    "unidad": "phi en grados; c en kPa; peso unitario en kN/m3",
+    "fuente": "Valores de texto clasico de mecanica de suelos: Das B.M., Principles of Geotechnical Engineering; Lambe T.W. & Whitman R.V. 1969, Soil Mechanics (de memoria, libros, sin DOI; no re-verificados).",
+    "confianza": "media",
+    "nota": "Regolito de condrita pulverizada ~ arena limosa suelta: phi ~30-35, c~0 (la 'cohesion' de arena no saturada es aparente y depende de la humedad). Humus/turba: peso unitario mucho menor. El angulo de reposo seco ~ phi. Sin cohesion un voladizo es 0: el borde es un talud de pendiente <= phi."
+  },
+  "cohesion_altura_critica_corte_vertical": {
+    "valor": "H_c = (4*c/gamma) * tan(45 + phi/2); profundidad de grieta de traccion z0 = 2*c/(gamma*sqrt(Ka)), Ka=tan^2(45-phi/2); H_c = 2*z0",
+    "unidad": "m (c en kPa, gamma en kN/m3)",
+    "fuente": "Rankine/Culmann; Das B.M., Principles of Geotechnical Engineering, cap. empuje de tierras; Lambe & Whitman 1969 (de memoria, no re-verificado).",
+    "confianza": "alta",
+    "nota": "Ejemplo: c=5 kPa, gamma=17, phi=30 => H_c ~ 2,0 m (con grietas de traccion se reduce ~ a la mitad). Con celdas de 0,25 m, cualquier c>~1 kPa sostiene una pared vertical de 1 celda: el limite NO es la pared vertical, es el VOLADIZO sobre el vacio (siguiente parametro)."
+  },
+  "cohesion_voladizo_maximo": {
+    "valor": "L_max = sqrt(sigma_t * h / (3*gamma)); condicion para sostener una celda sobre el vacio: sigma_t >= 3*gamma*L^2/h",
+    "unidad": "m (sigma_t kPa, gamma kN/m3, h espesor del voladizo m)",
+    "fuente": "Derivado: viga en voladizo rectangular de peso propio, sigma_max = 6M/h^2 con M=gamma*h*L^2/2. No se encontro fuente publicada para 'voladizo maximo de suelo' como tal.",
+    "confianza": "media",
+    "nota": "Para L=0,25 m, h=0,25 m, gamma=15 kN/m3: sigma_t >= 11 kPa. Sin raices sigma_t del suelo es ~0-2 kPa (el suelo no resiste traccion) => NO sostiene. Con raices: sigma_t ~ T_r*RAR (ver raiz_resistencia_traccion_agregada). Con 'celdas vecinas' de 0,25 m, un voladizo de 1 celda requiere sigma_t ~ 11 kPa; media celda (0,125 m) solo ~ 3 kPa. Util como umbral del modelo."
+  },
+
+  "raiz_modelo_wu_waldron": {
+    "valor": "delta_c = k * T_r * RAR, con k = sin(theta) + cos(theta)*tan(phi), k ~ 1,0-1,3 (Wu 1979 recomienda ~1,2)",
+    "unidad": "kPa (T_r en kPa; RAR = area de raiz / area de suelo, adimensional)",
+    "fuente": "Wu T.H., McKinnell W.P., Swanston D.N. 1979, Strength of tree roots and landslides on Prince of Wales Island, Alaska, Can. Geotech. J. 16:19-33, doi:10.1139/t79-003; Waldron L.J. 1977, The shear resistance of root-permeated homogeneous and stratified soil, Soil Sci. Soc. Am. J. 41:843-849 (de memoria, DOIs no verificados).",
+    "confianza": "alta",
+    "nota": "El modelo asume que todas las raices se rompen a la vez (sobreestima respecto al modelo de haz de fibras progresivo; busquedas indican que el modelo de Wu-Waldron suele dar valores mayores que el FBM). Para traccion pura (voladizo) usar sigma_t ~ T_r*RAR (sin k)."
+  },
+  "raiz_cohesion_bosques_rango": {
+    "valor": [1, 20],
+    "unidad": "kPa (cohesion radical de bosques en general)",
+    "fuente": "Rango generico citado en una resena recuperada por busqueda (identificacion bibliografica NO confirmada). Consistente con Schmidt K.M. et al. 2001, Can. Geotech. J. 38:995-1024 (Oregon Coast Range, ~7-23 kPa; de memoria, no verificado).",
+    "confianza": "media",
+    "nota": "Para Nothofagus nitida NO hay cohesion radical publicada que yo haya encontrado. Usar 1-20 kPa como rango y el centro (~5-10) como valor de partida para bosque templado lluvioso; marcar como 'transferencia desde otros bosques'."
+  },
+  "raiz_resistencia_traccion_nothofagus": {
+    "valor": { "raices_vivas_media_MPa": 32.6, "tras_44_meses_de_tala_MPa": 12.2, "perdida_kPa_por_mes": 460 },
+    "unidad": "MPa",
+    "fuente": "O'Loughlin C. & Watson A. 1981, N.Z. J. For. Sci. 11(2):183-185 (raices de Nothofagus fusca/truncata -- haya roja y dura de Nueva Zelanda; titulo exacto y DOI no verificados; leido solo via resumen de busqueda).",
+    "confianza": "media",
+    "nota": "Nothofagus de NZ, no N. nitida (mismo genero; supuesto: similar). Raices pequenas de arboles vivos de varias especies: ~10-60 MPa (resena de busqueda). Si la raiz muere/pierde el arbol, la resistencia cae ~0,3-0,5 MPa/mes: el borde sostenido por raices se debilita al morir el arbol. Ley de potencia T = a*d^-b (Genet M. et al. 2005, Plant Soil 278:1-9, doi:10.1007/s11104-005-8768-6, de memoria): raices mas finas son mas resistentes por unidad de area; a, b de N. nitida SIN FUENTE."
+  },
+  "raiz_area_radical_RAR_tipico": {
+    "valor": [0.0005, 0.01],
+    "unidad": "adimensional (0,05-1 %)",
+    "fuente": "Orden de magnitud tipico de la literatura de refuerzo radical (Wu 1979; Schmidt 2001), de memoria; sin cifra verificada para N. nitida ni para Gunnera.",
+    "confianza": "baja",
+    "nota": "Con T_r=30 MPa y RAR=0,001 se obtiene sigma_t ~ 30 kPa >> 11 kPa requeridos: un coigue con raices en la celda del borde puede sostener un voladizo de una celda. RAR debe salir del modelo de raices del juego (densidad de raices por celda). Reemplazo: mediciones de perfil de raices."
+  },
+
+  "musgo_cohesion_tapiz": {
+    "valor": "NO ENCONTRADO en kPa",
+    "unidad": "kPa",
+    "fuente": "SIN FUENTE cuantitativa en kPa. Cualitativo: cobertura de musgo aumenta cohesion y resistencia al corte de muestras inalteradas (estudios de la Meseta de Loess, via busqueda); en Tres Gargantas el musgo redujo la erodabilidad de surcos 2-20 veces frente a suelo desnudo (J. Mountain Sci. 2020, doi:10.1007/s11629-020-6200-6, autores no recuperados).",
+    "confianza": "baja",
+    "nota": "Usar el musgo como retenedor de polvo y protector contra erosion (factor 1/2 a 1/20 de desprendimiento, baja), NO como soporte estructural de voladizo. Un tapiz de musgo sin raices verdaderas (rizoides) no tiene resistencia a traccion bien documentada."
+  },
+  "musgo_hifas_glomalina_agregacion": {
+    "valor": "cualitativo: la longitud de hifas y la glomalina (GRSP) correlacionan positivamente con la estabilidad de agregados",
+    "unidad": "sin cifra en kPa",
+    "fuente": "Borie F. et al. (resena de hongos micorrizicos y agregacion, via busqueda; datos bibliograficos incompletos); Ji et al. 2024, Geoderma (hifas y GRSP criticos para estabilidad de agregados en suelo calcareo, via busqueda); Wu et al. 2014, Sci. Rep. 4:5823 (naranjo trifoliado; GRSP con efecto directo sobre estabilidad).",
+    "confianza": "baja",
+    "nota": "No se encontro conversion a cohesion (kPa). Usar como multiplicador cualitativo de la cohesion aparente (p. ej. +x% por micorriza) marcado como diseno. El papel de la glomalina es debatido (problemas de extraccion)."
+  },
+
+  "alfombra_avance_flotante_turba": {
+    "valor": { "maximo_Harvard_Pond_cm_ano": 6.3, "margen_turberas_Finlandia_cm_ano": [0.1, 6.4], "alfombra_Sphagnum_Estonia_cm_ano": [2.8, 5.4] },
+    "unidad": "cm/ano",
+    "fuente": "Swan J.M.A. & Gill A.M. 1970, The origin, spread, and consolidation of a floating bog in Harvard Pond, Petersham, Massachusetts, Ecology 51:829-840 (maximo 6,3 cm/ano; verificada en busqueda, DOI no verificado); expansion lateral de turberas en Finlandia 0,1-6,4 cm/ano (resumen recuperado, autores/DOI no confirmados); Sphagnum Estonia 4,1+-1,3 cm/ano en 16 anos (resumen recuperado, referencia no confirmada).",
+    "confianza": "media",
+    "nota": "Orden de magnitud: unos pocos cm/ano (~1-6). Analogia debil: una alfombra flotante es sostenida por flotabilidad del agua; la isla esta en el aire, sin soporte inferior. Sirve solo como TOPE de plausibilidad de crecimiento lateral vegetal por ano (<~6 cm/ano => una celda de 0,25 m cada ~4-10 anos). Hay indicios de expansion episodica, no gradual. Bloques flotantes del Delta Sacramento-San Joaquin: +21 %/ano de area y 5,5-8,6 cm/ano vertical (resumen, no verificado en detalle)."
+  },
+
+  "fierrillo_composicion": {
+    "valor": { "Fe_pct_horizonte_placico": 36.2, "Fe_pct_hierro_de_pantano_Chile": 51.8, "Al2O3_pct": 12.1, "minerales": "goetita + ferrihidrita (+ probable gibbsita)" },
+    "unidad": "% en masa",
+    "fuente": "Zuniga F. et al. 2019, The waterlogged volcanic ash soils of southern Chile. A review of the Nadi soils, Catena (doi:10.1016/j.catena.2018.10.003; DOI y cifras vistos en resumen de busqueda, texto completo NO leido).",
+    "confianza": "media",
+    "nota": "36 % Fe es el contenido de la capa YA cementada, no el umbral minimo para cementar. Condiciones de formacion: suelos de ceniza volcanica anegados en invierno, movilizacion de Fe por carbono organico superficial (mas translocacion al sur), reduccion/oxidacion alternante. Profundidad de la capa: <50 cm limita drenaje (umbral propuesto en la resena)."
+  },
+  "fierrillo_espesor": {
+    "valor": "NO ENCONTRADO",
+    "unidad": "cm",
+    "fuente": "SIN FUENTE. La resena de Zuniga et al. 2019 probablemente lo trae pero no se leyo el texto completo. Otras fuentes: CIREN / estudios de suelos serie Osorno-Llanquihue.",
+    "confianza": "baja",
+    "nota": "El modelo debe tratar el espesor del fierrillo como parametro de diseno (propuesta: 1 celda de 0,25 m como minimo representable) y no atribuirlo a datos de campo."
+  },
+  "fierrillo_edad_velocidad_formacion": {
+    "valor": { "edades_placicos_14C_SW_Polonia_ka": [2.2, 4.8], "ñadi_posterior_a_glaciacion_Llanquihue": true },
+    "unidad": "ka (miles de anos)",
+    "fuente": "Edades de 2,2-4,8 ka son de horizontes placicos de SW Polonia (resumen de busqueda, autores no recuperados), NO de Chile; ubicacion de los ñadi entre morrenas Llanquihue y Santa Maria (Wikipedia/Zuniga 2019). No hay velocidad en cm por siglo con fuente.",
+    "confianza": "baja",
+    "nota": "Conclusion: el fierrillo tarda MILENIOS en formarse. Para un juego de decenas a cientos de anos, la cementacion debe ser acelerada con un factor declarado (p. ej. x100-1000), como regla de diseno visible en la UI. No inventar cm/siglo."
+  },
+
+  "cementacion_oxidos_hierro_otros": {
+    "valor": "NO ENCONTRADO",
+    "unidad": "kg/m3 o % Fe",
+    "fuente": "SIN FUENTE: velocidad de cementacion de ferricretas/hardpans en climas humedos y contenido minimo de Fe para cementar. Las busquedas no devolvieron datos citables.",
+    "confianza": "baja",
+    "nota": "La condrita CI tiene Fe abundante (orden de 18 % en masa; Lodders & Fegley, de memoria, no verificado) y la lluvia de Chiloe da el ciclo humedo/anegado; en el juego bastaria un umbral de diseno (p. ej. Fe movilizado acumulado > X g/m2 en una celda con anegamiento ciclico) declarado como supuesto. Reemplazo serio: datos de Zuniga 2019 y de ferricretas (Tardy, Nahon), por leer."
+  },
+
+  "propuesta_modelo": "MODELO DIARIO MINIMO RECOMENDADO (todo lo marcado 'diseno' esta sin fuente).\n\n1) Polvo en el borde. Cada dia, flujo de polvo F por celda de borde = F_base * (1 + v_esc^2/v_inf^2) [Safronov, parametros de diseno]. De ese polvo, la fraccion retenida r depende de la cobertura de la celda de borde: suelo desnudo ~0,05-0,3, musgo ~0,6-0,95, copa/follaje ~0,3-0,7 (DISENO, baja confianza; reemplazo: Vd de Zhang 2001/Petroff 2008). El polvo no retenido sigue de largo (cae al vacio por el costado). Para 10-100 um domina la sedimentacion: v_s ~ 0,8 cm/s (10 um) a ~25-30 cm/s (100 um), escalando con la gravedad ficticia.\n\n2) Sostener una celda sobre el vacio. Cuando una celda de borde acumula grosor de suelo >= una celda, puede crecer a la celda vecina vacia (voladizo) solo si sigma_t >= 3*gamma*L^2/h (L=0,25 m, h=espesor de la celda, gamma=15 kN/m3 => ~11 kPa). sigma_t = T_r*RAR (raices del coigue/nalca en la celda; T_r ~ 30 MPa para Nothofagus, media) + aporte menor de musgo/hifas (diseno). Sin raices: sigma_t ~ 0-2 kPa => NO se sostiene; el borde queda como talud de pendiente <= phi (30-35 grados) y todo lo que excede el talud cae. Con raices: el voladizo se sostiene mientras el arbol vive; si el arbol muere, T_r cae ~0,3-0,5 MPa/mes y el voladizo cae cuando sigma_t < umbral (logica de muerte de arbol = colapso del borde).\n\n3) Que cae al vacio. (a) polvo no retenido; (b) suelo del talud que excede el angulo de reposo phi (~30-35 grados); (c) voladizos cuyo sigma_t < 3*gamma*L^2/h; (d) corte vertical mayor que H_c = 4c/gamma*tan(45+phi/2) con c~0-5 kPa. Lo caido sale del modelo (o se contabiliza como perdida).\n\n4) Cementacion. Por celda de borde con anegamiento ciclico (lluvia ~2000 mm/ano, drenaje impedido): acumular Fe movilizado desde el regolito de condrita (presente) hasta un umbral de diseno; al cruzarlo la celda pasa a 'placica' (fierrillo): c efectiva alta, no se erosiona, soporta voladizo sin raices. La velocidad real es de milenios (ñadi), asi que el juego aplica un factor de aceleracion declarado en la UI (diseno). Fe del fierrillo ya formado ~36 % (Zuniga 2019, media); el umbral minimo de Fe NO tiene fuente.\n\n5) Tope de plausibilidad del crecimiento vegetal lateral: ~1-6 cm/ano (Swan & Gill 1970, alfombras flotantes; analogia debil).\n\nLO QUE NO SE ENCONTRO CON FUENTE: (i) Vd musgo/hojarasca/suelo desnudo para 10-100 um en cm/s; (ii) cohesion kPa de tapices de musgo y de hifas/glomalina; (iii) cohesion radical medida de Nothofagus nitida y Gunnera, y sus RAR; (iv) espesor del fierrillo; (v) velocidad de formacion del fierrillo en cm/siglo y la de ferricretas; (vi) contenido minimo de Fe para cementar; (vii) 'voladizo maximo' publicado (solo derivado); (viii) avance de schwingmoor como tal (solo analogos). Varias DOIs y citas de texto clasico estan 'de memoria' y deben re-verificarse."
+}
