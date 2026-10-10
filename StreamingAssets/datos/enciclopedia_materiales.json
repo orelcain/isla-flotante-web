@@ -1,0 +1,492 @@
+{
+  "nota": "Enciclopedia de la isla: materiales (docs/ENCICLOPEDIA.md). Los datos apuntan a los parámetros de la simulación.",
+  "entradas": [
+    {
+      "id": "condrita_ci",
+      "categoria": "material",
+      "subcategoria": "meteorito",
+      "nombre": "Condrita carbonácea CI",
+      "que_es": "Un meteorito muy primitivo y casi negro: de él está hecha la roca semilla de la isla.",
+      "explicacion": "Las condritas CI son de los materiales más antiguos del sistema solar: su química se parece a la del Sol, sin los gases. Son frágiles, porosas (cerca de un tercio es vacío) y tienen agua y carbono en sus minerales. Reflejan apenas el 2–3,5 % de la luz, por eso se ven casi negras. En la Tierra se alteran rápido: aparecen sulfatos blancos en vetas y el hierro se oxida. Son raras: cerca del 0,5 % de los meteoritos que caen.",
+      "datos": [
+        {
+          "nombre": "Densidad",
+          "ref": "semilla#densidad_roca"
+        },
+        {
+          "nombre": "Hierro (% en masa)",
+          "ref": "semilla#ci_fe_pct"
+        },
+        {
+          "nombre": "Fósforo (% en masa)",
+          "ref": "semilla#ci_p_pct"
+        },
+        {
+          "nombre": "Nitrógeno (% en masa)",
+          "ref": "semilla#ci_n_pct"
+        },
+        {
+          "nombre": "Color medido",
+          "ref": "aspecto_semilla#color_condrita_fresca"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "se_transforma_en",
+          "con": "regolito",
+          "simulado": true,
+          "fuente": "Heimsath et al. 2000; Montgomery 2007 (producción de suelo)",
+          "confianza": "media",
+          "via": "meteorizacion"
+        },
+        {
+          "tipo": "contiene",
+          "con": "hierro",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "contiene",
+          "con": "fosforo",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "contiene",
+          "con": "nitrogeno",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "contiene",
+          "con": "carbono",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "contiene",
+          "con": "azufre",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "libera",
+          "con": "fosforo",
+          "simulado": true,
+          "fuente": "calibración provisional (semilla#liberacion_anual_regolito)",
+          "confianza": "baja",
+          "via": "liberacion_nutrientes"
+        }
+      ],
+      "en_el_juego": "Es la roca de la isla: la panza que cuelga bajo el suelo y la sección gris oscura del corte. Su fracción en cada celda da las vetas de sulfato que se ven de cerca.",
+      "rasgos": {
+        "vetas_sulfato": {
+          "valor": "vetas blancas de sulfatos de magnesio y calcio (Orgueil)",
+          "unidad": "texto",
+          "fuente": "aspecto_condrita.json verificado 09-10 (enjambre)",
+          "confianza": "alta"
+        }
+      },
+      "incertidumbre": "El color de la condrita ya meteorizada y la velocidad de su oxidación en clima húmedo no tienen cifra publicada."
+    },
+    {
+      "id": "condrita_ordinaria",
+      "categoria": "material",
+      "subcategoria": "meteorito",
+      "nombre": "Condrita ordinaria",
+      "que_es": "El meteorito más común: piedra gris con motas de metal. Nueve de cada diez fragmentos que caen son de este tipo o parecidos.",
+      "explicacion": "Las condritas ordinarias (tipos H, L y LL) están hechas de silicatos con pequeñas esferas llamadas cóndrulos y granos de hierro-níquel (del 2 al 8 % del volumen según el tipo). En polvo reflejan cerca del 20 % de la luz: gris medio. El metal se oxida con los años y las mancha de herrumbre.",
+      "datos": [
+        {
+          "nombre": "Hierro (% en masa)",
+          "ref": "semilla#condrita_ordinaria_fe_pct"
+        },
+        {
+          "nombre": "Magnesio",
+          "ref": "semilla#condrita_ordinaria_mg_pct"
+        },
+        {
+          "nombre": "Silicio",
+          "ref": "semilla#condrita_ordinaria_si_pct"
+        },
+        {
+          "nombre": "Parte de las caídas",
+          "ref": "semilla#caida_pct_ordinaria"
+        },
+        {
+          "nombre": "Color del polvo",
+          "ref": "aspecto_semilla#color_condrita_ordinaria"
+        },
+        {
+          "nombre": "Color de la roca",
+          "ref": "aspecto_semilla#color_condrita_ordinaria_roca"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "forma_parte_de",
+          "con": "polvo_estelar",
+          "simulado": true,
+          "fuente": "Meteorite fall statistics (1003 caídas); semilla.json caida_pct_*",
+          "confianza": "media"
+        },
+        {
+          "tipo": "se_transforma_en",
+          "con": "regolito",
+          "simulado": true,
+          "fuente": "semilla.json (fuentes por parámetro)",
+          "confianza": "media",
+          "via": "acrecion"
+        },
+        {
+          "tipo": "contiene",
+          "con": "hierro",
+          "simulado": true,
+          "fuente": "Schaefer & Fegley 2007, Tabla 1 (promedio de 90 caídas H)",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "contiene",
+          "con": "magnesio",
+          "simulado": true,
+          "fuente": "Schaefer & Fegley 2007, Tabla 1 (promedio de 90 caídas H)",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "contiene",
+          "con": "silicio",
+          "simulado": true,
+          "fuente": "Schaefer & Fegley 2007, Tabla 1 (promedio de 90 caídas H)",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "se_transforma_en",
+          "con": "ferrihidrita",
+          "simulado": false,
+          "fuente": "verificado_mezcla.json: óxido parcial en decenas a cientos de años",
+          "confianza": "baja",
+          "via": "oxidacion"
+        }
+      ],
+      "en_el_juego": "Las piedras grises que caen donde eliges; su polvo aclara el suelo de esa celda."
+    },
+    {
+      "id": "meteorito_metalico",
+      "categoria": "material",
+      "subcategoria": "meteorito",
+      "nombre": "Meteorito metálico",
+      "que_es": "Un trozo de hierro con níquel que viene del núcleo de un asteroide roto.",
+      "explicacion": "Los meteoritos metálicos son casi puro hierro (90–93 %) con níquel (6–9 %). Vienen del interior de asteroides que se fundieron y se partieron. Son cerca del 4–5 % de las caídas. Brillan donde están cortados y se oxidan con el tiempo.",
+      "datos": [
+        {
+          "nombre": "Hierro (% en masa)",
+          "ref": "semilla#hierro_fe_pct"
+        },
+        {
+          "nombre": "Níquel",
+          "ref": "semilla#hierro_ni_pct"
+        },
+        {
+          "nombre": "Parte de las caídas",
+          "ref": "semilla#caida_pct_metalica"
+        },
+        {
+          "nombre": "Color",
+          "ref": "aspecto_semilla#color_hierro_roca"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "forma_parte_de",
+          "con": "polvo_estelar",
+          "simulado": true,
+          "fuente": "Meteorite fall statistics (1003 caídas); semilla.json caida_pct_*",
+          "confianza": "media"
+        },
+        {
+          "tipo": "contiene",
+          "con": "hierro",
+          "simulado": true,
+          "fuente": "Buchwald, rangos de WUSTL (Fe 90,5–93 %, Ni 5,9–9 %)",
+          "confianza": "media"
+        },
+        {
+          "tipo": "contiene",
+          "con": "niquel",
+          "simulado": true,
+          "fuente": "Buchwald, rangos de WUSTL (Fe 90,5–93 %, Ni 5,9–9 %)",
+          "confianza": "media"
+        },
+        {
+          "tipo": "se_transforma_en",
+          "con": "regolito",
+          "simulado": true,
+          "fuente": "semilla.json (fuentes por parámetro)",
+          "confianza": "media",
+          "via": "acrecion"
+        }
+      ],
+      "en_el_juego": "Algunas de las piedras que caen: gris metálico."
+    },
+    {
+      "id": "regolito",
+      "categoria": "material",
+      "subcategoria": "suelo",
+      "nombre": "Regolito",
+      "que_es": "La capa suelta de roca molida y polvo que cubre la roca: el primer suelo de la isla.",
+      "explicacion": "El regolito se forma cuando la roca se desgasta y cuando cae polvo. Todavía no tiene vida ni materia orgánica: es mineral. Guarda agua y de él las raíces y el hongo sacan los nutrientes que se van liberando.",
+      "datos": [
+        {
+          "nombre": "Densidad",
+          "ref": "semilla#densidad_regolito"
+        },
+        {
+          "nombre": "Agua útil por cm",
+          "ref": "agua#agua_util_mm_por_cm"
+        },
+        {
+          "nombre": "Liberación anual de nutrientes",
+          "ref": "semilla#liberacion_anual_regolito"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "libera",
+          "con": "fosforo",
+          "simulado": true,
+          "fuente": "calibración provisional",
+          "confianza": "baja",
+          "via": "liberacion_nutrientes"
+        },
+        {
+          "tipo": "libera",
+          "con": "nitrogeno",
+          "simulado": true,
+          "fuente": "calibración provisional",
+          "confianza": "baja",
+          "via": "liberacion_nutrientes"
+        },
+        {
+          "tipo": "contiene",
+          "con": "agua",
+          "simulado": true,
+          "fuente": "Saxton & Rawls 2006 (agua útil)",
+          "confianza": "media"
+        },
+        {
+          "tipo": "se_transforma_en",
+          "con": "suelo_mineral",
+          "simulado": false,
+          "fuente": "pendiente: formación del horizonte mineral (etapa S4)",
+          "confianza": "baja",
+          "via": "meteorizacion"
+        }
+      ],
+      "en_el_juego": "El color del suelo: la mezcla de lo que cayó en cada celda, oscurecido por la humedad y teñido por la herrumbre."
+    },
+    {
+      "id": "suelo_mineral",
+      "categoria": "material",
+      "subcategoria": "suelo",
+      "nombre": "Horizonte mineral",
+      "que_es": "La capa de suelo donde el mineral ya se mezcló con algo de materia orgánica.",
+      "explicacion": "Con el tiempo el regolito recibe restos de raíces y hongos, se airea y se transforma: aparece un horizonte mineral más estructurado. En la isla todavía está por modelarse (etapa S4).",
+      "datos": [
+        {
+          "nombre": "Densidad (se usa la del regolito)",
+          "ref": "semilla#densidad_regolito"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "contiene",
+          "con": "agua",
+          "simulado": false,
+          "fuente": "Saxton & Rawls 2006",
+          "confianza": "media"
+        },
+        {
+          "tipo": "forma_parte_de",
+          "con": "regolito",
+          "simulado": false,
+          "fuente": "pendiente (S4)",
+          "confianza": "baja"
+        }
+      ],
+      "en_el_juego": "Todavía no se forma en la isla: queda para la etapa de descomposición.",
+      "incertidumbre": "Su formación no se simula aún."
+    },
+    {
+      "id": "humus",
+      "categoria": "material",
+      "subcategoria": "suelo",
+      "nombre": "Humus (horizonte orgánico)",
+      "que_es": "La tierra oscura que se forma de hojas, raíces y hongos descompuestos.",
+      "explicacion": "El humus es materia orgánica muy transformada. Guarda agua y nutrientes y oscurece el suelo: unos pocos por ciento de carbono bajan mucho su claridad. Es liviano: un litro pesa cerca de 100 g.",
+      "datos": [
+        {
+          "nombre": "Densidad",
+          "ref": "semilla#densidad_horizonte_organico"
+        },
+        {
+          "nombre": "Color",
+          "ref": "aspecto_semilla#color_humus"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "contiene",
+          "con": "carbono",
+          "simulado": false,
+          "fuente": "Pribyl 2010, Geoderma: la materia orgánica del suelo es ~50 % carbono",
+          "confianza": "media"
+        },
+        {
+          "tipo": "contiene",
+          "con": "nitrogeno",
+          "simulado": false,
+          "fuente": "Cleveland & Liptzin 2007: C:N del suelo ~14 en promedio mundial",
+          "confianza": "media"
+        },
+        {
+          "tipo": "se_transforma_en",
+          "con": "nitrogeno",
+          "simulado": false,
+          "fuente": "pendiente (S4)",
+          "confianza": "baja",
+          "via": "descomposicion"
+        }
+      ],
+      "en_el_juego": "La cuna de madera podrida y el micelio muerto engordan esta capa; en el corte es la franja más oscura."
+    },
+    {
+      "id": "hojarasca",
+      "categoria": "material",
+      "subcategoria": "suelo",
+      "nombre": "Hojarasca",
+      "que_es": "Las hojas muertas que caen del coigüe y quedan sobre el suelo.",
+      "explicacion": "El coigüe es siempreverde: cada hoja vive unos 4 años y luego cae. Antes de soltarla, el árbol recupera casi la mitad de su nitrógeno y su fósforo. La hoja del coigüe de Chiloé tiene mucho carbono para poco nitrógeno (C:N 78,7): se descompone lento.",
+      "datos": [
+        {
+          "nombre": "Longevidad de la hoja",
+          "ref": "coigue#longevidad_foliar_anios"
+        },
+        {
+          "nombre": "Reabsorción de N",
+          "ref": "coigue#reabsorcion_n"
+        },
+        {
+          "nombre": "C:N",
+          "ref": "coigue#hojarasca_cn"
+        },
+        {
+          "nombre": "Descomposición",
+          "ref": "coigue#descomposicion_k_anio"
+        },
+        {
+          "nombre": "Color (supuesto)",
+          "ref": "aspecto_semilla#color_hojarasca_fresca"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "se_transforma_en",
+          "con": "humus",
+          "simulado": true,
+          "fuente": "Pérez et al. 2010 (k=0,47/año); Kätterer et al. 2011 (coef. húmico 0,15); ICBM, Andrén & Kätterer 1997",
+          "confianza": "media",
+          "via": "descomposicion"
+        },
+        {
+          "tipo": "protege",
+          "con": "agua",
+          "simulado": false,
+          "fuente": "FAO-56, cap. 7: la cobertura orgánica reduce la evaporación ~5 % por cada 10 % de suelo cubierto",
+          "confianza": "media"
+        }
+      ],
+      "en_el_juego": "Hojas tendidas en el suelo, tantas como su masa real dividida por la masa de una hoja. Se descompone cada día y alimenta el humus.",
+      "incertidumbre": "El color de la hojarasca fresca de Nothofagus no tiene medición: es un supuesto."
+    },
+    {
+      "id": "madera_podrida",
+      "categoria": "material",
+      "subcategoria": "suelo",
+      "nombre": "Madera podrida (la cuna)",
+      "que_es": "Un tronco caído y descompuesto: la cuna donde germinó el coigüe.",
+      "explicacion": "En los bosques de Chiloé las plántulas de coigüe crecen sobre troncos podridos: la madera guarda agua, está libre de competencia y tiene hongos. Por eso el juego empieza con una cuna así.",
+      "datos": [
+        {
+          "nombre": "Radio",
+          "ref": "coigue#cuna_radio_m"
+        },
+        {
+          "nombre": "Espesor",
+          "ref": "coigue#cuna_espesor_m"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "protege",
+          "con": "nothofagus_nitida",
+          "simulado": true,
+          "fuente": "Christie & Armesto 2003",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "contiene",
+          "con": "agua",
+          "simulado": true,
+          "fuente": "decisión de diseño",
+          "confianza": "media"
+        },
+        {
+          "tipo": "forma_parte_de",
+          "con": "humus",
+          "simulado": true,
+          "fuente": "decisión de diseño",
+          "confianza": "alta"
+        }
+      ],
+      "en_el_juego": "Una mancha oscura bajo el árbol en el corte.",
+      "incertidumbre": "Su nitrógeno y fósforo son calibraciones provisionales."
+    },
+    {
+      "id": "ferrihidrita",
+      "categoria": "material",
+      "subcategoria": "mineral",
+      "nombre": "Ferrihidrita (herrumbre)",
+      "que_es": "El óxido de hierro café rojizo que aparece cuando el hierro de la roca se encuentra con el aire y el agua.",
+      "explicacion": "Cuando la roca se desgasta, el hierro se oxida y forma óxidos e hidróxidos: la ferrihidrita es de los primeros. Un poco basta para teñir mucho el suelo de café rojizo.",
+      "datos": [
+        {
+          "nombre": "Color",
+          "ref": "aspecto_semilla#color_ferrihidrita"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "forma_parte_de",
+          "con": "regolito",
+          "simulado": false,
+          "fuente": "Schwertmann 1993 (óxidos de hierro en suelos)",
+          "confianza": "media"
+        },
+        {
+          "tipo": "contiene",
+          "con": "hierro",
+          "simulado": false,
+          "fuente": "Jambor & Dutrizac 1998 (ferrihidrita ≈ Fe5HO8·4H2O)",
+          "confianza": "alta"
+        }
+      ],
+      "en_el_juego": "El tono café rojizo del suelo y de la panza a medida que la isla envejece.",
+      "incertidumbre": "La velocidad de oxidación es una calibración provisional."
+    }
+  ]
+}

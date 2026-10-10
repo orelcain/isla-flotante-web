@@ -1,0 +1,182 @@
+{
+  "version_esquema": 1,
+  "nota": "Magnitudes que guarda cada celda de la isla (40 × 40 m). El clima NO se guarda: se recalcula cada año desde el relieve, la vegetación y lo que hizo el jugador. Desde la Fase 2 cada celda guarda además su columna de suelo (horizontes A y B, textura, pH y nutrientes): las islas guardadas la reciben sola al cargar.",
+  "cantidades": [
+    {
+      "id": "elevacion",
+      "nombre": "Elevación",
+      "unidad": "m",
+      "min": 0,
+      "max": 2000,
+      "defecto": 0,
+      "decimales": 0,
+      "fuente": "Relieve generado (procedural)",
+      "confianza": "alta"
+    },
+    {
+      "id": "hierba",
+      "nombre": "Cobertura de hierbas",
+      "unidad": "fracción",
+      "min": 0,
+      "max": 1,
+      "defecto": 0,
+      "decimales": 2,
+      "fuente": "Fracción del suelo cubierta",
+      "confianza": "alta"
+    },
+    {
+      "id": "matorral",
+      "nombre": "Cobertura de matorral",
+      "unidad": "fracción",
+      "min": 0,
+      "max": 1,
+      "defecto": 0,
+      "decimales": 2,
+      "fuente": "Fracción del suelo cubierta",
+      "confianza": "alta"
+    },
+    {
+      "id": "bosque",
+      "nombre": "Cobertura de bosque",
+      "unidad": "fracción",
+      "min": 0,
+      "max": 1,
+      "defecto": 0,
+      "decimales": 2,
+      "fuente": "Fracción del suelo cubierta por dosel",
+      "confianza": "alta"
+    },
+    {
+      "id": "materia_organica",
+      "nombre": "Materia orgánica",
+      "unidad": "%",
+      "min": 0,
+      "max": 25,
+      "defecto": 1.5,
+      "decimales": 1,
+      "fuente": "Misma magnitud que el laboratorio de suelo",
+      "confianza": "alta"
+    },
+    {
+      "id": "laguna",
+      "nombre": "Laguna",
+      "unidad": "0/1",
+      "min": 0,
+      "max": 1,
+      "defecto": 0,
+      "decimales": 0,
+      "fuente": "Hecha por el jugador",
+      "confianza": "alta"
+    },
+    {
+      "id": "canal",
+      "nombre": "Canal (dirección)",
+      "unidad": "−1 = sin canal; 0–7 = vecino",
+      "min": -1,
+      "max": 7,
+      "defecto": -1,
+      "decimales": 0,
+      "fuente": "Hecho por el jugador",
+      "confianza": "alta"
+    },
+    {
+      "id": "espesor_a_mm",
+      "nombre": "Horizonte A (suelo superficial)",
+      "unidad": "mm",
+      "min": 0,
+      "max": 2000,
+      "defecto": 150,
+      "decimales": 0,
+      "fuente": "Espesor del horizonte orgánico-mineral superficial",
+      "confianza": "alta"
+    },
+    {
+      "id": "espesor_b_mm",
+      "nombre": "Horizonte B (subsuelo)",
+      "unidad": "mm",
+      "min": 0,
+      "max": 3000,
+      "defecto": 250,
+      "decimales": 0,
+      "fuente": "Espesor del horizonte de acumulación",
+      "confianza": "alta"
+    },
+    {
+      "id": "arena",
+      "nombre": "Arena",
+      "unidad": "%",
+      "min": 0,
+      "max": 100,
+      "defecto": 45,
+      "decimales": 0,
+      "fuente": "Fracción granulométrica (misma magnitud que el módulo 1)",
+      "confianza": "alta"
+    },
+    {
+      "id": "arcilla",
+      "nombre": "Arcilla",
+      "unidad": "%",
+      "min": 0,
+      "max": 80,
+      "defecto": 18,
+      "decimales": 0,
+      "fuente": "Fracción granulométrica (misma magnitud que el módulo 1)",
+      "confianza": "alta"
+    },
+    {
+      "id": "ph",
+      "nombre": "pH",
+      "unidad": "",
+      "min": 3.5,
+      "max": 9.5,
+      "defecto": 6.2,
+      "decimales": 1,
+      "fuente": "Misma magnitud que el módulo 1",
+      "confianza": "alta"
+    },
+    {
+      "id": "n_nitrato",
+      "nombre": "Nitrógeno disponible (N-NO₃)",
+      "unidad": "mg/kg",
+      "min": 0,
+      "max": 300,
+      "defecto": 12,
+      "decimales": 0,
+      "fuente": "Misma magnitud que el módulo 1",
+      "confianza": "alta"
+    },
+    {
+      "id": "p_olsen",
+      "nombre": "Fósforo disponible (P Olsen)",
+      "unidad": "mg/kg",
+      "min": 0,
+      "max": 200,
+      "defecto": 10,
+      "decimales": 0,
+      "fuente": "Misma magnitud que el módulo 1",
+      "confianza": "alta"
+    },
+    {
+      "id": "k_interc",
+      "nombre": "Potasio intercambiable",
+      "unidad": "mg/kg",
+      "min": 0,
+      "max": 900,
+      "defecto": 130,
+      "decimales": 0,
+      "fuente": "Misma magnitud que el módulo 1",
+      "confianza": "alta"
+    },
+    {
+      "id": "costra",
+      "nombre": "Costra biológica (musgos, líquenes, cianobacterias)",
+      "unidad": "fracción",
+      "min": 0,
+      "max": 1,
+      "defecto": 0.1,
+      "decimales": 2,
+      "fuente": "Cobertura de costra biológica del suelo (Belnap & Lange 2001)",
+      "confianza": "alta"
+    }
+  ]
+}

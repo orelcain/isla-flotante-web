@@ -1,0 +1,170 @@
+{
+  "nota": "Enciclopedia de la isla: recursos (docs/ENCICLOPEDIA.md). Los datos apuntan a los parámetros de la simulación.",
+  "entradas": [
+    {
+      "id": "agua",
+      "categoria": "recurso",
+      "subcategoria": "agua",
+      "nombre": "Agua",
+      "que_es": "Lo que la lluvia trae y el suelo guarda: sin agua el árbol cierra su fábrica de azúcar.",
+      "explicacion": "Llueve en días al azar, con la frecuencia y la cantidad de cada mes en Castro. La copa intercepta un tercio. El suelo guarda poca agua si es delgado; el árbol transpira y, si el suelo se seca, se frena.",
+      "datos": [
+        {
+          "nombre": "Lluvia anual",
+          "ref": "agua#lluvia_anual_mm"
+        },
+        {
+          "nombre": "Intercepción de la copa",
+          "ref": "agua#intercepcion_dosel_fraccion"
+        },
+        {
+          "nombre": "Agua útil por cm de suelo",
+          "ref": "agua#agua_util_mm_por_cm"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "limita",
+          "con": "nothofagus_nitida",
+          "simulado": true,
+          "fuente": "FAO-56 (coeficiente Ks)",
+          "confianza": "alta",
+          "via": "transpiracion"
+        }
+      ],
+      "en_el_juego": "El suelo se oscurece cuando está mojado; la ficha del árbol dice si le falta agua."
+    },
+    {
+      "id": "luz_solar",
+      "categoria": "recurso",
+      "subcategoria": "luz",
+      "nombre": "Luz del sol",
+      "que_es": "La energía de todo: el árbol la convierte en azúcar.",
+      "explicacion": "La luz cambia con la estación: en Castro llegan unos 23 MJ por m² al día en enero y menos de 5 en julio. La copa absorbe una parte según cuántas hojas tiene.",
+      "datos": [
+        {
+          "nombre": "Radiación de enero",
+          "ref": "coigue#radiacion_global_enero_mj_m2_dia"
+        },
+        {
+          "nombre": "Radiación de julio",
+          "ref": "coigue#radiacion_global_julio_mj_m2_dia"
+        },
+        {
+          "nombre": "Fracción útil (PAR)",
+          "ref": "coigue#fraccion_par"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "necesita",
+          "con": "nothofagus_nitida",
+          "simulado": true,
+          "fuente": "MOD17",
+          "confianza": "media",
+          "via": "fotosintesis"
+        }
+      ],
+      "en_el_juego": "La dirección y el color del sol, de día y de noche."
+    },
+    {
+      "id": "aire",
+      "categoria": "recurso",
+      "subcategoria": "aire",
+      "nombre": "Aire",
+      "que_es": "De él el árbol toma el carbono, y con la lluvia llega algo de nitrógeno.",
+      "explicacion": "El aire tiene dióxido de carbono, que las plantas usan para fotosintetizar, y aporta nitrógeno con la lluvia y el polvo (1–3,7 kg por hectárea al año en el sur de Chile).",
+      "datos": [
+        {
+          "nombre": "Depósito de N",
+          "ref": "coigue#deposito_n_kg_ha_anio"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "produce",
+          "con": "nitrogeno",
+          "simulado": true,
+          "fuente": "Godoy et al. 2003",
+          "confianza": "media",
+          "via": "deposito_atmosferico"
+        }
+      ],
+      "en_el_juego": "Invisible: aparece en el balance de masa como «entrada desde el aire»."
+    },
+    {
+      "id": "temperatura",
+      "categoria": "recurso",
+      "subcategoria": "clima",
+      "nombre": "Temperatura",
+      "que_es": "El calor acelera casi todo: la fotosíntesis y el desgaste de la roca.",
+      "explicacion": "En Chiloé la media es cercana a 10 °C, unos 14 °C en enero y 6 °C en julio. Con frío el árbol trabaja más lento y la roca se desgasta menos.",
+      "datos": [
+        {
+          "nombre": "Media anual",
+          "ref": "semilla#temperatura_media_anual_c"
+        },
+        {
+          "nombre": "Amplitud estacional",
+          "ref": "semilla#amplitud_termica_estacional_c"
+        },
+        {
+          "nombre": "Energía de activación del desgaste",
+          "ref": "semilla#energia_activacion_meteorizacion_kj_mol"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "acelera",
+          "con": "meteorizacion",
+          "simulado": true,
+          "fuente": "Arrhenius; West et al. 2005",
+          "confianza": "media"
+        },
+        {
+          "tipo": "limita",
+          "con": "nothofagus_nitida",
+          "simulado": true,
+          "fuente": "Read & Busby",
+          "confianza": "baja",
+          "via": "fotosintesis"
+        }
+      ],
+      "en_el_juego": "La ficha del árbol dice cuándo lo frena el frío."
+    },
+    {
+      "id": "polvo_estelar",
+      "categoria": "recurso",
+      "subcategoria": "espacio",
+      "nombre": "Polvo y fragmentos estelares",
+      "que_es": "Lo que cae del espacio y hace crecer la isla.",
+      "explicacion": "A la Tierra llegan unas 5.200 toneladas de polvo cósmico al año: apenas 0,01 mg por m². En el juego la semilla atrae mucho más (atajo didáctico): con la tasa real la isla no crecería en un siglo.",
+      "datos": [
+        {
+          "nombre": "Flujo real",
+          "ref": "semilla#flujo_polvo_cosmico_mg_m2_anio"
+        },
+        {
+          "nombre": "Atajo del juego",
+          "ref": "semilla#factor_atajo_polvo"
+        },
+        {
+          "nombre": "Masa media de un fragmento",
+          "ref": "semilla#masa_fragmento_kg"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "produce",
+          "con": "regolito",
+          "simulado": true,
+          "fuente": "Rojas et al. 2021",
+          "confianza": "media",
+          "via": "acrecion"
+        }
+      ],
+      "en_el_juego": "Las estelas y las piedras que caen donde eliges.",
+      "incertidumbre": "El crecimiento de la isla es ficción didáctica: el interruptor «¿qué pasaría en la realidad?» lo muestra."
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "nota": "Agua de la isla semilla (etapa S2b). Lluvia diaria aleatoria con la frecuencia y el monto de cada mes en Castro (NASA POWER 2001-2020; el reanálisis probablemente subestima: pluviómetros dan 1.600-2.500 mm/año). Datos MEDIDOS con fuente y CALIBRACIONES PROVISIONALES marcadas.",
+  "pendientes": "Sin fuente encontrada: (1) normales DMC de la estación Mocopulli Ad. (cód. 420014, comuna de Castro) con días de lluvia >= 1 mm: existe la ficha en climatologia.meteochile.gob.cl, pero no se obtuvieron las normales; (2) Kc propio de Nothofagus o de bosque siempreverde (se usa 'Conifer Trees' de FAO-56 como sustituto); (3) umbral de humedad del suelo en que N. nitida reduce la transpiración (se usa p de FAO-56); (4) agua útil de un regolito de condrita carbonosa (sin literatura; se usan texturas terrestres análogas de Saxton & Rawls); (5) relación cuantitativa altura/crecimiento vs profundidad de suelo para Nothofagus: Lusk & Matus (2000, J. Biogeography) reportan correlación positiva fuerte, pero no se obtuvieron coeficientes; (6) volumen de suelo por unidad de ÁREA FOLIAR (solo se encontró por área de proyección de copa); (7) capacidad de almacenamiento de agua del dosel (mm) de N. nitida; (8) texto original de Huber & Iroumé (2001) no consultado; (9) albedo de dosel de Nothofagus.",
+  "lluvia_mensual_mm": {
+    "valor": [
+      79,
+      69,
+      98,
+      111,
+      164,
+      170,
+      158,
+      160,
+      97,
+      112,
+      97,
+      86
+    ],
+    "unidad": "mm/mes (ene..dic), media 2001-2020",
+    "fuente": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR&community=AG&longitude=-73.8&latitude=-42.5&start=20010101&end=20201231&format=JSON",
+    "confianza": "media",
+    "nota": "Derivado: suma mensual media de PRECTOTCORR diario. Total anual 1.399 mm. Por ser reanálisis, probablemente subestima la lluvia real de Castro."
+  },
+  "lluvia_anual_mm": {
+    "valor": 1399,
+    "unidad": "mm/año",
+    "fuente": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR&community=AG&longitude=-73.8&latitude=-42.5&start=20010101&end=20201231&format=JSON",
+    "confianza": "media",
+    "nota": "Derivado de NASA POWER 2001-2020."
+  },
+  "lluvia_anual_senda_darwin_mm": {
+    "valor": [
+      2000,
+      2500
+    ],
+    "unidad": "mm/año (rango)",
+    "fuente": "Frêne C., Núñez-Ávila M., Castro B., Armesto J.J. (2022) Front. For. Glob. Change 4:781663, https://www.frontiersin.org/articles/10.3389/ffgc.2021.781663/full (cita a Díaz et al. 2007)",
+    "confianza": "media",
+    "nota": "Estación Biológica Senda Darwin, Ancud (41°50'S), norte de Chiloé; 14% cae en ene-mar."
+  },
+  "dias_lluvia_fraccion_mensual": {
+    "valor": [
+      0.37,
+      0.36,
+      0.43,
+      0.53,
+      0.6,
+      0.69,
+      0.65,
+      0.67,
+      0.54,
+      0.54,
+      0.47,
+      0.43
+    ],
+    "unidad": "fracción de días con lluvia >= 1 mm (ene..dic)",
+    "fuente": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR&community=AG&longitude=-73.8&latitude=-42.5&start=20010101&end=20201231&format=JSON",
+    "confianza": "media",
+    "nota": "Derivado: días con PRECTOTCORR >= 1 mm / días del mes, 2001-2020. Anual 0,52."
+  },
+  "lluvia_por_dia_lluvioso_mm": {
+    "valor": [
+      6.4,
+      6.5,
+      7.0,
+      6.8,
+      8.7,
+      8.0,
+      7.7,
+      7.6,
+      5.7,
+      6.5,
+      6.6,
+      6.2
+    ],
+    "unidad": "mm por día lluvioso (>= 1 mm), ene..dic",
+    "fuente": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR&community=AG&longitude=-73.8&latitude=-42.5&start=20010101&end=20201231&format=JSON",
+    "confianza": "media",
+    "nota": "Derivado: suma de lluvia en días >= 1 mm / número de esos días. Media anual 7,1 mm. El reanálisis suaviza los extremos."
+  },
+  "priestley_taylor_alfa": {
+    "valor": 1.26,
+    "unidad": "adimensional",
+    "fuente": "Priestley, C.H.B. & Taylor, R.J. (1972) Monthly Weather Review 100:81-92, doi:10.1175/1520-0493(1972)100<0081:OTAOSH>2.3.CO;2; valor citado en HESS 28:4349 (2024) https://hess.copernicus.org/articles/28/4349/2024/",
+    "confianza": "alta",
+    "nota": "Válido para superficies húmedas extensas con poca advección. Con suelo seco el alfa efectivo baja mucho (se han medido ~0,5); por eso conviene aplicar además Ks."
+  },
+  "albedo": {
+    "valor": 0.23,
+    "unidad": "adimensional",
+    "fuente": "Allen, Pereira, Raes & Smith (1998) FAO Irrigation and Drainage Paper 56, cap. 3, ec. 38 Rns=(1-a)Rs: https://www.fao.org/4/x0490e/x0490e07.htm",
+    "confianza": "alta",
+    "nota": "Albedo del cultivo de referencia (pasto). Un dosel de bosque suele tener albedo menor; no se buscó valor para Nothofagus."
+  },
+  "radiacion_neta_metodo": {
+    "valor": "Rn = Rns - Rnl; Rns = (1-0,23)·Rs (ec. 38); Rnl = sigma·[(Tmax,K^4+Tmin,K^4)/2]·(0,34-0,14·raiz(ea))·(1,35·Rs/Rso-0,35) (ec. 39), sigma = 4,903e-9 MJ K-4 m-2 día-1, Rs/Rso <= 1; Rso = (0,75+2e-5·z)·Ra (ec. 37)",
+    "unidad": "MJ m-2 día-1",
+    "fuente": "Allen, Pereira, Raes & Smith (1998) FAO Irrigation and Drainage Paper 56, cap. 3: https://www.fao.org/4/x0490e/x0490e07.htm",
+    "confianza": "alta",
+    "nota": "No se encontró una razón Rn/Rs publicada para Chiloé; usar este procedimiento."
+  },
+  "kc_arbol": {
+    "valor": 1.0,
+    "unidad": "adimensional (Kc ini = med = fin)",
+    "fuente": "Allen, Pereira, Raes & Smith (1998) FAO Irrigation and Drainage Paper 56, Tabla 12, fila 'Conifer Trees' (nota 23): https://www.fao.org/4/x0490e/x0490e0b.htm",
+    "confianza": "baja",
+    "nota": "No hay Kc para Nothofagus. La nota de FAO-56 indica que los valores suponen bosques grandes bien regados y que, por control estomático, el Kc puede ser bastante menor. Para un árbol joven aislado sobre roca, tratarlo como techo."
+  },
+  "intercepcion_dosel_fraccion": {
+    "valor": 0.33,
+    "unidad": "fracción de la lluvia bruta (anual)",
+    "fuente": "Frêne C., Núñez-Ávila M., Castro B., Armesto J.J. (2022) 'Seasonal partitioning of rainfall in second-growth evergreen temperate rainforests in Chiloé Island, southern Chile', Front. For. Glob. Change 4:781663, https://www.frontiersin.org/articles/10.3389/ffgc.2021.781663/full",
+    "confianza": "alta",
+    "nota": "Bosque secundario dominado por Drimys winteri y Nothofagus nitida, Senda Darwin; 35 eventos abr-2019 a ene-2021. 33 ± 5%; 24% otoño-invierno, 40% primavera-verano; trascolación 59%, escurrimiento fustal 7%. Es dosel cerrado: un árbol joven aislado interceptará menos."
+  },
+  "intercepcion_estacional_fraccion": {
+    "valor": [
+      0.24,
+      0.4
+    ],
+    "unidad": "fracción [otoño-invierno, primavera-verano]",
+    "fuente": "Frêne et al. (2022), misma fuente que intercepcion_dosel_fraccion",
+    "confianza": "alta"
+  },
+  "agua_util_franco_arenoso": {
+    "valor": [
+      0.179,
+      0.081,
+      0.098
+    ],
+    "unidad": "m3/m3 [theta_cc 33 kPa, theta_pmp 1500 kPa, agua útil]",
+    "fuente": "Saxton, K.E. & Rawls, W.J. (2006) Soil Sci. Soc. Am. J. 70:1569-1578, doi:10.2136/sssaj2005.0117; ecuaciones verificadas en el código USDA-ARS WEPS: https://infosys.ars.usda.gov/svn/code/weps1/branches/weps.src.wepp/src/lib_wepp/saxpar.for",
+    "confianza": "media",
+    "nota": "Derivado: ecuaciones de Saxton & Rawls con arena 0,65, arcilla 0,10, MO 2,5%. Con MO 0,5% (regolito mineral casi sin humus): 0,151 / 0,063 / 0,089."
+  },
+  "agua_util_franco": {
+    "valor": [
+      0.28,
+      0.137,
+      0.143
+    ],
+    "unidad": "m3/m3 [theta_cc, theta_pmp, agua útil]",
+    "fuente": "Saxton & Rawls (2006), mismas ecuaciones (ver agua_util_franco_arenoso)",
+    "confianza": "media",
+    "nota": "Derivado con arena 0,40, arcilla 0,20, MO 2,5%. Con MO 0,5%: 0,258 / 0,125 / 0,133."
+  },
+  "fraccion_agotamiento_p": {
+    "valor": 0.7,
+    "unidad": "adimensional (fracción del agua útil agotable sin estrés, con ETc ~ 5 mm/día)",
+    "fuente": "Allen, Pereira, Raes & Smith (1998) FAO Irrigation and Drainage Paper 56, Tabla 22, fila 'Conifer Trees' (Zr 1,0-1,5 m): https://www.fao.org/4/x0490e/x0490e0e.htm",
+    "confianza": "media",
+    "nota": "Frutales (manzano, cerezo, peral) p = 0,50. Ajuste: p = p_tabla + 0,04·(5 - ETc), limitado a 0,1-0,8. RAW = p·TAW (ec. 83); Ks = (TAW - Dr)/((1 - p)·TAW) si Dr > RAW (ec. 84), Ks = 1 si Dr <= RAW. Sin dato para Nothofagus."
+  },
+  "densidad_raiz_fina_kg_m2": {
+    "valor": [
+      0.78,
+      0.44
+    ],
+    "unidad": "kg m-2 [total, viva], raíces <= 2 mm, perfil completo",
+    "fuente": "Jackson, R.B., Mooney, H.A. & Schulze, E.-D. (1997) PNAS 94:7362-7366, Tabla 1, bosque templado caducifolio: https://pmc.ncbi.nlm.nih.gov/articles/PMC23826",
+    "confianza": "alta",
+    "nota": "Otros biomas [total, viva]: templado conífero 0,82/0,50; boreal 0,60/0,23; tropical siempreverde 0,57/0,33. Templado caducifolio: 63% en los 30 cm superiores (beta = 0,967)."
+  },
+  "volumen_suelo_por_area_copa_m3_m2": {
+    "valor": 0.6,
+    "unidad": "m3 de suelo por m2 de proyección de copa",
+    "fuente": "Lindsey, P. & Bassuk, N. (1991) 'Specifying soil volumes to meet the water needs of mature urban street trees and trees in containers', J. Arboriculture 17(6):141-149, https://auf.isa-arbor.com/content/17/6/141 ; regla de 2 ft3/ft2 ~ 0,6 m3/m2 según guías que la citan (p. ej. https://www.leeds.gov.uk/docs/Guidance%20Urban%20Tree%20Planting.pdf)",
+    "confianza": "media",
+    "nota": "Regla para clima con lluvias periódicas; el método original usa área de copa, IAF, evaporación de bandeja, agua útil y frecuencia de lluvia. Una validación con 12 arces rojos encontró que subestima el volumen ocupado en ~47% en promedio. Otras reglas: Bakker 1983 2,5 ft3/ft2 (~0,76 m3/m2); Helliwell 1986 2,23 ft3/ft2 (~0,68 m3/m2). No se encontró relación por área foliar."
+  },
+  "calor_vaporizacion_mj_kg": {
+    "valor": 2.45,
+    "unidad": "MJ kg-1",
+    "fuente": "Allen, Pereira, Raes & Smith (1998) FAO Irrigation and Drainage Paper 56, cap. 3: https://www.fao.org/4/x0490e/x0490e07.htm",
+    "confianza": "alta",
+    "nota": "Valor a ~20 °C. 1 mm de agua evaporada = 2,45 MJ m-2."
+  },
+  "constante_psicrometrica_kpa_c": {
+    "valor": 0.0674,
+    "unidad": "kPa/°C",
+    "fuente": "Allen, Pereira, Raes & Smith (1998) FAO Irrigation and Drainage Paper 56, cap. 3, ec. 8: https://www.fao.org/4/x0490e/x0490e07.htm",
+    "confianza": "alta",
+    "nota": "γ = 0,665e-3 · P con P = 101,3 kPa (isla a nivel del mar; cálculo propio con la fórmula de FAO-56 ec. 8)."
+  },
+  "agua_util_mm_por_cm": {
+    "valor": 0.9,
+    "unidad": "mm de agua por cm de sustrato [franco arenoso, franco]",
+    "fuente": "Derivado de Saxton & Rawls (2006) (theta_cc - theta_pmp) x 10 mm/cm; FAO-56 ec. 82 TAW = 1000(theta_cc - theta_pmp)·Zr: https://www.fao.org/4/x0490e/x0490e0e.htm",
+    "confianza": "baja",
+    "nota": "Se usa el franco arenoso (0,9 mm/cm): el regolito joven de la condrita es grueso y pobre en arcilla. No hay dato propio de regolito de condrita (A VERIFICAR)."
+  },
+  "densidad_max_raiz_fina_kg_m3": {
+    "valor": 2.6,
+    "unidad": "kg m-3 [media 0-30 cm, superficie]",
+    "fuente": "Derivado de Jackson et al. (1997) PNAS Tabla 1: https://pmc.ncbi.nlm.nih.gov/articles/PMC23826",
+    "confianza": "media",
+    "nota": "Se usa la densidad de la superficie (2,6 kg/m³), porque el sustrato de la isla es todo superficie."
+  },
+  "razon_rn_rs": {
+    "valor": 0.77,
+    "unidad": "adimensional",
+    "fuente": "CALIBRACIÓN PROVISIONAL: Rn ≈ (1 − albedo)·Rs = 0,77·Rs (FAO-56 ec. 38), sin restar la radiación de onda larga neta (ec. 39) porque el motor todavía no tiene Tmax/Tmin ni humedad del aire. Sobrestima la evaporación: el árbol sufre la sequía un poco antes de lo real.",
+    "confianza": "baja"
+  },
+  "kc_suelo_desnudo": {
+    "valor": 1.0,
+    "unidad": "adimensional",
+    "fuente": "CALIBRACIÓN PROVISIONAL: orden de magnitud de la evaporación de suelo desnudo recién mojado según FAO-56 (coeficiente de evaporación ~1); el motor la limita al agua del primer centímetro.",
+    "confianza": "baja"
+  },
+  "intercepcion_dosel_mensual": {
+    "valor": [
+      0.4,
+      0.4,
+      0.4,
+      0.24,
+      0.24,
+      0.24,
+      0.24,
+      0.24,
+      0.24,
+      0.4,
+      0.4,
+      0.4
+    ],
+    "unidad": "fracción de la lluvia, por mes (ene..dic)",
+    "fuente": "Frêne C., Núñez-Ávila M., Castro B., Armesto J.J. (2022) 'Seasonal partitioning of rainfall in second-growth evergreen temperate rainforests in Chiloé Island, southern Chile', Front. For. Glob. Change 4:781663, https://www.frontiersin.org/articles/10.3389/ffgc.2021.781663/full (Tablas 1 y 2: 24 % en otoño-invierno, 40 % en primavera-verano)",
+    "confianza": "alta",
+    "nota": "Estaciones del hemisferio sur: primavera-verano = oct-mar, otoño-invierno = abr-sep. Reemplaza al promedio anual de 33 % (que se conserva como referencia)."
+  },
+  "infiltracion_roca_mm_dia": {
+    "valor": 0.27,
+    "rango": [0.085, 0.85],
+    "unidad": "mm/día",
+    "fuente": "Cálculo propio (docs/investigacion_microclima_agua_viento.json, mecanismo M7): conductividad K = k·ρ·g/μ con la permeabilidad de condrita carbonácea Murchison (CM2) k = 1e-16 a 1e-15 m² (Corrigan et al. 1997, vía Macke et al. 2011) → 0,085 a 0,85 mm/día; valor = media geométrica del rango. Solo drena el agua que excede la capacidad del sustrato (lo demás lo retiene).",
+    "confianza": "baja",
+    "nota": "Roca intacta; las grietas (helada, raíces) drenarían más: sin cifra todavía. Lo que no alcanza a infiltrarse escurre por el borde al vacío."
+  }
+}

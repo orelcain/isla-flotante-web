@@ -1,0 +1,21 @@
+{
+  "nota": "Suelo de cada celda de la isla y erosión (RUSLE). Núcleo oficial: C# (nucleo-cs/.../Islas/SueloIsla.cs). Paso: 1 año.",
+  "erosividad_a": { "valor": 0.0483, "unidad": "coef.", "fuente": "Renard & Freimund (1994), J. Hydrology 157: R = 0,0483·P^1,61 para P ≤ 850 mm/año (R en MJ·mm·ha⁻¹·h⁻¹·año⁻¹)", "confianza": "media" },
+  "erosividad_b": { "valor": 1.61, "unidad": "exp.", "fuente": "Ídem", "confianza": "media" },
+  "erosividad_p_limite": { "valor": 850, "unidad": "mm/año", "fuente": "Ídem; sobre 850 mm: R = 587,8 − 1,219·P + 0,004105·P²", "confianza": "media" },
+  "k_conversion_si": { "valor": 0.1317, "unidad": "factor", "fuente": "Conversión de K de unidades USA a t·ha·h·ha⁻¹·MJ⁻¹·mm⁻¹ (Foster et al. 1981)", "confianza": "alta" },
+  "longitud_ladera_m": { "valor": 40, "unidad": "m", "fuente": "Aproximación: largo de ladera = lado de la celda (el modelo fino usaría acumulación de flujo)", "confianza": "baja" },
+  "c_cobertura": { "valor": 0.06, "unidad": "por % de cobertura", "fuente": "Aproximación C = exp(−0,06·cobertura%): 1 sin cobertura, ~0,05 al 50 %, ~0,0025 al 100 %; dentro de los rangos de Wischmeier & Smith (1978)", "confianza": "baja" },
+  "formacion_suelo": { "valor": 0.5, "unidad": "t/ha/año", "fuente": "Tasas de formación de suelo de ~0,3–1,4 t/ha/año (Verheijen et al. 2009, Earth-Science Reviews 94)", "confianza": "media" },
+  "densidad_aparente": { "valor": 1.3, "unidad": "t/m³", "fuente": "Valor típico de suelo mineral (1 t/ha de suelo ≈ 0,077 mm de espesor)", "confianza": "media" },
+  "relacion_entrega_sedimento": { "valor": 0.2, "unidad": "fracción", "fuente": "Fracción del suelo erosionado que llega al cauce en cuencas pequeñas: ~0,1–0,4 (Walling 1983)", "confianza": "baja" },
+  "turbidez_umbral": { "valor": 100, "unidad": "mg/L de sólidos en suspensión", "fuente": "Sobre ~100 mg/L de sólidos en suspensión el agua se ve turbia y afecta la vida acuática (orden de magnitud de guías de calidad de agua)", "confianza": "media" },
+  "costra_crecimiento": { "valor": 0.25, "unidad": "fracción/año hacia su potencial", "fuente": "Musgos y líquenes colonizan sustrato volcánico desnudo en pocos años en climas húmedos (Belnap & Lange 2001; sucesión primaria en Surtsey). Aproximación", "confianza": "baja" },
+  "costra_potencial_humedo": { "valor": 0.9, "unidad": "fracción", "fuente": "Cobertura máxima de costra donde sobra agua (razón ETP/agua ≤ 0,4). Aproximación", "confianza": "baja" },
+  "costra_potencial_arido": { "valor": 0.25, "unidad": "fracción", "fuente": "Cobertura de costra en zonas áridas (razón ≥ 2): menor pero presente. Aproximación", "confianza": "baja" },
+  "costra_proteccion": { "valor": 0.85, "unidad": "fracción", "fuente": "La costra biológica reduce la erosión de forma marcada (hasta ~90 % en ensayos de campo; Belnap & Lange 2001). Se usa como cobertura equivalente", "confianza": "media" },
+  "potencial_sin_suelo": { "valor": 0.35, "unidad": "fracción", "fuente": "Las raíces colonizan grietas de la roca: en sucesiones primarias (p. ej. Krakatoa tras 1883) hubo bosque en pocas décadas sobre suelo nuevo y delgado. Aproximación", "confianza": "baja" },
+  "raices_hierba_mm": { "valor": 150, "unidad": "mm", "fuente": "Profundidad de suelo que necesita una pradera para su potencial completo (aproximación)", "confianza": "baja" },
+  "raices_matorral_mm": { "valor": 350, "unidad": "mm", "fuente": "Ídem para matorral (aproximación)", "confianza": "baja" },
+  "raices_bosque_mm": { "valor": 600, "unidad": "mm", "fuente": "Ídem para bosque (aproximación)", "confianza": "baja" }
+}

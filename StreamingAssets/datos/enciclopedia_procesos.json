@@ -1,0 +1,412 @@
+{
+  "nota": "Enciclopedia de la isla: procesos (docs/ENCICLOPEDIA.md). Los datos apuntan a los parámetros de la simulación.",
+  "entradas": [
+    {
+      "id": "meteorizacion",
+      "categoria": "proceso",
+      "subcategoria": "suelo",
+      "nombre": "Meteorización",
+      "que_es": "El desgaste lento de la roca: así nace el suelo.",
+      "explicacion": "El agua, el calor y la vida rompen y disuelven la roca. En el mundo se forman en promedio unos 17 mm de suelo cada mil años; más rápido con calor y cuando la roca está al descubierto.",
+      "datos": [
+        {
+          "nombre": "Producción de suelo",
+          "ref": "semilla#produccion_suelo_ref_mm_kanio"
+        },
+        {
+          "nombre": "Escala de profundidad",
+          "ref": "semilla#escala_produccion_suelo_m"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "transforma",
+          "con": "condrita_ci",
+          "simulado": true,
+          "fuente": "Montgomery 2007",
+          "confianza": "media"
+        },
+        {
+          "tipo": "produce",
+          "con": "regolito",
+          "simulado": true,
+          "fuente": "Heimsath et al. 2000",
+          "confianza": "media"
+        }
+      ],
+      "en_el_juego": "La roca de la panza va dando regolito año a año."
+    },
+    {
+      "id": "liberacion_nutrientes",
+      "categoria": "proceso",
+      "subcategoria": "suelo",
+      "nombre": "Liberación de nutrientes",
+      "que_es": "Los elementos de la roca pasan a estar disponibles para la vida.",
+      "explicacion": "Los nutrientes están dentro de los minerales y solo de a poco quedan disueltos y al alcance de raíces y hongos.",
+      "datos": [
+        {
+          "nombre": "Fracción anual",
+          "ref": "semilla#liberacion_anual_regolito"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "libera",
+          "con": "fosforo",
+          "simulado": true,
+          "fuente": "calibración provisional",
+          "confianza": "baja"
+        },
+        {
+          "tipo": "libera",
+          "con": "nitrogeno",
+          "simulado": true,
+          "fuente": "calibración provisional",
+          "confianza": "baja"
+        }
+      ],
+      "en_el_juego": "Las cifras de N y P disponibles del panel.",
+      "incertidumbre": "La tasa es una calibración provisional: las de laboratorio son mucho mayores que las de campo."
+    },
+    {
+      "id": "fotosintesis",
+      "categoria": "proceso",
+      "subcategoria": "vida",
+      "nombre": "Fotosíntesis",
+      "que_es": "Cómo el árbol fabrica azúcar con luz, agua y aire.",
+      "explicacion": "Las hojas absorben luz y con ella unen el carbono del aire en azúcar. Casi la mitad se gasta en respirar; el resto se vuelve madera, hojas y raíces.",
+      "datos": [
+        {
+          "nombre": "Eficiencia en el uso de la luz",
+          "ref": "coigue#eficiencia_luz_g_mj"
+        },
+        {
+          "nombre": "Producción neta / bruta",
+          "ref": "coigue#razon_npp_gpp"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "necesita",
+          "con": "luz_solar",
+          "simulado": true,
+          "fuente": "MOD17 (Running & Zhao 2015)",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "necesita",
+          "con": "agua",
+          "simulado": true,
+          "fuente": "FAO-56 (coeficiente Ks)",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "necesita",
+          "con": "aire",
+          "simulado": false,
+          "fuente": "CO2 atmosférico (NOAA GML); el núcleo no lo limita",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "produce",
+          "con": "carbono",
+          "simulado": true,
+          "fuente": "MOD17; Waring et al. 1998",
+          "confianza": "media"
+        }
+      ],
+      "en_el_juego": "Los puntos dorados de azúcar que bajan por el tronco en el corte."
+    },
+    {
+      "id": "micorriza",
+      "categoria": "proceso",
+      "subcategoria": "vida",
+      "nombre": "Micorriza",
+      "que_es": "La alianza entre el árbol y un hongo: azúcar a cambio de fósforo y agua.",
+      "explicacion": "El hongo envuelve las raíces finas y extiende hilos (hifas) mucho más allá. El árbol le entrega parte de su azúcar y el hongo le trae nutrientes que la raíz no alcanza. En suelo pobre la alianza vale la pena; en suelo muy rico, el hongo puede costar más de lo que da.",
+      "datos": [
+        {
+          "nombre": "Azúcar que recibe el hongo",
+          "ref": "hongo#fraccion_azucar_al_hongo"
+        },
+        {
+          "nombre": "Alcance de las hifas",
+          "ref": "hongo#alcance_hifas_m"
+        },
+        {
+          "nombre": "Aumento de la absorción de P",
+          "ref": "hongo#aumento_absorcion_p"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "intercambia_con",
+          "con": "nothofagus_nitida",
+          "simulado": true,
+          "fuente": "Hobbie 2006; Jones et al. 1998",
+          "confianza": "media"
+        },
+        {
+          "tipo": "acelera",
+          "con": "meteorizacion",
+          "simulado": true,
+          "fuente": "Quirk et al. 2012",
+          "confianza": "media"
+        }
+      ],
+      "en_el_juego": "La red del hongo en el corte (en lápiz) y el botón «¿y sin hongo?».",
+      "incertidumbre": "No hay un hongo micorrícico confirmado en raíces del coigüe de Chiloé: se usa uno de otros Nothofagus."
+    },
+    {
+      "id": "fijacion_nitrogeno",
+      "categoria": "proceso",
+      "subcategoria": "suelo",
+      "nombre": "Fijación de nitrógeno",
+      "que_es": "Cómo algunas bacterias convierten el nitrógeno del aire en alimento para las plantas.",
+      "explicacion": "Bacterias y cianobacterias rompen el nitrógeno del aire y lo dejan disponible. Algunas plantas las alojan en sus raíces o tallos: la nalca vive con una cianobacteria.",
+      "datos": [
+        {
+          "nombre": "N fijado por kg de nalca",
+          "ref": "nalca#fijacion_n_kg_por_kg_anio"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "produce",
+          "con": "nitrogeno",
+          "simulado": true,
+          "fuente": "Troncoso et al. 2013 (G. magellanica: 4,3 kg N/ha/año), sustituto de G. tinctoria",
+          "confianza": "media"
+        },
+        {
+          "tipo": "intercambia_con",
+          "con": "gunnera_tinctoria",
+          "simulado": true,
+          "fuente": "Osborne et al. 1992; Bergman et al. 1992 (Nostoc en las glándulas del tallo de la nalca)",
+          "confianza": "media"
+        }
+      ],
+      "en_el_juego": "Desde el 09-10: si siembras una nalca (necesita ~15 cm de suelo), su Nostoc fija nitrógeno del aire y queda disponible en el suelo bajo la planta."
+    },
+    {
+      "id": "deposito_atmosferico",
+      "categoria": "proceso",
+      "subcategoria": "aire",
+      "nombre": "Depósito desde el aire",
+      "que_es": "El nitrógeno que trae la lluvia y el polvo del aire.",
+      "explicacion": "Aun sin bacterias, al suelo llega algo de nitrógeno con la lluvia y la neblina. En el sur de Chile es poco: 1 a 3,7 kg por hectárea al año.",
+      "datos": [
+        {
+          "nombre": "Depósito",
+          "ref": "coigue#deposito_n_kg_ha_anio"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "produce",
+          "con": "nitrogeno",
+          "simulado": true,
+          "fuente": "Godoy et al. 2003",
+          "confianza": "media"
+        }
+      ],
+      "en_el_juego": "Entra cada día al regolito."
+    },
+    {
+      "id": "descomposicion",
+      "categoria": "proceso",
+      "subcategoria": "suelo",
+      "nombre": "Descomposición",
+      "que_es": "Cómo las hojas y la madera muertas se vuelven humus.",
+      "explicacion": "Hongos, bacterias y pequeños animales comen la materia muerta y devuelven sus nutrientes al suelo. La hoja del coigüe de Chiloé tarda años.",
+      "datos": [
+        {
+          "nombre": "Tasa (k)",
+          "ref": "coigue#descomposicion_k_anio"
+        },
+        {
+          "nombre": "Humificación de la hojarasca",
+          "ref": "semilla#humificacion_hojarasca"
+        },
+        {
+          "nombre": "Humificación de las raíces",
+          "ref": "semilla#humificacion_raices"
+        },
+        {
+          "nombre": "Mineralización del humus",
+          "ref": "semilla#humus_k_anio"
+        },
+        {
+          "nombre": "Q10",
+          "ref": "semilla#q10_descomposicion"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "transforma",
+          "con": "hojarasca",
+          "simulado": true,
+          "fuente": "Pérez et al. 2010 (k=0,47/año); Kätterer et al. 2011 (coef. húmico 0,15); ICBM, Andrén & Kätterer 1997",
+          "confianza": "media"
+        },
+        {
+          "tipo": "produce",
+          "con": "humus",
+          "simulado": true,
+          "fuente": "Pérez et al. 2010 (k=0,47/año); Kätterer et al. 2011 (coef. húmico 0,15); ICBM, Andrén & Kätterer 1997",
+          "confianza": "media"
+        }
+      ],
+      "en_el_juego": "Desde el 09-10: la hojarasca se pudre cada día (más rápido con calor, Q10 = 2); 15 % queda como humus, el resto vuelve al aire, y su nitrógeno y fósforo quedan libres para las raíces."
+    },
+    {
+      "id": "oxidacion",
+      "categoria": "proceso",
+      "subcategoria": "suelo",
+      "nombre": "Oxidación",
+      "que_es": "El hierro que se encuentra con el aire y el agua se vuelve herrumbre.",
+      "explicacion": "El hierro de los minerales y del metal se combina con oxígeno y agua y forma óxidos: el suelo y la roca se tiñen de café rojizo.",
+      "datos": [
+        {
+          "nombre": "Color resultante",
+          "ref": "aspecto_semilla#color_ferrihidrita"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "transforma",
+          "con": "hierro",
+          "simulado": false,
+          "fuente": "informativo (se usa para el color)",
+          "confianza": "media"
+        },
+        {
+          "tipo": "produce",
+          "con": "ferrihidrita",
+          "simulado": false,
+          "fuente": "Schwertmann 1993",
+          "confianza": "media"
+        }
+      ],
+      "en_el_juego": "El color café rojizo, según cuánto hierro se ha liberado."
+    },
+    {
+      "id": "acrecion",
+      "categoria": "proceso",
+      "subcategoria": "espacio",
+      "nombre": "Acreción",
+      "que_es": "Cómo la isla crece juntando lo que le cae.",
+      "explicacion": "La semilla atrae polvo y fragmentos (atajo didáctico). Lo que cae se suma al suelo; cuando un borde junta suficiente, la isla se extiende con su propio material.",
+      "datos": [
+        {
+          "nombre": "Umbral para ampliar",
+          "ref": "semilla#umbral_ampliacion_m"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "consume",
+          "con": "polvo_estelar",
+          "simulado": true,
+          "fuente": "semilla.json (fuentes por parámetro)",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "produce",
+          "con": "regolito",
+          "simulado": true,
+          "fuente": "semilla.json (fuentes por parámetro)",
+          "confianza": "alta"
+        }
+      ],
+      "en_el_juego": "La isla gana celdas en el borde."
+    },
+    {
+      "id": "transpiracion",
+      "categoria": "proceso",
+      "subcategoria": "agua",
+      "nombre": "Transpiración",
+      "que_es": "El agua que el árbol saca del suelo y suelta por las hojas.",
+      "explicacion": "Para fotosintetizar el árbol abre sus poros y pierde agua. Si el suelo se seca, los cierra y se frena (coeficiente de estrés de FAO-56).",
+      "datos": [
+        {
+          "nombre": "Coeficiente del árbol",
+          "ref": "agua#kc_arbol"
+        },
+        {
+          "nombre": "Agotamiento sin estrés",
+          "ref": "agua#fraccion_agotamiento_p"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "consume",
+          "con": "agua",
+          "simulado": true,
+          "fuente": "FAO-56",
+          "confianza": "alta"
+        }
+      ],
+      "en_el_juego": "La ficha dice «agua escasa» cuando el estrés aparece."
+    },
+    {
+      "id": "sucesion",
+      "categoria": "proceso",
+      "subcategoria": "vida",
+      "nombre": "Sucesión primaria",
+      "que_es": "Cómo la vida conquista una roca desnuda: primero musgos y líquenes, después el suelo, después las plantas grandes.",
+      "explicacion": "Sobre roca nueva no hay suelo. Los primeros en llegar son líquenes y musgos, que viven del aire, la lluvia y la luz. El musgo cubre la roca en pocas décadas en un clima húmedo; crece por arriba y muere por abajo, y esa parte muerta se acumula como materia orgánica: el primer suelo. Ese suelo guarda agua y nutrientes, y recién entonces pueden entrar plantas con raíces. En roca andina fría el musgo cubrió dos tercios de la roca en 140 años y formó ~15 cm de capa orgánica en ~110 años.",
+      "datos": [
+        {
+          "nombre": "Ritmo de cobertura del musgo",
+          "ref": "semilla#musgo_tasa_cobertura_anio"
+        },
+        {
+          "nombre": "Engrosamiento del tapiz",
+          "ref": "semilla#musgo_engrosamiento_m_anio"
+        },
+        {
+          "nombre": "Espesor máximo",
+          "ref": "semilla#musgo_espesor_maximo_m"
+        },
+        {
+          "nombre": "Agua que guarda",
+          "ref": "semilla#musgo_agua_mm"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "produce",
+          "con": "humus",
+          "via": "sucesion",
+          "simulado": true,
+          "fuente": "Isotalo & Tuviala 2023; Garibotti et al. 2011",
+          "confianza": "media"
+        },
+        {
+          "tipo": "protege",
+          "con": "agua",
+          "simulado": true,
+          "fuente": "Hembre et al. 2021 (~8 mm guardados por el tapiz)",
+          "confianza": "media"
+        },
+        {
+          "tipo": "necesita",
+          "con": "agua",
+          "simulado": false,
+          "fuente": "Isotalo & Tuviala 2023 (se deseca bajo 95 % de humedad relativa)",
+          "confianza": "media"
+        },
+        {
+          "tipo": "acelera",
+          "con": "nothofagus_nitida",
+          "simulado": true,
+          "fuente": "más suelo → techo de altura mayor (coigue#techo_suelo_delgado)",
+          "confianza": "baja"
+        }
+      ],
+      "en_el_juego": "La superficie se tiñe del verde grisáceo del musgo según su cobertura (gris cuando se seca); el tapiz engrosa el suelo, guarda agua y le sube el techo al árbol.",
+      "incertidumbre": "El ritmo en Chiloé no está medido: se usa Islandia (clima húmedo) y Garibotti (roca andina) es la cota lenta."
+    }
+  ]
+}

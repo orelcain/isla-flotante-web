@@ -1,0 +1,689 @@
+{
+  "nota": "Biblioteca de especies de Chiloé (docs/BIBLIOTECA_ESPECIES.md). Cada valor con fuente y confianza; lo que no tiene fuente va a pendiente. Investigado 08-10-2026; revisión humana de fuentes pendiente antes de que un rasgo entre al motor.",
+  "especies": [
+    {
+      "id": "pudu_puda",
+      "nombre": "Pudú",
+      "cientifico": "Pudu puda (Molina, 1782)",
+      "familia": "Cervidae",
+      "grupo": "mamifero",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "CONAF 2019. Plan Nacional de Conservación del pudú (Pudu puda) en Chile: https://fondos.mma.gob.cl/wp-content/uploads/2024/08/PNC-Pudu-puda-CONAF-2019.pdf: 'El Pudú es abundante en Chiloé'; la localidad tipo de la especie es la provincia de Chiloé (Wilson D.E. & Mittermeier R.A. (eds.) 2011. Handbook of the Mammals of the World, Vol. 2 Hoofed Mammals, Cervidae, p. 438 (tratamiento en Plazi: https://treatment.plazi.org/id/03A087C4-FFDA-FFDB-FA73-FBAEEE34F3BB))",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "dieta": {
+          "valor": "hojas",
+          "fuente": "Wilson D.E. & Mittermeier R.A. (eds.) 2011. Handbook of the Mammals of the World, Vol. 2 Hoofed Mammals, Cervidae, p. 438 (tratamiento en Plazi: https://treatment.plazi.org/id/03A087C4-FFDA-FFDB-FA73-FBAEEE34F3BB): ramoneador que come hojas tiernas, brotes de árboles y arbustos, hierbas y frutos",
+          "confianza": "alta"
+        },
+        "masa_g": {
+          "valor": [
+            9000,
+            10000
+          ],
+          "unidad": "g",
+          "fuente": "Wilson D.E. & Mittermeier R.A. (eds.) 2011. Handbook of the Mammals of the World, Vol. 2 Hoofed Mammals, Cervidae, p. 438 (tratamiento en Plazi: https://treatment.plazi.org/id/03A087C4-FFDA-FFDB-FA73-FBAEEE34F3BB): 9-10 kg, hasta 14 kg. CONAF 2019 da 8-12 kg en adultos",
+          "confianza": "alta"
+        },
+        "habitat": {
+          "valor": "Bosque templado lluvioso primario y secundario con sotobosque denso; se alimenta en los bordes del bosque",
+          "fuente": "Wilson D.E. & Mittermeier R.A. (eds.) 2011. Handbook of the Mammals of the World, Vol. 2 Hoofed Mammals, Cervidae, p. 438 (tratamiento en Plazi: https://treatment.plazi.org/id/03A087C4-FFDA-FFDB-FA73-FBAEEE34F3BB); CONAF 2019. Plan Nacional de Conservación del pudú (Pudu puda) en Chile: https://fondos.mma.gob.cl/wp-content/uploads/2024/08/PNC-Pudu-puda-CONAF-2019.pdf",
+          "confianza": "alta"
+        },
+        "actividad": {
+          "valor": "crepuscular",
+          "fuente": "Wilson D.E. & Mittermeier R.A. (eds.) 2011. Handbook of the Mammals of the World, Vol. 2 Hoofed Mammals, Cervidae, p. 438 (tratamiento en Plazi: https://treatment.plazi.org/id/03A087C4-FFDA-FFDB-FA73-FBAEEE34F3BB): principalmente crepuscular, aunque puede estar activo de día y de noche. CONAF 2019 cita a Zúñiga & Jiménez 2018, que lo registraron sobre todo de noche en Nahuelbuta",
+          "confianza": "alta"
+        },
+        "hiberna": {
+          "valor": false,
+          "fuente": "Inferencia: en Wilson D.E. & Mittermeier R.A. (eds.) 2011. Handbook of the Mammals of the World, Vol. 2 Hoofed Mammals, Cervidae, p. 438 (tratamiento en Plazi: https://treatment.plazi.org/id/03A087C4-FFDA-FFDB-FA73-FBAEEE34F3BB) no se describe letargo invernal; el ciclo de astas y celo sigue en otoño-invierno (celo en marzo-abril, caída de astas en junio-julio)",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "VU (RCE, DS 151/2007 MINSEGPRES); NT (UICN 2016)",
+          "fuente": "CONAF 2019. Plan Nacional de Conservación del pudú (Pudu puda) en Chile: https://fondos.mma.gob.cl/wp-content/uploads/2024/08/PNC-Pudu-puda-CONAF-2019.pdf, sección 2.7; UICN: Silva-Rodríguez E., Pastore H. & Jiménez J. 2016, doi:10.2305/IUCN.UK.2016-1.RLTS.T18848A22164089.en (también Mammal Diversity Database (ASM): https://www.mammaldiversity.org/taxon/1006305)",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "Es el ciervo más pequeño de Chile: necesita sotobosque denso para esconderse, y lo cazan zorros, pumas y perros.",
+      "pendiente": [
+        "ramonea: no se halló un estudio de dieta en Chiloé que nombre especies de plantas consumidas (CONAF 2019 solo nombra plantas asociadas a su refugio: Gevuina avellana, Fuchsia magellanica, Aristotelia chilensis, Amomyrtus luma)",
+        "taxonomía: Fuentes-Hurtado et al. 2011 proponen la subespecie Pudu puda chiloensis para la población de Chiloé (citado en CONAF 2019)"
+      ]
+    },
+    {
+      "id": "lycalopex_fulvipes",
+      "nombre": "Zorro chilote, zorro de Darwin",
+      "cientifico": "Lycalopex fulvipes (Martin, 1837)",
+      "familia": "Canidae",
+      "grupo": "mamifero",
+      "origen": "endemica",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "Wilson D.E. & Mittermeier R.A. (eds.) 2009. Handbook of the Mammals of the World, Vol. 1 Carnivores, Canidae, pp. 429-430 (tratamiento en Plazi: https://treatment.plazi.org/id/03ACCF40-BF25-FFDA-7B97-FAA9FBEFD662): endémico de Chile, con población en la Isla de Chiloé y en Nahuelbuta; Mammal Diversity Database (ASM) (https://www.mammaldiversity.org/taxon/1005955)",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "dieta": {
+          "valor": "omnivoro",
+          "fuente": "MMA / ONG Chiloé Silvestre 2023. Propuesta de Plan de Recuperación, Conservación y Gestión (RECOGE) del zorro chilote o de Darwin (Lycalopex fulvipes): https://consultasciudadanas.mma.gob.cl/storage/consultation/YBOBEjvOGhxEd2VNvPpBgKcV71lrPOHRlwHc5eIa.pdf: en Chiloé, en verano come sobre todo insectos (hasta 74 % de las fecas); en verano y otoño, casi solo frutos de mirtáceas; en invierno, más micromamíferos (citando a Elgueta et al. 2007 y Jiménez 2007)",
+          "confianza": "alta"
+        },
+        "masa_g": {
+          "valor": [
+            2000,
+            4700
+          ],
+          "unidad": "g",
+          "fuente": "MMA / ONG Chiloé Silvestre 2023. Propuesta de Plan de Recuperación, Conservación y Gestión (RECOGE) del zorro chilote o de Darwin (Lycalopex fulvipes): https://consultasciudadanas.mma.gob.cl/storage/consultation/YBOBEjvOGhxEd2VNvPpBgKcV71lrPOHRlwHc5eIa.pdf: en Chiloé el adulto pesa en promedio 3,4 kg, con un rango de 2 a 4,7 kg (Cabello 2015). En Nahuelbuta es más chico (1,8-2,8 kg)",
+          "confianza": "alta"
+        },
+        "habitat": {
+          "valor": "Bosque valdiviano costero, también renovales, bordes con praderas y dunas costeras en Chiloé",
+          "fuente": "Wilson D.E. & Mittermeier R.A. (eds.) 2009. Handbook of the Mammals of the World, Vol. 1 Carnivores, Canidae, pp. 429-430 (tratamiento en Plazi: https://treatment.plazi.org/id/03ACCF40-BF25-FFDA-7B97-FAA9FBEFD662)",
+          "confianza": "alta"
+        },
+        "actividad": {
+          "valor": "diurna",
+          "fuente": "Wilson D.E. & Mittermeier R.A. (eds.) 2009. Handbook of the Mammals of the World, Vol. 1 Carnivores, Canidae, pp. 429-430 (tratamiento en Plazi: https://treatment.plazi.org/id/03ACCF40-BF25-FFDA-7B97-FAA9FBEFD662): en zonas boscosas concentra su actividad de día; en Nahuelbuta busca alimento sobre todo de noche. No está claro si el dato diurno viene de Chiloé",
+          "confianza": "media"
+        },
+        "hiberna": {
+          "valor": false,
+          "fuente": "Inferencia: MMA / ONG Chiloé Silvestre 2023. Propuesta de Plan de Recuperación, Conservación y Gestión (RECOGE) del zorro chilote o de Darwin (Lycalopex fulvipes): https://consultasciudadanas.mma.gob.cl/storage/consultation/YBOBEjvOGhxEd2VNvPpBgKcV71lrPOHRlwHc5eIa.pdf describe una dieta que cambia entre estaciones, incluido el invierno, sin mencionar letargo",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "EN (RCE, DS 151/2007 MINSEGPRES); EN (UICN)",
+          "fuente": "MMA / ONG Chiloé Silvestre 2023. Propuesta de Plan de Recuperación, Conservación y Gestión (RECOGE) del zorro chilote o de Darwin (Lycalopex fulvipes): https://consultasciudadanas.mma.gob.cl/storage/consultation/YBOBEjvOGhxEd2VNvPpBgKcV71lrPOHRlwHc5eIa.pdf, introducción; UICN según Mammal Diversity Database (ASM) (https://www.mammaldiversity.org/taxon/1005955)",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "dispersa",
+          "especie": "amomyrtus_luma",
+          "fuente": "Wilson D.E. & Mittermeier R.A. (eds.) 2009. Handbook of the Mammals of the World, Vol. 1 Carnivores, Canidae, pp. 429-430 (tratamiento en Plazi: https://treatment.plazi.org/id/03ACCF40-BF25-FFDA-7B97-FAA9FBEFD662): un experimento mostró que un alto porcentaje de las semillas de Amomyrtus luma recogidas de sus fecas germinó en terreno",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "dispersa",
+          "especie": "greigia_sphacelata",
+          "fuente": "MMA / ONG Chiloé Silvestre 2023. Propuesta de Plan de Recuperación, Conservación y Gestión (RECOGE) del zorro chilote o de Darwin (Lycalopex fulvipes): https://consultasciudadanas.mma.gob.cl/storage/consultation/YBOBEjvOGhxEd2VNvPpBgKcV71lrPOHRlwHc5eIa.pdf: las semillas de chupón aparecen en abundancia en las fecas en Chiloé (Elgueta et al. 2007; Jiménez 2007, entre 21 y 90 semillas por feca)",
+          "confianza": "media"
+        },
+        {
+          "tipo": "depreda",
+          "especie": "pudu_puda",
+          "fuente": "Rau J. & Jiménez J.E. 2002. Dieta otoño-invernal del zorro de Darwin: una comparación entre dos hábitats de Chiloé, Chile. Gestión Ambiental 8: 57-62 (https://www.jaimeejimenez.com/wp-content/uploads/2020/09/47-RauJimenez-DarwinsFoxDieta-2002-GestionAmbiental.pdf): encontraron pudú en la dieta dentro del Parque Nacional Chiloé. MMA / ONG Chiloé Silvestre 2023. Propuesta de Plan de Recuperación, Conservación y Gestión (RECOGE) del zorro chilote o de Darwin (Lycalopex fulvipes): https://consultasciudadanas.mma.gob.cl/storage/consultation/YBOBEjvOGhxEd2VNvPpBgKcV71lrPOHRlwHc5eIa.pdf describe la caza de pudúes (Cabello 2019)",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "depreda",
+          "especie": "dromiciops_gliroides",
+          "fuente": "Rau J. & Jiménez J.E. 2002. Dieta otoño-invernal del zorro de Darwin: una comparación entre dos hábitats de Chiloé, Chile. Gestión Ambiental 8: 57-62 (https://www.jaimeejimenez.com/wp-content/uploads/2020/09/47-RauJimenez-DarwinsFoxDieta-2002-GestionAmbiental.pdf): el monito del monte fue cerca del 10 % de la dieta dentro del Parque Nacional Chiloé",
+          "confianza": "alta"
+        }
+      ],
+      "aprende": "El zorro chilote come fruta y siembra luma con sus fecas, así que cuidar al depredador también ayuda a que el bosque se regenere.",
+      "pendiente": [
+        "actividad: falta un dato de Chiloé con radio-telemetría o cámaras"
+      ]
+    },
+    {
+      "id": "dromiciops_gliroides",
+      "nombre": "Monito del monte",
+      "cientifico": "Dromiciops gliroides Thomas, 1894",
+      "familia": "Microbiotheriidae",
+      "grupo": "mamifero",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "Ficha RCE de Dromiciops gliroides, 7º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Dromiciops_glirioides_P07.pdf: se distribuye hasta la Isla de Chiloé; localidad tipo 'Huite, N.E. Chiloe Island' (Mammal Diversity Database (ASM), https://www.mammaldiversity.org/taxon/1000139). GBIF, ocurrencias en recuadro Chiloé (lat -43,6 a -41,78; lon -74,5 a -73,2), consultado 08-10-2026 vía api.gbif.org: 26 registros, entre ellos especímenes de museo de Quellón (1923) y Yaldad (1984)",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "dieta": {
+          "valor": "omnivoro",
+          "fuente": "Ficha RCE de Dromiciops gliroides, 7º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Dromiciops_glirioides_P07.pdf: insectos, huevos y frutos carnosos como copihue, arrayán macho, maqui y quintral",
+          "confianza": "alta"
+        },
+        "masa_g": {
+          "valor": [
+            16,
+            31
+          ],
+          "unidad": "g",
+          "fuente": "Ficha RCE de Dromiciops gliroides, 7º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Dromiciops_glirioides_P07.pdf: un individuo promedio pesa entre 16 y 31 g",
+          "confianza": "alta"
+        },
+        "habitat": {
+          "valor": "Bosque templado, arborícola (ramas de 1 a 10 cm de diámetro); también baja al suelo",
+          "fuente": "Ficha RCE de Dromiciops gliroides, 7º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Dromiciops_glirioides_P07.pdf",
+          "confianza": "alta"
+        },
+        "actividad": {
+          "valor": "nocturna",
+          "fuente": "Ficha RCE de Dromiciops gliroides, 7º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Dromiciops_glirioides_P07.pdf: mayor actividad crepuscular y nocturna",
+          "confianza": "alta"
+        },
+        "hiberna": {
+          "valor": true,
+          "fuente": "Ficha RCE de Dromiciops gliroides, 7º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Dromiciops_glirioides_P07.pdf: acumula grasa en la cola para el período de hibernación. Bozinovic F., Ruiz G. & Rosenmann M. 2004. Energetics and torpor of a South American 'living fossil', the microbiotheriid Dromiciops gliroides. J. Comp. Physiol. B (doi:10.1007/s00360-004-0414-8): primer registro de hibernación en un mamífero sudamericano",
+          "confianza": "alta"
+        },
+        "estado_conservacion": {
+          "valor": "NT (RCE, 7º proceso); NT (UICN)",
+          "fuente": "Ficha RCE de Dromiciops gliroides, 7º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Dromiciops_glirioides_P07.pdf; UICN según Mammal Diversity Database (ASM)",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "dispersa",
+          "especie": "tristerix_corymbosus",
+          "fuente": "Amico G. & Aizen M.A. 2000. Mistletoe seed dispersal by a marsupial. Nature (2000). El estudio es de Argentina; Ficha RCE de Dromiciops gliroides, 7º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Dromiciops_glirioides_P07.pdf lo llama el único dispersor mutualista del quintral",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "dispersa",
+          "especie": "aristotelia_chilensis",
+          "fuente": "Ficha RCE de Dromiciops gliroides, 7º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Dromiciops_glirioides_P07.pdf: come frutos de maqui; la ficha dice que 'muy probablemente' también dispersa otras especies. El consumo está documentado; la dispersión efectiva, no",
+          "confianza": "baja"
+        },
+        {
+          "tipo": "dispersa",
+          "especie": "lapageria_rosea",
+          "fuente": "Ficha RCE de Dromiciops gliroides, 7º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Dromiciops_glirioides_P07.pdf: come frutos de copihue. Igual que el maqui: consumo documentado, dispersión inferida",
+          "confianza": "baja"
+        },
+        {
+          "tipo": "dispersa",
+          "especie": "rhaphithamnus_spinosus",
+          "fuente": "Ficha RCE de Dromiciops gliroides, 7º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Dromiciops_glirioides_P07.pdf: come frutos de arrayán macho (escrito 'Raphitamnus spinosus'). Consumo documentado, dispersión inferida",
+          "confianza": "baja"
+        }
+      ],
+      "aprende": "Un marsupial de 30 g es el único que siembra el quintral: si desaparece el monito, también se pierde la planta.",
+      "pendiente": [
+        "taxonomía: D'Elía et al. 2016 dividieron el género en tres especies (D. gliroides, D. bozinovici, D. mondaca) y dejaron la población de Chiloé dentro de D. gliroides en sentido estricto; Suárez-Villota et al. 2018 (J. Mammal. 99(4)) no apoyan la división. En cualquier esquema, Chiloé sigue siendo D. gliroides",
+        "dispersa: falta un estudio de dispersión en Chiloé (el de Amico & Aizen es de Argentina)"
+      ]
+    },
+    {
+      "id": "sephanoides_sephaniodes",
+      "nombre": "Picaflor chico, picaflor rubí",
+      "cientifico": "Sephanoides sephaniodes",
+      "familia": "Trochilidae",
+      "grupo": "ave",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf): fue el ave más abundante (22,6 %) en islas del archipiélago de Chiloé (citado como S. galeritus, nombre antiguo)",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "dieta": {
+          "valor": "nectar",
+          "fuente": "Wilman H. et al. 2014. EltonTraits 1.0: species-level foraging attributes of the world's birds and mammals. Ecology 95: 2027 (archivo BirdFuncDat.txt, https://esapubs.org/archive/ecol/E095/178/); masa tomada de Dunning 2008, CRC Handbook of Avian Body Masses (100 % néctar en la base)",
+          "confianza": "media"
+        },
+        "masa_g": {
+          "valor": 5.17,
+          "unidad": "g",
+          "fuente": "Wilman H. et al. 2014. EltonTraits 1.0: species-level foraging attributes of the world's birds and mammals. Ecology 95: 2027 (archivo BirdFuncDat.txt, https://esapubs.org/archive/ecol/E095/178/); masa tomada de Dunning 2008, CRC Handbook of Avian Body Masses",
+          "confianza": "alta"
+        },
+        "habitat": {
+          "valor": "Matorral y bordes de bosque; más abundante en matorral en Chiloé",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf)",
+          "confianza": "alta"
+        },
+        "actividad": {
+          "valor": "diurna",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf): en Chiloé mostró actividad diurna bimodal",
+          "confianza": "alta"
+        },
+        "hiberna": {
+          "valor": false,
+          "fuente": "Inferencia: no se conoce hibernación en estas familias de aves; no se halló una fuente que lo afirme para la especie",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "BirdLife International 2016. Sephanoides sephaniodes. Lista Roja UICN, doi:10.2305/IUCN.UK.2016-3.RLTS.T22687857A93172170.en",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "poliniza",
+          "especie": "embothrium_coccineum",
+          "fuente": "Smith-Ramírez C. & Armesto J.J. 1998. Nectarivoría y polinización por aves en Embothrium coccineum (Proteaceae) en el bosque templado del sur de Chile. Revista Chilena de Historia Natural 71: 51-63 (https://rchn.biologiachile.cl/pdfs/1998/1/Smith-Ramirez_&_Armesto_1998.pdf). Estudio en la Isla de Chiloé, noviembre de 1992 y 1993: hizo el 12 % de las visitas y se comprobó que transporta polen de E. coccineum",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "poliniza",
+          "especie": "fuchsia_magellanica",
+          "fuente": "Valdivia C.E., Orellana J.I. & Murúa M. 2025. Nectar robbing by the invasive bumblebee Bombus terrestris (Apidae) changes the behavior of native flower visitors of Fuchsia magellanica Lam. (Onagraceae) but not seed set. PeerJ 13: e20253 (doi:10.7717/peerj.20253). 24 poblaciones en la Región de Los Lagos: el chilco es polinizado principalmente por S. sephaniodes y Bombus dahlbomii",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "poliniza",
+          "especie": "tristerix_corymbosus",
+          "fuente": "Valdivia C.E., Orellana J.I. & Murúa M. 2025. Nectar robbing by the invasive bumblebee Bombus terrestris (Apidae) changes the behavior of native flower visitors of Fuchsia magellanica Lam. (Onagraceae) but not seed set. PeerJ 13: e20253 (doi:10.7717/peerj.20253). 24 poblaciones en la Región de Los Lagos, en la introducción: planta de corola larga polinizada principalmente por S. sephaniodes (cita a Aizen, Vázquez & Smith-Ramírez 2002)",
+          "confianza": "media"
+        },
+        {
+          "tipo": "poliniza",
+          "especie": "lapageria_rosea",
+          "fuente": "Valdivia C.E., Orellana J.I. & Murúa M. 2025. Nectar robbing by the invasive bumblebee Bombus terrestris (Apidae) changes the behavior of native flower visitors of Fuchsia magellanica Lam. (Onagraceae) but not seed set. PeerJ 13: e20253 (doi:10.7717/peerj.20253). 24 poblaciones en la Región de Los Lagos, en la introducción: igual que el quintral (cita a Aizen et al. 2002)",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "Muchas flores rojas y tubulares del bosque dependen casi de un solo polinizador: el picaflor.",
+      "pendiente": [
+        "migración parcial o movimientos invernales en Chiloé: sin fuente"
+      ]
+    },
+    {
+      "id": "elaenia_albiceps",
+      "nombre": "Fío-fío",
+      "cientifico": "Elaenia albiceps (d'Orbigny & Lafresnaye, 1837)",
+      "familia": "Tyrannidae",
+      "grupo": "ave",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf): 13,7 % de las aves en islas del archipiélago de Chiloé",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "dieta": {
+          "valor": "omnivoro",
+          "fuente": "Wilman H. et al. 2014. EltonTraits 1.0: species-level foraging attributes of the world's birds and mammals. Ecology 95: 2027 (archivo BirdFuncDat.txt, https://esapubs.org/archive/ecol/E095/178/); masa tomada de Dunning 2008, CRC Handbook of Avian Body Masses (50 % invertebrados, 50 % frutos). Smith-Ramírez C. & Armesto J.J. 1998. Nectarivoría y polinización por aves en Embothrium coccineum (Proteaceae) en el bosque templado del sur de Chile. Revista Chilena de Historia Natural 71: 51-63 (https://rchn.biologiachile.cl/pdfs/1998/1/Smith-Ramirez_&_Armesto_1998.pdf). Estudio en la Isla de Chiloé, noviembre de 1992 y 1993 muestra que en Chiloé también es el principal consumidor de néctar del notro",
+          "confianza": "alta"
+        },
+        "masa_g": {
+          "valor": 15.5,
+          "unidad": "g",
+          "fuente": "Wilman H. et al. 2014. EltonTraits 1.0: species-level foraging attributes of the world's birds and mammals. Ecology 95: 2027 (archivo BirdFuncDat.txt, https://esapubs.org/archive/ecol/E095/178/); masa tomada de Dunning 2008, CRC Handbook of Avian Body Masses",
+          "confianza": "alta"
+        },
+        "habitat": {
+          "valor": "Bosque: claros, bordes e interior en números parecidos; usa el ramaje externo",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf)",
+          "confianza": "alta"
+        },
+        "actividad": {
+          "valor": "diurna",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf): actividad alta alrededor del mediodía",
+          "confianza": "alta"
+        },
+        "hiberna": {
+          "valor": false,
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf): es migratoria y en invierno vuela a los trópicos (citando a Araya & Millie 1986), así que no hiberna: se va",
+          "confianza": "alta"
+        },
+        "migratoria": {
+          "valor": true,
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf) (cita a Araya & Millie 1986)",
+          "confianza": "alta"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "BirdLife International 2024. Elaenia albiceps. Lista Roja UICN, doi:10.2305/IUCN.UK.2024-2.RLTS.T22699271A264295628.en",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "poliniza",
+          "especie": "embothrium_coccineum",
+          "fuente": "Smith-Ramírez C. & Armesto J.J. 1998. Nectarivoría y polinización por aves en Embothrium coccineum (Proteaceae) en el bosque templado del sur de Chile. Revista Chilena de Historia Natural 71: 51-63 (https://rchn.biologiachile.cl/pdfs/1998/1/Smith-Ramirez_&_Armesto_1998.pdf). Estudio en la Isla de Chiloé, noviembre de 1992 y 1993: fue el principal visitante (77 % de las visitas de aves) y transporta tres veces más polen que el picaflor",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "dispersa",
+          "especie": "ovidia_pillo_pillo",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "Un ave que se va al trópico cada invierno y vuelve en primavera justo cuando florece el notro, al que poliniza más que el picaflor.",
+      "pendiente": [
+        "dispersa: Rozzi et al. 1996 y Armesto et al. 1987 dicen que come gran cantidad y variedad de frutos en Chiloé, pero la Tabla 8 solo nombra Ovidia pillo-pillo; faltan otras especies con fuente (no se halló fuente para ugni_molinae ni luma_apiculata)"
+      ]
+    },
+    {
+      "id": "turdus_falcklandii",
+      "nombre": "Zorzal",
+      "cientifico": "Turdus falcklandii Quoy & Gaimard, 1824",
+      "familia": "Turdidae",
+      "grupo": "ave",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf): 10,9 % de las aves en islas del archipiélago de Chiloé",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "dieta": {
+          "valor": "omnivoro",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes: semillas e invertebrados en sus estómagos. Wilman H. et al. 2014. EltonTraits 1.0: species-level foraging attributes of the world's birds and mammals. Ecology 95: 2027 (archivo BirdFuncDat.txt, https://esapubs.org/archive/ecol/E095/178/); masa tomada de Dunning 2008, CRC Handbook of Avian Body Masses: 50 % frutos, 50 % invertebrados",
+          "confianza": "alta"
+        },
+        "masa_g": {
+          "valor": 93.89,
+          "unidad": "g",
+          "fuente": "Wilman H. et al. 2014. EltonTraits 1.0: species-level foraging attributes of the world's birds and mammals. Ecology 95: 2027 (archivo BirdFuncDat.txt, https://esapubs.org/archive/ecol/E095/178/); masa tomada de Dunning 2008, CRC Handbook of Avian Body Masses",
+          "confianza": "alta"
+        },
+        "habitat": {
+          "valor": "Dosel del bosque (más de 15 m), copa y ramas externas",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf)",
+          "confianza": "alta"
+        },
+        "actividad": {
+          "valor": "diurna",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf)",
+          "confianza": "alta"
+        },
+        "hiberna": {
+          "valor": false,
+          "fuente": "Inferencia: no se conoce hibernación en estas familias de aves; no se halló una fuente que lo afirme para la especie",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "BirdLife International 2024. Turdus falcklandii. Lista Roja UICN, doi:10.2305/IUCN.UK.2024-2.RLTS.T22708885A263937646.en",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "dispersa",
+          "especie": "drimys_winteri",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes",
+          "confianza": "media"
+        },
+        {
+          "tipo": "dispersa",
+          "especie": "ovidia_pillo_pillo",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes",
+          "confianza": "media"
+        },
+        {
+          "tipo": "dispersa",
+          "especie": "aextoxicon_punctatum",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes. Los autores destacan que consume semillas de olivillo, el árbol dominante del estrato emergente",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "El zorzal lleva semillas de canelo y olivillo de un parche de bosque a otro, incluso entre islas.",
+      "pendiente": []
+    },
+    {
+      "id": "scelorchilus_rubecula",
+      "nombre": "Chucao",
+      "cientifico": "Scelorchilus rubecula (Kittlitz, 1830)",
+      "familia": "Rhinocryptidae",
+      "grupo": "ave",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf): 6 % de las aves en islas del archipiélago de Chiloé",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "dieta": {
+          "valor": "omnivoro",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes: muy omnívoro; en 17 estómagos había muchos invertebrados y semillas de 5 plantas",
+          "confianza": "alta"
+        },
+        "masa_g": {
+          "valor": 56.69,
+          "unidad": "g",
+          "fuente": "Wilman H. et al. 2014. EltonTraits 1.0: species-level foraging attributes of the world's birds and mammals. Ecology 95: 2027 (archivo BirdFuncDat.txt, https://esapubs.org/archive/ecol/E095/178/); masa tomada de Dunning 2008, CRC Handbook of Avian Body Masses",
+          "confianza": "alta"
+        },
+        "habitat": {
+          "valor": "Suelo del bosque, bajo el sotobosque",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf): se lo vio casi siempre en el suelo",
+          "confianza": "alta"
+        },
+        "actividad": {
+          "valor": "diurna",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf): actividad diurna bimodal",
+          "confianza": "alta"
+        },
+        "hiberna": {
+          "valor": false,
+          "fuente": "Inferencia: no se conoce hibernación en estas familias de aves; no se halló una fuente que lo afirme para la especie",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "BirdLife International 2018. Scelorchilus rubecula. Lista Roja UICN, doi:10.2305/IUCN.UK.2018-2.RLTS.T22703437A130329453.en",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "dispersa",
+          "especie": "drimys_winteri",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes",
+          "confianza": "media"
+        },
+        {
+          "tipo": "dispersa",
+          "especie": "amomyrtus_luma",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes",
+          "confianza": "media"
+        },
+        {
+          "tipo": "dispersa",
+          "especie": "gaultheria_mucronata",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes (citada como Pernettya mucronata)",
+          "confianza": "media"
+        },
+        {
+          "tipo": "dispersa",
+          "especie": "myrteola_nummularia",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes",
+          "confianza": "media"
+        },
+        {
+          "tipo": "dispersa",
+          "especie": "ovidia_pillo_pillo",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "Un ave que casi no vuela y vive en el suelo del bosque, donde come frutos caídos e insectos de la hojarasca.",
+      "pendiente": [
+        "Sensibilidad a la fragmentación: Sieving, Willson & De Santo 1996 (Auk 113: 944-949) estudiaron barreras al movimiento de aves de sotobosque en bosque fragmentado; no se pudo abrir el texto para confirmar especies y resultados",
+        "dispersa: falta comprobar si las semillas salen viables (podría ser depredación de semillas)"
+      ]
+    },
+    {
+      "id": "pteroptochos_tarnii",
+      "nombre": "Hued-hued del sur",
+      "cientifico": "Pteroptochos tarnii (King, 1831)",
+      "familia": "Rhinocryptidae",
+      "grupo": "ave",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf): registrado en islas del archipiélago de Chiloé, más abundante en el interior del bosque",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "dieta": {
+          "valor": "omnivoro",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes: en sus estómagos había invertebrados (miriápodos, escarabajos y otros) y semillas",
+          "confianza": "alta"
+        },
+        "masa_g": {
+          "valor": 147,
+          "unidad": "g",
+          "fuente": "Wilman H. et al. 2014. EltonTraits 1.0: species-level foraging attributes of the world's birds and mammals. Ecology 95: 2027 (archivo BirdFuncDat.txt, https://esapubs.org/archive/ecol/E095/178/); masa tomada de Dunning 2008, CRC Handbook of Avian Body Masses",
+          "confianza": "alta"
+        },
+        "habitat": {
+          "valor": "Interior del bosque, nivel del suelo",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf): una de 3 especies con mayor abundancia en el interior del bosque",
+          "confianza": "alta"
+        },
+        "actividad": {
+          "valor": "diurna",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf): censos diurnos. La especie no figura en la tabla de actividad horaria, así que es un dato del conjunto de aves",
+          "confianza": "media"
+        },
+        "hiberna": {
+          "valor": false,
+          "fuente": "Inferencia: no se conoce hibernación en estas familias de aves; no se halló una fuente que lo afirme para la especie",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "BirdLife International 2018. Pteroptochos tarnii. Lista Roja UICN, doi:10.2305/IUCN.UK.2018-2.RLTS.T22703426A130329211.en",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "dispersa",
+          "especie": "drimys_winteri",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes (solo 2 estómagos)",
+          "confianza": "media"
+        },
+        {
+          "tipo": "dispersa",
+          "especie": "amomyrtus_luma",
+          "fuente": "Rozzi R., Armesto J.J., Correa A., Torres-Mura J.C. & Sallaberry M. 1996. Avifauna de bosques primarios templados en islas deshabitadas del archipiélago de Chiloé, Chile. Revista Chilena de Historia Natural 69: 125-139 (https://rchn.biologiachile.cl/pdfs/1996/1/Rossi_et_al_1996.pdf), Tabla 8 (semillas en contenidos estomacales en Chiloé). Que la semilla esté en el estómago no prueba que germine; los autores proponen que estas aves actuarían como dispersantes (solo 2 estómagos)",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "Vive en el interior del bosque antiguo: si el bosque desaparece, el hued-hued deja de oírse.",
+      "pendiente": [
+        "Dependencia de bosque interior frente a fragmentación: falta una fuente específica de Chiloé abierta y leída"
+      ]
+    },
+    {
+      "id": "bombus_dahlbomii",
+      "nombre": "Abejorro nativo, moscardón",
+      "cientifico": "Bombus dahlbomii Guérin-Méneville, 1835",
+      "familia": "Apidae",
+      "grupo": "insecto",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "Ficha RCE de Bombus dahlbomii, 12º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Bombus_dahlbomii_12RCE_FIN.pdf: la distribución incluye la Isla de Chiloé (foto de reina en Cucao); Smith-Ramírez C., Martínez P., Núñez M., González C. & Armesto J.J. 2005. Diversity, flower visitation frequency and generalism of pollinators in temperate rain forests of Chiloé Island, Chile. Botanical Journal of the Linnean Society 147: 399-416 (doi:10.1111/j.1095-8339.2005.00388.x): B. dahlbomii hizo el 22,5 % de las visitas de himenópteros en el norte de Chiloé",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "dieta": {
+          "valor": "nectar",
+          "fuente": "Ficha RCE de Bombus dahlbomii, 12º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Bombus_dahlbomii_12RCE_FIN.pdf: se alimenta de polen y néctar",
+          "confianza": "alta"
+        },
+        "habitat": {
+          "valor": "Bosque nativo bien conservado y praderas no aradas; necesita sitios de nidificación, hibernación y forrajeo",
+          "fuente": "Ficha RCE de Bombus dahlbomii, 12º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Bombus_dahlbomii_12RCE_FIN.pdf",
+          "confianza": "alta"
+        },
+        "hiberna": {
+          "valor": true,
+          "fuente": "Ficha RCE de Bombus dahlbomii, 12º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Bombus_dahlbomii_12RCE_FIN.pdf: especie univoltina con reinas hibernantes",
+          "confianza": "alta"
+        },
+        "estado_conservacion": {
+          "valor": "EN (RCE, 12º proceso, EN A2ace); EN (UICN 2016)",
+          "fuente": "Ficha RCE de Bombus dahlbomii, 12º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Bombus_dahlbomii_12RCE_FIN.pdf; UICN: Morales C. et al. 2016. Bombus dahlbomii, doi:10.2305/IUCN.UK.2016-3.RLTS.T21215142A100240441.en",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "poliniza",
+          "especie": "fuchsia_magellanica",
+          "fuente": "Valdivia C.E., Orellana J.I. & Murúa M. 2025. Nectar robbing by the invasive bumblebee Bombus terrestris (Apidae) changes the behavior of native flower visitors of Fuchsia magellanica Lam. (Onagraceae) but not seed set. PeerJ 13: e20253 (doi:10.7717/peerj.20253). 24 poblaciones en la Región de Los Lagos. En Valdivia, Lago Ranco y Chiloé, B. dahlbomii era 9-18 veces más abundante en el chilco donde no había B. terrestris (Combs 2011, citado en Ficha RCE de Bombus dahlbomii, 12º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Bombus_dahlbomii_12RCE_FIN.pdf)",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "poliniza",
+          "especie": "eucryphia_cordifolia",
+          "fuente": "Smith-Ramírez C., Ramos-Jiliberto R., Valdovinos F.S., Martínez P., Castillo J.A. & Armesto J.J. 2014. Decadal trends in the pollinator assemblage of Eucryphia cordifolia in Chilean rainforests. Oecologia 176: 157-169: en Senda Darwin, Chiloé, B. dahlbomii pasó del 28,8 % de las visitas al ulmo (2001-2008) al 6,8 % (2009-2013) después de llegar B. terrestris (cifras citadas en Ficha RCE de Bombus dahlbomii, 12º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Bombus_dahlbomii_12RCE_FIN.pdf)",
+          "confianza": "alta"
+        }
+      ],
+      "aprende": "El abejorro nativo más grande del mundo cae en picada cuando llega un abejorro importado: una especie exótica puede borrar a una nativa en pocos años.",
+      "pendiente": [
+        "masa_g: sin fuente. Solo hay tamaño corporal: reinas 26-33 mm, obreras 16-23 mm, machos 17-22 mm (Ficha RCE de Bombus dahlbomii, 12º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Bombus_dahlbomii_12RCE_FIN.pdf)",
+        "actividad: sin fuente específica (se espera diurna, no se verificó)"
+      ]
+    },
+    {
+      "id": "bombus_terrestris",
+      "nombre": "Abejorro europeo",
+      "cientifico": "Bombus terrestris (Linnaeus, 1758)",
+      "familia": "Apidae",
+      "grupo": "insecto",
+      "origen": "invasora",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "Ficha RCE de Bombus dahlbomii, 12º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Bombus_dahlbomii_12RCE_FIN.pdf: reportes recientes lo muestran en Chiloé desde Ancud hasta el Parque Tantauco; Smith-Ramírez C., Ramos-Jiliberto R., Valdovinos F.S., Martínez P., Castillo J.A. & Armesto J.J. 2014. Decadal trends in the pollinator assemblage of Eucryphia cordifolia in Chilean rainforests. Oecologia 176: 157-169 lo detectó en Senda Darwin desde 2008. GBIF, ocurrencias en recuadro Chiloé (lat -43,6 a -41,78; lon -74,5 a -73,2), consultado 08-10-2026 vía api.gbif.org: 87 registros",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "dieta": {
+          "valor": "nectar",
+          "fuente": "Valdivia C.E., Orellana J.I. & Murúa M. 2025. Nectar robbing by the invasive bumblebee Bombus terrestris (Apidae) changes the behavior of native flower visitors of Fuchsia magellanica Lam. (Onagraceae) but not seed set. PeerJ 13: e20253 (doi:10.7717/peerj.20253). 24 poblaciones en la Región de Los Lagos: perfora flores de chilco para robar néctar",
+          "confianza": "media"
+        },
+        "habitat": {
+          "valor": "Generalista; asilvestrado en un amplio rango de distribución en Chile",
+          "fuente": "Ficha RCE de Bombus dahlbomii, 12º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Bombus_dahlbomii_12RCE_FIN.pdf (citando a Montalva et al. 2011)",
+          "confianza": "media"
+        },
+        "hiberna": {
+          "valor": true,
+          "fuente": "Dato del género: Ficha RCE de Bombus dahlbomii, 12º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Bombus_dahlbomii_12RCE_FIN.pdf describe reinas hibernantes en Bombus y cita a Beekman et al. 1998 sobre la hibernación de reinas de B. terrestris",
+          "confianza": "media"
+        },
+        "invasividad": {
+          "valor": "alta",
+          "fuente": "Ficha RCE de Bombus dahlbomii, 12º proceso de clasificación, MMA: https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Bombus_dahlbomii_12RCE_FIN.pdf: introducido en Chile en 1997 para polinizar cultivos y hoy asilvestrado; Morales C.L., Arbetman M.P., Cameron S.A. & Aizen M.A. 2013. Rapid ecological replacement of a native bumble bee by invasive species. Frontiers in Ecology and the Environment (doi:10.1890/120321). Estudio en la Patagonia argentina: en 5 años fue el Bombus más abundante y extendido de la Patagonia",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "roba_nectar",
+          "especie": "fuchsia_magellanica",
+          "fuente": "Valdivia C.E., Orellana J.I. & Murúa M. 2025. Nectar robbing by the invasive bumblebee Bombus terrestris (Apidae) changes the behavior of native flower visitors of Fuchsia magellanica Lam. (Onagraceae) but not seed set. PeerJ 13: e20253 (doi:10.7717/peerj.20253). 24 poblaciones en la Región de Los Lagos: perfora la flor y saca el néctar sin polinizar; cambia la conducta de los visitantes nativos, pero no redujo la producción de semillas",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "compite_con",
+          "especie": "bombus_dahlbomii",
+          "fuente": "Morales C.L., Arbetman M.P., Cameron S.A. & Aizen M.A. 2013. Rapid ecological replacement of a native bumble bee by invasive species. Frontiers in Ecology and the Environment (doi:10.1890/120321). Estudio en la Patagonia argentina: su llegada coincidió con el retroceso de B. dahlbomii; la causa no está clara (competencia o patógenos introducidos como Apicystis bombi, Arbetman et al. 2013). En Chiloé, Smith-Ramírez C., Ramos-Jiliberto R., Valdovinos F.S., Martínez P., Castillo J.A. & Armesto J.J. 2014. Decadal trends in the pollinator assemblage of Eucryphia cordifolia in Chilean rainforests. Oecologia 176: 157-169 registró la misma sustitución en el ulmo",
+          "confianza": "alta"
+        }
+      ],
+      "aprende": "Un abejorro traído para los invernaderos se escapó, roba néctar del chilco y desplaza al abejorro nativo.",
+      "pendiente": [
+        "masa_g: sin fuente",
+        "actividad: sin fuente",
+        "estado_conservacion: en Chile es invasora y no se evalúa; la UICN la da como LC en su evaluación europea 2025 (Ghisbain et al.), pero no se pudo confirmar el DOI completo",
+        "Los tipos de relación 'roba_nectar' y 'compite_con' no están en la lista del formato (poliniza, dispersa, ramonea, depreda, hospeda); se proponen porque son la lección central de esta especie"
+      ]
+    }
+  ]
+}

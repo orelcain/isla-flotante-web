@@ -1,0 +1,85 @@
+{
+  "nota": "cambio = efecto de UNA dosis en un suelo franco de referencia (20 % arcilla, 3 % MO). escala 'tampon': el cambio se divide por la capacidad tampón relativa de la parcela. dias: el efecto se reparte en esos días (las reacciones del suelo no son instantáneas). Una enmienda nueva aquí entra sola en el asesor.",
+  "enmiendas": [
+    {
+      "id": "riego", "nombre": "Riego", "dosis": 10, "unidad": "L/m²",
+      "efectos": [ { "cantidad": "humedad", "cambio": 3.33, "dias": 1 } ],
+      "nota": "10 L/m² = 10 mm de lámina. En 30 cm de suelo sube la humedad ~3,3 puntos.",
+      "fuente": "Conversión directa: lámina (mm) / profundidad (mm)", "confianza": "alta"
+    },
+    {
+      "id": "ceniza_dura", "nombre": "Ceniza de madera dura", "dosis": 500, "unidad": "g/m²",
+      "efectos": [
+        { "cantidad": "ph", "cambio": 0.4, "dias": 10, "escala": "tampon" },
+        { "cantidad": "k_interc", "cambio": 50, "dias": 5 }
+      ],
+      "nota": "Encala y aporta potasio y calcio. NO aporta nitrógeno: se pierde como gas al quemar. Rinde más que la de coníferas.",
+      "fuente": "Guías de extensión agrícola: poder encalante ~25–60 % del carbonato de calcio; K2O 3–7 %", "confianza": "baja"
+    },
+    {
+      "id": "ceniza_conifera", "nombre": "Ceniza de conífera", "dosis": 500, "unidad": "g/m²",
+      "efectos": [
+        { "cantidad": "ph", "cambio": 0.3, "dias": 10, "escala": "tampon" },
+        { "cantidad": "k_interc", "cambio": 25, "dias": 5 }
+      ],
+      "nota": "Menos potasio que la de madera dura. Tampoco aporta nitrógeno.",
+      "fuente": "Guías de extensión agrícola (contenido mineral menor en coníferas)", "confianza": "baja"
+    },
+    {
+      "id": "cal", "nombre": "Cal agrícola (CaCO₃)", "dosis": 500, "unidad": "g/m²",
+      "efectos": [ { "cantidad": "ph", "cambio": 1.0, "dias": 90, "escala": "tampon" } ],
+      "nota": "Sube el pH lentamente, en meses. En arcillas hace falta más dosis para el mismo efecto.",
+      "fuente": "Orden de magnitud de requerimiento de cal en suelo franco (~5 t/ha por unidad de pH)", "confianza": "baja"
+    },
+    {
+      "id": "azufre", "nombre": "Azufre elemental", "dosis": 60, "unidad": "g/m²",
+      "efectos": [ { "cantidad": "ph", "cambio": -1.0, "dias": 45, "escala": "tampon" } ],
+      "nota": "Bacterias del suelo lo oxidan a ácido sulfúrico: acidifica en semanas, más lento si hace frío.",
+      "fuente": "Guías de extensión para bajar el pH (arándanos): ~50–60 g/m² por unidad en suelo franco", "confianza": "baja"
+    },
+    {
+      "id": "compost", "nombre": "Compost maduro", "dosis": 2000, "unidad": "g/m²",
+      "efectos": [
+        { "cantidad": "materia_organica", "cambio": 0.09, "dias": 1 },
+        { "cantidad": "n_nitrato", "cambio": 4, "dias": 60 },
+        { "cantidad": "p_olsen", "cambio": 1, "dias": 60 },
+        { "cantidad": "k_interc", "cambio": 10, "dias": 20 }
+      ],
+      "nota": "Libera nutrientes despacio. Su gran aporte es la materia orgánica: el suelo retiene más agua y amortigua el pH.",
+      "fuente": "Compost típico: ~50 % humedad, ~35 % MO en seco, ~1,5 % N total con ~10 % disponible el primer año", "confianza": "media"
+    },
+    {
+      "id": "urea", "nombre": "Urea (46 % N)", "dosis": 20, "unidad": "g/m²",
+      "efectos": [
+        { "cantidad": "n_nitrato", "cambio": 24, "dias": 7 },
+        { "cantidad": "ph", "cambio": -0.05, "dias": 14, "escala": "tampon" }
+      ],
+      "nota": "Nitrógeno rápido. Acidifica un poco el suelo con el tiempo y el agua en exceso lo lava.",
+      "fuente": "20 g × 46 % N = 9,2 g N en 390 kg de suelo ≈ 24 mg/kg", "confianza": "media"
+    },
+    {
+      "id": "harina_hueso", "nombre": "Harina de hueso", "dosis": 50, "unidad": "g/m²",
+      "efectos": [ { "cantidad": "p_olsen", "cambio": 5, "dias": 60 } ],
+      "nota": "Fósforo de liberación lenta. Se disuelve mejor en suelos ácidos.",
+      "fuente": "~15 % P2O5 (≈ 6,5 % P); solo una parte queda disponible a corto plazo", "confianza": "baja"
+    },
+    {
+      "id": "arena_gruesa", "nombre": "Arena gruesa", "dosis": 20000, "unidad": "g/m²",
+      "efectos": [
+        { "cantidad": "arena", "cambio": 3, "dias": 1 },
+        { "cantidad": "arcilla", "cambio": -1, "dias": 1 }
+      ],
+      "nota": "Mejora el drenaje de suelos pesados. Hace falta mucha: 20 kg/m² cambian la textura apenas unos puntos.",
+      "fuente": "Mezcla de masas: 20 kg en 390 kg de suelo", "confianza": "media"
+    },
+    {
+      "id": "bentonita", "nombre": "Arcilla bentonita", "dosis": 5000, "unidad": "g/m²",
+      "efectos": [
+        { "cantidad": "arcilla", "cambio": 1, "dias": 1 },
+        { "cantidad": "arena", "cambio": -0.5, "dias": 1 }
+      ],
+      "nota": "Ayuda a que un suelo arenoso retenga agua y nutrientes.",
+      "fuente": "Mezcla de masas: 5 kg (~80 % arcilla) en 390 kg de suelo", "confianza": "media"
+    }
+  ]
+}

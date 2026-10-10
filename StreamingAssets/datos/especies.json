@@ -1,0 +1,65 @@
+{
+  "nota": "requisitos: [mínimo absoluto, óptimo desde, óptimo hasta, máximo absoluto]. Una magnitud nueva agregada aquí entra sola en la ley del mínimo. pH, temperatura, temperatura letal, ciclo y lluvia: VERIFICADOS contra FAO Ecocrop (dataset del paquete R Recocrop, CRAN, consultado 2026-10-08). Extracción de N-P-K: manuales agronómicos (confianza media).",
+  "especies": [
+    {
+      "id": "tomate", "nombre": "Tomate", "cientifico": "Solanum lycopersicum",
+      "requisitos": { "ph": [5.0, 5.5, 6.8, 7.5], "temperatura": [7, 20, 27, 35] },
+      "ecocrop": { "nombre": "Tomato (Lycopersicon esculentum, sinónimo)", "temp_letal": 0, "ciclo_dias": [70, 150], "lluvia_anual_mm": [400, 600, 1300, 1800], "fertilidad": "alta", "drenaje": "bueno", "salinidad": "baja" },
+      "agua_p": 0.40,
+      "extraccion_kgha": { "n": 150, "p": 25, "k": 200 },
+      "exigencia": 1.2, "dias_ciclo": 80, "fija_n": false,
+      "forma": "mata", "color": "#c8432b",
+      "fuente": "FAO Ecocrop (pH, temperatura, ciclo). agua_p: FAO-56, tabla 22. Extracción N-P-K: manuales hortícolas",
+      "confianza": "alta", "confianza_extraccion": "media",
+      "aprende": "Exigente en potasio y en fertilidad (Ecocrop la marca «alta»). Muere con helada (0 °C)."
+    },
+    {
+      "id": "lechuga", "nombre": "Lechuga", "cientifico": "Lactuca sativa",
+      "requisitos": { "ph": [4.2, 6.0, 7.0, 7.5], "temperatura": [5, 12, 21, 30] },
+      "ecocrop": { "nombre": "Lettuce", "temp_letal": -1, "ciclo_dias": [35, 85], "lluvia_anual_mm": [900, 1100, 1400, 4100], "fertilidad": "media", "drenaje": "bueno", "salinidad": "baja" },
+      "agua_p": 0.30,
+      "extraccion_kgha": { "n": 80, "p": 15, "k": 120 },
+      "exigencia": 1.0, "dias_ciclo": 55, "fija_n": false,
+      "forma": "roseta", "color": "#7fb04a",
+      "fuente": "FAO Ecocrop (pH, temperatura, ciclo). agua_p: FAO-56, tabla 22. Extracción N-P-K: manuales hortícolas",
+      "confianza": "alta", "confianza_extraccion": "media",
+      "aprende": "Cultivo de clima fresco (óptimo 12–21 °C). Raíz corta: sufre antes que nadie cuando el suelo se seca."
+    },
+    {
+      "id": "papa", "nombre": "Papa", "cientifico": "Solanum tuberosum",
+      "requisitos": { "ph": [4.2, 5.0, 6.2, 8.5], "temperatura": [7, 15, 25, 30] },
+      "ecocrop": { "nombre": "Potato", "temp_letal": -1, "ciclo_dias": [90, 160], "lluvia_anual_mm": [250, 500, 800, 2000], "fertilidad": "media", "drenaje": "bueno", "salinidad": "baja" },
+      "agua_p": 0.35,
+      "extraccion_kgha": { "n": 150, "p": 25, "k": 220 },
+      "exigencia": 1.2, "dias_ciclo": 110, "fija_n": false,
+      "forma": "mata", "color": "#e8e2c8",
+      "fuente": "FAO Ecocrop (pH, temperatura, ciclo). agua_p: FAO-56, tabla 22. Extracción N-P-K: manuales hortícolas",
+      "confianza": "alta", "confianza_extraccion": "media",
+      "aprende": "Prefiere suelo ácido (óptimo 5,0–6,2): en suelos alcalinos aparece la sarna común del tubérculo. Chiloé es uno de sus centros de origen."
+    },
+    {
+      "id": "poroto", "nombre": "Poroto", "cientifico": "Phaseolus vulgaris",
+      "requisitos": { "ph": [4.0, 5.5, 7.5, 9.0], "temperatura": [7, 16, 25, 32] },
+      "ecocrop": { "nombre": "Bean, Common", "temp_letal": 0, "ciclo_dias": [50, 270], "lluvia_anual_mm": [300, 500, 2000, 4300], "fertilidad": "media", "drenaje": "bueno", "salinidad": "baja" },
+      "agua_p": 0.45,
+      "extraccion_kgha": { "n": 100, "p": 15, "k": 80 },
+      "exigencia": 0.8, "dias_ciclo": 65, "fija_n": true,
+      "forma": "mata", "color": "#5f8f3a",
+      "fuente": "FAO Ecocrop (pH, temperatura, ciclo). agua_p: FAO-56, tabla 22 (legumbres secas). Extracción N-P-K: manuales hortícolas",
+      "confianza": "alta", "confianza_extraccion": "media",
+      "aprende": "Leguminosa: bacterias Rhizobium en sus raíces toman nitrógeno del aire. Al cosecharlo, su rastrojo deja nitrógeno en el suelo. Tolera un rango de pH muy amplio (5,5–7,5 óptimo)."
+    },
+    {
+      "id": "arandano", "nombre": "Arándano alto", "cientifico": "Vaccinium corymbosum",
+      "requisitos": { "ph": [4.0, 4.5, 5.0, 5.5], "temperatura": [7, 18, 30, 42] },
+      "ecocrop": { "nombre": "Highbush blueberry", "temp_letal": -29, "ciclo_dias": [160, 200], "lluvia_anual_mm": [700, 900, 1100, 1300], "fertilidad": "media", "drenaje": "bueno", "salinidad": "baja" },
+      "agua_p": 0.50,
+      "extraccion_kgha": { "n": 60, "p": 10, "k": 50 },
+      "exigencia": 0.7, "dias_ciclo": 180, "fija_n": false,
+      "forma": "mata", "color": "#3b4f9c",
+      "fuente": "FAO Ecocrop (pH, temperatura, temporada 160–200 días). agua_p: FAO-56, tabla 22 (berries). Extracción N-P-K: manuales de berries",
+      "confianza": "alta", "confianza_extraccion": "media",
+      "aprende": "Planta de suelo muy ácido (óptimo 4,5–5,0): sobre pH 5,5 no absorbe bien el hierro y sus hojas amarillean (clorosis). Resiste heladas de hasta −29 °C. Es un arbusto perenne: aquí se simula una temporada; la primera cosecha comercial tarda 2–3 años (aún no modelado)."
+    }
+  ]
+}

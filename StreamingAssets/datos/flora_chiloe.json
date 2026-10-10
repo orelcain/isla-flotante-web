@@ -1,0 +1,2412 @@
+{
+  "nota": "Biblioteca de especies de Chiloé (docs/BIBLIOTECA_ESPECIES.md). Cada valor con fuente y confianza; lo que no tiene fuente va a pendiente. Investigado 08-10-2026; revisión humana de fuentes pendiente antes de que un rasgo entre al motor.",
+  "especies": [
+    {
+      "id": "nothofagus_nitida",
+      "nombre": "Coigüe de Chiloé",
+      "cientifico": "Nothofagus nitida (Phil.) Krasser",
+      "familia": "Nothofagaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "endemica",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 73 registros en la provincia de Chiloé (GADM CHL.9.1_1), 5 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=2874982&gadm_gid=CHL.9.1_1",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 35,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122363&cat=TAB_DESCRIPTION",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "baja",
+          "fuente": "Gutiérrez A.G. et al. (2004) Disturbance and regeneration dynamics of an old-growth North Patagonian rain forest in Chiloé Island, Chile. Journal of Ecology 92: 598-608 (resumen: https://repositorio.uchile.cl/handle/2250/154632): 'shade-intolerant Nothofagus nitida', dominante del dosel en bosque antiguo de Chiloé",
+          "confianza": "alta"
+        },
+        "tolerancia_anegamiento": {
+          "valor": "media",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122363&cat=TAB_DESCRIPTION: crece en 'suelos de turberas con drenaje moderado', pero en terrenos pantanosos 'es reemplazado' por N. antarctica o Pilgerodendron. Clase deducida de ese texto.",
+          "confianza": "baja"
+        },
+        "micorriza": {
+          "valor": "ectomicorriza",
+          "fuente": "INFOR (2009) Vivero forestal: producción de plantas nativas a raíz cubierta, cap. 5 Micorrización, Cuadro 11 (según Garrido 1986). https://npn.rngr.net/publications/vivero-forestal-produccion-de-plantas-nativas-a-raiz-cubierta/micorrizacion/at_download/file; Carrillo R., Godoy R. & Peredo H. (1992) Mycorrhizal symbiosis in forest communities of the Central Valley of southern Chile. Bosque 13(2). doi:10.4206/bosque.1992.v13n2-08 (Proteaceae entre las especies no micorrizadas; ectomicorriza solo en Nothofagus)",
+          "confianza": "media"
+        },
+        "fruto": {
+          "valor": "nuez",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122363&cat=TAB_DESCRIPTION: 'Fruto 3 nueces', aladas",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "viento",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122363&cat=TAB_DESCRIPTION. Inferencia: nueces con 2-3 alas; síndrome de dispersión deducido de la morfología, no observado.",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 96478547), vía GBIF https://api.gbif.org/v1/species/2874982/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "micorriza_con",
+          "especie": "cortinarius_austroacutus",
+          "fuente": "INFOR (2009) Vivero forestal: producción de plantas nativas a raíz cubierta, cap. 5 Micorrización, Cuadro 11 (según Garrido 1986). https://npn.rngr.net/publications/vivero-forestal-produccion-de-plantas-nativas-a-raiz-cubierta/micorrizacion/at_download/file",
+          "confianza": "media"
+        },
+        {
+          "tipo": "micorriza_con",
+          "especie": "laccaria_tetraspora",
+          "fuente": "INFOR (2009) Vivero forestal: producción de plantas nativas a raíz cubierta, cap. 5 Micorrización, Cuadro 11 (según Garrido 1986). https://npn.rngr.net/publications/vivero-forestal-produccion-de-plantas-nativas-a-raiz-cubierta/micorrizacion/at_download/file",
+          "confianza": "media"
+        },
+        {
+          "tipo": "micorriza_con",
+          "especie": "austropaxillus_boletinoides",
+          "fuente": "INFOR (2009) Vivero forestal: producción de plantas nativas a raíz cubierta, cap. 5 Micorrización, Cuadro 11 (según Garrido 1986). https://npn.rngr.net/publications/vivero-forestal-produccion-de-plantas-nativas-a-raiz-cubierta/micorrizacion/at_download/file (var. boletinoides)",
+          "confianza": "media",
+          "nota_sinonimo": "en la fuente: paxillus_boletinoides"
+        }
+      ],
+      "aprende": "Pionero de luz y socio de hongos ectomicorrícicos: domina el dosel de Chiloé donde el suelo drena algo, y cede el terreno empantanado al ciprés.",
+      "pendiente": [
+        "crecimiento: sin dato con fuente",
+        "tolerancia_heladas: sin dato con fuente",
+        "ph_suelo: sin dato con fuente",
+        "fijacion_n: sin fuente específica",
+        "hojarasca: sin dato con fuente",
+        "floracion_meses: Rodríguez et al. no da meses",
+        "rebrota: sin dato con fuente"
+      ]
+    },
+    {
+      "id": "nothofagus_dombeyi",
+      "nombre": "Coigüe",
+      "cientifico": "Nothofagus dombeyi (Mirb.) Oerst.",
+      "familia": "Nothofagaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 38 registros en la provincia de Chiloé (GADM CHL.9.1_1), 1 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=2874895&gadm_gid=CHL.9.1_1. Casi todos los registros son observaciones (iNaturalist); solo 1 de herbario, por eso confianza media.",
+        "confianza": "media"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 40,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122360&cat=TAB_DESCRIPTION",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "baja",
+          "fuente": "Lusk C.H., Pérez-Millaqueo M.M., Piper F.I. & Saldaña A. (2011) Ontogeny, understorey light interception and simulated carbon gain of juvenile rainforest evergreens differing in shade tolerance. Annals of Botany 108: 419-428. https://pmc.ncbi.nlm.nih.gov/articles/PMC3158685: %CO10 = 3,2, descrita como 'light-demanding'; Donoso P.J., Soto D.P., Coopman R.E. & Rodríguez-Bertos S. (2013) Early performance of planted Nothofagus dombeyi and Nothofagus alpina in response to light availability and gap size. Bosque 34(1): 23-32. https://www.redalyc.org/pdf/1731/173126380009.pdf ('light-demanding character')",
+          "confianza": "alta"
+        },
+        "micorriza": {
+          "valor": "ectomicorriza",
+          "fuente": "Godoy R. & Palfner G. (1997) Ectomicorrizas en Nothofagus alpina y N. dombeyi del sur de Chile. Boletín Micológico 12. doi:10.22370/bolmicol.1997.12.0.981: Laccaria laccata forma ectomicorriza con N. dombeyi",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "nuez",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122360&cat=TAB_DESCRIPTION: 'Fruto 3 nueces', aladas",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "viento",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122360&cat=TAB_DESCRIPTION. Inferencia: nueces bialadas y trialadas de 3,5-4,5 mm; síndrome de dispersión deducido de la morfología, no observado.",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 34852), vía GBIF https://api.gbif.org/v1/species/2874895/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "micorriza_con",
+          "especie": "laccaria_laccata",
+          "fuente": "Godoy R. & Palfner G. (1997) Ectomicorrizas en Nothofagus alpina y N. dombeyi del sur de Chile. Boletín Micológico 12. doi:10.22370/bolmicol.1997.12.0.981 (plántulas de vivero, Valdivia)",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "micorriza_con",
+          "especie": "boletus_loyo",
+          "fuente": "INFOR (2009) Vivero forestal: producción de plantas nativas a raíz cubierta, cap. 5 Micorrización, Cuadro 11 (según Garrido 1986). https://npn.rngr.net/publications/vivero-forestal-produccion-de-plantas-nativas-a-raiz-cubierta/micorrizacion/at_download/file",
+          "confianza": "media"
+        },
+        {
+          "tipo": "micorriza_con",
+          "especie": "cortinarius_acerbus",
+          "fuente": "INFOR (2009) Vivero forestal: producción de plantas nativas a raíz cubierta, cap. 5 Micorrización, Cuadro 11 (según Garrido 1986). https://npn.rngr.net/publications/vivero-forestal-produccion-de-plantas-nativas-a-raiz-cubierta/micorrizacion/at_download/file",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "Gigante que exige luz: crece en claros grandes y depende de hongos ectomicorrícicos, pero bajo dosel cerrado sus plántulas mueren.",
+      "pendiente": [
+        "crecimiento: sin clase con fuente",
+        "tolerancia_heladas: Donoso et al. 2013 citan mortalidad por heladas primaverales en plantación abierta, pero sin umbral ni clase",
+        "tolerancia_anegamiento: sin dato",
+        "ph_suelo: sin dato",
+        "fijacion_n: sin fuente específica",
+        "hojarasca: sin dato",
+        "floracion_meses: sin meses con fuente",
+        "rebrota: sin dato"
+      ]
+    },
+    {
+      "id": "drimys_winteri",
+      "nombre": "Canelo",
+      "cientifico": "Drimys winteri J.R.Forst. & G.Forst.",
+      "familia": "Winteraceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 84 registros en la provincia de Chiloé (GADM CHL.9.1_1), 2 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=4020527&gadm_gid=CHL.9.1_1; además Rodríguez et al. (1983): 'particularmente abundante en la Isla de Chiloé'",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 30,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122290&cat=TAB_DESCRIPTION: 'alcanzando alturas de hasta 30 m en la zona de Chiloé'",
+          "confianza": "alta"
+        },
+        "tolerancia_sombra": {
+          "valor": "media",
+          "fuente": "Chacón P. et al. (2005) New Zealand Journal of Botany 43: 71-81, plántulas en bosque de Chiloé, D. winteri y G. avellana descritas como 'intermediate-shade-tolerant' (resumen: https://repositorio.uchile.cl/handle/2250/154462). Gutiérrez et al. (2004) lo clasifican como intolerante en el dosel adulto; se elige la clase de las plántulas.",
+          "confianza": "media"
+        },
+        "tolerancia_anegamiento": {
+          "valor": "alta",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122290&cat=TAB_DESCRIPTION: 'Abunda en gran cantidad en lugares húmedos y pantanosos'",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#F8F6EE",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122290&cat=TAB_DESCRIPTION: pétalos 'blanco nacarados'",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "baya",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122290&cat=TAB_DESCRIPTION: 'baya ovalada, negro-violácea'",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "aves",
+          "fuente": "Aizen M.A., Vázquez D.P. & Smith-Ramírez C. (2002) Historia natural y conservación de los mutualismos planta-animal del bosque templado de Sudamérica austral. Rev. Chil. Hist. Nat. 75: 79-97. https://rchn.biologiachile.cl/pdfs/2002/1/Aizen_et_al_2002.pdf: en Chiloé Elaenia albiceps hizo el 58 % de las visitas a árboles de D. winteri (Hernández 1995) y sus semillas aparecen en sus heces (Sabag 1993)",
+          "confianza": "alta"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 61968097), vía GBIF https://api.gbif.org/v1/species/4020527/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "dispersada_por",
+          "especie": "elaenia_albiceps",
+          "fuente": "Aizen M.A., Vázquez D.P. & Smith-Ramírez C. (2002) Historia natural y conservación de los mutualismos planta-animal del bosque templado de Sudamérica austral. Rev. Chil. Hist. Nat. 75: 79-97. https://rchn.biologiachile.cl/pdfs/2002/1/Aizen_et_al_2002.pdf (datos de Chiloé: Sabag 1993, Hernández 1995)",
+          "confianza": "alta"
+        }
+      ],
+      "aprende": "Árbol de suelos encharcados que el fío-fío siembra con sus frutos: muestra cómo un ave migratoria mueve el bosque.",
+      "pendiente": [
+        "crecimiento: sin dato",
+        "tolerancia_heladas: solo afirmaciones de jardinería sin fuente científica",
+        "ph_suelo: sin dato",
+        "fijacion_n: sin fuente específica",
+        "micorriza: sin fuente específica",
+        "hojarasca: sin dato",
+        "floracion_meses: Rodríguez et al. dicen que depende de la latitud, sin meses",
+        "rebrota: sin dato"
+      ]
+    },
+    {
+      "id": "eucryphia_cordifolia",
+      "nombre": "Ulmo, muermo",
+      "cientifico": "Eucryphia cordifolia Cav.",
+      "familia": "Cunoniaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 68 registros en la provincia de Chiloé (GADM CHL.9.1_1), 3 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=3920287&gadm_gid=CHL.9.1_1; Rodríguez et al. (1983): llega hasta Chiloé, 'siendo en esta última más abundante'",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 25,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122299&cat=TAB_DESCRIPTION",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "media",
+          "fuente": "Lusk C.H., Pérez-Millaqueo M.M., Piper F.I. & Saldaña A. (2011) Ontogeny, understorey light interception and simulated carbon gain of juvenile rainforest evergreens differing in shade tolerance. Annals of Botany 108: 419-428. https://pmc.ncbi.nlm.nih.gov/articles/PMC3158685: %CO10 = 2,1, intermedio entre N. dombeyi (3,2) y las tolerantes (1,1-1,2). Clase deducida del valor.",
+          "confianza": "media"
+        },
+        "floracion_meses": {
+          "valor": [
+            1,
+            2,
+            3
+          ],
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122299&cat=TAB_DESCRIPTION: 'Florece durante los meses de enero-marzo'",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#FFFFFF",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122299&cat=TAB_DESCRIPTION: flores 'de color blanco puro', 4-5 cm",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "capsula",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122299&cat=TAB_DESCRIPTION: 'cápsula leñosa'",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "viento",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122299&cat=TAB_DESCRIPTION. Inferencia: semillas 'provistas de un ala membranácea'; síndrome de dispersión deducido de la morfología, no observado.",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "NT (UICN)",
+          "fuente": "UICN Lista Roja: Casi amenazada (iucnTaxonID 33901), vía GBIF https://api.gbif.org/v1/species/3920287/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "Flor blanca grande de verano que en Chiloé recibe unas 54 especies de polinizadores: un nodo central de la red de insectos.",
+      "pendiente": [
+        "relaciones: Aizen et al. 2002 registran 54 especies de polinizadores en Chiloé (Apis mellifera 37 % de las visitas), ninguna de la lista de fauna",
+        "crecimiento: sin dato",
+        "tolerancia_heladas: sin dato",
+        "tolerancia_anegamiento: sin dato",
+        "ph_suelo: sin dato",
+        "fijacion_n: sin fuente",
+        "micorriza: sin fuente específica",
+        "hojarasca: sin dato",
+        "rebrota: sin dato"
+      ]
+    },
+    {
+      "id": "weinmannia_trichosperma",
+      "nombre": "Tineo, palo santo",
+      "cientifico": "Weinmannia trichosperma Cav.",
+      "familia": "Cunoniaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 89 registros en la provincia de Chiloé (GADM CHL.9.1_1), 3 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=3613680&gadm_gid=CHL.9.1_1",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 30,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122417&cat=TAB_DESCRIPTION",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "baja",
+          "fuente": "Gutiérrez A.G. et al. (2004) Disturbance and regeneration dynamics of an old-growth North Patagonian rain forest in Chiloé Island, Chile. Journal of Ecology 92: 598-608 (resumen: https://repositorio.uchile.cl/handle/2250/154632): 'Weinmannia trichosperma, Cunoniaceae (intolerant > 382 years)'",
+          "confianza": "alta"
+        },
+        "tolerancia_anegamiento": {
+          "valor": "media",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122417&cat=TAB_DESCRIPTION: crece en quebradas y orillas, 'e incluso, a veces, en lugares pantanosos'. Clase deducida.",
+          "confianza": "baja"
+        },
+        "floracion_meses": {
+          "valor": [
+            11,
+            12
+          ],
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122417&cat=TAB_DESCRIPTION: 'Florece de noviembre a diciembre'",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#F5F0DC",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122417&cat=TAB_DESCRIPTION: flores 'blancas a blanco-cremosas'",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "capsula",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122417&cat=TAB_DESCRIPTION",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "viento",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122417&cat=TAB_DESCRIPTION. Inferencia: semillas de 1 mm 'provistas de numerosos pelos finos'; síndrome de dispersión deducido de la morfología, no observado.",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 61990715), vía GBIF https://api.gbif.org/v1/species/3613680/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "Árbol de luz muy longevo (más de 380 años en Chiloé) que se instala en claros y puede durar siglos en el dosel.",
+      "pendiente": [
+        "crecimiento: sin dato",
+        "tolerancia_heladas: sin dato",
+        "ph_suelo: sin dato",
+        "fijacion_n: sin fuente",
+        "micorriza: sin fuente específica",
+        "hojarasca: sin dato",
+        "rebrota: sin dato"
+      ]
+    },
+    {
+      "id": "laureliopsis_philippiana",
+      "nombre": "Tepa, huahuán",
+      "cientifico": "Laureliopsis philippiana (Looser) Schodde",
+      "familia": "Atherospermataceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 31 registros en la provincia de Chiloé (GADM CHL.9.1_1), 0 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=3783047&gadm_gid=CHL.9.1_1; Rodríguez et al. (1983): 'particularmente abundante en las provincias de Llanquihue y Chiloé'",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 20,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122329&cat=TAB_DESCRIPTION",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "alta",
+          "fuente": "Lusk C.H., Pérez-Millaqueo M.M., Piper F.I. & Saldaña A. (2011) Ontogeny, understorey light interception and simulated carbon gain of juvenile rainforest evergreens differing in shade tolerance. Annals of Botany 108: 419-428. https://pmc.ncbi.nlm.nih.gov/articles/PMC3158685: %CO10 = 1,2, descrita como 'shade-tolerant'",
+          "confianza": "alta"
+        },
+        "color_flor": {
+          "valor": "#C8C86A",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122329&cat=TAB_DESCRIPTION: tépalos 'de color amarillo-verdoso'",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "aquenio",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122329&cat=TAB_DESCRIPTION: 'aquenios libres, incluidos en el receptáculo'",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "viento",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122329&cat=TAB_DESCRIPTION. Inferencia: semillas 'densamente hirsutas, con pelos desparramados'; síndrome de dispersión deducido de la morfología, no observado.",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 61985339), vía GBIF https://api.gbif.org/v1/species/3783047/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "Especie de sombra: sus plántulas sobreviven bajo el dosel cerrado y esperan su turno, al revés que el coigüe.",
+      "pendiente": [
+        "crecimiento: sin dato",
+        "tolerancia_heladas: sin dato",
+        "tolerancia_anegamiento: sin dato",
+        "ph_suelo: sin dato",
+        "fijacion_n: sin fuente",
+        "micorriza: sin fuente específica",
+        "hojarasca: sin dato",
+        "floracion_meses: sin meses con fuente",
+        "rebrota: sin dato"
+      ]
+    },
+    {
+      "id": "saxegothaea_conspicua",
+      "nombre": "Mañío macho, mañío de hojas cortas",
+      "cientifico": "Saxegothaea conspicua Lindl.",
+      "familia": "Podocarpaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 53 registros en la provincia de Chiloé (GADM CHL.9.1_1), 11 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=2687717&gadm_gid=CHL.9.1_1",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 25,
+          "unidad": "m",
+          "fuente": "Royal Botanic Garden Edinburgh, Threatened Conifers of the World: https://threatenedconifers.rbge.org.uk/conifers/saxegothaea-conspicua: 'up to 25(-30?) m'. Rodríguez et al. (1983) dan 20 m.",
+          "confianza": "media"
+        },
+        "crecimiento": {
+          "valor": "lento",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122404&cat=TAB_DESCRIPTION: 'El desarrollo de esta especie es lento'",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "alta",
+          "fuente": "Lusk C.H. (1996) Stand dynamics of the shade-tolerant conifers Podocarpus nubigena and Saxegothaea conspicua in Chilean temperate rain forest. Journal of Vegetation Science 7: 549-558; Royal Botanic Garden Edinburgh, Threatened Conifers of the World: https://threatenedconifers.rbge.org.uk/conifers/saxegothaea-conspicua: 'extremely shade tolerant'; Gutiérrez A.G. et al. (2004) Disturbance and regeneration dynamics of an old-growth North Patagonian rain forest in Chiloé Island, Chile. Journal of Ecology 92: 598-608 (resumen: https://repositorio.uchile.cl/handle/2250/154632): 'shade tolerant > 498 years'",
+          "confianza": "alta"
+        },
+        "micorriza": {
+          "valor": "arbuscular",
+          "fuente": "Godoy R. & Mayr R. (1989) Morphological characterization of vesicular-arbuscular mycorrhiza in endemic conifers of southern Chile. Bosque 10(1-2): 89-98. https://revistabosque.org/index.php/bosque/article/view/1443: las 9 coníferas estudiadas, entre ellas S. conspicua, con micorriza vesículo-arbuscular",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "cono",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122404&cat=TAB_DESCRIPTION: 'estróbilos femeninos' globosos; semillas maduran enero-febrero",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "aves",
+          "fuente": "Aizen M.A., Vázquez D.P. & Smith-Ramírez C. (2002) Historia natural y conservación de los mutualismos planta-animal del bosque templado de Sudamérica austral. Rev. Chil. Hist. Nat. 75: 79-97. https://rchn.biologiachile.cl/pdfs/2002/1/Aizen_et_al_2002.pdf: los arilos carnosos de Podocarpus y Saxegothaea son 'la recompensa alimenticia' de los dispersores. Sin estudio de dispersores para esta especie.",
+          "confianza": "media"
+        },
+        "rebrota": {
+          "valor": true,
+          "fuente": "Lusk C.H. (1996) Stand dynamics of the shade-tolerant conifers Podocarpus nubigena and Saxegothaea conspicua in Chilean temperate rain forest. Journal of Vegetation Science 7: 549-558: 'frequent vegetative reproduction'; Royal Botanic Garden Edinburgh, Threatened Conifers of the World: https://threatenedconifers.rbge.org.uk/conifers/saxegothaea-conspicua: 'capable of root-suckering'",
+          "confianza": "media"
+        },
+        "estado_conservacion": {
+          "valor": "NT (UICN)",
+          "fuente": "UICN Lista Roja: Casi amenazada (iucnTaxonID 32053), vía GBIF https://api.gbif.org/v1/species/2687717/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "Conífera de sombra que vive siglos y rebrota de raíz: persiste bajo latifoliadas sin necesitar claros.",
+      "pendiente": [
+        "tolerancia_heladas: sin dato",
+        "tolerancia_anegamiento: RBGE cita suelos mal drenados, sin clase",
+        "ph_suelo: sin dato",
+        "fijacion_n: sin fuente",
+        "hojarasca: sin dato",
+        "floracion_meses: conífera; Rodríguez et al. dan maduración de estróbilos nov-dic, no floración"
+      ]
+    },
+    {
+      "id": "podocarpus_nubigenus",
+      "nombre": "Mañío de hojas punzantes, mañío macho",
+      "cientifico": "Podocarpus nubigenus Lindl.",
+      "familia": "Podocarpaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 90 registros en la provincia de Chiloé (GADM CHL.9.1_1), 11 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=5285976&gadm_gid=CHL.9.1_1; Rodríguez et al. (1983): 'Alcanza su mayor abundancia en la Provincia de Chiloé'",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 25,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122377&cat=TAB_DESCRIPTION",
+          "confianza": "media"
+        },
+        "crecimiento": {
+          "valor": "rapido",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122377&cat=TAB_DESCRIPTION: 'es de rápido crecimiento, superior al resto de las Podocarpáceas chilenas' (comparado con su familia) [Revisión 08-10: la fuente compara solo con otras Podocarpáceas, que son lentas; «rápido» en términos absolutos no está demostrado.]",
+          "confianza": "baja"
+        },
+        "tolerancia_sombra": {
+          "valor": "alta",
+          "fuente": "Lusk C.H. (1996) Stand dynamics of the shade-tolerant conifers Podocarpus nubigena and Saxegothaea conspicua in Chilean temperate rain forest. Journal of Vegetation Science 7: 549-558 (título: 'shade-tolerant conifers'); Gutiérrez A.G. et al. (2004) Disturbance and regeneration dynamics of an old-growth North Patagonian rain forest in Chiloé Island, Chile. Journal of Ecology 92: 598-608 (resumen: https://repositorio.uchile.cl/handle/2250/154632): 'the tolerant Podocarpus nubigena'",
+          "confianza": "alta"
+        },
+        "tolerancia_anegamiento": {
+          "valor": "alta",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122377&cat=TAB_DESCRIPTION: 'Crece en terrenos húmedos y pantanosos'; Royal Botanic Garden Edinburgh, Threatened Conifers of the World: https://threatenedconifers.rbge.org.uk/conifers/podocarpus-nubigenus: 'often on poorly drained soils'",
+          "confianza": "media"
+        },
+        "micorriza": {
+          "valor": "arbuscular",
+          "fuente": "Godoy R. & Mayr R. (1989) Morphological characterization of vesicular-arbuscular mycorrhiza in endemic conifers of southern Chile. Bosque 10(1-2): 89-98. https://revistabosque.org/index.php/bosque/article/view/1443: P. nubigena con micorriza vesículo-arbuscular y nódulos radicales",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "arilo",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122377&cat=TAB_DESCRIPTION: semilla con 'arilo carnoso, blando... rojo en la madurez'",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "aves",
+          "fuente": "Aizen M.A., Vázquez D.P. & Smith-Ramírez C. (2002) Historia natural y conservación de los mutualismos planta-animal del bosque templado de Sudamérica austral. Rev. Chil. Hist. Nat. 75: 79-97. https://rchn.biologiachile.cl/pdfs/2002/1/Aizen_et_al_2002.pdf: Willson et al. (1996c) hallaron en Chiloé que Turdus falcklandii es el principal dispersor de sus semillas ariladas",
+          "confianza": "alta"
+        },
+        "estado_conservacion": {
+          "valor": "NT (UICN)",
+          "fuente": "UICN Lista Roja: Casi amenazada (iucnTaxonID 32029), vía GBIF https://api.gbif.org/v1/species/5285976/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "dispersada_por",
+          "especie": "turdus_falcklandii",
+          "fuente": "Aizen M.A., Vázquez D.P. & Smith-Ramírez C. (2002) Historia natural y conservación de los mutualismos planta-animal del bosque templado de Sudamérica austral. Rev. Chil. Hist. Nat. 75: 79-97. https://rchn.biologiachile.cl/pdfs/2002/1/Aizen_et_al_2002.pdf (cita a Willson et al. 1996c, Chiloé)",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "dispersada_por",
+          "especie": "elaenia_albiceps",
+          "fuente": "Smith-Ramírez C. & Armesto J.J. (1998) Nectarivoría y polinización por aves en Embothrium coccineum (Proteaceae) en el bosque templado del sur de Chile. Rev. Chil. Hist. Nat. 71: 51-63. https://rchn.biologiachile.cl/pdfs/1998/1/Smith-Ramirez_&_Armesto_1998.pdf: los arilos de P. nubigena son alimento de E. albiceps en primavera (cita a Willson et al. 1996a)",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "Su arilo rojo es comida temprana para el zorzal, que lo siembra: una conífera que depende de un ave para moverse.",
+      "pendiente": [
+        "tolerancia_heladas: sin dato",
+        "ph_suelo: sin dato",
+        "fijacion_n: sin fuente",
+        "hojarasca: sin dato",
+        "floracion_meses: conífera, sin meses con fuente",
+        "rebrota: sin dato"
+      ]
+    },
+    {
+      "id": "fitzroya_cupressoides",
+      "nombre": "Alerce, lahuán",
+      "cientifico": "Fitzroya cupressoides (Molina) I.M.Johnst.",
+      "familia": "Cupressaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 21 registros en la provincia de Chiloé (GADM CHL.9.1_1), 0 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=2684353&gadm_gid=CHL.9.1_1; MMA, Ficha de antecedentes de especie Fitzroya cupressoides (Id 143), proceso RCE. https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Fitzroya_cupressoides_FINAL.pdf: presente en el Parque Nacional Chiloé",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 50,
+          "unidad": "m",
+          "fuente": "MMA, Ficha de antecedentes de especie Fitzroya cupressoides (Id 143), proceso RCE. https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Fitzroya_cupressoides_FINAL.pdf: 'alcanza una altura de 45 m hasta 50m'",
+          "confianza": "alta"
+        },
+        "crecimiento": {
+          "valor": "lento",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122305&cat=TAB_DESCRIPTION: 'desarrollo muy lento', ~1 mm de diámetro cada 3 años; Royal Botanic Garden Edinburgh, Threatened Conifers of the World: https://threatenedconifers.rbge.org.uk/conifers/fitzroya-cupressoides: vive más de 3.600 años",
+          "confianza": "alta"
+        },
+        "tolerancia_sombra": {
+          "valor": "baja",
+          "fuente": "MMA, Ficha de antecedentes de especie Fitzroya cupressoides (Id 143), proceso RCE. https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Fitzroya_cupressoides_FINAL.pdf: su regeneración 'coincide con alteraciones catastróficas' (volcanismo, derrumbes), donde es colonizador. Clase deducida del modo de regeneración.",
+          "confianza": "baja"
+        },
+        "tolerancia_anegamiento": {
+          "valor": "alta",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122305&cat=TAB_DESCRIPTION: 'suelos húmedos, empantanados permanentemente'; MMA, Ficha de antecedentes de especie Fitzroya cupressoides (Id 143), proceso RCE. https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Fitzroya_cupressoides_FINAL.pdf: 'a menudo pantanosos y mal drenados... como los ñadis'",
+          "confianza": "alta"
+        },
+        "ph_suelo": {
+          "valor": [
+            4.0,
+            5.1
+          ],
+          "fuente": "MMA, Ficha de antecedentes de especie Fitzroya cupressoides (Id 143), proceso RCE. https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Fitzroya_cupressoides_FINAL.pdf: suelos con 'pH bajo entre 4 y 5,1' (Andes) y 'cercano a 5,0' (Cordillera de la Costa), según Peralta et al. 1982",
+          "confianza": "alta"
+        },
+        "micorriza": {
+          "valor": "arbuscular",
+          "fuente": "Godoy R. & Mayr R. (1989) Morphological characterization of vesicular-arbuscular mycorrhiza in endemic conifers of southern Chile. Bosque 10(1-2): 89-98. https://revistabosque.org/index.php/bosque/article/view/1443",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "cono",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122305&cat=TAB_DESCRIPTION: estróbilos femeninos globosos de 6-8 mm",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "viento",
+          "fuente": "MMA, Ficha de antecedentes de especie Fitzroya cupressoides (Id 143), proceso RCE. https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Fitzroya_cupressoides_FINAL.pdf: 'Es una especie anemócora, con semillas provistas de 2 a 3 alas'",
+          "confianza": "alta"
+        },
+        "rebrota": {
+          "valor": true,
+          "fuente": "Royal Botanic Garden Edinburgh, Threatened Conifers of the World: https://threatenedconifers.rbge.org.uk/conifers/fitzroya-cupressoides: 'It can resprout from roots or low branches (Veblen & Ashton, 1982)'",
+          "confianza": "media"
+        },
+        "estado_conservacion": {
+          "valor": "En Peligro (RCE); EN (UICN)",
+          "fuente": "MMA, Ficha de antecedentes de especie Fitzroya cupressoides (Id 143), proceso RCE. https://clasificacionespecies.mma.gob.cl/wp-content/uploads/2019/10/Fitzroya_cupressoides_FINAL.pdf: 'EN PELIGRO EN A2c'; UICN Lista Roja: En peligro (iucnTaxonID 30926), vía GBIF https://api.gbif.org/v1/species/2684353/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "Crece 1 mm cada 3 años y vive milenios en suelos ácidos y anegados: talar uno es borrar siglos que no vuelven pronto.",
+      "pendiente": [
+        "tolerancia_heladas: sin dato",
+        "fijacion_n: sin fuente",
+        "hojarasca: RBGE cita alta razón C/N del suelo, no de la hojarasca",
+        "floracion_meses: conífera; estróbilos y semillas maduran dic-mar"
+      ]
+    },
+    {
+      "id": "pilgerodendron_uviferum",
+      "nombre": "Ciprés de las Guaitecas",
+      "cientifico": "Pilgerodendron uviferum (D.Don) Florin",
+      "familia": "Cupressaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 145 registros en la provincia de Chiloé (GADM CHL.9.1_1), 10 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=2684235&gadm_gid=CHL.9.1_1",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 20,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122373&cat=TAB_DESCRIPTION",
+          "confianza": "media"
+        },
+        "crecimiento": {
+          "valor": "rapido",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122373&cat=TAB_DESCRIPTION: 'Es de crecimiento rápido y de excelente reproducción natural'. Dato único de esta obra; no contrastado con otra fuente.",
+          "confianza": "baja"
+        },
+        "tolerancia_anegamiento": {
+          "valor": "alta",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122373&cat=TAB_DESCRIPTION: en partes bajas 'por lo general, muy pantanosas'; Royal Botanic Garden Edinburgh, Threatened Conifers of the World: https://threatenedconifers.rbge.org.uk/conifers/pilgerodendron-uviferum: 'poorly drained, thin gley soils', con especies 'adapted to wet soils'",
+          "confianza": "alta"
+        },
+        "micorriza": {
+          "valor": "arbuscular",
+          "fuente": "Godoy R. & Mayr R. (1989) Morphological characterization of vesicular-arbuscular mycorrhiza in endemic conifers of southern Chile. Bosque 10(1-2): 89-98. https://revistabosque.org/index.php/bosque/article/view/1443",
+          "confianza": "alta"
+        },
+        "floracion_meses": {
+          "valor": [
+            10,
+            11,
+            12
+          ],
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122373&cat=TAB_DESCRIPTION: 'Las flores llegan a su madurez en los meses de octubre a diciembre' (estróbilos de conífera)",
+          "confianza": "media"
+        },
+        "fruto": {
+          "valor": "cono",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122373&cat=TAB_DESCRIPTION",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "viento",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122373&cat=TAB_DESCRIPTION. Inferencia: semillas 'bialadas, pero con una sola ala desarrollada'; síndrome de dispersión deducido de la morfología, no observado.",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "VU (UICN); CITES Apéndice I",
+          "fuente": "UICN Lista Roja: Vulnerable (iucnTaxonID 32052), vía GBIF https://api.gbif.org/v1/species/2684235/iucnRedListCategory; Royal Botanic Garden Edinburgh, Threatened Conifers of the World: https://threatenedconifers.rbge.org.uk/conifers/pilgerodendron-uviferum: CITES Apéndice I desde 1975",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "La conífera más austral del mundo coloniza turberas y suelos anegados donde casi ningún otro árbol prospera.",
+      "pendiente": [
+        "tolerancia_sombra: sin dato",
+        "tolerancia_heladas: sin dato",
+        "ph_suelo: sin dato",
+        "fijacion_n: sin fuente",
+        "hojarasca: sin dato",
+        "rebrota: sin dato",
+        "estado_conservacion RCE: no se encontró la ficha MMA"
+      ]
+    },
+    {
+      "id": "amomyrtus_luma",
+      "nombre": "Luma",
+      "cientifico": "Amomyrtus luma (Molina) D.Legrand & Kausel",
+      "familia": "Myrtaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 38 registros en la provincia de Chiloé (GADM CHL.9.1_1), 3 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=3186044&gadm_gid=CHL.9.1_1",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 20,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122234&cat=TAB_DESCRIPTION",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "media",
+          "fuente": "Lusk C.H., Pérez-Millaqueo M.M., Piper F.I. & Saldaña A. (2011) Ontogeny, understorey light interception and simulated carbon gain of juvenile rainforest evergreens differing in shade tolerance. Annals of Botany 108: 419-428. https://pmc.ncbi.nlm.nih.gov/articles/PMC3158685: %CO10 = 1,7, descrita como 'mid-tolerant'",
+          "confianza": "alta"
+        },
+        "floracion_meses": {
+          "valor": [
+            9,
+            10,
+            11
+          ],
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122234&cat=TAB_DESCRIPTION: 'Florece desde septiembre a noviembre'",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#FFFFFF",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122234&cat=TAB_DESCRIPTION: flores 'blancas, aromáticas'",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "baya",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122234&cat=TAB_DESCRIPTION: 'baya redondeada... negro-violácea en la madurez'; fructifica dic-feb",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "aves",
+          "fuente": "Aizen M.A., Vázquez D.P. & Smith-Ramírez C. (2002) Historia natural y conservación de los mutualismos planta-animal del bosque templado de Sudamérica austral. Rev. Chil. Hist. Nat. 75: 79-97. https://rchn.biologiachile.cl/pdfs/2002/1/Aizen_et_al_2002.pdf: en Chiloé Elaenia albiceps hizo más del 74 % de las visitas a árboles de A. luma (Hernández 1995)",
+          "confianza": "alta"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 272618146), vía GBIF https://api.gbif.org/v1/species/3186044/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "dispersada_por",
+          "especie": "elaenia_albiceps",
+          "fuente": "Aizen M.A., Vázquez D.P. & Smith-Ramírez C. (2002) Historia natural y conservación de los mutualismos planta-animal del bosque templado de Sudamérica austral. Rev. Chil. Hist. Nat. 75: 79-97. https://rchn.biologiachile.cl/pdfs/2002/1/Aizen_et_al_2002.pdf (Chiloé: Sabag 1993, Hernández 1995)",
+          "confianza": "alta"
+        }
+      ],
+      "aprende": "Sus bayas de verano son el banquete del fío-fío; sin esa ave migratoria sus semillas no se alejan de la madre.",
+      "pendiente": [
+        "crecimiento: sin dato",
+        "tolerancia_heladas: sin dato",
+        "tolerancia_anegamiento: Rodríguez et al. citan orillas de cursos de agua, sin clase",
+        "ph_suelo: sin dato",
+        "fijacion_n: sin fuente",
+        "micorriza: sin fuente específica",
+        "hojarasca: sin dato",
+        "rebrota: sin dato"
+      ]
+    },
+    {
+      "id": "luma_apiculata",
+      "nombre": "Arrayán, palo colorado",
+      "cientifico": "Luma apiculata (DC.) Burret",
+      "familia": "Myrtaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 111 registros en la provincia de Chiloé (GADM CHL.9.1_1), 1 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=5420309&gadm_gid=CHL.9.1_1",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 20,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122339&cat=TAB_DESCRIPTION",
+          "confianza": "media"
+        },
+        "tolerancia_anegamiento": {
+          "valor": "media",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122339&cat=TAB_DESCRIPTION: 'especie higrófila que crece normalmente a orillas de lagos, ríos'. Orilla no es anegamiento permanente; clase deducida.",
+          "confianza": "baja"
+        },
+        "floracion_meses": {
+          "valor": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122339&cat=TAB_DESCRIPTION: 'mayor floración... enero a mayo'",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#FFFFFF",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122339&cat=TAB_DESCRIPTION: flores 'blancas'",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "baya",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122339&cat=TAB_DESCRIPTION: 'baya... negro brillante en plena madurez'",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "aves",
+          "fuente": "Aizen M.A., Vázquez D.P. & Smith-Ramírez C. (2002) Historia natural y conservación de los mutualismos planta-animal del bosque templado de Sudamérica austral. Rev. Chil. Hist. Nat. 75: 79-97. https://rchn.biologiachile.cl/pdfs/2002/1/Aizen_et_al_2002.pdf: L. apiculata entre las especies más representadas en estómagos de Turdus falcklandii (Amico 2000, Llao-Llao, Argentina)",
+          "confianza": "media"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 131397182), vía GBIF https://api.gbif.org/v1/species/5420309/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "dispersada_por",
+          "especie": "turdus_falcklandii",
+          "fuente": "Aizen M.A., Vázquez D.P. & Smith-Ramírez C. (2002) Historia natural y conservación de los mutualismos planta-animal del bosque templado de Sudamérica austral. Rev. Chil. Hist. Nat. 75: 79-97. https://rchn.biologiachile.cl/pdfs/2002/1/Aizen_et_al_2002.pdf (dato de Llao-Llao, Argentina, no de Chiloé)",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "Florece de fines de verano a otoño, cuando hay pocas flores, y el zorzal reparte sus semillas por las orillas.",
+      "pendiente": [
+        "crecimiento: sin dato",
+        "tolerancia_sombra: sin dato",
+        "tolerancia_heladas: sin dato",
+        "ph_suelo: sin dato",
+        "fijacion_n: sin fuente",
+        "micorriza: sin fuente específica",
+        "hojarasca: sin dato",
+        "rebrota: sin dato"
+      ]
+    },
+    {
+      "id": "embothrium_coccineum",
+      "nombre": "Notro, ciruelillo",
+      "cientifico": "Embothrium coccineum J.R.Forst. & G.Forst.",
+      "familia": "Proteaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 122 registros en la provincia de Chiloé (GADM CHL.9.1_1), 1 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=7124132&gadm_gid=CHL.9.1_1; estudio de campo en Chiloé: Smith-Ramírez C. & Armesto J.J. (1998) Nectarivoría y polinización por aves en Embothrium coccineum (Proteaceae) en el bosque templado del sur de Chile. Rev. Chil. Hist. Nat. 71: 51-63. https://rchn.biologiachile.cl/pdfs/1998/1/Smith-Ramirez_&_Armesto_1998.pdf",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 18,
+          "unidad": "m",
+          "fuente": "Smith-Ramírez C. & Armesto J.J. (1998) Nectarivoría y polinización por aves en Embothrium coccineum (Proteaceae) en el bosque templado del sur de Chile. Rev. Chil. Hist. Nat. 71: 51-63. https://rchn.biologiachile.cl/pdfs/1998/1/Smith-Ramirez_&_Armesto_1998.pdf: 'llega a medir hasta 18 m'. Rodríguez et al. (1983) dan 10 m.",
+          "confianza": "media"
+        },
+        "crecimiento": {
+          "valor": "rapido",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122292&cat=TAB_DESCRIPTION: 'Especie de rápido crecimiento'",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "baja",
+          "fuente": "Lusk C.H. & Corcuera L.J. (2011) Effects of light availability and growth rate on leaf lifespan of four temperate rainforest Proteaceae. Rev. Chil. Hist. Nat. 84: 269-277. doi:10.4067/S0716-078X2011000200011: clasificada como 'light-demanding'",
+          "confianza": "alta"
+        },
+        "ph_suelo": {
+          "valor": [
+            4.7,
+            5.2
+          ],
+          "fuente": "Lambers H. et al. (2012) Phosphorus-mobilization ecosystem engineering: the roles of cluster roots and carboxylate exudation in young P-limited ecosystems. Annals of Botany 110: 329-348. https://pmc.ncbi.nlm.nih.gov/articles/PMC3394658: las Proteaceae chilenas crecen en suelos volcánicos de 'low pH (4.7-5.2)'. Dato del grupo, no medido solo en esta especie.",
+          "confianza": "media"
+        },
+        "raices_proteoides": {
+          "valor": true,
+          "fuente": "Lambers H. et al. (2012) Phosphorus-mobilization ecosystem engineering: the roles of cluster roots and carboxylate exudation in young P-limited ecosystems. Annals of Botany 110: 329-348. https://pmc.ncbi.nlm.nih.gov/articles/PMC3394658; Delgado M., Zúñiga-Feest A. et al. (2021) Ecophysiological performance of Proteaceae species from southern South America growing on substrates derived from young volcanic materials. Frontiers in Plant Science 12: 636056. https://pmc.ncbi.nlm.nih.gov/articles/PMC7933449",
+          "confianza": "alta"
+        },
+        "micorriza": {
+          "valor": "ninguna",
+          "fuente": "Lambers H. et al. (2012) Phosphorus-mobilization ecosystem engineering: the roles of cluster roots and carboxylate exudation in young P-limited ecosystems. Annals of Botany 110: 329-348. https://pmc.ncbi.nlm.nih.gov/articles/PMC3394658: E. coccineum 'described as non-mycorrhizal'",
+          "confianza": "alta"
+        },
+        "hojarasca": {
+          "valor": "rica",
+          "fuente": "Lambers H. et al. (2012) Phosphorus-mobilization ecosystem engineering: the roles of cluster roots and carboxylate exudation in young P-limited ecosystems. Annals of Botany 110: 329-348. https://pmc.ncbi.nlm.nih.gov/articles/PMC3394658: reabsorción de P 'also low' en E. coccineum; hojarasca de Proteaceae chilenas rica en P",
+          "confianza": "media"
+        },
+        "floracion_meses": {
+          "valor": [
+            9,
+            10,
+            11,
+            12
+          ],
+          "fuente": "Smith-Ramírez C. & Armesto J.J. (1998) Nectarivoría y polinización por aves en Embothrium coccineum (Proteaceae) en el bosque templado del sur de Chile. Rev. Chil. Hist. Nat. 71: 51-63. https://rchn.biologiachile.cl/pdfs/1998/1/Smith-Ramirez_&_Armesto_1998.pdf: en Chiloé 'desde fines de septiembre a principios de diciembre', máximo en noviembre",
+          "confianza": "alta"
+        },
+        "color_flor": {
+          "valor": "#C8102E",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122292&cat=TAB_DESCRIPTION: flores 'color rojo intenso'",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "foliculo",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122292&cat=TAB_DESCRIPTION: 'folículo oblongo'; frutos maduran marzo-abril",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "viento",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122292&cat=TAB_DESCRIPTION. Inferencia: semillas 'aladas' con ala membranosa de 1,5 cm; síndrome de dispersión deducido de la morfología, no observado.",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 112631953), vía GBIF https://api.gbif.org/v1/species/7124132/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "polinizada_por",
+          "especie": "sephanoides_sephaniodes",
+          "fuente": "Smith-Ramírez C. & Armesto J.J. (1998) Nectarivoría y polinización por aves en Embothrium coccineum (Proteaceae) en el bosque templado del sur de Chile. Rev. Chil. Hist. Nat. 71: 51-63. https://rchn.biologiachile.cl/pdfs/1998/1/Smith-Ramirez_&_Armesto_1998.pdf: el picaflor (citado como Sephanoides galeritus, sinónimo) hizo 12 % de las visitas y transporta su polen; Chiloé",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "polinizada_por",
+          "especie": "elaenia_albiceps",
+          "fuente": "Smith-Ramírez C. & Armesto J.J. (1998) Nectarivoría y polinización por aves en Embothrium coccineum (Proteaceae) en el bosque templado del sur de Chile. Rev. Chil. Hist. Nat. 71: 51-63. https://rchn.biologiachile.cl/pdfs/1998/1/Smith-Ramirez_&_Armesto_1998.pdf: 77 % de las visitas de aves y transporta 3 veces más polen que el picaflor; Chiloé",
+          "confianza": "alta"
+        }
+      ],
+      "aprende": "Pionero de suelos pobres: saca fósforo con raíces proteoides, no usa hongos, y su néctar de primavera alimenta al fío-fío y al picaflor.",
+      "pendiente": [
+        "tolerancia_heladas: sin dato",
+        "tolerancia_anegamiento: Rodríguez et al. citan ñadis, sin clase",
+        "fijacion_n: sin fuente",
+        "rebrota: sin dato"
+      ]
+    },
+    {
+      "id": "gevuina_avellana",
+      "nombre": "Avellano, gevuín",
+      "cientifico": "Gevuina avellana Molina",
+      "familia": "Proteaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 109 registros en la provincia de Chiloé (GADM CHL.9.1_1), 5 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=3996031&gadm_gid=CHL.9.1_1",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 18,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122309&cat=TAB_DESCRIPTION",
+          "confianza": "media"
+        },
+        "crecimiento": {
+          "valor": "rapido",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122309&cat=TAB_DESCRIPTION: 'especie de rápido crecimiento, particularmente en las áreas que se recuperan' tras explotación o incendio",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "media",
+          "fuente": "Chacón P. et al. (2005) New Zealand Journal of Botany 43: 71-81, plántulas en bosque de Chiloé, D. winteri y G. avellana descritas como 'intermediate-shade-tolerant' (resumen: https://repositorio.uchile.cl/handle/2250/154462); Lusk C.H. & Corcuera L.J. (2011) Effects of light availability and growth rate on leaf lifespan of four temperate rainforest Proteaceae. Rev. Chil. Hist. Nat. 84: 269-277. doi:10.4067/S0716-078X2011000200011: 'more shade-tolerant' que Embothrium",
+          "confianza": "alta"
+        },
+        "ph_suelo": {
+          "valor": [
+            4.7,
+            5.2
+          ],
+          "fuente": "Lambers H. et al. (2012) Phosphorus-mobilization ecosystem engineering: the roles of cluster roots and carboxylate exudation in young P-limited ecosystems. Annals of Botany 110: 329-348. https://pmc.ncbi.nlm.nih.gov/articles/PMC3394658: rango de suelos de las Proteaceae chilenas, no medido solo en esta especie",
+          "confianza": "media"
+        },
+        "raices_proteoides": {
+          "valor": true,
+          "fuente": "Delgado M., Zúñiga-Feest A. et al. (2021) Ecophysiological performance of Proteaceae species from southern South America growing on substrates derived from young volcanic materials. Frontiers in Plant Science 12: 636056. https://pmc.ncbi.nlm.nih.gov/articles/PMC7933449: 'Gevuina avellana presented the greatest CR biomass and carboxylate-exudation rate'",
+          "confianza": "alta"
+        },
+        "micorriza": {
+          "valor": "ninguna",
+          "fuente": "Carrillo R., Godoy R. & Peredo H. (1992) Mycorrhizal symbiosis in forest communities of the Central Valley of southern Chile. Bosque 13(2). doi:10.4206/bosque.1992.v13n2-08 (Proteaceae entre las especies no micorrizadas; ectomicorriza solo en Nothofagus). Dato de la familia; no se nombra la especie.",
+          "confianza": "media"
+        },
+        "floracion_meses": {
+          "valor": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122309&cat=TAB_DESCRIPTION: flores 'entre enero y febrero, hasta mayo'",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#F2EBD3",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122309&cat=TAB_DESCRIPTION: tépalos 'blanco-cremosos, rojizos en la base'",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "nuez",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122309&cat=TAB_DESCRIPTION: 'Fruto una nuez'; tarda más de un año en madurar",
+          "confianza": "alta"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 112643340), vía GBIF https://api.gbif.org/v1/species/3996031/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "El mejor colonizador de suelo volcánico nuevo: sus grandes raíces proteoides y su semilla rica le dan fósforo donde no lo hay.",
+      "pendiente": [
+        "dispersion: nuez grande, sin estudio de dispersores con fuente",
+        "tolerancia_heladas: sin dato",
+        "tolerancia_anegamiento: sin dato",
+        "fijacion_n: sin fuente",
+        "hojarasca: sin dato específico",
+        "rebrota: sin dato"
+      ]
+    },
+    {
+      "id": "aextoxicon_punctatum",
+      "nombre": "Olivillo, tique",
+      "cientifico": "Aextoxicon punctatum Ruiz & Pav.",
+      "familia": "Aextoxicaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 46 registros en la provincia de Chiloé (GADM CHL.9.1_1), 2 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=4195638&gadm_gid=CHL.9.1_1; Rodríguez et al. (1983): su distribución llega 'hasta la de Chiloé'",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 20,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122232&cat=TAB_DESCRIPTION: 'Arbol de 18-20 m'",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "alta",
+          "fuente": "Lusk C.H., Pérez-Millaqueo M.M., Piper F.I. & Saldaña A. (2011) Ontogeny, understorey light interception and simulated carbon gain of juvenile rainforest evergreens differing in shade tolerance. Annals of Botany 108: 419-428. https://pmc.ncbi.nlm.nih.gov/articles/PMC3158685: %CO10 = 1,1, descrita como 'shade-tolerant'",
+          "confianza": "alta"
+        },
+        "floracion_meses": {
+          "valor": [
+            5,
+            6
+          ],
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122232&cat=TAB_DESCRIPTION: 'rápida floración en los meses de mayo-junio'",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#E8D77A",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122232&cat=TAB_DESCRIPTION: racimos 'amarillentos'",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "drupa",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122232&cat=TAB_DESCRIPTION: 'drupa... violácea cuando madura'",
+          "confianza": "alta"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 34616), vía GBIF https://api.gbif.org/v1/species/4195638/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "Tolera sombra profunda y forma bosques costeros casi puros, hasta en acantilados donde el viento tuerce las copas.",
+      "pendiente": [
+        "dispersion: drupa carnosa, sin dispersor con fuente",
+        "crecimiento: sin dato",
+        "tolerancia_heladas: sin dato",
+        "tolerancia_anegamiento: sin dato",
+        "ph_suelo: sin dato",
+        "fijacion_n: sin fuente",
+        "micorriza: sin fuente específica",
+        "hojarasca: sin dato",
+        "rebrota: sin dato"
+      ]
+    },
+    {
+      "id": "lomatia_ferruginea",
+      "nombre": "Fuinque, romerillo",
+      "cientifico": "Lomatia ferruginea (Cav.) R.Br.",
+      "familia": "Proteaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 93 registros en la provincia de Chiloé (GADM CHL.9.1_1), 3 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=5636673&gadm_gid=CHL.9.1_1; Rodríguez et al. (1983): 'particularmente abundante en las Provincias de Valdivia a Chiloé'",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 8,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122336&cat=TAB_DESCRIPTION",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "media",
+          "fuente": "Lusk C.H. & Corcuera L.J. (2011) Effects of light availability and growth rate on leaf lifespan of four temperate rainforest Proteaceae. Rev. Chil. Hist. Nat. 84: 269-277. doi:10.4067/S0716-078X2011000200011: 'more shade-tolerant' que Embothrium y L. hirsuta; Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122336&cat=TAB_DESCRIPTION: 'lugares húmedos y sombríos'",
+          "confianza": "media"
+        },
+        "ph_suelo": {
+          "valor": [
+            4.7,
+            5.2
+          ],
+          "fuente": "Lambers H. et al. (2012) Phosphorus-mobilization ecosystem engineering: the roles of cluster roots and carboxylate exudation in young P-limited ecosystems. Annals of Botany 110: 329-348. https://pmc.ncbi.nlm.nih.gov/articles/PMC3394658: rango de suelos de las Proteaceae chilenas, no medido solo en esta especie",
+          "confianza": "media"
+        },
+        "raices_proteoides": {
+          "valor": true,
+          "fuente": "Lambers H. et al. (2012) Phosphorus-mobilization ecosystem engineering: the roles of cluster roots and carboxylate exudation in young P-limited ecosystems. Annals of Botany 110: 329-348. https://pmc.ncbi.nlm.nih.gov/articles/PMC3394658: 'All Chilean Lomatia species produce cluster roots'; Delgado M., Zúñiga-Feest A. et al. (2021) Ecophysiological performance of Proteaceae species from southern South America growing on substrates derived from young volcanic materials. Frontiers in Plant Science 12: 636056. https://pmc.ncbi.nlm.nih.gov/articles/PMC7933449",
+          "confianza": "alta"
+        },
+        "micorriza": {
+          "valor": "ninguna",
+          "fuente": "Lambers H. et al. (2012) Phosphorus-mobilization ecosystem engineering: the roles of cluster roots and carboxylate exudation in young P-limited ecosystems. Annals of Botany 110: 329-348. https://pmc.ncbi.nlm.nih.gov/articles/PMC3394658: L. ferruginea 'described as non-mycorrhizal'",
+          "confianza": "alta"
+        },
+        "floracion_meses": {
+          "valor": [
+            9,
+            10,
+            11,
+            12,
+            1,
+            2
+          ],
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122336&cat=TAB_DESCRIPTION: 'Florece en los meses de septiembre a febrero'",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#A0522D",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122336&cat=TAB_DESCRIPTION: flores 'amarillo-verdosas por fuera y rojizas por dentro'",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "foliculo",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122336&cat=TAB_DESCRIPTION",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "viento",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122336&cat=TAB_DESCRIPTION. Inferencia: semillas 'provistas de un ala terminal truncada'; síndrome de dispersión deducido de la morfología, no observado.",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 113179050), vía GBIF https://api.gbif.org/v1/species/5636673/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "Proteácea de sotobosque: también tiene raíces proteoides, pero invierte menos en ellas que el avellano y coloniza peor el suelo volcánico nuevo.",
+      "pendiente": [
+        "crecimiento: sin dato",
+        "tolerancia_heladas: sin dato",
+        "tolerancia_anegamiento: sin dato",
+        "fijacion_n: sin fuente",
+        "hojarasca: Lambers et al. dan P de hojarasca solo para L. hirsuta",
+        "rebrota: sin dato"
+      ]
+    },
+    {
+      "id": "caldcluvia_paniculata",
+      "nombre": "Tiaca",
+      "cientifico": "Caldcluvia paniculata (Cav.) D.Don",
+      "familia": "Cunoniaceae",
+      "grupo": "arbol",
+      "gremio": "bosque",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 143 registros en la provincia de Chiloé (GADM CHL.9.1_1), 4 de herbario; consulta API 08-10-2026: https://www.gbif.org/occurrence/search?taxon_key=3613200&gadm_gid=CHL.9.1_1",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 20,
+          "unidad": "m",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122262&cat=TAB_DESCRIPTION",
+          "confianza": "media"
+        },
+        "floracion_meses": {
+          "valor": [
+            12,
+            1
+          ],
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122262&cat=TAB_DESCRIPTION: 'Florece desde diciembre a enero'",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#F5F0DC",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122262&cat=TAB_DESCRIPTION: flores 'blancas a blanco-cremosas'",
+          "confianza": "alta"
+        },
+        "fruto": {
+          "valor": "capsula",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122262&cat=TAB_DESCRIPTION",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "viento",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile, Univ. de Concepción; ed. digital: https://flora-arborea-chile.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=122262&cat=TAB_DESCRIPTION. Inferencia: semillas numerosas de 0,5 mm; síndrome de dispersión deducido de la morfología, no observado.",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "LC (UICN)",
+          "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 175671010), vía GBIF https://api.gbif.org/v1/species/3613200/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "Árbol de quebradas húmedas con semillas diminutas y numerosas: apuesta a la cantidad para llegar a sitios nuevos.",
+      "pendiente": [
+        "crecimiento: sin dato",
+        "tolerancia_sombra: Rodríguez et al. la llaman 'bastante tolerante' sin decir a qué",
+        "tolerancia_heladas: sin dato",
+        "tolerancia_anegamiento: sin dato",
+        "ph_suelo: sin dato",
+        "fijacion_n: sin fuente",
+        "micorriza: sin fuente",
+        "hojarasca: sin dato",
+        "rebrota: sin dato"
+      ]
+    },
+    {
+      "id": "tepualia_stipularis",
+      "nombre": "Tepú",
+      "cientifico": "Tepualia stipularis (Hook. & Arn.) Griseb.",
+      "familia": "Myrtaceae",
+      "grupo": "arbusto",
+      "gremio": "matorral",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 109 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=3188365&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 7,
+          "unidad": "m",
+          "fuente": "Chileflora, ficha de Tepualia stipularis (registro 0772): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0772.htm ('Tamaño: 7 m'). Wikipedia (Metrosideros stipularis), citando a Donoso 2007, da 4-5 m.",
+          "confianza": "media"
+        },
+        "crecimiento": {
+          "valor": "lento",
+          "fuente": "Wikipedia, 'Metrosideros stipularis', citando a Donoso C (2007) Las especies arbóreas de los bosques templados de Chile y Argentina, pp. 591-592: crecimiento muy lento. https://en.wikipedia.org/wiki/Metrosideros_stipularis",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "alta",
+          "fuente": "Chileflora, ficha de Tepualia stipularis (registro 0772): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0772.htm (lista desde pleno sol hasta sombra 40-80 %); Wikipedia (citando a Donoso 2007) la describe como tolerante a la sombra. Conversión propia de las 'Condiciones de luz' de Chileflora: solo 'expuesto' = baja; hasta 'algo de sombra' (20-40 %) = media; incluye 'a la sombra' (40-80 %) o 'sombra total' = alta.",
+          "confianza": "media"
+        },
+        "tolerancia_heladas": {
+          "valor": -8,
+          "unidad": "°C",
+          "fuente": "Chileflora, ficha de Tepualia stipularis (registro 0772): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0772.htm (resiste -8 °C, zona USDA 8). Chileflora la expresa como resistencia al frío en cultivo (zona USDA), no como medición en terreno.",
+          "confianza": "media"
+        },
+        "tolerancia_anegamiento": {
+          "valor": "alta",
+          "fuente": "Chileflora, ficha de Tepualia stipularis (registro 0772): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0772.htm ('crece en el agua... vegas, pantanos'); León C, Oliván G & Fuertes E (2012) Turberas esfagnosas de Chiloé (Chile) y su problemática ambiental. Bol. Soc. Esp. Briol. 38-39: 29-40. https://sub.cehum.org/bitstream/CEHUM2018/1411/1/ (los tepuales son bosques de sitios con drenaje pobre).",
+          "confianza": "media"
+        },
+        "floracion_meses": {
+          "valor": [
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "fuente": "Wikipedia, 'Metrosideros stipularis', citando a Bannister J (2018) Tepuales: tesoro de Chiloé y la Patagonia insular: flores de diciembre a abril, sobre todo febrero-marzo. https://en.wikipedia.org/wiki/Metrosideros_stipularis",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#F5F5F0",
+          "fuente": "Chileflora, ficha de Tepualia stipularis (registro 0772): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0772.htm ('Flor: Blanco, 5 pétalos'). El hex es una aproximación del color descrito.",
+          "confianza": "media"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/3188365/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "El tepú enseña que el bosque también vive en el pantano: cuando se quema o se tala un tepual, el sitio anegado lo ocupa el pompón y el bosque tarda mucho en volver.",
+      "pendiente": [
+        "Nombre: POWO y Pillon et al. (2015) lo tratan hoy como Metrosideros stipularis; GBIF aún acepta Tepualia stipularis. Se mantiene el id pedido.",
+        "grupo: se clasificó como arbusto por el encargo (matorral); Chileflora y Wikipedia lo describen como árbol o arbusto",
+        "ph_suelo: sin dato con fuente",
+        "fijacion_n: sin dato con fuente",
+        "micorriza: sin dato con fuente para la especie",
+        "hojarasca: sin dato con fuente",
+        "fruto: ninguna fuente abierta lo describe",
+        "dispersion: sin dato con fuente",
+        "rebrota: sin dato con fuente",
+        "polinizada_por: Smith-Ramírez 1993 halló solo 3 granos de polen de tepú en 1 picaflor; no alcanza para afirmar polinización",
+        "estado_conservacion (RCE, MMA Chile): no verificado; solo se registra la categoría UICN."
+      ]
+    },
+    {
+      "id": "ugni_molinae",
+      "nombre": "Murta, murtilla, uñi",
+      "cientifico": "Ugni molinae Turcz.",
+      "familia": "Myrtaceae",
+      "grupo": "arbusto",
+      "gremio": "matorral",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 79 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=3185043&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 1.8,
+          "unidad": "m",
+          "fuente": "Trees and Shrubs Online, ficha de Ugni molinae: https://www.treesandshrubsonline.org/articles/ugni/ugni-molinae/ ('usually under 5-6 ft high', ~1,5-1,8 m; dato de cultivo, no de terreno).",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "media",
+          "fuente": "Mora JP & Soto-Gamboa M (2011) Legítima dispersión de semillas de Ugni molinae Turcz. (Myrtaceae) por monito del monte, Dromiciops gliroides. Gayana Botánica 68(2): 309-312. https://revistas.udec.cl/index.php/gayana_botanica/article/view/4421 : crece sobre todo en bordes de bosque y sitios degradados, pero puede formar parte del sotobosque. Chileflora (SH0291) solo la indica a la sombra; se elige 'media' por la descripción de Mora & Soto-Gamboa.",
+          "confianza": "media"
+        },
+        "tolerancia_heladas": {
+          "valor": -5,
+          "unidad": "°C",
+          "fuente": "Chileflora, ficha de Ugni molinae (registro 0291): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0291.htm (heladas ocasionales hasta aprox. -5 °C, zona USDA 9). Chileflora la expresa como resistencia al frío en cultivo (zona USDA), no como medición en terreno.",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#F6E4E8",
+          "fuente": "Chileflora, ficha de Ugni molinae (registro 0291): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0291.htm ('Flor: Blanco'); Trees and Shrubs Online la describe 'rose-tinted'. Hex aproximado: blanco rosado.",
+          "confianza": "media"
+        },
+        "fruto": {
+          "valor": "baya",
+          "fuente": "Mora JP & Soto-Gamboa M (2011) Legítima dispersión de semillas de Ugni molinae Turcz. (Myrtaceae) por monito del monte, Dromiciops gliroides. Gayana Botánica 68(2): 309-312. https://revistas.udec.cl/index.php/gayana_botanica/article/view/4421 : bayas rojas aromáticas de ~1 cm, con 7-45 semillas; fructifica entre febrero y mayo.",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "mamiferos",
+          "fuente": "Mora JP & Soto-Gamboa M (2011) Legítima dispersión de semillas de Ugni molinae Turcz. (Myrtaceae) por monito del monte, Dromiciops gliroides. Gayana Botánica 68(2): 309-312. https://revistas.udec.cl/index.php/gayana_botanica/article/view/4421 : primer dispersor documentado de U. molinae es el monito del monte; las semillas defecadas germinan antes (24 vs 26,7 días). Experimento con animales de Valdivia.",
+          "confianza": "alta"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/3185043/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "dispersada_por",
+          "especie": "dromiciops_gliroides",
+          "fuente": "Mora JP & Soto-Gamboa M (2011) Legítima dispersión de semillas de Ugni molinae Turcz. (Myrtaceae) por monito del monte, Dromiciops gliroides. Gayana Botánica 68(2): 309-312. https://revistas.udec.cl/index.php/gayana_botanica/article/view/4421 (ensayo en Valdivia, no en Chiloé).",
+          "confianza": "alta"
+        }
+      ],
+      "aprende": "La murta enseña que un marsupial nocturno, el monito del monte, puede ser el jardinero que siembra un arbusto: sus semillas germinan más rápido tras pasar por su intestino.",
+      "pendiente": [
+        "floracion_meses: sin dato con fuente para Chile (Trees and Shrubs Online da 'mayo' en cultivo en Gran Bretaña)",
+        "crecimiento: sin dato con fuente",
+        "tolerancia_anegamiento: sin dato con fuente",
+        "ph_suelo: sin dato con fuente",
+        "micorriza: sin dato con fuente",
+        "fijacion_n: sin dato con fuente",
+        "rebrota: sin dato con fuente",
+        "dispersada_por aves: no se encontró estudio; Mora & Soto-Gamboa 2011 dicen que antes no había dispersores descritos",
+        "estado_conservacion (RCE, MMA Chile): no verificado; solo se registra la categoría UICN."
+      ]
+    },
+    {
+      "id": "berberis_microphylla",
+      "nombre": "Calafate, michay",
+      "cientifico": "Berberis microphylla G.Forst. (sin. Berberis buxifolia Lam.)",
+      "familia": "Berberidaceae",
+      "grupo": "arbusto",
+      "gremio": "matorral",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 76 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=7300375&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 3,
+          "unidad": "m",
+          "fuente": "Chileflora, ficha de Berberis microphylla (registro 0163): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0163.htm ('Tamaño: 3 m'). Wikipedia da 1-1,5 m.",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "baja",
+          "fuente": "Chileflora, ficha de Berberis microphylla (registro 0163): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0163.htm (solo 'expuesto, pleno sol'). Conversión propia de las 'Condiciones de luz' de Chileflora: solo 'expuesto' = baja; hasta 'algo de sombra' (20-40 %) = media; incluye 'a la sombra' (40-80 %) o 'sombra total' = alta.",
+          "confianza": "media"
+        },
+        "tolerancia_heladas": {
+          "valor": -8,
+          "unidad": "°C",
+          "fuente": "Chileflora, ficha de Berberis microphylla (registro 0163): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0163.htm (resiste -8 °C y nieve ocasional, zona USDA 8). Chileflora la expresa como resistencia al frío en cultivo (zona USDA), no como medición en terreno.",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#F5B800",
+          "fuente": "Chileflora, ficha de Berberis microphylla (registro 0163): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0163.htm ('Flor: Amarillo'). Hex aproximado.",
+          "confianza": "media"
+        },
+        "fruto": {
+          "valor": "baya",
+          "fuente": "Wikipedia, 'Berberis microphylla' (bayas negro-azuladas comestibles), basada en Landrum 1999 y 2003. https://en.wikipedia.org/wiki/Berberis_microphylla",
+          "confianza": "media"
+        },
+        "dispersion": {
+          "valor": "aves",
+          "fuente": "Smith-Ramírez C & Armesto JJ (1998) Nectarivoría y polinización por aves en Embothrium coccineum en Chiloé. Revista Chilena de Historia Natural 71. https://rchn.biologiachile.cl/pdfs/1998/1/Smith-Ramirez_&_Armesto_1998.pdf , citando a Sabag C (1993, tesis U. de Chile): los frutos de B. buxifolia (= B. microphylla) están entre los frutos carnosos que consumen las aves en el bosque de Chiloé.",
+          "confianza": "media"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/7300375/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "dispersada_por",
+          "especie": "elaenia_albiceps",
+          "fuente": "Smith-Ramírez C & Armesto JJ (1998) Nectarivoría y polinización por aves en Embothrium coccineum en Chiloé. Revista Chilena de Historia Natural 71. https://rchn.biologiachile.cl/pdfs/1998/1/Smith-Ramirez_&_Armesto_1998.pdf , citando a Sabag (1993): calorías de frutos de Berberis buxifolia (sinónimo de B. microphylla según GBIF) consumidos por Elaenia albiceps en verano en Chiloé.",
+          "confianza": "media"
+        },
+        {
+          "tipo": "dispersada_por",
+          "especie": "turdus_falcklandii",
+          "fuente": "Amico GC & Aizen MA (2005) Dispersión de semillas por aves en un bosque templado de Sudamérica austral: ¿quién dispersa a quién? Ecología Austral 15: 89-100. https://bibliotecadigital.exactas.uba.ar/download/ecologiaaustral/ecologiaaustral_v015_n01_p089.pdf (Llao-Llao, Argentina; Turdus falcklandii prefirió los frutos de Berberis sp.). Dato del género, fuera de Chiloé.",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "El calafate enseña a la planta de sol abierto: no tolera la sombra y entrega bayas que las aves comen y siembran en los claros.",
+      "pendiente": [
+        "floracion_meses: sin meses con fuente (Wikipedia solo dice 'verano')",
+        "crecimiento: sin dato con fuente",
+        "tolerancia_anegamiento: sin dato con fuente",
+        "ph_suelo: sin dato con fuente",
+        "micorriza: sin dato con fuente",
+        "rebrota: sin dato con fuente",
+        "estado_conservacion (RCE, MMA Chile): no verificado; solo se registra la categoría UICN."
+      ]
+    },
+    {
+      "id": "berberis_darwinii",
+      "nombre": "Michay",
+      "cientifico": "Berberis darwinii Hook.",
+      "familia": "Berberidaceae",
+      "grupo": "arbusto",
+      "gremio": "matorral",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 129 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=3033905&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0 . Trees and Shrubs Online indica que W. Lobb la introdujo al cultivo en 1849 'from the island of Chiloe'.",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 3.7,
+          "unidad": "m",
+          "fuente": "Trees and Shrubs Online, ficha de Berberis darwinii: https://www.treesandshrubsonline.org/articles/berberis/berberis-darwinii/ ('from 6 to 12 ft high', ~1,8-3,7 m). Chileflora (SH0313) da 1,5 m.",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "alta",
+          "fuente": "Chileflora, ficha de Berberis darwinii (registro 0313): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0313.htm (a la sombra y sombra total). Conversión propia de las 'Condiciones de luz' de Chileflora: solo 'expuesto' = baja; hasta 'algo de sombra' (20-40 %) = media; incluye 'a la sombra' (40-80 %) o 'sombra total' = alta.",
+          "confianza": "media"
+        },
+        "tolerancia_heladas": {
+          "valor": -8,
+          "unidad": "°C",
+          "fuente": "Chileflora, ficha de Berberis darwinii (registro 0313): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0313.htm (resiste -8 °C, zona USDA 8). Chileflora la expresa como resistencia al frío en cultivo (zona USDA), no como medición en terreno.",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#F28C1C",
+          "fuente": "Trees and Shrubs Online, ficha de Berberis darwinii: https://www.treesandshrubsonline.org/articles/berberis/berberis-darwinii/ ('deep golden or orange-coloured, tinged with red'). Hex aproximado.",
+          "confianza": "media"
+        },
+        "fruto": {
+          "valor": "baya",
+          "fuente": "Trees and Shrubs Online, ficha de Berberis darwinii: https://www.treesandshrubsonline.org/articles/berberis/berberis-darwinii/ (bayas color ciruela o azuladas, del tamaño de una arveja chica).",
+          "confianza": "media"
+        },
+        "dispersion": {
+          "valor": "aves",
+          "fuente": "Amico GC & Aizen MA (2005) Dispersión de semillas por aves en un bosque templado de Sudamérica austral: ¿quién dispersa a quién? Ecología Austral 15: 89-100. https://bibliotecadigital.exactas.uba.ar/download/ecologiaaustral/ecologiaaustral_v015_n01_p089.pdf : Turdus falcklandii consume y defeca semillas de Berberis sp. Dato del género.",
+          "confianza": "media"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/3033905/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "dispersada_por",
+          "especie": "turdus_falcklandii",
+          "fuente": "Amico GC & Aizen MA (2005) Dispersión de semillas por aves en un bosque templado de Sudamérica austral: ¿quién dispersa a quién? Ecología Austral 15: 89-100. https://bibliotecadigital.exactas.uba.ar/download/ecologiaaustral/ecologiaaustral_v015_n01_p089.pdf (Berberis sp., Argentina). Dato del género.",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "El michay enseña que dos parientes cercanos pueden ocupar nichos opuestos: este tolera la sombra del bosque, mientras el calafate necesita sol abierto.",
+      "pendiente": [
+        "floracion_meses: sin meses con fuente para Chile (Trees and Shrubs Online da abril-mayo en cultivo en Gran Bretaña)",
+        "crecimiento: sin dato con fuente",
+        "tolerancia_anegamiento: sin dato con fuente",
+        "ph_suelo: sin dato con fuente",
+        "micorriza: sin dato con fuente",
+        "rebrota: sin dato con fuente",
+        "estado_conservacion (RCE, MMA Chile): no verificado; solo se registra la categoría UICN."
+      ]
+    },
+    {
+      "id": "fuchsia_magellanica",
+      "nombre": "Chilco, fucsia",
+      "cientifico": "Fuchsia magellanica Lam.",
+      "familia": "Onagraceae",
+      "grupo": "arbusto",
+      "gremio": "matorral",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 216 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=5938224&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 4.8,
+          "unidad": "m",
+          "fuente": "Trees and Shrubs Online, ficha de Fuchsia magellanica: https://www.treesandshrubsonline.org/articles/fuchsia/fuchsia-magellanica/ ('usually under 8 ft high but sometimes almost twice as high in shady, sheltered positions'). Chileflora (SH0306) da 2,7 m.",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "alta",
+          "fuente": "Chileflora, ficha de Fuchsia magellanica (registro 0306): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0306.htm (algo de sombra y a la sombra 40-80 %). Conversión propia de las 'Condiciones de luz' de Chileflora: solo 'expuesto' = baja; hasta 'algo de sombra' (20-40 %) = media; incluye 'a la sombra' (40-80 %) o 'sombra total' = alta.",
+          "confianza": "media"
+        },
+        "tolerancia_heladas": {
+          "valor": -15,
+          "unidad": "°C",
+          "fuente": "Chileflora, ficha de Fuchsia magellanica (registro 0306): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0306.htm (hasta -15 °C e incluso -20 °C, zona USDA 7-6a). Chileflora la expresa como resistencia al frío en cultivo (zona USDA), no como medición en terreno.",
+          "confianza": "media"
+        },
+        "tolerancia_anegamiento": {
+          "valor": "alta",
+          "fuente": "Chileflora, ficha de Fuchsia magellanica (registro 0306): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0306.htm ('crece en el agua... vegas, cursos de agua, pantanos'); Trees and Shrubs Online: 'forms thickets along streamsides or in marshy places'.",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#C8102E",
+          "fuente": "Smith-Ramírez C (1993) Los picaflores y su recurso floral en el bosque templado de la isla de Chiloé, Chile. Revista Chilena de Historia Natural 66: 65-73. https://rchn.biologiachile.cl/pdfs/1993/1/Smith-Ramirez_1993.pdf (Tabla 1: color de flor 'Rojo'). Los pétalos son morados (Trees and Shrubs Online). Hex aproximado del tubo y los sépalos.",
+          "confianza": "media"
+        },
+        "fruto": {
+          "valor": "baya",
+          "fuente": "Wikipedia, 'Fuchsia magellanica' (bayas elipsoides de 10-15 mm), basada en Berry (1989) Annals of the Missouri Botanical Garden. https://en.wikipedia.org/wiki/Fuchsia_magellanica",
+          "confianza": "media"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/5938224/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "polinizada_por",
+          "especie": "sephanoides_sephaniodes",
+          "fuente": "Smith-Ramírez C (1993) Los picaflores y su recurso floral en el bosque templado de la isla de Chiloé, Chile. Revista Chilena de Historia Natural 66: 65-73. https://rchn.biologiachile.cl/pdfs/1993/1/Smith-Ramirez_1993.pdf (Chiloé: el picaflor la visita y carga su polen, 1.163 granos en 6 aves); Smith-Ramírez C & Armesto JJ (1998) Nectarivoría y polinización por aves en Embothrium coccineum en Chiloé. Revista Chilena de Historia Natural 71. https://rchn.biologiachile.cl/pdfs/1998/1/Smith-Ramirez_&_Armesto_1998.pdf (picaflores con polen de F. magellanica en Chiloé). En esos trabajos el picaflor figura como Sephanoides galeritus, sinónimo de S. sephaniodes.",
+          "confianza": "alta"
+        }
+      ],
+      "aprende": "El chilco enseña la alianza flor-picaflor: su flor roja colgante alimenta al picaflor chico, que a cambio lleva su polen de planta en planta.",
+      "pendiente": [
+        "floracion_meses: Smith-Ramírez 1993 tiene la fenología en Chiloé solo en un gráfico (Fig. 1) que no se pudo leer como dato",
+        "crecimiento: sin dato con fuente",
+        "ph_suelo: sin dato con fuente",
+        "micorriza: sin dato con fuente",
+        "fijacion_n: sin dato con fuente",
+        "dispersion: sin dato con fuente",
+        "rebrota: Wikipedia menciona rebrote tras heladas en cultivo, sin fuente primaria; no se llena",
+        "estado_conservacion (RCE, MMA Chile): no verificado; solo se registra la categoría UICN."
+      ]
+    },
+    {
+      "id": "chusquea_quila",
+      "nombre": "Quila",
+      "cientifico": "Chusquea quila Kunth",
+      "familia": "Poaceae",
+      "grupo": "arbusto",
+      "gremio": "matorral",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 19 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=4130378&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 8,
+          "unidad": "m",
+          "fuente": "Chileflora, ficha de Chusquea quila (registro 0324): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0324.htm ('Tamaño: 8 m'; cañas apoyadas en la vegetación).",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "media",
+          "fuente": "Chileflora, ficha de Chusquea quila (registro 0324): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0324.htm (pleno sol y algo de sombra). Conversión propia de las 'Condiciones de luz' de Chileflora: solo 'expuesto' = baja; hasta 'algo de sombra' (20-40 %) = media; incluye 'a la sombra' (40-80 %) o 'sombra total' = alta.",
+          "confianza": "media"
+        },
+        "tolerancia_heladas": {
+          "valor": -8,
+          "unidad": "°C",
+          "fuente": "Chileflora, ficha de Chusquea quila (registro 0324): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0324.htm (resiste -8 °C, zona USDA 8). Chileflora la expresa como resistencia al frío en cultivo (zona USDA), no como medición en terreno.",
+          "confianza": "media"
+        },
+        "tolerancia_anegamiento": {
+          "valor": "alta",
+          "fuente": "Chileflora, ficha de Chusquea quila (registro 0324): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0324.htm (incluye 'crece en el agua... vegas, cursos de agua').",
+          "confianza": "media"
+        },
+        "floracion_masiva_intervalo_anios": {
+          "valor": [
+            60,
+            70
+          ],
+          "unidad": "años",
+          "fuente": "González Cangas Y & González ME (2006) Memoria y saber cotidiano. El florecimiento de la quila en el sur de Chile: de pericotes, ruinas y remedios. Revista Austral de Ciencias Sociales 10: 75-102. https://doi.org/10.4206/rev.austral.cienc.soc.2006.n10-06 . Fuentes orales de 11 localidades de la X Región hablan de ciclos de 60-70 años; descripciones botánicas anteriores daban 10-30 años. Se asocia a 'ratadas'.",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/4130378/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "La quila enseña el ciclo largo: florece toda junta tras décadas, muere, y su lluvia de semillas dispara plagas de ratones (ratadas) y deja combustible seco.",
+      "pendiente": [
+        "floracion_meses: no aplica de forma anual; ver floracion_masiva_intervalo_anios (rasgo extra, no está en la lista fija del formato)",
+        "crecimiento: sin dato con fuente",
+        "fruto: sin dato con fuente para la especie",
+        "dispersion: sin dato con fuente",
+        "rebrota: sin dato con fuente",
+        "ph_suelo: sin dato con fuente",
+        "micorriza: sin dato con fuente",
+        "color_flor: no aplica (flor de gramínea); sin fuente específica",
+        "estado_conservacion (RCE, MMA Chile): no verificado; solo se registra la categoría UICN."
+      ]
+    },
+    {
+      "id": "gunnera_tinctoria",
+      "nombre": "Nalca, pangue",
+      "cientifico": "Gunnera tinctoria (Molina) Mirb.",
+      "familia": "Gunneraceae",
+      "grupo": "herbacea",
+      "gremio": "hierba",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 225 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=2984306&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 3,
+          "unidad": "m",
+          "fuente": "Chileflora, ficha de Gunnera tinctoria (registro 0305): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0305.htm ('Tamaño: 3 m'). Williams et al. 2005 describen pecíolos de hasta 1-1,5 m y láminas de ~0,8 x 1,0 m.",
+          "confianza": "media"
+        },
+        "crecimiento": {
+          "valor": "rapido",
+          "fuente": "Williams PA, Ogle CC, Timmins SM, La Cock GD & Clarkson J (2005) Chilean rhubarb (Gunnera tinctoria): biology, ecology and conservation impacts in New Zealand. DOC Research & Development Series 210. https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds210.pdf (citando a Hickey & Osborne 1998: biomasa ~4 veces mayor que la de especies de praderas comparables en Irlanda).",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "alta",
+          "fuente": "Chileflora, ficha de Gunnera tinctoria (registro 0305): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0305.htm (algo de sombra hasta sombra total). Williams et al. 2005 también la hallan en acantilados abiertos. Conversión propia de las 'Condiciones de luz' de Chileflora: solo 'expuesto' = baja; hasta 'algo de sombra' (20-40 %) = media; incluye 'a la sombra' (40-80 %) o 'sombra total' = alta.",
+          "confianza": "media"
+        },
+        "tolerancia_anegamiento": {
+          "valor": "alta",
+          "fuente": "Chileflora, ficha de Gunnera tinctoria (registro 0305): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0305.htm ('crece en el agua... vegas, cursos de agua'); Williams PA, Ogle CC, Timmins SM, La Cock GD & Clarkson J (2005) Chilean rhubarb (Gunnera tinctoria): biology, ecology and conservation impacts in New Zealand. DOC Research & Development Series 210. https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds210.pdf ('tolerate wet soils that are seasonally waterlogged').",
+          "confianza": "media"
+        },
+        "ph_suelo": {
+          "valor": [
+            4.7,
+            5.5
+          ],
+          "fuente": "Williams PA, Ogle CC, Timmins SM, La Cock GD & Clarkson J (2005) Chilean rhubarb (Gunnera tinctoria): biology, ecology and conservation impacts in New Zealand. DOC Research & Development Series 210. https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds210.pdf , citando a Hickey & Osborne (1998): pH del suelo bajo nalca en Irlanda, donde es invasora.",
+          "confianza": "media"
+        },
+        "fijacion_n": {
+          "valor": "simbiotica_cianobacteria",
+          "fuente": "Osborne B, Doris F, Cullen A, McDonald R, Campbell G & Steer M (1991) Gunnera tinctoria: an unusual nitrogen-fixing invader. BioScience 41: 224-234; Williams PA, Ogle CC, Timmins SM, La Cock GD & Clarkson J (2005) Chilean rhubarb (Gunnera tinctoria): biology, ecology and conservation impacts in New Zealand. DOC Research & Development Series 210. https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds210.pdf (Nostoc punctiforme, visible incluso en plántulas).",
+          "confianza": "alta"
+        },
+        "floracion_meses": {
+          "valor": [
+            10,
+            11
+          ],
+          "fuente": "Williams PA, Ogle CC, Timmins SM, La Cock GD & Clarkson J (2005) Chilean rhubarb (Gunnera tinctoria): biology, ecology and conservation impacts in New Zealand. DOC Research & Development Series 210. https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds210.pdf (en Nueva Zelanda florece a fines de octubre-noviembre). Hemisferio sur y latitud similar a Chiloé, pero no es dato de Chiloé.",
+          "confianza": "baja"
+        },
+        "fruto": {
+          "valor": "drupa",
+          "fuente": "Williams PA, Ogle CC, Timmins SM, La Cock GD & Clarkson J (2005) Chilean rhubarb (Gunnera tinctoria): biology, ecology and conservation impacts in New Zealand. DOC Research & Development Series 210. https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds210.pdf (drupas rojizas de 1,5-2 mm, una semilla).",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "aves",
+          "fuente": "Williams PA, Ogle CC, Timmins SM, La Cock GD & Clarkson J (2005) Chilean rhubarb (Gunnera tinctoria): biology, ecology and conservation impacts in New Zealand. DOC Research & Development Series 210. https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds210.pdf (en Nueva Zelanda las semillas salen viables de fecas de aves; también las mueve el agua de los esteros).",
+          "confianza": "media"
+        },
+        "rebrota": {
+          "valor": true,
+          "fuente": "Williams PA, Ogle CC, Timmins SM, La Cock GD & Clarkson J (2005) Chilean rhubarb (Gunnera tinctoria): biology, ecology and conservation impacts in New Zealand. DOC Research & Development Series 210. https://www.doc.govt.nz/globalassets/documents/science-and-technical/drds210.pdf (crece fácilmente desde fragmentos de tallo y rizoma).",
+          "confianza": "media"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/2984306/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "La nalca enseña que una planta puede fabricar su propio abono: guarda en el tallo una cianobacteria (Nostoc) que convierte el nitrógeno del aire en alimento.",
+      "pendiente": [
+        "tolerancia_heladas: fuentes contradictorias (Chileflora: hasta -15/-20 °C; en Irlanda su avance hacia el este se atribuye a intolerancia al frío, Hickey & Osborne 1998 vía Williams et al. 2005)",
+        "color_flor: fuentes contradictorias (Chileflora 'rojo'; Williams et al. 2005 flores verdosas diminutas)",
+        "hojarasca: solo hay N foliar (22 mg/g, Hickey & Osborne 1998), no C:N",
+        "micorriza: sin dato con fuente",
+        "relaciones dispersada_por: solo hay aves de Nueva Zelanda (Turdus merula, Zosterops lateralis); no se encontró estudio con aves de Chiloé",
+        "estado_conservacion (RCE, MMA Chile): no verificado; solo se registra la categoría UICN."
+      ]
+    },
+    {
+      "id": "philesia_magellanica",
+      "nombre": "Coicopihue, copihue chilote",
+      "cientifico": "Philesia magellanica J.F.Gmel.",
+      "familia": "Philesiaceae",
+      "grupo": "trepadora",
+      "gremio": "matorral",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 112 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=2781140&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 3,
+          "unidad": "m",
+          "fuente": "Trees and Shrubs Online, ficha de Philesia magellanica: https://www.treesandshrubsonline.org/articles/philesia/philesia-magellanica/ (normalmente 2-3 m; trepando por estolones puede llegar a ~10 m en casos extremos).",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "alta",
+          "fuente": "Trees and Shrubs Online, ficha de Philesia magellanica: https://www.treesandshrubsonline.org/articles/philesia/philesia-magellanica/ (epífita sobre troncos con musgo 'in deep shade'; lo crítico es la humedad).",
+          "confianza": "media"
+        },
+        "floracion_meses": {
+          "valor": [
+            11,
+            12,
+            1,
+            2
+          ],
+          "fuente": "Trees and Shrubs Online, ficha de Philesia magellanica: https://www.treesandshrubsonline.org/articles/philesia/philesia-magellanica/ ('in the wild, November to February').",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#D6336C",
+          "fuente": "Trees and Shrubs Online, ficha de Philesia magellanica: https://www.treesandshrubsonline.org/articles/philesia/philesia-magellanica/ (rosado pálido a carmín rosado intenso). Hex aproximado.",
+          "confianza": "media"
+        },
+        "fruto": {
+          "valor": "baya",
+          "fuente": "Trees and Shrubs Online, ficha de Philesia magellanica: https://www.treesandshrubsonline.org/articles/philesia/philesia-magellanica/ (baya de 12-14 x 9-11 mm).",
+          "confianza": "media"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/2781140/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "polinizada_por",
+          "especie": "sephanoides_sephaniodes",
+          "fuente": "Smith-Ramírez C (1993) Los picaflores y su recurso floral en el bosque templado de la isla de Chiloé, Chile. Revista Chilena de Historia Natural 66: 65-73. https://rchn.biologiachile.cl/pdfs/1993/1/Smith-Ramirez_1993.pdf (Chiloé: el picaflor se posa en la flor e introduce parte del cuerpo para alcanzar el néctar; se halló polen de Philesia en picaflores). Figura como Sephanoides galeritus, sinónimo.",
+          "confianza": "alta"
+        }
+      ],
+      "aprende": "El coicopihue enseña que algunas flores dependen de un solo socio: su campana grande solo la abre por dentro el picaflor.",
+      "pendiente": [
+        "crecimiento: sin dato con fuente",
+        "tolerancia_heladas: Trees and Shrubs Online da zona USDA 8b-9a en cultivo; no se convierte a °C sin fuente",
+        "tolerancia_anegamiento: sin dato con fuente",
+        "ph_suelo: sin dato con fuente",
+        "micorriza: sin dato con fuente",
+        "dispersion: sin dato con fuente",
+        "rebrota: sin dato con fuente",
+        "estado_conservacion (RCE, MMA Chile): no verificado; solo se registra la categoría UICN."
+      ]
+    },
+    {
+      "id": "mitraria_coccinea",
+      "nombre": "Botellita, vochi-vochi",
+      "cientifico": "Mitraria coccinea Cav.",
+      "familia": "Gesneriaceae",
+      "grupo": "epifita",
+      "gremio": "matorral",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 86 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=5591192&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 8,
+          "unidad": "m",
+          "fuente": "Chileflora, ficha de Mitraria coccinea (registro 0168): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0168.htm ('Tamaño: 8 m', arbusto trepador).",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "alta",
+          "fuente": "Chileflora, ficha de Mitraria coccinea (registro 0168): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0168.htm (algo de sombra hasta sombra total). Conversión propia de las 'Condiciones de luz' de Chileflora: solo 'expuesto' = baja; hasta 'algo de sombra' (20-40 %) = media; incluye 'a la sombra' (40-80 %) o 'sombra total' = alta.",
+          "confianza": "media"
+        },
+        "tolerancia_heladas": {
+          "valor": -8,
+          "unidad": "°C",
+          "fuente": "Chileflora, ficha de Mitraria coccinea (registro 0168): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0168.htm (resiste -8 °C, zona USDA 8). Chileflora la expresa como resistencia al frío en cultivo (zona USDA), no como medición en terreno.",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#E0242C",
+          "fuente": "Smith-Ramírez C (1993) Los picaflores y su recurso floral en el bosque templado de la isla de Chiloé, Chile. Revista Chilena de Historia Natural 66: 65-73. https://rchn.biologiachile.cl/pdfs/1993/1/Smith-Ramirez_1993.pdf (Tabla 1: 'Rojo/amarillo'); Trees and Shrubs Online: corola 'rich scarlet'. Hex aproximado.",
+          "confianza": "media"
+        },
+        "fruto": {
+          "valor": "baya",
+          "fuente": "Trees and Shrubs Online, ficha de Mitraria coccinea: https://www.treesandshrubsonline.org/articles/mitraria/mitraria-coccinea/ (baya ovoide).",
+          "confianza": "media"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/5591192/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "polinizada_por",
+          "especie": "sephanoides_sephaniodes",
+          "fuente": "Smith-Ramírez C (1993) Los picaflores y su recurso floral en el bosque templado de la isla de Chiloé, Chile. Revista Chilena de Historia Natural 66: 65-73. https://rchn.biologiachile.cl/pdfs/1993/1/Smith-Ramirez_1993.pdf (Chiloé: especie visitada por el picaflor, con néctar abundante; el polen de Gesneriaceae en los picaflores no se pudo separar por especie al microscopio). Figura como Sephanoides galeritus, sinónimo.",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "La botellita enseña la vida colgada: crece sobre los troncos húmedos del bosque y paga al picaflor con mucho néctar.",
+      "pendiente": [
+        "floracion_meses: sin meses con fuente para Chile (Trees and Shrubs Online da mayo-junio en cultivo en Gran Bretaña)",
+        "crecimiento: sin dato con fuente",
+        "tolerancia_anegamiento: sin dato con fuente",
+        "ph_suelo: sin dato con fuente",
+        "micorriza: sin dato con fuente",
+        "dispersion: sin dato con fuente",
+        "rebrota: sin dato con fuente",
+        "estado_conservacion (RCE, MMA Chile): no verificado; solo se registra la categoría UICN."
+      ]
+    },
+    {
+      "id": "parablechnum_chilense",
+      "nombre": "Costilla de vaca, quilquil",
+      "cientifico": "Parablechnum chilense (Kaulf.) Gasper & Salino (sin. Blechnum chilense (Kaulf.) Mett.)",
+      "familia": "Blechnaceae",
+      "grupo": "helecho",
+      "gremio": "hierba",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 123 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=9360500&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0 . Nombre aceptado en GBIF: Parablechnum chilense; Blechnum chilense queda como sinónimo.",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 2,
+          "unidad": "m",
+          "fuente": "Chileflora, ficha de Blechnum chilense (registro 0680): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0680.htm ('Tamaño: 2 m').",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "alta",
+          "fuente": "Chileflora, ficha de Blechnum chilense (registro 0680): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0680.htm (algo de sombra hasta sombra total). Conversión propia de las 'Condiciones de luz' de Chileflora: solo 'expuesto' = baja; hasta 'algo de sombra' (20-40 %) = media; incluye 'a la sombra' (40-80 %) o 'sombra total' = alta.",
+          "confianza": "media"
+        },
+        "tolerancia_heladas": {
+          "valor": -5,
+          "unidad": "°C",
+          "fuente": "Chileflora, ficha de Blechnum chilense (registro 0680): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0680.htm (heladas ocasionales hasta -5 °C, zona USDA 9). Chileflora la expresa como resistencia al frío en cultivo (zona USDA), no como medición en terreno.",
+          "confianza": "media"
+        },
+        "dispersion": {
+          "valor": "viento",
+          "fuente": "Inferencia: como todo helecho se propaga por esporas, que dispersa el viento. No se encontró estudio específico de la especie.",
+          "confianza": "baja"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/9360500/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "La costilla de vaca enseña la reproducción sin flores ni semillas: se propaga por esporas y cubre el suelo sombrío y húmedo del bosque.",
+      "pendiente": [
+        "crecimiento: sin dato con fuente",
+        "tolerancia_anegamiento: sin dato con fuente",
+        "ph_suelo: sin dato con fuente",
+        "micorriza: sin dato con fuente",
+        "hojarasca: sin dato con fuente",
+        "rebrota: sin dato con fuente",
+        "estado_conservacion (RCE, MMA Chile): no verificado; solo se registra la categoría UICN."
+      ]
+    },
+    {
+      "id": "sphagnum_magellanicum",
+      "nombre": "Pompón, musgo pompón",
+      "cientifico": "Sphagnum magellanicum Brid.",
+      "familia": "Sphagnaceae",
+      "grupo": "musgo",
+      "gremio": "hierba",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 158 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=2669001&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "crecimiento": {
+          "valor": "medio",
+          "fuente": "Tapia C (2008) Crecimiento y productividad del musgo Sphagnum magellanicum Brid. en turberas secundarias de la provincia de Llanquihue, Chile. Tesis, Universidad Austral de Chile. https://sub.cehum.org/bitstream/CEHUM2018/1377/1/Tapia.%20Crecimiento%20y%20productividad%20del%20musgo%20Sphagnum%20magellanicum%20Brid.%20en%20turberas%20secundarias%20de%20la%20provincia%20de%20Llanquihue%2c%20Chile.pdf : crecimiento en altura de 1,72 a 9,53 cm en 11 meses, promedio 4,43 cm/año, en tres turberas secundarias de Llanquihue. La clase 'medio' es interpretación propia del número.",
+          "confianza": "baja"
+        },
+        "tolerancia_anegamiento": {
+          "valor": "alta",
+          "fuente": "Zegers G, Larraín J, Díaz MF & Armesto JJ (2006) Impacto ecológico y social de la explotación de pomponales y turberas de Sphagnum en la Isla Grande de Chiloé. Revista Ambiente y Desarrollo 22: 28-34. https://biblioteca.cehum.org/bitstream/CEHUM2018/1389/1/ (coloniza sitios anegados por su gran capacidad para tolerar el anegamiento); León C, Oliván G & Fuertes E (2012) Turberas esfagnosas de Chiloé (Chile) y su problemática ambiental. Bol. Soc. Esp. Briol. 38-39: 29-40. https://sub.cehum.org/bitstream/CEHUM2018/1411/1/",
+          "confianza": "alta"
+        },
+        "ph_suelo": {
+          "valor": [
+            4.5,
+            5.3
+          ],
+          "fuente": "Tapia C (2008) Crecimiento y productividad del musgo Sphagnum magellanicum Brid. en turberas secundarias de la provincia de Llanquihue, Chile. Tesis, Universidad Austral de Chile. https://sub.cehum.org/bitstream/CEHUM2018/1377/1/Tapia.%20Crecimiento%20y%20productividad%20del%20musgo%20Sphagnum%20magellanicum%20Brid.%20en%20turberas%20secundarias%20de%20la%20provincia%20de%20Llanquihue%2c%20Chile.pdf (Anexo 2: pH en agua 4,9, 4,5 y 5,3 en las turberas de Huelmo, Quemas y Quillaipe). León C, Oliván G & Fuertes E (2012) Turberas esfagnosas de Chiloé (Chile) y su problemática ambiental. Bol. Soc. Esp. Briol. 38-39: 29-40. https://sub.cehum.org/bitstream/CEHUM2018/1411/1/ explica que Sphagnum acidifica el medio.",
+          "confianza": "media"
+        },
+        "hojarasca": {
+          "valor": 101,
+          "unidad": "C:N",
+          "fuente": "Tapia C (2008) Crecimiento y productividad del musgo Sphagnum magellanicum Brid. en turberas secundarias de la provincia de Llanquihue, Chile. Tesis, Universidad Austral de Chile. https://sub.cehum.org/bitstream/CEHUM2018/1377/1/Tapia.%20Crecimiento%20y%20productividad%20del%20musgo%20Sphagnum%20magellanicum%20Brid.%20en%20turberas%20secundarias%20de%20la%20provincia%20de%20Llanquihue%2c%20Chile.pdf (Cuadro 6: C 56,4 %, N 0,56 %, C:N = 101). Materia orgánica pobre en nutrientes y de descomposición muy lenta (Zegers et al. 2006).",
+          "confianza": "alta"
+        },
+        "rebrota": {
+          "valor": true,
+          "fuente": "Tapia C (2008) Crecimiento y productividad del musgo Sphagnum magellanicum Brid. en turberas secundarias de la provincia de Llanquihue, Chile. Tesis, Universidad Austral de Chile. https://sub.cehum.org/bitstream/CEHUM2018/1377/1/Tapia.%20Crecimiento%20y%20productividad%20del%20musgo%20Sphagnum%20magellanicum%20Brid.%20en%20turberas%20secundarias%20de%20la%20provincia%20de%20Llanquihue%2c%20Chile.pdf (si se corta el ápice, brotan yemas laterales de los 10 cm bajo el ápice; tras la cosecha se suele recosechar en ~3 años, Barrientos 2006).",
+          "confianza": "media"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/2669001/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "El pompón enseña cómo nace una turbera: tras quemar un tepual anegado, el musgo acidifica el agua, frena la descomposición y retrasa por décadas la vuelta del bosque.",
+      "pendiente": [
+        "altura_max_m: no aplica como en plantas vasculares (forma cojines); sin dato de espesor con fuente",
+        "tolerancia_sombra: solo hay datos de otra especie (S. cristatum en Nueva Zelanda, citado por Tapia 2008)",
+        "tolerancia_heladas: sin dato con fuente",
+        "micorriza: sin dato con fuente",
+        "fijacion_n: sin dato con fuente",
+        "dispersion: sin dato con fuente (esporas)",
+        "estado_conservacion (RCE, MMA Chile): no verificado; solo se registra la categoría UICN. Zegers et al. 2006 y León et al. 2012 documentan su sobreexplotación en Chiloé."
+      ]
+    },
+    {
+      "id": "gaultheria_mucronata",
+      "nombre": "Chaura, murtilla de Magallanes",
+      "cientifico": "Gaultheria mucronata (L.f.) Hook. & Arn. (sin. Pernettya mucronata)",
+      "familia": "Ericaceae",
+      "grupo": "arbusto",
+      "gremio": "matorral",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 76 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=7418599&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 2,
+          "unidad": "m",
+          "fuente": "Chileflora, ficha de Gaultheria mucronata (registro 2156): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH2156.htm ('Tamaño: 2 m').",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "alta",
+          "fuente": "Chileflora, ficha de Gaultheria mucronata (registro 2156): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH2156.htm (algo de sombra y a la sombra 40-80 %). Conversión propia de las 'Condiciones de luz' de Chileflora: solo 'expuesto' = baja; hasta 'algo de sombra' (20-40 %) = media; incluye 'a la sombra' (40-80 %) o 'sombra total' = alta.",
+          "confianza": "media"
+        },
+        "micorriza": {
+          "valor": "ericoide",
+          "fuente": "Bruzone MC, Fontenla SB & Vohník M (2015) Is the prominent ericoid mycorrhizal fungus Rhizoscyphus ericae absent in the Southern Hemisphere's Ericaceae? A case study on the diversity of root mycobionts in Gaultheria spp. from northwest Patagonia, Argentina. Mycorrhiza 25: 25-40. https://www.doi.org/10.1007/S00572-014-0586-3 (G. mucronata forma micorriza ericoide, sobre todo con Sebacinaceae).",
+          "confianza": "alta"
+        },
+        "color_flor": {
+          "valor": "#FAFAF5",
+          "fuente": "Chileflora, ficha de Gaultheria mucronata (registro 2156): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH2156.htm ('Flor: Blanco'). Hex aproximado.",
+          "confianza": "media"
+        },
+        "fruto": {
+          "valor": "baya",
+          "fuente": "Trees and Shrubs Online, ficha de Gaultheria mucronata: https://www.treesandshrubsonline.org/articles/gaultheria/gaultheria-mucronata/ (baya globosa de ~8-13 mm, de blanca a rosada, lila, carmesí o casi negra).",
+          "confianza": "media"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/7418599/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "La chaura enseña la alianza con hongos de suelos ácidos y pobres: sus raíces finas viven asociadas a hongos ericoides que le consiguen nutrientes.",
+      "pendiente": [
+        "tolerancia_heladas: fuentes contradictorias (Chileflora: hasta -5 °C; Trees and Shrubs Online: 'one of the hardiest of S. American shrubs')",
+        "floracion_meses: sin meses con fuente para Chile",
+        "crecimiento: sin dato con fuente",
+        "tolerancia_anegamiento: sin dato con fuente",
+        "ph_suelo: sin dato numérico con fuente",
+        "dispersion: sin estudio con fuente",
+        "rebrota: se extiende por retoños de raíz (Trees and Shrubs Online), pero no hay dato de rebrote tras corte o fuego",
+        "estado_conservacion (RCE, MMA Chile): no verificado; solo se registra la categoría UICN."
+      ]
+    },
+    {
+      "id": "ulex_europaeus",
+      "nombre": "Espinillo, aulaga, chacay",
+      "cientifico": "Ulex europaeus L.",
+      "familia": "Fabaceae",
+      "grupo": "arbusto",
+      "gremio": "matorral",
+      "origen": "invasora",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 35 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=2951984&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0 . Espinoza D (2024) Análisis de la dinámica espacio-temporal de la invasión de Ulex europaeus L. (Fabaceae) en la Isla Grande de Chiloé, Chile. Memoria, Universidad de Chile: pasó de 0,31 % de la superficie de la isla (2000) a 1,40 % (2021). https://repositorio.uchile.cl/handle/2250/208757",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 3,
+          "unidad": "m",
+          "fuente": "Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (tallos de hasta 3 m).",
+          "confianza": "media"
+        },
+        "crecimiento": {
+          "valor": "rapido",
+          "fuente": "Washington State Noxious Weed Control Board (2000) Written findings: Ulex europaeus (gorse), basado en Hoshovsky 1989, Holm et al. 1997 y Zabkiewicz 1976. https://www.nwcb.wa.gov/images/weeds/Ulex-europaeus-2000.pdf ('the plant matures rapidly').",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "baja",
+          "fuente": "Chileflora, ficha de Ulex europaeus (registro 0090): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0090.htm (solo 'expuesto, pleno sol'). Conversión propia de las 'Condiciones de luz' de Chileflora: solo 'expuesto' = baja; hasta 'algo de sombra' (20-40 %) = media; incluye 'a la sombra' (40-80 %) o 'sombra total' = alta.",
+          "confianza": "media"
+        },
+        "tolerancia_anegamiento": {
+          "valor": "baja",
+          "fuente": "Washington State Noxious Weed Control Board (2000) Written findings: Ulex europaeus (gorse), basado en Hoshovsky 1989, Holm et al. 1997 y Zabkiewicz 1976. https://www.nwcb.wa.gov/images/weeds/Ulex-europaeus-2000.pdf (crece mejor en sitios bien drenados; la fijación de N se frena si las raíces se inundan).",
+          "confianza": "media"
+        },
+        "ph_suelo": {
+          "valor": [
+            4,
+            5
+          ],
+          "fuente": "Washington State Noxious Weed Control Board (2000) Written findings: Ulex europaeus (gorse), basado en Hoshovsky 1989, Holm et al. 1997 y Zabkiewicz 1976. https://www.nwcb.wa.gov/images/weeds/Ulex-europaeus-2000.pdf , citando a Holm et al. (1997): prefiere pH 4-5 y no tolera la cal.",
+          "confianza": "media"
+        },
+        "fijacion_n": {
+          "valor": "simbiotica_rizobio",
+          "fuente": "Washington State Noxious Weed Control Board (2000) Written findings: Ulex europaeus (gorse), basado en Hoshovsky 1989, Holm et al. 1997 y Zabkiewicz 1976. https://www.nwcb.wa.gov/images/weeds/Ulex-europaeus-2000.pdf (bacterias fijadoras en nódulos radicales). En Hawái y Nueva Zelanda los nódulos tienen Bradyrhizobium (USDA NIFA, proyecto 0201451).",
+          "confianza": "alta"
+        },
+        "color_flor": {
+          "valor": "#F7D417",
+          "fuente": "Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (flores amarillas). Hex aproximado.",
+          "confianza": "media"
+        },
+        "fruto": {
+          "valor": "legumbre",
+          "fuente": "Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (legumbre de 11-20 mm).",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "gravedad",
+          "fuente": "Washington State Noxious Weed Control Board (2000) Written findings: Ulex europaeus (gorse), basado en Hoshovsky 1989, Holm et al. 1997 y Zabkiewicz 1976. https://www.nwcb.wa.gov/images/weeds/Ulex-europaeus-2000.pdf (la vaina se abre de golpe y la mayoría de las semillas cae a menos de 2 m); Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (también agua, maquinaria y movimientos de tierra). Se usa 'gravedad' para la expulsión balística a corta distancia.",
+          "confianza": "media"
+        },
+        "rebrota": {
+          "valor": true,
+          "fuente": "Washington State Noxious Weed Control Board (2000) Written findings: Ulex europaeus (gorse), basado en Hoshovsky 1989, Holm et al. 1997 y Zabkiewicz 1976. https://www.nwcb.wa.gov/images/weeds/Ulex-europaeus-2000.pdf (rebrota desde el tallo o el cuello de la raíz tras fuego o corte).",
+          "confianza": "alta"
+        },
+        "invasividad": {
+          "valor": "alta",
+          "fuente": "Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (potencial invasor 21, alto; banco de semillas viable más de 30 años); Espinoza (2024) para la expansión en Chiloé.",
+          "confianza": "alta"
+        },
+        "estado_conservacion": {
+          "valor": "LC (Preocupación Menor, UICN, evaluada en su rango nativo)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/2951984/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "El espinillo enseña cómo gana una invasora: fija nitrógeno, rebrota tras el fuego, deja semillas vivas por décadas en el suelo y en Chiloé más que cuadruplicó su superficie en 21 años.",
+      "pendiente": [
+        "tolerancia_heladas: fuentes contradictorias (Chileflora: -5 °C; NWCB 2000: las plantas maduras toleran heladas severas)",
+        "floracion_meses: solo hay meses del hemisferio norte (NWCB: enero-marzo); no se trasladan sin fuente",
+        "micorriza: sin dato con fuente",
+        "hojarasca: sin dato con fuente"
+      ]
+    },
+    {
+      "id": "rubus_ulmifolius",
+      "nombre": "Zarzamora, zarza, mora",
+      "cientifico": "Rubus ulmifolius Schott",
+      "familia": "Rosaceae",
+      "grupo": "arbusto",
+      "gremio": "matorral",
+      "origen": "invasora",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 12 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=2996929&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0 (todos de iNaturalist). En el mismo polígono Rubus constrictus tiene 1 registro (taxonKey 2999327); Fuentes et al. (2014) nombran a ambas como invasoras del sur de Chile.",
+        "confianza": "media"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 3,
+          "unidad": "m",
+          "fuente": "Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (tallos de hasta 3 m). Chileflora (SH0360) da 8 m como planta trepadora.",
+          "confianza": "media"
+        },
+        "tolerancia_sombra": {
+          "valor": "alta",
+          "fuente": "Chileflora, ficha de Rubus ulmifolius (registro 0360): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0360.htm (algo de sombra y a la sombra 40-80 %). Conversión propia de las 'Condiciones de luz' de Chileflora: solo 'expuesto' = baja; hasta 'algo de sombra' (20-40 %) = media; incluye 'a la sombra' (40-80 %) o 'sombra total' = alta.",
+          "confianza": "media"
+        },
+        "tolerancia_heladas": {
+          "valor": -8,
+          "unidad": "°C",
+          "fuente": "Chileflora, ficha de Rubus ulmifolius (registro 0360): https://www.chileflora.com/Florachilena/FloraSpanish/HighResPages/SH0360.htm (resiste -8 °C, zona USDA 8). Chileflora la expresa como resistencia al frío en cultivo (zona USDA), no como medición en terreno.",
+          "confianza": "media"
+        },
+        "color_flor": {
+          "valor": "#F8E4EC",
+          "fuente": "Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (flores blancas o rosadas). Hex aproximado.",
+          "confianza": "media"
+        },
+        "fruto": {
+          "valor": "drupa",
+          "fuente": "Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (drupas negras agrupadas en una infrutescencia de 8-10 mm, es decir, polidrupa).",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "aves",
+          "fuente": "Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (semillas dispersadas por aves y otros animales que comen el fruto).",
+          "confianza": "alta"
+        },
+        "invasividad": {
+          "valor": "alta",
+          "fuente": "Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (potencial invasor 28, alto; forma muros impenetrables y desplaza especies nativas).",
+          "confianza": "alta"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/2996929/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "La zarzamora enseña que una invasora puede usar a los aliados nativos: las aves que comen sus moras siembran sus semillas en cercos y bordes de bosque.",
+      "pendiente": [
+        "Fuentes et al. (2014) dan su distribución entre Coquimbo y Los Lagos, sin mencionar Chiloé en particular; la presencia en la isla se apoya en GBIF (12 registros, todos de iNaturalist)",
+        "floracion_meses: sin dato con fuente para Chile",
+        "crecimiento: sin dato con fuente",
+        "tolerancia_anegamiento: sin dato con fuente",
+        "ph_suelo: sin dato con fuente",
+        "micorriza: sin dato con fuente",
+        "rebrota: Fuentes et al. (2014) dicen que se reproduce vegetativamente, pero no describen rebrote tras corte o fuego",
+        "dispersada_por turdus_falcklandii: solo hay un dato de Juan Fernández visto en un resumen de búsqueda, no verificado"
+      ]
+    },
+    {
+      "id": "holcus_lanatus",
+      "nombre": "Pasto miel, pasto dulce",
+      "cientifico": "Holcus lanatus L.",
+      "familia": "Poaceae",
+      "grupo": "pasto",
+      "gremio": "hierba",
+      "origen": "introducida",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, ocurrencias dentro de un polígono que encierra la Isla Grande de Chiloé (consulta 08-10-2026): 4 registros. https://api.gbif.org/v1/occurrence/search?taxonKey=2706164&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0 (4 observaciones de iNaturalist con grado de investigación). López IF, Balocchi OA, Kemp PD & Valdés C (2009) Phenotypic variability in Holcus lanatus L. in southern Chile. Crop & Pasture Science 60: 768-777, https://doi.org/10.1071/CP09001 : coloniza una amplia gama de sitios en las praderas naturalizadas del Dominio Húmedo de Chile.",
+        "confianza": "media"
+      },
+      "rasgos": {
+        "altura_max_m": {
+          "valor": 1,
+          "unidad": "m",
+          "fuente": "Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (cañas de hasta 1 m).",
+          "confianza": "media"
+        },
+        "fruto": {
+          "valor": "cariopsis",
+          "fuente": "Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (cariopsis ovado de 1,5-1,7 mm).",
+          "confianza": "alta"
+        },
+        "dispersion": {
+          "valor": "viento",
+          "fuente": "Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (semillas dispersadas por viento, agua y animales; también se propaga por tallos rastreros).",
+          "confianza": "media"
+        },
+        "invasividad": {
+          "valor": "alta",
+          "fuente": "Fuentes N, Sánchez P, Pauchard A, Urrutia J, Cavieres L & Marticorena A (2014) Plantas invasoras del centro-sur de Chile: una guía de campo. LIB, Concepción. https://lib2.udec.cl/wp-content/uploads/2017/11/plantas-invasoras.pdf (potencial invasor 19, alto; semillas viables más de 10 años; forma poblaciones densas).",
+          "confianza": "alta"
+        },
+        "estado_conservacion": {
+          "valor": "NE (No Evaluada, UICN)",
+          "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/2706164/iucnRedListCategory",
+          "confianza": "alta"
+        }
+      },
+      "relaciones": [],
+      "aprende": "El pasto miel enseña que muchas praderas del sur de Chile no son nativas: son pastos europeos traídos como forraje que ocuparon el lugar del bosque.",
+      "pendiente": [
+        "Dominancia en las praderas de Chiloé: no se encontró estudio de composición botánica específico de la isla; las fuentes hablan del sur húmedo de Chile en general",
+        "Fuentes et al. (2014) la describen como 'hierba anual', lo que choca con López et al. (2009) y la literatura general que la tratan como perenne; no se usa ese dato",
+        "crecimiento: sin dato con fuente",
+        "tolerancia_sombra: sin dato con fuente",
+        "tolerancia_heladas: sin dato con fuente",
+        "tolerancia_anegamiento: sin dato con fuente",
+        "ph_suelo: Fuentes et al. (2014) solo dicen 'amplio rango de suelos'",
+        "floracion_meses: sin dato con fuente para Chile",
+        "rebrota: sin dato con fuente"
+      ]
+    },
+    {
+      "id": "racomitrium_lanuginosum",
+      "nombre": "Musgo lanudo",
+      "cientifico": "Racomitrium lanuginosum (Hedw.) Brid.",
+      "familia": "Grimmiaceae",
+      "grupo": "musgo",
+      "gremio": "hierba",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, 6 registros dentro del polígono de la Isla Grande de Chiloé (consulta 09-10-2026): https://api.gbif.org/v1/occurrence/search?taxonKey=2673622&geometry=POLYGON((-73.95%20-41.75,-74.2%20-42.0,-74.3%20-42.6,-74.45%20-43.3,-73.95%20-43.45,-73.55%20-43.2,-73.45%20-43.0,-73.40%20-42.45,-73.45%20-42.10,-73.48%20-41.80,-73.95%20-41.75))&limit=0",
+        "confianza": "media"
+      },
+      "rasgos": {
+        "engrosamiento_tapiz_mm_anio": {
+          "valor": 1.65,
+          "unidad": "mm/año",
+          "fuente": "Isotalo A & Tuviala J (2023) Does the moss Racomitrium lanuginosum form mires in Iceland? (investigacion_musgos_liquenes_nalca_complemento.json): 1,6–1,7 mm/año",
+          "confianza": "media"
+        },
+        "cubre_lava_anios": {
+          "valor": 24,
+          "unidad": "años",
+          "fuente": "Isotalo A & Tuviala J (2023) Does the moss Racomitrium lanuginosum form mires in Iceland? (investigacion_musgos_liquenes_nalca_complemento.json)",
+          "confianza": "media"
+        },
+        "cobertura_roca_andina": {
+          "valor": "2,3 % a 24 años · 6,0 % a 48 · 32,2 % a 84 · 63,2 % a 140",
+          "unidad": "texto",
+          "fuente": "Garibotti IA et al. 2011, Arctic, Antarctic and Alpine Research 43:35-45 (leído completo)",
+          "confianza": "alta"
+        },
+        "espesor_maximo_cm": {
+          "valor": [
+            30,
+            40
+          ],
+          "unidad": "cm",
+          "fuente": "Isotalo A & Tuviala J (2023) Does the moss Racomitrium lanuginosum form mires in Iceland? (investigacion_musgos_liquenes_nalca_complemento.json)",
+          "confianza": "media"
+        },
+        "humedad_minima_pct": {
+          "valor": 95,
+          "unidad": "% de humedad relativa (bajo eso se deseca)",
+          "fuente": "Isotalo A & Tuviala J (2023) Does the moss Racomitrium lanuginosum form mires in Iceland? (investigacion_musgos_liquenes_nalca_complemento.json)",
+          "confianza": "media"
+        },
+        "agua_retenida_g_g": {
+          "valor": [
+            3,
+            7
+          ],
+          "unidad": "g de agua por g seco",
+          "fuente": "investigacion_microclima_agua_viento.json (Hembre et al. 2021 y otros)",
+          "confianza": "media"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "facilita",
+          "especie": "embothrium_coccineum",
+          "fuente": "Díaz & Armesto 2007, Rev. Chil. Hist. Nat. 80:13-26 (sobre musgo el notro germina 61 % vs 41 % en suelo; en Sphagnum, no en Racomitrium)",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "El primer constructor de suelo: cubre la roca desnuda, guarda agua como una esponja y, al morir por abajo mientras crece por arriba, deja un tapiz de materia orgánica que engrosa ~1,6 mm por año.",
+      "pendiente": [
+        "color medido del tapiz",
+        "tasa de cobertura en Chiloé (se usa Islandia como análogo húmedo)"
+      ]
+    }
+  ]
+}

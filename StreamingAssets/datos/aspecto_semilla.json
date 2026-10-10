@@ -1,0 +1,327 @@
+{
+  "nota": "Aspecto de la isla semilla (solo la vista): colores y relaciones con fuente, verificados el 09-10-2026 (enjambre Haiku + verificación Sonnet; hex calculados desde Munsell con colour-science). Lo marcado CALIBRACIÓN es provisional.",
+  "pendientes": "Munsell de la hojarasca fresca de Nothofagus (sin fuente: se usa 7.5YR 4/4 como supuesto). Poder pigmentante de los óxidos de hierro como número (la relación existe, falta cifra abierta). Color de la condrita meteorizada (más clara, sin cifra). Oxidación en clima húmedo: sin cifra (cotas: decenas de años en desiertos; New Concord, caída de 1860, con óxido parcial a ~140 años).",
+  "reflectancia_ci_visible_pct": {
+    "valor": [
+      2,
+      3.5
+    ],
+    "unidad": "% reflectancia a 550 nm (banda v)",
+    "fuente": "Ryugu: polvos TD1/TD2 ~2 %, granos 2-4 %; Orgueil precalentado a 150 C ~3,5 %; Orgueil calentado 300-600 C <2 %. PMC10699774 (abierto). Bennu muestra agregada 2,31+/-0,08 % (resumen JpGU 2025, no abierto). Superficie Bennu ~4,4 % (no abierto)",
+    "confianza": "media",
+    "nota": "Orgueil sin calentar (meteorizado) es 'mas brillante' pero el texto no da cifra; JST: Ryugu ~2x mas oscuro que CI en el visible, o sea CI meteorizada ~4 % (inferido, baja). Para juego: roca CI fresca 2-4 %."
+  },
+  "color_condrita_fresca": {
+    "valor": "#272727",
+    "unidad": "hex sRGB",
+    "fuente": "Calculado desde reflectancia 2 % (Ryugu/Bennu muestra) tomada como Y lineal, codificacion sRGB",
+    "confianza": "media",
+    "nota": "Gris neutro; Y=0,02 -> sRGB 39. Con 3,5 % seria #333333; con 4,4 % #3b3b3b. N Munsell ~1,5 (ASTM D1535). Sin tinte medido."
+  },
+  "munsell_ferrihidrita": {
+    "valor": "6.6YR 4.9/6.3; rango 2.8YR-9.2YR, V 2.3-6.3, C 1.9-7.3",
+    "unidad": "Munsell mediana (rango)",
+    "fuente": "Scheinost & Schwertmann 1999, SSSA J 63:1463-1471, Tabla 3 y 7 (PDF abierto: literature.wolkersdorfer.info/literature/Color Identification of Iron Oxides and Hydroxysulfates Use and Limitation.pdf) n=59",
+    "confianza": "alta",
+    "nota": "Tabla 3. El mismo articulo avisa que el color no identifica bien la ferrihidrita (56 % acierto): solapa con hematita y lepidocrocita."
+  },
+  "color_ferrihidrita": {
+    "valor": "#a36a40",
+    "unidad": "hex sRGB",
+    "fuente": "colour-science de 6.6YR 4.9/6.3",
+    "confianza": "alta",
+    "nota": "Pardo anaranjado; color del oxido recien formado y de la costra de CI meteorizada."
+  },
+  "munsell_goetita": {
+    "valor": "0.4Y 6/6.9 (=10.4YR 6/6.9); rango 7.3YR-1.6Y, V 4.0-6.8, C 6.0-7.9",
+    "unidad": "Munsell mediana (rango)",
+    "fuente": "Scheinost & Schwertmann 1999, SSSA J 63:1463-1471, Tabla 3 y 7 (PDF abierto: literature.wolkersdorfer.info/literature/Color Identification of Iron Oxides and Hydroxysulfates Use and Limitation.pdf) n=82",
+    "confianza": "alta",
+    "nota": "Mineral puro. En suelos (goetita dominante): 0.6Y 5.9/3.5."
+  },
+  "color_goetita": {
+    "valor": "#bc8a49",
+    "unidad": "hex sRGB",
+    "fuente": "colour-science 0.4.7 de 0.4Y 6/6.9",
+    "confianza": "alta",
+    "nota": "En suelo (croma bajo por MO y mezcla): #aa8b70 (10YR 5.9/3.5)."
+  },
+  "munsell_hematita": {
+    "valor": "1.2YR 3.6/5.2; rango 3.5R-4.1YR, V 2.4-4.4, C 1.5-7.9",
+    "unidad": "Munsell mediana (rango)",
+    "fuente": "Scheinost & Schwertmann 1999, SSSA J 63:1463-1471, Tabla 3 y 7 (PDF abierto: literature.wolkersdorfer.info/literature/Color Identification of Iron Oxides and Hydroxysulfates Use and Limitation.pdf) n=59",
+    "confianza": "alta",
+    "nota": "En suelos con hematita+goetita: 4.7YR 4.3/5.2 (Tabla 7)."
+  },
+  "color_hematita": {
+    "valor": "#80463a",
+    "unidad": "hex sRGB",
+    "fuente": "colour-science de 1.2YR 3.6/5.2",
+    "confianza": "alta",
+    "nota": "Suelo con hematita: #905b41 (4.7YR 4.3/5.2)."
+  },
+  "color_humus": {
+    "valor": "#382f2b",
+    "unidad": "hex sRGB",
+    "fuente": "colour-science de 10YR 2/1 (humedo)",
+    "confianza": "media",
+    "nota": "Franzmeier 1988 (Proc. Indiana Acad. Sci. 98:463): 10YR 2/1 es el color mas oscuro de la tabla, alcanzable con pocos % de C; mas C no oscurece mas. Alternativa 10YR 3/2: #564438 (Ap tipico, 1-2 % C)."
+  },
+  "color_hojarasca_fresca": {
+    "valor": "#7e583e",
+    "unidad": "hex sRGB (supuesto)",
+    "fuente": "colour-science de 7.5YR 4/4; SIN fuente abierta para Munsell de hojarasca",
+    "confianza": "baja",
+    "nota": "Supuesto de trabajo. No citar como dato."
+  },
+  "oscurecimiento_humedo_value": {
+    "valor": [
+      1.0,
+      1.7
+    ],
+    "unidad": "unidades de valor Munsell (seco al aire -> humedo)",
+    "fuente": "Shields et al. 1968, Can. J. Soil Sci. 48:271 (abstract abierto, mountainscholar.org)",
+    "confianza": "media",
+    "nota": "Croma y matiz casi no cambian. 10YR 3/2 humedo #564438 -> seco 10YR 4.7/2 #826e61 (+1,7); 10YR 4/3 humedo #755b44 -> seco 10YR 5/3 #90745e (+1,0)."
+  },
+  "relacion_carbono_value": {
+    "valor": "C% = a - b*V - c*Croma; media: 3.77 - 0.473 V - 0.222 Chroma (R2 0.45); fina: 5.18 - 0.532 V - 0.523 Chroma (R2 0.47); gruesa: 2.56 - 0.241 V - 0.377 Chroma (R2 0.47); mod. gruesa: 2.90 - 0.337 V - 0.267 Chroma (R2 0.38); mod. fina: 4.66 - 0.606 V - 0.274 Chroma (R2 0.31)",
+    "unidad": "% C organico en horizontes Ap, matiz 10YR",
+    "fuente": "Franzmeier 1988, Proc. Indiana Acad. Sci. 98:463-471 (PDF abierto: journals.indianapolis.iu.edu/index.php/ias/article/download/8089/8062/14227); n=1268 Ap",
+    "confianza": "media",
+    "nota": "Ecuaciones copiadas del texto. R2 bajo (0,3-0,5): solo tendencia; satura en 10YR 2/1. Solo Ap labrados de Indiana, no bosque. Ej. textura media: V=3, Croma=2 -> 1,9 % C; V=2, Croma=1 -> 2,6 %. Fernandez 1988: r2>0,9 valor-MO en un solo paisaje."
+  },
+  "factor_humedo": {
+    "valor": 0.65,
+    "unidad": "multiplicador de color (lineal)",
+    "fuente": "cálculo propio desde Shields 1968 (vía verificado_colores): 10YR 3/2 húmedo #564438 frente a 10YR 4,7/2 seco #826e61 → luminancia ~0,6–0,7",
+    "confianza": "media"
+  },
+  "poder_pigmentante_oxidos": {
+    "valor": 8,
+    "unidad": "1/fracción",
+    "fuente": "CALIBRACIÓN PROVISIONAL: un poco de óxido de hierro tiñe mucho (Schwertmann 1993; Scheinost & Schwertmann 1999); la curva 1−exp(−8·f) es una aproximación sin cifra abierta",
+    "confianza": "baja"
+  },
+  "oscurecimiento_por_organico": {
+    "valor": 4,
+    "unidad": "multiplicador de la fracción orgánica",
+    "fuente": "CALIBRACIÓN PROVISIONAL guiada por Franzmeier 1988 (C% = 3,77 − 0,473·V − 0,222·Croma, textura media): unos pocos % de carbono bajan el valor Munsell varias unidades",
+    "confianza": "baja"
+  },
+  "hojarasca_cubre_kg_m2": {
+    "valor": 0.15,
+    "unidad": "kg/m²",
+    "fuente": "CALIBRACIÓN PROVISIONAL: masa de hojarasca con la que la superficie se ve cubierta en ~63 %",
+    "confianza": "baja"
+  },
+  "color_condrita_ordinaria": {
+    "valor": "#7c7c7c",
+    "unidad": "sRGB",
+    "fuente": "Sanchez et al. 2025 (arXiv 2503.19016): polvo fino de H5/L6/LL5 sin choque, reflectancia 19–23 % a 0,55 µm (media 20,5 %) → gris neutro N5,1; hex con colour-science (Y = reflectancia)",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (Sonnet): se usa para el regolito (polvo)"
+  },
+  "color_condrita_ordinaria_roca": {
+    "valor": "#575757",
+    "unidad": "sRGB",
+    "fuente": "Sanchez et al. 2025: cara de roca gruesa o con choque 7,7–11,6 % → #4e4e4e–#5f5f5f",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (Sonnet): para las piedras (fragmentos enteros)"
+  },
+  "color_hierro": {
+    "valor": "#636363",
+    "unidad": "sRGB",
+    "fuente": "Cloutis et al. 2010 (citado en Neeley 2014, arXiv 1407.0750): polvo de hierro 10–15 % a 0,56 µm",
+    "confianza": "baja",
+    "nota": "Verificado 09-10 (Sonnet): para el regolito"
+  },
+  "color_hierro_roca": {
+    "valor": "#818181",
+    "unidad": "sRGB",
+    "fuente": "Cloutis et al. 2010 (citado en Neeley 2014): losa rugosa 22–74 % → desde #818181",
+    "confianza": "baja",
+    "nota": "Verificado 09-10 (Sonnet): para las piedras; sin medida de hierro oxidado"
+  },
+  "ramillete_area_foliar_m2": {
+    "valor": 0.03,
+    "unidad": "m2 de hoja por ramillete",
+    "fuente": "SUPUESTO de dibujo: una ramita de coigüe con ~100 hojas de ~2,7 cm² (hoja_largo_m 0,03 × ancho 0,6·largo / 2). El NÚMERO de ramilletes sale del área foliar simulada / este valor",
+    "confianza": "baja"
+  },
+  "ramillete_tamano_m": {
+    "valor": 0.22,
+    "unidad": "m",
+    "fuente": "SUPUESTO de dibujo: ancho de una ramita con hojas de N. nitida (ramas planas en abanico); a verificar con fotos de herbario",
+    "confianza": "baja"
+  },
+  "ramilletes_tope_dibujo": {
+    "valor": 900,
+    "unidad": "ramilletes",
+    "fuente": "decisión de rendimiento: sobre este número se dibujan menos ramilletes, más grandes, conservando el área cubierta",
+    "confianza": "alta"
+  },
+  "veladura_luz_pigmento_oscuro": {
+    "valor": 0.15,
+    "unidad": "luz lineal sumada (0-1) en la cara iluminada de un pigmento oscuro",
+    "fuente": "decisión de diseño (ronda 3 del director de arte): sobre la condrita casi negra (2-4 % de reflectancia) multiplicar la luz no separa los planos; se suma una veladura cálida solo en la cara iluminada (la sombra conserva su relleno de cielo), solo en pigmentos de luminancia < 0,25. No cambia el orden de valores medido (CI < humus < óxidos). Meta: cara iluminada y sombra de la roca separadas >= 25 niveles de luminancia",
+    "confianza": "alta"
+  },
+  "madera_podrida_k_anio": {
+    "valor": 0.03,
+    "unidad": "1/año (decaimiento exponencial del volumen del tronco cuna dibujado)",
+    "fuente": "SUPUESTO de dibujo, pendiente de fuente: la madera gruesa caída se descompone mucho más lento que la hoja (descomposicion_k_anio = 0,47 es de hojarasca de N. nitida). Solo controla cuánto se ve el tronco cuna; el núcleo maneja la masa de la cuna aparte. Investigar k de madera gruesa de Nothofagus en bosque lluvioso templado",
+    "confianza": "baja"
+  },
+  "color_madera_podrida": {
+    "valor": "#6e5038",
+    "unidad": "hex sRGB",
+    "fuente": "SUPUESTO de dibujo: pardo rojizo de madera con pudrición, más claro que la corteza dibujada (#4a3426) para que la cuna se separe del tronco del árbol; sin medición de color",
+    "confianza": "baja"
+  },
+  "viento_balanceo_m_por_m": {
+    "valor": 0.012,
+    "unidad": "m de desplazamiento de la copa por m de altura del árbol (en la punta)",
+    "fuente": "decisión de diseño: balanceo visible pero calmo (un árbol de 6 m mece la punta ~7 cm). La DIRECCIÓN sale de clima.json (viento_direccion); el perfil (altura relativa al cuadrado) es el de una viga empotrada. Falta la velocidad del viento en clima.json para escalarlo",
+    "confianza": "media"
+  },
+  "viento_frecuencia_hz": {
+    "valor": 0.3,
+    "unidad": "Hz",
+    "fuente": "decisión de diseño: ráfaga lenta del orden de la frecuencia propia de árboles jóvenes (décimas de Hz); a reemplazar por una frecuencia que dependa del diámetro y la altura cuando haya fuente",
+    "confianza": "baja"
+  },
+  "color_musgo": {
+    "valor": "#848650",
+    "unidad": "hex sRGB",
+    "fuente": "SUPUESTO de dibujo: Racomitrium lanuginosum es verde grisáceo («lanudo») por las puntas hialinas de sus hojas; sin medición de color publicada. 10-10: corrido de #7d8a5c hacia oliva (menos azul) porque bajo la luz cálida se leía verde lima ácido",
+    "confianza": "baja"
+  },
+  "color_musgo_seco": {
+    "valor": "#9c9a86",
+    "unidad": "hex sRGB",
+    "fuente": "SUPUESTO de dibujo: seco, las puntas blancas dominan y el tapiz se ve gris claro (Isotalo & Tuviala 2023 describen el desecamiento bajo 95 % de humedad, sin color medido)",
+    "confianza": "baja"
+  },
+  "musgo_cojin_m": {
+    "valor": 0.06,
+    "unidad": "m (tamaño de la mancha/cojín que dibuja el shader)",
+    "fuente": "SUPUESTO de dibujo: Racomitrium lanuginosum forma tapices y montículos (hummocks) de pocos centímetros a decímetros (Isotalo & Tuviala 2023 hablan de 'hummocks' sin medida); se eligen cojines de ~6 cm para que a la escala de la isla (160 px/m) se lean como textura y no como ruido",
+    "confianza": "baja"
+  },
+  "musgo_relieve_m": {
+    "valor": 0.1,
+    "unidad": "m de espesor del tapiz con el que el relieve de los cojines se dibuja completo",
+    "fuente": "SUPUESTO de dibujo: el contraste cima/valle de los cojines crece con c.EspesorMusgo (núcleo: 1,65 mm/año, tope 0,35 m) y satura a 10 cm; el espesor real ya levanta la superficie en la geometría (horizonte orgánico), esto solo controla el dibujo",
+    "confianza": "baja"
+  },
+  "deposito_incorporacion_dias": {
+    "valor": 180,
+    "unidad": "días que el polvo recién caído se ve ENCIMA del suelo antes de incorporarse (decae lineal)",
+    "fuente": "SUPUESTO de dibujo guiado por cota: Darwin 1881 (The Formation of Vegetable Mould through the Action of Worms) mide que los objetos en superficie se entierran ~5 mm/año por lombrices; una capa de polvo de ~1 mm bajaría de la vista en ~0,2 año si hubiera lombrices, y la lluvia de Chiloé (>2 000 mm/año) lava el polvo fino antes. Falta cifra para suelos jóvenes sin fauna: investigar bioturbación/lavado en suelos de sucesión primaria",
+    "confianza": "baja"
+  },
+  "deposito_cubre_kg_m2": {
+    "valor": 0.5,
+    "unidad": "kg/m² de polvo caído con los que la superficie se ve cubierta en ~63 % (curva 1 − exp(−m/m0))",
+    "fuente": "Cálculo propio: 0,5 kg/m² equivale a ~0,3 mm de polvo suelto a ~1 500 kg/m³ (densidad aparente de regolito fino, orden de magnitud); una película de décimas de milímetro ya cambia el color de una superficie. SUPUESTO de dibujo en la cifra exacta",
+    "confianza": "baja"
+  },
+  "color_follaje": {
+    "valor": "#6a9d60",
+    "unidad": "hex sRGB (color pintado)",
+    "fuente": "Espectro típico de hoja verde sana (Gates, Keegan, Schleter & Weidner 1965, Applied Optics 4:11-20: reflectancia ~5 % en azul 450 nm, ~13 % en verde 550 nm, ~4-5 % en rojo 650 nm) tomado como RGB lineal (0,055; 0,13; 0,045) y llevado al valor del pintor multiplicando por 2,6 (técnica de compresión de valores: el color medido fija matiz y croma relativos, no el valor absoluto en pantalla). Sin medición específica de Nothofagus nitida: pendiente",
+    "confianza": "media",
+    "nota": "Sin el factor sería #42653c (luminancia 0,11). El anterior (#6aa25a) era a ojo; el nuevo es apenas menos amarillo y menos saturado."
+  },
+  "ramillete_altura_adulto_m": {
+    "valor": 2,
+    "unidad": "m de altura del árbol desde la que el ramillete dibujado tiene su tamaño pleno (ramillete_tamano_m)",
+    "fuente": "SUPUESTO de dibujo: en el brinzal las ramitas llevan menos hojas, así que el ramillete se dibuja más chico (tamaño ∝ altura / 2 m, mínimo 0,4) y hay más ramilletes para la misma área foliar; sin medición de hojas por ramita según la edad",
+    "confianza": "baja"
+  },
+  "hoja_velocidad_caida_m_s": {
+    "valor": 1.0,
+    "unidad": "m/s (velocidad terminal de una hoja que cae)",
+    "fuente": "SUPUESTO de dibujo, orden de magnitud: las hojas anchas caen a ~0,5–1,5 m/s (velocidad terminal de láminas delgadas en aire); solo fija cuántas hojas hay en el aire a la vez (tasa × tiempo de caída) y el ritmo del ciclo. Investigar con fuente para hojas de ~3 cm",
+    "confianza": "baja"
+  },
+  "hoja_deriva_m_por_m": {
+    "valor": 0.3,
+    "unidad": "m de deriva a sotavento por m de caída",
+    "fuente": "SUPUESTO de dibujo: sin velocidad del viento en clima.json no se puede calcular la deriva real (deriva = viento × tiempo de caída); se dibuja una deriva suave hacia donde sopla (viento_direccion)",
+    "confianza": "baja"
+  },
+  "hojas_cayendo_tope_dibujo": {
+    "valor": 160,
+    "unidad": "tarjetas de hoja que caen dibujadas a la vez",
+    "fuente": "decisión de rendimiento: la tasa real (Hojas / longevidad_foliar_anios / masa de una hoja, al ritmo del Reloj) puede dar miles de hojas en el aire; se dibujan hasta 160 y cada una representa N hojas (N queda en el resumen de la vista)",
+    "confianza": "alta"
+  },
+  "nalca_hojas_por_planta": {
+    "valor": 8.5,
+    "unidad": "hojas por planta adulta en la temporada",
+    "fuente": "Mantoani MC, Sweeney C & Osborne BA (2025) Global Change Biology: 6,8-10,2 hojas por planta y año; punto medio",
+    "confianza": "alta"
+  },
+  "nalca_hoja_area_m2": {
+    "valor": 1.1,
+    "unidad": "m² por hoja adulta",
+    "fuente": "Mantoani MC, Sweeney C & Osborne BA (2025) Global Change Biology: hojas de ~1,1 m² en promedio, algunas superan 2 m²",
+    "confianza": "alta"
+  },
+  "nalca_peciolo_m": {
+    "valor": 2.0,
+    "unidad": "m de largo del pecíolo adulto",
+    "fuente": "FAO EcoCrop, ficha Gunnera tinctoria: pecíolo de 1,5-2,5 m en lugares resguardados; punto medio",
+    "confianza": "media"
+  },
+  "nalca_rizomas_m2": {
+    "valor": 1.16,
+    "unidad": "rosetas (rizomas) por m² de nalcal",
+    "fuente": "Mantoani & Osborne 2022, Plants 11:1224: 1,16 ± 0,02 rizomas/m²",
+    "confianza": "alta"
+  },
+  "color_nalca": {
+    "valor": "#4f7a3a",
+    "unidad": "hex sRGB",
+    "fuente": "SUPUESTO de dibujo: verde oscuro y opaco de la hoja de nalca; sin medición de color publicada",
+    "confianza": "baja"
+  },
+  "gota_diametro_mm": {
+    "valor": 4,
+    "unidad": "mm",
+    "fuente": "SUPUESTO de dibujo, con orden de magnitud físico: una gota que se desprende de un borde mide unos milímetros (la escala la fija la longitud capilar del agua, 2,7 mm). Solo se usa para pasar litros a gotas (volumen = π/6·d³).",
+    "confianza": "baja"
+  },
+  "gota_caida_visible_m": {
+    "valor": 3,
+    "unidad": "m",
+    "fuente": "SUPUESTO de dibujo: cuánto se ve caer cada gota antes de perderse en el vacío. La velocidad media sale de la física (caída libre desde el reposo: v_media = ½·√(2·g·h); a 3 m, 3,8 m/s, por debajo de la velocidad terminal de 8,8 m/s de una gota de 4 mm, Gunn & Kinzer 1949).",
+    "confianza": "baja"
+  },
+  "gota_tamano_dibujo_m": {
+    "valor": 0.08,
+    "unidad": "m",
+    "fuente": "SUPUESTO de dibujo: una gota real de 4 mm no se ve a la distancia de la cámara; se dibuja como una pincelada de 16 cm de ancho (medio lado 0,08 m) más su estela: lo más chico que sobrevive al filtro de acuarela a la distancia de juego (las pinceladas de 3 cm desaparecen, igual que las hojas sueltas; ver ramilletes).",
+    "confianza": "baja"
+  },
+  "gotas_tope_dibujo": {
+    "valor": 120,
+    "unidad": "gotas dibujadas a la vez",
+    "fuente": "decisión de rendimiento: la tasa real (litros escurridos al día × días por segundo del Reloj ÷ volumen de una gota) da miles de gotas; se dibujan hasta 120 y cada una representa N (N queda en el resumen de la vista).",
+    "confianza": "alta"
+  },
+  "agua_borde_salidas": {
+    "valor": 3,
+    "unidad": "puntos del borde",
+    "fuente": "SUPUESTO de dibujo: el núcleo no rutea el agua entre celdas (mecanismo M7: el exceso sale por el borde); se dibuja saliendo por los puntos más bajos del borde, donde la gravedad la llevaría.",
+    "confianza": "baja"
+  },
+  "color_agua_borde": {
+    "valor": "#3f2f20",
+    "unidad": "color sRGB",
+    "fuente": "SUPUESTO: agua «color té» por la materia orgánica disuelta que lava del sustrato (docs/investigacion_microclima_agua_viento.json, M7: «agua de color té»). Sin medición de color para esta isla; se pinta oscuro porque la luz del follaje aclara (×1,25 cálido) y el agua sobre el papel debe leerse como agua oscura.",
+    "confianza": "baja"
+  }
+}

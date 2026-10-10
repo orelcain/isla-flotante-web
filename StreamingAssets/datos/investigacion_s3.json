@@ -1,0 +1,394 @@
+{
+  "nota": "Investigación para la etapa S3 (hongo y micorriza) y las vecinas del coigüe. Enjambre de 6 agentes Haiku (09-10-2026), verificado entrada por entrada por 3 agentes Sonnet que abrieron las fuentes. Solo entran valores CONFIRMADOS o CORREGIDOS; lo no verificable y lo falso quedó fuera (por ejemplo, la velocidad de crecimiento de las hifas de 2-4 mm/día no tenía respaldo).",
+  "pendientes": "No hay ningún hongo ectomicorrícico CONFIRMADO en raíces de Nothofagus nitida (solo en otros Nothofagus); pistas sin abrir: capítulo Springer 2022 «Mycorrhizas in Nothofagus From South America» y el manual de vivero de INFOR. Sin cifra de P ni de crecimiento con micorriza para Nothofagus. Altura y micorriza de Poa cumingii sin verificar en la fuente original.",
+  "carbono_hongo__fraccion_carbono_a_ectomicorriza": {
+    "valor": [
+      1,
+      21
+    ],
+    "unidad": "% de la NPP total (fotosíntesis neta anual de la planta), culturas controladas",
+    "fuente": "Hobbie, E.A. (2006). Carbon allocation to ectomycorrhizal fungi correlates with belowground allocation in culture studies. Ecology 87(3): 563-569. DOI 10.1890/05-0755. https://doi.org/10.1890/05-0755 (resumen leído vía PubMed PMID 16602286; texto completo no legible)",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): Resumen de Hobbie 2006 (Ecology 87:563-569, PMID 16602286) abierto vía PubMed: 14 estudios de cultivo, NPPf = 41.5% x NPPb - 11.3% (r2=0.55, P<0.001), 1-21% de la NPP total, mayor con bajo crecimiento y baja disponibilidad de nutrientes. La afirmación 'mayoritariamente Pinus' no consta en el resumen (no verificada). Media es justa: rango de cultivo, no Nothofagus."
+  },
+  "carbono_hongo__fraccion_carbono_a_ectomicorriza_campo": {
+    "valor": [
+      0,
+      22
+    ],
+    "unidad": "% de la asignación total de carbono (incluye NPP y asignación subterránea según el resumen)",
+    "fuente": "Hobbie, E.A. (2006). Ecology 87(3): 563-569. DOI 10.1890/05-0755. https://doi.org/10.1890/05-0755 (resumen vía PubMed PMID 16602286)",
+    "confianza": "baja",
+    "nota": "Verificado 09-10 (confirmado): Resumen: cinco estudios de campo, 0% a 22% de la asignación total, técnicas muy distintas que dificultan la comparación. Coincide. Baja es justa."
+  },
+  "carbono_hongo__fraccion_carbono_a_ectomicorriza_fagus_isotopos": {
+    "valor": 6,
+    "unidad": "% del 13C nuevo recuperado en raíces finas (fracción ectomicorrícica); NO es fracción de la NPP",
+    "fuente": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10698078/ (Mycorrhizal C/N ratio determines plant-derived carbon and nitrogen allocation to symbiosis; leído con WebFetch)",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): PMC10698078 abierto: Fagus sylvatica joven, 40 árboles, pulso 13CO2 de 3 días + 15NH4+, cosechas día 5 y 20; '~6% del 13C nuevo en raíces finas estaba en la fracción EM'; ~13% si se asume que el 13C de la rizosfera pasó por el hongo; umbral C/N ~24. Todo coincide. Aclaración: son plántulas/árboles jóvenes en macetas con suelo intacto, no campo estricto como dice la nota. Métrica distinta a % NPP (bien advertido)."
+  },
+  "alcance_hifas__alcance_hifas_cm": {
+    "valor": "42 cm como máximo reportado (Schramm 1966, vía comentario de Wang & Gao 2026)",
+    "unidad": "cm desde la raiz",
+    "fuente": "Wang & Gao 2026, New Phytologist (revision), https://pmc.ncbi.nlm.nih.gov/articles/PMC13491304/ , que cita a Schramm 1966 (articulo original no verificado)",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (corregido): PMC13491304 abierto: 'Previous studies have reported that EcM hyphae can extend up to 42 cm from the root surface', cita Schramm 1966 (Trans. Am. Philos. Soc. 56:1-194). Número correcto. Corrección: Wang & Gao 2026 (New Phytol 251(6):3069-3071, 'Mycorrhizal hyphae link genes to ecosystem functions in a three-dimensional world') es un comentario/commentary de 3 páginas, no una revisión; la cifra es un máximo, no típico."
+  },
+  "alcance_hifas__tipo_exploracion_definiciones": {
+    "valor": "contacto, corta, media (subtipos smooth, fringe, mat) y larga distancia (Agerer 2001)",
+    "unidad": "clasificacion cualitativa",
+    "fuente": "Jorgensen 2023, New Phytologist, https://pmc.ncbi.nlm.nih.gov/articles/PMC10098516/ ; Wikipedia en 'Ectomycorrhizal extramatrical mycelium' (https://en.wikipedia.org/wiki/Ectomycorrhizal_extramatrical_mycelium)",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (confirmado): Wikipedia: cuatro tipos con la media en subtipos; contacto 'smooth mantle, lack rhizomorphs', larga con rizomorfos y tubos de transporte. Jorgensen 2023 (PMC10098516) lista seis categorías (contacto, corta, media-smooth, media-fringe, larga, mat), atribuye a Agerer 2001 y no da umbrales numéricos de distancia, como dice la nota. Matiz: Jorgensen no dice literalmente 'cuatro'. Las descripciones de la nota para 'media: cordones poco diferenciados' es lectura razonable."
+  },
+  "alcance_hifas__longitud_hifal_por_volumen_suelo": {
+    "valor": [
+      8200,
+      1300000
+    ],
+    "unidad": "cm de hifa por m3 de suelo",
+    "fuente": "Wang & Gao 2026, New Phytologist (revision), https://pmc.ncbi.nlm.nih.gov/articles/PMC13491304/ , que cita a Chen et al. 2026",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): PMC13491304: 'hyphal length ranged from 8.2 x 10^3 to 1.3 x 10^6 cm m-3 of soil', atribuido a Chen et al. 2026 (New Phytol 251:3558-3575); superíndices aplanados en el texto pero consistentes. Fuente secundaria (comentario); Chen no abierto."
+  },
+  "alcance_hifas__ectomicorrizosfera_3d_maxima_teorica_cm3_m3": {
+    "valor": 140000,
+    "unidad": "cm3 de suelo explorado por m3",
+    "fuente": "Wang & Gao 2026, New Phytologist (revision), https://pmc.ncbi.nlm.nih.gov/articles/PMC13491304/ , que cita a Chen et al. 2026",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): PMC13491304: 'theoretical maximum 3D ectomycorrhizosphere ... 1.4 x 10^5 cm3 m-3', '10^4-fold increase in explored soil volume compared to absorptive fine roots' (Chen et al. 2026). Coincide. Fuente secundaria."
+  },
+  "alcance_hifas__carbono_asignado_micelio_extramatricial_pct": {
+    "valor": 23,
+    "unidad": "% del carbono vegetal asignado",
+    "fuente": "Wikipedia, 'Ectomycorrhizal extramatrical mycelium' (https://en.wikipedia.org/wiki/Ectomycorrhizal_extramatrical_mycelium), citando a Rygiewicz & Andersen 1994",
+    "confianza": "baja",
+    "nota": "Verificado 09-10 (confirmado): Wikipedia: 'around 23% of plant-derived carbon is allocated to extramatrical mycelium' (Rygiewicz & Andersen 1994), y '15-30% lost to fungal respiration'. Coincide con la fuente citada, pero es terciaria y de laboratorio; Rygiewicz & Andersen 1994 no abierto. Baja es justa. Además contradice en apariencia el 1-21% de NPP de Hobbie (métricas distintas: % de C asignado vs % NPP)."
+  },
+  "alcance_hifas__socios_nothofagus": {
+    "valor": "Austropaxillus boletinoides y Descolea antartica son EM de Nothofagus obliqua (Alvarez et al., Mycologia 96(3):479-487, 2004)",
+    "unidad": "especies de hongo con huesped Nothofagus",
+    "fuente": "Mycologia 2005 (https://pubmed.ncbi.nlm.nih.gov/21148871/ visto solo en resumen de busqueda; la pagina de PubMed no mostro el resumen al abrirla) y https://www.researchgate.net/publication/26241554_Ectomycorrhizal_fungi_enhance_nitrogen_and_phosphorus_nutrition_of_Nothofagus_dombeyi_under_drought_conditions_by_regulating_assimilative_enzyme_activities (visto en busqueda)",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (corregido): El resumen de PubMed 21148871 sí está disponible (la nota decía que no se mostraba): 'Surface-bound phosphatase activity in living hyphae of ectomycorrhizal fungi of Nothofagus obliqua'; lista Paxillus involutus, A. boletinoides, D. antartica, Cenococcum geophilum, Pisolithus tinctorius. Corrección: año 2004 (vol. 96), no 2005. Wikipedia también confirma Austropaxillus-Nothofagus. Confianza sube a alta para la asociación."
+  },
+  "fosforo_hongo__aumento_absorcion_p": {
+    "valor": 3.8,
+    "unidad": "veces la tasa de entrada (inflow) de P de plántulas sin hongo; es tasa, no biomasa ni contenido total (equivale a +280%)",
+    "fuente": "Jones, M.D., Durall, D.M. & Tinker, P.B. (1998). A comparison of arbuscular and ectomycorrhizal Eucalyptus coccifera: growth response, phosphorus uptake efficiency and external hyphal production. New Phytologist 140(1): 125-134. https://www.cambridge.org/core/journals/new-phytologist/article/abs/comparison-of-arbuscular-and-ectomycorrhizal-eucalyptus-coccifera-growth-response-phosphorus-uptake-efficiency-and-external-hyphal-production/DEC7F48B452A78068FAC17133D50ABF9 (resumen abierto)",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): Resumen abierto vía Europe PMC (DOI 10.1046/j.1469-8137.1998.00253.x): tasa de entrada de P de plántulas ECM = 3,8 veces la de no micorrizadas (AM: 2,0-2,7). Eficiencia de adquisición 11,2 (T. terrestris) vs 7,2 umol P/mmol C (cociente ~1,56). El 3,8 es de ECM con L. bicolor/T. terrestris, Eucalyptus coccifera, un invernadero; no es Nothofagus. El resumen dice que el aumento de contenido de P y el crecimiento fue mayor en ECM, sin cifra."
+  },
+  "fosforo_hongo__aumento_absorcion_n": {
+    "valor": [
+      3,
+      5
+    ],
+    "unidad": "veces el contenido del control (N, P y K en conjunto; rango único reportado)",
+    "fuente": "Ali, H.M. & Abdel-Megeed, A. (2014). Effect of Ectomycorrhizal on Growth and Mineral Nutrition of Acacia saligna (Labill.) Seedlings. J Pure Appl Microbiol 8(Spl. Ed. 2): 511-514. https://www.microbiologyjournal.org/effect-of-ectomycorrhizal-on-growth-and-mineral-nutrition-of-acacia-saligna-labill-seedlings/ (resumen abierto)",
+    "confianza": "baja",
+    "nota": "Verificado 09-10 (confirmado): Página abierta: contenido de N, P y K de plántulas inoculadas 3-5 veces mayor que el control (Acacia saligna, hongo ECM sin nombre; Ali & Abdel-Megeed 2014, JPAM 8 Spl. Ed. 2: 511-514). Rango único para N+P+K; no separa N. Revista de bajo rigor; confianza baja es justa."
+  },
+  "fosforo_hongo__disolucion_apatita_p_ecm": {
+    "valor": 2.9,
+    "unidad": "veces la tasa de liberación de P desde apatita sin colonización (cociente calculado: 2,2 x 10-9 / 7,5 x 10-10 mol m-2 s-1; el resumen dice 'casi tres veces')",
+    "fuente": "Smits, M.M., Bonneville, S., Benning, L.G., Banwart, S.A. & Leake, J.R. (2012). Plant-driven weathering of apatite: the role of an ectomycorrhizal fungus. Geobiology 10(5): 445-456. DOI 10.1111/j.1472-4669.2012.00331.x (resumen visto en resultados de búsqueda, no abierto completo)",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (confirmado): Resumen abierto (Europe PMC): P. involutus + Pinus sylvestris, microcosmos estériles; liberación de P de 7,5(±1,1)e-10 a 2,2(±0,52)e-9 mol m-2 s-1, casi un factor de tres; cociente 2,93. Laboratorio, no campo. Cifras exactas coinciden."
+  },
+  "fosforo_hongo__transferencia_carbono_a_apatita": {
+    "valor": 17,
+    "unidad": "veces el 14C recibido por los pozos con apatita frente a pozos solo con cuarzo (bajo limitación de P)",
+    "fuente": "Smits et al. (2012), Geobiology 10(5): 445-456 (resumen, ver DOI arriba)",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (confirmado): Resumen: bajo limitación de P, 17 veces más 14C transferido a pozos con apatita que a pozos con solo cuarzo. Coincide."
+  },
+  "fosforo_hongo__disolucion_apatita_p_pinus_wallander": {
+    "valor": [
+      0.3,
+      0.9
+    ],
+    "unidad": "% del apatito añadido meteorizado por maceta (Pinus sylvestris con EM en compartimento sin raíces)",
+    "fuente": "Wallander, H. (2000), registro LUND https://lup.lub.lu.se/record/147039 (solo visto en resultados de búsqueda; el registro no se pudo abrir)",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): Wallander 2000, Plant and Soil 218:249-256 (Crossref confirma título, autor y revista; DOI 10.1023/A:1014936217105). Resumen visto vía WebSearch (no pude abrir Springer ni LUP): 6,7-18,9 mg de apatito meteorizado por maceta = 0,3-0,9%; P en tejido 1,1-1,5 vs 0,6-1,0 mg/g. Advertencia: Wallander et al. 2005 (Mycorrhiza) halló con hongos nativos que no es un fenómeno general."
+  },
+  "fosforo_hongo__tuneles_meteorizacion_minerales": {
+    "valor": [
+      0,
+      1
+    ],
+    "unidad": "% de la meteorización total de minerales atribuido a túneles de hifas (cifra de fuente secundaria)",
+    "fuente": "Jongmans, A.G. et al. (1997). Rock-eating fungi. Nature 389: 682-683. DOI 10.1038/39493, https://ideas.repec.org/a/nat/nature/v389y1997i6652d10.1038_39493.html (resumen visto). La cifra <0,5% viene de un comentario citado en otra fuente, no del original.",
+    "confianza": "baja",
+    "nota": "Verificado 09-10 (corregido): La cifra no es de Jongmans 1997 (Nature 389:682-683; existe, 10 autores, DOI 10.1038/39493; documenta túneles sin cuantificar su aporte). El dato viene de Smits, Hoffland, Jongmans & van Breemen 2005, Geoderma 125:59-69: aporte del túnel menor a 1% (volumen de túnel / volumen de feldespato meteorizado) en 11 podzoles de dunas del lago Michigan. El '<0,5%' es una cita secundaria no verificada. Es feldespato, no apatita, en suelo mineral superior."
+  },
+  "fosforo_hongo__limitacion_n_vs_p_nothofagus": {
+    "valor": "{\"autores\": \"Agüero, Puntieri, Mazzarino, Grosfeld, Barroetaveña\", \"año\": 2014, \"revista\": \"Trees 28(4):1185-1195\", \"especies\": \"Nothofagus nervosa y N. obliqua\", \"resultado\": \"N limitó el crecimiento; P (60 mg/kg) sin efecto detectable\"}",
+    "unidad": "sin cifra (efecto de P no significativo en el resumen; el N domina la respuesta)",
+    "fuente": "Estudio greenhouse de respuesta de plántulas de Nothofagus a N y P, con relación N/P y resorción (CONICET, https://repositoriosdigitales.mincyt.gob.ar/vufind/Record/CONICETDig_b257247b32051954c84b40778cb54330). Solo visto en resultados de búsqueda; no se abrió el texto ni se verificaron autores.",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (corregido): Registro CONICET abierto: 'Seedling response of Nothofagus species to N and P...'. Corrección: sí midió infección ectomicorrícica, pero solo como variable respuesta (sin inoculación; se mantuvo en N. nervosa al subir N). La conclusión del JSON (P no limitó, N sí) es correcta; solo se leyó el resumen."
+  },
+  "hongo_nitida__descolea_antarctica": {
+    "valor": "{\"dato\": \"43,5% de puntas micorrícicas vitales en plántulas de N. alpina de 2 años tras incendio\", \"fuente\": \"Palfner, Canseco & Casanova-Katny 2008, Plant and Soil 313:237-250, DOI 10.1007/s11104-008-9697-y\"}",
+    "unidad": "evidencia",
+    "fuente": "resultado de búsqueda (no abierto): https://www.redalyc.org/pdf/1731/173154749004.pdf (Horak en resumen de Fróðskaparrit: https://timarit.is/page/929996); estudio de N. alpina postincendio citado en resultados de búsqueda de WebSearch sobre Nothofagus nitida ectomycorrhizal",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (corregido): 43,5% confirmado en el resumen abierto (registro ANID). La fuente del JSON era vaga (Redalyc de Horak, no abierto). Es N. alpina, sitio único, no N. nitida. El 'review de Horak' queda sin verificar."
+  },
+  "hongo_nitida__descolea_archeureta": {
+    "valor": "Obligado ECM con Nothofagaceae; 9 registros (holotipo 1906, último 2016); Biobío, Araucanía, Magallanes; EN (A2c, evaluada 22-09-2023)",
+    "unidad": "evidencia",
+    "fuente": "resultado de búsqueda (no abierto): https://redlist.info/iucn/species_view/111963/",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): Página redlist.info abierta; coincide. Sin registros en Chiloé ni de N. nitida; confianza media por ser asociación a nivel familia hospedante."
+  },
+  "hongo_nitida__cortinarius_spp": {
+    "valor": "26 especies ECM, 14 de Cortinarius, en bosque de N. pumilio (hospedantes ECM dominantes N. pumilio y N. dombeyi), Andes del sur de Chile (Marín et al. 2018)",
+    "unidad": "evidencia",
+    "fuente": "https://micologia.uv.cl/index.php/Bolmicol/article/view/1164 (resumen abierto); resultado de búsqueda sobre Cortinarius en Nothofagaceae sudamericanas (PMC8148173, no abierto)",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): Resumen abierto coincide. PMC8148173 (Salgado Salomón et al. 2021, Life 11:420) abierto: no menciona N. nitida ni Chiloé. PMC11439510: Cortinarius es el género más rico y abundante (asociado a N. pumilio). Ninguna sobre N. nitida."
+  },
+  "hongo_nitida__tomentella_tomentellopsis": {
+    "valor": "ITS1 de suelo rizosférico (no puntas de raíz); Tomentella y Tomentellopsis asociados positivamente a N. antarctica en rodales monodominantes, Tierra del Fuego 52,5-56 S",
+    "unidad": "evidencia",
+    "fuente": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11439510 (abierto)",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): PMC11439510 (Truong et al. 2024, Ecol Evol), primeros 100k caracteres. El JSON decía 'bajo Nothofagus': correcto, pero el hospedante es N. antarctica."
+  },
+  "hongo_nitida__austropaxillus_spp": {
+    "valor": "Austropaxillus asociado positivamente a N. pumilio (Tierra del Fuego, ITS1 de suelo); A. boletinoides en N. obliqua y P. radiata de Valdivia (tesis Alvarez, Bremen; solo resumen de búsqueda)",
+    "unidad": "evidencia",
+    "fuente": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11439510 (abierto); búsqueda sobre Valdivia (no abierta)",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): Parte Tierra del Fuego verificada. La parte Valdivia se vio solo en el resumen de la tesis en resultados de búsqueda, no abierta."
+  },
+  "hongo_nitida__laccaria_spp": {
+    "valor": "Laccaria: efecto de hospedante significativo en rodales monodominantes (dirección no indicada en el texto leído); L. laccata como inóculo mejora el crecimiento de N. pumilio (Marín 2018)",
+    "unidad": "evidencia",
+    "fuente": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11439510 (abierto); https://micologia.uv.cl/index.php/Bolmicol/article/view/1164 (abierto)",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): Ambas fuentes abiertas. El inóculo no prueba presencia natural, como ya notaba el JSON. Ninguna es N. nitida."
+  },
+  "hongo_nitida__thelephoraceae": {
+    "valor": "Thelephoraceae spp. asociada positivamente a N. antarctica en rodales monodominantes; suelo, ITS1, Tierra del Fuego",
+    "unidad": "evidencia",
+    "fuente": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11439510 (abierto)",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): PMC11439510. Solo nivel de familia y suelo."
+  },
+  "hongo_nitida__cenococcum_geophilum": {
+    "valor": "{\"fuente_correcta\": \"Alvarez, Godoy, Heyser & Hartel 2005, Soil Biol Biochem 37(1):125-132: ECM de Nothofagus obliqua con Cenococcum geophilum y Pisolithus tinctorius (fosfatasa de superficie); tesis Alvarez (Bremen) lista C. geophilum entre los hongos de N. obliqua y P. radiata cerca de Valdivia\"}",
+    "unidad": "evidencia",
+    "fuente": "resultado de búsqueda (no abierto): https://revistaschilenas.uchile.cl/handle/2250/48588 y citas de la búsqueda sobre Nothofagus obliqua en Valdivia",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (corregido): El enlace del JSON (revistaschilenas.uchile.cl/handle/2250/48588) es en realidad Marín et al. 2018 y NO menciona Cenococcum, N. obliqua ni Valdivia. La asociación sí existe en Alvarez 2005 (registro AGRIS abierto). No es N. nitida."
+  },
+  "hongo_nitida__garrido_1986": {
+    "valor": "{\"obra\": \"Garrido, N. 1988. Agaricales s.l. und ihre Mykorrhizen in den Nothofagus-Wäldern Mittelchiles. Bibliotheca Mycologica 120, 528 pp.\", \"alcance\": \"bosques de Nothofagus de Chile central entre Talca y Angol; ~170 taxones descritos (~150 de Chile central, ~20 del sur); compilación de 1198 hongos micorrícicos en 108 géneros de Fagaceae (sin Quercus)\", \"651_taxa\": \"cifra citada por Godoy & Palfner 1997 (Bol. Micol.) para el género Nothofagus; no aparece en el resumen del editor\"}",
+    "unidad": "evidencia",
+    "fuente": "resultados de búsqueda sobre Garrido (no abiertos); https://npn.rngr.net/publications/vivero-forestal-produccion-de-plantas-nativas-a-raiz-cubierta/micorrizacion/at_download/file (no abierto)",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (corregido): La obra es de 1988 (Schweizerbart), no 1986. El 651 viene de la introducción de Godoy & Palfner, visto solo en resumen de búsqueda. Sin datos de N. nitida: el alcance es Chile central, no Chiloé. La frase 'único género leñoso nativo ECM' no se verificó."
+  },
+  "nalca_nitrogeno__fijacion_n_kg_ha_anio": {
+    "valor": [
+      24.74,
+      109.72
+    ],
+    "unidad": "kg N/ha/año",
+    "fuente": "Journal of Plant Ecology, vol. 13, nº 5, p. 589 (poblaciones invasoras de Gunnera tinctoria), https://academic.oup.com/jpe/article/13/5/589/5874212 (año no verificado en la página leída)",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): Mantoani et al. 2020, J Plant Ecol 13(5):589-600 (abierto en academic.oup.com). Achill Island, Co. Mayo; campo 2016-2017. Valores 24,74±7,77 (marzo 2017) y 109,72±21,65 (mayo 2017), x11.000 plantas/ha. El año de la fuente es 2020 (el agente lo dejó sin verificar). Alta para la medición, pero es extrapolación a 24 h x 365 d desde solo dos muestreos (los autores lo admiten): confianza justa media, no alta."
+  },
+  "nalca_nitrogeno__fijacion_n_kg_ha_anio_plantulas": {
+    "valor": [
+      1.17,
+      2.09
+    ],
+    "unidad": "kg N/ha/año",
+    "fuente": "Journal of Plant Ecology, vol. 13, nº 5, p. 589, https://academic.oup.com/jpe/article/13/5/589/5874212",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): Mantoani et al. 2020, J Plant Ecol 13(5):589-600 (abierto en academic.oup.com). Achill Island, Co. Mayo; campo 2016-2017. Plántulas: 2,09±0,30 (marzo) y 1,17±0,60 (mayo). Mismo caveat de extrapolación."
+  },
+  "nalca_nitrogeno__fijacion_n_g_m2_anio": {
+    "valor": [
+      2.47,
+      10.97
+    ],
+    "unidad": "g N/m²/año",
+    "fuente": "Conversión directa de fijacion_n_kg_ha_anio (1 kg/ha = 0,1 g/m²), a partir de Journal of Plant Ecology, https://academic.oup.com/jpe/article/13/5/589/5874212",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): Conversión aritmética correcta (1 kg/ha = 0,1 g/m2). Hereda la incertidumbre de la extrapolación."
+  },
+  "nalca_nitrogeno__fijacion_n_g_planta_anio": {
+    "valor": [
+      2.25,
+      9.97
+    ],
+    "unidad": "g N/planta/año",
+    "fuente": "Derivado de fijacion_n_kg_ha_anio dividido entre 11.000 plantas/ha (1,1 plantas/m²; cita de Mantoani 2019 en el JPE, https://academic.oup.com/jpe/article/13/5/589/5874212)",
+    "confianza": "baja",
+    "nota": "Verificado 09-10 (confirmado): 24,74/11.000 y 109,72/11.000 dan 2,25 y 9,97 g. Densidad 1,1 plantas/m2 confirmada en el texto como promedio de sitios invadidos. Derivado: baja es justa."
+  },
+  "nalca_nitrogeno__fijacion_n_potencial_g_magellanica_kg_ha_anio": {
+    "valor": 300,
+    "unidad": "kg N/ha/año",
+    "fuente": "Benavent-González et al. 2019, New Phytologist 223: 661–674, doi 10.1111/nph.15838. Resumen en https://docta.ucm.es/entities/publication/ad06aaa4-009d-44e0-9740-ff3378c4a5ce",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): Resumen de New Phytologist 223 (doi 10.1111/nph.15838, vía Crossref/EuropePMC): potential maximal contribution of 300 kg N/ha/yr; glaciar Pia, Tierra del Fuego, bosque de Nothofagus de 34 años. El JPE cita 275,58±38 para la misma especie (confirmado). Es máximo potencial, no medición anual: media es justa."
+  },
+  "nalca_nitrogeno__fraccion_biomasa_cianobionte_pct": {
+    "valor": "algo menos de 1 % de la biomasa total (huésped+cianobionte)",
+    "unidad": "% de la biomasa total (huésped + cianobionte), valor máximo aproximado ('algo menos de 1 %')",
+    "fuente": "Osborne, Cullen, Jones & Campbell 1992, New Phytologist 120(4): 481–487, doi 10.1111/j.1469-8137.1992.tb01796.x, https://research.ucc.ie/en/publications/use-of-nitrogen-by-the-inostocgunnera-tinctoriai-molina-mirbel-sy/",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (confirmado): Osborne, Cullen, Jones & Campbell 1992, New Phytol 120(4):481-487, abierto en research.ucc.ie; la frase somewhat less than 1 % está en el texto. Es dato de simbiosis, no tasa."
+  },
+  "nalca_nitrogeno__actividad_nitrogenasa_rizoma_nmol_c2h4_h": {
+    "valor": [
+      15000,
+      30000
+    ],
+    "unidad": "nmol C2H4/h (por sección de rizoma, valores aproximados del texto)",
+    "fuente": "Journal of Plant Ecology, vol. 13, nº 5, p. 589, https://academic.oup.com/jpe/article/13/5/589/5874212",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (confirmado): Mayo 2017: ápice ~30.000±6.500 y sección media ~15.000±6.000 nmol C2H4/h; en marzo las partes no difirieron."
+  },
+  "nalca_nitrogeno__area_foliar_total_pico_m2": {
+    "valor": "{\"unidad\": \"m2 por planta\", \"2016\": 3.29, \"2017\": 2.88}",
+    "unidad": "m²",
+    "fuente": "Journal of Plant Ecology, vol. 13, nº 5, p. 589, https://academic.oup.com/jpe/article/13/5/589/5874212",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (corregido): Los métodos del JPE calculan el área foliar total por planta sumando hojas vivas, así que es por planta (la ambigüedad del agente se resuelve). La frase de resultados no declara la unidad explícitamente, por eso media."
+  },
+  "nalca_nitrogeno__biomasa_aerea_mg_ha": {
+    "valor": "{\"abril_2017\": 50.63, \"octubre_2016\": 96.18, \"octubre_2017\": 75.55}",
+    "unidad": "Mg/ha (materia seca, rango de los muestreos de abril y octubre 2016)",
+    "fuente": "Journal of Plant Ecology, vol. 13, nº 5, p. 589, https://academic.oup.com/jpe/article/13/5/589/5874212",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (corregido): Valores correctos, pero el agente escribió abril y octubre 2016: las cosechas fueron 5 veces de oct 2016 a oct 2017 (oct, ene, abr, jul, oct), así que el valor de abril es de 2017. Mg/ha de G. tinctoria invadida en Irlanda."
+  },
+  "pasto_nativo__recomendado": {
+    "valor": "Acaena ovalifolia: presencia (12 registros GBIF en Chiloé) y estatus nativo confirmados; la descripción de hábito NO.",
+    "unidad": "especie",
+    "fuente": "https://api.gbif.org/v1/species/5370651/distributions ; https://api.gbif.org/v1/occurrence/search?taxonKey=5370651&gadm_gid=CHL.9.1_1&limit=0 ; https://en.wikipedia.org/wiki/Acaena_ovalifolia",
+    "confianza": "baja",
+    "nota": "Verificado 09-10 (corregido): La nota dice hierba rizomatosa con hojas que mueren en otoño, citando Wikipedia. Wikipedia (en) para Acaena ovalifolia solo dice: Rosaceae, nativa de Sudamérica occidental a Islas Malvinas, uso medicinal. Nada de rizomas ni otoño; esa frase y la hoja de 6 cm vienen de la página de Gunnera magellanica, copiadas por error. La idoneidad para suelo delgado no tiene respaldo: confianza media -> baja. Es además introducida en Reino Unido, Irlanda, Noruega, etc."
+  },
+  "pasto_nativo__cortaderia_araucana_presencia_chiloe": {
+    "valor": "{\"chiloe\": 0, \"chile\": 82}",
+    "unidad": "registros GBIF",
+    "fuente": "https://api.gbif.org/v1/occurrence/search?scientificName=Cortaderia%20araucana&gadm_gid=CHL.9.1_1&limit=0",
+    "confianza": "baja",
+    "nota": "Verificado 09-10 (confirmado): Re-ejecutado GBIF: taxonKey 4153121 con gadm CHL.9.1_1 = 0; country=CL = 82; por scientificName también 0. Ausencia en GBIF no es ausencia real."
+  },
+  "pasto_nativo__cortaderia_araucana_nativa": {
+    "valor": "nativa de Chile central y sur y Argentina austral",
+    "unidad": "estatus",
+    "fuente": "https://api.gbif.org/v1/species/4153121/distributions ; https://en.wikipedia.org/wiki/Cortaderia_araucana",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (confirmado): Wikipedia lo dice textualmente; sin marca de introducida."
+  },
+  "pasto_nativo__cortaderia_araucana_altura_m": {
+    "valor": "1,0-1,5 m (culmos erectos 100-150 cm)",
+    "unidad": "m",
+    "fuente": "https://colplanta.org/taxon/urn:lsid:ipni.org:names:66292-2/general-information",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): colplanta.org abierto: Cortaderia araucana Stapf, culmos 100-150 cm, hojas 30-80 cm x 3-10 mm, panícula 20-25 cm. Coinciden."
+  },
+  "pasto_nativo__cortaderia_araucana_habito": {
+    "valor": "perenne cespitosa con culmos erectos",
+    "unidad": "texto",
+    "fuente": "https://en.wikipedia.org/wiki/Cortaderia_araucana",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): Colplanta: perennial, caespitose; Wikipedia: perennial grass. Hojas rígidas no aparece en fuentes abiertas. De 1-1,5 m no es pasto bajo bajo un Nothofagus joven."
+  },
+  "pasto_nativo__festuca_gracillima_presencia_chiloe": {
+    "valor": "{\"chiloe\": 0, \"chile\": 82}",
+    "unidad": "registros GBIF",
+    "fuente": "https://api.gbif.org/v1/occurrence/search?taxonKey=4932314&gadm_gid=CHL.9.1_1&limit=0",
+    "confianza": "baja",
+    "nota": "Verificado 09-10 (confirmado): GBIF taxonKey 4932314: Chiloé = 0, Chile = 82 (coincide con Cortaderia araucana; verificado, no es error de copia)."
+  },
+  "pasto_nativo__festuca_gracillima_nativa": {
+    "valor": "nativa de Chile sur y Argentina austral",
+    "unidad": "estatus",
+    "fuente": "https://api.gbif.org/v1/species/4932314/distributions",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (confirmado): Wikipedia y Kew GrassBase (S. Chile to S. Argentina)."
+  },
+  "pasto_nativo__festuca_gracillima_altura_m": {
+    "valor": "0,3-0,8 m (culmos 30-80 cm)",
+    "unidad": "m",
+    "fuente": "https://en.wikipedia.org/wiki/Festuca_gracillima",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (corregido): El dato 30-80 cm es de Kew GrassBase (según búsqueda), no de la Wikipedia citada, que no da altura. Fuente corregida a kew.org/data/grasses-db/www/imp04585.htm; no abrí la página completa."
+  },
+  "pasto_nativo__festuca_gracillima_habito": {
+    "valor": "perenne, cespitosa densa; hojas filiformes 0,5-0,7 mm y 10-40 cm; panícula 6-12 cm",
+    "unidad": "texto",
+    "fuente": "https://en.wikipedia.org/wiki/Festuca_gracillima",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (corregido): Wikipedia solo confirma perenne y nombre coirón dulce. Hoja y panícula vienen de Kew GrassBase (vía búsqueda). Es estepa patagónica (Magallanes/Tierra del Fuego), poco coherente con Chiloé húmedo."
+  },
+  "pasto_nativo__acaena_ovalifolia_presencia_chiloe": {
+    "valor": "{\"chiloe\": 12, \"chile\": 537}",
+    "unidad": "registros GBIF",
+    "fuente": "https://api.gbif.org/v1/occurrence/search?taxonKey=5370651&gadm_gid=CHL.9.1_1&limit=0",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (confirmado): GBIF taxonKey 5370651 con gadm CHL.9.1_1 = 12; country=CL = 537."
+  },
+  "pasto_nativo__acaena_ovalifolia_nativa": {
+    "valor": "nativa de Chile, Los Lagos incluida",
+    "unidad": "estatus",
+    "fuente": "https://api.gbif.org/v1/species/5370651/distributions",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (confirmado): Catalogue of Life (distributions GBIF) lista Chile Los Lagos sin marca de introducida; WCVP TDWG CLC; Wikipedia: Western South America to Falkland Islands."
+  },
+  "pasto_nativo__gunnera_magellanica_presencia_chiloe": {
+    "valor": "{\"chiloe\": 51, \"chile\": 678}",
+    "unidad": "registros GBIF",
+    "fuente": "https://api.gbif.org/v1/occurrence/search?taxonKey=3723590&gadm_gid=CHL.9.1_1&limit=0",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (confirmado): GBIF taxonKey 3723590 con gadm CHL.9.1_1 = 51; country=CL = 678."
+  },
+  "pasto_nativo__gunnera_magellanica_nativa": {
+    "valor": "nativa de Chile, Argentina, Malvinas y Andes de Perú/Ecuador",
+    "unidad": "estatus",
+    "fuente": "https://api.gbif.org/v1/species/3723590/distributions ; https://en.wikipedia.org/wiki/Gunnera_magellanica",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (confirmado): Wikipedia abierta; sin marca de introducida."
+  },
+  "pasto_nativo__gunnera_magellanica_habito": {
+    "valor": "hierba perenne rizomatosa, dioica, criptófita; hojas mueren en otoño austral; del nivel del mar a 1.500 m",
+    "unidad": "texto",
+    "fuente": "https://en.wikipedia.org/wiki/Gunnera_magellanica",
+    "confianza": "alta",
+    "nota": "Verificado 09-10 (corregido): Hábito confirmado. Pero la nota poco adecuado para suelo delgado seco es inferencia que choca con las fuentes: Wikipedia y Benavent-González 2019 dicen que coloniza suelo desnudo dejado por glaciares y aporta N (hasta 300 kg/ha/año potencial). Tolera suelo pobre pero húmedo; mejor candidata de lo que dice el agente, con la salvedad de la humedad."
+  },
+  "pasto_nativo__chusquea_quila_presencia_chiloe": {
+    "valor": 18,
+    "unidad": "registros GBIF",
+    "fuente": "https://api.gbif.org/v1/occurrence/search?scientificName=Chusquea%20quila&gadm_gid=CHL.9.1_1&limit=0",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): GBIF: Chusquea quila Kunth (speciesKey 4130378), Chiloé = 18. Que compita con el regenerado no lo verifiqué (redalyc no abierto). Otras Chusquea: uliginosa 3, culeou 3, macrostachya 1."
+  },
+  "pasto_nativo__carex_presencia_chiloe": {
+    "valor": 109,
+    "unidad": "registros GBIF",
+    "fuente": "https://api.gbif.org/v1/occurrence/search?scientificName=Carex&gadm_gid=CHL.9.1_1&limit=0",
+    "confianza": "media",
+    "nota": "Verificado 09-10 (confirmado): GBIF scientificName=Carex con gadm CHL.9.1_1 = 109. Género completo, sin filtrar estatus."
+  },
+  "pasto_nativo__gramineas_nativas_chiloe": {
+    "valor": "{\"veredicto\": \"falso: la conclusión no hay gramínea nativa con presencia confirmada en Chiloé es incorrecta\", \"metodo\": \"GBIF occurrence/search gadm_gid=CHL.9.1_1 familyKey=3073 (Poaceae) con facet speciesKey, ejecutado hoy: 156 registros Poaceae en Chiloé, ~28 especies. Muchas cultivadas o introducidas (Avena strigosa 41, A. sativa 23, Triticum 7, Dactylis 6, Holcus 3, Lolium 1).\", \"candidatos\": [{\"especie\": \"Poa cumingii Trin.\", \"registros_chiloe\": 12, \"speciesKey\": 5947505, \"estatus\": \"nativa de Chile (WCVP y CoL: Chile Central, sin marca introducida; aparece en la base Endemic Plants of Chile de RBGE con sinónimos P. curva y P. stachyodes)\", \"evidencia\": \"Especímenes NMNH 2002: Parque Nacional Chiloé, costa N de Cucao; extremo NW de la isla, bahía N de Cocotué, W de Ancud\", \"altura\": \"culmos erectos 8-22 cm, perenne cespitosa (Kew GrassBase, vía búsqueda, página no abierta)\", \"confianza\": \"media\", \"nota\": \"Mejor candidata: baja y cespitosa. Los registros son costeros, no necesariamente bajo bosque.\"}, {\"especie\": \"Poa denudata Steud.\", \"registros_chiloe\": 5, \"speciesKey\": 4139338, \"estatus\": \"nativa (WCVP/CoL: Argentina Sur, Chile Central y Sur)\", \"evidencia\": \"Especímenes NMNH 2002, bahía de Cocotué, W de Ancud\", \"confianza\": \"media\", \"nota\": \"Altura y hábitat no verificados.\"}, {\"especie\": \"Polypogon magellanicus (Lam.) Finot\", \"registros_chiloe\": 3, \"speciesKey\": 9325982, \"estatus\": \"nativa en Chile Sur (CoL/WCVP)\", \"evidencia\": \"Registros Quetalmahue y Piruquina, sin ",
+    "unidad": "candidatas",
+    "fuente": "GBIF (gadm CHL.9.1_1) + estatus nativo WCVP/Catalogue of Life vía GBIF; verificación Sonnet 09-10",
+    "confianza": "media",
+    "nota": "Corrige al agente Haiku, que había concluido que no existían: Poa cumingii (12 registros), Poa denudata (5), Polypogon magellanicus (3)."
+  }
+}

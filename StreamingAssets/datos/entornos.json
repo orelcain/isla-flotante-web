@@ -1,0 +1,32 @@
+{
+  "nota": "El entorno es un parámetro. Marte queda declarado para cuando el modelo tenga presión, CO2 y radiación.",
+  "entornos": [
+    {
+      "id": "tierra_templada",
+      "nombre": "Tierra · templado",
+      "disponible": true,
+      "temperatura": 18,
+      "prob_lluvia": 0.25,
+      "lluvia_mm": [3, 20],
+      "gravedad": 9.81,
+      "presion_kpa": 101.3,
+      "co2_ppm": 420,
+      "fuente": "Valores de referencia terrestres; lluvia como clima templado húmedo genérico",
+      "confianza": "media"
+    },
+    {
+      "id": "marte",
+      "nombre": "Marte",
+      "disponible": false,
+      "temperatura": -60,
+      "prob_lluvia": 0,
+      "lluvia_mm": [0, 0],
+      "gravedad": 3.71,
+      "presion_kpa": 0.6,
+      "co2_ppm": 950000,
+      "fuente": "NASA Mars Fact Sheet (gravedad, presión media, atmósfera ~95 % CO2, temperatura media)",
+      "confianza": "alta",
+      "nota": "Nivel futuro: requiere modelar presión, radiación y regolito con percloratos."
+    }
+  ]
+}

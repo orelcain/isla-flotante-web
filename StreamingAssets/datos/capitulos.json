@@ -1,0 +1,18 @@
+{
+  "nota": "Capítulos del juego (docs/DIRECCION_DE_JUEGO.md: estructura por entornos). Las metas son DISEÑO DE JUEGO, no datos científicos: se calibraron con EstrategiasPruebas para que cada una premie un camino distinto (no se cumplen todas a la vez ni solas). Tipos: area_m2, altura_m, suelo_max_m, n_fijado_kg, hijos (nacidos), hijos_sobre_m (vivos más altos que 'umbral'), fichas (descubiertas en la biblioteca).",
+  "capitulos": [
+    {
+      "id": "chiloe",
+      "nombre": "Capítulo 1 · Chiloé",
+      "entorno": "tierra",
+      "objetivos": [
+        { "id": "primer_hijo", "texto": "Que nazca el primer coigüe hijo", "tipo": "hijos", "meta": 1, "pista": "El coigüe da semillas cuando ya es latizal; germinan mejor sobre madera podrida o musgo." },
+        { "id": "coigue_25", "texto": "Que el coigüe llegue a 2,5 m", "tipo": "altura_m", "meta": 2.5, "pista": "Su copa crece hasta lo que sostiene el suelo que alcanzan sus raíces: atrae los fragmentos junto a él." },
+        { "id": "rincon_40", "texto": "Un rincón con 40 cm de suelo", "tipo": "suelo_max_m", "meta": 0.4, "pista": "Concentra los fragmentos en un mismo lugar: el suelo se forma donde caen." },
+        { "id": "nalca_n", "texto": "Que la nalca fije 50 g de nitrógeno", "tipo": "n_fijado_kg", "meta": 0.05, "pista": "Siembra una nalca donde haya al menos 15 cm de suelo: su Nostoc fija nitrógeno del aire." },
+        { "id": "isla_15", "texto": "Que la isla llegue a 15 m²", "tipo": "area_m2", "meta": 15, "pista": "La isla crece por el borde cuando ahí se junta suficiente sustrato: atrae fragmentos al borde." },
+        { "id": "fichas_30", "texto": "Descubrir 30 fichas de la biblioteca", "tipo": "fichas", "meta": 30, "pista": "Pasa el mouse por la isla y detente sobre lo que no conoces." }
+      ]
+    }
+  ]
+}

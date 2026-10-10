@@ -1,0 +1,303 @@
+{
+  "nota": "Enciclopedia de la isla: elementos (docs/ENCICLOPEDIA.md). Los datos apuntan a los parámetros de la simulación.",
+  "entradas": [
+    {
+      "id": "nitrogeno",
+      "categoria": "elemento",
+      "subcategoria": "quimico",
+      "nombre": "Nitrógeno (N)",
+      "que_es": "El nutriente que más falta en suelos jóvenes: lo necesitan todas las proteínas.",
+      "explicacion": "El aire tiene mucho nitrógeno, pero las plantas no pueden usarlo directo. Llega al suelo con la lluvia y el polvo, o lo fijan bacterias y cianobacterias. En la isla llega del aire y de la roca, que tiene un 0,3 %.",
+      "datos": [
+        {
+          "nombre": "En la condrita CI",
+          "ref": "semilla#ci_n_pct"
+        },
+        {
+          "nombre": "Depósito desde el aire",
+          "ref": "coigue#deposito_n_kg_ha_anio"
+        },
+        {
+          "nombre": "En la hoja",
+          "ref": "coigue#n_hoja_pct"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "forma_parte_de",
+          "con": "condrita_ci",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "limita",
+          "con": "nothofagus_nitida",
+          "simulado": true,
+          "fuente": "ley del mínimo de Liebig",
+          "confianza": "alta"
+        }
+      ],
+      "en_el_juego": "Cifra «N disponible» del panel; cuando falta, la copa amarillea."
+    },
+    {
+      "id": "fosforo",
+      "categoria": "elemento",
+      "subcategoria": "quimico",
+      "nombre": "Fósforo (P)",
+      "que_es": "El nutriente de la energía: sin él las plantas no crecen. Es escaso y no viene del aire.",
+      "explicacion": "El fósforo solo sale de las rocas. Se libera lento al desgastarse, y por eso las plantas se alían con hongos que lo buscan más lejos o con raíces especiales que lo disuelven.",
+      "datos": [
+        {
+          "nombre": "En la condrita CI",
+          "ref": "semilla#ci_p_pct"
+        },
+        {
+          "nombre": "En la hoja",
+          "ref": "coigue#p_hoja_pct"
+        },
+        {
+          "nombre": "Aumento con micorriza",
+          "ref": "hongo#aumento_absorcion_p"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "forma_parte_de",
+          "con": "condrita_ci",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "limita",
+          "con": "nothofagus_nitida",
+          "simulado": true,
+          "fuente": "ley del mínimo de Liebig",
+          "confianza": "alta"
+        }
+      ],
+      "en_el_juego": "Los puntos azules que suben en el corte: el fósforo que trae el hongo."
+    },
+    {
+      "id": "hierro",
+      "categoria": "elemento",
+      "subcategoria": "quimico",
+      "nombre": "Hierro (Fe)",
+      "que_es": "El metal que más abunda en los meteoritos: casi una quinta parte de la roca semilla.",
+      "explicacion": "El hierro está en los minerales y en granos metálicos. Al oxidarse forma la herrumbre que tiñe el suelo.",
+      "datos": [
+        {
+          "nombre": "En la condrita CI",
+          "ref": "semilla#ci_fe_pct"
+        },
+        {
+          "nombre": "En la ordinaria",
+          "ref": "semilla#condrita_ordinaria_fe_pct"
+        },
+        {
+          "nombre": "En el metálico",
+          "ref": "semilla#hierro_fe_pct"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "forma_parte_de",
+          "con": "condrita_ci",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "se_transforma_en",
+          "con": "ferrihidrita",
+          "simulado": false,
+          "fuente": "Schwertmann 1993",
+          "confianza": "media",
+          "via": "oxidacion"
+        }
+      ],
+      "en_el_juego": "El color café rojizo del suelo."
+    },
+    {
+      "id": "carbono",
+      "categoria": "elemento",
+      "subcategoria": "quimico",
+      "nombre": "Carbono (C)",
+      "que_es": "La base de la vida: el árbol lo toma del aire para hacer madera, hojas y raíces.",
+      "explicacion": "Las plantas toman dióxido de carbono del aire y con la luz lo convierten en azúcar. Cerca de la mitad de la madera es carbono.",
+      "datos": [
+        {
+          "nombre": "Fracción de carbono en la biomasa",
+          "ref": "coigue#fraccion_carbono_biomasa"
+        },
+        {
+          "nombre": "En la condrita CI",
+          "ref": "semilla#ci_c_pct"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "forma_parte_de",
+          "con": "aire",
+          "simulado": false,
+          "fuente": "CO2 atmosférico ~420 ppm (NOAA Global Monitoring Laboratory); el núcleo no sigue el CO2 por separado",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "se_transforma_en",
+          "con": "humus",
+          "simulado": false,
+          "fuente": "S4",
+          "confianza": "media",
+          "via": "descomposicion"
+        }
+      ],
+      "en_el_juego": "La biomasa del árbol en la ficha."
+    },
+    {
+      "id": "azufre",
+      "categoria": "elemento",
+      "subcategoria": "quimico",
+      "nombre": "Azufre (S)",
+      "que_es": "Uno de los elementos de la roca semilla que el juego sigue en cada capa del suelo.",
+      "explicacion": "El azufre viene en los minerales del meteorito y se libera de a poco al desgastarse la roca.",
+      "datos": [
+        {
+          "nombre": "En la condrita CI",
+          "ref": "semilla#ci_s_pct"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "forma_parte_de",
+          "con": "condrita_ci",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        }
+      ],
+      "en_el_juego": "Se sigue en el núcleo por capa y celda."
+    },
+    {
+      "id": "magnesio",
+      "categoria": "elemento",
+      "subcategoria": "quimico",
+      "nombre": "Magnesio (Mg)",
+      "que_es": "Uno de los elementos de la roca semilla que el juego sigue en cada capa del suelo.",
+      "explicacion": "El magnesio viene en los minerales del meteorito y se libera de a poco al desgastarse la roca.",
+      "datos": [
+        {
+          "nombre": "En la condrita CI",
+          "ref": "semilla#ci_mg_pct"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "forma_parte_de",
+          "con": "condrita_ci",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        }
+      ],
+      "en_el_juego": "Se sigue en el núcleo por capa y celda."
+    },
+    {
+      "id": "silicio",
+      "categoria": "elemento",
+      "subcategoria": "quimico",
+      "nombre": "Silicio (Si)",
+      "que_es": "Uno de los elementos de la roca semilla que el juego sigue en cada capa del suelo.",
+      "explicacion": "El silicio viene en los minerales del meteorito y se libera de a poco al desgastarse la roca.",
+      "datos": [
+        {
+          "nombre": "En la condrita CI",
+          "ref": "semilla#ci_si_pct"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "forma_parte_de",
+          "con": "condrita_ci",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        }
+      ],
+      "en_el_juego": "Se sigue en el núcleo por capa y celda."
+    },
+    {
+      "id": "niquel",
+      "categoria": "elemento",
+      "subcategoria": "quimico",
+      "nombre": "Níquel (Ni)",
+      "que_es": "Uno de los elementos de la roca semilla que el juego sigue en cada capa del suelo.",
+      "explicacion": "El níquel viene en los minerales del meteorito y se libera de a poco al desgastarse la roca.",
+      "datos": [
+        {
+          "nombre": "En la condrita CI",
+          "ref": "semilla#ci_ni_pct"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "forma_parte_de",
+          "con": "condrita_ci",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        }
+      ],
+      "en_el_juego": "Se sigue en el núcleo por capa y celda."
+    },
+    {
+      "id": "calcio",
+      "categoria": "elemento",
+      "subcategoria": "quimico",
+      "nombre": "Calcio (Ca)",
+      "que_es": "Uno de los elementos de la roca semilla que el juego sigue en cada capa del suelo.",
+      "explicacion": "El calcio viene en los minerales del meteorito y se libera de a poco al desgastarse la roca.",
+      "datos": [
+        {
+          "nombre": "En la condrita CI",
+          "ref": "semilla#ci_ca_pct"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "forma_parte_de",
+          "con": "condrita_ci",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        }
+      ],
+      "en_el_juego": "Se sigue en el núcleo por capa y celda."
+    },
+    {
+      "id": "potasio",
+      "categoria": "elemento",
+      "subcategoria": "quimico",
+      "nombre": "Potasio (K)",
+      "que_es": "Uno de los elementos de la roca semilla que el juego sigue en cada capa del suelo.",
+      "explicacion": "El potasio viene en los minerales del meteorito y se libera de a poco al desgastarse la roca.",
+      "datos": [
+        {
+          "nombre": "En la condrita CI",
+          "ref": "semilla#ci_k_pct"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "forma_parte_de",
+          "con": "condrita_ci",
+          "simulado": true,
+          "fuente": "Lodders 2010, Tabla 2 (composición de condritas CI, Orgueil); arXiv:1010.2746",
+          "confianza": "alta"
+        }
+      ],
+      "en_el_juego": "Se sigue en el núcleo por capa y celda."
+    }
+  ]
+}

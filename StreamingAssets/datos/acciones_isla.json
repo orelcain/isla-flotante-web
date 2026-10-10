@@ -1,0 +1,14 @@
+{
+  "nota": "Acciones del jugador declaradas como DATOS (decisión 4 de OBJETIVOS): escala de tiempo en que tienen sentido, qué modifican y su costo físico. El motor C# implementa cada id; una interfaz puede listarlas desde aquí.",
+  "acciones": [
+    { "id": "plantar_bosque", "nombre": "Plantar bosque nativo", "escala": "meso", "modifica": ["bosque"], "costo": "plantines" },
+    { "id": "sembrar_pradera", "nombre": "Sembrar pradera", "escala": "meso", "modifica": ["hierba"], "costo": "semillas" },
+    { "id": "despejar", "nombre": "Despejar", "escala": "meso", "modifica": ["hierba", "matorral", "bosque", "laguna"], "costo": "trabajo" },
+    { "id": "hacer_laguna", "nombre": "Hacer laguna", "escala": "meso", "modifica": ["laguna"], "costo": "trabajo" },
+    { "id": "hacer_canal", "nombre": "Cavar canal", "escala": "meso", "modifica": ["canal"], "costo": "trabajo" },
+    { "id": "quitar_canal", "nombre": "Tapar canal", "escala": "meso", "modifica": ["canal"], "costo": "trabajo" },
+    { "id": "mover_tierra", "nombre": "Mover tierra (cavar y rellenar)", "escala": "meso", "modifica": ["elevacion", "espesor_a_mm", "espesor_b_mm", "hierba", "matorral", "bosque", "costra"],
+      "costo": "m³ de tierra movida (40 m × 40 m × metros)",
+      "fisica": "Conserva la masa: lo que se cava se deposita en el destino o cae al vacío. Se mueve primero el suelo (A, luego B) y después la roca. El suelo movido queda encima en el destino; la roca suma altura sin suelo. Cavar destruye la cobertura. Ninguna celda baja de 1 m (no se perfora la isla)." }
+  ]
+}

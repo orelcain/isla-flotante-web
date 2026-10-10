@@ -1,0 +1,22 @@
+{
+  "version_esquema": 1,
+  "nota": "Magnitudes que guarda cada parcela. Agregar una aquí basta para que los mundos guardados la reciban al cargar (ver migrar() en estado.js).",
+  "cantidades": [
+    { "id": "ph", "nombre": "pH", "unidad": "", "min": 3.5, "max": 9.5, "defecto": 6.3, "decimales": 1,
+      "fuente": "Escala de pH del suelo medido en agua (1:2,5)", "confianza": "alta" },
+    { "id": "n_nitrato", "nombre": "Nitrógeno disponible (N-NO₃)", "unidad": "mg/kg", "min": 0, "max": 300, "defecto": 15, "decimales": 0,
+      "fuente": "Unidad estándar de análisis de suelo (nitrato extraíble)", "confianza": "alta" },
+    { "id": "p_olsen", "nombre": "Fósforo disponible (P Olsen)", "unidad": "mg/kg", "min": 0, "max": 200, "defecto": 12, "decimales": 0,
+      "fuente": "Método Olsen (bicarbonato de sodio), estándar en laboratorios de suelo", "confianza": "alta" },
+    { "id": "k_interc", "nombre": "Potasio intercambiable", "unidad": "mg/kg", "min": 0, "max": 900, "defecto": 150, "decimales": 0,
+      "fuente": "Extracción con acetato de amonio, estándar en laboratorios de suelo", "confianza": "alta" },
+    { "id": "materia_organica", "nombre": "Materia orgánica", "unidad": "%", "min": 0, "max": 25, "defecto": 3, "decimales": 1,
+      "fuente": "Porcentaje en peso de suelo seco", "confianza": "alta" },
+    { "id": "arena", "nombre": "Arena", "unidad": "%", "min": 0, "max": 100, "defecto": 40, "decimales": 0,
+      "fuente": "Fracción granulométrica 0,05–2 mm (USDA)", "confianza": "alta" },
+    { "id": "arcilla", "nombre": "Arcilla", "unidad": "%", "min": 0, "max": 80, "defecto": 20, "decimales": 0,
+      "fuente": "Fracción granulométrica < 0,002 mm (USDA)", "confianza": "alta" },
+    { "id": "humedad", "nombre": "Humedad volumétrica", "unidad": "%", "min": 0, "max": 55, "defecto": 25, "decimales": 1,
+      "fuente": "Volumen de agua / volumen de suelo", "confianza": "alta" }
+  ]
+}

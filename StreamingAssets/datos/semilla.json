@@ -1,0 +1,584 @@
+{
+  "nota": "Isla semilla (docs/DISENO_ISLA_SEMILLA.md). Dos clases de valores: MEDIDOS (con fuente de literatura, investigados el 08-10-2026) y DECISIONES DE DISEÑO (fuente = el documento de diseño; no pretenden ser física). El crecimiento por polvo estelar es ficción didáctica: con la tasa real la isla gana ~0,16 mg al año.",
+  "pendientes": "espesor_minimo_suelo_arbol (sin umbral publicado; en Chiloé las plántulas de N. nitida crecen sobre troncos podridos, Christie & Armesto 2003) · dias_con_lluvia_anio (sin normal verificable) · reparto fosfato/fosfuro en condritas (ver p_meteorito_nota) · efecto de la humedad sobre la descomposición (sin fuente; Chiloé es húmedo y k ya se midió allí) · fauna del suelo (densidades en Chiloé sin fuente).",
+  "ci_h_pct": {
+    "valor": 1.97,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "19700 ppm ± 2000 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_c_pct": {
+    "valor": 3.48,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "34800 ppm ± 3500 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_o_pct": {
+    "valor": 45.9,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "459000 ppm ± 46000 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025. El O incluye el agua estructural (las CI tienen ~15-20 % de agua en filosilicatos y sulfatos)."
+  },
+  "ci_na_pct": {
+    "valor": 0.499,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "4990 ppm ± 250 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_mg_pct": {
+    "valor": 9.58,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "95800 ppm ± 2900 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_al_pct": {
+    "valor": 0.85,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "8500 ppm ± 260 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_si_pct": {
+    "valor": 10.7,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "107000 ppm ± 3000 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_p_pct": {
+    "valor": 0.0967,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "967 ppm ± 97 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_s_pct": {
+    "valor": 5.35,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "53500 ppm ± 2700 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_k_pct": {
+    "valor": 0.0544,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "544 ppm ± 27 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_ca_pct": {
+    "valor": 0.922,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "9220 ppm ± 461 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_cr_pct": {
+    "valor": 0.265,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "2650 ppm ± 80 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_mn_pct": {
+    "valor": 0.193,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "1930 ppm ± 58 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_fe_pct": {
+    "valor": 18.5,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "185000 ppm ± 6000 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_co_pct": {
+    "valor": 0.0506,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "506 ppm ± 15 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "ci_ni_pct": {
+    "valor": 1.08,
+    "unidad": "% en masa",
+    "fuente": "Lodders, K. (2010) 'Solar system abundances of the elements', en Principles and Perspectives in Cosmochemistry, Astrophys. Space Sci. Proc., Springer, p. 379-417; Tabla 2 'CI chondrite composition' (Orgueil). Preprint abierto: https://arxiv.org/pdf/1010.2746",
+    "confianza": "alta",
+    "nota": "10800 ppm ± 300 ppm (Orgueil, representativo de CI). Base: Lodders, Palme & Gail 2009. Lodders 2021 (Space Sci Rev 217:44) y Lodders, Bergemann & Palme 2025 reportan valores similares para los no volátiles; el C fue revisado al alza en 2025."
+  },
+  "condrita_ordinaria_o_pct": {
+    "valor": 33.46,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "media",
+    "nota": "Conversión propia de óxidos a elemento. Calculado por estequiometría de los óxidos + agua (H2O+ 0,32; H2O- 0,09). El propio artículo indica que las condritas H tienen O en el rango 32-36 % en masa."
+  },
+  "condrita_ordinaria_mg_pct": {
+    "valor": 14.12,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "alta",
+    "nota": "Conversión propia de óxidos a elemento. MgO 23,41 % x 0,603."
+  },
+  "condrita_ordinaria_si_pct": {
+    "valor": 17.06,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "alta",
+    "nota": "Conversión propia de óxidos a elemento. SiO2 36,49 % x 0,4675."
+  },
+  "condrita_ordinaria_fe_pct": {
+    "valor": 27.52,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "alta",
+    "nota": "Conversión propia de óxidos a elemento. Fe total = FeO 9,54 % (Fe 7,42) + Fe metálico 16,72 % + FeS 5,33 % (Fe 3,39). Rango del Fe metálico en H: 8,1-26,2 %."
+  },
+  "condrita_ordinaria_s_pct": {
+    "valor": 1.94,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "alta",
+    "nota": "Conversión propia de óxidos a elemento. Desde FeS 5,33 % x 0,3647."
+  },
+  "condrita_ordinaria_ca_pct": {
+    "valor": 1.22,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "alta",
+    "nota": "Conversión propia de óxidos a elemento. CaO 1,70 % x 0,7147."
+  },
+  "condrita_ordinaria_al_pct": {
+    "valor": 1.24,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "alta",
+    "nota": "Conversión propia de óxidos a elemento. Al2O3 2,35 % x 0,5293."
+  },
+  "condrita_ordinaria_ni_pct": {
+    "valor": 1.7,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "alta",
+    "nota": "Conversión propia de óxidos a elemento. Dado directamente (rango 1,15-2,24 %)."
+  },
+  "condrita_ordinaria_na_pct": {
+    "valor": 0.65,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "alta",
+    "nota": "Conversión propia de óxidos a elemento. Na2O 0,87 % x 0,7419."
+  },
+  "condrita_ordinaria_cr_pct": {
+    "valor": 0.32,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "alta",
+    "nota": "Conversión propia de óxidos a elemento. Cr2O3 0,47 % x 0,6842."
+  },
+  "condrita_ordinaria_mn_pct": {
+    "valor": 0.23,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "alta",
+    "nota": "Conversión propia de óxidos a elemento. MnO 0,30 % x 0,7745."
+  },
+  "condrita_ordinaria_p_pct": {
+    "valor": 0.11,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "media",
+    "nota": "Conversión propia de óxidos a elemento. P2O5 0,26 % x 0,4364 (asignación de columnas reconstruida desde el texto extraído del PDF; ver confianza)."
+  },
+  "condrita_ordinaria_k_pct": {
+    "valor": 0.083,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "media",
+    "nota": "Conversión propia de óxidos a elemento. K2O 0,10 % x 0,830 (asignación de columnas reconstruida desde el texto extraído del PDF; ver confianza)."
+  },
+  "condrita_ordinaria_c_pct": {
+    "valor": 0.12,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "alta",
+    "nota": "Conversión propia de óxidos a elemento. Dado directamente (rango 0,01-0,34 %)."
+  },
+  "condrita_ordinaria_h_pct": {
+    "valor": 0.046,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "media",
+    "nota": "Conversión propia de óxidos a elemento. Calculado desde H2O total 0,41 %."
+  },
+  "condrita_ordinaria_co_pct": {
+    "valor": 0.08,
+    "unidad": "% en masa (condrita H promedio)",
+    "fuente": "Schaefer, L. & Fegley, B. Jr. (2007) 'Outgassing of ordinary chondritic material and some of its implications for the chemistry of asteroids, planets, and satellites', Icarus 186:462-483; Tabla 1 (promedio de 90 análisis de caídas H, datos METBASE). Preprint: https://arxiv.org/pdf/astro-ph/0606671",
+    "confianza": "alta",
+    "nota": "Conversión propia de óxidos a elemento. Dado directamente (rango 0,01-0,17 %)."
+  },
+  "densidad_condrita_ci": {
+    "valor": 1.58,
+    "unidad": "g/cm3 (densidad aparente)",
+    "fuente": "Consolmagno & Britt (1998) Meteorit. Planet. Sci. 33:1231, citado en Hergenrother et al. (2014) 'The Design Reference Asteroid for the OSIRIS-REx Mission Target (101955) Bennu', https://arxiv.org/pdf/1409.4704 (sección CI Meteorites)",
+    "confianza": "media",
+    "nota": "Orgueil: densidad de grano 2,43 g/cm3, porosidad ~35 %. Medición 2025 de Ivuna y Orgueil: 1,61-2,10 g/cm3 aparente y 2,44-2,55 de grano (Meteorit. Planet. Sci., 'Physical properties, internal structure, and the three-dimensional petrography of CI chondrites'). Muy pocas muestras: solo 5 caídas CI observadas."
+  },
+  "densidad_condrita_cm": {
+    "valor": 2.2,
+    "unidad": "g/cm3 (densidad aparente)",
+    "fuente": "Macke, Consolmagno & Britt (2011) Meteorit. Planet. Sci. 46:1842-1862, resumido en Hergenrother et al. (2014) https://arxiv.org/pdf/1409.4704",
+    "confianza": "alta",
+    "nota": "Rango 1,88-2,47 g/cm3; densidad de grano media 2,92 g/cm3; porosidad media 24,7 % (15,0-36,7 %)."
+  },
+  "densidad_regolito": {
+    "valor": 1330,
+    "unidad": "kg/m3",
+    "fuente": "USDA-NRCS, Soil Quality Indicators: Bulk Density (hoja técnica). https://www.nrcs.usda.gov/sites/default/files/2023-01/Soil%20Quality-Indicators-Bulk%20Density.pdf",
+    "confianza": "media",
+    "nota": "1,33 g/cm3 convertido a kg/m3"
+  },
+  "flujo_polvo_cosmico_t_anio": {
+    "valor": 5200,
+    "unidad": "t/año (Tierra completa, material que llega al suelo, 12-700 µm)",
+    "fuente": "Rojas, J. et al. (2021) 'The micrometeorite flux at Dome C (Antarctica), monitoring the accretion of extraterrestrial dust on Earth', Earth Planet. Sci. Lett. 560:116794. https://eprints.whiterose.ac.uk/170790",
+    "confianza": "media",
+    "nota": "Rango entre estudios: Plane (2012, Chem. Soc. Rev. 41:6507-6518) recopila 5-270 t/día (~1.800-99.000 t/año): 5-50 t/día según mediciones de la atmósfera media (radar, lidar) y 100-300 t/día según la nube zodiacal y el hielo/sedimentos. Love & Brownlee (1993, Science 262:550-553, cráteres en el satélite LDEF): 40 ± 20 x10^6 kg/año = 40.000 t/año (entrada al tope de la atmósfera, no lo que llega al suelo). Rojas 2021 desglosa 1.600 t/año de micrometeoritos no fundidos + 3.600 t/año de esférulas cósmicas."
+  },
+  "flujo_polvo_cosmico_mg_m2_anio": {
+    "valor": 0.01,
+    "unidad": "mg/m2/año",
+    "fuente": "Cálculo propio: 5.200 t/año (Rojas et al. 2021, EPSL 560:116794) / 5,10e14 m2. Medición directa en Dome C: 3,0 µg/m2/año (no fundidos) + 5,6 µg/m2/año (esférulas) en el rango 30-350 µm.",
+    "confianza": "media",
+    "nota": "Rango: 0,0036 (5 t/día) a 0,19 mg/m2/año (270 t/día, Plane 2012); Love & Brownlee 1993 equivale a 0,078. Para los 16 m2 de la isla: ~0,16 mg/año con Rojas 2021. Una isla real no crecería de forma apreciable por polvo cósmico: en la simulación es un mecanismo de juego, no físico."
+  },
+  "energia_activacion_meteorizacion_kj_mol": {
+    "valor": 74,
+    "unidad": "kJ/mol (aparente, escala de cuenca)",
+    "fuente": "West, A.J., Galy, A. & Bickle, M. (2005) 'Tectonic and climatic controls on silicate weathering', Earth Planet. Sci. Lett. 235:211-228. https://sseh.uchicago.edu/doc/West_et_al_2005.pdf",
+    "confianza": "media",
+    "nota": "74 ± 29 kJ/mol (otro ajuste del mismo trabajo: 63 ± 14). Basalto: 60-75 kJ/mol (Navarre-Sitchler & Brantley 2007, EPSL). Escala global: ~22 kJ/mol (Brantley et al. 2023, Science 379:382-389). Forsterita en laboratorio: 79,0 kJ/mol (mecanismo neutro) y 67,2 (ácido) (Palandri & Kharaka 2004)."
+  },
+  "produccion_suelo_mm_kanio": {
+    "valor": [
+      7,
+      53
+    ],
+    "unidad": "mm/kiloaño (= m/millón de años)",
+    "fuente": "Heimsath, A.M., Chappell, J., Dietrich, W.E., Nishiizumi, K. & Finkel, R.C. (2000) 'Soil production on a retreating escarpment in southeastern Australia', Geology 28(9):787-790. https://researchportalplus.anu.edu.au/en/publications/soil-production-on-a-retreating-escarpment-in-southeastern-austra/",
+    "confianza": "alta",
+    "nota": "53 mm/ka sobre roca desnuda y 7 mm/ka bajo 100 cm de suelo: la producción cae exponencialmente con el espesor (función de producción de suelo, Heimsath et al. 1997, Nature 388:358). Compilación mundial (Montgomery 2007, PNAS 104:13268, Tabla 1, n=188): mediana 0,017 mm/año (17 mm/ka), media 0,036 mm/año (36 mm/ka). https://pmc.ncbi.nlm.nih.gov/articles/PMC1948917"
+  },
+  "disolucion_olivino_mol_m2_s": {
+    "valor": 6.5e-10,
+    "unidad": "mol/m2/s (forsterita, 25 °C, pH 5)",
+    "fuente": "Palandri, J.L. & Kharaka, Y.K. (2004) 'A compilation of rate parameters of water-mineral interaction kinetics for application to geochemical modeling', USGS Open-File Report 2004-1068, tabla resumen (Forsterite). https://pubs.usgs.gov/of/2004/1068/OFR_2004_1068_old.pdf",
+    "confianza": "media",
+    "nota": "Parámetros a 25 °C: log k ácido = -6,85 (n(H+) = 0,470; Ea 67,2 kJ/mol); log k neutro = -10,64 (Ea 79,0 kJ/mol). Cálculo propio a pH 5: 10^(-6,85-0,47x5) + 10^-10,64 = 6,5e-10. A pH neutro (solo mecanismo neutro): 2,3e-11. Son tasas de laboratorio lejos del equilibrio; en terreno suelen ser órdenes de magnitud menores."
+  },
+  "factor_biologico_liquen": {
+    "valor": [
+      2,
+      16
+    ],
+    "unidad": "factor multiplicador de la meteorización química (adimensional)",
+    "fuente": "Schwartzman, D.W. (2015) 'The Geobiology of Weathering: a 13th Hypothesis', https://arxiv.org/pdf/1509.04234 (tablas 2-5, recopilación de estudios)",
+    "confianza": "media",
+    "nota": "Mini-cuencas en terreno: Hubbard Brook 16 (Mg), 4,4 (Si), 0,09 (Fe) (Aghamiri & Schwartzman 2002); Wanaque, NJ 2,5 (Mg), 3,5 (Ca), 1,9 (Si), 0,5 (Fe) (Zambell et al. 2012). Cortezas de meteorización en basalto: Hawái 15-71 (Jackson & Keller 1970) y 2-18 (Brady et al. 1999); Lanzarote 16 (Stretch & Viles 2002). El factor depende del elemento: el Fe puede quedar retenido (<1)."
+  },
+  "factor_biologico_musgo": {
+    "valor": [
+      1.4,
+      5.4
+    ],
+    "unidad": "factor multiplicador (adimensional)",
+    "fuente": "Lenton, T.M. et al. (2012) 'First plants cooled the Ordovician', Nature Geoscience 5:86-89 (microcosmos con Physcomitrella patens, 3 meses); valores tabulados en Schwartzman, D.W. (2015) 'The Geobiology of Weathering: a 13th Hypothesis', https://arxiv.org/pdf/1509.04234 (tablas 2-5, recopilación de estudios)",
+    "confianza": "media",
+    "nota": "Granito: Ca 1,4 ± 0,2; Mg 1,5 ± 0,2. Andesita: Ca 3,6 ± 0,9; Mg 5,4 ± 0,9. Trabajos posteriores sostienen que el efecto global en el Ordovícico fue menor."
+  },
+  "factor_biologico_ectomicorriza": {
+    "valor": 2,
+    "unidad": "factor (liberación de Ca desde basalto, EM frente a AM)",
+    "fuente": "Quirk, J. et al. (2012) 'Evolution of trees and mycorrhizal fungi intensifies silicate mineral weathering', Biology Letters 8(6):1006-1011. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3497110/",
+    "confianza": "media",
+    "nota": "Árboles con hongos ectomicorrícicos (EM) liberaron Ca del basalto al doble de la tasa que las gimnospermas con micorriza arbuscular (AM). Es un factor relativo EM/AM, no frente a roca estéril. Plantas vasculares frente a roca sin plantas: 2-5 en basalto de Islandia (Moulton & Berner 1998) y 10-18 en Hubbard Brook (Bormann et al. 1998), según Schwartzman 2015. Nothofagus forma ectomicorrizas (p. ej. Truong et al. 2024, Ecology and Evolution 14(10); Marín et al. 2018, Boletín Micológico). Jongmans et al. 1997 (Nature 389:682, 'Rock-eating fungi') documentan túneles de hifas en feldespatos, sin factor numérico."
+  },
+  "p_meteorito_nota": {
+    "valor": "En los meteoritos de hierro el P está principalmente como schreibersita (Fe,Ni)3P (~15,6 % de P en masa si fuera Fe3P puro; cálculo estequiométrico propio); p. ej. Sikhote-Alin tiene ~0,5 % de P en masa. Su corrosión en agua produce fosfito, hipofosfato, pirofosfato y fosfato (Pasek & Lauretta 2005; Pasek, Dworkin & Lauretta 2007). Las condritas CI tienen 0,097 % de P (Lodders 2010) y las H ~0,11 % (Schaefer & Fegley 2007).",
+    "unidad": "texto",
+    "fuente": "Pasek, M.A. & Lauretta, D.S. (2005) 'Aqueous corrosion of phosphide minerals from iron meteorites: a highly reactive source of prebiotic phosphorus on the surface of the early Earth', Astrobiology 5(4):515-535; seguimiento: Pasek, Dworkin & Lauretta (2007) Geochim. Cosmochim. Acta 71:1721-1736 (https://ntrs.nasa.gov/citations/20070031830)",
+    "confianza": "media",
+    "nota": "El dato de Sikhote-Alin proviene de un trabajo que aparece citado en la búsqueda (no se abrió el original). Qué fracción del P de las condritas está como fosfato y cuál como fosfuro: PENDIENTE de fuente."
+  },
+  "temperatura_media_anual_c": {
+    "valor": 9.8,
+    "unidad": "°C",
+    "fuente": "Dirección Meteorológica de Chile, portal de climatología, producto RE3023 'Temperaturas medias y extremas', estación Mocopulli Ad. (420014, Castro, 174 m s. n. m.), promedios mensuales 2012-2026. https://climatologia.meteochile.gob.cl/application/historicob/promedioTemperatura30/420014",
+    "confianza": "media",
+    "nota": "Promedio propio de las 12 medias mensuales de la DMC (ene 14,1; jul 5,8). Serie corta: la estación opera desde oct-2012 y la DMC no tiene normal mensual 1991-2020 definida para ella. Referencia histórica para Castro: 11,6 °C (Hajek & di Castri 1975, Bioclimatografía de Chile, según Wikipedia 'Castro, Chile'); la diferencia puede deberse a la altitud de Mocopulli y al periodo."
+  },
+  "amplitud_termica_estacional_c": {
+    "valor": 4.15,
+    "unidad": "°C (mitad de la diferencia entre el mes más cálido y el más frío)",
+    "fuente": "Dirección Meteorológica de Chile, portal de climatología, producto RE3023 'Temperaturas medias y extremas', estación Mocopulli Ad. (420014, Castro, 174 m s. n. m.), promedios mensuales 2012-2026. https://climatologia.meteochile.gob.cl/application/historicob/promedioTemperatura30/420014",
+    "confianza": "media",
+    "nota": "(14,1 - 5,8)/2, cálculo propio. Con Hajek & di Castri 1975 para Castro: (15,9 - 7,3)/2 = 4,3 °C."
+  },
+  "precipitacion_anual_mm": {
+    "valor": 1974,
+    "unidad": "mm/año",
+    "fuente": "Dirección Meteorológica de Chile, producto RE3005 'Precipitación histórica', estación Mocopulli Ad. (420014), totales anuales 2014-2025. https://climatologia.meteochile.gob.cl/application/historico/aguaCaidaHistoricaMensual/420014",
+    "confianza": "media",
+    "nota": "Media propia de 12 años completos; rango 1.118 mm (2021) a 2.782 mm (2017). 2020 y 2021 tienen meses sospechosamente bajos (abr-2020: 3,4 mm; sep-2020: 1,4 mm), posibles vacíos de datos. Referencia histórica para Castro: 1.598,5 mm (Hajek & di Castri 1975, vía Wikipedia)."
+  },
+  "densidad_roca": {
+    "valor": 1580,
+    "unidad": "kg/m3",
+    "fuente": "= densidad_condrita_ci (1,58 g/cm3): la roca semilla es una condrita CI (ficción raíz: la semilla es un meteorito)",
+    "confianza": "media",
+    "nota": "Consolmagno & Britt (1998) Meteorit. Planet. Sci. 33:1231, citado en Hergenrother et al. (2014) 'The Design Reference Asteroid for the OSIRIS-REx Mission Target (101955) Bennu', https://arxiv.org/pdf/1409.4704 (sección CI Meteorites)"
+  },
+  "densidad_horizonte_organico": {
+    "valor": 100,
+    "unidad": "kg/m3",
+    "fuente": "Nóvoa-Muñoz, J.C. et al. (2023) 'Prediction of the bulk density of organic horizons in forest soils dominated by Quercus robur in Galicia', Revista de Ciências Agrárias 45(4), Tabla 1. https://revistas.rcaap.pt/rca/article/view/28680",
+    "confianza": "media",
+    "nota": "capa fermentada/humus 0,100 g/cm3; la hojarasca suelta es 0,021 g/cm3"
+  },
+  "densidad_hojarasca": {
+    "valor": 21,
+    "unidad": "kg/m3",
+    "fuente": "Nóvoa-Muñoz, J.C. et al. (2023) 'Prediction of the bulk density of organic horizons in forest soils dominated by Quercus robur in Galicia', Revista de Ciências Agrárias 45(4), Tabla 1. https://revistas.rcaap.pt/rca/article/view/28680",
+    "confianza": "media",
+    "nota": "0,021 g/cm3"
+  },
+  "densidad_condrita_ordinaria_h": {
+    "valor": 3440,
+    "unidad": "kg/m3",
+    "fuente": "Wilkison, S.L. & Robinson, M.S. (2000) 'Bulk density of ordinary chondrite meteorites and implications for asteroidal internal structure', Meteorit. Planet. Sci. 35(6):1203-1213. https://experts.azregents.edu/en/publications/bulk-density-of-ordinary-chondrite-meteorites-and-implications-fo/",
+    "confianza": "alta"
+  },
+  "produccion_suelo_ref_mm_kanio": {
+    "valor": 17,
+    "unidad": "mm/kiloaño",
+    "fuente": "Montgomery 2007 (PNAS 104:13268), mediana mundial de producción de suelo; rango típico 7-53 (Heimsath et al. 2000)",
+    "confianza": "media",
+    "nota": "se usa la mediana; el rango queda en produccion_suelo_mm_kanio"
+  },
+  "escala_produccion_suelo_m": {
+    "valor": 0.5,
+    "unidad": "m",
+    "fuente": "Heimsath et al. 1997 (Nature 388:358), función exponencial de producción de suelo: decae con el espesor de suelo con escala del orden de medio metro. A VERIFICAR contra el artículo.",
+    "confianza": "baja"
+  },
+  "temperatura_referencia_produccion_c": {
+    "valor": 10,
+    "unidad": "°C",
+    "fuente": "decisión: la tasa mundial no trae temperatura asociada; se ancla a 10 °C (clima templado) para aplicar Arrhenius",
+    "confianza": "baja"
+  },
+  "liberacion_anual_regolito": {
+    "valor": 0.005,
+    "unidad": "1/año",
+    "fuente": "CALIBRACIÓN PROVISIONAL: fracción de los elementos del regolito que pasa a disponible por año. Las tasas de laboratorio (disolucion_olivino_mol_m2_s) son órdenes de magnitud mayores que las de campo; falta una fuente de campo",
+    "confianza": "baja"
+  },
+  "latitud": {
+    "valor": -42,
+    "unidad": "°",
+    "fuente": "clima.json (Chiloé)",
+    "confianza": "alta"
+  },
+  "lado_isla_m": {
+    "valor": 4,
+    "unidad": "m",
+    "fuente": "decisión de diseño: docs/DISENO_ISLA_SEMILLA.md §10 (decidido por el humano 08-10)",
+    "confianza": "alta"
+  },
+  "lado_celda_m": {
+    "valor": 0.25,
+    "unidad": "m",
+    "fuente": "decisión de diseño: docs/DISENO_ISLA_SEMILLA.md §3",
+    "confianza": "alta"
+  },
+  "espesor_roca_inicial_m": {
+    "valor": 0.5,
+    "unidad": "m",
+    "fuente": "decisión de diseño: docs/DISENO_ISLA_SEMILLA.md",
+    "confianza": "alta"
+  },
+  "espesor_regolito_inicial_m": {
+    "valor": 0.005,
+    "unidad": "m",
+    "fuente": "decisión de diseño: docs/DISENO_ISLA_SEMILLA.md",
+    "confianza": "alta"
+  },
+  "factor_atajo_polvo": {
+    "valor": 300000000.0,
+    "unidad": "veces la tasa real",
+    "fuente": "decisión de diseño: docs/DISENO_ISLA_SEMILLA.md §4.5: ATAJO DIDÁCTICO (ficción raíz: la semilla tiene gravedad). Con 1 se ve la realidad",
+    "confianza": "alta",
+    "nota": "calibrado para que la primera ampliación llegue en pocos años de juego"
+  },
+  "masa_fragmento_kg": {
+    "valor": 0.5,
+    "unidad": "kg",
+    "fuente": "decisión de diseño: docs/DISENO_ISLA_SEMILLA.md: masa media de un fragmento visible",
+    "confianza": "alta"
+  },
+  "peso_zona_favorecida": {
+    "valor": 3,
+    "unidad": "adimensional",
+    "fuente": "decisión de diseño (09-10, pedido del humano): la zona elegida sube la probabilidad de caída (1 + 3) sin concentrarla en un pilar; el material que se apila de más se desliza (angulo_reposo_regolito_grados)",
+    "confianza": "alta"
+  },
+  "umbral_ampliacion_m": {
+    "valor": 0.05,
+    "unidad": "m",
+    "fuente": "decisión de diseño: docs/DISENO_ISLA_SEMILLA.md §4.6: sustrato que necesita un borde para extenderse",
+    "confianza": "alta"
+  },
+  "fraccion_traspaso_ampliacion": {
+    "valor": 0.5,
+    "unidad": "fracción",
+    "fuente": "decisión de diseño: docs/DISENO_ISLA_SEMILLA.md §4.6: parte del regolito del borde que forma la celda nueva",
+    "confianza": "alta"
+  },
+  "ci_n_pct": {
+    "valor": 0.295,
+    "unidad": "% en masa",
+    "fuente": "Lodders K (2010) Solar system abundances of the elements. En: Goswami A, Reddy BE (eds.) Principles and Perspectives in Cosmochemistry. Astrophysics and Space Science Proceedings, Springer, pp. 379-417, Tabla 2 (composición de condritas CI); arXiv:1010.2746",
+    "confianza": "alta",
+    "nota": "N = 2950 ± 440 ppm (0.295 ± 0.044 %). En la misma tabla, C = 34800 ppm (3.48 %). Una revisión de 2025 (Lodders, Bergemann y Palme, Space Science Reviews) indica que el N de las CI quedó significativamente más bajo; ese valor nuevo no se verificó."
+  },
+  "caida_pct_ordinaria": {
+    "valor": 90.3,
+    "unidad": "% de las caídas",
+    "fuente": "Wikipedia «Meteorite fall statistics» (1003 caídas observadas, datos hasta 2012); verificado parcialmente 09-10 (arXiv 2004.01069 da ~70 % de ordinarias: discrepancia anotada)",
+    "confianza": "media",
+    "nota": "H 33,8 + L 37,0 + LL 8,2 = 80,0 % ordinarias; se suman enstatita 1,6 % y acondritas 8,7 % con la composición de ordinaria (APROXIMACIÓN, confianza baja para esas dos). Ordinarias 69–80 % según el denominador (Devillepoix 2020: 70 %; Atlas de Cambridge: 68,8 %)"
+  },
+  "caida_pct_carbonacea": {
+    "valor": 4.4,
+    "unidad": "% de las caídas",
+    "fuente": "Wikipedia «Meteorite fall statistics» (1003 caídas observadas, datos hasta 2012); verificado parcialmente 09-10 (arXiv 2004.01069 da ~70 % de ordinarias: discrepancia anotada)",
+    "confianza": "media",
+    "nota": "CM 1,5 %, CI 0,5 %, otras; se usa la composición CI de la roca semilla"
+  },
+  "caida_pct_metalica": {
+    "valor": 5.2,
+    "unidad": "% de las caídas",
+    "fuente": "Wikipedia «Meteorite fall statistics» (1003 caídas observadas, datos hasta 2012); verificado parcialmente 09-10 (arXiv 2004.01069 da ~70 % de ordinarias: discrepancia anotada)",
+    "confianza": "media",
+    "nota": "hierros 3,5–5 % (la fuente da 41 o 49 casos) + mesosideritas y pallasitas 1,1 %"
+  },
+  "hierro_fe_pct": {
+    "valor": 91.5,
+    "unidad": "% en masa",
+    "fuente": "Composición típica de meteoritos metálicos: Fe 90,5–93 %, Ni 5,9–9 %, Co 0,4–0,6 %, P 0,1–0,5 %, S 0,1–0,7 % (Buchwald, vía Sikhote-Alin; rangos de WUSTL); verificado 09-10; se usa el punto medio",
+    "confianza": "media"
+  },
+  "hierro_ni_pct": {
+    "valor": 7.5,
+    "unidad": "% en masa",
+    "fuente": "Composición típica de meteoritos metálicos: Fe 90,5–93 %, Ni 5,9–9 %, Co 0,4–0,6 %, P 0,1–0,5 %, S 0,1–0,7 % (Buchwald, vía Sikhote-Alin; rangos de WUSTL); verificado 09-10; se usa el punto medio",
+    "confianza": "media"
+  },
+  "hierro_co_pct": {
+    "valor": 0.5,
+    "unidad": "% en masa",
+    "fuente": "Composición típica de meteoritos metálicos: Fe 90,5–93 %, Ni 5,9–9 %, Co 0,4–0,6 %, P 0,1–0,5 %, S 0,1–0,7 % (Buchwald, vía Sikhote-Alin; rangos de WUSTL); verificado 09-10; se usa el punto medio",
+    "confianza": "media"
+  },
+  "hierro_p_pct": {
+    "valor": 0.3,
+    "unidad": "% en masa",
+    "fuente": "Composición típica de meteoritos metálicos: Fe 90,5–93 %, Ni 5,9–9 %, Co 0,4–0,6 %, P 0,1–0,5 %, S 0,1–0,7 % (Buchwald, vía Sikhote-Alin; rangos de WUSTL); verificado 09-10; se usa el punto medio",
+    "confianza": "baja"
+  },
+  "hierro_s_pct": {
+    "valor": 0.4,
+    "unidad": "% en masa",
+    "fuente": "Composición típica de meteoritos metálicos: Fe 90,5–93 %, Ni 5,9–9 %, Co 0,4–0,6 %, P 0,1–0,5 %, S 0,1–0,7 % (Buchwald, vía Sikhote-Alin; rangos de WUSTL); verificado 09-10; se usa el punto medio",
+    "confianza": "baja"
+  },
+  "angulo_reposo_regolito_grados": {
+    "valor": 34,
+    "unidad": "grados",
+    "fuente": "Al-Hashemi & Al-Amoudi 2018, «A review on the angle of repose of granular materials», Powder Technology 330:397-417 (rango típico de materiales granulares 25–45°; arena seca ~34°); provisional hasta la verificación del enjambre (procesos_fisicos_sustrato.json)",
+    "confianza": "media",
+    "nota": "el regolito suelto que deja una pendiente mayor que este ángulo se desliza a la celda vecina más baja; la roca no se desliza"
+  },
+  "dias_entre_deslizamientos": {
+    "valor": 7,
+    "unidad": "días",
+    "fuente": "decisión de rendimiento: el polvo cae a razón de gramos por día; revisar las pendientes cada semana basta",
+    "confianza": "alta"
+  },
+  "humificacion_hojarasca": {
+    "valor": 0.15,
+    "unidad": "fracción de la masa descompuesta que queda como humus",
+    "fuente": "Kätterer et al. 2011, Agriculture, Ecosystems & Environment 141:184-192 (coeficiente húmico de residuos aéreos ≈0,15; leído directo, enjambre 09-10). Suelo agrícola sueco: aplicarlo a bosque lluvioso es SUPUESTO",
+    "confianza": "media"
+  },
+  "humificacion_raices": {
+    "valor": 0.35,
+    "unidad": "fracción",
+    "fuente": "Kätterer et al. 2011 (raíces ≈0,35: las raíces dejan más humus que las hojas)",
+    "confianza": "media",
+    "nota": "Simplificación: la raíz muerta se descompone el mismo día (en ICBM el reservorio joven se va a ~0,8/año)"
+  },
+  "humus_k_anio": {
+    "valor": 0.006,
+    "unidad": "1/año",
+    "fuente": "Andrén & Kätterer 1997, «ICBM: the introductory carbon balance model», Ecological Applications 7:1226-1236 (reservorio viejo k_O = 0,006/año)",
+    "confianza": "media",
+    "nota": "al mineralizarse el humus libera su N y P como disponibles"
+  },
+  "q10_descomposicion": {
+    "valor": 2.0,
+    "unidad": "adimensional",
+    "fuente": "Davidson & Janssens 2006, Nature 440:165-173 (la descomposición suele duplicarse cada 10 °C; Q10 ~2 es el valor de referencia y varía mucho)",
+    "confianza": "media"
+  },
+  "musgo_cobertura_inicial": {
+    "valor": 0.01,
+    "unidad": "fracción de la celda",
+    "fuente": "SUPUESTO: esporas que llegan desde el inicio (etapa de colonización inicial en lavas <70 años; Isotalo & Tuviala 2023). Valor bajo que solo fija el punto de partida de la curva",
+    "confianza": "baja"
+  },
+  "musgo_tasa_cobertura_anio": {
+    "valor": 0.314,
+    "unidad": "1/año (crecimiento logístico de la cobertura)",
+    "fuente": "Isotalo & Tuviala 2023 (Racomitrium lanuginosum cubre un campo de lava en ~24 años, Islandia: clima oceánico húmedo, análogo de Chiloé) → logística de 1 % a 95 % en 24 años. Cota lenta: Garibotti et al. 2011 (Arctic Antarctic Alpine Res. 43:35-45, leído completo): 2,3 % a 24 años, 63 % a 140 años en roca andina fría y seca (r ≈ 0,037)",
+    "confianza": "media",
+    "nota": "El ritmo real en Chiloé está entre ambos sitios; se elige el análogo húmedo."
+  },
+  "musgo_engrosamiento_m_anio": {
+    "valor": 0.00165,
+    "unidad": "m/año de tapiz (musgo vivo + materia orgánica muerta)",
+    "fuente": "Isotalo & Tuviala 2023: 1,6–1,7 mm/año en condiciones favorables. Coherente con Garibotti 2011: ~15 cm de capa orgánica a ~110 años",
+    "confianza": "media",
+    "nota": "Es engrosamiento NETO (ya descontada la descomposición): se suma al horizonte orgánico con la densidad del humus"
+  },
+  "musgo_espesor_maximo_m": {
+    "valor": 0.35,
+    "unidad": "m",
+    "fuente": "Isotalo & Tuviala 2023: espesor máximo citado 30–40 cm, alcanzado tras 300–700 años",
+    "confianza": "media"
+  },
+  "musgo_agua_mm": {
+    "valor": 8,
+    "unidad": "mm de agua guardada con cobertura completa",
+    "fuente": "Hembre et al. 2021 (Tabla 2): un tapiz de musgo almacena ~8 mm; los musgos retienen 3–7 g de agua por g seco (investigacion_microclima_agua_viento.json)",
+    "confianza": "media"
+  }
+}

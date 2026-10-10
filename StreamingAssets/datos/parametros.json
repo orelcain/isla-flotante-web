@@ -1,0 +1,20 @@
+{
+  "nota": "Constantes del modelo. Cada una con fuente y confianza. Las de confianza baja son las primeras candidatas a reemplazar por un modelo más fino.",
+  "profundidad_raiz_mm": { "valor": 300, "unidad": "mm", "fuente": "Zona radicular típica de hortalizas (0–30 cm)", "confianza": "media" },
+  "densidad_aparente": { "valor": 1.3, "unidad": "g/cm³", "fuente": "Valor típico de suelo mineral franco (rango 1,1–1,6)", "confianza": "media" },
+  "porosidad": { "valor": 50, "unidad": "%", "fuente": "1 − densidad aparente / 2,65 (densidad de partícula del cuarzo)", "confianza": "media" },
+  "n_en_mo": { "valor": 0.05, "unidad": "fracción", "fuente": "La materia orgánica del suelo tiene ~5 % de N (relación C/N ≈ 10–12)", "confianza": "media" },
+  "tasa_mineralizacion": { "valor": 0.02, "unidad": "fracción/año a 20 °C", "fuente": "Regla de extensión agrícola: 1–3 % del N orgánico se mineraliza por año", "confianza": "baja" },
+  "q10": { "valor": 2, "unidad": "", "fuente": "La actividad microbiana del suelo se duplica aprox. cada 10 °C (Q10 ≈ 2)", "confianza": "media" },
+  "n_critico": { "valor": 25, "unidad": "mg/kg", "fuente": "Prueba de nitrato pre-abonado (PSNT, Magdoff): suficiente sobre ~25 mg/kg N-NO₃", "confianza": "media" },
+  "p_critico": { "valor": 15, "unidad": "mg/kg", "fuente": "Suficiencia P Olsen: bajo < 10, medio 10–20 mg/kg", "confianza": "media" },
+  "k_critico": { "valor": 150, "unidad": "mg/kg", "fuente": "Suficiencia K intercambiable: ~120–200 mg/kg según textura", "confianza": "media" },
+  "fraccion_p_desde_olsen": { "valor": 0.3, "unidad": "fracción", "fuente": "Aproximación: el P Olsen se repone desde reservas del suelo; solo parte de lo absorbido baja la lectura", "confianza": "baja" },
+  "fraccion_k_desde_interc": { "valor": 0.5, "unidad": "fracción", "fuente": "Aproximación: el K intercambiable se repone desde K no intercambiable", "confianza": "baja" },
+  "et0_a": { "valor": 0.12, "unidad": "mm/día/°C", "fuente": "Aproximación lineal de la evapotranspiración de referencia por temperatura. Modelo serio: Penman-Monteith (FAO-56), nivel futuro", "confianza": "baja" },
+  "et0_b": { "valor": 0.6, "unidad": "mm/día", "fuente": "Ídem et0_a", "confianza": "baja" },
+  "fraccion_n_suelo_leguminosa": { "valor": 0.5, "unidad": "fracción", "fuente": "El poroto es fijador débil: obtiene cerca de la mitad de su N del suelo", "confianza": "baja" },
+  "residuo_n_leguminosa": { "valor": 30, "unidad": "kg N/ha", "fuente": "Rastrojo de leguminosa de grano devuelve del orden de 20–40 kg N/ha", "confianza": "baja" },
+  "tampon_arcilla": { "valor": 0.05, "unidad": "por % de arcilla", "fuente": "Forma cualitativa correcta: la arcilla y la MO (más CIC) frenan el cambio de pH. Coeficientes aproximados", "confianza": "baja" },
+  "tampon_mo": { "valor": 0.3, "unidad": "por % de MO", "fuente": "Ídem tampon_arcilla", "confianza": "baja" }
+}

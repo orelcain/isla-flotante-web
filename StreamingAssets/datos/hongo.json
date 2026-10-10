@@ -1,0 +1,53 @@
+{
+  "nota": "Hongo ectomicorrícico de la isla semilla (etapa S3). Valores verificados por el enjambre (ver investigacion_s3.json) y calibraciones marcadas. ESPECIE EN LÁPIZ: no hay un hongo ectomicorrícico confirmado en raíces de Nothofagus nitida; el juego usa un ectomicorrícico documentado en Nothofagus del sur de Chile (Austropaxillus / Descolea, Alvarez et al. 2004, Mycologia).",
+  "micorriza_activa": {
+    "valor": 1,
+    "unidad": "1 = con hongo, 0 = contrafactual «¿y sin hongo?»",
+    "fuente": "decisión de diseño (docs/VISIONES_TRAMO_JUGABLE.md, visión B)",
+    "confianza": "alta"
+  },
+  "fraccion_azucar_al_hongo": {
+    "valor": 0.11,
+    "unidad": "fracción de la fotosíntesis neta",
+    "fuente": "Hobbie 2006, Ecology 87:563-569 (DOI 10.1890/05-0755): 1–21 % de la NPP en estudios de cultivo; se usa el punto medio",
+    "confianza": "media",
+    "nota": "En campo 0–22 %. No hay dato de Nothofagus."
+  },
+  "alcance_hifas_m": {
+    "valor": 0.42,
+    "unidad": "m más allá de la raíz",
+    "fuente": "máximo reportado (Schramm 1966, citado en Wang & Gao 2026); verificado 09-10",
+    "confianza": "media"
+  },
+  "aumento_absorcion_p": {
+    "valor": 3.8,
+    "unidad": "veces la absorción de P sin hongo",
+    "fuente": "Jones, Durall & Tinker 1998: Eucalyptus coccifera con ectomicorriza; verificado 09-10",
+    "confianza": "media",
+    "nota": "No hay cifra para Nothofagus."
+  },
+  "recambio_micelio_anio": {
+    "valor": 1.5,
+    "unidad": "1/año",
+    "fuente": "CALIBRACIÓN PROVISIONAL: el micelio extrarradical se renueva en meses; orden de magnitud a verificar",
+    "confianza": "baja"
+  },
+  "inoculo_kg": {
+    "valor": 0.0005,
+    "unidad": "kg de micelio",
+    "fuente": "decisión de diseño: el hongo llega con la madera podrida de la cuna",
+    "confianza": "alta"
+  },
+  "micelio_para_extenderse_kg": {
+    "valor": 0.0002,
+    "unidad": "kg por celda",
+    "fuente": "CALIBRACIÓN PROVISIONAL: micelio que necesita una celda para colonizar a sus vecinas",
+    "confianza": "baja"
+  },
+  "micelio_saturacion_kg_m2": {
+    "valor": 0.02,
+    "unidad": "kg/m²",
+    "fuente": "CALIBRACIÓN PROVISIONAL: densidad de micelio con la que el efecto del hongo se satura (orden de magnitud de la biomasa de micelio en suelos de bosque; a verificar)",
+    "confianza": "baja"
+  }
+}

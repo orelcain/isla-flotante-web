@@ -1,0 +1,35 @@
+{
+  "nota": "Datos SOLO de la vista (Unity): cómo se pinta lo que calcula el núcleo. No cambian la simulación. PROVISORIO: todavía no se define el catálogo de especies (árboles, flores, hongos); cuando se defina, estos valores genéricos se reemplazan por los de cada especie.",
+  "flores": {
+    "descripcion": "Herbáceas en floración, genéricas (sin especie). Macizos de color sobre la hierba; cantidad = cobertura de hierba × intensidad de la floración.",
+    "pico_dia_sur": 305,
+    "pico_dia_norte": 122,
+    "ancho_dias": 40,
+    "macizos_por_celda": 7,
+    "colores": [
+      "#f3efe2",
+      "#efcf5a",
+      "#c9b4df",
+      "#e8a9a2"
+    ],
+    "fuente": "Aproximación: las herbáceas de clima templado concentran la floración en primavera (pico hacia noviembre en el hemisferio sur, mayo en el norte). Colores genéricos de acuarela, no de una especie.",
+    "confianza": "baja",
+    "provisional": true,
+    "tamano_macizo": [
+      0.8,
+      1.5
+    ]
+  },
+  "acantilado": {
+    "descripcion": "Corte de la roca colgante: arriba una franja de suelo cuyo grosor crece con el espesor que calcula el núcleo (EXAGERADO para que se vea: 0,3 m reales serían invisibles a esta escala); abajo roca en estratos.",
+    "color_suelo": "#7a573a",
+    "color_roca": "#cdc2ae",
+    "color_roca_honda": "#b3ab9f",
+    "suelo_pleno_mm": 300,
+    "fuente": "Vista: el espesor del suelo (horizontes A+B) sale del núcleo; los colores son una convención de dibujo.",
+    "confianza": "media",
+    "provisional": true,
+    "banda_suelo_min": 0.6,
+    "banda_suelo_max": 2.6
+  }
+}

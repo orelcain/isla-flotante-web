@@ -1,0 +1,573 @@
+{
+  "nota": "Coigüe de Chiloé (Nothofagus nitida) para la isla semilla, etapa S2 (docs/DISENO_ISLA_SEMILLA.md §4.2). Datos MEDIDOS (investigados 08-10-2026; la especie real de cada dato va en su nota) y CALIBRACIONES PROVISIONALES marcadas como tales (confianza baja) donde la literatura de plántulas no estaba disponible.",
+  "pendientes": "Sin fuente verificada, por eso no se incluyen como parámetros: (1) relación altura-diámetro de N. nitida o N. dombeyi (la tesis de Reinoso 2024, U. de Chile, tiene coeficientes de N. dombeyi, pero el repositorio bloquea la descarga automática); (2) fracción de biomasa en hojas, ramas y fuste de árboles jóvenes y razón raíz:tallo de plántulas (Schmidt et al. 2009, Annals of Forest Science, la tiene para N. pumilio, pero la página respondió 403); (3) N y P de la madera de Nothofagus (Meerts 2002, Annals of Forest Science, bloqueado por captcha); (4) N y P foliar propios de N. nitida o N. dombeyi (Hevia et al. 1999 los tiene en el texto completo, no en el resumen); (5) crecimiento en altura separado para claro y para sombra; (6) temperaturas mínima y óptima de la fotosíntesis medidas en N. nitida (Reyes-Díaz et al. 2005, Tree Physiology, sobre bajas temperaturas en N. dombeyi y N. nitida, no se pudo leer); (7) radiación del Explorador Solar (Castro/Ancud) para contrastar NASA POWER; (8) flujos de N de Perakis y Hedin (2002) y de Hedin et al. (1995). · (9) curva altura–edad de N. nitida pasados 80 años (no publicada); techo de altura por suelo medido en sitios bien drenados; tesis Reinoso 2024 (alometría altura-DAP de N. dombeyi) — bajar el PDF a mano.",
+  "crecimiento_altura_juvenil_cm_anio": {
+    "valor": 17.4,
+    "unidad": "cm/año",
+    "fuente": "Bannister JR, Acevedo M, Travieso G, Holz A, Galindo N (2021) The influence of microsite conditions on early performance of planted Nothofagus nitida seedlings when restoring degraded coastal temperate rain forests. Forest Ecology and Management 484: 118957. Resumen: https://initiative20x20.org/node/545",
+    "confianza": "alta",
+    "nota": "N. nitida plantada bajo dosel protector (sombra parcial) en Chiloé: 45 plantaciones de 2014 seguidas 5 años; incremento periódico medio. Mortalidad ~30 %. El crecimiento en altura y diámetro aumenta significativamente con más luz, pero en sitios abiertos también sube el estrés fisiológico en verano. No se encontró un valor numérico separado para claro y para sombra."
+  },
+  "crecimiento_diametro_mm_anio": {
+    "valor": 1.7,
+    "unidad": "mm/año (diámetro de cuello)",
+    "fuente": "Bannister et al. (2021) Forest Ecology and Management 484: 118957",
+    "confianza": "alta",
+    "nota": "N. nitida plantada en Chiloé; diámetro a la altura del cuello de la raíz, no DAP."
+  },
+  "razon_raiz_tallo": {
+    "valor": 0.2415,
+    "unidad": "biomasa subterránea / biomasa aérea (kg/kg)",
+    "fuente": "Gayoso, Guerra y Alarcón (2002), vía Pérez-Quezada et al. (2015) Bosque 36(1): 27-39, Tabla 1",
+    "confianza": "media",
+    "nota": "N. nitida: biomasa subterránea = 24.15 % de la aérea. Medido en árboles (rango de la ecuación: 12-47 cm DAP), no en plántulas. Valor general para todas las especies de ese bosque: 28.69 %."
+  },
+  "fraccion_carbono_biomasa": {
+    "valor": 0.4455,
+    "unidad": "g C / g materia seca",
+    "fuente": "Gayoso, Guerra y Alarcón (2002), vía Pérez-Quezada et al. (2015) Bosque 36(1): 27-39, Tabla 1",
+    "confianza": "alta",
+    "nota": "N. nitida, biomasa aérea: 44.55 % de C; subterránea: 43.75 %. Gayoso y Guerra (2005, Bosque 26(2): 33-38) reportan un promedio de 43.7 % para 16 especies nativas."
+  },
+  "area_foliar_especifica_m2_kg": {
+    "valor": 10.9,
+    "unidad": "m²/kg (materia seca)",
+    "fuente": "Royer DL, Sack L, Wilf P, Lusk CH, et al. (2007) Fossil leaf economics quantified: calibration, Eocene case study, and implications. Paleobiology 33(4): 574-589, doi:10.1666/07001.1; material suplementario S0094837300019114sup001.doc, fila 'Argentina, Bariloche - Nothofagus dombeyi'",
+    "confianza": "media",
+    "nota": "Especie real: N. dombeyi (Bariloche, 9 hojas). Masa foliar por área = 91.9 g/m², entonces SLA = 1000/91.9 ≈ 10.9 m²/kg (conversión propia). No se encontró un SLA numérico de N. nitida. En N. dombeyi el SLA aumenta en sombra."
+  },
+  "longevidad_foliar_anios": {
+    "valor": 4,
+    "unidad": "años",
+    "fuente": "Hevia F, Minoletti ML, Decker KLM, Boerner REJ (1999) Foliar nitrogen and phosphorus dynamics of three Chilean Nothofagus (Fagaceae) species in relation to leaf lifespan. American Journal of Botany 86(3): 447-455",
+    "confianza": "media",
+    "nota": "Especie real: N. dombeyi (siempreverde), rodal a 1680 m s.n.m. en Chile."
+  },
+  "n_hoja_pct": {
+    "valor": 1.725,
+    "unidad": "% de masa seca (hoja verde)",
+    "fuente": "Vergutz L, Manzoni S, Porporato A, Novais RF, Jackson RB (2012) Global resorption efficiencies and concentrations of carbon and nutrients in leaves of terrestrial plants. Ecological Monographs 82(2): 205-220, Tabla 2",
+    "confianza": "baja",
+    "nota": "Promedio global de angiospermas leñosas siempreverdes (IC95 % ±0.079; n = 307). No es dato de Nothofagus: Hevia et al. (1999) solo indican que N. dombeyi tiene la menor concentración de N foliar por masa de los tres Nothofagus estudiados, sin dar el porcentaje en el resumen."
+  },
+  "p_hoja_pct": {
+    "valor": 0.125,
+    "unidad": "% de masa seca (hoja verde)",
+    "fuente": "Vergutz et al. (2012) Ecological Monographs 82(2): 205-220, Tabla 2",
+    "confianza": "baja",
+    "nota": "Promedio global de angiospermas leñosas siempreverdes (IC95 % ±0.011; n = 222). No es dato de Nothofagus."
+  },
+  "n_raiz_fina_pct": {
+    "valor": 1.1,
+    "unidad": "% de masa seca",
+    "fuente": "Gordon WS, Jackson RB (2000) Nutrient concentrations in fine roots. Ecology 81(1): 275-280",
+    "confianza": "baja",
+    "nota": "Promedio global de raíces vivas < 2 mm (11.0 g/kg); 56 estudios de todo tipo de vegetación. No es dato de Nothofagus. Casi no hay retranslocación de N antes de que muera la raíz fina."
+  },
+  "p_raiz_fina_pct": {
+    "valor": 0.09,
+    "unidad": "% de masa seca",
+    "fuente": "Gordon WS, Jackson RB (2000) Ecology 81(1): 275-280",
+    "confianza": "baja",
+    "nota": "Promedio global de raíces vivas < 2 mm (0.9 g/kg); C:N:P de raíz fina = 522:12:1. No es dato de Nothofagus."
+  },
+  "coef_extincion_k": {
+    "valor": 0.42,
+    "unidad": "adimensional (Beer-Lambert: I = I0·exp(-k·IAF))",
+    "fuente": "Bréda NJJ (2003) Ground-based measurements of leaf area index: a review of methods, instruments and current controversies. Journal of Experimental Botany 54(392): 2403-2417, Tabla 1 (datos de Bréda et al. 2002)",
+    "confianza": "media",
+    "nota": "Especie real: Nothofagus solandri (Nueva Zelanda), radiación global. Promedio de los rodales latifoliados de la misma tabla: 0.47 (rango 0.29-0.58)."
+  },
+  "razon_npp_gpp": {
+    "valor": 0.47,
+    "unidad": "adimensional (NPP/GPP)",
+    "fuente": "Waring RH, Landsberg JJ, Williams M (1998) Net primary production of forests: a constant fraction of gross primary production? Tree Physiology 18: 129-134",
+    "confianza": "media",
+    "nota": "0.47 ± 0.04 (DE). Revisión de Collalti y Prentice (2019, Tree Physiology): promedio 0.46 ± 0.12 en más de 200 estudios, rango 0.22-0.79; varía con la edad del rodal y el ambiente."
+  },
+  "fotosintesis_t_min_c": {
+    "valor": -8.0,
+    "unidad": "°C (temperatura mínima diaria del aire)",
+    "fuente": "Running y Zhao (2021) MOD17 User's Guide C6.1, Tabla 2.2 (BPLUT), bioma EBF: Tmin_min = -8.00 °C; Tmin_max = 9.09 °C",
+    "confianza": "baja",
+    "nota": "No es una medición en Nothofagus: es el umbral del factor de temperatura de MODIS para bosque latifoliado siempreverde. La producción bruta es 0 con mínima diaria ≤ -8 °C, sube en línea recta y es plena con mínima ≥ 9.09 °C."
+  },
+  "radiacion_global_mensual_mj_m2_dia": {
+    "valor": [
+      22.83,
+      20.05,
+      14.51,
+      9.29,
+      5.56,
+      4.15,
+      4.91,
+      7.17,
+      11.66,
+      15.87,
+      19.6,
+      22.13
+    ],
+    "unidad": "MJ/m²/día, de enero a diciembre",
+    "fuente": "NASA POWER climatología 2001-2020, ALLSKY_SFC_SW_DWN, 42.48°S 73.76°W",
+    "confianza": "alta"
+  },
+  "radiacion_global_enero_mj_m2_dia": {
+    "valor": 22.83,
+    "unidad": "MJ/m²/día",
+    "fuente": "NASA POWER climatología 2001-2020, ALLSKY_SFC_SW_DWN, 42.48°S 73.76°W",
+    "confianza": "alta",
+    "nota": "Diciembre: 22.13."
+  },
+  "radiacion_global_julio_mj_m2_dia": {
+    "valor": 4.91,
+    "unidad": "MJ/m²/día",
+    "fuente": "NASA POWER climatología 2001-2020, ALLSKY_SFC_SW_DWN, 42.48°S 73.76°W",
+    "confianza": "alta",
+    "nota": "El mínimo es junio: 4.15."
+  },
+  "fraccion_par": {
+    "valor": 0.45,
+    "unidad": "PAR / radiación global (en energía)",
+    "fuente": "Running y Zhao (2021) MOD17 User's Guide C6.1, ec. 1.3: IPAR = SWRad × 0.45. Contraste local con NASA POWER: ALLSKY_SFC_PAR_TOT / ALLSKY_SFC_SW_DWN = 5.97 / 13.11 = 0.455 (42.48°S 73.76°W)",
+    "confianza": "alta",
+    "nota": "El cociente local 0.455 es cálculo propio con los dos parámetros de NASA POWER."
+  },
+  "hojarasca_cn": {
+    "valor": 78.7,
+    "unidad": "g C / g N",
+    "fuente": "Pérez CA, Carmona MR, Armesto JJ (2010) Non-symbiotic nitrogen fixation during leaf litter decomposition in an old-growth temperate rain forest of Chiloé Island, southern Chile: effects of single versus mixed species litter. Austral Ecology 35: 148-156, doi:10.1111/j.1442-9993.2009.02020.x",
+    "confianza": "alta",
+    "nota": "Hojarasca de N. nitida en bosque antiguo de Chiloé; lignina 59.27 ± 4.09 %. Es la de peor calidad de las tres especies estudiadas (Drimys winteri 50.6; Podocarpus nubigena 54.4)."
+  },
+  "descomposicion_k_anio": {
+    "valor": 0.47,
+    "unidad": "1/año (supuesto: modelo exponencial de Olson)",
+    "fuente": "Pérez, Carmona y Armesto (2010) Austral Ecology 35: 148-156",
+    "confianza": "media",
+    "nota": "N. nitida en Chiloé; D. winteri y P. nubigena: k = 0.29. El resumen no indica la unidad de tiempo ni el modelo; 1/año es un supuesto propio que hay que confirmar en el texto completo."
+  },
+  "fijacion_n_hojarasca_kg_ha_anio": {
+    "valor": [
+      0.23,
+      2.26
+    ],
+    "unidad": "kg N/ha/año",
+    "fuente": "Pérez CA, Carmona MR, Armesto JJ (2003) Non-symbiotic nitrogen fixation, net nitrogen mineralization and denitrification in evergreen forests of Chiloé Island, Chile. Gayana Botánica 60(1)",
+    "confianza": "media",
+    "nota": "Fijación libre (no simbiótica) en la capa de hojarasca de 5 bosques antiguos y 1 secundario de Chiloé. En madera muerta gruesa: 1.31-1.34 kg N/ha/año. Es un ingreso biológico, no atmosférico: no sumarlo dentro de deposito_n."
+  },
+  "alometria_biomasa_general_menor20cm": {
+    "valor": [
+      2.08,
+      0.15
+    ],
+    "unidad": "[a, b]; Bab en kg, DAP en cm",
+    "fuente": "Gayoso, Guerra y Alarcón (2002), vía Pérez-Quezada et al. (2015) Bosque 36(1): 27-39, Tabla 1",
+    "confianza": "media",
+    "nota": "Ecuación general para cualquier árbol del bosque siempreverde de la Cordillera de la Costa con DAP < 20 cm: Bab = exp(2.08 + 0.15·DAP); R² ajustado 0.77. Los autores la usaron para árboles fuera del rango de la ecuación específica. Con DAP = 0 da ~8 kg, así que no sirve para plántulas. Para DAP > 20 cm la general es Bab = exp(4.48 + 0.05·DAP)."
+  },
+  "reabsorcion_n": {
+    "valor": 0.47,
+    "unidad": "fracción del N foliar recuperada antes de la caída",
+    "fuente": "Hevia et al. (1999) American Journal of Botany 86(3): 447-455",
+    "confianza": "media",
+    "nota": "Especie real: N. dombeyi. Las dos especies caducifolias del mismo estudio reabsorbieron 63-78 %. Referencia global para siempreverdes: 56.1 % (Vergutz et al. 2012). Se usa el punto medio del rango [0.44, 0.5]."
+  },
+  "reabsorcion_p": {
+    "valor": 0.45,
+    "unidad": "fracción del P foliar recuperada antes de la caída",
+    "fuente": "Hevia et al. (1999) American Journal of Botany 86(3): 447-455",
+    "confianza": "media",
+    "nota": "Especie real: N. dombeyi. Referencia global para siempreverdes: 58.4 % (Vergutz et al. 2012). Se usa el punto medio del rango [0.4, 0.5]."
+  },
+  "fotosintesis_t_opt_c": {
+    "valor": 16.5,
+    "unidad": "°C",
+    "fuente": "Read J, Busby JR (1990) Comparative responses to temperature of the major canopy species of Tasmanian cool temperate rainforest and their ecological significance. II. Net photosynthesis and climate analysis. Australian Journal of Botany 38(2): 185-205 (registro CSIRO BT9900185)",
+    "confianza": "baja",
+    "nota": "Especie real: Nothofagus cunninghamii (siempreverde de Tasmania), procedencias de altura; temperatura óptima de aclimatación. A 8 °C mantiene ~76 % de su fotosíntesis máxima. No se encontró un óptimo numérico para N. nitida ni N. dombeyi. Zúñiga et al. (2006, Rev. Chil. Hist. Nat. 79: 489-504) muestran que N. nitida rinde peor que N. dombeyi con calor, luz alta y sequía. Se usa el punto medio del rango [16, 17]."
+  },
+  "deposito_n_kg_ha_anio": {
+    "valor": 2.35,
+    "unidad": "kg N/ha/año",
+    "fuente": "Godoy R, Paulino L, Oyarzún C, Boeckx P (2003) Atmospheric N deposition in central and southern Chile: an overview. Gayana Botánica 60(1), doi:10.4067/S0717-66432003000100008; Weathers KC, Likens GE (1997) Clouds in southern Chile: an important source of nitrogen to nitrogen-limited ecosystems? Environmental Science & Technology 31: 210-213",
+    "confianza": "media",
+    "nota": "Sur de Chile, Cordillera de la Costa (no hay dato propio de Chiloé): N inorgánico en lluvia < 1.0; agua de nubes 1.1 (NO3-N) + 0.9 (NH4-N); N orgánico 0.7. El máximo 3.7 es suma propia de los tres términos, tomando 1.0 como tope de la lluvia. Weathers y Likens (1997): la lluvia sola aporta ≤ 1 kg N/ha/año. Perakis y Hedin (2002, Nature 415: 416-419) muestran que estos bosques sin contaminación pierden N sobre todo como N orgánico disuelto, pero su resumen no da flujos. Se usa el punto medio del rango [1.0, 3.7]."
+  },
+  "eficiencia_luz_g_mj": {
+    "valor": 2.846,
+    "unidad": "g de materia seca (GPP) por MJ de PAR absorbida",
+    "fuente": "Running SW, Zhao M (2021) User's Guide: Daily GPP and Annual NPP (MOD17A2H/A3H) products, NASA MODIS Land, Collection 6.1, Tabla 2.2 (BPLUT): LUEmax EBF = 0.001268 kgC/m²/d/MJ. https://lpdaac.usgs.gov/documents/972/MOD17_User_Guide_V61.pdf",
+    "confianza": "baja",
+    "nota": "Valor del bioma 'bosque latifoliado siempreverde' (EBF) del algoritmo MODIS, no medido en Nothofagus; ese bioma también incluye bosques tropicales. Es un máximo: MODIS lo multiplica por factores de temperatura mínima y déficit de presión de vapor. Para pasar a NPP se multiplica por razon_npp_gpp; para pasar a materia seca se divide por fraccion_carbono_biomasa. Convertido de 1,268 g C/MJ con 44,55 % de carbono en la biomasa (Gayoso et al. 2002)."
+  },
+  "alometria_gayoso_adulto": {
+    "valor": [
+      4.76,
+      0.05,
+      -146.92
+    ],
+    "unidad": "Bab (kg) = c + exp(a + b·DAP), DAP 12-47 cm",
+    "fuente": "Gayoso J, Guerra J, Alarcón D (2002) Contenido de carbono y funciones de biomasa en especies nativas y exóticas. Informe Proyecto FONDEF D98I1076, Universidad Austral de Chile, 157 p.; ecuación reproducida en la Tabla 1 de Pérez-Quezada JF, Olguín S, Fuentes JP, Galleguillos M (2015) Tree carbon stock in evergreen forests of Chiloé, Chile. Bosque 36(1): 27-39, doi:10.4067/S0717-92002015000100004",
+    "confianza": "alta",
+    "nota": "Solo vale para árboles adultos (DAP 12-47 cm); se usará cuando el coigüe crezca. Para plántulas ver alometria_biomasa_a/b."
+  },
+  "alometria_altura_a": {
+    "valor": 1.02,
+    "unidad": "m por cm de diámetro",
+    "fuente": "Bannister et al. 2021 (Chiloé, N. nitida plantada): 17,4 cm de altura por 1,7 mm de diámetro al año → pendiente inicial ~1 m de altura por cm de diámetro. Desde 09-10 es la PENDIENTE INICIAL de una curva que se satura en altura_techo (ya no una recta sin fin).",
+    "confianza": "baja",
+    "nota": "H = T·(1 − exp(−a·D/T)), T = techo de altura según el suelo. Con D chico H ≈ a·D (juvenil, Bannister 2021); con D grande H → T."
+  },
+  "alometria_altura_b": {
+    "valor": 1.0,
+    "unidad": "adimensional",
+    "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): relación lineal en el rango juvenil (ver alometria_altura_a).",
+    "confianza": "baja",
+    "nota": "EN DESUSO desde 09-10: el diámetro sale de B = densidad × forma × (π/4)·D²·H(D) (Arbol.cs)."
+  },
+  "alometria_biomasa_a": {
+    "valor": 0.02,
+    "unidad": "kg por cm³ de diámetro",
+    "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): biomasa aérea = densidad × forma × (π/4)·D²·H con densidad de la madera 500 kg/m³ y factor de forma 0,5 (supuestos a verificar) y H de alometria_altura → B ≈ 0,02·D³ (D en cm).",
+    "confianza": "baja",
+    "nota": "EN DESUSO desde 09-10: el diámetro sale de B = densidad × forma × (π/4)·D²·H(D) (Arbol.cs)."
+  },
+  "alometria_biomasa_b": {
+    "valor": 3.0,
+    "unidad": "adimensional",
+    "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): exponente de la geometría de un cono con H proporcional a D (ver alometria_biomasa_a).",
+    "confianza": "baja",
+    "nota": "EN DESUSO desde 09-10: el diámetro sale de B = densidad × forma × (π/4)·D²·H(D) (Arbol.cs)."
+  },
+  "fraccion_hojas": {
+    "valor": 0.35,
+    "unidad": "fracción del crecimiento",
+    "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): orden de magnitud de la fracción de masa en hojas de plántulas leñosas (Poorter et al. 2012, New Phytologist 193:30-50; A VERIFICAR el valor exacto).",
+    "confianza": "baja"
+  },
+  "fraccion_raiz_fina": {
+    "valor": 0.15,
+    "unidad": "fracción del crecimiento",
+    "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): junto con la raíz gruesa (dentro de 'tallo') la parte subterránea queda cerca de razon_raiz_tallo = 0,24 de Gayoso et al. 2002.",
+    "confianza": "baja"
+  },
+  "masa_inicial_kg": {
+    "valor": 2e-05,
+    "unidad": "kg de masa seca",
+    "fuente": "decisión de diseño (09-10, pedido del humano): el juego parte con el coigüe recién germinado (~10 cm con la alometría juvenil), no con una plántula ya formada",
+    "confianza": "alta"
+  },
+  "radio_copa_por_altura": {
+    "valor": 0.25,
+    "unidad": "m de radio por m de altura",
+    "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): copa estrecha de un juvenil; a verificar con fotos o datos de N. nitida.",
+    "confianza": "baja"
+  },
+  "radio_copa_min_m": {
+    "valor": 0.05,
+    "unidad": "m",
+    "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): tamaño mínimo de la copa de una plántula.",
+    "confianza": "baja"
+  },
+  "radio_raiz_por_copa": {
+    "valor": 2.9,
+    "rango": [
+      1.68,
+      3.77
+    ],
+    "unidad": "veces el radio de la copa",
+    "fuente": "Gilman, E.F. (1988) 'Predicting root spread from trunk diameter and branch spread', Journal of Arboriculture 14(4):85-89, https://auf.isa-arbor.com/content/14/4/85.full.pdf : en árboles jóvenes de cinco especies la raíz más lejana llegó de 1,68 (fresno) a 3,77 (magnolia) veces el radio de la copa; media 2,9. Las raíces más lejanas van cerca de la superficie.",
+    "confianza": "media",
+    "nota": "Especies templadas de vivero, no Nothofagus: falta la cifra para el coigüe. Reemplaza la calibración provisional de 1,5 (confianza baja). Con la copa máxima por el suelo de la zona de raíces (MotorArbol.CopaPropia), este número decide cuánto suelo cuenta para cada árbol."
+  },
+  "absorcion_por_raiz_m2_kg": {
+    "valor": 50,
+    "unidad": "m² de suelo por kg de raíz fina",
+    "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): intensidad con que la raíz fina toma el N y P disponibles de su zona (fracción diaria = 1 − exp(−a·raíz/área)).",
+    "confianza": "baja"
+  },
+  "uso_reserva_dia": {
+    "valor": 0.05,
+    "unidad": "1/día",
+    "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): fracción de la reserva de azúcar disponible que se invierte en crecer cada día.",
+    "confianza": "baja"
+  },
+  "reserva_minima_fraccion": {
+    "valor": 0.05,
+    "unidad": "fracción de la biomasa",
+    "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): reserva que el árbol guarda sin gastar (para el invierno).",
+    "confianza": "baja"
+  },
+  "recambio_raiz_fina_anio": {
+    "valor": 1.0,
+    "unidad": "1/año",
+    "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): orden de magnitud del recambio anual de raíces finas en bosques (Gill & Jackson 2000, New Phytologist 147:13-31; A VERIFICAR).",
+    "confianza": "baja"
+  },
+  "n_madera_pct": {
+    "valor": 0.15,
+    "unidad": "% de masa seca",
+    "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): N de la madera de Nothofagus no se pudo leer (Meerts 2002 bloqueado); valor del orden de la madera de angiospermas, a verificar.",
+    "confianza": "baja"
+  },
+  "p_madera_pct": {
+    "valor": 0.015,
+    "unidad": "% de masa seca",
+    "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): P de la madera, mismo caso que n_madera_pct.",
+    "confianza": "baja"
+  },
+  "cuna_radio_m": {
+    "valor": 0.4,
+    "unidad": "m",
+    "fuente": "decisión de diseño (docs/DISENO_ISLA_SEMILLA.md): un tronco caído podrido como cuna del coigüe; en Chiloé las plántulas de N. nitida crecen sobre troncos en descomposición (Christie & Armesto 2003, Journal of Ecology 91:776-784)",
+    "confianza": "alta"
+  },
+  "cuna_espesor_m": {
+    "valor": 0.08,
+    "unidad": "m",
+    "fuente": "decisión de diseño: espesor de la madera podrida bajo la plántula",
+    "confianza": "alta"
+  },
+  "cuna_n_pct": {
+    "valor": 0.5,
+    "unidad": "% de masa seca",
+    "fuente": "CALIBRACIÓN PROVISIONAL: orden de magnitud del N de madera en descomposición (más que la madera viva, n_madera_pct); a verificar",
+    "confianza": "baja"
+  },
+  "cuna_p_pct": {
+    "valor": 0.03,
+    "unidad": "% de masa seca",
+    "fuente": "CALIBRACIÓN PROVISIONAL: orden de magnitud del P de madera en descomposición; a verificar",
+    "confianza": "baja"
+  },
+  "etapa_germinacion_anios": {
+    "valor": 0.25,
+    "unidad": "años",
+    "fuente": "decisión de diseño: primeras semanas con cotiledones visibles (germinación epígea con cotiledones documentada en N. antarctica, tesis U. de Concepción 2024; confianza baja para N. nitida)",
+    "confianza": "baja"
+  },
+  "etapa_brinzal_altura_m": {
+    "valor": 0.5,
+    "unidad": "m",
+    "fuente": "Quiroz & Steenbuck 2001, gestionforestal.cl, Cuadro 6 (estados de desarrollo de renovales de Nothofagus); verificado 09-10. CONAF 2014 usa otro criterio (solo DAP): se declara cuál se usa.",
+    "confianza": "media",
+    "nota": "regeneración (plántula) hasta 0,5 m; brinzal 0,5–2 m"
+  },
+  "etapa_latizal_altura_m": {
+    "valor": 2.0,
+    "unidad": "m",
+    "fuente": "Quiroz & Steenbuck 2001, gestionforestal.cl, Cuadro 6 (estados de desarrollo de renovales de Nothofagus); verificado 09-10. CONAF 2014 usa otro criterio (solo DAP): se declara cuál se usa.",
+    "confianza": "media",
+    "nota": "latizal 2–8 m con DAP < 20 cm"
+  },
+  "etapa_fustal_dap_cm": {
+    "valor": 20,
+    "unidad": "cm (DAP)",
+    "fuente": "Quiroz & Steenbuck 2001, gestionforestal.cl, Cuadro 6 (estados de desarrollo de renovales de Nothofagus); verificado 09-10. CONAF 2014 usa otro criterio (solo DAP): se declara cuál se usa.",
+    "confianza": "media",
+    "nota": "fustal delgado 20–35, fustal 35–55, fustal grueso > 55 cm"
+  },
+  "hoja_largo_m": {
+    "valor": 0.03,
+    "unidad": "m",
+    "fuente": "Hoja de N. nitida 20–40 × 15–25 mm, rómbica (Trees and Shrubs Online; verificado 09-10)",
+    "confianza": "media",
+    "nota": "se usa el punto medio del largo"
+  },
+  "densidad_madera_kg_m3": {
+    "valor": 590,
+    "unidad": "kg/m3",
+    "fuente": "Global Wood Density Database v2 (Zenodo): Nothofagus nitida 0,59 g/cm³ (un registro); N. dombeyi 0,54 (siete registros) — enjambre 09-10, leído directo",
+    "confianza": "media"
+  },
+  "factor_forma_tronco": {
+    "valor": 0.5,
+    "unidad": "adimensional",
+    "fuente": "SUPUESTO: factor de forma 0,5 (volumen = 0,5 × cilindro); valor típico de fustes, sin medición para N. nitida",
+    "confianza": "baja"
+  },
+  "altura_maxima_m": {
+    "valor": 35,
+    "unidad": "m",
+    "fuente": "altura máxima descrita para N. nitida (enjambre 09-10, crecimiento_coigue.json; Donoso et al.); Perez-Quezada et al. 2015 midieron N. nitida de ~140 cm de DAP en Chiloé",
+    "confianza": "media",
+    "nota": "Reinoso 2024 (memoria U. de Chile, prof. guía C. Salas-Eljatib; PDF en OneDrive\\BIBLIOTECA_ISLA_FLOTANTE\u0007rboles_crecimiento): para N. dombeyi (n = 497, Llancahue, Valdivia; DAP 5,8–149 cm, altura 6,6–49,2 m) el mejor modelo altura-DAP es sigmoide (Gompertz, h = 1,3 + α·e^(−β1·e^(−β2·d))), con asíntota 43,5 m (Cuadro 3), observada 49,2 m y literatura 34–53 m; error RMSD 4,65 m (16 %). Los coeficientes β1 y β2 solo aparecen en una figura: no se usan. Para N. nitida se mantiene 35 m (máximo descrito de la especie, más baja que N. dombeyi)."
+  },
+  "techo_suelo_delgado": {
+    "valor": [
+      0.3,
+      4.0,
+      1.0,
+      8.0
+    ],
+    "unidad": "[m de suelo, m de altura, m de suelo, m de altura]",
+    "fuente": "Bannister et al. 2008, Bosque, Cuadro 3: rodales de N. nitida en Chiloé con suelo de 30–100 cm y mal drenaje miden 4,0–7,4 m de altura media (H/D 39–51). ANALOGÍA: la isla drena bien; es el único dato de suelo delgado con la especie",
+    "confianza": "baja",
+    "nota": "El techo de altura se interpola entre estos puntos según la profundidad media del suelo que alcanza la raíz; sobre 1 m sube hasta altura_maxima_m a 2 m de suelo (SUPUESTO: con suelo profundo el árbol puede llegar a su máximo; Esse 2007 da 16–20 m a 40 años en sitios de 60–130 cm bien drenados)"
+  },
+  "esbeltez_minima": {
+    "valor": 39,
+    "unidad": "altura (cm) / diámetro (cm)",
+    "fuente": "Bannister, Le Quesne & Lara 2008, Bosque, Cuadro 3: N. nitida en suelos delgados de Chiloé, altura media 4,0–7,4 m y diámetro 10–15 cm → H/D 39–51 (cálculo propio con medias de rodal; enjambre 09-10)",
+    "confianza": "baja",
+    "nota": "Con el techo de altura que da el suelo, el diámetro no pasa de techo·100/39: el árbol deja de engordar y solo repone lo que pierde. Sin esto un coigüe de 7 m llegaba a 67 cm de diámetro (H/D 10), una forma que no se observa."
+  },
+  "mes_floracion": {
+    "valor": 11,
+    "unidad": "mes (1-12)",
+    "fuente": "Smith-Ramírez & Armesto 1994, Journal of Ecology 82:353-365, Apéndice (N. dombeyi en Chiloé: inicio y máximo de floración en noviembre; fruto maduro: inicio y máximo en diciembre). N. nitida no está en el estudio: N. dombeyi es sustituto declarado",
+    "confianza": "media",
+    "nota": "Polinizado por viento (A: anemofilia en el Apéndice): flores pequeñas e inconspicuas"
+  },
+  "mes_fruto_maduro": {
+    "valor": 12,
+    "unidad": "mes (1-12)",
+    "fuente": "Smith-Ramírez & Armesto 1994, Journal of Ecology 82:353-365, Apéndice (N. dombeyi en Chiloé: inicio y máximo de floración en noviembre; fruto maduro: inicio y máximo en diciembre). N. nitida no está en el estudio: N. dombeyi es sustituto declarado",
+    "confianza": "media",
+    "nota": "Dispersión por viento (An)"
+  },
+  "anios_semilleros": {
+    "valor": 3,
+    "unidad": "años entre fructificaciones abundantes",
+    "fuente": "Manual de producción de plantas en viveros forestales (rngr.net): N. dombeyi, N. nervosa, N. obliqua, N. pumilio y N. antarctica fructifican cada tres años; un año abundante no garantiza semilla buena",
+    "confianza": "baja"
+  },
+  "etapa_minima_floracion": {
+    "valor": 3,
+    "unidad": "etapa de vida (3 = latizal, ≥2 m)",
+    "fuente": "SUPUESTO: no se encontró la edad de primera floración de N. nitida ni N. dombeyi (búsqueda 09-10-2026). En Lácar la producción de semillas de N. dombeyi sube con el tamaño de los árboles (estudio de 2001-2003, resumen). Reemplazar por la edad o el DAP de primera reproducción cuando aparezca",
+    "confianza": "baja"
+  },
+  "intensidad_anio_no_semillero": {
+    "valor": 0.07,
+    "unidad": "fracción de la lluvia de semillas de un año semillero",
+    "fuente": "Dezzotti, Manzoni & Sbrancia 2016, Rev. Fac. Agronomía La Plata 115(2):143-160 (leído completo): N. dombeyi en Lácar soltó 430 semillas/m² en el año 1 y 6.179 y 6.777 en los años 2 y 3 (vecería sincrónica) → 430/6.500 ≈ 0,07. N. dombeyi es sustituto declarado de N. nitida",
+    "confianza": "media",
+    "nota": "Reemplaza el supuesto anterior de 0,15 (09-10). El estudio midió un solo año flaco: el cociente puede variar"
+  },
+  "semilla_masa_mg": {
+    "valor": 1.6,
+    "unidad": "mg de masa seca por semilla",
+    "fuente": "Dezzotti et al. 2016 (leído completo), Resultados «Peso y producción de semillas»: N. dombeyi 1,6 mg (EE 0,03, n = 10); la literatura citada ahí da 0,6–4,4 mg según sitio y año. N. nitida sin dato: N. dombeyi es sustituto declarado",
+    "confianza": "media",
+    "nota": "Semilla alada y liviana (3 nueces por cúpula). Define la masa que sale del árbol por semilla y la masa inicial de cada plántula"
+  },
+  "semillas_por_m2_copa_anio_semillero": {
+    "valor": 12000,
+    "unidad": "semillas por m² de proyección de copa en un año semillero",
+    "fuente": "DERIVADO de Dezzotti et al. 2016: N. dombeyi soltó 6.179–6.777 semillas por m² de suelo en los años semilleros (rodales adultos, dap 40–64 cm) con cobertura de copa de N. dombeyi de ~53 % (Quilanlahue, Tabla 1) → ≈12.000–13.000 por m² de copa. Coherente con 765.049 semillas por árbol y año (media de los 3 períodos)",
+    "confianza": "baja",
+    "nota": "Supone que la lluvia de semillas de un rodal se reparte sobre su cobertura de copa y que un árbol joven produce por m² de copa lo mismo que uno adulto (los datos son de árboles grandes). Reemplazar por producción por árbol según dap cuando haya dato"
+  },
+  "semilla_n_pct": {
+    "valor": 2.5,
+    "unidad": "% de masa seca",
+    "fuente": "SUPUESTO: contenido típico de N en semillas de árboles (no hay dato para Nothofagus); solo fija cuánto N libre se lleva la semilla",
+    "confianza": "baja",
+    "nota": "Si el árbol no tiene ese N o P libre, la semilla sale más pobre: no bloquea la fructificación"
+  },
+  "semilla_p_pct": {
+    "valor": 0.3,
+    "unidad": "% de masa seca",
+    "fuente": "SUPUESTO: contenido típico de P en semillas de árboles (no hay dato para Nothofagus)",
+    "confianza": "baja"
+  },
+  "dispersion_distancia_media_m": {
+    "valor": 13.33,
+    "unidad": "m (distancia media efectiva de dispersión de semillas)",
+    "fuente": "Soliani et al. 2025, N. pumilio: 13,33 m (IC 95 % 11,70–15,20) por modelo de vecindario con 15 microsatélites, 200 adultos y 400 plántulas (investigacion_fenologia_semillas_fauna_suelo.json, confianza alta para esa especie). N. nitida sin dato: N. pumilio es sustituto declarado",
+    "confianza": "media",
+    "nota": "El núcleo es exponencial en el plano, f(r) ∝ exp(−r/λ) con media 2λ. La semilla de N. dombeyi (1,6 mg) es más liviana que la de N. pumilio: la distancia real sería mayor y menos semilla quedaría en la isla (valor conservador)"
+  },
+  "germinacion_fraccion": {
+    "valor": 0.1,
+    "unidad": "fracción de las semillas caídas que germina",
+    "fuente": "Díaz & Armesto 2007, Rev. Chilena de Historia Natural 80:13-26: N. nitida germinó 10 % en promedio en 2003 (0 % en 2002), 83 semillas por compartimento, sin efecto de la humedad (investigacion_plantas_pioneras_sucesion.json)",
+    "confianza": "alta",
+    "nota": "Se aplica a todas las semillas caídas (el ensayo sembró semillas sin separar las viables): no se multiplica además por una viabilidad, para no contar dos veces. Contrafactual: ponerla en 0 → no nacen coigües"
+  },
+  "mes_germinacion": {
+    "valor": 10,
+    "unidad": "mes (1-12)",
+    "fuente": "Dezzotti et al. 2016: banco de semillas transitorio de verano; las semillas emergen en la primavera siguiente a la dispersión. Mes exacto sin dato: octubre es mitad de la primavera",
+    "confianza": "baja"
+  },
+  "mes_mortalidad": {
+    "valor": 3,
+    "unidad": "mes (1-12) en que se hace el balance anual de mortalidad",
+    "fuente": "Díaz & Armesto 2007: la supervivencia de las plántulas cae entre febrero y abril (sequía de fin de verano). El balance se hace una vez al año, a mediados de marzo",
+    "confianza": "baja",
+    "nota": "Simplificación: la muerte se sortea una vez al año en vez de día a día"
+  },
+  "micrositio_madera_podrida": {
+    "valor": 1.0,
+    "unidad": "factor (0-1) sobre la germinación en madera podrida o humus (la cuna)",
+    "fuente": "Christie & Armesto 2003, J. Ecol. 91:776-784: en algunos rodales de Chiloé TODAS las plántulas de N. nitida estaban sobre troncos en descomposición (8 de 13 especies con sesgo significativo hacia los troncos, sobre todo en descomposición avanzada). Es el micrositio de referencia (= 1)",
+    "confianza": "media"
+  },
+  "espesor_organico_cuna_m": {
+    "valor": 0.02,
+    "unidad": "m de horizonte orgánico que cuenta como «madera podrida o humus» pleno",
+    "fuente": "SUPUESTO: con menos de 2 cm el factor baja en proporción; la cuna del juego tiene 8 cm",
+    "confianza": "baja"
+  },
+  "micrositio_musgo": {
+    "valor": 1.0,
+    "unidad": "factor (0-1) sobre la germinación bajo musgo, por cobertura",
+    "fuente": "Díaz & Armesto 2007: el notro germinó 61 % sobre cojín de Sphagnum vs 41 % sobre suelo orgánico; el musgo fue la mejor cama de siembra. Dato de notro, no de coigüe (sustituto declarado)",
+    "confianza": "baja",
+    "nota": "Se multiplica por la cobertura de musgo de la celda (c.Musgo)"
+  },
+  "micrositio_suelo_mineral": {
+    "valor": 0.3,
+    "unidad": "factor (0-1) sobre la germinación en suelo mineral sin humus ni musgo",
+    "fuente": "SUPUESTO entre dos datos: Díaz & Armesto 2007 dan 41/61 ≈ 0,67 (suelo vs musgo, notro) y Christie & Armesto 2003 casi ninguna plántula de N. nitida fuera de los troncos",
+    "confianza": "baja"
+  },
+  "micrositio_roca_desnuda": {
+    "valor": 0.0,
+    "unidad": "factor (0-1) sobre la germinación en roca con menos de suelo_minimo_germinacion_m",
+    "fuente": "decisión de modelo: sin sustrato la radícula no se ancla ni retiene agua; ninguna de las fuentes registra plántulas sobre roca desnuda",
+    "confianza": "baja"
+  },
+  "suelo_minimo_germinacion_m": {
+    "valor": 0.01,
+    "unidad": "m de sustrato bajo el cual la celda cuenta como roca desnuda",
+    "fuente": "SUPUESTO: 1 cm (el regolito inicial de la isla es 0,5 cm)",
+    "confianza": "baja"
+  },
+  "mortalidad_primer_anio": {
+    "valor": 0.63,
+    "unidad": "fracción de las plántulas que muere en su primer año",
+    "fuente": "Soto, Donoso, Uteau & Zúñiga-Feest 2009, Interciencia: N. dombeyi plantado en los Andes, 67 % vivo al fin de la primera temporada y 37 % tras el invierno siguiente → 63 % muerto en el primer año. N. glauca natural: hasta 95 % (Forests 2024). Plantación y otra especie: sustituto declarado",
+    "confianza": "baja",
+    "nota": "Aplica al balance de marzo del primer verano del renoval"
+  },
+  "mortalidad_anual_juvenil": {
+    "valor": 0.069,
+    "unidad": "fracción por año, después del primer año",
+    "fuente": "Bannister, Acevedo, Travieso, Holz & Galindo 2021, For. Ecol. Manage. 484:118957: ~30 % de las plántulas de N. nitida plantadas en Chiloé muertas a los 5 años → 1 − 0,7^(1/5) = 6,9 %/año (bajo dosel nodriza, sin bambú)",
+    "confianza": "media"
+  },
+  "luz_minima_relativa": {
+    "valor": 0.05,
+    "unidad": "fracción de la luz plena bajo la cual la sombra mata",
+    "fuente": "Lusk 2002, Oecologia 132:188-196: luz baja = 2–5 % de apertura de dosel; bajo ~5 % los demandantes de luz pierden área foliar y mueren. N. nitida es sombra-intolerante según Aravena et al. 2002 y Gutiérrez et al. 2004, aunque Bannister et al. 2021 la ven tolerar poca luz",
+    "confianza": "media",
+    "nota": "La luz relativa de un renoval es exp(−k·IAF) acumulado bajo cada copa más alta que lo cubre (Beer-Lambert, coef_extincion_k)"
+  },
+  "mortalidad_sombra_anual": {
+    "valor": 0.5,
+    "unidad": "fracción extra por año cuando la luz media del año está bajo luz_minima_relativa",
+    "fuente": "SUPUESTO: no se encontró una tasa medida de muerte por sombra en N. nitida; Lusk & Del Pozo 2002 solo dan la correlación con el punto de compensación",
+    "confianza": "baja"
+  },
+  "tope_renovales": {
+    "valor": 20,
+    "unidad": "coigües nuevos vivos a la vez, como máximo",
+    "fuente": "decision de rendimiento (medido 09-10): cada renoval cuesta ~1,5 ms por anio simulado (paso diario completo: celdas de su raiz y de las hifas, luz, agua); con 20 los arboles suman ~30 ms/anio sobre el costo de la isla. Una plantula por celda de 25 cm (0,0625 m2) ya es 16/m2, mas que las 7,2/m2 medidas en bosque secundario (Diaz & Armesto 2007)",
+    "confianza": "alta",
+    "nota": "Las semillas que germinarian por encima del tope no se simulan: su masa queda en la hojarasca. La prueba de rendimiento (<50 ms/anio) mide la isla joven; la isla llena de 256 celdas ya pasa de 50 ms/anio por agua y suelo, sin renovales"
+  }
+}

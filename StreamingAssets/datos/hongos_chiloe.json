@@ -1,0 +1,259 @@
+{
+  "nota": "Biblioteca de especies de Chiloé (docs/BIBLIOTECA_ESPECIES.md). Cada valor con fuente y confianza; lo que no tiene fuente va a pendiente. Investigado 08-10-2026; revisión humana de fuentes pendiente antes de que un rasgo entre al motor.",
+  "especies": [
+    {
+      "id": "cyttaria_hariotii",
+      "nombre": "Digüeñe, llao llao, pan de indio",
+      "cientifico": "Cyttaria hariotii E. Fisch.",
+      "familia": "Cyttariaceae",
+      "grupo": "hongo",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, búsqueda de ocurrencias en recuadro Chiloé (lat -43,6 a -41,78; lon -74,5 a -73,2), consultada 08-10-2026 vía api.gbif.org/v1/occurrence/search: 13 observaciones de iNaturalist con grado de investigación en la Isla Grande (2020-2025), p. ej. gbif.org/occurrence/4442389567 ('En Nothofagus dombeyi') y gbif.org/occurrence/5237937592 (sobre coihue, Nothofagus nitida)",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "tipo": {
+          "valor": "parasito",
+          "fuente": "Peterson K.R. & Pfister D.H. 2010. Phylogeny of Cyttaria inferred from nuclear and mitochondrial sequence and morphological data. Mycologia 102(6): 1398-1416, Tabla I (doi:10.3852/10-046): las Cyttaria son asociados biótrofos obligados de Nothofagus",
+          "confianza": "alta"
+        },
+        "fructificacion_meses": {
+          "valor": [
+            10,
+            11
+          ],
+          "fuente": "GBIF, búsqueda de ocurrencias en recuadro Chiloé (lat -43,6 a -41,78; lon -74,5 a -73,2), consultada 08-10-2026 vía api.gbif.org/v1/occurrence/search: las 13 observaciones de Chiloé caen entre el 2 de octubre y el 30 de noviembre. Son registros ciudadanos, no un estudio fenológico",
+          "confianza": "media"
+        },
+        "comestible": {
+          "valor": true,
+          "fuente": "Pfister D.H., 'Fungi and Forests', ReVista (Harvard DRCLAS): https://revista.drclas.harvard.edu/fungi-and-forests (las Cyttaria se venden en mercados y su calidad como alimento es comparable a la de otros hongos). Es un dato del género; para C. hariotii, https://en.wikipedia.org/wiki/Cyttaria_hariotii la describe como comestible",
+          "confianza": "media"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "parasita_a",
+          "especie": "nothofagus_nitida",
+          "fuente": "Peterson K.R. & Pfister D.H. 2010. Phylogeny of Cyttaria inferred from nuclear and mitochondrial sequence and morphological data. Mycologia 102(6): 1398-1416, Tabla I (doi:10.3852/10-046) incluye N. nitida entre sus hospederos; en Chiloé, la observación gbif.org/occurrence/5237937592 la reporta sobre coihue de Chiloé",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "parasita_a",
+          "especie": "nothofagus_dombeyi",
+          "fuente": "Peterson K.R. & Pfister D.H. 2010. Phylogeny of Cyttaria inferred from nuclear and mitochondrial sequence and morphological data. Mycologia 102(6): 1398-1416, Tabla I (doi:10.3852/10-046) incluye N. dombeyi entre sus hospederos; en Chiloé, la observación gbif.org/occurrence/4442389567",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "parasita_a",
+          "especie": "nothofagus_betuloides",
+          "fuente": "Peterson K.R. & Pfister D.H. 2010. Phylogeny of Cyttaria inferred from nuclear and mitochondrial sequence and morphological data. Mycologia 102(6): 1398-1416, Tabla I (doi:10.3852/10-046) incluye N. betuloides entre sus hospederos (también N. antarctica y N. pumilio). No se verificó un registro sobre este hospedero en Chiloé",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "Este hongo solo vive en las ramas de un Nothofagus: si se tala el árbol, también desaparece el digüeñe y el alimento que daba.",
+      "pendiente": [
+        "Se eligió C. hariotii y no C. espinosae: Peterson & Pfister 2010 dan para C. espinosae los hospederos N. alpina, N. glauca, N. obliqua y, con duda, N. dombeyi, y GBIF no tiene registros de C. espinosae en Chiloé (solo de C. hariotii y 1 de C. hookeri)",
+        "fructificacion_meses: falta un estudio fenológico en Chiloé; hoy solo hay observaciones ciudadanas",
+        "estado_conservacion: no se encontró ficha RCE de C. hariotii (la de C. johowii es LC)"
+      ]
+    },
+    {
+      "id": "descolea_antarctica",
+      "nombre": "Descolea",
+      "cientifico": "Descolea antarctica Singer",
+      "familia": "Bolbitiaceae",
+      "grupo": "hongo",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, búsqueda de ocurrencias en recuadro Chiloé (lat -43,6 a -41,78; lon -74,5 a -73,2), consultada 08-10-2026 vía api.gbif.org/v1/occurrence/search: 6 registros. Uno es un espécimen de herbario de la Estación Biológica Senda Darwin, 2018 (gbif.org/occurrence/5069259085, hábitat 'Valdivian with Nothofagus nitida; soil'); los otros 5 son observaciones de iNaturalist",
+        "confianza": "alta"
+      },
+      "rasgos": {
+        "tipo": {
+          "valor": "ectomicorricico",
+          "fuente": "Alberdi M., Álvarez M., Valenzuela E., Godoy R., Olivares E. & Barrientos M. 2007. Response to water deficit of Nothofagus dombeyi plants inoculated with a specific (Descolea antarctica Sing) and non-specific (Pisolithus tinctorius) ectomycorrhizal fungi. Revista Chilena de Historia Natural 80(4) (doi:10.4067/S0716-078X2007000400009): la tratan como hongo ectomicorrícico específico de N. dombeyi",
+          "confianza": "alta"
+        },
+        "fructificacion_meses": {
+          "valor": [
+            4,
+            5,
+            6
+          ],
+          "fuente": "GBIF, búsqueda de ocurrencias en recuadro Chiloé (lat -43,6 a -41,78; lon -74,5 a -73,2), consultada 08-10-2026 vía api.gbif.org/v1/occurrence/search: los 6 registros de Chiloé van del 12 de abril al 11 de junio (otoño). Son pocos registros",
+          "confianza": "media"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "micorriza_con",
+          "especie": "nothofagus_dombeyi",
+          "fuente": "Alberdi M., Álvarez M., Valenzuela E., Godoy R., Olivares E. & Barrientos M. 2007. Response to water deficit of Nothofagus dombeyi plants inoculated with a specific (Descolea antarctica Sing) and non-specific (Pisolithus tinctorius) ectomycorrhizal fungi. Revista Chilena de Historia Natural 80(4) (doi:10.4067/S0716-078X2007000400009): en sequía, las plantas de N. dombeyi inoculadas con D. antarctica ajustaron mejor su presión osmótica que las inoculadas con Pisolithus",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "micorriza_con",
+          "especie": "nothofagus_nitida",
+          "fuente": "Espécimen de Senda Darwin, Chiloé (gbif.org/occurrence/5069259085), colectado en bosque valdiviano con N. nitida. Es una asociación de terreno, no una micorriza comprobada en la raíz",
+          "confianza": "baja"
+        }
+      ],
+      "aprende": "Este hongo es socio de la raíz del coihue y le ayuda a aguantar la sequía: bajo el suelo, los árboles no crecen solos.",
+      "pendiente": [
+        "comestible: sin fuente",
+        "micorriza con N. nitida: falta verificarla en la raíz"
+      ]
+    },
+    {
+      "id": "austropaxillus_boletinoides",
+      "nombre": "Austropaxillus",
+      "cientifico": "Austropaxillus boletinoides (Singer) Bresinsky & Jarosch",
+      "familia": "Serpulaceae",
+      "grupo": "hongo",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, búsqueda de ocurrencias en recuadro Chiloé (lat -43,6 a -41,78; lon -74,5 a -73,2), consultada 08-10-2026 vía api.gbif.org/v1/occurrence/search: 2 observaciones de iNaturalist con grado de investigación (gbif.org/occurrence/3802818626, 2022; gbif.org/occurrence/6195426515, 2026). También hay 2 de A. statuum",
+        "confianza": "media"
+      },
+      "rasgos": {
+        "tipo": {
+          "valor": "ectomicorricico",
+          "fuente": "Bresinsky A., Jarosch M., Fischer M., Schönberger I. & Wittmann-Bresinsky B. 1999. Phylogenetic relationships within Paxillus s. l. (Basidiomycetes, Boletales): separation of a Southern Hemisphere genus. Plant Biology 1(3) (citado en https://en.wikipedia.org/wiki/Austropaxillus: el género forma micorrizas con Nothofagus y, con menos frecuencia, con Eucalyptus). Es un dato del género",
+          "confianza": "media"
+        },
+        "fructificacion_meses": {
+          "valor": [
+            4,
+            5
+          ],
+          "fuente": "GBIF, búsqueda de ocurrencias en recuadro Chiloé (lat -43,6 a -41,78; lon -74,5 a -73,2), consultada 08-10-2026 vía api.gbif.org/v1/occurrence/search: solo hay 2 registros en Chiloé (3 de abril y 26 de mayo)",
+          "confianza": "baja"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "micorriza_con",
+          "especie": "nothofagus_dombeyi",
+          "fuente": "Bresinsky A., Jarosch M., Fischer M., Schönberger I. & Wittmann-Bresinsky B. 1999. Phylogenetic relationships within Paxillus s. l. (Basidiomycetes, Boletales): separation of a Southern Hemisphere genus. Plant Biology 1(3) (citado en https://en.wikipedia.org/wiki/Austropaxillus: el género forma micorrizas con Nothofagus y, con menos frecuencia, con Eucalyptus). El dato es del género Nothofagus; no se encontró un estudio que lo compruebe con esta especie de árbol. Se asigna a N. dombeyi porque es un Nothofagus presente en Chiloé",
+          "confianza": "baja"
+        },
+        {
+          "tipo": "micorriza_con",
+          "especie": "nothofagus_nitida",
+          "fuente": "Bresinsky A., Jarosch M., Fischer M., Schönberger I. & Wittmann-Bresinsky B. 1999. Phylogenetic relationships within Paxillus s. l. (Basidiomycetes, Boletales): separation of a Southern Hemisphere genus. Plant Biology 1(3) (citado en https://en.wikipedia.org/wiki/Austropaxillus: el género forma micorrizas con Nothofagus y, con menos frecuencia, con Eucalyptus). Mismo razonamiento: dato del género, sin comprobación con N. nitida",
+          "confianza": "baja"
+        }
+      ],
+      "aprende": "Varios hongos distintos pueden compartir las raíces de un mismo árbol del bosque de Nothofagus.",
+      "pendiente": [
+        "Hospedero específico en Chiloé: sin fuente. Solo se sabe que el género forma micorrizas con Nothofagus",
+        "Álvarez 2001 (tesis, Universidad de Bremen) estudió A. boletinoides y A. statuum como micorrícicos cerca de Valdivia, pero el resumen no dice con qué Nothofagus",
+        "comestible: sin fuente"
+      ]
+    },
+    {
+      "id": "glomeromycota",
+      "nombre": "Hongos micorrícicos arbusculares (grupo funcional, no es una especie)",
+      "cientifico": "Glomeromycota (filo que agrupa muchas especies)",
+      "familia": "varias familias del filo Glomeromycota",
+      "grupo": "hongo",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "Marín C., Aguilera P., Oehl F. & Godoy R. 2017. Factors affecting arbuscular mycorrhizal fungi of Chilean temperate rainforests. Journal of Soil Science and Plant Nutrition 17(4): 966-984 (doi:10.4067/S0718-95162017000400010): hallaron 14 especies de hongos arbusculares en 14 parcelas de la Cordillera de la Costa y de los Andes del sur de Chile. El resumen no menciona Chiloé, así que la presencia en la isla es una inferencia regional",
+        "confianza": "baja"
+      },
+      "rasgos": {
+        "tipo": {
+          "valor": "micorricico_arbuscular",
+          "fuente": "Carrillo R., Godoy R. & Peredo H. 1992. Mycorrhyzal symbiosis in forest communities of the Central Valley of southern Chile. Bosque 13(2): 57-62 (doi:10.4206/bosque.1992.v13n2-08): 91 de 114 especies de plantas tenían micorriza y dominaba el tipo vesículo-arbuscular (72,8 %)",
+          "confianza": "alta"
+        },
+        "comestible": {
+          "valor": false,
+          "fuente": "No forman cuerpos fructíferos que se puedan comer: viven dentro de la raíz y producen esporas en el suelo (Marín et al. 2017 las cuentan como esporas). Es una inferencia",
+          "confianza": "baja"
+        }
+      },
+      "relaciones": [],
+      "aprende": "La mayoría de las plantas del bosque viven asociadas a hongos invisibles dentro de la raíz que les ayudan a conseguir nutrientes.",
+      "pendiente": [
+        "relaciones micorriza_con: Godoy & Mayr 1989 (Bosque 10: 89-98) hallaron micorriza arbuscular en las 9 coníferas endémicas que estudiaron, pero el resumen no nombra las especies; hace falta el texto completo para ligar ids",
+        "presencia_chiloe: falta un estudio con sitios en la isla",
+        "fructificacion_meses: no aplica (no tiene cuerpo fructífero)"
+      ]
+    },
+    {
+      "id": "ganoderma_australe",
+      "nombre": "Ganoderma, hongo del palo podrido",
+      "cientifico": "Ganoderma australe",
+      "familia": "Ganodermataceae",
+      "grupo": "hongo",
+      "origen": "nativa",
+      "presencia_chiloe": {
+        "valor": true,
+        "fuente": "GBIF, búsqueda de ocurrencias en recuadro Chiloé (lat -43,6 a -41,78; lon -74,5 a -73,2), consultada 08-10-2026 vía api.gbif.org/v1/occurrence/search: 20 observaciones de iNaturalist con grado de investigación (2015-2026), p. ej. gbif.org/occurrence/4096400243 (Parque Nacional Chiloé). La identificación es por foto; en el sur de Chile también se usó el nombre G. applanatum para este hongo",
+        "confianza": "media"
+      },
+      "rasgos": {
+        "tipo": {
+          "valor": "saprofito",
+          "fuente": "Elissetche J., Ferraz A., Parra C., Freer J., Baeza J. & Rodríguez J. 2001. Biodegradation of Chilean native wood species, Drimys winteri and Nothofagus dombeyi, by Ganoderma australe. World Journal of Microbiology and Biotechnology 17: 577-581 (doi:10.1023/A:1012421513564): pudrición blanca que en terreno elimina gran parte de la lignina de la madera ('palo podrido'). Según Hidden Forest (Nueva Zelanda), ficha de Ganoderma australe: https://www.hiddenforest.co.nz/fungi/family/ganodermataceae/ganod01.htm, también puede atacar madera viva",
+          "confianza": "alta"
+        },
+        "fructificacion_meses": {
+          "valor": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "fuente": "Hidden Forest (Nueva Zelanda), ficha de Ganoderma australe: https://www.hiddenforest.co.nz/fungi/family/ganodermataceae/ganod01.htm: sus cuerpos fructíferos son repisas perennes que duran años. En Chiloé hay observaciones en casi todos los meses (GBIF, búsqueda de ocurrencias en recuadro Chiloé (lat -43,6 a -41,78; lon -74,5 a -73,2), consultada 08-10-2026 vía api.gbif.org/v1/occurrence/search)",
+          "confianza": "media"
+        },
+        "comestible": {
+          "valor": false,
+          "fuente": "Hidden Forest (Nueva Zelanda), ficha de Ganoderma australe: https://www.hiddenforest.co.nz/fungi/family/ganodermataceae/ganod01.htm: 'Edible: No'",
+          "confianza": "media"
+        }
+      },
+      "relaciones": [
+        {
+          "tipo": "descompone",
+          "especie": "nothofagus_dombeyi",
+          "fuente": "Elissetche J., Ferraz A., Parra C., Freer J., Baeza J. & Rodríguez J. 2001. Biodegradation of Chilean native wood species, Drimys winteri and Nothofagus dombeyi, by Ganoderma australe. World Journal of Microbiology and Biotechnology 17: 577-581 (doi:10.1023/A:1012421513564)",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "descompone",
+          "especie": "drimys_winteri",
+          "fuente": "Elissetche J., Ferraz A., Parra C., Freer J., Baeza J. & Rodríguez J. 2001. Biodegradation of Chilean native wood species, Drimys winteri and Nothofagus dombeyi, by Ganoderma australe. World Journal of Microbiology and Biotechnology 17: 577-581 (doi:10.1023/A:1012421513564)",
+          "confianza": "alta"
+        },
+        {
+          "tipo": "descompone",
+          "especie": "eucryphia_cordifolia",
+          "fuente": "Dill I. & Kraepelin G. 1986. Applied and Environmental Microbiology 52(6): 1305-1312 (artículo sobre el 'palo podrido' y Ganoderma applanatum): estudiaron troncos podridos de Eucryphia cordifolia, Drimys winteri y Nothofagus dombeyi. En ese entonces el hongo se llamaba G. applanatum",
+          "confianza": "media"
+        }
+      ],
+      "aprende": "Este hongo transforma los troncos muertos en suelo: sin él, la madera caída se acumularía y sus nutrientes no volverían al bosque.",
+      "pendiente": [
+        "taxonomía: falta confirmar con datos moleculares que el 'palo podrido' de Chiloé es G. australe y no otra especie del complejo"
+      ]
+    }
+  ]
+}

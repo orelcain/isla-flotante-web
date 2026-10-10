@@ -1,0 +1,11 @@
+{
+  "nota": "Tipos de vegetación de la isla. crecimiento = fracción anual que avanza hacia su potencial. necesita_semilla = solo coloniza si hay una celda vecina con esa vegetación (o si el jugador la planta).",
+  "tipos": [
+    { "id": "hierba", "nombre": "Hierbas y pastos", "crecimiento": 0.5, "retroceso": 0.3, "necesita_semilla": false, "umbral_semillero": 0,
+      "fuente": "Las herbáceas colonizan en 1–3 años; semillas dispersadas por el viento", "confianza": "media" },
+    { "id": "matorral", "nombre": "Matorral", "crecimiento": 0.15, "retroceso": 0.15, "necesita_semilla": true, "umbral_semillero": 0.2,
+      "fuente": "Arbustos: decenas de años para cerrar el dosel; dispersión por aves", "confianza": "media" },
+    { "id": "bosque", "nombre": "Bosque", "crecimiento": 0.05, "retroceso": 0.1, "necesita_semilla": true, "umbral_semillero": 0.3,
+      "fuente": "Un bosque tarda varias décadas en formarse; su semilla viaja pocas decenas de metros sin dispersores", "confianza": "media" }
+  ]
+}

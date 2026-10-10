@@ -1,0 +1,58 @@
+{
+  "nota": "Nalca (Gunnera tinctoria) en la isla semilla, primera versión (09-10-2026). Planta que siembra el jugador desde un trozo de rizoma; avanza por rizomas, sus hojas cubren el suelo en verano y su simbionte Nostoc fija nitrógeno del aire. Datos con fuente; las sustituciones se declaran.",
+  "pendientes": "Fijación de N medida en G. tinctoria (se usa G. magellanica) · biomasa por m² de G. tinctoria (se usa G. magellanica, mucho más chica) · consumo de agua · fracción de hoja que cae cada otoño (la hojarasca de la nalca no se simula aún) · efecto de la helada",
+  "suelo_minimo_m": {
+    "valor": 0.15,
+    "unidad": "m de sustrato",
+    "fuente": "Garibotti et al. 2011 (leído completo): en roca, las plantas vasculares se multiplican cuando la capa orgánica llega a ~15 cm. ANALOGÍA para el suelo mínimo de una planta con rizoma",
+    "confianza": "baja"
+  },
+  "avance_rizoma_m_anio": {
+    "valor": 0.13,
+    "unidad": "m/año",
+    "fuente": "Gioria M & Osborne B (2017) Gunnera tinctoria: information on measures and related costs (UE); en investigacion_musgos_liquenes_nalca_complemento.json: el rizoma avanza 2-24 cm/año; se usa el punto medio",
+    "confianza": "media"
+  },
+  "madurez_anios": {
+    "valor": 3.5,
+    "unidad": "años",
+    "fuente": "Gioria M & Osborne B (2017) Gunnera tinctoria: information on measures and related costs (UE); en investigacion_musgos_liquenes_nalca_complemento.json: madurez sexual entre 2 y 5 años según el ambiente; punto medio",
+    "confianza": "media"
+  },
+  "biomasa_kg_m2": {
+    "valor": 1.312,
+    "unidad": "kg de masa seca por m² cubierto",
+    "fuente": "Troncoso et al. 2013, Rev. Chil. Hist. Nat. 86:345-355 (Gunnera magellanica, Isla Santa Inés): 1311,8 g/m². SUSTITUTO: G. tinctoria es mucho más grande (hojas de hasta 2 m², más de 2 m de alto: Mantoani MC, Sweeney C & Osborne BA (2025) Global Change Biology (Irlanda)), así que esto es un piso",
+    "confianza": "baja"
+  },
+  "fijacion_n_kg_por_kg_anio": {
+    "valor": 0.000328,
+    "unidad": "kg de N por kg de biomasa al año",
+    "fuente": "Troncoso et al. 2013, Rev. Chil. Hist. Nat. 86:345-355 (Gunnera magellanica, Isla Santa Inés): 4,3 kg N/ha/año con 1311,8 g/m² de biomasa -> 3,28e-4 kg N/kg/año (cálculo propio). Sustituto declarado de G. tinctoria",
+    "confianza": "media"
+  },
+  "mes_brote": {
+    "valor": 9,
+    "unidad": "mes (1-12)",
+    "fuente": "Mantoani MC, Sweeney C & Osborne BA (2025) Global Change Biology (Irlanda): las hojas salen del rizoma en marzo. Desplazado 6 meses al hemisferio sur (inferencia propia)",
+    "confianza": "baja"
+  },
+  "mes_maximo": {
+    "valor": 1,
+    "unidad": "mes (1-12)",
+    "fuente": "Mantoani MC, Sweeney C & Osborne BA (2025) Global Change Biology (Irlanda): dosel máximo en julio (~100 % de la luz interceptada). Desplazado 6 meses (inferencia)",
+    "confianza": "baja"
+  },
+  "mes_caida": {
+    "valor": 6,
+    "unidad": "mes (1-12)",
+    "fuente": "Mantoani MC, Sweeney C & Osborne BA (2025) Global Change Biology (Irlanda): hojas muertas en diciembre. Desplazado 6 meses (inferencia)",
+    "confianza": "baja"
+  },
+  "intercepcion_luz_maxima": {
+    "valor": 1.0,
+    "unidad": "fracción",
+    "fuente": "Mantoani MC, Sweeney C & Osborne BA (2025) Global Change Biology (Irlanda): ~100 % de la luz interceptada con el dosel máximo; bajo la nalca hay 5 veces menos especies (Mantoani & Osborne 2022: 6 vs 29)",
+    "confianza": "alta"
+  }
+}
