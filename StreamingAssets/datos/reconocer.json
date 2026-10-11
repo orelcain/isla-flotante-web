@@ -1,0 +1,70 @@
+{
+  "nota": "Cómo reconocer cada ser vivo en el campo (lupa de campo del juego). Resumen de la sección «Identificación en terreno» de cada ficha (docs/FICHA_*.md), con su fuente. lejos/media/cerca: qué mirar a cada distancia; confunde: con qué se confunde y la diferencia concreta.",
+  "nothofagus_nitida": {
+    "lejos": "copa en mechones horizontales, en pisos; en bosque, fuste limpio y copa arriba",
+    "media": "corteza gris lisa con manchas claras de líquenes y bandas de lenticelas; más lisa que la del coigüe común",
+    "cerca": "hoja romboidal de 2–4 cm, brillante, coriácea, aserrada fina e irregular, base desigual; brotes nuevos rojo-bronce en primavera (ninguna otra haya austral los tiene)",
+    "confunde": [
+      ["Coigüe común (N. dombeyi)", "hoja ovada-triangular con dientes casi dobles y nervios poco visibles; corteza agrietada en placas"],
+      ["Coigüe de Magallanes (N. betuloides)", "hoja ovada más chica, dientes finos de punta roma; corteza gris plateada en escamas"]
+    ],
+    "fuente": "docs/FICHA_VISUAL_COIGUE.md (Trees and Shrubs Online; Rodríguez, Matthei y Quezada 1983; Mathiasen et al. 2017; fotos de campo medidas 11-10-2026)",
+    "confianza": "alta"
+  },
+  "eucryphia_cordifolia": {
+    "lejos": "copa densa y oscura; en verano, cubierta de flores blancas",
+    "media": "hojas opuestas, oblongas, con el envés gris pálido que se ve cuando sopla el viento",
+    "cerca": "hoja simple y opuesta, base redondeada o apenas cordada, borde entero en el adulto (aserrado en el renuevo); flor de 5 cm con 4 pétalos blancos y un anillo de estambres de anteras rojizas",
+    "confunde": [
+      ["Tiaca (Caldcluvia paniculata), la más parecida", "hoja aserrada con estípulas foliáceas persistentes de 1,2–1,7 cm; flores chicas en panícula"],
+      ["Tineo (Weinmannia trichosperma)", "hoja compuesta de 5–8 pares de folíolos con raquis alado"],
+      ["Tepa (Laureliopsis philippiana)", "hoja aromática, base cuneiforme, dientes con punta glandular"]
+    ],
+    "fuente": "docs/FICHA_ULMO.md (Flora arbórea de Chile, FAC; fotos de campo medidas 11-10-2026)",
+    "confianza": "alta"
+  },
+  "drimys_winteri": {
+    "lejos": "copa piramidal en pisos; destellos blancos cuando el viento da vuelta las hojas",
+    "media": "corteza lisa gris ceniciento, aromática al rasparla; ramillas y pecíolos rojizos",
+    "cerca": "hoja grande y entera, en rosetas al final de la ramilla, con el envés blanco ceroso; umbelas de flores blancas de 8–10 pétalos; bayas en grupos",
+    "confunde": [
+      ["Canelo enano (D. andina)", "arbusto con flores axilares; no está en Chiloé"],
+      ["Tepa y ulmo", "hojas opuestas (el canelo las tiene alternas en roseta)"]
+    ],
+    "fuente": "docs/FICHA_CANELO.md (FAC; Smith 1943; fotos de campo medidas 11-10-2026)",
+    "confianza": "alta"
+  },
+  "mitraria_coccinea": {
+    "lejos": "trepadora sobre troncos, con puntos rojos colgando",
+    "media": "tallos finos con hojas pequeñas opuestas",
+    "cerca": "hoja opuesta y dentada, con pelos; flor colgante roja e inflada como una botellita, pilosa, con 4 estambres amarillos que asoman; baya verde con un estilo largo",
+    "confunde": [
+      ["Estrellita (Asteranthera ovata)", "pegada al tronco, corola con lóbulos abiertos en estrella, carmesí"],
+      ["Medallita (Sarmienta repens)", "hojas suculentas casi lampiñas, solo 2 estambres"]
+    ],
+    "fuente": "docs/FICHA_BOTELLITA.md (Salinas 2010; Smith-Ramírez 1993; Trees and Shrubs Online)",
+    "confianza": "alta"
+  },
+  "podocarpus_nubigenus": {
+    "lejos": "conífera de copa oscura y densa",
+    "media": "ramillas cubiertas de hojas en todas direcciones",
+    "cerca": "hoja rígida de 15–30 mm, muy punzante, con 2 bandas blancas notorias por debajo; semilla púrpura sobre un receptáculo rojo carnoso",
+    "confunde": [
+      ["Mañío de hojas cortas (Saxegothaea)", "hojas en 2 planos que casi no pican; cono globoso"],
+      ["Mañío de hojas largas (P. salignus)", "hojas de 5–10 cm, colgantes, que no pican"]
+    ],
+    "fuente": "docs/FICHA_MANIO.md (FAC)",
+    "confianza": "alta"
+  },
+  "racomitrium_lanuginosum": {
+    "lejos": "manchas verde oliva o pardas sobre el suelo, según esté mojado o seco",
+    "media": "tapiz de tallitos apretados; seco se ve pardo, mojado se abre y verdea en minutos",
+    "cerca": "sobre suelo nuevo, en Chiloé los pioneros son Polytrichum (cada tallo es una estrellita de hojas rígidas que se cierra y se pone pardo-rojiza al secarse) y Campylopus (cojín con pelitos blancos en la punta de las hojas)",
+    "confunde": [
+      ["Racomitrium lanuginosum", "en Chiloé crece sobre rocas y cortezas, no en el suelo bajo el coigüe; canoso por las puntas hialinas"],
+      ["Dendroligotrichum dendroides (musgo pinito)", "llega después, con el bosque: parece un pino en miniatura de 10–25 cm"]
+    ],
+    "fuente": "Villagrán, Barrera, Cuvertino y García 2003, Musgos de la Isla Grande de Chiloé (Bol. MNHN 52:17-44); FEIS USDA; fotos iNaturalist medidas 11-10-2026",
+    "confianza": "media"
+  }
+}
