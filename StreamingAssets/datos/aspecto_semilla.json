@@ -195,13 +195,15 @@
     "valor": "#848650",
     "unidad": "hex sRGB",
     "fuente": "SUPUESTO de dibujo: Racomitrium lanuginosum es verde grisáceo («lanudo») por las puntas hialinas de sus hojas; sin medición de color publicada. 10-10: corrido de #7d8a5c hacia oliva (menos azul) porque bajo la luz cálida se leía verde lima ácido",
-    "confianza": "baja"
+    "confianza": "baja",
+    "nota": "casi igual a lo medido en Campylopus introflexus húmedo (#888834) y Polytrichum (estrellas verdes): se mantiene. "
   },
   "color_musgo_seco": {
-    "valor": "#9c9a86",
+    "valor": "#796f53",
     "unidad": "hex sRGB",
-    "fuente": "SUPUESTO de dibujo: seco, las puntas blancas dominan y el tapiz se ve gris claro (Isotalo & Tuviala 2023 describen el desecamiento bajo 95 % de humedad, sin color medido)",
-    "confianza": "baja"
+    "fuente": "Musgo pionero seco (Campylopus introflexus): pardo dorado con canas; mediana en fotos de campo (informe de musgos 11-10-2026: Villagrán, Barrera, Cuvertino y García 2003, Musgos de la Isla Grande de Chiloé (Bol. MNHN 52:17-44); fotos iNaturalist CC0/CC-BY/CC-BY-SA en C:/Users/orelc/ia/referencias/musgo)",
+    "confianza": "media-baja",
+    "nota": "antes #9c9a86 (gris claro, supuesto para Racomitrium). "
   },
   "musgo_cojin_m": {
     "valor": 0.06,
@@ -403,5 +405,17 @@
     "unidad": "fracción del tiempo real mientras se sigue una hoja que cae",
     "fuente": "decisión de juego: a 1 m/s una hoja cruza la pantalla de cerca en menos de un segundo; a 0,3× se alcanza a ver su forma. Los números que muestra la ficha (tiempo de caída) son los reales, sin la cámara lenta",
     "confianza": "alta"
+  },
+  "musgo_brote_separacion_m": {
+    "valor": 0.0055,
+    "unidad": "m entre tallos (de arriba, cada uno una estrella de hojas)",
+    "fuente": "Polytrichum juniperinum, pionero en suelo mineral perturbado (Villagrán et al. 2003; FEIS USDA); separación medida a ojo en fotos con escala (informe de musgos 11-10-2026: Villagrán, Barrera, Cuvertino y García 2003, Musgos de la Isla Grande de Chiloé (Bol. MNHN 52:17-44); fotos iNaturalist CC0/CC-BY/CC-BY-SA en C:/Users/orelc/ia/referencias/musgo)",
+    "confianza": "baja"
+  },
+  "color_musgo_punta_seca": {
+    "valor": "#7d5c43",
+    "unidad": "hex sRGB",
+    "fuente": "Polytrichum juniperinum seco: hojas cerradas contra el tallo, aristas pardo-rojizas; mediana en fotos (informe de musgos 11-10-2026: Villagrán, Barrera, Cuvertino y García 2003, Musgos de la Isla Grande de Chiloé (Bol. MNHN 52:17-44); fotos iNaturalist CC0/CC-BY/CC-BY-SA en C:/Users/orelc/ia/referencias/musgo)",
+    "confianza": "media-baja"
   }
 }
