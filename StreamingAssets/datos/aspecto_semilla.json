@@ -397,5 +397,11 @@
     "unidad": "multiplicador lineal del color de corteza",
     "fuente": "SUPUESTO de dibujo: calibrado para que la mediana del tronco EN LA CAPTURA (150 años, de cerca) se acerque a la de las fotos (#757570); sin él la captura daba #383126",
     "confianza": "baja"
+  },
+  "lupa_camara_lenta": {
+    "valor": 0.3,
+    "unidad": "fracción del tiempo real mientras se sigue una hoja que cae",
+    "fuente": "decisión de juego: a 1 m/s una hoja cruza la pantalla de cerca en menos de un segundo; a 0,3× se alcanza a ver su forma. Los números que muestra la ficha (tiempo de caída) son los reales, sin la cámara lenta",
+    "confianza": "alta"
   }
 }
