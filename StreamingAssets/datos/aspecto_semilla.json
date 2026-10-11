@@ -228,11 +228,11 @@
     "confianza": "baja"
   },
   "color_follaje": {
-    "valor": "#6a9d60",
-    "unidad": "hex sRGB (color pintado)",
-    "fuente": "Espectro típico de hoja verde sana (Gates, Keegan, Schleter & Weidner 1965, Applied Optics 4:11-20: reflectancia ~5 % en azul 450 nm, ~13 % en verde 550 nm, ~4-5 % en rojo 650 nm) tomado como RGB lineal (0,055; 0,13; 0,045) y llevado al valor del pintor multiplicando por 2,6 (técnica de compresión de valores: el color medido fija matiz y croma relativos, no el valor absoluto en pantalla). Sin medición específica de Nothofagus nitida: pendiente",
+    "valor": "#5a7237",
+    "unidad": "hex sRGB (color en pantalla)",
+    "fuente": "Mediana del color de hoja en 95 fotos de campo de Nothofagus nitida (iNaturalist, CC0/CC-BY/CC-BY-SA; píxeles de tono 70–160°, saturación > 0,25, sin reflejos ni sombras; cuartiles #4c5f2b–#688147), 11-10-2026. Script: herramientas/ia/color_hoja.py",
     "confianza": "media",
-    "nota": "Sin el factor sería #42653c (luminancia 0,11). El anterior (#6aa25a) era a ojo; el nuevo es apenas menos amarillo y menos saturado."
+    "nota": "Antes #6a9d60 (espectro genérico de hoja verde, Gates et al. 1965, × 2,6). Sin el factor sería #42653c (luminancia 0,11). El anterior (#6aa25a) era a ojo; el nuevo es apenas menos amarillo y menos saturado."
   },
   "ramillete_altura_adulto_m": {
     "valor": 2,
@@ -322,6 +322,80 @@
     "valor": "#3f2f20",
     "unidad": "color sRGB",
     "fuente": "SUPUESTO: agua «color té» por la materia orgánica disuelta que lava del sustrato (docs/investigacion_microclima_agua_viento.json, M7: «agua de color té»). Sin medición de color para esta isla; se pinta oscuro porque la luz del follaje aclara (×1,25 cálido) y el agua sobre el papel debe leerse como agua oscura.",
+    "confianza": "baja"
+  },
+  "color_brote": {
+    "valor": "#976333",
+    "unidad": "hex sRGB (color en pantalla)",
+    "fuente": "Mediana de los píxeles rojo-anaranjados en las 14 fotos de campo con brotes (iNaturalist, CC0/CC-BY/CC-BY-SA), 11-10-2026",
+    "confianza": "media"
+  },
+  "brote_dia_pico": {
+    "valor": 350,
+    "unidad": "día del año (hemisferio sur)",
+    "fuente": "Fotos de campo de Nothofagus nitida en iNaturalist (CC0/CC-BY/CC-BY-SA, 110 fotos con fecha): fotos con >12 % de píxeles rojo-anaranjados por mes: dic 12 de 35, oct 1 de 15, ene 1 de 25 (11-10-2026). La ficha (TSO) dice «rojo-bronce o ciruela en primavera; no aparece en ninguna otra haya austral sudamericana».",
+    "confianza": "baja",
+    "nota": "sesgo: casi no hay fotos de sept–nov ni de otoño; medir con más fechas"
+  },
+  "brote_semiancho_dias": {
+    "valor": 30,
+    "unidad": "días",
+    "fuente": "Fotos de campo de Nothofagus nitida en iNaturalist (CC0/CC-BY/CC-BY-SA, 110 fotos con fecha): fotos con >12 % de píxeles rojo-anaranjados por mes: dic 12 de 35, oct 1 de 15, ene 1 de 25 (11-10-2026). La ficha (TSO) dice «rojo-bronce o ciruela en primavera; no aparece en ninguna otra haya austral sudamericana».",
+    "confianza": "baja"
+  },
+  "brote_fraccion_puntas": {
+    "valor": 0.8,
+    "unidad": "fracción del ramillete de la punta que se tiñe en el pico",
+    "fuente": "SUPUESTO de dibujo, calibrado a ojo con las fotos de diciembre",
+    "confianza": "baja"
+  },
+  "hoja_razon_ancho": {
+    "valor": 0.6,
+    "unidad": "ancho máximo / largo de la lámina",
+    "fuente": "Medición en 36 hojas de 10 fotos de campo de Nothofagus nitida (iNaturalist CC0/CC-BY), 11-10-2026; ver docs/laminas/ia/calibracion_fotos.json (mediana 0,61; cuartiles 0,48–0,72)",
+    "confianza": "media"
+  },
+  "hoja_ancho_max": {
+    "valor": 0.4,
+    "unidad": "fracción del largo (desde la base) donde la hoja es más ancha",
+    "fuente": "Medición en 36 hojas de 10 fotos de campo de Nothofagus nitida (iNaturalist CC0/CC-BY), 11-10-2026; ver docs/laminas/ia/calibracion_fotos.json (mediana 0,39); TSO",
+    "confianza": "alta"
+  },
+  "hoja_base_desigual": {
+    "valor": 0.76,
+    "unidad": "ancho del lado corto / lado largo en la base",
+    "fuente": "Medición en 36 hojas de 10 fotos de campo de Nothofagus nitida (iNaturalist CC0/CC-BY), 11-10-2026; ver docs/laminas/ia/calibracion_fotos.json (ruidoso; ~2/3 de las hojas con base desigual); TSO",
+    "confianza": "media"
+  },
+  "hojas_sueltas_hasta_m": {
+    "valor": 1.2,
+    "unidad": "m de altura del árbol bajo la cual se dibuja cada hoja en vez de ramilletes",
+    "fuente": "decisión de dibujo: a la distancia de cámara del árbol chico, una hoja de 3 cm se distingue",
+    "confianza": "alta"
+  },
+  "color_corteza": {
+    "valor": "#757570",
+    "unidad": "hex sRGB",
+    "fuente": "Mediana del tronco en 2 primeros planos de corteza de N. nitida (Wikimedia Commons, K. Ziarnek «Kenraiz», CC BY 4.0: Nothofagus_nitida_kz27 y kz32), medidos sobre el tronco sin hojas, 11-10-2026; lisa y gris (Rodríguez et al. 1983; Mathiasen et al. 2017)",
+    "confianza": "media",
+    "nota": "antes #57524c (receta, a ojo), demasiado oscuro y pardo: de lejos el tronco joven se ve gris plateado por los líquenes"
+  },
+  "corteza_liquen_fraccion": {
+    "valor": 0.3,
+    "unidad": "fracción del tronco con manchas claras (líquenes costrosos)",
+    "fuente": "Píxeles claros (luminancia > 140) en 2 primeros planos de corteza de N. nitida (Wikimedia Commons, K. Ziarnek «Kenraiz», CC BY 4.0: Nothofagus_nitida_kz27 y kz32), medidos sobre el tronco sin hojas, 11-10-2026 (0,30 y 0,31)",
+    "confianza": "media"
+  },
+  "color_liquen_corteza": {
+    "valor": "#b0b0a8",
+    "unidad": "hex sRGB",
+    "fuente": "Cuartil claro del tronco en 2 primeros planos de corteza de N. nitida (Wikimedia Commons, K. Ziarnek «Kenraiz», CC BY 4.0: Nothofagus_nitida_kz27 y kz32), medidos sobre el tronco sin hojas, 11-10-2026 (#9e9f9c y #bbbba2)",
+    "confianza": "media"
+  },
+  "corteza_compensacion_pantalla": {
+    "valor": 2.4,
+    "unidad": "multiplicador lineal del color de corteza",
+    "fuente": "SUPUESTO de dibujo: calibrado para que la mediana del tronco EN LA CAPTURA (150 años, de cerca) se acerque a la de las fotos (#757570); sin él la captura daba #383126",
     "confianza": "baja"
   }
 }

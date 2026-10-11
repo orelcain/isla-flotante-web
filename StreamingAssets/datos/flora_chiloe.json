@@ -50,6 +50,52 @@
           "valor": "LC (UICN)",
           "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 96478547), vía GBIF https://api.gbif.org/v1/species/2874982/iucnRedListCategory",
           "confianza": "alta"
+        },
+        "hoja_forma": {
+          "valor": "angostamente romboidal, más ancha bajo la mitad; ápice largo y agudo; base a menudo desigual",
+          "fuente": "Trees and Shrubs Online, nothofagus/nothofagus-nitida/: https://www.treesandshrubsonline.org/articles/",
+          "confianza": "alta"
+        },
+        "hoja_borde": {
+          "valor": "aserrado irregular, dientes diminutos y agudos",
+          "fuente": "Trees and Shrubs Online, nothofagus/nothofagus-nitida/: https://www.treesandshrubsonline.org/articles/",
+          "confianza": "alta"
+        },
+        "hoja_largo": {
+          "valor": "20–40 × 15–25",
+          "fuente": "Trees and Shrubs Online, nothofagus/nothofagus-nitida/: https://www.treesandshrubsonline.org/articles/; Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_nothofagus_nitida.html",
+          "confianza": "alta",
+          "unidad": "mm"
+        },
+        "hoja_disposicion": {
+          "valor": "alterna, dística",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_nothofagus_nitida.html; herbario MA-01-00406238 (GBIF 1936154961)",
+          "confianza": "media"
+        },
+        "brote_nuevo": {
+          "valor": "rojo-bronce o ciruela en primavera; no aparece en ninguna otra haya austral sudamericana",
+          "fuente": "Trees and Shrubs Online, nothofagus/nothofagus-nitida/: https://www.treesandshrubsonline.org/articles/",
+          "confianza": "alta"
+        },
+        "corteza": {
+          "valor": "gris oscura, lisa, suavemente agrietada, con bandas horizontales de lenticelas pálidas; más lisa que N. dombeyi y N. betuloides",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_nothofagus_nitida.html; Mathiasen et al. 2017, Bosque: https://revistabosque.org/index.php/bosque/article/download/407/265/1753",
+          "confianza": "alta"
+        },
+        "fruto_detalle": {
+          "valor": "cúpula sésil de 2–5 mm, 4 valvas con laminillas; 3 nueces aladas (central con 2 alas, laterales con 3)",
+          "fuente": "Trees and Shrubs Online, nothofagus/nothofagus-nitida/: https://www.treesandshrubsonline.org/articles/; Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_nothofagus_nitida.html",
+          "confianza": "alta"
+        },
+        "regeneracion_sustrato": {
+          "valor": "en bosque viejo de Chiloé, todas las plántulas estaban sobre troncos caídos",
+          "fuente": "Christie D.A. & Armesto J.J. (2003): https://repositorio-az.uc.cl/dspace/items/846afab4-44b5-4d2a-b21f-103653eae9da/full",
+          "confianza": "alta"
+        },
+        "rasgo_campo": {
+          "valor": "brote rojo-bronce en primavera; hoja chica romboidal y brillante; corteza más lisa que la de los otros coigües",
+          "fuente": "Trees and Shrubs Online, nothofagus/nothofagus-nitida/: https://www.treesandshrubsonline.org/articles/; Mathiasen et al. 2017",
+          "confianza": "alta"
         }
       },
       "relaciones": [
@@ -82,7 +128,9 @@
         "hojarasca: sin dato con fuente",
         "floracion_meses: Rodríguez et al. no da meses",
         "rebrota: sin dato con fuente"
-      ]
+      ],
+      "ficha": "docs/FICHA_VISUAL_COIGUE.md",
+      "receta": "docs/laminas/especies/nothofagus_nitida.json"
     },
     {
       "id": "nothofagus_dombeyi",
@@ -211,6 +259,67 @@
           "valor": "LC (UICN)",
           "fuente": "UICN Lista Roja: Preocupación menor (iucnTaxonID 61968097), vía GBIF https://api.gbif.org/v1/species/4020527/iucnRedListCategory",
           "confianza": "alta"
+        },
+        "hoja_forma": {
+          "valor": "aovado-oblonga a elíptica, más ancha en el tercio superior; base atenuada; ápice obtuso o redondeado",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_drimys_winteri.html",
+          "confianza": "alta"
+        },
+        "hoja_borde": {
+          "valor": "entero, algo recurvado",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_drimys_winteri.html",
+          "confianza": "alta"
+        },
+        "hoja_largo": {
+          "valor": "60–150 × 20–60",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_drimys_winteri.html; Trees and Shrubs Online, drimys/drimys-winteri/: https://www.treesandshrubsonline.org/articles/",
+          "confianza": "alta",
+          "unidad": "mm"
+        },
+        "hoja_disposicion": {
+          "valor": "alterna, agrupada al final de la ramilla (rosetas)",
+          "fuente": "Loewe et al. 1998, Monografía de canelo (INFOR): https://bibliotecadigital.infor.cl/server/api/core/bitstreams/c0b8cedc-250b-4ff8-9d71-156fd6b04065/content",
+          "confianza": "alta"
+        },
+        "hoja_enves": {
+          "valor": "glauco, blanquecino: cristales de cera que mantienen la fotosíntesis con la hoja mojada",
+          "fuente": "Feild et al. 1998, PNAS: https://donoghuelab.yale.edu/sites/default/files/080_feild_pnas98.pdf",
+          "confianza": "alta"
+        },
+        "ramificacion": {
+          "valor": "ramas en verticilos, como en las coníferas, con puntas ascendentes",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_drimys_winteri.html; Loewe et al. 1998 (INFOR)",
+          "confianza": "alta"
+        },
+        "flor_detalle": {
+          "valor": "umbelas al final de las ramas; 2–3 sépalos rojizos; 6–15 pétalos blanco nacarado",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_drimys_winteri.html",
+          "confianza": "alta"
+        },
+        "fruto_detalle": {
+          "valor": "grupos de 3–10 bayas por flor, negro-violáceas (FAC) o azul oscuro (TSO); 6–8 semillas reniformes negras",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_drimys_winteri.html; Trees and Shrubs Online, drimys/drimys-winteri/: https://www.treesandshrubsonline.org/articles/",
+          "confianza": "media"
+        },
+        "corteza": {
+          "valor": "lisa, blanda, gruesa (8,5 mm), gris ceniciento en árboles viejos y purpúrea en renovales; aromática y picante",
+          "fuente": "Loewe et al. 1998 (INFOR); Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_drimys_winteri.html",
+          "confianza": "alta"
+        },
+        "madera": {
+          "valor": "amarillo rosácea a castaño claro; sin vasos, solo traqueidas; 478 kg/m³ de densidad básica",
+          "fuente": "Loewe et al. 1998 (INFOR)",
+          "confianza": "alta"
+        },
+        "epifitas_hospedero": {
+          "valor": "mal hospedero: menos especies epífitas de lo esperado por azar",
+          "fuente": "Muñoz A.A. et al. (2003) Aust. J. Bot. 51: 381: https://publish.csiro.au/BT/BT02070",
+          "confianza": "alta"
+        },
+        "rasgo_campo": {
+          "valor": "envés blanco ceroso que se ve cuando el viento da vuelta las hojas; ramillas y pecíolos rojizos; ramas en pisos",
+          "fuente": "Feild et al. 1998; Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_drimys_winteri.html",
+          "confianza": "alta"
         }
       },
       "relaciones": [
@@ -231,7 +340,9 @@
         "hojarasca: sin dato",
         "floracion_meses: Rodríguez et al. dicen que depende de la latitud, sin meses",
         "rebrota: sin dato"
-      ]
+      ],
+      "ficha": "docs/FICHA_CANELO.md",
+      "receta": "docs/laminas/especies/drimys_winteri.json"
     },
     {
       "id": "eucryphia_cordifolia",
@@ -286,12 +397,67 @@
           "valor": "NT (UICN)",
           "fuente": "UICN Lista Roja: Casi amenazada (iucnTaxonID 33901), vía GBIF https://api.gbif.org/v1/species/3920287/iucnRedListCategory",
           "confianza": "alta"
+        },
+        "hoja_forma": {
+          "valor": "simple (nunca compuesta), oblongo-acorazonada, base cordada; ápice obtuso o acuminado",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_eucryphia_cordifolia.html; Trees and Shrubs Online, eucryphia/eucryphia-cordifolia/: https://www.treesandshrubsonline.org/articles/",
+          "confianza": "alta"
+        },
+        "hoja_borde": {
+          "valor": "entero en hojas adultas; aserrado en juveniles y renuevos",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_eucryphia_cordifolia.html; Tiscornia et al. 2023: https://rid.unrn.edu.ar/bitstream/20.500.12049/10968/1/",
+          "confianza": "alta"
+        },
+        "hoja_largo": {
+          "valor": "20–60 (FAC) a 50–100 (Morales 2013) × 25–35",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_eucryphia_cordifolia.html; Morales 2013: https://investigacion.conaf.cl/archivos/repositorio_documento/2018/11/004_2011-DOCUMENTOS_MONOGRAFIA_ULMO.pdf",
+          "confianza": "media",
+          "unidad": "mm"
+        },
+        "hoja_disposicion": {
+          "valor": "opuesta, decusada",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_eucryphia_cordifolia.html",
+          "confianza": "alta"
+        },
+        "hoja_enves": {
+          "valor": "blanquecino-grisáceo, pubescente, nervadura muy marcada",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_eucryphia_cordifolia.html; Trees and Shrubs Online, eucryphia/eucryphia-cordifolia/: https://www.treesandshrubsonline.org/articles/",
+          "confianza": "alta"
+        },
+        "flor_detalle": {
+          "valor": "solitaria, axilar, 4–6 cm; cáliz caliptrado; 4 pétalos blancos; estambres muy numerosos de anteras amarillo-rojizas",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_eucryphia_cordifolia.html; Smith-Ramírez et al. 2016: https://mapress.com/jib/article/view/22964",
+          "confianza": "alta"
+        },
+        "fruto_detalle": {
+          "valor": "cápsula leñosa de 1,5 × 1 cm que abre en 12–14 valvas; madura en 12–14 meses; semillas aladas",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_eucryphia_cordifolia.html; Fundación Philippi",
+          "confianza": "alta"
+        },
+        "polinizadores_chiloe": {
+          "valor": "137 especies en 10 temporadas; Bombus dahlbomii y Apis mellifera alternan la dominancia y suman el 50 % de las visitas",
+          "fuente": "Smith-Ramírez C. et al. (2014) Oecologia: https://repositorio-az.uc.cl/dspace/items/d20cebe8-f59f-48e4-bfab-0731d187ac30",
+          "confianza": "alta"
+        },
+        "corteza": {
+          "valor": "parda o gris-parda, lisa con fisuras longitudinales (las fuentes difieren)",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_eucryphia_cordifolia.html; Morales 2013",
+          "confianza": "media"
+        },
+        "rebrota": {
+          "valor": "forma rebrotes de raíz",
+          "fuente": "Escandón A.B. et al. (2013) For. Ecol. Manage. 310: 321: https://investigadores.anid.cl/es/public_search/work?id=250101",
+          "confianza": "alta"
+        },
+        "rasgo_campo": {
+          "valor": "hojas opuestas en cruz con base acorazonada y envés blanquecino; en verano, flores blancas de 4 pétalos",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_eucryphia_cordifolia.html",
+          "confianza": "alta"
         }
       },
       "relaciones": [],
-      "aprende": "Flor blanca grande de verano que en Chiloé recibe unas 54 especies de polinizadores: un nodo central de la red de insectos.",
+      "aprende": "Flor blanca grande de verano que en Chiloé recibe muchísimos polinizadores (54 especies según Aizen et al. 2002; 137 en diez temporadas según Smith-Ramírez et al. 2014): un nodo central de la red de insectos y de la miel de ulmo.",
       "pendiente": [
-        "relaciones: Aizen et al. 2002 registran 54 especies de polinizadores en Chiloé (Apis mellifera 37 % de las visitas), ninguna de la lista de fauna",
         "crecimiento: sin dato",
         "tolerancia_heladas: sin dato",
         "tolerancia_anegamiento: sin dato",
@@ -299,8 +465,10 @@
         "fijacion_n: sin fuente",
         "micorriza: sin fuente específica",
         "hojarasca: sin dato",
-        "rebrota: sin dato"
-      ]
+        "relaciones: polinizadores de Chiloé registrados como rasgo (polinizadores_chiloe); faltan en la lista de fauna (Bombus dahlbomii, Apis mellifera)"
+      ],
+      "ficha": "docs/FICHA_ULMO.md",
+      "receta": "docs/laminas/especies/eucryphia_cordifolia.json"
     },
     {
       "id": "weinmannia_trichosperma",
@@ -554,6 +722,67 @@
           "valor": "NT (UICN)",
           "fuente": "UICN Lista Roja: Casi amenazada (iucnTaxonID 32029), vía GBIF https://api.gbif.org/v1/species/5285976/iucnRedListCategory",
           "confianza": "alta"
+        },
+        "hoja_forma": {
+          "valor": "linear-lanceolada, sésil, base decurrente; ápice muy rígido y punzante",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_podocarpus_nubigena.html; Trees and Shrubs Online: https://www.treesandshrubsonline.org/articles/podocarpus/podocarpus-nubigenus/",
+          "confianza": "alta"
+        },
+        "hoja_largo": {
+          "valor": "15–30 × 2–4",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_podocarpus_nubigena.html; The Gymnosperm Database: https://www.conifers.org/po/Podocarpus_nubigenus.php; Trees and Shrubs Online: https://www.treesandshrubsonline.org/articles/podocarpus/podocarpus-nubigenus/",
+          "confianza": "alta",
+          "unidad": "mm"
+        },
+        "hoja_disposicion": {
+          "valor": "alternas en espiral, radiando alrededor de la ramilla (no en dos planos)",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_podocarpus_nubigena.html",
+          "confianza": "alta"
+        },
+        "hoja_enves": {
+          "valor": "dos bandas estomáticas blanco plateadas, anchas y muy notorias",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_podocarpus_nubigena.html; Trees and Shrubs Online: https://www.treesandshrubsonline.org/articles/podocarpus/podocarpus-nubigenus/",
+          "confianza": "alta"
+        },
+        "ramificacion": {
+          "valor": "ramas ascendentes, verticiladas; modelo de Massart en el género",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_podocarpus_nubigena.html; The Gymnosperm Database: https://www.conifers.org/po/Podocarpus_nubigenus.php",
+          "confianza": "alta"
+        },
+        "sexo": {
+          "valor": "dioica: árboles macho y árboles hembra",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_podocarpus_nubigena.html",
+          "confianza": "alta"
+        },
+        "conos_masculinos": {
+          "valor": "amentos axilares en grupos de 2–4, cilíndricos, 10–25 mm, crema a café amarillento",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_podocarpus_nubigena.html; The Gymnosperm Database: https://www.conifers.org/po/Podocarpus_nubigenus.php; Trees and Shrubs Online: https://www.treesandshrubsonline.org/articles/podocarpus/podocarpus-nubigenus/",
+          "confianza": "alta"
+        },
+        "fruto_detalle": {
+          "valor": "semilla ovoide de 8–9 mm, púrpura, sobre un receptáculo carnoso de 7–8 mm, rojo (FAC) a púrpura negruzco (GDB; TSO)",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_podocarpus_nubigena.html; The Gymnosperm Database: https://www.conifers.org/po/Podocarpus_nubigenus.php; Trees and Shrubs Online: https://www.treesandshrubsonline.org/articles/podocarpus/podocarpus-nubigenus/",
+          "confianza": "media"
+        },
+        "corteza": {
+          "valor": "lisa de joven; luego escamosa con fisuras; en viejos se desprende en tiras largas y gruesas",
+          "fuente": "Trees and Shrubs Online: https://www.treesandshrubsonline.org/articles/podocarpus/podocarpus-nubigenus/; The Gymnosperm Database: https://www.conifers.org/po/Podocarpus_nubigenus.php",
+          "confianza": "alta"
+        },
+        "madera": {
+          "valor": "amarilla con vetas rojizas, semipesada, resistente",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_podocarpus_nubigena.html",
+          "confianza": "alta"
+        },
+        "nodulos_radicales": {
+          "valor": "nódulos esféricos de 1,2 mm en hileras sobre raíces finas; micorriza vesículo-arbuscular, 80 % de colonización",
+          "fuente": "Godoy R. & Mayr R. (1989) Bosque 10: http://revistas.uach.cl/pdf/bosque/v10n1-2/art10.pdf",
+          "confianza": "alta"
+        },
+        "rasgo_campo": {
+          "valor": "hoja que pica, con dos franjas blancas en el envés; copa cónica densa",
+          "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_podocarpus_nubigena.html; Trees and Shrubs Online: https://www.treesandshrubsonline.org/articles/podocarpus/podocarpus-nubigenus/",
+          "confianza": "alta"
         }
       },
       "relaciones": [
@@ -577,8 +806,11 @@
         "fijacion_n: sin fuente",
         "hojarasca: sin dato",
         "floracion_meses: conífera, sin meses con fuente",
-        "rebrota: sin dato"
-      ]
+        "rebrota: sin dato",
+        "nombre local en Chiloé: FAC dice mañío hembra; Willson et al. 1996, mañío macho"
+      ],
+      "ficha": "docs/FICHA_MANIO.md",
+      "receta": "docs/laminas/especies/podocarpus_nubigenus.json"
     },
     {
       "id": "fitzroya_cupressoides",
@@ -1888,7 +2120,7 @@
       "nombre": "Botellita, vochi-vochi",
       "cientifico": "Mitraria coccinea Cav.",
       "familia": "Gesneriaceae",
-      "grupo": "epifita",
+      "grupo": "trepadora",
       "gremio": "matorral",
       "origen": "nativa",
       "presencia_chiloe": {
@@ -1928,6 +2160,52 @@
           "valor": "NE (No Evaluada, UICN)",
           "fuente": "Categoría UICN según GBIF: https://api.gbif.org/v1/species/5591192/iucnRedListCategory",
           "confianza": "alta"
+        },
+        "forma_vida": {
+          "valor": "hemiepífita secundaria: germina en el suelo y trepa; todas las plantas trepadas seguían enraizadas en el suelo",
+          "fuente": "Salinas F., Arroyo M.T.K. & Armesto J.J. (2010) Ann. Missouri Bot. Gard. 97: 117-127: https://gesneriads.info/wp-content/uploads/2019/11/2010-Salinas-et-al-Coronanthereae.pdf",
+          "confianza": "alta"
+        },
+        "frecuencia_arboles": {
+          "valor": "en el 29 % de 1.071 árboles de más de 5 cm de DAP en Chiloé",
+          "fuente": "Salinas et al. 2010",
+          "confianza": "alta"
+        },
+        "hoja_forma": {
+          "valor": "opuesta, ovada a elíptica, ápice agudo, dentada",
+          "fuente": "Trees and Shrubs Online, mitraria/mitraria-coccinea/: https://www.treesandshrubsonline.org/articles/; SIB: https://sib.gob.ar/especies/mitraria-coccinea",
+          "confianza": "alta"
+        },
+        "hoja_largo": {
+          "valor": "13–38 × 6–19",
+          "fuente": "Trees and Shrubs Online, mitraria/mitraria-coccinea/: https://www.treesandshrubsonline.org/articles/; SIB",
+          "confianza": "alta",
+          "unidad": "mm"
+        },
+        "flor_detalle": {
+          "valor": "solitaria, axilar y colgante; corola tubular inflada al medio, roja escarlata, 38,6 × 7 mm en Chiloé; 4 estambres que sobresalen",
+          "fuente": "Trees and Shrubs Online, mitraria/mitraria-coccinea/: https://www.treesandshrubsonline.org/articles/; Smith-Ramírez 1993: https://rchn.biologiachile.cl/pdfs/1993/1/Smith-Ramirez_1993.pdf",
+          "confianza": "media"
+        },
+        "floracion_meses": {
+          "valor": "diciembre a abril, máximo enero–febrero (Chiloé)",
+          "fuente": "Smith-Ramírez 1993: https://rchn.biologiachile.cl/pdfs/1993/1/Smith-Ramirez_1993.pdf; iNaturalist",
+          "confianza": "alta"
+        },
+        "fruto_detalle": {
+          "valor": "baya verdosa de 10–15 mm con el estilo persistente de hasta ~38 mm; semillas numerosas en pulpa gelatinosa",
+          "fuente": "Trees and Shrubs Online, mitraria/mitraria-coccinea/: https://www.treesandshrubsonline.org/articles/; SIB; Salinas et al. 2010",
+          "confianza": "alta"
+        },
+        "nectar": {
+          "valor": "23 ± 11 µl por flor con 26,3 % de azúcar: de los mayores entre las flores del picaflor en Chiloé",
+          "fuente": "Smith-Ramírez 1993 (tabla reconstruida)",
+          "confianza": "media"
+        },
+        "rasgo_campo": {
+          "valor": "hojas opuestas dentadas con pelos, flor colgante roja y pilosa con 4 estambres que asoman, baya verde con estilo largo",
+          "fuente": "Salinas et al. 2010; Trees and Shrubs Online, mitraria/mitraria-coccinea/: https://www.treesandshrubsonline.org/articles/",
+          "confianza": "alta"
         }
       },
       "relaciones": [
@@ -1938,9 +2216,8 @@
           "confianza": "media"
         }
       ],
-      "aprende": "La botellita enseña la vida colgada: crece sobre los troncos húmedos del bosque y paga al picaflor con mucho néctar.",
+      "aprende": "La botellita enseña que no todo lo que cuelga de un tronco es epífita: nace en el suelo, trepa con raíces de los nudos y paga al picaflor con mucho néctar.",
       "pendiente": [
-        "floracion_meses: sin meses con fuente para Chile (Trees and Shrubs Online da mayo-junio en cultivo en Gran Bretaña)",
         "crecimiento: sin dato con fuente",
         "tolerancia_anegamiento: sin dato con fuente",
         "ph_suelo: sin dato con fuente",
@@ -1948,7 +2225,9 @@
         "dispersion: sin dato con fuente",
         "rebrota: sin dato con fuente",
         "estado_conservacion (RCE, MMA Chile): no verificado; solo se registra la categoría UICN."
-      ]
+      ],
+      "ficha": "docs/FICHA_BOTELLITA.md",
+      "receta": "docs/laminas/especies/mitraria_coccinea.json"
     },
     {
       "id": "parablechnum_chilense",
