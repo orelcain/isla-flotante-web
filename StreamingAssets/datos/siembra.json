@@ -1,0 +1,82 @@
+{
+  "nota": "Cómo prende lo que se siembra (Siembra.cs). Una siembra queda pendiente hasta contar dias_cama_humeda días con temperatura suficiente; entonces prende o no, según la profundidad, la cama húmeda (la hora de siembra decide cuánto del primer día cuenta) y lo propio de la especie. La LUNA se muestra pero NO tiene efecto: no hay evidencia controlada (Mayoral et al. 2020). docs/investigacion_siembra.json.",
+  "dias_cama_humeda": {
+    "valor": 3,
+    "unidad": "días que la semilla o el trasplante necesita la cama húmeda para prender",
+    "fuente": "La cama húmeda al sembrar y mantenida así ~3 días da una emergencia alta y predecible (docs/investigacion_siembra.json, tema humedad_suelo).",
+    "confianza": "media"
+  },
+  "lluvia_moja_cama_mm": {
+    "valor": 1,
+    "unidad": "mm de lluvia en el día que basta para mojar la cama de siembra (el primer centímetro)",
+    "fuente": "DECISIÓN DE DISEÑO: 1 mm es el umbral usual de «día con lluvia» en climatología (OMM); moja la superficie aunque el sustrato de abajo esté seco por las raíces.",
+    "confianza": "baja"
+  },
+  "umbral_cama_humeda": {
+    "valor": 0.5,
+    "unidad": "fracción del agua que cabe en el sustrato (si no llovió ese día)",
+    "fuente": "DECISIÓN DE DISEÑO: «húmeda» = al menos la mitad del agua útil que guarda el sustrato. Falta un umbral medido de imbibición por especie.",
+    "confianza": "baja"
+  },
+  "piso_cama_seca": {
+    "valor": 0.2,
+    "unidad": "fracción del prendimiento que queda si la cama no estuvo húmeda ningún día",
+    "fuente": "DECISIÓN DE DISEÑO: «germinó y se secó» (la plántula muere si se seca antes de emerger). Sin cifra medida; se interpola en línea recta con los días húmedos.",
+    "confianza": "baja"
+  },
+  "espera_frio_max_dias": {
+    "valor": 60,
+    "unidad": "días que una semilla espera en suelo frío antes de perderse",
+    "fuente": "DECISIÓN DE DISEÑO: sin dato de cuánto sobrevive la semilla sembrada bajo su temperatura de germinación.",
+    "confianza": "baja"
+  },
+  "pasto_emergencia_0cm": {
+    "valor": 0.87,
+    "unidad": "fracción que emerge sembrada en superficie",
+    "fuente": "Holcus lanatus: 87 % en superficie, 76 % a 1 cm, 5 % a 2 cm (Trapaidze & Gogiya, en docs/investigacion_siembra.json)",
+    "confianza": "media"
+  },
+  "pasto_emergencia_1cm": {
+    "valor": 0.76,
+    "unidad": "fracción que emerge a 1 cm",
+    "fuente": "Ídem",
+    "confianza": "media"
+  },
+  "pasto_emergencia_2cm": {
+    "valor": 0.05,
+    "unidad": "fracción que emerge a 2 cm",
+    "fuente": "Ídem",
+    "confianza": "media",
+    "nota": "La Lotus tiene su óptimo a 0,5–1 cm; se usa la curva del Holcus (el pasto dominante de la mezcla)."
+  },
+  "pasto_temperatura_minima_c": {
+    "valor": 7,
+    "unidad": "°C (temperatura bajo la que no germina)",
+    "fuente": "Holcus lanatus germina desde ~7 °C (docs/investigacion_siembra.json); la Lotus germina desde 5 °C pero muy lento bajo 10–12 °C. Época de siembra recomendada en el sur: feb–mar o ago–sep (Boletín INIA 368).",
+    "confianza": "media"
+  },
+  "nalca_prendimiento": {
+    "valor": 0.8,
+    "unidad": "fracción de rizomas que prenden con la cama húmeda",
+    "fuente": "SIN FUENTE para el rizoma: se plantan en receso (may–ago) y rebrotan en primavera. La única cifra es de semilla: 86 % en un claro de Chiloé y 0 % bajo dosel (Figueroa & Hernández 2001).",
+    "confianza": "baja"
+  },
+  "nalca_hoyo_cm": {
+    "valor": 15,
+    "unidad": "cm (hoyo para el rizoma = el suelo mínimo de la nalca)",
+    "fuente": "SIN FUENTE de profundidad de plantación del rizoma: se usa el suelo mínimo de la nalca (nalca.json)",
+    "confianza": "baja"
+  },
+  "nalca_chica_prendimiento": {
+    "valor": 0.8,
+    "unidad": "fracción de trozos de estolón que prenden",
+    "fuente": "SIN FUENTE: se plantan trozos de estolón en primavera (docs/investigacion_siembra.json).",
+    "confianza": "baja"
+  },
+  "deu_prendimiento": {
+    "valor": 0.7,
+    "unidad": "fracción de plantines que prenden",
+    "fuente": "SIN FUENTE para el deu. Referencia de otro árbol: coigüe plantado bajo dosel en Chiloé, ~70 % vivo a 5 años (Bannister et al. 2021).",
+    "confianza": "baja"
+  }
+}
