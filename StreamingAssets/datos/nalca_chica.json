@@ -1,0 +1,38 @@
+{
+  "nota": "Nalca chica (Gunnera magellanica): la prima rastrera de la nalca, nativa de Chiloé (53 registros en GBIF), con la misma simbiosis con Nostoc. Alfombra de hojas de riñón pegadas al suelo; coloniza grava glaciar sin suelo formado si está húmeda. docs/investigacion_fijadores_nitrogeno.json. No hay datos de cuánto amarra el suelo: no amarra el borde.",
+  "fijacion_n_kg_ha_anio": {
+    "valor": 4.3,
+    "unidad": "kg de N por ha y año (cobertura completa, biomasa ~1,3 kg/m²)",
+    "fuente": "Troncoso, C. et al. (2013). Revista Chilena de Historia Natural 86:345-355: 4,3 (EE 2,3) kg N/ha/año con 1311,8 g/m² de biomasa de Gunnera, reducción de acetileno en una cronosecuencia glaciar. Hasta 30 kg N/ha/año en antepaíses glaciares (Pérez et al. 2017, Arctic, Antarctic, and Alpine Research 49(1):29-42).",
+    "confianza": "alta",
+    "nota": "Medido en Magallanes y Tierra del Fuego; en Chiloé no hay medición."
+  },
+  "suelo_minimo_m": {
+    "valor": 0,
+    "unidad": "m de sustrato",
+    "fuente": "Coloniza sustrato glaciar recién expuesto, sin suelo formado (Pérez et al. 2016, New Zealand Journal of Botany 54:156-174).",
+    "confianza": "media"
+  },
+  "humedad_minima": {
+    "valor": 0.3,
+    "unidad": "fracción del agua que cabe en el sustrato (o lluvia reciente si casi no hay sustrato)",
+    "fuente": "SUPUESTO sobre lo cualitativo: crece en lugares húmedos (POWO; guía de iNaturalist). Falta un umbral medido.",
+    "confianza": "baja"
+  },
+  "tasa_cobertura_anio": {
+    "valor": 0.8,
+    "unidad": "1/año (crecimiento logístico de la cobertura)",
+    "fuente": "DECISIÓN DE DISEÑO sobre lo cualitativo: crecimiento lento, una mata se extiende hasta ~1 m (World Plants; RHS). Falta la tasa medida.",
+    "confianza": "baja"
+  },
+  "propagacion_anio": {
+    "valor": 0.15,
+    "unidad": "cobertura que una celda cubierta siembra en cada vecina por año",
+    "fuente": "DECISIÓN DE DISEÑO: rizoma rastrero lento (sin avance medido).",
+    "confianza": "baja"
+  },
+  "cobertura_siembra": { "valor": 0.1, "unidad": "cobertura al sembrar", "fuente": "decisión de diseño: unos trozos de rizoma", "confianza": "alta" },
+  "hoja_ancho_m": { "valor": 0.07, "unidad": "m", "fuente": "Hojas reniformes de 5–9 cm (World Plants id 5829; guía de iNaturalist, taxón 1597419)", "confianza": "media" },
+  "mes_fruto_inicio": { "valor": 2, "unidad": "mes", "fuente": "Frutos rojos (≤ 5 mm) maduros de febrero a abril (Malvinas: guía de iNaturalist; falklands-southatlantic.com «Pig vine»)", "confianza": "baja" },
+  "mes_fruto_fin": { "valor": 4, "unidad": "mes", "fuente": "Frutos maduros de febrero a abril (Malvinas)", "confianza": "baja" }
+}
