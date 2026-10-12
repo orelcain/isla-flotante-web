@@ -472,5 +472,24 @@
     "unidad": "m/s en la escena",
     "fuente": "decisión de diseño: solo dibujo. Las nubes que pinta la acuarela derivan en la dirección del viento de clima.json (viento_direccion), a una velocidad de escena: la isla mide 4 m y una nube real a 10 m/s la cruzaría en medio segundo. Cuánto cubren sale de dias_lluvia_fraccion_mensual (agua.json).",
     "confianza": "alta"
+  },
+  "nalca_mes_flor_inicio": {
+    "valor": 9,
+    "unidad": "mes",
+    "fuente": "Ficha de Gunnera tinctoria en invasoras.pt (Portugal), citada en docs/investigacion_musgos_liquenes_nalca.json: florece de marzo a junio en las Azores (≈ septiembre a diciembre en el hemisferio sur), espigas de hasta 1 m, normalmente 3–4 por planta.",
+    "confianza": "media",
+    "nota": "Llevado del hemisferio norte; falta la fenología medida en Chiloé."
+  },
+  "nalca_mes_flor_fin": {
+    "valor": 12,
+    "unidad": "mes",
+    "fuente": "Ficha de Gunnera tinctoria en invasoras.pt (Portugal), citada en docs/investigacion_musgos_liquenes_nalca.json: florece de marzo a junio en las Azores (≈ septiembre a diciembre en el hemisferio sur), espigas de hasta 1 m, normalmente 3–4 por planta.",
+    "confianza": "media"
+  },
+  "nalca_espiga_m": {
+    "valor": 1.0,
+    "unidad": "m (largo máximo de la espiga)",
+    "fuente": "Ficha de Gunnera tinctoria en invasoras.pt (Portugal), citada en docs/investigacion_musgos_liquenes_nalca.json: florece de marzo a junio en las Azores (≈ septiembre a diciembre en el hemisferio sur), espigas de hasta 1 m, normalmente 3–4 por planta.",
+    "confianza": "alta"
   }
 }
