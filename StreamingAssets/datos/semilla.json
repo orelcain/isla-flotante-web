@@ -502,6 +502,44 @@
     "confianza": "alta",
     "nota": "N = 2950 ± 440 ppm (0.295 ± 0.044 %). En la misma tabla, C = 34800 ppm (3.48 %). Una revisión de 2025 (Lodders, Bergemann y Palme, Space Science Reviews) indica que el N de las CI quedó significativamente más bajo; ese valor nuevo no se verificó."
   },
+  "factor_meteorizacion_ordinaria": {
+    "valor": 1,
+    "unidad": "veces el ritmo de producción de suelo de referencia",
+    "fuente": "docs/investigacion_meteorizacion_por_tipo.json (12-10-2026). Referencia (= 1): condrita ordinaria H; en clima templado húmedo pierde ~la mitad del metal en 2–9 mil años (Bischoff et al. 2022). El ritmo de referencia (produccion_suelo_ref_mm_kanio, Heimsath) es de rocas silicatadas compactas: la ordinaria es lo más parecido.",
+    "confianza": "media"
+  },
+  "factor_meteorizacion_carbonacea": {
+    "valor": 5,
+    "unidad": "veces el ritmo de referencia",
+    "fuente": "docs/investigacion_meteorizacion_por_tipo.json (12-10-2026). CI: porosidad ~35 % frente a ~7 % de la H; Oued Chebeika 002 se cubrió de yeso en 3–4 meses y tuvo hongos en < 1 año; Orgueil forma vetas de sulfato con la humedad del aire del museo. Rango 2–20.",
+    "confianza": "baja",
+    "nota": "Indicador indirecto (porosidad y alteración observada), no una tasa medida en el mismo clima. El ORDEN entre tipos tiene confianza media."
+  },
+  "factor_meteorizacion_metalica": {
+    "valor": 0.1,
+    "unidad": "veces el ritmo de referencia",
+    "fuente": "docs/investigacion_meteorizacion_por_tipo.json (12-10-2026). Hierro octaedrita: los fragmentos de Twannberg (Suiza húmeda) conservan metal tras ~176 mil años (Hofmann et al. 2023); Smith et al. 2019: edades terrestres de cientos de miles de años en 47 hierros. Rango 0,03–0,5 (el cloro del aerosol marino de Chiloé acelera la corrosión).",
+    "confianza": "baja",
+    "nota": "El hierro no hace suelo de silicatos sino herrumbre (Fe, Ni): casi todo lo demás debe traerlo el polvo."
+  },
+  "factor_regolito_inicial_ordinaria": {
+    "valor": 1,
+    "unidad": "veces espesor_regolito_inicial_m",
+    "fuente": "Referencia (= 1). Popova, O. et al. (2011). Very low strengths of interplanetary meteoroids and small asteroids. Meteoritics & Planetary Science 46(10):1525-1550. https://doi.org/10.1111/j.1945-5100.2011.01247.x (resistencia a la compresión: carbonáceas ~1 MPa o menos; condritas ordinarias decenas a cientos de MPa; hierros cientos de MPa). El paso de resistencia a cuánto regolito suelto trae la roca al llegar es DECISIÓN DE DISEÑO: lo frágil llega desmenuzado, el hierro llega entero.",
+    "confianza": "baja"
+  },
+  "factor_regolito_inicial_carbonacea": {
+    "valor": 4,
+    "unidad": "veces espesor_regolito_inicial_m",
+    "fuente": "Popova, O. et al. (2011). Very low strengths of interplanetary meteoroids and small asteroids. Meteoritics & Planetary Science 46(10):1525-1550. https://doi.org/10.1111/j.1945-5100.2011.01247.x (resistencia a la compresión: carbonáceas ~1 MPa o menos; condritas ordinarias decenas a cientos de MPa; hierros cientos de MPa). El paso de resistencia a cuánto regolito suelto trae la roca al llegar es DECISIÓN DE DISEÑO: lo frágil llega desmenuzado, el hierro llega entero.",
+    "confianza": "baja"
+  },
+  "factor_regolito_inicial_metalica": {
+    "valor": 0.1,
+    "unidad": "veces espesor_regolito_inicial_m",
+    "fuente": "Popova, O. et al. (2011). Very low strengths of interplanetary meteoroids and small asteroids. Meteoritics & Planetary Science 46(10):1525-1550. https://doi.org/10.1111/j.1945-5100.2011.01247.x (resistencia a la compresión: carbonáceas ~1 MPa o menos; condritas ordinarias decenas a cientos de MPa; hierros cientos de MPa). El paso de resistencia a cuánto regolito suelto trae la roca al llegar es DECISIÓN DE DISEÑO: lo frágil llega desmenuzado, el hierro llega entero.",
+    "confianza": "baja"
+  },
   "caida_pct_ordinaria": {
     "valor": 90.3,
     "unidad": "% de las caídas",
