@@ -546,6 +546,36 @@
     "fuente": "Popova, O. et al. (2011). Very low strengths of interplanetary meteoroids and small asteroids. Meteoritics & Planetary Science 46(10):1525-1550. https://doi.org/10.1111/j.1945-5100.2011.01247.x (resistencia a la compresión: carbonáceas ~1 MPa o menos; condritas ordinarias decenas a cientos de MPa; hierros cientos de MPa). El paso de resistencia a cuánto regolito suelto trae la roca al llegar es DECISIÓN DE DISEÑO: lo frágil llega desmenuzado, el hierro llega entero.",
     "confianza": "baja"
   },
+  "trabajo_acciones_anio": {
+    "valor": 12,
+    "unidad": "jornadas de pala o picota por año",
+    "fuente": "decisión de diseño (12-10-2026): una jornada por mes. Limita el trabajo para que cada movida sea una decisión; el juego se pausa mientras se mueve tierra.",
+    "confianza": "alta"
+  },
+  "pala_carga_kg": {
+    "valor": 30,
+    "unidad": "kg por jornada de pala",
+    "fuente": "decisión de diseño: media carretilla (una carretilla de jardín lleva ~60–80 kg de tierra; una palada, 5–7 kg). Es lo que se mueve en una jornada sobre una isla de 4 m: el resto del día es buscar dónde dejarlo.",
+    "confianza": "alta"
+  },
+  "picota_kg_jornada_ordinaria": {
+    "valor": 15,
+    "unidad": "kg de roca rota por jornada",
+    "fuente": "Popova, O. et al. (2011). Very low strengths of interplanetary meteoroids and small asteroids. Meteoritics & Planetary Science 46(10):1525-1550. https://doi.org/10.1111/j.1945-5100.2011.01247.x (carbonáceas ~1 MPa o menos; ordinarias decenas a cientos de MPa; hierros cientos de MPa y dúctiles). Kilos por jornada: DECISIÓN DE DISEÑO escalada por esas resistencias (la ordinaria se parte con esfuerzo).",
+    "confianza": "baja"
+  },
+  "picota_kg_jornada_carbonacea": {
+    "valor": 120,
+    "unidad": "kg de roca rota por jornada",
+    "fuente": "Popova, O. et al. (2011). Very low strengths of interplanetary meteoroids and small asteroids. Meteoritics & Planetary Science 46(10):1525-1550. https://doi.org/10.1111/j.1945-5100.2011.01247.x (carbonáceas ~1 MPa o menos; ordinarias decenas a cientos de MPa; hierros cientos de MPa y dúctiles). La carbonácea es ~10–100 veces más débil que la ordinaria: se desmenuza. Kilos por jornada: decisión de diseño.",
+    "confianza": "baja"
+  },
+  "picota_kg_jornada_metalica": {
+    "valor": 0.5,
+    "unidad": "kg de roca rota por jornada",
+    "fuente": "Popova, O. et al. (2011). Very low strengths of interplanetary meteoroids and small asteroids. Meteoritics & Planetary Science 46(10):1525-1550. https://doi.org/10.1111/j.1945-5100.2011.01247.x (carbonáceas ~1 MPa o menos; ordinarias decenas a cientos de MPa; hierros cientos de MPa y dúctiles). El hierro meteórico no se rompe a golpes: se abolla (es dúctil). Lo que suelta es la costra de óxido. Kilos por jornada: decisión de diseño.",
+    "confianza": "baja"
+  },
   "caida_pct_ordinaria": {
     "valor": 90.3,
     "unidad": "% de las caídas",
