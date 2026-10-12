@@ -1,0 +1,41 @@
+{
+  "nota": "Deu (Coriaria ruscifolia): arbusto nativo de Chiloé (13 registros en GBIF, escaso) con Frankia en sus raíces; saca casi todo su N del aire y no deja de fijar aunque el suelo tenga N. Coloniza grava y roca volcánica. Fruto TÓXICO (coriamirtina, tutina). docs/investigacion_fijadores_nitrogeno.json. Varios números vienen de un ANÁLOGO (Coriaria arborea, Nueva Zelanda). No hay datos de cuánto amarra el suelo: no amarra el borde.",
+  "fijacion_n_kg_ha_anio": {
+    "valor": 11,
+    "unidad": "kg de N por ha y año (matorral cerrado joven)",
+    "fuente": "ANÁLOGO: Coriaria arborea en el sitio de 7 años de la cronosecuencia de Franz Josef, Nueva Zelanda (Menge, D. N. L. & Hedin, L. O. 2009. Ecology 90(8):2190-2201, doi 10.1890/08-0877.1). Para C. ruscifolia solo se midió la proporción: ~100 % de su N viene del aire (Chaia et al. 2019, Symbiosis 77:237-247).",
+    "confianza": "media",
+    "nota": "Falta la tasa medida para C. ruscifolia en Chile."
+  },
+  "suelo_minimo_m": {
+    "valor": 0,
+    "unidad": "m de sustrato",
+    "fuente": "ANÁLOGO: C. arborea coloniza ceniza y lapilli desnudos tras la erupción del Tarawera de 1886 (Walker, L. R. et al. 2003. Journal of Vegetation Science 14(2):277-290). El género ocupa lechos de río y cerros volcánicos (Berckx et al. 2024, FEMS Microbiology Ecology 100(5):fiae042).",
+    "confianza": "media"
+  },
+  "tasa_cobertura_anio": {
+    "valor": 0.5,
+    "unidad": "1/año (crecimiento logístico de la cobertura)",
+    "fuente": "DECISIÓN DE DISEÑO: no se encontró una tasa de crecimiento medida para el deu. Más lento que la nalca chica en cubrir porque es un arbusto.",
+    "confianza": "baja"
+  },
+  "propagacion_anio": {
+    "valor": 0.08,
+    "unidad": "cobertura que una celda cubierta siembra en cada vecina por año",
+    "fuente": "DECISIÓN DE DISEÑO: sin dato de dispersión.",
+    "confianza": "baja"
+  },
+  "cobertura_siembra": { "valor": 0.1, "unidad": "cobertura al sembrar", "fuente": "decisión de diseño: una plántula nodulada (las plántulas solo sobreviven noduladas, Walker et al. 2003)", "confianza": "alta" },
+  "alto_m": {
+    "valor": 1.2,
+    "unidad": "m (alto del arbusto con la celda cubierta)",
+    "fuente": "Las fichas no concuerdan: arbusto de ~1 m o arbolito de hasta 7 m (Wikipedia en español «Coriaria ruscifolia», sin citas). Se dibuja el arbusto bajo de sitios pobres.",
+    "confianza": "baja"
+  },
+  "hoja_largo_m": {
+    "valor": 0.04,
+    "unidad": "m",
+    "fuente": "Hojas opuestas en dos filas, ovadas a lanceoladas, de 0,5-7,5 cm (Wikipedia en español, sin citas; falta una flora chilena)",
+    "confianza": "baja"
+  }
+}
