@@ -447,5 +447,42 @@
     "unidad": "hex sRGB",
     "fuente": "Polytrichum juniperinum seco: hojas cerradas contra el tallo, aristas pardo-rojizas; mediana en fotos (informe de musgos 11-10-2026: Villagrán, Barrera, Cuvertino y García 2003, Musgos de la Isla Grande de Chiloé (Bol. MNHN 52:17-44); fotos iNaturalist CC0/CC-BY/CC-BY-SA en C:/Users/orelc/ia/referencias/musgo)",
     "confianza": "media-baja"
+  },
+  "lluvia_velocidad_gota_m_s": {
+    "valor": 6.5,
+    "unidad": "m/s",
+    "fuente": "Gunn, R. & Kinzer, G. D. (1949). The terminal velocity of fall for water droplets in stagnant air. Journal of Meteorology 6(4):243-248. https://doi.org/10.1175/1520-0469(1949)006<0243:TTVOFF>2.0.CO;2 (gota de 2 mm: 6,49 m/s)",
+    "confianza": "alta",
+    "nota": "Velocidad de las gotas que se dibujan cuando llueve en la simulación (isla.LluviaHoy). El largo del trazo es lo que cae en un cuadro de 1/60 s."
+  },
+  "lluvia_trazos_por_mm_dia": {
+    "valor": 14,
+    "unidad": "trazos dibujados por mm/día de lluvia",
+    "fuente": "decisión de diseño: cuántas gotas se DIBUJAN por cada mm/día que llueve en la simulación (no es un conteo real de gotas). Con la lluvia media de un día lluvioso de Chiloé (~7 mm, agua.json) salen ~100 trazos.",
+    "confianza": "alta"
+  },
+  "lluvia_trazos_tope": {
+    "valor": 320,
+    "unidad": "trazos",
+    "fuente": "decisión de diseño: tope de dibujo (rendimiento en el celular)",
+    "confianza": "alta"
+  },
+  "nubes_cantidad_base": {
+    "valor": 5,
+    "unidad": "nubes dibujadas",
+    "fuente": "decisión de diseño: nubes con fracción de días de lluvia 0; se suman nubes_por_fraccion_lluvia × la fracción de días con lluvia del mes (agua.json, NASA POWER). Junio-julio, el mes más lluvioso, tiene el cielo más cargado.",
+    "confianza": "alta"
+  },
+  "nubes_por_fraccion_lluvia": {
+    "valor": 14,
+    "unidad": "nubes por unidad de fracción de días de lluvia",
+    "fuente": "decisión de diseño (ver nubes_cantidad_base)",
+    "confianza": "alta"
+  },
+  "nubes_velocidad_dibujo_m_s": {
+    "valor": 0.35,
+    "unidad": "m/s en la escena",
+    "fuente": "decisión de diseño: solo dibujo. Las nubes cruzan en la dirección del viento de clima.json (viento_direccion), pero a una velocidad de escena: la isla mide 4 m y una nube real a 10 m/s la cruzaría en medio segundo.",
+    "confianza": "alta"
   }
 }
