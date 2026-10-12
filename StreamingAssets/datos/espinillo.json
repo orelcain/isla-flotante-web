@@ -1,0 +1,130 @@
+{
+  "nota": "Espinillo o tojo (Ulex europaeus): arbusto espinoso europeo, INVASOR en Chiloé. Llega solo (no se siembra): fija mucho N, pero ahoga lo que crece bajo él, parte de su N se lava y deja un banco de semillas por décadas. Se arranca con una jornada de trabajo, pero rebrota del banco. docs/investigacion_fijadores_nitrogeno.json. No hay datos de cuánto amarra el suelo: no amarra el borde.",
+  "llegada_prob_anio": {
+    "valor": 0.08,
+    "unidad": "probabilidad por año de que llegue una semilla que germine (traída por aves, viento o barro)",
+    "fuente": "DECISIÓN DE DISEÑO: no hay una tasa de llegada a un islote. En Chiloé el espinillo pasó de cubrir el 0,31 % de la isla en 2000 al 1,40 % en 2021 (Espinoza Sepúlveda, D. I. 2024, memoria de Ingeniería Forestal, Universidad de Chile, repositorio.uchile.cl/handle/2250/208757): la fuente de semillas está cerca.",
+    "confianza": "baja"
+  },
+  "suelo_minimo_llegada_m": {
+    "valor": 0.02,
+    "unidad": "m de sustrato donde germina la semilla que llega",
+    "fuente": "DECISIÓN DE DISEÑO: invade praderas, cultivos y humedales (Espinoza Sepúlveda 2024); sin umbral de suelo medido.",
+    "confianza": "baja"
+  },
+  "tasa_cobertura_anio": {
+    "valor": 1.0,
+    "unidad": "1/año (crecimiento logístico de la cobertura de una celda)",
+    "fuente": "DECISIÓN DE DISEÑO apoyada en su crecimiento rápido: rodales jóvenes producen 10.000-15.000 kg de materia seca por ha y año (Egunjobi 1969, citado por Magesan, Wang & Clinton 2012, New Zealand Journal of Ecology 36(1):21-28).",
+    "confianza": "baja"
+  },
+  "semillas_m2_anio": {
+    "valor": 3000,
+    "unidad": "semillas viables que caen en la isla por m² cubierto y por año (las que salen más allá del borde no cuentan)",
+    "fuente": "DECISIÓN DE DISEÑO: sin producción de semillas verificada para Chiloé; se elige para que una mata llene el banco medido en España (645-1045 semillas/m²; Plan Agropecuario, Uruguay, revista 113, p. 40) en una o dos décadas.",
+    "confianza": "baja"
+  },
+  "banco_maximo_m2": {
+    "valor": 1045,
+    "unidad": "semillas/m²",
+    "fuente": "Banco de 645-1045 semillas/m² en los primeros 5 cm del suelo, España (Plan Agropecuario, Uruguay, revista 113, p. 40).",
+    "confianza": "baja"
+  },
+  "dispersion_m": {
+    "valor": 15,
+    "unidad": "m (las vainas estallan y lanzan las semillas)",
+    "fuente": "Plan Agropecuario (Uruguay), revista 113, p. 40",
+    "confianza": "baja",
+    "nota": "En una isla de pocos metros, la lluvia de semillas alcanza a todas las celdas."
+  },
+  "banco_perdida_anio": {
+    "valor": 0.06,
+    "unidad": "fracción del banco que muere por año",
+    "fuente": "DECISIÓN DE DISEÑO: semillas viables hasta 50 años (Plan Agropecuario, Uruguay); con 6 %/año queda ~5 % del banco a los 50 años.",
+    "confianza": "baja"
+  },
+  "rebrote_prob_anio": {
+    "valor": 0.1,
+    "unidad": "probabilidad por año de que brote una celda sin espinillo con el banco lleno (banco_maximo_m2); proporcional al banco",
+    "fuente": "DECISIÓN DE DISEÑO: el banco persiste y rebrota tras corte o quema (Plan Agropecuario, Uruguay; revisión en Actualidades Biológicas 2023).",
+    "confianza": "baja"
+  },
+  "banco_minimo_rebrote_m2": {
+    "valor": 1,
+    "unidad": "semillas/m²",
+    "fuente": "DECISIÓN DE DISEÑO",
+    "confianza": "baja"
+  },
+  "cobertura_inicial": {
+    "valor": 0.05,
+    "unidad": "cobertura de una plántula",
+    "fuente": "decisión de diseño",
+    "confianza": "media"
+  },
+  "fijacion_n_kg_ha_anio": {
+    "valor": 100,
+    "unidad": "kg de N por ha y año (rodal joven cerrado, suelo pobre)",
+    "fuente": "Acumula 100-200 kg N/ha/año en rodales de menos de 10 años en Nueva Zelanda (Egunjobi 1969, citado por Magesan, Wang & Clinton 2012, New Zealand Journal of Ecology 36(1):21-28). Se usa el valor bajo.",
+    "confianza": "media"
+  },
+  "ndfa_suelo_pobre": {
+    "valor": 0.97,
+    "unidad": "fracción del N que saca del aire sin N en el suelo",
+    "fuente": "Plántulas en invernadero: 97 % del N del aire sin N agregado, 24 % con el equivalente a 200 kg N/ha (resumen del World Congress of Soil Science 2006, P18979; autores sin verificar).",
+    "confianza": "baja"
+  },
+  "ndfa_suelo_rico": {
+    "valor": 0.24,
+    "unidad": "fracción del N que saca del aire con mucho N en el suelo",
+    "fuente": "Ídem (WCSS 2006, P18979)",
+    "confianza": "baja"
+  },
+  "n_suelo_rico_g_m2": {
+    "valor": 20,
+    "unidad": "g de N disponible por m² (200 kg N/ha)",
+    "fuente": "El tratamiento rico del ensayo de WCSS 2006 (P18979): 200 kg N/ha. Entre 0 y este valor se interpola en línea recta (supuesto).",
+    "confianza": "baja"
+  },
+  "lavado_fraccion": {
+    "valor": 0.3,
+    "unidad": "fracción del N que fija que se lava hacia el agua (sale de la isla)",
+    "fuente": "Bajo espinillo en Nueva Zelanda entraron 182-223 kg N/ha/año con la hojarasca y se lavaron 59-64 kg N/ha en 10 meses (Magesan, G. N. & Wang, H. 2008, «Nitrogen leaching from gorse», informe final para el Greater Wellington Regional Council): ~30 %.",
+    "confianza": "media"
+  },
+  "espacio_que_quita": {
+    "valor": 0.9,
+    "unidad": "fracción de la celda que el espinillo cerrado le quita al pasto, la nalca chica y el deu (lo que queda: 1 − 0,9 × su cobertura)",
+    "fuente": "DECISIÓN DE DISEÑO: forma matorrales densos que desplazan bosque nativo, praderas y humedales en Chiloé (Espinoza Sepúlveda 2024). Sin medición de cuánta cobertura queda bajo él.",
+    "confianza": "baja"
+  },
+  "alto_m": {
+    "valor": 2,
+    "unidad": "m (alto con la celda cubierta)",
+    "fuente": "Arbusto de hasta ~2 m (Plan Agropecuario, Uruguay, revista 113, p. 40)",
+    "confianza": "baja"
+  },
+  "mes_flor_otono_inicio": {
+    "valor": 3,
+    "unidad": "mes",
+    "fuente": "En Uruguay florece en otoño y primavera (Plan Agropecuario, revista 113); en Chiloé sin dato",
+    "confianza": "baja"
+  },
+  "mes_flor_otono_fin": {
+    "valor": 5,
+    "unidad": "mes",
+    "fuente": "Ídem",
+    "confianza": "baja"
+  },
+  "mes_flor_primavera_inicio": {
+    "valor": 9,
+    "unidad": "mes",
+    "fuente": "Ídem",
+    "confianza": "baja"
+  },
+  "mes_flor_primavera_fin": {
+    "valor": 11,
+    "unidad": "mes",
+    "fuente": "Ídem",
+    "confianza": "baja"
+  }
+}
