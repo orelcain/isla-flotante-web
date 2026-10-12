@@ -254,6 +254,36 @@
     "fuente": "SUPUESTO de dibujo: sin velocidad del viento en clima.json no se puede calcular la deriva real (deriva = viento × tiempo de caída); se dibuja una deriva suave hacia donde sopla (viento_direccion)",
     "confianza": "baja"
   },
+  "hoja_senescencia_dias": {
+    "valor": 14,
+    "unidad": "días que tarda una hoja en pasar de verde a café antes de soltarse",
+    "fuente": "Keskitalo et al. (2005) Plant Physiology 139: 1635-1648 (álamo temblón: la clorofila se degrada en ~2-3 semanas antes de la abscisión, y quedan los carotenoides amarillos). Sin medición en Nothofagus nitida (siempreverde: sus hojas viejas amarillean y se tiñen de café o rojizo antes de caer)",
+    "confianza": "baja"
+  },
+  "hoja_senescencia_pantalla_min_s": {
+    "valor": 3,
+    "unidad": "s de pantalla, mínimo, que se ve envejecer una hoja en la rama",
+    "fuente": "decisión de dibujo: al ritmo «estaciones» (15 días por segundo) los 14 días durarían menos de un segundo y la hoja parecería salir de la nada; se alarga hasta 3 s para que se vea el cambio de color. La tasa de caída no cambia (las tarjetas dibujadas = tasa × duración del ciclo)",
+    "confianza": "alta"
+  },
+  "hoja_senescencia_pantalla_max_s": {
+    "valor": 12,
+    "unidad": "s de pantalla, máximo, que se ve envejecer una hoja en la rama",
+    "fuente": "decisión de dibujo: al ritmo «días» (1 día = 60 s) los 14 días serían 14 minutos; se acorta a 12 s para que la hoja que se toca alcance a soltarse mientras se mira",
+    "confianza": "alta"
+  },
+  "hoja_tendida_s": {
+    "valor": 2,
+    "unidad": "s de pantalla que la hoja recién caída se ve tendida antes de sumarse a la hojarasca dibujada",
+    "fuente": "decisión de dibujo: transición entre la hoja que cae (una tarjeta) y la capa de hojarasca (SueloDetalle, que se rehace cada 30 días simulados)",
+    "confianza": "alta"
+  },
+  "color_hoja_senescente": {
+    "valor": "#b8962e",
+    "unidad": "hex sRGB (supuesto)",
+    "fuente": "SUPUESTO: amarillo de carotenoides que quedan al degradarse la clorofila (Keskitalo et al. 2005), a mitad del cambio entre color_follaje y color_hojarasca_fresca. Pendiente: medirlo en fotos de hojas senescentes de N. nitida (iNaturalist, como color_follaje)",
+    "confianza": "baja"
+  },
   "hojas_cayendo_tope_dibujo": {
     "valor": 160,
     "unidad": "tarjetas de hoja que caen dibujadas a la vez",
