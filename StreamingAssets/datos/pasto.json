@@ -1,0 +1,79 @@
+{
+  "nota": "Pasto fijador que siembra quien juega: la mezcla de la pradera naturalizada de Chiloé, Holcus lanatus (pasto colonizador) + Lotus pedunculatus («alfalfa chilota», leguminosa con rizomas). Las dos son introducidas (europeas) y naturalizadas: ningún pasto nativo tiene datos de raíz (docs/investigacion_pasto_fijador.json). Amarra el borde con la misma física que las raíces del coigüe (Borde.cs: T_r·RAR) y la Lotus fija nitrógeno.",
+  "pasto_raiz_resistencia_traccion_mpa": {
+    "valor": 13,
+    "unidad": "MPa",
+    "fuente": "Boldrin, D., Bengough, A. G., Lin, Z. & Loades, K. W. (2021). Plant and Soil 461:457-469, Tabla 1: Lolium perenne T_r = 5,92·d^-1,19 MPa (d en mm); con raíces de 0,5 mm da ~13 MPa. Proxy de gramínea de pradera para Holcus.",
+    "confianza": "baja",
+    "nota": "Ninguna de las dos especies tiene la resistencia medida: es un pasto parecido. Rango de pastos de pradera 3,9–9,9 MPa de media (misma tabla)."
+  },
+  "pasto_raiz_biomasa_madura_kg_m2": {
+    "valor": 1.4,
+    "unidad": "kg de raíz por m² (pastizal maduro)",
+    "fuente": "Jackson, R. B. et al. (1996). A global analysis of root distributions for terrestrial biomes. Oecologia 108:389-411, Tabla 1 (pastizal templado).",
+    "confianza": "media",
+    "nota": "Biomasa de un pastizal templado genérico, no de estas especies (para ellas, baja)."
+  },
+  "pasto_raiz_beta": {
+    "valor": 0.943,
+    "unidad": "adimensional (fracción acumulada de raíz hasta d cm = 1 − β^d)",
+    "fuente": "Jackson et al. (1996) Oecologia 108:389-411, Tabla 1 (pastizal templado: 83 % de las raíces en 0–30 cm).",
+    "confianza": "alta"
+  },
+  "pasto_raiz_densidad_tejido_kg_m3": {
+    "valor": 250,
+    "unidad": "kg de raíz por m³ de raíz",
+    "fuente": "SUPUESTO: valor típico de raíces finas herbáceas (0,1–0,4 g/cm³); falta medirlo para estas especies (docs/investigacion_pasto_fijador.json lo deja pendiente). Pasa la biomasa de raíz a volumen para la RAR de Wu.",
+    "confianza": "baja"
+  },
+  "pasto_produccion_aerea_kg_m2_anio": {
+    "valor": 0.25,
+    "unidad": "kg de materia seca aérea por m² y año (vuelve al suelo como hojarasca)",
+    "fuente": "AgResearch (Nueva Zelanda), «Responses of Lotus pedunculatus to sulphur fertiliser and defoliation regime in acid soils at low temperature»: 1900–3200 kg MS/ha/año en suelo ácido a 1000 m (media 2550 = 0,25 kg/m²).",
+    "confianza": "media"
+  },
+  "pasto_tasa_cobertura_anio": {
+    "valor": 3,
+    "unidad": "1/año (crecimiento logístico de la cobertura de la celda)",
+    "fuente": "DECISIÓN DE DISEÑO sobre lo cualitativo: Holcus es colonizador rápido (hasta 240 000 semillas por planta; docs/investigacion_pasto_fijador.json). Con 3/año, una siembra de 10 % cubre la celda en ~2 años. Falta una tasa de cobertura medida.",
+    "confianza": "baja"
+  },
+  "pasto_propagacion_anio": {
+    "valor": 0.6,
+    "unidad": "cobertura que una celda cubierta siembra en cada vecina por año",
+    "fuente": "DECISIÓN DE DISEÑO: la semilla de Holcus y los estolones de Lotus colonizan las celdas vecinas con suelo. Falta una tasa de avance medida.",
+    "confianza": "baja"
+  },
+  "pasto_suelo_minimo_m": {
+    "valor": 0.03,
+    "unidad": "m de sustrato",
+    "fuente": "SUPUESTO: un pasto pionero de talud enraíza en los primeros ~8 cm (Poa annua, raíces hasta 7,6 ± 0,9 cm; Yin, Pan, Yang & Li 2024, Heliyon 10(17):e37108); con 3 cm ya se sostiene. No hay espesor mínimo medido.",
+    "confianza": "baja"
+  },
+  "pasto_cobertura_siembra": {
+    "valor": 0.1,
+    "unidad": "cobertura de la celda al sembrar",
+    "fuente": "decisión de diseño: un puñado de semilla de pradera",
+    "confianza": "alta"
+  },
+  "pasto_fraccion_lotus": {
+    "valor": 0.5,
+    "unidad": "fracción de la mezcla que es Lotus (la que fija N)",
+    "fuente": "decisión de diseño: mezcla sembrada mitad y mitad",
+    "confianza": "alta"
+  },
+  "lotus_fijacion_n_kg_ha_anio": {
+    "valor": 55,
+    "unidad": "kg de N por ha y año (Lotus con cobertura completa)",
+    "fuente": "N fijado en la parte aérea de Lotus pedunculatus en dunas pobres en N (Woodhill, Nueva Zelanda, dilución isotópica), citado en docs/investigacion_pasto_fijador.json. El trébol blanco del sur de Chile fija 56–97 (Campillo et al. 2003, Agricultura Técnica 63(2):169-179).",
+    "confianza": "media"
+  },
+  "pasto_rizoma_lateral": {
+    "valor": 0.5,
+    "unidad": "fracción de la raíz de una celda que alcanza una celda vecina nueva (sobre el vacío)",
+    "fuente": "DECISIÓN DE DISEÑO sobre lo cualitativo: Lotus tiene rizomas someros que avanzan en horizontal (Tropical Forages, ficha Lotus uliginosus). Permite que tierra dejada junto a un borde con pasto quede amarrada. Falta el avance medido.",
+    "confianza": "baja"
+  },
+  "lotus_mes_flor_inicio": { "valor": 11, "unidad": "mes", "fuente": "iNaturalist, flores observadas en el sur de Chile (37–56 °S): nov a feb, pico en enero (n = 12)", "confianza": "media" },
+  "lotus_mes_flor_fin": { "valor": 2, "unidad": "mes", "fuente": "iNaturalist, flores observadas en el sur de Chile (37–56 °S): nov a feb, pico en enero (n = 12)", "confianza": "media" }
+}
