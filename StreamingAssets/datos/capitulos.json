@@ -1,10 +1,12 @@
 {
-  "nota": "Capítulos del juego (docs/DIRECCION_DE_JUEGO.md: estructura por entornos). Las metas son DISEÑO DE JUEGO, no datos científicos: se calibraron con EstrategiasPruebas y con el piloto experto (PilotoPruebas: marca lo alcanzable) para que cada una premie un camino distinto (no se cumplen todas a la vez ni solas). 10-10: «isla de 15 m²» pasó a «primer borde, 11 m²»: con el modelo del borde (MotorBorde) ni el piloto llegaba a 15 m² en 60 años. Tipos: area_m2, altura_m, suelo_max_m, n_fijado_kg, hijos (nacidos), hijos_sobre_m (vivos más altos que 'umbral'), fichas (descubiertas en la biblioteca).",
+  "nota": "Capítulos del juego (docs/DIRECCION_DE_JUEGO.md: estructura por entornos). Las metas son DISEÑO DE JUEGO, no datos científicos: se calibraron con EstrategiasPruebas y con el piloto experto (PilotoPruebas: marca lo alcanzable) para que cada una premie un camino distinto (no se cumplen todas a la vez ni solas). 10-10: «isla de 15 m²» pasó a «primer borde, 11 m²»: con el modelo del borde (MotorBorde) ni el piloto llegaba a 15 m² en 60 años. Tipos: area_m2, altura_m, suelo_max_m, n_fijado_kg, hijos (nacidos), hijos_sobre_m (vivos más altos que 'umbral'), fichas (descubiertas en la biblioteca). 12-10: el capítulo tiene plazo (plazo_anio): sin plazo todo se cumplía igual esperando (en 20 s de «décadas», 4 de 6 sin tocar nada). Con 25 años (~10 min en «estaciones») y la zona favorecida más fuerte (peso_zona_favorecida 12), PilotoPruebas da: sin hacer nada 2 objetivos (hijo y 2,5 m, año 23), junto al árbol 3 (más el rincón de 40 cm, año 14), piloto 4 (más 3 g de N con la nalca, año 25). El primer borde (año 27–30 en todas) queda como meta para quien siga jugando después del plazo.",
   "capitulos": [
     {
       "id": "chiloe",
       "nombre": "Capítulo 1 · Chiloé",
       "entorno": "tierra",
+      "plazo_anio": 25,
+      "cierre": "Para comparar, con esta misma roca: sin tocar nada, la isla cumple 2 objetivos en 25 años; atrayendo todo junto al árbol, 3; el piloto experto, que cada año prueba unas pocas zonas y siembra una nalca, 4 (PilotoPruebas).",
       "objetivos": [
         { "id": "primer_hijo", "texto": "Que nazca el primer coigüe hijo", "tipo": "hijos", "meta": 1, "pista": "El coigüe da semillas cuando ya es latizal; germinan mejor sobre madera podrida o musgo." },
         { "id": "coigue_25", "texto": "Que el coigüe llegue a 2,5 m", "tipo": "altura_m", "meta": 2.5, "pista": "Su copa crece hasta lo que sostiene el suelo que alcanzan sus raíces: atrae los fragmentos junto a él." },

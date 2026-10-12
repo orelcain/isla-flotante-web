@@ -478,9 +478,9 @@
     "confianza": "alta"
   },
   "peso_zona_favorecida": {
-    "valor": 3,
+    "valor": 12,
     "unidad": "adimensional",
-    "fuente": "decisión de diseño (09-10, pedido del humano): la zona elegida sube la probabilidad de caída (1 + 3) sin concentrarla en un pilar; el material que se apila de más se desliza (angulo_reposo_regolito_grados)",
+    "fuente": "decisión de diseño (09-10, pedido del humano): la zona elegida sube la probabilidad de caída (1 + peso) sin concentrarla en un pilar; el material que se apila de más se desliza (angulo_reposo_regolito_grados). 12-10: de 3 a 12. Con 3 la zona juntaba ~20 % del polvo y no hacer nada daba casi lo mismo que jugar bien (PilotoPruebas: 1–3 años de diferencia); con 12 junta ~45 % (13 celdas de ~170, más el halo del borde) y el rincón de 40 cm llega en el año 14 en vez del 44 (capitulos.json, plazo de 25 años)",
     "confianza": "alta"
   },
   "umbral_ampliacion_m": {
