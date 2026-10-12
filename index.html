@@ -28,9 +28,9 @@
   <script>
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/Web.data.unityweb",
-      frameworkUrl: "Build/Web.framework.js.unityweb",
-      codeUrl: "Build/Web.wasm.unityweb",
+      dataUrl: "Build/3ab6bbdffa27a29dd1ff1e50a7897bf5.data.unityweb",
+      frameworkUrl: "Build/57d746a64fead7254152e43521172126.framework.js.unityweb",
+      codeUrl: "Build/8b191f0cc68e2be4a26cdc0a55fee93c.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Isla Flotante",
       productName: "Isla Flotante",
@@ -39,7 +39,7 @@
       devicePixelRatio: Math.min(window.devicePixelRatio || 1, 1.5),
     };
     var script = document.createElement("script");
-    script.src = "Build/Web.loader.js";
+    script.src = "Build/f0ec5589ff0350a9f2fa5832afa598ca.loader.js";
     script.onload = function () {
       createUnityInstance(lienzo, config, function (p) { barra.style.width = (100 * p) + "%"; })
         .then(function () { carga.remove(); })
