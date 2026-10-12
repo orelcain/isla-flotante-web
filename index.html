@@ -23,14 +23,24 @@
 </head>
 <body>
   <canvas id="lienzo" tabindex="-1"></canvas>
-  <div id="carga"><div>La isla se está formando…</div><div id="barra"><div></div></div></div>
+  <div id="carga"><div>La isla se está formando…</div><div id="barra"><div></div></div><div id="version" style="font-size:12px;font-style:normal;opacity:.7"></div></div>
   <div id="girar">Gira el teléfono:<br>la isla se mira de lado.</div>
   <script>
     // Ojo: NO cancelar gesturestart/touchmove en el documento. Se probó (v179) y en el iPhone el juego dejó de recibir el
     // pellizco y el arrastre de dos dedos. touch-action: none (en el CSS) basta para que la página no se mueva.
+    // Versión: construir_web.sh reemplaza v181 · f99c368 · claude/isla-flotante-iphone-tests-ayz353 · 11-10 22:22 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
+    // version.txt (pedido sin caché) dice otra cosa, se recarga con una dirección nueva (?v=…) que obliga a bajar la última.
+    var VERSION = "v181 · f99c368 · claude/isla-flotante-iphone-tests-ayz353 · 11-10 22:22";
+    document.getElementById("version").textContent = VERSION.indexOf("__") === 0 ? "" : VERSION;
+    fetch("version.txt?r=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.ok ? r.text() : ""; }).then(function (v) {
+      v = (v || "").trim(); if (!v || VERSION.indexOf("__") === 0 || v === VERSION) return;
+      var marca = "recargada-" + v;
+      try { if (sessionStorage.getItem(marca)) return; sessionStorage.setItem(marca, "1"); } catch (e) {}
+      location.replace(location.pathname + "?v=" + encodeURIComponent(v.split(" ")[0]) + "-" + Date.now());
+    }).catch(function () {});
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/442434eaa1fb1cbcd908e6e1a3b3d126.data.unityweb",
+      dataUrl: "Build/69a86146acf259f15ddccd2b002fe381.data.unityweb",
       frameworkUrl: "Build/57d746a64fead7254152e43521172126.framework.js.unityweb",
       codeUrl: "Build/ecce7d58d6d933e34f415aea383b085c.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
