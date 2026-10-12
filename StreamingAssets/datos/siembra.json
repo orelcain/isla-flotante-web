@@ -1,5 +1,5 @@
 {
-  "nota": "Cómo prende lo que se siembra (Siembra.cs). Una siembra queda pendiente hasta contar dias_cama_humeda días con temperatura suficiente; entonces prende o no, según la profundidad, la cama húmeda (la hora de siembra decide cuánto del primer día cuenta) y lo propio de la especie. La LUNA se muestra pero NO tiene efecto: no hay evidencia controlada (Mayoral et al. 2020). docs/investigacion_siembra.json.",
+  "nota": "Cómo prende lo que se siembra (Siembra.cs). Una siembra queda pendiente hasta contar dias_cama_humeda días con temperatura suficiente; entonces prende o no, según la profundidad, la cama húmeda (la hora de siembra decide cuánto del primer día cuenta) y lo propio de la especie. La LUNA se muestra pero NO tiene efecto: no hay evidencia controlada (Mayoral et al. 2020). docs/investigacion_siembra.json. Simbiontes: la Lotus fija solo con su rizobio (Bradyrhizobium) y el deu solo con su Frankia; viajan con la planta que crece hacia la vecina y con la tierra que mueve la pala. La luz del lugar decide la nalca de semilla.",
   "dias_cama_humeda": {
     "valor": 3,
     "unidad": "días que la semilla o el trasplante necesita la cama húmeda para prender",
@@ -78,5 +78,37 @@
     "unidad": "fracción de plantines que prenden",
     "fuente": "SIN FUENTE para el deu. Referencia de otro árbol: coigüe plantado bajo dosel en Chiloé, ~70 % vivo a 5 años (Bannister et al. 2021).",
     "confianza": "baja"
+  },
+  "lotus_rizobio": {
+    "valor": 1,
+    "unidad": "1 = la Lotus fija N solo donde está su rizobio (Bradyrhizobium sp. (Lotus)); sin él no forma nódulos que fijen",
+    "fuente": "Lotus uliginosus (= L. pedunculatus) tiene un requerimiento de inóculo específico: Bradyrhizobium sp. (Lotus), p. ej. la cepa comercial CC829 (Tropical Forages, ficha de Lotus uliginosus). Cepas de Mesorhizobium loti que nodulan L. corniculatus fueron inefectivas en L. uliginosus y la nodulación falló a menudo en el campo sin inóculo compatible (Howieson et al. 2011, Plant and Soil, doi 10.1007/s11104-011-0921-9).",
+    "confianza": "media",
+    "nota": "Sin inóculo se modela fijación 0 (los nódulos no se forman o no fijan); en la realidad podría haber algo de rizobio nativo compatible: sin dato para Chiloé."
+  },
+  "frankia_del_vivero": {
+    "valor": 1,
+    "unidad": "1 = el plantín de deu llega nodulado",
+    "fuente": "La Frankia de Coriaria (grupo 2) no se ha podido cultivar pura: se inocula con nódulos triturados (Berckx et al. 2024, FEMS Microbiology Ecology 100(5):fiae042; en C. nepalensis solo noduló con nódulos triturados). Las plántulas de Coriaria solo sobreviven noduladas (Walker et al. 2003). SUPUESTO: el vivero entrega el plantín inoculado así.",
+    "confianza": "baja"
+  },
+  "nostoc_en_el_estolon": {
+    "valor": 1,
+    "unidad": "1 = el trozo de estolón o rizoma de Gunnera lleva su Nostoc",
+    "fuente": "En Gunnera el Nostoc vive dentro de glándulas del tallo (en la base de las hojas, a lo largo del rizoma o estolón): un trozo de planta lo lleva consigo; la semilla no, la plántula lo toma del ambiente (Osborne, B. & Bergman, B. 2009, «Why does Gunnera do it?», en Prokaryotic Symbionts in Plants, Springer).",
+    "confianza": "media"
+  },
+  "simbionte_avance_anio": {
+    "valor": 0.5,
+    "unidad": "1/año: cuánto avanza el simbionte hacia una celda vecina donde ya crece su planta",
+    "fuente": "DECISIÓN DE DISEÑO: los rizobios y la Frankia viajan con las raíces y los rizomas que colonizan la celda vecina; sin tasa medida.",
+    "confianza": "baja"
+  },
+  "nalca_semilla_claro": {
+    "valor": 0.86,
+    "unidad": "fracción de semillas de nalca que germinan en un claro (a plena luz)",
+    "fuente": "Gunnera tinctoria en la Estación Biológica Senda Darwin, Chiloé: 86 % germinó en un claro y 0 % bajo el dosel; semillas sobre la superficie, sin tapar (Figueroa, J. A. & Hernández, J. F. 2001, Ecología Austral 11:39-47).",
+    "confianza": "alta",
+    "nota": "Entre el claro y el dosel se interpola en línea recta con la luz que llega al suelo (supuesto, baja). La semilla va en superficie: la luz no pasa de 2 mm de suelo (Woolley & Stoller 1978)."
   }
 }

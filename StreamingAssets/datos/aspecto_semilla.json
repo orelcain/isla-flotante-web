@@ -491,5 +491,11 @@
     "unidad": "m (largo máximo de la espiga)",
     "fuente": "Ficha de Gunnera tinctoria en invasoras.pt (Portugal), citada en docs/investigacion_musgos_liquenes_nalca.json: florece de marzo a junio en las Azores (≈ septiembre a diciembre en el hemisferio sur), espigas de hasta 1 m, normalmente 3–4 por planta.",
     "confianza": "alta"
+  },
+  "lluvia_charco_mm": {
+    "valor": 2,
+    "unidad": "mm de lluvia en el día desde los que se dibujan charcos en las depresiones",
+    "fuente": "DECISIÓN DE DIBUJO: con lluvias de pocos milímetros el agua se infiltra en el sustrato y no se junta; sin umbral medido para la isla.",
+    "confianza": "baja"
   }
 }
