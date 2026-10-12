@@ -446,6 +446,12 @@
     "fuente": "decisión de diseño: docs/DISENO_ISLA_SEMILLA.md §10 (decidido por el humano 08-10)",
     "confianza": "alta"
   },
+  "margen_crecimiento_m": {
+    "valor": 2,
+    "unidad": "m de vacío alrededor de la roca, por lado",
+    "fuente": "decisión de diseño (12-10-2026): la grilla tiene espacio para que la isla crezca hasta 8 × 8 m. Antes la grilla medía lo mismo que la roca (4 × 4 m) y la isla se estancaba en ~14 m² aunque pasaran siglos.",
+    "confianza": "alta"
+  },
   "lado_celda_m": {
     "valor": 0.25,
     "unidad": "m",
