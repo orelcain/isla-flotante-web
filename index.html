@@ -26,15 +26,11 @@
   <div id="carga"><div>La isla se está formando…</div><div id="barra"><div></div></div></div>
   <div id="girar">Gira el teléfono:<br>la isla se mira de lado.</div>
   <script>
-    // Safari del iPhone ignora user-scalable=no: con los dedos hacía zoom a la PÁGINA o la desplazaba (se movía todo lo de
-    // atrás). Los gestos son del juego: se cancelan los del navegador (pellizco, doble toque, arrastre de la página).
-    ["gesturestart", "gesturechange", "gestureend", "dblclick"].forEach(function (t) {
-      document.addEventListener(t, function (e) { e.preventDefault(); }, { passive: false });
-    });
-    document.addEventListener("touchmove", function (e) { e.preventDefault(); }, { passive: false });
+    // Ojo: NO cancelar gesturestart/touchmove en el documento. Se probó (v179) y en el iPhone el juego dejó de recibir el
+    // pellizco y el arrastre de dos dedos. touch-action: none (en el CSS) basta para que la página no se mueva.
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/b49f112ff0d1860bdcdcf9c88fd95fc3.data.unityweb",
+      dataUrl: "Build/442434eaa1fb1cbcd908e6e1a3b3d126.data.unityweb",
       frameworkUrl: "Build/57d746a64fead7254152e43521172126.framework.js.unityweb",
       codeUrl: "Build/ecce7d58d6d933e34f415aea383b085c.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
