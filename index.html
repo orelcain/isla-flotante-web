@@ -28,9 +28,9 @@
   <script>
     // Ojo: NO cancelar gesturestart/touchmove en el documento. Se probó (v179) y en el iPhone el juego dejó de recibir el
     // pellizco y el arrastre de dos dedos. touch-action: none (en el CSS) basta para que la página no se mueva.
-    // Versión: construir_web.sh reemplaza v240 · 3a0e104 · juego/demo-inicio · 13-10 19:53 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
+    // Versión: construir_web.sh reemplaza v241 · 154e0e8 · juego/demo-inicio · 13-10 20:11 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
     // version.txt (pedido sin caché) dice otra cosa, se recarga con una dirección nueva (?v=…) que obliga a bajar la última.
-    var VERSION = "v240 · 3a0e104 · juego/demo-inicio · 13-10 19:53";
+    var VERSION = "v241 · 154e0e8 · juego/demo-inicio · 13-10 20:11";
     document.getElementById("version").textContent = VERSION.indexOf("__") === 0 ? "" : VERSION;
     fetch("version.txt?r=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.ok ? r.text() : ""; }).then(function (v) {
       v = (v || "").trim(); if (!v || VERSION.indexOf("__") === 0 || v === VERSION) return;
@@ -40,9 +40,9 @@
     }).catch(function () {});
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/50867e41635284fde1e7509fca065100.data.unityweb",
-      frameworkUrl: "Build/ce7a9ff28fcc200d609bd89d3a952f1a.framework.js.unityweb",
-      codeUrl: "Build/f252bf7db065e11ed35297d2e763c62e.wasm.unityweb",
+      dataUrl: "Build/a78ee623fe726ba8f5c3e43de5025c5b.data.unityweb",
+      frameworkUrl: "Build/a772cd770f8d85eed0e4f512e15ca79c.framework.js.unityweb",
+      codeUrl: "Build/6b85360c918c4d518f5263b631435fb1.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Isla Flotante",
       productName: "Isla Flotante",
@@ -51,7 +51,7 @@
       devicePixelRatio: Math.min(window.devicePixelRatio || 1, 1.5),
     };
     var script = document.createElement("script");
-    script.src = "Build/001b2653fd3ac1394b21cf2471cc3604.loader.js";
+    script.src = "Build/65a2c83b598cadf12c07965d1b301e6b.loader.js";
     script.onload = function () {
       createUnityInstance(lienzo, config, function (p) { barra.style.width = (100 * p) + "%"; })
         .then(function () { carga.remove(); })

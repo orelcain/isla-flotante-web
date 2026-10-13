@@ -1,0 +1,197 @@
+{
+  "nota": "Perchas y aves que traen semillas (Perchas.cs). docs/investigacion_perchas_aves.json (53 datos). La percha multiplica la lluvia de semillas, pero casi ninguna llega a plántula: en Chiloé, 0 plántulas en 4 años bajo perchas en pradera (Carmona et al. 2010); el máximo citado es 0,04 % (Almeida et al. 2016). Los arbustos con fruto y los árboles altos son perchas naturales (nucleación: Albornoz et al. 2013).",
+  "semillas_sin_percha_m2_anio": {
+    "valor": 3,
+    "unidad": "semillas de fruto carnoso por m² y año en terreno abierto lejos del bosque",
+    "fuente": "ANÁLOGO tropical: ~3 semillas zoócoras/m²/año a más de 5 m del borde del bosque (Holl 1999, Biotropica). En Chiloé lo abierto recibe ≤ 1/8 de la lluvia del bosque (Carmona et al. 2010).",
+    "confianza": "baja"
+  },
+  "factor_percha": {
+    "valor": 10,
+    "unidad": "veces más semillas bajo una percha que sin ella",
+    "fuente": "En matorrales de Chiloé las perchas aumentaron «varias veces» la lluvia de semillas (Carmona et al. 2010); análogos: 38× (India) a ~110× (Puerto Rico, Shiels & Walker 2003); revisión mundial: efecto g = 1,21 (Gan et al. 2025). Se usa 10× hasta leer Bustamante-Sánchez & Armesto 2012.",
+    "confianza": "baja"
+  },
+  "radio_percha_m": {
+    "valor": 1.5,
+    "unidad": "m (círculo bajo la percha donde caen las semillas)",
+    "fuente": "SIN FUENTE: la copa de una percha de ramas de 3–7 m (Holl 1998).",
+    "confianza": "baja"
+  },
+  "altura_util_m": {
+    "valor": 3,
+    "unidad": "m (un árbol de la isla más alto que esto ya sirve de percha natural)",
+    "fuente": "Altura útil de percha 3–7 m (análogo Brasil, en docs/investigacion_perchas_aves.json); los árboles nacidos en la isla se vuelven perchas naturales (Albornoz et al. 2013; Bravo et al. 2015).",
+    "confianza": "media"
+  },
+  "visitas_tronco_vs_estaca": {
+    "valor": 3.4,
+    "unidad": "veces más visitas a un tronco seco con ramas que a un poste liso",
+    "fuente": "0,41 vs 0,12 visitas/h (Holl 1998, Costa Rica, análogo).",
+    "confianza": "media"
+  },
+  "establecimiento_max": {
+    "valor": 0.0004,
+    "unidad": "fracción de semillas que llega a plántula en el mejor micrositio",
+    "fuente": "25.755 semillas → menos de 10 plántulas (< 0,04 %; Almeida et al. 2016, citado en Gan et al. 2025). En Chiloé, sin sombra ni montículo: 0 en 4 años (Carmona et al. 2010).",
+    "confianza": "media",
+    "nota": "Se multiplica por el micrositio del núcleo (madera podrida, musgo, suelo; Regeneracion.Micrositio) y por lo que deja el pasto (en pradera densa no prende ninguna)."
+  },
+  "viabilidad_anio": {
+    "valor": 1,
+    "unidad": "años que la semilla espera en el suelo",
+    "fuente": "SIN FUENTE para estas especies: se asume que germina o muere en un año.",
+    "confianza": "baja"
+  },
+  "arbusto_tasa_cobertura_anio": {
+    "valor": 0.4,
+    "unidad": "1/año (crecimiento logístico de la cobertura del arbusto en su celda)",
+    "fuente": "DECISIÓN DE DISEÑO: sin tasa medida para estas especies en suelo joven.",
+    "confianza": "baja"
+  },
+  "arbusto_edad_fruto_anios": {
+    "valor": 3,
+    "unidad": "años hasta dar fruto (y volverse percha natural)",
+    "fuente": "SIN FUENTE por especie; supuesto común para arbustos de fruto carnoso.",
+    "confianza": "baja"
+  },
+  "cobertura_plantula": {
+    "valor": 0.05,
+    "unidad": "cobertura de la plántula recién establecida",
+    "fuente": "decisión de diseño",
+    "confianza": "media"
+  },
+  "fruto_michay": {
+    "valor": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "unidad": "1 = hay fruto maduro ese mes (enero a diciembre)",
+    "fuente": "Berberis (michay): noviembre a enero, máximo en diciembre. Calendario de Chiloé en docs/investigacion_perchas_aves.json (Recetas del Bosque, IEB, citando a Smith-Ramírez & Armesto 1994; Salvande et al. 2011).",
+    "confianza": "media"
+  },
+  "fruto_maqui": {
+    "valor": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "unidad": "1 = hay fruto maduro ese mes",
+    "fuente": "Aristotelia chilensis (maqui): diciembre a enero, en el sur hasta abril. Calendario de Chiloé en docs/investigacion_perchas_aves.json (Recetas del Bosque, IEB, citando a Smith-Ramírez & Armesto 1994; Salvande et al. 2011).",
+    "confianza": "media"
+  },
+  "fruto_luma": {
+    "valor": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "unidad": "1 = hay fruto maduro ese mes",
+    "fuente": "Amomyrtus luma (luma): diciembre a marzo, máximo en febrero. Calendario de Chiloé en docs/investigacion_perchas_aves.json (Recetas del Bosque, IEB, citando a Smith-Ramírez & Armesto 1994; Salvande et al. 2011).",
+    "confianza": "media"
+  },
+  "fruto_murta": {
+    "valor": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unidad": "1 = hay fruto maduro ese mes",
+    "fuente": "Ugni molinae (murta): marzo a mayo. Calendario de Chiloé en docs/investigacion_perchas_aves.json (Recetas del Bosque, IEB, citando a Smith-Ramírez & Armesto 1994; Salvande et al. 2011).",
+    "confianza": "media"
+  },
+  "fruto_arrayan": {
+    "valor": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "unidad": "1 = hay fruto maduro ese mes",
+    "fuente": "Luma apiculata (arrayán): mayo a septiembre; lo dispersa sobre todo el zorzal (72 % de las visitas, Salvande et al. 2011) y solo germina sin pulpa (tras pasar por el ave).",
+    "confianza": "media"
+  },
+  "ave_zorzal": {
+    "valor": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "unidad": "1 = presente ese mes",
+    "fuente": "Turdus falcklandii: residente todo el año, usa praderas; dispersor principal de otoño-invierno (Salvande et al. 2011). Llega a islotes de < 0,5 km² a 2,5–35 km (Rozzi et al. 1996).",
+    "confianza": "alta"
+  },
+  "ave_fiofio": {
+    "valor": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "unidad": "1 = presente ese mes",
+    "fuente": "Elaenia albiceps: migrante, de septiembre-octubre a marzo-abril; el frugívoro más abundante del verano y come desde perchas (Amico & Aizen 2005; Rozzi et al. 1996).",
+    "confianza": "alta"
+  }
+}
