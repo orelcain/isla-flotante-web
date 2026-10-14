@@ -556,6 +556,12 @@
     "fuente": "decisión de diseño (12-10-2026): una jornada por mes. Limita el trabajo para que cada movida sea una decisión; el juego se pausa mientras se mueve tierra.",
     "confianza": "alta"
   },
+  "premio_encargo_jornadas": {
+    "valor": 1,
+    "unidad": "jornadas extra el año siguiente por cada encargo cumplido",
+    "fuente": "decisión de diseño (14-10-2026), tomada de Dorfromantik (cada misión cumplida da más losetas): cumplir lo que pide la isla da trabajo para el año que viene. No es un dato del mundo real.",
+    "confianza": "alta"
+  },
   "pala_carga_kg": {
     "valor": 30,
     "unidad": "kg por jornada de pala",
