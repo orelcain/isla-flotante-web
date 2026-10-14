@@ -1,4 +1,6 @@
 {
+  "corte_maqueta_fraccion_radio": { "valor": 0.62, "unidad": "fracción del radio de la isla donde va el corte de maqueta, desde el centro hacia la cámara", "fuente": "SUPUESTO de dibujo (ARTE_BITACORA ronda 6): deja ver las capas sin cortar el centro (el árbol)", "confianza": "baja" },
+  "sombra_copa_valor_minimo": { "valor": 0.55, "unidad": "factor de valor del suelo bajo una copa que no deja pasar luz (se aplica √luz a ras de suelo, Beer-Lambert)", "fuente": "SUPUESTO de dibujo; la luz que llega al suelo sí es del modelo (MotorSiembra.LuzSuelo)", "confianza": "baja" },
   "nota": "Aspecto de la isla semilla (solo la vista): colores y relaciones con fuente, verificados el 09-10-2026 (enjambre Haiku + verificación Sonnet; hex calculados desde Munsell con colour-science). Lo marcado CALIBRACIÓN es provisional.",
   "pendientes": "Munsell de la hojarasca fresca de Nothofagus (sin fuente: se usa 7.5YR 4/4 como supuesto). Poder pigmentante de los óxidos de hierro como número (la relación existe, falta cifra abierta). Color de la condrita meteorizada (más clara, sin cifra). Oxidación en clima húmedo: sin cifra (cotas: decenas de años en desiertos; New Concord, caída de 1860, con óxido parcial a ~140 años).",
   "reflectancia_ci_visible_pct": {
