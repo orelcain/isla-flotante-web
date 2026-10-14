@@ -1,0 +1,12 @@
+{
+  "nota": "El turno anual (Turno.cs; docs plan «El año como turno», 14-10-2026): el jugador planea el año en cuatro estaciones y la simulación lo vive. Los días de acción y los costos en jornadas son DECISIONES DE DISEÑO (metas de juego); la vida de la isla en kg de carbono sale de factores de conversión con fuente.",
+  "dia_verano": { "valor": 15, "unidad": "día del año (15 de enero) en que se hacen las acciones de verano", "fuente": "decisión de diseño: mitad del verano austral meteorológico (dic–feb)", "confianza": "baja" },
+  "dia_otono": { "valor": 74, "unidad": "día del año (15 de marzo)", "fuente": "decisión de diseño: comienzo del otoño austral, época de siembra de pasto (feb–mar) y deu (mar–may) en siembra.json", "confianza": "baja" },
+  "dia_invierno": { "valor": 166, "unidad": "día del año (15 de junio)", "fuente": "decisión de diseño: comienzo del invierno austral (jun–ago)", "confianza": "baja" },
+  "dia_primavera": { "valor": 258, "unidad": "día del año (15 de septiembre)", "fuente": "decisión de diseño: comienzo de la primavera austral, época de siembra de pasto (ago–sep) y nalca chica (sep–nov)", "confianza": "baja" },
+  "costo_sembrar": { "valor": 1, "unidad": "jornadas por siembra planeada", "fuente": "decisión de diseño (14-10-2026): sembrar una celda es un día de trabajo, como una palada; antes era gratis", "confianza": "baja" },
+  "costo_atraer": { "valor": 0, "unidad": "jornadas por «atraer» planeado (uno por estación)", "fuente": "decisión de diseño: atraer no es trabajo físico; el límite es uno por estación", "confianza": "baja" },
+  "hora_siembra": { "valor": 9, "unidad": "hora del día en que se hacen las siembras del plan", "fuente": "decisión de diseño: en la mañana cuenta casi todo el primer día de cama húmeda (Siembra.cs, SolQueFalta)", "confianza": "baja" },
+  "fraccion_c_biomasa": { "valor": 0.47, "unidad": "kg de carbono por kg de materia seca viva", "fuente": "IPCC 2006, Guidelines Vol. 4, cap. 4, cuadro 4.3: fracción de carbono por defecto de la biomasa forestal (0,47)", "confianza": "alta" },
+  "fraccion_c_materia_organica": { "valor": 0.5, "unidad": "kg de carbono por kg de materia orgánica del suelo y la hojarasca", "fuente": "Pribyl 2010 (Geoderma 156: 75–83): la mediana medida es ~0,50; el factor clásico de Van Bemmelen (0,58) sobreestima", "confianza": "media" }
+}
