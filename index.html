@@ -28,9 +28,9 @@
   <script>
     // Ojo: NO cancelar gesturestart/touchmove en el documento. Se probó (v179) y en el iPhone el juego dejó de recibir el
     // pellizco y el arrastre de dos dedos. touch-action: none (en el CSS) basta para que la página no se mueva.
-    // Versión: construir_web.sh reemplaza v248 · a48f2b7 · juego/demo-inicio · 13-10 21:39 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
+    // Versión: construir_web.sh reemplaza v249 · 11842f9 · juego/demo-inicio · 13-10 22:31 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
     // version.txt (pedido sin caché) dice otra cosa, se recarga con una dirección nueva (?v=…) que obliga a bajar la última.
-    var VERSION = "v248 · a48f2b7 · juego/demo-inicio · 13-10 21:39";
+    var VERSION = "v249 · 11842f9 · juego/demo-inicio · 13-10 22:31";
     document.getElementById("version").textContent = VERSION.indexOf("__") === 0 ? "" : VERSION;
     // El juego (~18 MB) no empieza a bajar hasta saber si hay que recargar: antes se bajaba entero y se botaba al recargar.
     var iniciado = false;
@@ -45,9 +45,9 @@
     }).catch(function () { iniciar(); });
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/f95eaa89c6d5639c885942efa1d7b6d3.data.unityweb",
+      dataUrl: "Build/feea981a602e335b75a814ed68035201.data.unityweb",
       frameworkUrl: "Build/b4588a84f58a4dd63d4d85a4636fb73d.framework.js.unityweb",
-      codeUrl: "Build/193febbcd060bfbed082ffc7c6d0cddc.wasm.unityweb",
+      codeUrl: "Build/297457253b790f308aa19779862998e6.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Isla Flotante",
       productName: "Isla Flotante",
@@ -56,7 +56,7 @@
       devicePixelRatio: Math.min(window.devicePixelRatio || 1, 1.5),
     };
     var script = document.createElement("script");
-    script.src = "Build/a7eb425b36be119a77637e99d474daac.loader.js";
+    script.src = "Build/cb1f0ab7907d631fa04117eac4a8f404.loader.js";
     script.onload = function () {
       createUnityInstance(lienzo, config, function (p) { barra.style.width = (100 * p) + "%"; })
         .then(function () { carga.remove(); })
