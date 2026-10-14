@@ -1,5 +1,5 @@
 {
-  "nota": "Capítulos del juego (docs/DIRECCION_DE_JUEGO.md: estructura por entornos). Las metas son DISEÑO DE JUEGO, no datos científicos: se calibraron con EstrategiasPruebas y con el piloto experto (PilotoPruebas: marca lo alcanzable) para que cada una premie un camino distinto (no se cumplen todas a la vez ni solas). 10-10: «isla de 15 m²» pasó a «primer borde, 11 m²»: con el modelo del borde (MotorBorde) ni el piloto llegaba a 15 m² en 60 años. Tipos: area_m2, altura_m, suelo_max_m, n_fijado_kg, hijos (nacidos), hijos_sobre_m (vivos más altos que 'umbral'), fichas (descubiertas en la biblioteca). 12-10: el capítulo tiene plazo (plazo_anio): sin plazo todo se cumplía igual esperando (en 20 s de «décadas», 4 de 6 sin tocar nada). Con 25 años (~10 min en «estaciones») y la zona favorecida más fuerte (peso_zona_favorecida 12), PilotoPruebas da: sin hacer nada 2 objetivos (hijo y 2,5 m, año 23), junto al árbol 3 (más el rincón de 40 cm, año 14), piloto 4 (más 3 g de N con la nalca, año 25). El primer borde (año 27–30 en todas) queda como meta para quien siga jugando después del plazo. 12-10 (tarde): la roca se elige y la carbonácea llega desmenuzada (factor_regolito_inicial ×4): con ella, sin hacer nada 3 objetivos (hijo 18, 2,5 m 19, borde 24), piloto 5 (incluye nalca 22 y borde 23). Ordinaria e hierro empiezan más lento.",
+  "nota": "Capítulos del juego (docs/DIRECCION_DE_JUEGO.md: estructura por entornos). Las metas son DISEÑO DE JUEGO, no datos científicos: se calibraron con EstrategiasPruebas y con el piloto experto (PilotoPruebas: marca lo alcanzable) para que cada una premie un camino distinto (no se cumplen todas a la vez ni solas). 10-10: «isla de 15 m²» pasó a «primer borde, 11 m²»: con el modelo del borde (MotorBorde) ni el piloto llegaba a 15 m² en 60 años. Tipos: area_m2, altura_m, suelo_max_m, n_fijado_kg, hijos (nacidos), hijos_sobre_m (vivos más altos que 'umbral'), fichas (descubiertas en la biblioteca). 12-10: el capítulo tiene plazo (plazo_anio): sin plazo todo se cumplía igual esperando (en 20 s de «décadas», 4 de 6 sin tocar nada). Con 25 años (~10 min en «estaciones») y la zona favorecida más fuerte (peso_zona_favorecida 12), PilotoPruebas da: sin hacer nada 2 objetivos (hijo y 2,5 m, año 23), junto al árbol 3 (más el rincón de 40 cm, año 14), piloto 4 (más 3 g de N con la nalca, año 25). El primer borde (año 27–30 en todas) queda como meta para quien siga jugando después del plazo. 12-10 (tarde): la roca se elige y la carbonácea llega desmenuzada (factor_regolito_inicial ×4): con ella, sin hacer nada 3 objetivos (hijo 18, 2,5 m 19, borde 24), piloto 5 (incluye nalca 22 y borde 23). Ordinaria e hierro empiezan más lento. 14-10: el capítulo 2 se calibró con el piloto que cava, pone perchas, siembra fijadoras y atiende encargos (Piloto.Cuidar; PilotoPruebas.Capitulo_2...): ver el cierre del capítulo.",
   "capitulos": [
     {
       "id": "chiloe",
@@ -57,21 +57,13 @@
       "nombre": "Capítulo 2 · El bosquete",
       "entorno": "tierra",
       "plazo_anio": 50,
-      "cierre": "Metas de juego SIN CALIBRAR todavía con el piloto experto (el piloto aún no cava lagunas ni pone perchas): pueden quedar muy fáciles o muy difíciles. Cada una sale de un proceso del modelo: regeneración, perchas y aves, lagunas, fijadoras de nitrógeno, encargos.",
+      "cierre": "Calibrado con el piloto experto (PilotoPruebas, roca carbonácea, años 25→50): sin tocar nada no se cumple ninguno; solo atrayendo fragmentos, 1 (el ave: el coigüe de más de 3 m ya es percha); el piloto que además cava, pone una percha, siembra fijadoras y atiende los encargos, los 4 (8 especies al año 26, 15 encargos al 40, 60 g de N al 41). Quedaron fuera, por ahora: los hijos del coigüe (crecen pocos centímetros en 25 años a la sombra de su padre), la laguna (el agua que junta la limita la lluvia, no la pala: unos 11 L con o sin hoyo) y los retos de temporada (se cumplen solos).",
       "objetivos": [
         {
-          "id": "bosquete_5",
-          "texto": "Un bosquete: 5 coigües hijos de más de 1 m",
-          "tipo": "hijos_sobre_m",
-          "umbral": 1,
-          "meta": 5,
-          "pista": "Los hijos necesitan luz y suelo: junta suelo donde caen sus semillas y no dejes que el espinillo les quite el claro."
-        },
-        {
-          "id": "riqueza_6",
-          "texto": "Seis especies viviendo en la isla",
+          "id": "riqueza_8",
+          "texto": "Ocho especies viviendo en la isla",
           "tipo": "riqueza",
-          "meta": 6,
+          "meta": 8,
           "pista": "Siembra fijadoras (pasto, nalca chica, deu) y pon una percha: las aves traen maqui, murta, michay."
         },
         {
@@ -82,24 +74,17 @@
           "pista": "Una percha (o un árbol de más de 3 m) junta las semillas que dejan las aves; casi ninguna llega a plántula: paciencia y suelo bajo la percha."
         },
         {
-          "id": "laguna_10",
-          "texto": "Una laguna con 10 L de agua",
-          "tipo": "agua_laguna_l",
-          "meta": 10,
-          "pista": "Cava con la pala un hoyo rodeado de tierra: junta lo que escurre cuando llueve."
-        },
-        {
-          "id": "n_30",
-          "texto": "Que las fijadoras tomen 30 g de nitrógeno del aire",
+          "id": "n_60",
+          "texto": "Que las fijadoras tomen 60 g de nitrógeno del aire",
           "tipo": "n_fijado_total_kg",
-          "meta": 0.03,
+          "meta": 0.06,
           "pista": "La Lotus del pasto, la nalca chica, el deu y la nalca fijan nitrógeno; el espinillo también, pero lo pierde por lavado y no cuenta."
         },
         {
-          "id": "encargos_5",
-          "texto": "Cumplir 5 encargos de la isla",
+          "id": "encargos_15",
+          "texto": "Cumplir 15 encargos de la isla",
           "tipo": "encargos",
-          "meta": 5,
+          "meta": 15,
           "pista": "Cada encargo aparece clavado sobre un lugar: es lo que la isla necesita ahí."
         }
       ]
