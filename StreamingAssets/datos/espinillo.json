@@ -18,6 +18,12 @@
     "fuente": "DECISIÓN DE DISEÑO apoyada en su crecimiento rápido: rodales jóvenes producen 10.000-15.000 kg de materia seca por ha y año (Egunjobi 1969, citado por Magesan, Wang & Clinton 2012, New Zealand Journal of Ecology 36(1):21-28).",
     "confianza": "baja"
   },
+  "edad_reproductiva_anios": {
+    "valor": 1.5,
+    "unidad": "años desde que brota hasta que florece y suelta semillas (la VENTANA para arrancarlo sin dejar banco)",
+    "fuente": "«Gorse matures and flowers ~18 months after germination» (revisión «A World of Gorse: Persistence of Ulex europaeus in Managed Landscapes», Plants 2019, PMC6918442). Clones cultivados en Francia reproducen desde su 3.er año (Atlan et al. 2015, PLoS ONE, PMC4575064): la sombra lo retrasa.",
+    "confianza": "media"
+  },
   "semillas_m2_anio": {
     "valor": 3000,
     "unidad": "semillas viables que caen en la isla por m² cubierto y por año (las que salen más allá del borde no cuentan)",
