@@ -28,9 +28,9 @@
   <script>
     // Ojo: NO cancelar gesturestart/touchmove en el documento. Se probó (v179) y en el iPhone el juego dejó de recibir el
     // pellizco y el arrastre de dos dedos. touch-action: none (en el CSS) basta para que la página no se mueva.
-    // Versión: construir_web.sh reemplaza v268 · 3ceac17 · juego/demo-inicio · 14-10 12:24 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
+    // Versión: construir_web.sh reemplaza v269 · 732b5cb · juego/demo-inicio · 14-10 12:35 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
     // version.txt (pedido sin caché) dice otra cosa, se recarga con una dirección nueva (?v=…) que obliga a bajar la última.
-    var VERSION = "v268 · 3ceac17 · juego/demo-inicio · 14-10 12:24";
+    var VERSION = "v269 · 732b5cb · juego/demo-inicio · 14-10 12:35";
     document.getElementById("version").textContent = VERSION.indexOf("__") === 0 ? "" : VERSION;
     // El juego (~18 MB) no empieza a bajar hasta saber si hay que recargar: antes se bajaba entero y se botaba al recargar.
     var iniciado = false;
@@ -45,9 +45,9 @@
     }).catch(function () { iniciar(); });
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/4ea96787da67256ffae53b43fddbb909.data.unityweb",
-      frameworkUrl: "Build/141bf7579bc2be67ddf7f01946aca1b8.framework.js.unityweb",
-      codeUrl: "Build/39610eb60d902ef18cbb26ecb79f537c.wasm.unityweb",
+      dataUrl: "Build/45ee117a30ce54ce934f565d37e2cc79.data.unityweb",
+      frameworkUrl: "Build/243484d78c80f61183da51817da1b53f.framework.js.unityweb",
+      codeUrl: "Build/2f6aea16a12a0c2aca5afcde9bb4e90c.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Isla Flotante",
       productName: "Isla Flotante",
@@ -59,7 +59,7 @@
     script.src = "Build/a6dc53c1423e0e54e21b1d3ec98d8fa8.loader.js";
     script.onload = function () {
       createUnityInstance(lienzo, config, function (p) { barra.style.width = (100 * p) + "%"; })
-        .then(function () { carga.remove(); })
+        .then(function (u) { window.isla = u; carga.remove(); })   // window.isla: para revisar desde la consola (SendMessage)
         .catch(function (e) { carga.textContent = "No se pudo abrir la isla: " + e; });
     };
   </script>
