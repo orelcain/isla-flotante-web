@@ -1,6 +1,24 @@
 {
   "nota": "Agua de la isla semilla (etapa S2b). Lluvia diaria aleatoria con la frecuencia y el monto de cada mes en Castro (NASA POWER 2001-2020; el reanálisis probablemente subestima: pluviómetros dan 1.600-2.500 mm/año). Datos MEDIDOS con fuente y CALIBRACIONES PROVISIONALES marcadas.",
   "pendientes": "Sin fuente encontrada: (1) normales DMC de la estación Mocopulli Ad. (cód. 420014, comuna de Castro) con días de lluvia >= 1 mm: existe la ficha en climatologia.meteochile.gob.cl, pero no se obtuvieron las normales; (2) Kc propio de Nothofagus o de bosque siempreverde (se usa 'Conifer Trees' de FAO-56 como sustituto); (3) umbral de humedad del suelo en que N. nitida reduce la transpiración (se usa p de FAO-56); (4) agua útil de un regolito de condrita carbonosa (sin literatura; se usan texturas terrestres análogas de Saxton & Rawls); (5) relación cuantitativa altura/crecimiento vs profundidad de suelo para Nothofagus: Lusk & Matus (2000, J. Biogeography) reportan correlación positiva fuerte, pero no se obtuvieron coeficientes; (6) volumen de suelo por unidad de ÁREA FOLIAR (solo se encontró por área de proyección de copa); (7) capacidad de almacenamiento de agua del dosel (mm) de N. nitida; (8) texto original de Huber & Iroumé (2001) no consultado; (9) albedo de dosel de Nothofagus.",
+  "laguna_kc_agua_abierta": {
+    "valor": 1.05,
+    "unidad": "coeficiente: evaporación del agua libre = ET0 · Kc",
+    "fuente": "FAO-56 (Allen et al. 1998), tabla 12: agua abierta de menos de 2 m de profundidad, Kc = 1,05.",
+    "confianza": "alta"
+  },
+  "laguna_filtracion_mm_dia": {
+    "valor": 10,
+    "unidad": "mm por día que la laguna filtra hacia el suelo de su celda y de sus vecinas (lo que las riega)",
+    "fuente": "Orden de magnitud: los estanques de tierra pierden por filtración de pocos mm a más de 20 mm por día según el suelo (FAO, manuales de construcción de estanques para acuicultura). Sin dato para un regolito de condrita.",
+    "confianza": "baja"
+  },
+  "laguna_profundidad_minima_m": {
+    "valor": 0.01,
+    "unidad": "m: una hondonada menos honda solo moja el suelo",
+    "fuente": "DECISIÓN DE DISEÑO (1 cm).",
+    "confianza": "baja"
+  },
   "pronostico_dias": {
     "valor": 10,
     "unidad": "días de pronóstico de lluvia que muestra el juego",

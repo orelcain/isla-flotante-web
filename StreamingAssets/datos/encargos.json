@@ -1,5 +1,7 @@
 {
   "nota": "Encargos sobre el terreno (nucleo-cs/.../Semilla/Encargos.cs; docs/investigacion_gamificacion.md, mecánica 2). Las metas son METAS DE JUEGO (cuántas celdas, cuántos coigües, el plazo): no son números del modelo y no cambian la simulación. Lo que se mide para cumplirlas (cobertura del pasto, espinillo, árboles) sí sale del modelo.",
+  "reto_siembras_meta": { "valor": 2, "unidad": "siembras que deben prender en otoño o en primavera", "fuente": "meta de juego (otoño y primavera son las épocas de siembra de los viveros: siembra.json)", "confianza": "baja" },
+  "reto_suelo_invierno_kg": { "valor": 1, "unidad": "kg de suelo que pueden caer al vacío en el invierno sin perder el reto", "fuente": "meta de juego", "confianza": "baja" },
   "radio_celdas": { "valor": 1, "unidad": "celdas alrededor del lugar del encargo (cuadrado de 3 × 3)", "fuente": "meta de juego", "confianza": "baja" },
   "plazo_anios": { "valor": 3, "unidad": "años para cumplir el encargo", "fuente": "meta de juego: corto frente al plazo del capítulo (25 años)", "confianza": "baja" },
   "dias_entre_revisiones": { "valor": 30, "unidad": "días entre un encargo cumplido o vencido y el siguiente (a lo más)", "fuente": "meta de juego", "confianza": "baja" },
