@@ -1,12 +1,12 @@
 {
-  "nota": "Capítulos del juego (docs/DIRECCION_DE_JUEGO.md: estructura por entornos). Las metas son DISEÑO DE JUEGO, no datos científicos: se calibraron con EstrategiasPruebas y con el piloto experto (PilotoPruebas: marca lo alcanzable) para que cada una premie un camino distinto (no se cumplen todas a la vez ni solas). 10-10: «isla de 15 m²» pasó a «primer borde, 11 m²»: con el modelo del borde (MotorBorde) ni el piloto llegaba a 15 m² en 60 años. Tipos: area_m2, altura_m, suelo_max_m, n_fijado_kg, hijos (nacidos), hijos_sobre_m (vivos más altos que 'umbral'), fichas (descubiertas en la biblioteca). 12-10: el capítulo tiene plazo (plazo_anio): sin plazo todo se cumplía igual esperando (en 20 s de «décadas», 4 de 6 sin tocar nada). Con 25 años (~10 min en «estaciones») y la zona favorecida más fuerte (peso_zona_favorecida 12), PilotoPruebas da: sin hacer nada 2 objetivos (hijo y 2,5 m, año 23), junto al árbol 3 (más el rincón de 40 cm, año 14), piloto 4 (más 3 g de N con la nalca, año 25). El primer borde (año 27–30 en todas) queda como meta para quien siga jugando después del plazo. 12-10 (tarde): la roca se elige y la carbonácea llega desmenuzada (factor_regolito_inicial ×4): con ella, sin hacer nada 3 objetivos (hijo 18, 2,5 m 19, borde 24), piloto 5 (incluye nalca 22 y borde 23). Ordinaria e hierro empiezan más lento. 14-10: el capítulo 2 se calibró con el piloto que cava, pone perchas, siembra fijadoras y atiende encargos (Piloto.Cuidar; PilotoPruebas.Capitulo_2...): ver el cierre del capítulo.",
+  "nota": "Capítulos del juego (docs/DIRECCION_DE_JUEGO.md: estructura por entornos). Las metas son DISEÑO DE JUEGO, no datos científicos: se calibraron con EstrategiasPruebas y con el piloto experto (PilotoPruebas: marca lo alcanzable) para que cada una premie un camino distinto (no se cumplen todas a la vez ni solas). 10-10: «isla de 15 m²» pasó a «primer borde, 11 m²»: con el modelo del borde (MotorBorde) ni el piloto llegaba a 15 m² en 60 años. Tipos: area_m2, altura_m, suelo_max_m, n_fijado_kg, hijos (nacidos), hijos_sobre_m (vivos más altos que 'umbral'), fichas (descubiertas en la biblioteca). 12-10: el capítulo tiene plazo (plazo_anio): sin plazo todo se cumplía igual esperando (en 20 s de «décadas», 4 de 6 sin tocar nada). Con 25 años (~10 min en «estaciones») y la zona favorecida más fuerte (peso_zona_favorecida 12), PilotoPruebas da: sin hacer nada 2 objetivos (hijo y 2,5 m, año 23), junto al árbol 3 (más el rincón de 40 cm, año 14), piloto 4 (más 3 g de N con la nalca, año 25). El primer borde (año 27–30 en todas) queda como meta para quien siga jugando después del plazo. 12-10 (tarde): la roca se elige y la carbonácea llega desmenuzada (factor_regolito_inicial ×4): con ella, sin hacer nada 3 objetivos (hijo 18, 2,5 m 19, borde 24), piloto 5 (incluye nalca 22 y borde 23). Ordinaria e hierro empiezan más lento. 14-10: el capítulo 2 se calibró con el piloto que cava, pone perchas, siembra fijadoras y atiende encargos (Piloto.Cuidar; PilotoPruebas.Capitulo_2...): ver el cierre del capítulo. 14-10 (F2): estrellas por capítulo (estrellas: metas pedidas por 1★, 2★, 3★) y la vida de la isla como meta (vida_kg_c), calibradas con EstrellasPruebas.",
   "capitulos": [
     {
       "id": "chiloe",
       "nombre": "Capítulo 1 · Chiloé",
       "entorno": "tierra",
       "plazo_anio": 25,
-      "cierre": "Para comparar, con una roca carbonácea promedio: sin tocar nada, la isla cumple 3 objetivos en 25 años; el piloto experto, que cada año prueba unas pocas zonas y siembra una nalca, 5 (PilotoPruebas). Con una condrita ordinaria o un hierro el comienzo es más lento: llegan con menos material suelto (RocasPruebas).",
+      "cierre": "Para comparar, con una roca carbonácea promedio: sin tocar nada, la isla cumple 3 objetivos en 25 años; el piloto experto, que cada año prueba unas pocas zonas y siembra una nalca, 5 (PilotoPruebas). Con una condrita ordinaria o un hierro el comienzo es más lento: llegan con menos material suelto (RocasPruebas). Estrellas (metas de la simulación cumplidas dentro del plazo; las fichas no cuentan): 1★ con 3, 2★ con 5, 3★ con las 6. Sin tocar nada: 3 metas, 1★ (13,96 kg C); atrayendo junto al árbol: 5, 2★; el piloto: 6, 3★ (EstrellasPruebas).",
       "objetivos": [
         {
           "id": "primer_hijo",
@@ -44,12 +44,24 @@
           "pista": "La tierra suelta no cuelga sobre el vacío: la sostienen las raíces. Cuando las del coigüe lleguen al borde, junta suelo ahí (atrae fragmentos al borde)."
         },
         {
+          "id": "vida_15",
+          "texto": "Que la isla guarde 15 kg de carbono vivo",
+          "tipo": "vida_kg_c",
+          "meta": 15,
+          "pista": "Todo lo que crece suma: el coigüe, sus raíces, la nalca, el humus y la hojarasca. Lo que cae al vacío resta. Se mide en kg de carbono (turno.json)."
+        },
+        {
           "id": "fichas_30",
           "texto": "Descubrir 30 fichas de la biblioteca",
           "tipo": "fichas",
           "meta": 30,
           "pista": "Pasa el mouse por la isla y detente sobre lo que no conoces."
         }
+      ],
+      "estrellas": [
+        3,
+        5,
+        6
       ]
     },
     {
@@ -57,7 +69,7 @@
       "nombre": "Capítulo 2 · El bosquete",
       "entorno": "tierra",
       "plazo_anio": 50,
-      "cierre": "Calibrado con el piloto experto (PilotoPruebas, roca carbonácea, años 25→50): sin tocar nada no se cumple ninguno; solo atrayendo fragmentos, 1 (el ave: el coigüe de más de 3 m ya es percha); el piloto que además cava, pone una percha, siembra fijadoras y atiende los encargos, los 4 (8 especies al año 26, 15 encargos al 40, 60 g de N al 41). Quedaron fuera, por ahora: los hijos del coigüe (crecen pocos centímetros en 25 años a la sombra de su padre), la laguna (el agua que junta la limita la lluvia, no la pala: unos 11 L con o sin hoyo) y los retos de temporada (se cumplen solos).",
+      "cierre": "Calibrado con el piloto experto (PilotoPruebas, roca carbonácea, años 25→50): sin tocar nada no se cumple ninguno; solo atrayendo fragmentos, 1 (el ave: el coigüe de más de 3 m ya es percha); el piloto que además cava, pone una percha, siembra fijadoras y atiende los encargos, los 4 (8 especies al año 26, 15 encargos al 40, 60 g de N al 41). Quedaron fuera, por ahora: los hijos del coigüe (crecen pocos centímetros en 25 años a la sombra de su padre), la laguna (el agua que junta la limita la lluvia, no la pala: unos 11 L con o sin hoyo) y los retos de temporada (se cumplen solos). Estrellas (metas cumplidas dentro del plazo): 1★ con 1, 2★ con 2, 3★ con 3 de las 5. Sin tocar nada: 0 metas (50,7 kg C); atrayendo junto al árbol: 1 (el ave), 1★; el piloto: 3 (60 g de N, 15 encargos y 57,8 kg C en el año 49), 3★. Las aves y la riqueza dependen del azar de cada partida (EstrellasPruebas).",
       "objetivos": [
         {
           "id": "riqueza_8",
@@ -86,7 +98,19 @@
           "tipo": "encargos",
           "meta": 15,
           "pista": "Cada encargo aparece clavado sobre un lugar: es lo que la isla necesita ahí."
+        },
+        {
+          "id": "vida_55",
+          "texto": "Que la isla guarde 55 kg de carbono vivo",
+          "tipo": "vida_kg_c",
+          "meta": 55,
+          "pista": "El coigüe solo llega a unos 51 kg en 50 años: el resto lo ponen las fijadoras, el suelo que juntas y lo que no dejas caer al vacío."
         }
+      ],
+      "estrellas": [
+        1,
+        2,
+        3
       ]
     }
   ]
