@@ -8,12 +8,100 @@
       "plazo_anio": 25,
       "cierre": "Para comparar, con una roca carbonácea promedio: sin tocar nada, la isla cumple 3 objetivos en 25 años; el piloto experto, que cada año prueba unas pocas zonas y siembra una nalca, 5 (PilotoPruebas). Con una condrita ordinaria o un hierro el comienzo es más lento: llegan con menos material suelto (RocasPruebas).",
       "objetivos": [
-        { "id": "primer_hijo", "texto": "Que nazca el primer coigüe hijo", "tipo": "hijos", "meta": 1, "pista": "El coigüe da semillas cuando ya es latizal; germinan mejor sobre madera podrida o musgo." },
-        { "id": "coigue_25", "texto": "Que el coigüe llegue a 2,5 m", "tipo": "altura_m", "meta": 2.5, "pista": "Su copa crece hasta lo que sostiene el suelo que alcanzan sus raíces: atrae los fragmentos junto a él." },
-        { "id": "rincon_40", "texto": "Un rincón con 40 cm de suelo", "tipo": "suelo_max_m", "meta": 0.4, "pista": "Concentra los fragmentos en un mismo lugar: el suelo se forma donde caen." },
-        { "id": "nalca_n", "texto": "Que la nalca fije 3 g de nitrógeno", "tipo": "n_fijado_kg", "meta": 0.003, "pista": "Siembra una nalca donde haya al menos 15 cm de suelo: su Nostoc fija nitrógeno del aire. Crece según el suelo que tiene: junta más suelo a su alrededor." },
-        { "id": "isla_11", "texto": "Que la isla gane su primer borde (11 m²)", "tipo": "area_m2", "meta": 11, "pista": "La tierra suelta no cuelga sobre el vacío: la sostienen las raíces. Cuando las del coigüe lleguen al borde, junta suelo ahí (atrae fragmentos al borde)." },
-        { "id": "fichas_30", "texto": "Descubrir 30 fichas de la biblioteca", "tipo": "fichas", "meta": 30, "pista": "Pasa el mouse por la isla y detente sobre lo que no conoces." }
+        {
+          "id": "primer_hijo",
+          "texto": "Que nazca el primer coigüe hijo",
+          "tipo": "hijos",
+          "meta": 1,
+          "pista": "El coigüe da semillas cuando ya es latizal; germinan mejor sobre madera podrida o musgo."
+        },
+        {
+          "id": "coigue_25",
+          "texto": "Que el coigüe llegue a 2,5 m",
+          "tipo": "altura_m",
+          "meta": 2.5,
+          "pista": "Su copa crece hasta lo que sostiene el suelo que alcanzan sus raíces: atrae los fragmentos junto a él."
+        },
+        {
+          "id": "rincon_40",
+          "texto": "Un rincón con 40 cm de suelo",
+          "tipo": "suelo_max_m",
+          "meta": 0.4,
+          "pista": "Concentra los fragmentos en un mismo lugar: el suelo se forma donde caen."
+        },
+        {
+          "id": "nalca_n",
+          "texto": "Que la nalca fije 3 g de nitrógeno",
+          "tipo": "n_fijado_kg",
+          "meta": 0.003,
+          "pista": "Siembra una nalca donde haya al menos 15 cm de suelo: su Nostoc fija nitrógeno del aire. Crece según el suelo que tiene: junta más suelo a su alrededor."
+        },
+        {
+          "id": "isla_11",
+          "texto": "Que la isla gane su primer borde (11 m²)",
+          "tipo": "area_m2",
+          "meta": 11,
+          "pista": "La tierra suelta no cuelga sobre el vacío: la sostienen las raíces. Cuando las del coigüe lleguen al borde, junta suelo ahí (atrae fragmentos al borde)."
+        },
+        {
+          "id": "fichas_30",
+          "texto": "Descubrir 30 fichas de la biblioteca",
+          "tipo": "fichas",
+          "meta": 30,
+          "pista": "Pasa el mouse por la isla y detente sobre lo que no conoces."
+        }
+      ]
+    },
+    {
+      "id": "bosquete",
+      "nombre": "Capítulo 2 · El bosquete",
+      "entorno": "tierra",
+      "plazo_anio": 50,
+      "cierre": "Metas de juego SIN CALIBRAR todavía con el piloto experto (el piloto aún no cava lagunas ni pone perchas): pueden quedar muy fáciles o muy difíciles. Cada una sale de un proceso del modelo: regeneración, perchas y aves, lagunas, fijadoras de nitrógeno, encargos.",
+      "objetivos": [
+        {
+          "id": "bosquete_5",
+          "texto": "Un bosquete: 5 coigües hijos de más de 1 m",
+          "tipo": "hijos_sobre_m",
+          "umbral": 1,
+          "meta": 5,
+          "pista": "Los hijos necesitan luz y suelo: junta suelo donde caen sus semillas y no dejes que el espinillo les quite el claro."
+        },
+        {
+          "id": "riqueza_6",
+          "texto": "Seis especies viviendo en la isla",
+          "tipo": "riqueza",
+          "meta": 6,
+          "pista": "Siembra fijadoras (pasto, nalca chica, deu) y pon una percha: las aves traen maqui, murta, michay."
+        },
+        {
+          "id": "ave_1",
+          "texto": "Que nazca una planta traída por un ave",
+          "tipo": "arbustos_ave",
+          "meta": 1,
+          "pista": "Una percha (o un árbol de más de 3 m) junta las semillas que dejan las aves; casi ninguna llega a plántula: paciencia y suelo bajo la percha."
+        },
+        {
+          "id": "laguna_10",
+          "texto": "Una laguna con 10 L de agua",
+          "tipo": "agua_laguna_l",
+          "meta": 10,
+          "pista": "Cava con la pala un hoyo rodeado de tierra: junta lo que escurre cuando llueve."
+        },
+        {
+          "id": "n_30",
+          "texto": "Que las fijadoras tomen 30 g de nitrógeno del aire",
+          "tipo": "n_fijado_total_kg",
+          "meta": 0.03,
+          "pista": "La Lotus del pasto, la nalca chica, el deu y la nalca fijan nitrógeno; el espinillo también, pero lo pierde por lavado y no cuenta."
+        },
+        {
+          "id": "encargos_5",
+          "texto": "Cumplir 5 encargos de la isla",
+          "tipo": "encargos",
+          "meta": 5,
+          "pista": "Cada encargo aparece clavado sobre un lugar: es lo que la isla necesita ahí."
+        }
       ]
     }
   ]
