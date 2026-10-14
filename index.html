@@ -28,19 +28,24 @@
   <script>
     // Ojo: NO cancelar gesturestart/touchmove en el documento. Se probó (v179) y en el iPhone el juego dejó de recibir el
     // pellizco y el arrastre de dos dedos. touch-action: none (en el CSS) basta para que la página no se mueva.
-    // Versión: construir_web.sh reemplaza v247 · e04df90 · juego/demo-inicio · 13-10 21:32 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
+    // Versión: construir_web.sh reemplaza v248 · a48f2b7 · juego/demo-inicio · 13-10 21:39 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
     // version.txt (pedido sin caché) dice otra cosa, se recarga con una dirección nueva (?v=…) que obliga a bajar la última.
-    var VERSION = "v247 · e04df90 · juego/demo-inicio · 13-10 21:32";
+    var VERSION = "v248 · a48f2b7 · juego/demo-inicio · 13-10 21:39";
     document.getElementById("version").textContent = VERSION.indexOf("__") === 0 ? "" : VERSION;
+    // El juego (~18 MB) no empieza a bajar hasta saber si hay que recargar: antes se bajaba entero y se botaba al recargar.
+    var iniciado = false;
+    function iniciar() { if (iniciado) return; iniciado = true; document.body.appendChild(script); }
+    setTimeout(iniciar, 2000);   // sin respuesta de version.txt en 2 s: se juega lo que hay
     fetch("version.txt?r=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.ok ? r.text() : ""; }).then(function (v) {
-      v = (v || "").trim(); if (!v || VERSION.indexOf("__") === 0 || v === VERSION) return;
+      v = (v || "").trim(); if (!v || VERSION.indexOf("__") === 0 || v === VERSION) { iniciar(); return; }
       var marca = "recargada-" + v;
-      try { if (sessionStorage.getItem(marca)) return; sessionStorage.setItem(marca, "1"); } catch (e) {}
+      try { if (sessionStorage.getItem(marca)) { iniciar(); return; } sessionStorage.setItem(marca, "1"); } catch (e) {}
+      iniciado = true;   // se va a recargar: no bajar esta versión
       location.replace(location.pathname + "?v=" + encodeURIComponent(v.split(" ")[0]) + "-" + Date.now());
-    }).catch(function () {});
+    }).catch(function () { iniciar(); });
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/607e03a7008459873ef83e72ec5f2787.data.unityweb",
+      dataUrl: "Build/f95eaa89c6d5639c885942efa1d7b6d3.data.unityweb",
       frameworkUrl: "Build/b4588a84f58a4dd63d4d85a4636fb73d.framework.js.unityweb",
       codeUrl: "Build/193febbcd060bfbed082ffc7c6d0cddc.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
@@ -57,7 +62,6 @@
         .then(function () { carga.remove(); })
         .catch(function (e) { carga.textContent = "No se pudo abrir la isla: " + e; });
     };
-    document.body.appendChild(script);
   </script>
 </body>
 </html>
