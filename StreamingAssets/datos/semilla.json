@@ -663,6 +663,24 @@
     "confianza": "baja",
     "nota": "Se aplica solo los días de temporal (temporal_mm_dia, ≥ 20 mm) y en celdas cuyo suelo ya estaba lleno (el agua escurre). Con lluvia común se toma m = 0 (drena): simplificación declarada; un modelo de agua por capas daría m día a día."
   },
+  "zanja_reduccion_m": {
+    "valor": 0.7,
+    "unidad": "fracción en que una zanja de drenaje baja la saturación (m) del borde que protege en un temporal",
+    "fuente": "DECISIÓN DE DISEÑO sobre lo cualitativo: el drenaje (zanjas de coronación que desvían el agua antes de que llegue al talud) es la medida más usada y eficaz para estabilizar taludes porque baja la presión de poros (Cornforth 2005, Landslides in Practice, cap. de drenaje; Abramson et al. 2002, Slope Stability and Stabilization Methods). Cuánto baja m depende del sitio: no hay una cifra general.",
+    "confianza": "baja"
+  },
+  "zanja_vida_anios": {
+    "valor": 3,
+    "unidad": "años hasta que la zanja se rellena con sedimento y hojarasca y deja de drenar (sin mantención)",
+    "fuente": "DECISIÓN DE DISEÑO: las zanjas de tierra sin revestir se colmatan y necesitan limpieza periódica (manuales de conservación de suelos); el plazo es un supuesto.",
+    "confianza": "baja"
+  },
+  "zanja_radio_celdas": {
+    "valor": 1,
+    "unidad": "celdas alrededor de la zanja cuyo borde queda protegido (una zanja de ~75 cm sobre el borde)",
+    "fuente": "DECISIÓN DE DISEÑO: la zanja corta el agua que baja hacia el tramo de borde de su largo.",
+    "confianza": "baja"
+  },
   "dias_entre_deslizamientos": {
     "valor": 7,
     "unidad": "días",
