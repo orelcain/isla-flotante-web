@@ -650,6 +650,19 @@
     "confianza": "media",
     "nota": "el regolito suelto que deja una pendiente mayor que este ángulo se desliza a la celda vecina más baja; la roca no se desliza"
   },
+  "porosidad_regolito": {
+    "valor": 0.5,
+    "unidad": "fracción del volumen en poros",
+    "fuente": "n = 1 − densidad aparente / densidad de partícula = 1 − 1330 / 2650 (densidad_regolito de esta tabla y 2,65 g/cm3 de los minerales del suelo, el mismo cálculo de parametros.json → porosidad).",
+    "confianza": "media"
+  },
+  "saturacion_temporal_m": {
+    "valor": 1.0,
+    "unidad": "fracción del espesor del suelo del borde que queda bajo el agua en un temporal con el suelo ya lleno (m del talud infinito)",
+    "fuente": "Talud infinito con flujo paralelo a la pendiente: FS = c/(γ·z·senβ·cosβ) + (1 − m·γw/γsat)·tanφ/tanβ (Skempton & DeLory 1957; modelo SHALSTAB de Montgomery & Dietrich 1994, Water Resour. Res. 30:1153-1171). m = 1 es el caso crítico (suelo saturado hasta la superficie) que gatilla los deslizamientos superficiales tras lluvias intensas.",
+    "confianza": "baja",
+    "nota": "Se aplica solo los días de temporal (temporal_mm_dia, ≥ 20 mm) y en celdas cuyo suelo ya estaba lleno (el agua escurre). Con lluvia común se toma m = 0 (drena): simplificación declarada; un modelo de agua por capas daría m día a día."
+  },
   "dias_entre_deslizamientos": {
     "valor": 7,
     "unidad": "días",

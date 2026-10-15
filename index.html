@@ -28,9 +28,9 @@
   <script>
     // Ojo: NO cancelar gesturestart/touchmove en el documento. Se probó (v179) y en el iPhone el juego dejó de recibir el
     // pellizco y el arrastre de dos dedos. touch-action: none (en el CSS) basta para que la página no se mueva.
-    // Versión: construir_web.sh reemplaza v320 · 8426dc0 · claude/tanda-referencias-8a86df · 15-10 19:07 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
+    // Versión: construir_web.sh reemplaza v322 · 3ed282a · claude/tanda-referencias-8a86df · 15-10 19:30 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
     // version.txt (pedido sin caché) dice otra cosa, se recarga con una dirección nueva (?v=…) que obliga a bajar la última.
-    var VERSION = "v320 · 8426dc0 · claude/tanda-referencias-8a86df · 15-10 19:07";
+    var VERSION = "v322 · 3ed282a · claude/tanda-referencias-8a86df · 15-10 19:30";
     document.getElementById("version").textContent = VERSION.indexOf("__") === 0 ? "" : VERSION;
     // El juego (~18 MB) no empieza a bajar hasta saber si hay que recargar: antes se bajaba entero y se botaba al recargar.
     var iniciado = false;
@@ -45,9 +45,9 @@
     }).catch(function () { iniciar(); });
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/9098b28b779aaf9711e035f4556ab1aa.data.unityweb",
-      frameworkUrl: "Build/31f62a76fc49d11a0d0be18cbad8961b.framework.js.unityweb",
-      codeUrl: "Build/b8bc45d11ab5cbab5a7c21537b4f303f.wasm.unityweb",
+      dataUrl: "Build/26b239d8c3d6633efa04a6bacec07d49.data.unityweb",
+      frameworkUrl: "Build/3eea25d45b5ede1a9e20af34ffc10853.framework.js.unityweb",
+      codeUrl: "Build/eb179cdf83ddf8da23ed886368f37240.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Isla Flotante",
       productName: "Isla Flotante",
