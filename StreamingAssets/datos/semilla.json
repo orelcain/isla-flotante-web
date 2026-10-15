@@ -261,6 +261,12 @@
     "fuente": "SUPUESTO de diseño (rango 0,05–0,3 en investigacion_borde.json): sin medición de velocidad de depósito sobre suelo desnudo para polvo de 10–100 µm. Reemplazo serio: Zhang et al. 2001, Atmos. Environ. 35:549-560 (doi:10.1016/S1352-2310(00)00326-5) con la rugosidad de cada cobertura",
     "confianza": "baja"
   },
+  "borde_retencion_pasto": {
+    "valor": 0.6,
+    "unidad": "fracción del polvo que cae junto a una celda de borde cubierta de pasto y se queda",
+    "fuente": "SUPUESTO de diseño (14-10-2026), entre el suelo desnudo (0,15) y el musgo (0,8): una mata de pasto es rugosa y frena el polvo que rueda hacia el borde. Reemplazo serio: el mismo de los otros (Zhang et al. 2001, Atmos. Environ. 35:549-560, depósito según la rugosidad de cada cobertura).",
+    "confianza": "baja"
+  },
   "borde_retencion_musgo": {
     "valor": 0.8,
     "unidad": "fracción del polvo que cae junto a un borde cubierto de musgo y se queda",

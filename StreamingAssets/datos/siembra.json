@@ -79,6 +79,12 @@
     "fuente": "SIN FUENTE para el deu. Referencia de otro árbol: coigüe plantado bajo dosel en Chiloé, ~70 % vivo a 5 años (Bannister et al. 2021).",
     "confianza": "baja"
   },
+  "quila_prendimiento": {
+    "valor": 0.5,
+    "unidad": "fracción de trozos de rizoma de quila que prenden",
+    "fuente": "SIN FUENTE: se planta un trozo de rizoma con caña (como se propagan los bambúes). Valor de diseño, más bajo que el estolón de la nalca chica.",
+    "confianza": "baja"
+  },
   "lotus_rizobio": {
     "valor": 1,
     "unidad": "1 = la Lotus fija N solo donde está su rizobio (Bradyrhizobium sp. (Lotus)); sin él no forma nódulos que fijen",

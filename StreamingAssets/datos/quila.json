@@ -1,0 +1,76 @@
+{
+  "nota": "Quila (Chusquea quila): bambú nativo del sur de Chile, colonizador agresivo de claros y bordes. Amarra el borde con su entramado de rizomas, pero bajo sus matas casi no llega luz y frena la regeneración de los árboles (planta nativa que invade). NO se encontró ninguna medición de raíces o rizomas de Chusquea (búsqueda del 14-10-2026): la tracción viene de un bambú ANÁLOGO y la biomasa de rizomas es CALIBRACIÓN DEL JUEGO. Lo que la reemplazará: Tagle et al. 2013 (rizomas de Chusquea, texto completo) y tesis de la U. Austral y la U. de Concepción sobre C. quila.",
+  "raiz_resistencia_traccion_mpa": {
+    "valor": 16.5,
+    "unidad": "MPa (resistencia a la tracción de raíces y rizomas)",
+    "fuente": "ANÁLOGO: Phyllostachys edulis, media 16,46 MPa en un estudio de tres bambúes monopodiales (Linye Kexue 2013, https://html.rhhz.net/linyekexue/html/20130727.htm); rango 11,6–34,1 MPa en P. edulis en laderas (https://agris.fao.org/search/en/records/690c9b9ee36ca6284360a9f2). Cae con el diámetro (ley de potencia negativa).",
+    "confianza": "baja"
+  },
+  "rizoma_biomasa_madura_kg_m2": {
+    "valor": 2.5,
+    "unidad": "kg de rizomas y raíces por m² (quilantal cerrado)",
+    "fuente": "CALIBRACIÓN DEL JUEGO: sin dato para Chusquea. Se fija algo sobre la raíz del pasto (1,4 kg/m²) porque el bambú forma un entramado leñoso denso; la biomasa aérea de otra Chusquea (C. tenuiflora, 13 t/ha, Veblen, Schlegel y Escobar 1979) no se usa como raíz.",
+    "confianza": "baja"
+  },
+  "rizoma_densidad_tejido_kg_m3": {
+    "valor": 500,
+    "unidad": "kg de rizoma por m³ de rizoma",
+    "fuente": "DECISIÓN DE DISEÑO: rizoma leñoso, entre la raíz del pasto (250) y la madera de coigüe; sin medición.",
+    "confianza": "baja"
+  },
+  "rizoma_beta": {
+    "valor": 0.96,
+    "unidad": "adimensional (fracción acumulada de rizoma hasta d cm = 1 − β^d)",
+    "fuente": "DECISIÓN DE DISEÑO: algo más hondo que el pasto (0,943, Jackson et al. 1996); sin perfil medido para Chusquea.",
+    "confianza": "baja"
+  },
+  "rizoma_lateral": {
+    "valor": 0.5,
+    "unidad": "fracción del rizoma de una celda que alcanza una celda vecina nueva (sobre el vacío)",
+    "fuente": "DECISIÓN DE DISEÑO, igual que el pasto: los rizomas de Chusquea son mayormente paquimorfos (forman macollos densos), no corredores largos.",
+    "confianza": "baja"
+  },
+  "tasa_cobertura_anio": {
+    "valor": 0.8,
+    "unidad": "1/año (crecimiento logístico de la cobertura)",
+    "fuente": "DECISIÓN DE DISEÑO: colonizador agresivo de claros (Lusk 2001, Gayana Botánica), más lento que el pasto (3/año) porque es una caña leñosa; sin tasa medida.",
+    "confianza": "baja"
+  },
+  "propagacion_anio": {
+    "valor": 0.25,
+    "unidad": "cobertura que una celda cubierta siembra en cada vecina por año",
+    "fuente": "DECISIÓN DE DISEÑO: se expande por rizomas a las celdas vecinas; sin velocidad medida (m/año).",
+    "confianza": "baja"
+  },
+  "suelo_minimo_m": {
+    "valor": 0.03,
+    "unidad": "m de sustrato",
+    "fuente": "DECISIÓN DE DISEÑO, igual que el pasto: necesita algo de suelo para sus rizomas; sin dato.",
+    "confianza": "baja"
+  },
+  "cobertura_siembra": { "valor": 0.1, "unidad": "cobertura al plantar un trozo de rizoma", "fuente": "decisión de diseño", "confianza": "alta" },
+  "luz_bajo_matas": {
+    "valor": 0.015,
+    "unidad": "fracción de la luz abierta bajo un quilantal cerrado",
+    "fuente": "Lusk, C. H. 2001. Gayana Botánica 58(1), Parque Nacional Puyehue (https://revistas.udec.cl/index.php/gayana_botanica/article/view/4239): 1,5 % de luz difusa bajo Chusquea; el bosque alto da 1,7 %.",
+    "confianza": "media"
+  },
+  "regeneracion_bajo_matas": {
+    "valor": 0.1,
+    "unidad": "fracción del micrositio de germinación que queda bajo un quilantal cerrado",
+    "fuente": "DECISIÓN DE DISEÑO a partir de que el bambú frena la regeneración arbórea en el sur de Chile (Lusk 2001; Muñoz y González 2009, Revista Chilena de Historia Natural). Sin cifra medida de cuánto la frena.",
+    "confianza": "baja"
+  },
+  "retencion_polvo_borde": {
+    "valor": 0.85,
+    "unidad": "fracción del polvo que cae junto a una celda de borde cubierta de quila y se queda",
+    "fuente": "SUPUESTO de diseño, como borde_retencion_musgo y borde_retencion_pasto (semilla.json): un quilantal de cañas densas es la cobertura más rugosa de la isla. Reemplazo serio: Zhang et al. 2001, Atmos. Environ. 35:549-560.",
+    "confianza": "baja"
+  },
+  "alto_m": {
+    "valor": 2.5,
+    "unidad": "m (alto de las cañas con la celda cubierta)",
+    "fuente": "DIBUJO: cañas de varios metros que se arquean; sin flora verificada para la cifra.",
+    "confianza": "baja"
+  }
+}
