@@ -19,9 +19,9 @@
     "confianza": "baja"
   },
   "rizoma_beta": {
-    "valor": 0.96,
+    "valor": 0.943,
     "unidad": "adimensional (fracción acumulada de rizoma hasta d cm = 1 − β^d)",
-    "fuente": "DECISIÓN DE DISEÑO: algo más hondo que el pasto (0,943, Jackson et al. 1996); sin perfil medido para Chusquea.",
+    "fuente": "DECISIÓN DE DISEÑO: el mismo perfil que el pasto (0,943, Jackson et al. 1996, raíces fibrosas someras); sin perfil medido para Chusquea. (Antes 0,96, más hondo y sin fuente: en los 5 cm del borde le cabía menos rizoma que al pasto.)",
     "confianza": "baja"
   },
   "rizoma_lateral": {
