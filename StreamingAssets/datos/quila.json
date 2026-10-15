@@ -67,6 +67,18 @@
     "fuente": "SUPUESTO de diseño, como borde_retencion_musgo y borde_retencion_pasto (semilla.json): un quilantal de cañas densas es la cobertura más rugosa de la isla. Reemplazo serio: Zhang et al. 2001, Atmos. Environ. 35:549-560.",
     "confianza": "baja"
   },
+  "rebrote_rizoma_kg_m2": {
+    "valor": 0.5,
+    "unidad": "kg/m² de rizoma bajo el que una mata cortada ya no rebrota",
+    "fuente": "DECISIÓN DE DISEÑO: los bambúes rebrotan del rizoma tras el corte (por eso se controlan cortando varias veces); sin umbral medido para Chusquea.",
+    "confianza": "baja"
+  },
+  "rizoma_que_sale_al_cortar": {
+    "valor": 0.5,
+    "unidad": "fracción del rizoma de la celda que se saca (muere y queda en el humus) al cortar la mata",
+    "fuente": "DECISIÓN DE DISEÑO: cortar con pala parte del rizoma; sin dato.",
+    "confianza": "baja"
+  },
   "alto_m": {
     "valor": 2.5,
     "unidad": "m (alto de las cañas con la celda cubierta)",
