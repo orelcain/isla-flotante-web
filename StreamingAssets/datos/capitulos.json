@@ -111,7 +111,9 @@
         1,
         2,
         3
-      ]
+      ],
+      "anios_por_turno": 5,
+      "anios_por_turno_nota": "DECISIÓN DE DISEÑO (evaluación como desarrollador, 15-10: la isla crece centímetros por década): en el capítulo 2 cada turno vale 5 años; lo de mantención del plan (atraer, arrancar, cortar) se repite cada año y lo que se construye se hace una vez. La simulación no cambia: solo cuántos años se viven por turno."
     }
   ]
 }
