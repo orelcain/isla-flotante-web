@@ -32,6 +32,23 @@
   },
   "choque_suelo_perdido": { "valor": 0.6, "unidad": "fracción del suelo suelto que el golpe tira al vacío en la celda tocada y sus 8 vecinas", "fuente": "DECISIÓN DE DISEÑO: un choque que no se pega sacude el borde; sin dato.", "confianza": "baja" },
   "choque_escombro_fraccion": { "valor": 0.02, "unidad": "fracción de la masa de la roca que queda como escombro (regolito) en el borde tocado", "fuente": "DECISIÓN DE DISEÑO: a cm/s una roca no se pulveriza (la energía de ruptura de un cuerpo de 1 m es de ~10³ J/kg, Benz y Asphaug 1999, extrapolado; a 10 cm/s llegan 0,005 J/kg): casi toda rebota y se va; lo que queda son esquirlas.", "confianza": "baja" },
+  "islote_fraccion": {
+    "valor": 0.35,
+    "unidad": "fracción de las rocas errantes que son ISLOTES VIVOS (traen suelo, musgo y plantas)",
+    "fuente": "DECISIÓN DE DISEÑO, dentro de la premisa del juego (islas que flotan). Lo que traen sale de los mismos modelos de especies y suelos de la isla; el análogo real es el «rafting»: balsas de vegetación y suelo que llevan plantas y animales a islas lejanas (Thiel y Gutow 2005, Oceanogr. Mar. Biol. Annu. Rev. 43:279).",
+    "confianza": "baja"
+  },
+  "islote_anio_minimo": { "valor": 5, "unidad": "año desde el que pueden llegar islotes vivos", "fuente": "DECISIÓN DE DISEÑO: después de la primera roca desnuda.", "confianza": "alta" },
+  "islote_suelo_min_m": { "valor": 0.03, "unidad": "m de suelo (regolito) que trae un islote", "fuente": "DECISIÓN DE DISEÑO: lo que junta la isla del jugador en unos años de polvo.", "confianza": "baja" },
+  "islote_suelo_max_m": { "valor": 0.1, "unidad": "m de suelo máximo que trae un islote", "fuente": "DECISIÓN DE DISEÑO.", "confianza": "baja" },
+  "islote_humus_m": { "valor": 0.01, "unidad": "m de horizonte orgánico (humus) sobre el suelo del islote", "fuente": "DECISIÓN DE DISEÑO: una capa delgada bajo el musgo.", "confianza": "baja" },
+  "islote_musgo": { "valor": 0.6, "unidad": "cobertura de musgo con que llega cada celda del islote", "fuente": "DECISIÓN DE DISEÑO: el musgo es lo primero que cubre una roca con algo de suelo (la misma sucesión de la isla, Suelo.cs).", "confianza": "baja" },
+  "islote_polizon_prob": {
+    "valor": 0.3,
+    "unidad": "probabilidad de que el islote traiga escondida una plántula invasora (espinillo o zarzamora)",
+    "fuente": "DECISIÓN DE DISEÑO: las balsas de vegetación también llevan especies invasoras (Thiel y Gutow 2005); la cifra es un supuesto.",
+    "confianza": "baja"
+  },
   "cuello_anios": {
     "valor": 4,
     "unidad": "años en que el polvo llena y cementa la grieta de la unión",
