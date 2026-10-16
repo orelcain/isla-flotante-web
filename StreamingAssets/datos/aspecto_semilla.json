@@ -164,9 +164,9 @@
     "confianza": "alta"
   },
   "veladura_luz_pigmento_oscuro": {
-    "valor": 0.15,
+    "valor": 0.06,
     "unidad": "luz lineal sumada (0-1) en la cara iluminada de un pigmento oscuro",
-    "fuente": "decisión de diseño (ronda 3 del director de arte): sobre la condrita casi negra (2-4 % de reflectancia) multiplicar la luz no separa los planos; se suma una veladura cálida solo en la cara iluminada (la sombra conserva su relleno de cielo), solo en pigmentos de luminancia < 0,25. No cambia el orden de valores medido (CI < humus < óxidos). Meta: cara iluminada y sombra de la roca separadas >= 25 niveles de luminancia",
+    "fuente": "decisión de diseño (ronda 3 del director de arte): sobre la condrita casi negra (2-4 % de reflectancia) multiplicar la luz no separa los planos; se suma una veladura cálida solo en la cara iluminada (la sombra conserva su relleno de cielo), solo en pigmentos de luminancia < 0,25. No cambia el orden de valores medido (CI < humus < óxidos). Meta: cara iluminada y sombra de la roca separadas >= 25 niveles de luminancia. 16-10: de 0,15 a 0,06 probado en la web (portada, sol a 0,65): con 0,15 la veladura dominaba y la tapa de condrita casi negra se leía como arena beige (luminancia 165 de 255); con 0,06 queda gris oscura (57) y la panza en sombra a 37",
     "confianza": "alta"
   },
   "madera_podrida_k_anio": {
@@ -498,6 +498,12 @@
     "valor": 2,
     "unidad": "mm de lluvia en el día desde los que se dibujan charcos en las depresiones",
     "fuente": "DECISIÓN DE DIBUJO: con lluvias de pocos milímetros el agua se infiltra en el sustrato y no se junta; sin umbral medido para la isla.",
+    "confianza": "baja"
+  },
+  "relieve_tapa_normal": {
+    "valor": 0.04,
+    "unidad": "inclinación de la normal por unidad de pendiente del relieve pintado (shader ColorVertice, _RelieveTapa)",
+    "fuente": "DECISIÓN DE DIBUJO (16-10, probado en la web): el microrelieve pintado de la tapa (terrones donde asoma el regolito, lomitas bajo el humus) con 0,012 no se veía; con 0,04 la luz de costado lo modela sin volverse adoquinado (0,12 sí lo era).",
     "confianza": "baja"
   }
 }
