@@ -69,13 +69,13 @@
       "nombre": "Capítulo 2 · El bosquete",
       "entorno": "tierra",
       "plazo_anio": 50,
-      "cierre": "Calibrado con el piloto experto (PilotoPruebas, roca carbonácea, años 25→50): sin tocar nada no se cumple ninguno; solo atrayendo fragmentos, 1 (el ave: el coigüe de más de 3 m ya es percha); el piloto que además cava, pone una percha, siembra fijadoras y atiende los encargos, los 4 (8 especies al año 26, 15 encargos al 40, 60 g de N al 41). Quedaron fuera, por ahora: los hijos del coigüe (crecen pocos centímetros en 25 años a la sombra de su padre), la laguna (el agua que junta la limita la lluvia, no la pala: unos 11 L con o sin hoyo) y los retos de temporada (se cumplen solos). Estrellas (metas cumplidas dentro del plazo): 1★ con 1, 2★ con 2, 3★ con 3 de las 5. Sin tocar nada: 0 metas (50,7 kg C); atrayendo junto al árbol: 1 (el ave), 1★; el piloto: 3 (60 g de N, 15 encargos y 57,8 kg C en el año 49), 3★. Las aves y la riqueza dependen del azar de cada partida (EstrellasPruebas).",
+      "cierre": "Calibrado con el piloto experto (PilotoPruebas, roca carbonácea, años 25→50). Desde el 16-10 las metas acumulativas (especies, plantas de ave, nitrógeno, encargos) cuentan solo lo logrado DESDE que empieza el capítulo (Capitulo.Empezar; antes empezaba con 3 de 5 cumplidas). Sin tocar nada no se cumple ninguna (47,4 kg C); solo atrayendo fragmentos, 1–2 (500 g de N al año 45 y 55 kg C al 47); el piloto que además cava, pone una percha, siembra fijadoras y atiende los encargos, 4 (2 especies nuevas al año 26, 15 encargos al 37, 500 g de N al 44, 55 kg C al 45). La planta traída por un ave depende del azar de cada partida (EstrellasPruebas). Quedaron fuera, por ahora: los hijos del coigüe (crecen pocos centímetros en 25 años a la sombra de su padre), la laguna (el agua que junta la limita la lluvia, no la pala) y los retos de temporada (se cumplen solos). Estrellas (metas cumplidas dentro del plazo): 1★ con 1, 2★ con 2, 3★ con 3 de las 5.",
       "objetivos": [
         {
           "id": "riqueza_8",
-          "texto": "Ocho especies viviendo en la isla",
+          "texto": "Dos especies nuevas en la isla",
           "tipo": "riqueza",
-          "meta": 8,
+          "meta": 2,
           "pista": "Siembra fijadoras (pasto, nalca chica, deu) y pon una percha: las aves traen maqui, murta, michay."
         },
         {
@@ -87,9 +87,9 @@
         },
         {
           "id": "n_60",
-          "texto": "Que las fijadoras tomen 60 g de nitrógeno del aire",
+          "texto": "Que las fijadoras tomen 500 g de nitrógeno del aire",
           "tipo": "n_fijado_total_kg",
-          "meta": 0.06,
+          "meta": 0.5,
           "pista": "La Lotus del pasto, la nalca chica, el deu y la nalca fijan nitrógeno; el espinillo también, pero lo pierde por lavado y no cuenta."
         },
         {
