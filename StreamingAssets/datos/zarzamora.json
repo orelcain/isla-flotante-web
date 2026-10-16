@@ -1,0 +1,81 @@
+{
+  "nota": "La zarzamora (Rubus ulmifolius / R. constrictus), invasora que dispersa el zorzal (Turdus falcklandii). Casi todo lo medido en Chile es de Juan Fernández (Smith-Ramírez et al. 2013, Rev. Chil. Hist. Nat. 86:33-48, https://www.redalyc.org/pdf/3699/369944184004.pdf); para Chiloé no hay datos y se marca baja. La usa MotorZarzamora (Zarzamora.cs) y la bandada de zorzales de otoño.",
+  "fraccion_en_fecas": {
+    "valor": 0.1,
+    "unidad": "fracción de las semillas que deja un zorzal bajo una percha que son de zarzamora",
+    "fuente": "En Juan Fernández, en el ecotono invadido, el 92,6 % de las semillas en 209 fecas de verano eran de maqui y mora, y en otoño el 100 % de mora y murta (Smith-Ramírez et al. 2013). En Chiloé la zarzamora está en bordes de camino y potreros, no en el bosque: se toma una fracción mucho menor (supuesto).",
+    "confianza": "baja"
+  },
+  "meses_fruto": {
+    "valor": [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    "unidad": "1 = hay fruto maduro ese mes (enero a abril)",
+    "fuente": "Sin dato para el sur de Chile. En Juan Fernández el zorzal dispersó mora de abril a principios de julio (Smith-Ramírez et al. 2013); en Chile continental la zarzamora madura a fines del verano (supuesto de calendario).",
+    "confianza": "baja"
+  },
+  "viabilidad_banco_anios": {
+    "valor": 2,
+    "unidad": "años de vida de la semilla en el suelo",
+    "fuente": "Baja viabilidad interanual, «no sobrepasando los dos años» en Juan Fernández (Mora et al., datos no publicados, y Piudo y Cavero 2007, citados en Smith-Ramírez et al. 2013). En Argentina, semillas de fecas siguieron viables a los 20 meses (Dellafiore y Sainz 2022).",
+    "confianza": "media"
+  },
+  "semillas_por_adulto": {
+    "valor": 9000,
+    "unidad": "semillas del banco por cada planta que llega a adulta (curva de supervivencia tipo III)",
+    "fuente": "~9.000 semillas del banco dan 1 adulto; la mayor mortalidad es entre semilla y plántula (baja germinación, babosas e insectos): Castillo et al. 2011, citado en Smith-Ramírez et al. 2013.",
+    "confianza": "media"
+  },
+  "cobertura_inicial": {
+    "valor": 0.05,
+    "unidad": "cobertura de la celda (25 cm) de una plántula recién establecida",
+    "fuente": "DIBUJO/supuesto: una plántula ocupa una fracción chica de la celda (la misma cifra que la plántula del espinillo).",
+    "confianza": "baja"
+  },
+  "anios_cierre": {
+    "valor": 6.5,
+    "unidad": "años desde que llega hasta cerrar la celda (cobertura de 5 % a 95 %)",
+    "fuente": "Cierre del dosel 6 a 7 años después de que llegan los propágulos a un claro (estimación de guardaparques, comunicación personal en Smith-Ramírez et al. 2013).",
+    "confianza": "baja"
+  },
+  "edad_fruto_anios": {
+    "valor": 2,
+    "unidad": "años desde la plántula hasta dar fruto",
+    "fuente": "Sin dato. Rubus fructifica en las cañas de segundo año (floricañas) en la biología general del género; se toma 2 años.",
+    "confianza": "baja"
+  },
+  "semillas_m2_anio": {
+    "valor": 2000,
+    "unidad": "semillas por m² de matorral cerrado por año que caen a su alrededor (frutos que caen o comen las aves dentro de la isla)",
+    "fuente": "El banco puede llegar a 13.000 semillas/m² bajo matorrales de R. fruticosus en Australia (NSW WeedWise, «Blackberry»): es un máximo. Se toma ~15 % de ese tope como lluvia anual (supuesto).",
+    "confianza": "baja"
+  },
+  "avance_prob_anio": {
+    "valor": 0.5,
+    "unidad": "probabilidad por año de que una mata cerrada (cobertura ≥ 0,6) enraíce una caña en una celda vecina",
+    "fuente": "Las cañas del primer año se doblan, tocan el suelo y echan raíz en la punta (guías australianas de R. fruticosus, NSW WeedWise). Sin una tasa en m/año medida: el avance satelital de maqui y mora juntos en Juan Fernández (0,4 ha/año) no se puede bajar a una mata.",
+    "confianza": "baja"
+  },
+  "rebrote_prob": {
+    "valor": 0.6,
+    "unidad": "probabilidad de que una mata arrancada rebrote de su corona la primavera siguiente",
+    "fuente": "El control físico rara vez funciona porque es difícil sacar todas las raíces; cortar promueve el rebrote; hay que seguir al menos dos temporadas (NSW WeedWise). La cifra es un supuesto.",
+    "confianza": "baja"
+  },
+  "llegada_prob_visita": {
+    "valor": 0.02,
+    "unidad": "probabilidad por año y por percha (más una por los árboles sueltos) de que un zorzal que viene de Chiloé deje una semilla de zarzamora que prenda",
+    "fuente": "DECISIÓN DE DISEÑO, como la llegada del espinillo (espinillo.json → llegada_prob_anio 0,08): la zarzamora es común en los cercos y bordes de potreros de Chiloé y el zorzal es su dispersor principal (Smith-Ramírez et al. 2013), pero de cada ~9.000 semillas solo una llega a adulta; sin tasa medida de llegada a un islote. Con 2 perchas: ~6 % al año; en un año de bandada (bandada_factor más visitas): ~30 %.",
+    "confianza": "baja"
+  },
+  "bandada_prob_anio": {
+    "valor": 0.35,
+    "unidad": "probabilidad de que en un año llegue una bandada de zorzales en otoño",
+    "fuente": "DECISIÓN DE DISEÑO: el zorzal es residente y fuera de la reproducción se junta en grupos a comer fruta; la frecuencia de una bandada que se pose en la isla es un supuesto de juego.",
+    "confianza": "baja"
+  },
+  "bandada_factor": {
+    "valor": 6,
+    "unidad": "veces la lluvia de semillas normal bajo las perchas mientras está la bandada (otoño)",
+    "fuente": "DECISIÓN DE DISEÑO: un grupo de zorzales multiplica las visitas a las perchas; la lluvia de semillas crece con las visitas (perchas.json). Sin cifra medida.",
+    "confianza": "baja"
+  }
+}

@@ -28,9 +28,9 @@
   <script>
     // Ojo: NO cancelar gesturestart/touchmove en el documento. Se probó (v179) y en el iPhone el juego dejó de recibir el
     // pellizco y el arrastre de dos dedos. touch-action: none (en el CSS) basta para que la página no se mueva.
-    // Versión: construir_web.sh reemplaza v328 · 5481626 · claude/tanda-referencias-8a86df · 15-10 20:44 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
+    // Versión: construir_web.sh reemplaza v329 · 904238c · claude/tanda-referencias-8a86df · 15-10 21:26 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
     // version.txt (pedido sin caché) dice otra cosa, se recarga con una dirección nueva (?v=…) que obliga a bajar la última.
-    var VERSION = "v328 · 5481626 · claude/tanda-referencias-8a86df · 15-10 20:44";
+    var VERSION = "v329 · 904238c · claude/tanda-referencias-8a86df · 15-10 21:26";
     document.getElementById("version").textContent = VERSION.indexOf("__") === 0 ? "" : VERSION;
     // El juego (~18 MB) no empieza a bajar hasta saber si hay que recargar: antes se bajaba entero y se botaba al recargar.
     var iniciado = false;
@@ -45,9 +45,9 @@
     }).catch(function () { iniciar(); });
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/e95070340fbeb6f6d75ea018ef2cd89f.data.unityweb",
-      frameworkUrl: "Build/5ae62e2427573c995ed8131ba9755c46.framework.js.unityweb",
-      codeUrl: "Build/33fac4ce2706100ff31186ab4077b8d2.wasm.unityweb",
+      dataUrl: "Build/295c0a73fd93f0691af933bb9d5ab4ea.data.unityweb",
+      frameworkUrl: "Build/affa5441ca1d894108b00ee1d573d7e4.framework.js.unityweb",
+      codeUrl: "Build/98da8b44fe2868449a63017b5a127cab.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Isla Flotante",
       productName: "Isla Flotante",
@@ -56,7 +56,7 @@
       devicePixelRatio: Math.min(window.devicePixelRatio || 1, 1.5),
     };
     var script = document.createElement("script");
-    script.src = "Build/7f13f883b8af702bc0ee0581a4db8a9c.loader.js";
+    script.src = "Build/c8feef5261f14509d8d59275da6bb980.loader.js";
     script.onload = function () {
       createUnityInstance(lienzo, config, function (p) { barra.style.width = (100 * p) + "%"; })
         .then(function (u) { window.isla = u; carga.remove(); })   // window.isla: para revisar desde la consola (SendMessage)
