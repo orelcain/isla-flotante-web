@@ -407,6 +407,34 @@
       ],
       "en_el_juego": "La superficie se tiñe del verde grisáceo del musgo según su cobertura (gris cuando se seca); el tapiz engrosa el suelo, guarda agua y le sube el techo al árbol.",
       "incertidumbre": "El ritmo en Chiloé no está medido: se usa Islandia (clima húmedo) y Garibotti (roca andina) es la cota lenta."
+    },
+    {
+      "id": "rocas_que_se_pegan",
+      "categoria": "proceso",
+      "subcategoria": "espacio",
+      "nombre": "Rocas que se pegan",
+      "que_es": "La acreción a escala grande: rocas que se tocan despacio y quedan unidas.",
+      "explicacion": "Si dos rocas se tocan lento, el choque se apaga y quedan pegadas. Arrokoth, en el cinturón de Kuiper, son dos lóbulos que se juntaron a menos de unos 3–5 m/s, de costado, y conservaron su forma (McKinnon et al. 2020; Spencer et al.). Itokawa, Ryugu y Bennu son pilas de escombros: rocas que su propia gravedad volvió a juntar después de un choque (Michel et al. 2020). Si llegan rápido, en cambio, rebotan o se parten. Juntando rocas durante millones de años crecieron los planetas; la Tierra se hizo tan grande que su interior se calentó y empezó a moverse: de ahí, mucho después, nacieron sus placas.",
+      "datos": [
+        {
+          "nombre": "Se pega a esta velocidad o menos",
+          "ref": "errante#vel_captura_cm_s"
+        },
+        {
+          "nombre": "Años para cementar el cuello",
+          "ref": "errante#cuello_anios"
+        }
+      ],
+      "interacciones": [
+        {
+          "tipo": "produce",
+          "con": "regolito",
+          "simulado": true,
+          "fuente": "escombro del choque; Benz y Asphaug 1999",
+          "confianza": "baja"
+        }
+      ],
+      "en_el_juego": "Una roca errante que guías para que llegue lenta se pega como un lóbulo; el polvo cementa el cuello de la unión en unos años."
     }
   ]
 }

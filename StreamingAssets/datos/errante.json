@@ -1,0 +1,42 @@
+{
+  "nota": "Rocas errantes que se acercan a la isla y se pegan (binario de contacto) o chocan (Errante.cs). Así crecen los cuerpos chicos del sistema solar: Arrokoth son dos lóbulos que se tocaron suave, a ≲3–5 m/s y de forma rasante, y conservaron su forma (McKinnon et al. 2020, Science; Spencer et al., Icarus); Itokawa, Ryugu y Bennu son pilas de escombros reacumulados tras choques (Michel et al. 2020, Nat. Commun. 11:2655). No hay un umbral medido de pegado para rocas de ~1 m: lo de abajo que no tiene dato es decisión de diseño, marcada baja.",
+  "prob_anio": {
+    "valor": 0.15,
+    "unidad": "probabilidad de que se anuncie una roca errante en un año",
+    "fuente": "ATAJO DECLARADO: a la Tierra entran ~40 objetos de ≥ 1 m por año (derivado de Brown et al. 2002, Nature 420:294, N(>E) = 3,7·E^−0,9 por año); que uno pase despacio junto a un islote de 4 m es muchísimo más raro. Igual que factor_atajo_polvo, el juego condensa siglos en 25 años para que la isla crezca a la vista.",
+    "confianza": "baja"
+  },
+  "anio_minimo": {
+    "valor": 3,
+    "unidad": "año desde el que pueden aparecer (los tres primeros son guiados)",
+    "fuente": "DECISIÓN DE DISEÑO: después de los años guiados.",
+    "confianza": "alta"
+  },
+  "celdas_min": { "valor": 9, "unidad": "celdas de 25 cm (≈ 0,75 m de lado)", "fuente": "DECISIÓN DE DISEÑO: rocas de ~1 m, el tamaño más frecuente entre los bólidos grandes (Brown et al. 2002).", "confianza": "baja" },
+  "celdas_max": { "valor": 30, "unidad": "celdas de 25 cm (≈ 1,4 m de lado)", "fuente": "DECISIÓN DE DISEÑO: hasta ~1,5 m; las de 2 m son ~6 veces más raras que las de 1 m (derivado de Brown et al. 2002).", "confianza": "baja" },
+  "frac_ordinaria": { "valor": 0.8, "unidad": "fracción de las rocas que son condrita ordinaria", "fuente": "La misma proporción de caídas observadas que usa la isla (rocas.json/semilla.json: la mayoría son condritas ordinarias).", "confianza": "media" },
+  "frac_carbonacea": { "valor": 0.05, "unidad": "fracción que son condrita carbonácea (el resto, hierro)", "fuente": "Proporción de caídas observadas (~4–5 % carbonáceas, ~5 % hierros).", "confianza": "media" },
+  "vel_min_cm_s": { "valor": 3, "unidad": "cm/s, velocidad relativa mínima de llegada", "fuente": "DECISIÓN DE DISEÑO dentro del rango de los toques suaves medidos en cuerpos chicos: MASCOT tocó Ryugu a 15–19 cm/s; los agregados de polvo se pegan a 0,2–3 cm/s (Weidling, Güttler y Blum).", "confianza": "baja" },
+  "vel_max_cm_s": { "valor": 15, "unidad": "cm/s, velocidad relativa máxima de llegada", "fuente": "DECISIÓN DE DISEÑO: como el toque de MASCOT en Ryugu (15–19 cm/s), que rebotó ~11 minutos antes de quedarse.", "confianza": "baja" },
+  "vel_captura_cm_s": {
+    "valor": 5,
+    "unidad": "cm/s: a esta velocidad o menos la roca se queda pegada",
+    "fuente": "Sin umbral medido para rocas de ~1 m. Una esfera de granito de 1 m rebota con e = 0,83 (Durda et al. 2011, Icarus 211:849), pero sobre regolito la restitución cae ~10 veces entre 5 y 100 cm/s (Brisset et al. 2018, PRIME/COLLIDE): el regolito de la isla se traga el choque si es lento. 5 cm/s es decisión de diseño entre el pegado del polvo (≤ 3 cm/s) y el rebote de MASCOT (15–19 cm/s).",
+    "confianza": "baja"
+  },
+  "frenado_guiar_cm_s": {
+    "valor": 4,
+    "unidad": "cm/s que baja la velocidad cada vez que el jugador la guía (gasta el «atraer» de una estación)",
+    "fuente": "DECISIÓN DE DISEÑO: la isla «atrae» por premisa del juego (la gravedad real de un islote de ~60 t es casi nula: velocidad de escape de mm/s).",
+    "confianza": "baja"
+  },
+  "choque_suelo_perdido": { "valor": 0.6, "unidad": "fracción del suelo suelto que el golpe tira al vacío en la celda tocada y sus 8 vecinas", "fuente": "DECISIÓN DE DISEÑO: un choque que no se pega sacude el borde; sin dato.", "confianza": "baja" },
+  "choque_escombro_fraccion": { "valor": 0.02, "unidad": "fracción de la masa de la roca que queda como escombro (regolito) en el borde tocado", "fuente": "DECISIÓN DE DISEÑO: a cm/s una roca no se pulveriza (la energía de ruptura de un cuerpo de 1 m es de ~10³ J/kg, Benz y Asphaug 1999, extrapolado; a 10 cm/s llegan 0,005 J/kg): casi toda rebota y se va; lo que queda son esquirlas.", "confianza": "baja" },
+  "cuello_anios": {
+    "valor": 4,
+    "unidad": "años en que el polvo llena y cementa la grieta de la unión",
+    "fuente": "Sin dato directo. La cohesión por van der Waals une el regolito fino de los cuerpos chicos (Scheeres et al. 2010, Icarus 210:968; Sánchez y Scheeres 2014); en la isla la costra de óxidos de hierro ya cementa el borde nuevo (MotorBorde, con su atajo declarado). El plazo es decisión de diseño.",
+    "confianza": "baja"
+  },
+  "cuello_suelo_max_m": { "valor": 0.01, "unidad": "m de suelo suelto que guarda una celda del cuello mientras no se cementa (lo demás se cuela por la grieta)", "fuente": "DECISIÓN DE DISEÑO.", "confianza": "baja" }
+}
