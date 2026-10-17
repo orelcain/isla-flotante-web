@@ -293,6 +293,13 @@
     "fuente": "CALIBRACIÓN PROVISIONAL (sin dato de plántulas con fuente): fracción de la reserva de azúcar disponible que se invierte en crecer cada día.",
     "confianza": "baja"
   },
+  "reserva_maxima_fraccion": {
+    "valor": 0.20,
+    "unidad": "fracción de la biomasa (carbohidratos no estructurales: almidón + azúcares)",
+    "fuente": "Piper 2011, Annals of Forest Science 68:415–424 (doi:10.1007/s13595-011-0030-1), tabla 2: brinzales de N. nitida y N. dombeyi de 2–3 años, riego normal: NSC ≈ 19 % del peso seco en el tallo y ≈ 16 % en la raíz (máximo medido 22,6 %, tallo de N. dombeyi con sequía). Media global ≈ 10 % (Martínez-Vilalta et al. 2016, Ecol. Monogr. 86:495–516). Sin dato de hojas ni de árbol entero para Nothofagus.",
+    "confianza": "media",
+    "nota": "Tope solo cuando el árbol no tiene dónde crecer (Arbol.cs): el azúcar que no cabe no se fija (limitación por sumidero). Antes no había tope y la reserva llegaba a 6 veces la biomasa."
+  },
   "reserva_minima_fraccion": {
     "valor": 0.05,
     "unidad": "fracción de la biomasa",
