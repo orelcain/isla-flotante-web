@@ -377,6 +377,19 @@
     "fuente": "Fotos de campo de Nothofagus nitida en iNaturalist (CC0/CC-BY/CC-BY-SA, 110 fotos con fecha): fotos con >12 % de píxeles rojo-anaranjados por mes: dic 12 de 35, oct 1 de 15, ene 1 de 25 (11-10-2026). La ficha (TSO) dice «rojo-bronce o ciruela en primavera; no aparece en ninguna otra haya austral sudamericana».",
     "confianza": "baja"
   },
+  "brote_semiancho_despues_dias": {
+    "valor": 15,
+    "unidad": "días (después del pico)",
+    "fuente": "Las mismas fotos de campo (iNaturalist, 11-10-2026): en enero solo 1 de 25 con brote contra 12 de 35 en diciembre (razón 0,12 a ~30 días del pico → semiancho ~15 días). Antes se usaba el mismo semiancho de 30 días a los dos lados y el coigüe seguía naranja en enero.",
+    "confianza": "baja",
+    "nota": "pocas fotos; la caída de enero puede ser más gradual en años fríos"
+  },
+  "brote_fraccion_resto": {
+    "valor": 0.05,
+    "unidad": "fracción de los ramilletes que no son la punta que se tiñe en el pico",
+    "fuente": "SUPUESTO de dibujo (16-10): el brote rojo-bronce son las hojas nuevas de las puntas; las de atrás son del año anterior y siguen verdes (perenne). Antes 0,25 fijo en el código: con él la copa entera se veía naranja.",
+    "confianza": "baja"
+  },
   "brote_fraccion_puntas": {
     "valor": 0.8,
     "unidad": "fracción del ramillete de la punta que se tiñe en el pico",
