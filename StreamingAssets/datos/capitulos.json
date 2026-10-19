@@ -6,8 +6,15 @@
       "nombre": "Capítulo 1 · Chiloé",
       "entorno": "tierra",
       "plazo_anio": 25,
-      "cierre": "Para comparar, con una roca carbonácea promedio: sin tocar nada, la isla cumple 3 objetivos en 25 años; el piloto experto, que cada año prueba unas pocas zonas y siembra una nalca, 5 (PilotoPruebas). Con una condrita ordinaria o un hierro el comienzo es más lento: llegan con menos material suelto (RocasPruebas). Estrellas (metas de la simulación cumplidas dentro del plazo; las fichas no cuentan): 1★ con 3, 2★ con 5, 3★ con las 6. Sin tocar nada: 3 metas, 1★ (13,96 kg C); atrayendo junto al árbol: 5, 2★; el piloto: 6, 3★ (EstrellasPruebas).",
+      "cierre": "Para comparar, con una roca carbonácea promedio: sin tocar nada, la isla cumple 3 objetivos en 25 años; el piloto experto, que cada año prueba unas pocas zonas y siembra una nalca, 5 (PilotoPruebas). Con una condrita ordinaria o un hierro el comienzo es más lento: llegan con menos material suelto (RocasPruebas). Estrellas (metas de la simulación cumplidas dentro del plazo; las fichas no cuentan): 1★ con 4, 2★ con 5, 3★ con las 7. Desde el 18-10 la primera meta es «el coigüe a 1 m» (se logra ~año 3–4 siguiendo la guía: una victoria temprana). Sin tocar nada: 3 metas, 0★ (12,2 kg C); atrayendo junto al árbol: 4, 1★; el piloto: 7, 3★ (EstrellasPruebas).",
       "objetivos": [
+        {
+          "id": "coigue_1",
+          "texto": "Que el coigüe llegue a 1 m",
+          "tipo": "altura_m",
+          "meta": 1,
+          "pista": "La primera meta: atrae los fragmentos junto al coigüe cada verano; con suelo bajo sus raíces crece rápido (~3–4 años)."
+        },
         {
           "id": "primer_hijo",
           "texto": "Que nazca el primer coigüe hijo",
@@ -58,11 +65,7 @@
           "pista": "Mira con calma lo que no conoces (detén el mouse encima) o tócalo con la lupa: cada ficha abre también las que se relacionan con ella. En el celular, la lupa."
         }
       ],
-      "estrellas": [
-        3,
-        5,
-        6
-      ]
+      "estrellas": [4, 5, 7]
     },
     {
       "id": "bosquete",
