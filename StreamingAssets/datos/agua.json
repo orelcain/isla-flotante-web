@@ -13,6 +13,19 @@
     "fuente": "Orden de magnitud: los estanques de tierra pierden por filtración de pocos mm a más de 20 mm por día según el suelo (FAO, manuales de construcción de estanques para acuicultura). Sin dato para un regolito de condrita.",
     "confianza": "baja"
   },
+  "laguna_sellado_dias": {
+    "valor": 30,
+    "unidad": "días con agua para que el fondo de una laguna se selle (finos que decantan y biofilm microbiano)",
+    "fuente": "Orden de magnitud: la conductividad del fondo cae en días a semanas tras llenar, en suelos de arena a franco arcilloso (tesis de maestría, Univ. de Tennessee, https://trace.tennessee.edu/utk_gradthes/4770; Hutchinson, monografía IAH sobre colmatación superficial, 2024, https://www.gsanalysis.com/publications/Hutchinson_IAH_Monograph_OCWD_GSA_Surface_Clogging_PART_1_updated_April_2024.pdf). Valor de 30 días: decisión dentro de ese rango.",
+    "confianza": "baja",
+    "nota": "al secarse, el fondo se agrieta y pierde el sello tres veces más lento (decisión, sin cifra). Un modelo más serio: Darcy en serie con una capa de espesor y Ksat propios."
+  },
+  "laguna_sellado_factor_min": {
+    "valor": 0.2,
+    "unidad": "fracción de la filtración inicial que queda con el fondo sellado",
+    "fuente": "Regla declarada con las mismas fuentes (laguna_sellado_dias): factor de 1 a ~0,1–0,3 en semanas según los finos depositados y la materia orgánica; sin cifra única en la literatura consultada.",
+    "confianza": "baja"
+  },
   "laguna_profundidad_minima_m": {
     "valor": 0.01,
     "unidad": "m: una hondonada menos honda solo moja el suelo",
