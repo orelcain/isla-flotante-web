@@ -643,6 +643,13 @@
     "fuente": "Composición típica de meteoritos metálicos: Fe 90,5–93 %, Ni 5,9–9 %, Co 0,4–0,6 %, P 0,1–0,5 %, S 0,1–0,7 % (Buchwald, vía Sikhote-Alin; rangos de WUSTL); verificado 09-10; se usa el punto medio",
     "confianza": "baja"
   },
+  "esponjamiento_tierra": {
+    "valor": 0.25,
+    "unidad": "fracción: cuánto crece el volumen de la tierra al sacarla con la pala (el montón ocupa 1,25 veces el hoyo)",
+    "fuente": "Manuales de movimiento de tierras (Caterpillar Performance Handbook, tablas de factores de esponjamiento): arena ~10–12 %, tierra franca ~25 %, arcilla 30–40 %. Valor de tierra franca; citado de memoria por la investigación del 19-10, a verificar contra la edición vigente.",
+    "confianza": "media",
+    "nota": "solo para dibujar y medir el montículo de la palada (P1, docs/RONDA_JUGADORES.md); el modelo guarda masa, no volumen suelto"
+  },
   "angulo_reposo_regolito_grados": {
     "valor": 34,
     "unidad": "grados",
