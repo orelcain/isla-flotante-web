@@ -643,6 +643,8 @@
     "fuente": "Composición típica de meteoritos metálicos: Fe 90,5–93 %, Ni 5,9–9 %, Co 0,4–0,6 %, P 0,1–0,5 %, S 0,1–0,7 % (Buchwald, vía Sikhote-Alin; rangos de WUSTL); verificado 09-10; se usa el punto medio",
     "confianza": "baja"
   },
+  "textura_inicial_arena": { "valor": 0.65, "unidad": "fracción de arena (0,05–2 mm, USDA) en la parte mineral del suelo de cada celda al empezar", "fuente": "Saxton & Rawls (2006) Soil Sci. Soc. Am. J. 70:1569-1578: la textura con que agua.json calcula agua_util_franco_arenoso y agua_util_mm_por_cm (franco arenoso: el regolito joven de la condrita es grueso y pobre en arcilla). Sin dato propio de regolito de condrita.", "confianza": "baja" },
+  "textura_inicial_arcilla": { "valor": 0.10, "unidad": "fracción de arcilla (< 0,002 mm, USDA) en la parte mineral al empezar; el limo es el resto", "fuente": "Saxton & Rawls (2006) Soil Sci. Soc. Am. J. 70:1569-1578: la textura con que agua.json calcula agua_util_franco_arenoso y agua_util_mm_por_cm (franco arenoso: el regolito joven de la condrita es grueso y pobre en arcilla). Sin dato propio de regolito de condrita.", "confianza": "baja" },
   "esponjamiento_tierra": {
     "valor": 0.25,
     "unidad": "fracción: cuánto crece el volumen de la tierra al sacarla con la pala (el montón ocupa 1,25 veces el hoyo)",
