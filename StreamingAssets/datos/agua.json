@@ -257,6 +257,49 @@
     "fuente": "CALIBRACIÓN PROVISIONAL: Rn ≈ (1 − albedo)·Rs = 0,77·Rs (FAO-56 ec. 38), sin restar la radiación de onda larga neta (ec. 39) porque el motor todavía no tiene Tmax/Tmin ni humedad del aire. Sobrestima la evaporación: el árbol sufre la sequía un poco antes de lo real.",
     "confianza": "baja"
   },
+  "evaporacion_por_luz_suelo": {
+    "valor": 1,
+    "unidad": "1 = la evaporación del suelo se multiplica por la luz que llega a ras de suelo (0..1); 0 = sin efecto de la sombra",
+    "fuente": "Ritchie J.T. (1972) 'Model for predicting evaporation from a row crop with incomplete cover', Water Resources Research 8:1204-1213: la evaporación del suelo en la etapa limitada por energía es proporcional a la radiación neta que llega al suelo, Rn·exp(−0,398·IAF). FAO-56 (Allen et al. 1998), cap. 7: la evaporación sale solo de la fracción expuesta del suelo. La luz a ras de suelo es la de las copas (Beer-Lambert, MotorSiembra.LuzSuelo) por la de la quila (quila.json, Lusk 2001).",
+    "confianza": "media",
+    "nota": "Agregado el 20-10-2026 (microclima): bajo el coigüe o un quilantal el suelo se seca más lento. La radiación difusa y el calor sensible del aire (advección) no se modelan: bajo sombra densa se subestima un poco la evaporación."
+  },
+  "viento_direccion_mensual_grados": {
+    "valor": [252, 241, 262, 288, 326, 319, 326, 326, 304, 294, 272, 267],
+    "unidad": "grados desde el norte (de donde viene el viento), ene..dic",
+    "fuente": "NASA POWER, climatología 2001-2020, punto -42,48/-73,76 (Castro; celda MERRA-2 ~0,5°): dominante del O-NO (OSO en verano, NO en invierno). docs/investigacion_microclima_agua_viento.json, tema 3.",
+    "confianza": "media"
+  },
+  "abrigo_f_denso": {
+    "valor": [0.5, 0.35, 0.8],
+    "unidad": "viento relativo a sotavento de una barrera densa (quila, espinillo cerrados) a 0-1 H, 1-5 H y al final del alcance (lineal entre 5 H y abrigo_alcance_h)",
+    "fuente": "ESTIMACIÓN con la literatura de cortavientos: Cleugh & Hughes 2002 (Aust. J. Exp. Agric. 42) efecto hasta ~25 H y ~20 % de reducción a 20 H; guía de abrigo TRC LM16 (Nueva Zelanda) 30-50 % hasta 10 H; barreras densas 60-80 % de reducción a 2-5 H (Brandle et al. 2004, Agroforestry Systems 61:65-78, sin verificar el texto). Medido en cortavientos de 5-15 m: extrapolado a 2-4 m.",
+    "confianza": "baja"
+  },
+  "abrigo_f_medio": {
+    "valor": [0.5, 0.5, 0.85],
+    "unidad": "ídem para una copa de porosidad media (el coigüe)",
+    "fuente": "ESTIMACIÓN (ídem): las barreras porosas reducen menos el viento (Heisler & DeWalle 1988, Agric. Ecosyst. Environ. 22/23:41-69).",
+    "confianza": "baja"
+  },
+  "abrigo_alcance_h": {
+    "valor": 10,
+    "unidad": "alturas H del obstáculo hasta donde se cuenta el abrigo",
+    "fuente": "Guía TRC LM16: 30-50 % de reducción hasta 10 H (el efecto sigue, débil, hasta ~25 H: Cleugh & Hughes 2002); se corta en 10 H.",
+    "confianza": "baja"
+  },
+  "abrigo_k_evaporacion": {
+    "valor": 0.25,
+    "unidad": "fracción de la reducción del viento que se vuelve reducción de la evaporación del suelo: E = E0 · (1 − k · (1 − f))",
+    "fuente": "ESTIMACIÓN: la evaporación potencial baja bastante menos que el viento (10-30 %) porque la radiación sigue llegando y el aire abrigado se calienta y humedece (Cleugh & Hughes 2002: los flujos turbulentos bajan en la zona de calma; los cambios de temperatura y humedad se pierden a 12-15 H). Con f = 0,35, ~16 %. En un clima húmedo como Chiloé el efecto es chico.",
+    "confianza": "baja"
+  },
+  "abrigo_cobertura_minima": {
+    "valor": 0.3,
+    "unidad": "cobertura de quila o espinillo desde la que una celda actúa como barrera",
+    "fuente": "DECISIÓN DE MODELO: una mata rala no frena el viento.",
+    "confianza": "baja"
+  },
   "kc_suelo_desnudo": {
     "valor": 1.0,
     "unidad": "adimensional",
