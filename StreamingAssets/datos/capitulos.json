@@ -80,7 +80,7 @@
       "nombre": "Capítulo 2 · El bosquete",
       "entorno": "tierra",
       "plazo_anio": 50,
-      "cierre": "Calibrado con el piloto experto (PilotoPruebas, roca carbonácea, años 25→50). Desde el 16-10 las metas acumulativas (especies, plantas de ave, nitrógeno, encargos) cuentan solo lo logrado DESDE que empieza el capítulo (Capitulo.Empezar; antes empezaba con 3 de 5 cumplidas). Sin tocar nada no se cumple ninguna (47,4 kg C); solo atrayendo fragmentos, 1–2 (500 g de N al año 45 y 55 kg C al 47); el piloto que además cava, pone una percha, siembra fijadoras y atiende los encargos, 4 (2 especies nuevas al año 26, 15 encargos al 37, 500 g de N al 44, 55 kg C al 45). La planta traída por un ave depende del azar de cada partida (EstrellasPruebas). Quedaron fuera, por ahora: los hijos del coigüe (crecen pocos centímetros en 25 años a la sombra de su padre), la laguna (el agua que junta la limita la lluvia, no la pala) y los retos de temporada (se cumplen solos). Estrellas (metas cumplidas dentro del plazo): 1★ con 1, 2★ con 2, 3★ con 3 de las 5.",
+      "cierre": "Calibrado con el piloto experto (PilotoPruebas, roca carbonácea, años 25→50). Desde el 16-10 las metas acumulativas (especies, plantas de ave, nitrógeno, encargos) cuentan solo lo logrado DESDE que empieza el capítulo (Capitulo.Empezar; antes empezaba con 3 de 5 cumplidas). Sin tocar nada no se cumple ninguna (47,4 kg C); solo atrayendo fragmentos, 1–2 (500 g de N al año 45 y 55 kg C al 47); el piloto que además cava, pone una percha, siembra fijadoras y atiende los encargos, 4 (2 especies nuevas al año 26, 15 encargos al 37, 500 g de N al 44, 55 kg C al 45). La planta traída por un ave depende del azar de cada partida (EstrellasPruebas). Quedaron fuera, por ahora: los hijos del coigüe (crecen pocos centímetros en 25 años a la sombra de su padre), la laguna (el agua que junta la limita la lluvia, no la pala) y los retos de temporada (se cumplen solos). Estrellas (metas cumplidas dentro del plazo): 1★ con 1, 2★ con 2, 3★ con 3 de las 6. Desde el 19-10 (K4) hay una meta de textura: un rincón con 20 % de arcilla, que solo se logra tamizando (el piloto no tamiza: no cambia su calibración).",
       "objetivos": [
         {
           "id": "riqueza_8",
@@ -113,6 +113,14 @@
           "tipo": "encargos",
           "meta": 15,
           "pista": "Cada encargo aparece clavado sobre un lugar: es lo que la isla necesita ahí."
+        },
+        {
+          "id": "arcilla_20",
+          "texto": "Un rincón con 20 % de arcilla (tamiza la tierra)",
+          "corto": "Rincón con 20 % de arcilla",
+          "tipo": "arcilla_max",
+          "meta": 0.2,
+          "pista": "Con la pala en «tamizar», la arena gruesa se va a la celda vecina y quedan los finos: ese suelo guarda más agua, la cama de siembra pasa más días húmeda y la nalca prende mejor. Sobre una laguna, además, la arcilla sella el fondo."
         },
         {
           "id": "vida_55",
