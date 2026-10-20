@@ -109,6 +109,66 @@
     "fuente": "Arbusto de hasta ~2 m (Plan Agropecuario, Uruguay, revista 113, p. 40)",
     "confianza": "baja"
   },
+  "luz_reproduccion_plena": {
+    "valor": 0.7,
+    "unidad": "luz relativa a ras de suelo (0..1) desde la que produce semillas como a pleno sol",
+    "fuente": "Atlan A. et al. (2015) 'Phenological plasticity... of Ulex europaeus', PLoS ONE 10(9):e0137500, jardín común en Rennes: con 30 % de sombra (~70 % de luz) la producción de vainas se recupera al nivel de pleno sol.",
+    "confianza": "alta"
+  },
+  "luz_reproduccion_nula": {
+    "valor": 0.35,
+    "unidad": "luz relativa bajo la que casi no produce semillas",
+    "fuente": "Atlan et al. 2015 (PLoS ONE 10:e0137500): con 65 % de sombra (~35 % de luz) la floración y las vainas cayeron el primer año y casi se detuvieron el segundo; los autores la eligen como la sombra máxima en que se ve la especie en terreno. Entre 35 y 70 % se interpola (supuesto).",
+    "confianza": "alta"
+  },
+  "luz_declive": {
+    "valor": 0.35,
+    "unidad": "luz relativa bajo la que el espinillo deja de crecer y su cobertura retrocede",
+    "fuente": "ESTIMACIÓN anclada en Atlan et al. 2015 (35 % de luz ≈ la sombra máxima en que se lo ve) y en su intolerancia a la sombra (NZPCN): no hay cifras medidas de muerte de adultos por sombra.",
+    "confianza": "baja"
+  },
+  "declive_sombra_anio": {
+    "valor": 0.1,
+    "unidad": "fracción de la cobertura que pierde por año bajo luz_declive",
+    "fuente": "ESTIMACIÓN: consistente con que en Nueva Zelanda el tojo da paso al bosque nativo en ~30-40 años sin fuego (Sullivan, Williams & Timmins 2007, NZ J. Ecol. 31:22-38) y con el colapso de sus tallos a ~10 años (Te Ara). Sin medición directa.",
+    "confianza": "baja"
+  },
+  "luz_declive_fuerte": {
+    "valor": 0.15,
+    "unidad": "luz relativa bajo la que retrocede más rápido (sombra densa)",
+    "fuente": "ESTIMACIÓN (investigación del 20-10-2026): sin cifra publicada.",
+    "confianza": "baja"
+  },
+  "declive_sombra_fuerte_anio": {
+    "valor": 0.25,
+    "unidad": "fracción de la cobertura que pierde por año bajo luz_declive_fuerte",
+    "fuente": "ESTIMACIÓN (ídem).",
+    "confianza": "baja"
+  },
+  "cobertura_minima": {
+    "valor": 0.01,
+    "unidad": "cobertura bajo la que la mata a la sombra muere",
+    "fuente": "DECISIÓN DE MODELO: una cobertura residual no es una planta viva.",
+    "confianza": "baja"
+  },
+  "edad_colapso_anios": {
+    "valor": 15,
+    "unidad": "años de una mata desde los que sus tallos colapsan y el dosel se abre",
+    "fuente": "Te Ara, Encyclopedia of New Zealand, 'Forest succession and regeneration': tras ~10 años los tallos del tojo colapsan, el dosel se abre y entran plántulas nativas; un estudio de Dunedin vio matorrales densos resistir ≥ 30 años. Valor intermedio (15).",
+    "confianza": "baja"
+  },
+  "apertura_colapso": {
+    "valor": 0.5,
+    "unidad": "fracción del cierre que pierde la mata vieja (para la germinación de otras plantas bajo ella)",
+    "fuente": "ESTIMACIÓN: el tojo viejo actúa como nodriza de nativas en Nueva Zelanda y da paso al bosque en ~30-40 años sin fuego (Sullivan, Williams & Timmins 2007, NZ J. Ecol. 31:22-38). Sin cifra de apertura medida.",
+    "confianza": "baja"
+  },
+  "luz_rebrote_minima": {
+    "valor": 0.35,
+    "unidad": "luz relativa mínima para que el banco de semillas rebrote",
+    "fuente": "ESTIMACIÓN: germina tras perturbación y en claros; bajo matorral o dosel establecido germinan pocas (Cal-IPC, fichas de manejo). Sin umbral publicado; se usa el mismo de luz_declive.",
+    "confianza": "baja"
+  },
   "mes_flor_otono_inicio": {
     "valor": 3,
     "unidad": "mes",
