@@ -13,6 +13,12 @@
     "fuente": "Orden de magnitud: los estanques de tierra pierden por filtración de pocos mm a más de 20 mm por día según el suelo (FAO, manuales de construcción de estanques para acuicultura). Sin dato para un regolito de condrita.",
     "confianza": "baja"
   },
+  "riego_litros_jornada": {
+    "valor": 40,
+    "unidad": "litros que una jornada lleva de la laguna al suelo (regar a mano)",
+    "fuente": "DECISIÓN DE DISEÑO: cuatro regaderas de 10 L (tamaño común de una regadera de jardín) en una isla de 4 m; el resto de la jornada es ir y volver. No es un dato del mundo real.",
+    "confianza": "baja"
+  },
   "laguna_sellado_dias": {
     "valor": 30,
     "unidad": "días con agua para que el fondo de una laguna se selle (finos que decantan y biofilm microbiano)",
