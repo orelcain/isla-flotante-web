@@ -425,7 +425,7 @@
     "unidad": "[m de suelo, m de altura, m de suelo, m de altura]",
     "fuente": "Bannister et al. 2008, Bosque, Cuadro 3: rodales de N. nitida en Chiloé con suelo de 30–100 cm y mal drenaje miden 4,0–7,4 m de altura media (H/D 39–51). ANALOGÍA: la isla drena bien; es el único dato de suelo delgado con la especie",
     "confianza": "baja",
-    "nota": "El techo de altura se interpola entre estos puntos según la profundidad media del suelo que alcanza la raíz; sobre 1 m sube hasta altura_maxima_m a 2 m de suelo (SUPUESTO: con suelo profundo el árbol puede llegar a su máximo; Esse 2007 da 16–20 m a 40 años en sitios de 60–130 cm bien drenados)"
+    "nota": "Desde el 20-10-2026 la profundidad es la que alcanza la raíz PONDERADA por la propia profundidad (Σp²/Σp): las raíces proliferan donde hay más suelo y nutrientes (Hodge A. 2004, 'The plastic plant: root responses to heterogeneous supplies of nutrients', New Phytologist 162:9-24; confianza baja como regla de techo). Con el promedio parejo, las rocas desnudas que se pegan a la isla bajaban el techo. El techo de altura se interpola entre estos puntos según esa profundidad; sobre 1 m sube hasta altura_maxima_m a 2 m de suelo (SUPUESTO: con suelo profundo el árbol puede llegar a su máximo; Esse 2007 da 16–20 m a 40 años en sitios de 60–130 cm bien drenados)"
   },
   "esbeltez_minima": {
     "valor": 39,
