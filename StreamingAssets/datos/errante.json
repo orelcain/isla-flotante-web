@@ -1,10 +1,11 @@
 {
   "nota": "Rocas errantes que se acercan a la isla y se pegan (binario de contacto) o chocan (Errante.cs). Así crecen los cuerpos chicos del sistema solar: Arrokoth son dos lóbulos que se tocaron suave, a ≲3–5 m/s y de forma rasante, y conservaron su forma (McKinnon et al. 2020, Science; Spencer et al., Icarus); Itokawa, Ryugu y Bennu son pilas de escombros reacumulados tras choques (Michel et al. 2020, Nat. Commun. 11:2655). No hay un umbral medido de pegado para rocas de ~1 m: lo de abajo que no tiene dato es decisión de diseño, marcada baja.",
   "prob_anio": {
-    "valor": 0.15,
+    "valor": 0.3,
     "unidad": "probabilidad de que se anuncie una roca errante en un año",
     "fuente": "ATAJO DECLARADO: a la Tierra entran ~40 objetos de ≥ 1 m por año (derivado de Brown et al. 2002, Nature 420:294, N(>E) = 3,7·E^−0,9 por año); que uno pase despacio junto a un islote de 4 m es muchísimo más raro. Igual que factor_atajo_polvo, el juego condensa siglos en 25 años para que la isla crezca a la vista.",
-    "confianza": "baja"
+    "confianza": "baja",
+    "nota": "0,15 → 0,3 el 20-10-2026 (AgenciaPruebas, 60 años, misma semilla): con 0,15 la isla de quien no juega llegaba a 13,5 m² y la de quien guía cada roca a 17–20 m²; con 0,3, 15,6 m² contra 26,4 m² (14 rocas pegadas). Así crecer depende de lo que hace el jugador (guiar), no del tiempo. Duplicar el polvo, en cambio, acercaba las dos (ayuda al que no juega)."
   },
   "anio_minimo": {
     "valor": 3,
