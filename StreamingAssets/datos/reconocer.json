@@ -5,8 +5,14 @@
     "media": "corteza gris lisa con manchas claras de líquenes y bandas de lenticelas; más lisa que la del coigüe común",
     "cerca": "hoja romboidal de 2–4 cm, brillante, coriácea, aserrada fina e irregular, base desigual; brotes nuevos rojo-bronce en primavera (ninguna otra haya austral los tiene)",
     "confunde": [
-      ["Coigüe común (N. dombeyi)", "hoja ovada-triangular con dientes casi dobles y nervios poco visibles; corteza agrietada en placas"],
-      ["Coigüe de Magallanes (N. betuloides)", "hoja ovada más chica, dientes finos de punta roma; corteza gris plateada en escamas"]
+      [
+        "Coigüe común (N. dombeyi)",
+        "hoja ovada-triangular con dientes casi dobles y nervios poco visibles; corteza agrietada en placas"
+      ],
+      [
+        "Coigüe de Magallanes (N. betuloides)",
+        "hoja ovada más chica, dientes finos de punta roma; corteza gris plateada en escamas"
+      ]
     ],
     "fuente": "docs/FICHA_VISUAL_COIGUE.md (Trees and Shrubs Online; Rodríguez, Matthei y Quezada 1983; Mathiasen et al. 2017; fotos de campo medidas 11-10-2026)",
     "confianza": "alta"
@@ -16,9 +22,18 @@
     "media": "hojas opuestas, oblongas, con el envés gris pálido que se ve cuando sopla el viento",
     "cerca": "hoja simple y opuesta, base redondeada o apenas cordada, borde entero en el adulto (aserrado en el renuevo); flor de 5 cm con 4 pétalos blancos y un anillo de estambres de anteras rojizas",
     "confunde": [
-      ["Tiaca (Caldcluvia paniculata), la más parecida", "hoja aserrada con estípulas foliáceas persistentes de 1,2–1,7 cm; flores chicas en panícula"],
-      ["Tineo (Weinmannia trichosperma)", "hoja compuesta de 5–8 pares de folíolos con raquis alado"],
-      ["Tepa (Laureliopsis philippiana)", "hoja aromática, base cuneiforme, dientes con punta glandular"]
+      [
+        "Tiaca (Caldcluvia paniculata), la más parecida",
+        "hoja aserrada con estípulas foliáceas persistentes de 1,2–1,7 cm; flores chicas en panícula"
+      ],
+      [
+        "Tineo (Weinmannia trichosperma)",
+        "hoja compuesta de 5–8 pares de folíolos con raquis alado"
+      ],
+      [
+        "Tepa (Laureliopsis philippiana)",
+        "hoja aromática, base cuneiforme, dientes con punta glandular"
+      ]
     ],
     "fuente": "docs/FICHA_ULMO.md (Flora arbórea de Chile, FAC; fotos de campo medidas 11-10-2026)",
     "confianza": "alta"
@@ -28,8 +43,14 @@
     "media": "corteza lisa gris ceniciento, aromática al rasparla; ramillas y pecíolos rojizos",
     "cerca": "hoja grande y entera, en rosetas al final de la ramilla, con el envés blanco ceroso; umbelas de flores blancas de 8–10 pétalos; bayas en grupos",
     "confunde": [
-      ["Canelo enano (D. andina)", "arbusto con flores axilares; no está en Chiloé"],
-      ["Tepa y ulmo", "hojas opuestas (el canelo las tiene alternas en roseta)"]
+      [
+        "Canelo enano (D. andina)",
+        "arbusto con flores axilares; no está en Chiloé"
+      ],
+      [
+        "Tepa y ulmo",
+        "hojas opuestas (el canelo las tiene alternas en roseta)"
+      ]
     ],
     "fuente": "docs/FICHA_CANELO.md (FAC; Smith 1943; fotos de campo medidas 11-10-2026)",
     "confianza": "alta"
@@ -39,8 +60,14 @@
     "media": "tallos finos con hojas pequeñas opuestas",
     "cerca": "hoja opuesta y dentada, con pelos; flor colgante roja e inflada como una botellita, pilosa, con 4 estambres amarillos que asoman; baya verde con un estilo largo",
     "confunde": [
-      ["Estrellita (Asteranthera ovata)", "pegada al tronco, corola con lóbulos abiertos en estrella, carmesí"],
-      ["Medallita (Sarmienta repens)", "hojas suculentas casi lampiñas, solo 2 estambres"]
+      [
+        "Estrellita (Asteranthera ovata)",
+        "pegada al tronco, corola con lóbulos abiertos en estrella, carmesí"
+      ],
+      [
+        "Medallita (Sarmienta repens)",
+        "hojas suculentas casi lampiñas, solo 2 estambres"
+      ]
     ],
     "fuente": "docs/FICHA_BOTELLITA.md (Salinas 2010; Smith-Ramírez 1993; Trees and Shrubs Online)",
     "confianza": "alta"
@@ -50,8 +77,14 @@
     "media": "ramillas cubiertas de hojas en todas direcciones",
     "cerca": "hoja rígida de 15–30 mm, muy punzante, con 2 bandas blancas notorias por debajo; semilla púrpura sobre un receptáculo rojo carnoso",
     "confunde": [
-      ["Mañío de hojas cortas (Saxegothaea)", "hojas en 2 planos que casi no pican; cono globoso"],
-      ["Mañío de hojas largas (P. salignus)", "hojas de 5–10 cm, colgantes, que no pican"]
+      [
+        "Mañío de hojas cortas (Saxegothaea)",
+        "hojas en 2 planos que casi no pican; cono globoso"
+      ],
+      [
+        "Mañío de hojas largas (P. salignus)",
+        "hojas de 5–10 cm, colgantes, que no pican"
+      ]
     ],
     "fuente": "docs/FICHA_MANIO.md (FAC)",
     "confianza": "alta"
@@ -61,10 +94,148 @@
     "media": "tapiz de tallitos apretados; seco se ve pardo, mojado se abre y verdea en minutos",
     "cerca": "sobre suelo nuevo, en Chiloé los pioneros son Polytrichum (cada tallo es una estrellita de hojas rígidas que se cierra y se pone pardo-rojiza al secarse) y Campylopus (cojín con pelitos blancos en la punta de las hojas)",
     "confunde": [
-      ["Racomitrium lanuginosum", "en Chiloé crece sobre rocas y cortezas, no en el suelo bajo el coigüe; canoso por las puntas hialinas"],
-      ["Dendroligotrichum dendroides (musgo pinito)", "llega después, con el bosque: parece un pino en miniatura de 10–25 cm"]
+      [
+        "Racomitrium lanuginosum",
+        "en Chiloé crece sobre rocas y cortezas, no en el suelo bajo el coigüe; canoso por las puntas hialinas"
+      ],
+      [
+        "Dendroligotrichum dendroides (musgo pinito)",
+        "llega después, con el bosque: parece un pino en miniatura de 10–25 cm"
+      ]
     ],
     "fuente": "Villagrán, Barrera, Cuvertino y García 2003, Musgos de la Isla Grande de Chiloé (Bol. MNHN 52:17-44); FEIS USDA; fotos iNaturalist medidas 11-10-2026",
+    "confianza": "media"
+  },
+  "gunnera_tinctoria": {
+    "lejos": "hierba gigante de 1,5–2,5 m de alto y hasta 3 m de ancho, en mata de hojas enormes verde oscuro, como paraguas; en suelos húmedos, orillas de caminos, quebradas y vertientes, a menudo en manchones; en primavera-verano asoman conos erguidos rojizos",
+    "media": "hojas de 0,6–1,5 m de ancho, arriñonadas, con 5–7 lóbulos grandes de borde dentado; pecíolos gruesos de 1–2 m, rojizo-verdosos, con aguijones cortos y duros; inflorescencia en cono erguido de 30–80 cm; en verano, frutos rojo-anaranjados que cubren el cono",
+    "cerca": "lámina áspera con nervios muy marcados y aguijones en el envés; el pecíolo pelado es comestible y ácido (la «nalca»); flor de 2–3 mm sin pétalos vistosos; fruto de 2–3 mm, rojo-anaranjado; en la base del pecíolo, glándulas con la cianobacteria Nostoc, que fija nitrógeno",
+    "confunde": [
+      [
+        "Nalca chica (Gunnera magellanica)",
+        "rastrera, de menos de 20 cm y hojas de 3–10 cm; la nalca pasa de 1,5 m"
+      ],
+      [
+        "Gunnera manicata (de jardín)",
+        "aguijones más largos y gruesos e inflorescencia más ramificada; en Chile solo cultivada"
+      ]
+    ],
+    "fuente": "Hoffmann, A. (1997) Flora Silvestre de Chile: Zona Araucana. Fundación Claudio Gay; Wanntorp, L. & Wanntorp, H.-E. (2003) J. Biogeography 30:979-987; Enciclopedia de la Flora Chilena (florachilena.cl) y Chileflora.com: Gunnera tinctoria. (Redactado el 19-10 a partir de esas obras sin consultarlas en línea: a verificar con florachilena.cl o Rodríguez, Matthei y Quezada 1983.)",
+    "confianza": "media"
+  },
+  "gunnera_magellanica": {
+    "lejos": "tapiz bajo de 5–20 cm, verde oscuro, sobre suelo húmedo: turberas, praderas encharcadas, bordes de arroyos y claros húmedos; en verano, espigas cortas rojizas",
+    "media": "hojas de 3–10 cm, arriñonadas o acorazonadas, de borde festoneado, que brotan de estolones rastreros; pecíolos de 5–15 cm; plantas con flores de un solo sexo en espigas erectas de 5–15 cm; frutos rojo-anaranjados en la espiga (verano-otoño)",
+    "cerca": "lámina rugosa y arrugada, de borde crenado-ondulado, algo pelosa por debajo; tallo rastrero bajo tierra; frutos de 2–3 mm; sin los aguijones grandes de la nalca",
+    "confunde": [
+      [
+        "Nalca joven (Gunnera tinctoria)",
+        "hojas más grandes y lobuladas, y el pecíolo ya con aguijones rojizos"
+      ],
+      [
+        "Tembladerilla (Hydrocotyle)",
+        "hoja redonda con el pecíolo en el centro (peltada) y lisa, no arrugada"
+      ]
+    ],
+    "fuente": "Hoffmann, A. (1997) Flora Silvestre de Chile: Zona Araucana. Fundación Claudio Gay; Wanntorp & Wanntorp (2003) J. Biogeography 30:979-987; florachilena.cl y Chileflora.com: Gunnera magellanica. (Redactado el 19-10 a partir de esas obras sin consultarlas en línea: a verificar con florachilena.cl o Rodríguez, Matthei y Quezada 1983.)",
+    "confianza": "media"
+  },
+  "coriaria_ruscifolia": {
+    "lejos": "arbusto de 1–3 m (a veces 4) de ramas finas, arqueadas y colgantes, verde claro; en bordes de camino, orillas de ríos, suelos húmedos y claros; en verano, racimos de frutos oscuros",
+    "media": "ramas de sección cuadrangular; hojas opuestas en dos filas, casi sin pecíolo, lanceoladas a ovadas de 2–6 cm, con 3–5 nervios que parten de la base; flores verdosas en racimos colgantes de 5–15 cm (primavera); frutos negro-púrpura brillantes en racimos (verano-otoño)",
+    "cerca": "hoja de borde entero, sin dientes, con 3–5 nervios longitudinales bien visibles; fruto de 5–8 mm, como una mora pequeña; MUY TÓXICO (coriamirtina y tutina: convulsiones, puede ser mortal): no comerlo ni confundirlo con el maqui",
+    "confunde": [
+      [
+        "Maqui (Aristotelia chilensis)",
+        "hojas con pecíolo, borde aserrado y un solo nervio central marcado; sus bayas negro-azuladas son comestibles"
+      ]
+    ],
+    "fuente": "Hoffmann, A. (1997) Flora Silvestre de Chile: Zona Araucana. Fundación Claudio Gay; Rodríguez, R., Matthei, O. & Quezada, M. (1983) Flora arbórea de Chile. Universidad de Concepción; florachilena.cl y Chileflora.com: Coriaria ruscifolia. (Redactado el 19-10 a partir de esas obras sin consultarlas en línea: a verificar con florachilena.cl o Rodríguez, Matthei y Quezada 1983.)",
+    "confianza": "media"
+  },
+  "chusquea_quila": {
+    "lejos": "bambú enmarañado de 3–6 m (hasta 8), en matorrales densos casi impenetrables bajo el bosque o en claros; cañas delgadas, arqueadas y semitrepadoras: una masa verde pareja que tapa el sotobosque",
+    "media": "cañas de 1–2 cm de diámetro, macizas, verde amarillentas a pardas; en cada nudo, varias ramitas en abanico; hojas lanceoladas de 5–12 cm de borde áspero; florece toda junta cada varias décadas y después muere",
+    "cerca": "caña maciza o casi, de nudos prominentes con ramillas en manojo; hojas estrechas de 5–12 × 0,5–1,2 cm, borde finamente aserrado y áspero, vaina con pelos",
+    "confunde": [
+      [
+        "Colihue (Chusquea culeou)",
+        "caña más gruesa (2–5 cm), recta y erguida; la quila es más delgada y arqueada"
+      ],
+      [
+        "Chusquea macrostachya",
+        "trepadora de cañas muy finas que se enredan sobre los árboles; no forma matorral erguido"
+      ]
+    ],
+    "fuente": "Rodríguez, R., Matthei, O. & Quezada, M. (1983) Flora arbórea de Chile. Universidad de Concepción; Hoffmann, A. (1997) Flora Silvestre de Chile: Zona Araucana; florachilena.cl y Chileflora.com: Chusquea quila. (Redactado el 19-10 a partir de esas obras sin consultarlas en línea: a verificar con florachilena.cl o Rodríguez, Matthei y Quezada 1983.)",
+    "confianza": "media"
+  },
+  "holcus_lanatus": {
+    "lejos": "pasto en matas de 30–100 cm, gris verdoso y aterciopelado, con panojas rosadas, violáceas o blanquecinas; muy común en prados, potreros húmedos y bordes de camino del sur de Chile; blanquecino cuando se seca",
+    "media": "hojas y vainas cubiertas de pelos suaves (aspecto de terciopelo), de 4–10 mm de ancho; panoja densa de 5–15 cm, rosa-violácea al comienzo y blanquecina al madurar (noviembre-febrero); espiguillas de ~4 mm",
+    "cerca": "hojas suaves y vellosas al tacto; espiguilla de 2 flores, la superior con una arista corta en gancho; pelos también en las vainas de abajo; introducida desde Europa",
+    "confunde": [
+      [
+        "Pasto ovillo (Dactylis glomerata)",
+        "hojas lisas y más duras; espiguillas apretadas en grupos a un lado del eje"
+      ],
+      [
+        "Pasto oloroso (Anthoxanthum odoratum)",
+        "panoja estrecha amarillenta y olor a heno al estrujar las hojas"
+      ]
+    ],
+    "fuente": "Matthei, O. (1995) Manual de las malezas que crecen en Chile. Alfabeta, Santiago; Marticorena, C. & Quezada, M. (1985) Catálogo de la flora vascular de Chile. Gayana Botánica 42:1-157; florachilena.cl: Holcus lanatus. (Redactado el 19-10 a partir de esas obras sin consultarlas en línea: a verificar con florachilena.cl o Rodríguez, Matthei y Quezada 1983.)",
+    "confianza": "media"
+  },
+  "ulex_europaeus": {
+    "lejos": "arbusto denso de 1–3 m (hasta 4), casi esférico, verde oscuro, cubierto de flores amarillo intenso en primavera y parte del año; matorrales impenetrables en laderas, bordes de camino y potreros abandonados: una de las invasoras más agresivas del sur de Chile",
+    "media": "ramas muy espinosas, verdes, estriadas y pelosas; en la planta adulta las hojas son espinas; flores amarillas de 1,5–2 cm con olor a coco (sobre todo agosto-diciembre); vainas peludas de 1–2 cm que estallan en verano lanzando las semillas",
+    "cerca": "espinas rígidas de 1–3 cm, ramificadas y punzantes; flor de arveja (papilionada) de 1,5–2 cm con cáliz peludo amarillento; vaina con 2–3 semillas negras brillantes que viven décadas en el suelo",
+    "confunde": [
+      [
+        "Retamilla (Teline monspessulana)",
+        "sin espinas, hojas de tres folíolos y flores amarillas en racimos cortos"
+      ],
+      [
+        "Retama (Cytisus scoparius)",
+        "ramas verdes angulosas sin espinas y flores amarillas más grandes"
+      ]
+    ],
+    "fuente": "Matthei, O. (1995) Manual de las malezas que crecen en Chile. Alfabeta; Hoffmann, A. (1997) Flora Silvestre de Chile: Zona Araucana; Global Invasive Species Database: Ulex europaeus (iucngisd.org); florachilena.cl: Ulex europaeus. (Redactado el 19-10 a partir de esas obras sin consultarlas en línea: a verificar con florachilena.cl o Rodríguez, Matthei y Quezada 1983.)",
+    "confianza": "media"
+  },
+  "rubus_ulmifolius": {
+    "lejos": "matorral enmarañado de 1–3 m de tallos largos y arqueados que, al tocar el suelo, echan raíces; masas impenetrables en cercos, riberas, quebradas y bordes de camino; con viento se ve el envés blanquecino de las hojas",
+    "media": "tallos angulosos rojizo-violáceos con aguijones fuertes y curvos; hojas de 3–5 folíolos, verdes arriba y blanco-afieltradas abajo; flores rosadas de 5 pétalos y ~2 cm (diciembre-febrero); moras negras brillantes de 1–1,5 cm (febrero-abril)",
+    "cerca": "folíolo ovado de 3–8 cm, aserrado, con el envés blanco afieltrado; aguijones curvos y aplanados; la mora, comestible, está hecha de muchas drupas chicas; se propaga por semillas (aves) y por las puntas de los tallos que enraízan",
+    "confunde": [
+      [
+        "Miñe-miñe (Rubus geoides)",
+        "nativa rastrera de hojas simples, sin aguijones fuertes y con fruto rojo-anaranjado"
+      ],
+      [
+        "Otra zarzamora introducida (Rubus constrictus)",
+        "envés verde y poco afieltrado (la ulmifolius lo tiene blanco)"
+      ]
+    ],
+    "fuente": "Matthei, O. (1995) Manual de las malezas que crecen en Chile. Alfabeta; Hoffmann, A. (1997) Flora Silvestre de Chile: Zona Araucana; Marticorena & Quezada (1985) Gayana Botánica 42; florachilena.cl: Rubus ulmifolius. (Redactado el 19-10 a partir de esas obras sin consultarlas en línea: a verificar con florachilena.cl o Rodríguez, Matthei y Quezada 1983.)",
+    "confianza": "media"
+  },
+  "turdus_falcklandii": {
+    "lejos": "ave de suelo de 24–27 cm, pardo oliváceo con el vientre canela; salta o corre por el pasto, el borde del bosque y los jardines y se detiene erguida con el pecho adelante; común y confiada cerca de las casas",
+    "media": "dorso pardo oliváceo parejo y cabeza algo más oscura; garganta blanquecina con estrías oscuras; pecho y vientre canela; pico y patas amarillo-anaranjados y anillo amarillo alrededor del ojo; los jóvenes, con manchas claras; come lombrices, insectos y frutos",
+    "cerca": "pico amarillo-anaranjado de punta fina, patas amarillas, ojo oscuro con anillo amarillo; 80–100 g; canto de frases aflautadas y variadas al amanecer y al atardecer; nido en taza de barro y pasto con 2–4 huevos celestes manchados",
+    "confunde": [
+      [
+        "Tenca (Mimus thenca)",
+        "gris pardusca, cola larga con puntas blancas y ceja blanca; de la zona central, no de Chiloé"
+      ],
+      [
+        "Mirlo, hembra (Molothrus bonariensis)",
+        "pico y patas negros, plumaje pardo grisáceo parejo, más chica y sin anillo amarillo"
+      ]
+    ],
+    "fuente": "Jaramillo, A. (2005) Aves de Chile. Lynx Edicions; Martínez, D. & González, G. (2004) Las aves de Chile: nueva guía de campo. Ediciones del Naturalista; Couve, E. & Vidal, C. (2003) Birds of Patagonia, Tierra del Fuego and Antarctic Peninsula. Fantástico Sur. (Redactado el 19-10 a partir de esas obras sin consultarlas en línea: a verificar con florachilena.cl o Rodríguez, Matthei y Quezada 1983.)",
     "confianza": "media"
   }
 }
