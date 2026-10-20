@@ -557,9 +557,9 @@
     "confianza": "baja"
   },
   "trabajo_acciones_anio": {
-    "valor": 12,
+    "valor": 8,
     "unidad": "jornadas de pala o picota por año",
-    "fuente": "decisión de diseño (12-10-2026): una jornada por mes. Limita el trabajo para que cada movida sea una decisión; el juego se pausa mientras se mueve tierra.",
+    "fuente": "decisión de diseño (12-10-2026): una jornada por mes; 12 → 8 el 20-10-2026 (cuarta ronda de jugadores: «sobran 12 de 12, no hay dilema»). Medido con el piloto (60 años, guiando rocas): con 12, 8 o 6 jornadas termina igual (26-28 m², coigüe 4,1 m, sin espinillo): el capítulo sigue alcanzable y lo que aprieta es el espinillo que se deja crecer. Limita el trabajo para que cada movida sea una decisión.",
     "confianza": "alta"
   },
   "premio_encargo_jornadas": {
