@@ -104,7 +104,9 @@
       ]
     ],
     "fuente": "Villagrán, Barrera, Cuvertino y García 2003, Musgos de la Isla Grande de Chiloé (Bol. MNHN 52:17-44); FEIS USDA; fotos iNaturalist medidas 11-10-2026",
-    "confianza": "media"
+    "confianza": "media",
+    "reto": true,
+    "nombre_reto": "Musgo pionero del suelo (Polytrichum, Campylopus)"
   },
   "gunnera_tinctoria": {
     "lejos": "hierba gigante de 1,5–2,5 m de alto y hasta 3 m de ancho, en mata de hojas enormes verde oscuro, como paraguas; en suelos húmedos, orillas de caminos, quebradas y vertientes, a menudo en manchones; en primavera-verano asoman conos erguidos rojizos",
@@ -202,7 +204,9 @@
       ]
     ],
     "fuente": "Matthei, O. (1995) Manual de las malezas que crecen en Chile. Alfabeta; Hoffmann, A. (1997) Flora Silvestre de Chile: Zona Araucana; Global Invasive Species Database: Ulex europaeus (iucngisd.org); florachilena.cl: Ulex europaeus. (Redactado el 19-10 a partir de esas obras sin consultarlas en línea: a verificar con florachilena.cl o Rodríguez, Matthei y Quezada 1983.)",
-    "confianza": "media"
+    "confianza": "media",
+    "reto": true,
+    "nombre_reto": "Espinillo (Ulex europaeus)"
   },
   "rubus_ulmifolius": {
     "lejos": "matorral enmarañado de 1–3 m de tallos largos y arqueados que, al tocar el suelo, echan raíces; masas impenetrables en cercos, riberas, quebradas y bordes de camino; con viento se ve el envés blanquecino de las hojas",
@@ -236,6 +240,25 @@
       ]
     ],
     "fuente": "Jaramillo, A. (2005) Aves de Chile. Lynx Edicions; Martínez, D. & González, G. (2004) Las aves de Chile: nueva guía de campo. Ediciones del Naturalista; Couve, E. & Vidal, C. (2003) Birds of Patagonia, Tierra del Fuego and Antarctic Peninsula. Fantástico Sur. (Redactado el 19-10 a partir de esas obras sin consultarlas en línea: a verificar con florachilena.cl o Rodríguez, Matthei y Quezada 1983.)",
+    "confianza": "media"
+  },
+  "descolea_antarctica": {
+    "lejos": "hongo chico a mediano, ocre a castaño, solo o en grupos chicos sobre el suelo y la hojarasca bajo Nothofagus; efímero, sale en otoño-invierno (abril a septiembre)",
+    "media": "sombrero de 1–5,5 cm, convexo con un umbo bajo, liso y algo brillante (pegajoso con humedad), castaño al centro y amarillento hacia el borde estriado; pie blancuzco de 2–7 cm con un anillo membranoso, colgante y estriado por arriba",
+    "cerca": "láminas apretadas, blancuzcas a ocre pardas, con el filo aserrado; bajo el anillo el pie tiene fibrillas blancas; a veces restos blancos de velo sobre el sombrero; esporas en forma de limón y verrugosas (al microscopio)",
+    "confunde": [
+      [
+        "Cortinarius (p. ej. C. magellanicus)",
+        "tiene una cortina de hilos que se pierde, sin anillo membranoso estriado, y esporada pardo-herrumbre (rasgo general del género, a verificar con guía de campo)"
+      ],
+      [
+        "Laccaria (p. ej. L. laccata)",
+        "no tiene anillo; láminas gruesas y espaciadas, y esporada blanca (rasgo general del género, a verificar con guía de campo)"
+      ]
+    ],
+    "reto": true,
+    "nombre_reto": "Hongo del coigüe (Descolea antarctica)",
+    "fuente": "Ministerio del Medio Ambiente de Chile (2014), ficha de antecedentes de Descolea antarctica, que cita a Horak 1980 y Garrido 1988 (clasificacionespecies.mma.gob.cl); Vesterholt & Petersen (1989-90) Fróðskaparrit 38-39 (material traído de Tierra del Fuego). Las diferencias con Cortinarius y Laccaria son rasgos generales de esos géneros, sin fuente que los compare con Descolea (investigación del 21-10-2026).",
     "confianza": "media"
   }
 }
