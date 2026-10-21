@@ -18,6 +18,12 @@
     "fuente": "DECISIÓN DE DISEÑO apoyada en su crecimiento rápido: rodales jóvenes producen 10.000-15.000 kg de materia seca por ha y año (Egunjobi 1969, citado por Magesan, Wang & Clinton 2012, New Zealand Journal of Ecology 36(1):21-28).",
     "confianza": "baja"
   },
+  "jornadas_arrancar_adulto": {
+    "valor": 2,
+    "unidad": "jornadas para arrancar una mata que ya florece (una plántula o mata joven cuesta 1)",
+    "fuente": "Weedbusters NZ, ficha de Ulex europaeus (weedbusters.org.nz): las plántulas se arrancan a mano; las matas establecidas hay que cortarlas y tratar el tocón o sacar la raíz entera (grubbing), un trabajo mucho mayor. El doble de jornadas es DECISIÓN DE DISEÑO (N3, quinta ronda: «que no alcance de verdad»): se reemplaza con horas-persona por m² medidas en faenas de control.",
+    "confianza": "baja"
+  },
   "edad_reproductiva_anios": {
     "valor": 1.5,
     "unidad": "años desde que brota hasta que florece y suelta semillas (la VENTANA para arrancarlo sin dejar banco)",
