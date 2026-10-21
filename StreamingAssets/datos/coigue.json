@@ -328,13 +328,13 @@
     "valor": 0.4,
     "unidad": "m",
     "fuente": "decisión de diseño (docs/DISENO_ISLA_SEMILLA.md): un tronco caído podrido como cuna del coigüe; en Chiloé las plántulas de N. nitida crecen sobre troncos en descomposición (Christie & Armesto 2003, Journal of Ecology 91:776-784)",
-    "confianza": "alta"
+    "confianza": "baja"
   },
   "cuna_espesor_m": {
     "valor": 0.08,
     "unidad": "m",
-    "fuente": "decisión de diseño: espesor de la madera podrida bajo la plántula",
-    "confianza": "alta"
+    "fuente": "decisión de diseño: espesor de la madera podrida bajo la plántula. En el modelo entra a la capa orgánica (humus, humus_k_anio): por eso el horizonte O bajo el coigüe mide ~8 cm desde el año 0 (octava ronda de jugadores, 21-10-2026: no es humus acumulado). Pendiente: una capa propia de madera podrida con su tasa de pudrición (bastante más rápida que la del humus)",
+    "confianza": "baja"
   },
   "cuna_n_pct": {
     "valor": 0.5,
