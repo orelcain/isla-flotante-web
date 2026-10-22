@@ -27,7 +27,7 @@
   "edad_reproductiva_anios": {
     "valor": 1.5,
     "unidad": "años desde que brota hasta que florece y suelta semillas (la VENTANA para arrancarlo sin dejar banco)",
-    "fuente": "«Gorse matures and flowers ~18 months after germination» (revisión «A World of Gorse: Persistence of Ulex europaeus in Managed Landscapes», Plants 2019, PMC6918442). Clones cultivados en Francia reproducen desde su 3.er año (Atlan et al. 2015, PLoS ONE, PMC4575064): la sombra lo retrasa.",
+    "fuente": "«Gorse matures and flowers ~18 months after germination» (revisión «A World of Gorse: Persistence of Ulex europaeus in Managed Landscapes», Plants 2019, PMC6918442). Clones cultivados en Francia reproducen desde su 3.er año (Atlan et al. 2015, PLoS ONE, PMC4575064): la sombra lo retrasa. Es el MÍNIMO de la literatura: a la sombra florece más tarde (lo modelan luz_reproduccion_plena y luz_reproduccion_nula).",
     "confianza": "media"
   },
   "semillas_m2_anio": {
@@ -76,8 +76,8 @@
   "fijacion_n_kg_ha_anio": {
     "valor": 100,
     "unidad": "kg de N por ha y año (rodal joven cerrado, suelo pobre)",
-    "fuente": "Acumula 100-200 kg N/ha/año en rodales de menos de 10 años en Nueva Zelanda (Egunjobi 1969, citado por Magesan, Wang & Clinton 2012, New Zealand Journal of Ecology 36(1):21-28). Se usa el valor bajo.",
-    "confianza": "media"
+    "fuente": "Acumula 100-200 kg N/ha/año en rodales de menos de 10 años en Nueva Zelanda (Egunjobi 1969, citado por Magesan, Wang & Clinton 2012, New Zealand Journal of Ecology 36(1):21-28). Se usa el valor bajo. FIDELIDAD (duodécima ronda): medido en Nueva Zelanda (otro clima y suelo); no hay dato para Chiloé: confianza baja hasta medirlo aquí.",
+    "confianza": "baja"
   },
   "ndfa_suelo_pobre": {
     "valor": 0.97,
@@ -100,8 +100,8 @@
   "lavado_fraccion": {
     "valor": 0.3,
     "unidad": "fracción del N que fija que se lava hacia el agua (sale de la isla)",
-    "fuente": "Bajo espinillo en Nueva Zelanda entraron 182-223 kg N/ha/año con la hojarasca y se lavaron 59-64 kg N/ha en 10 meses (Magesan, G. N. & Wang, H. 2008, «Nitrogen leaching from gorse», informe final para el Greater Wellington Regional Council): ~30 %.",
-    "confianza": "media"
+    "fuente": "Bajo espinillo en Nueva Zelanda entraron 182-223 kg N/ha/año con la hojarasca y se lavaron 59-64 kg N/ha en 10 meses (Magesan, G. N. & Wang, H. 2008, «Nitrogen leaching from gorse», informe final para el Greater Wellington Regional Council): ~30 %. FIDELIDAD (duodécima ronda): medido en Nueva Zelanda (otro clima y suelo); no hay dato para Chiloé: confianza baja hasta medirlo aquí.",
+    "confianza": "baja"
   },
   "espacio_que_quita": {
     "valor": 0.9,
