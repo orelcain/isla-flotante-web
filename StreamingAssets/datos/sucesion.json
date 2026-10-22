@@ -1,0 +1,315 @@
+{
+  "_descripcion": "El bosque que llega (X2, duodécima ronda): notro y tineo (pioneros de luz, viento), canelo (aves, media sombra) y tepa (muy tolerante). Investigación del 22-10-2026; lo no medido va con confianza baja y su razón.",
+  "dia_del_anio": {
+    "valor": 200,
+    "unidad": "día del año en que se cuenta la sucesión (una vez al año, a fines del invierno)",
+    "fuente": "DECISIÓN DE DISEÑO",
+    "confianza": "baja"
+  },
+  "luz_saturacion": {
+    "valor": 0.6,
+    "unidad": "luz relativa con la que un juvenil ya crece a su ritmo de claro",
+    "fuente": "PROPUESTA: los ritmos medidos son de claros (Muñoz & González 2009), no de plena luz",
+    "confianza": "baja"
+  },
+  "radio_sombra_celdas": {
+    "valor": 2,
+    "unidad": "celdas (×√altura) a las que un árbol más alto da sombra",
+    "fuente": "DECISIÓN DE DISEÑO: la copa de un juvenil de pocos metros",
+    "confianza": "baja"
+  },
+  "sombra_por_arbol": {
+    "valor": 0.5,
+    "unidad": "fracción de luz que quita cada árbol más alto cercano",
+    "fuente": "PROPUESTA: bajo quila o dosel cerrado llega 1,5-1,7 % de la radiación difusa (Lusk 2001, Gayana Bot. 58: 25); un solo árbol quita menos",
+    "confianza": "baja"
+  },
+  "sombra_muerte_anios": {
+    "valor": 4,
+    "unidad": "años seguidos bajo su luz mínima tras los que muere un árbol",
+    "fuente": "PROPUESTA apoyada en Muñoz & González 2009: los renovales de intolerantes que crecen menos de 4 cm/año quedan bajo la quila y mueren",
+    "confianza": "baja"
+  },
+  "suelo_min_cm": {
+    "valor": 5,
+    "unidad": "cm de sustrato para que una plántula de árbol prenda",
+    "fuente": "DECISIÓN DE DISEÑO (las plántulas prenden sobre troncos podridos y musgo: Christie & Armesto 2003; Díaz & Armesto 2007)",
+    "confianza": "baja"
+  },
+  "suelo_pleno_cm": {
+    "valor": 30,
+    "unidad": "cm de sustrato desde los que el suelo no limita su crecimiento",
+    "fuente": "DECISIÓN DE DISEÑO",
+    "confianza": "baja"
+  },
+  "espacio_celdas": {
+    "valor": 4,
+    "unidad": "celdas (1 m) alrededor de un árbol nativo donde no prende otro",
+    "fuente": "DECISIÓN DE DISEÑO: densidad de renovales de ~2.000-8.000 por ha en Chiloé (Soto & Donoso 2006) = uno cada 1-2 m",
+    "confianza": "media"
+  },
+  "notro_crecimiento_m_anio": {
+    "valor": 0.69,
+    "unidad": "m de altura por año con luz de claro",
+    "fuente": "69 cm/año en claros: Muñoz A. & González M. (2009) Rev. Chil. Hist. Nat. 82: 185 (claros tras la muerte de la quila, 10 años; pocos individuos)",
+    "confianza": "media"
+  },
+  "notro_luz_min": {
+    "valor": 0.5,
+    "unidad": "luz relativa mínima para crecer (por debajo, cuenta años a la sombra)",
+    "fuente": "intolerante, pionera de incendios y derrumbes (Figueroa & Lusk 2001): se pide la mitad de la luz plena",
+    "confianza": "baja"
+  },
+  "notro_altura_max_m": {
+    "valor": 18,
+    "unidad": "m",
+    "fuente": "Smith-Ramírez & Armesto 1998 (Rev. Chil. Hist. Nat. 71: 51): hasta 18 m",
+    "confianza": "media"
+  },
+  "notro_edad_semilla_anios": {
+    "valor": 6,
+    "unidad": "años hasta sus primeras semillas",
+    "fuente": "sin dato: árbol de rápido crecimiento (Rodríguez et al. 1983), se propone 5-8 años",
+    "confianza": "baja"
+  },
+  "notro_por_aves": {
+    "valor": 0,
+    "unidad": "1 si lo dispersan las aves (llega a las perchas)",
+    "fuente": "flora_chiloe.json",
+    "confianza": "alta"
+  },
+  "notro_llegada_m2_anio": {
+    "valor": 1.0,
+    "unidad": "semillas por m² y año que llegan de afuera",
+    "fuente": "DECISIÓN DE DISEÑO: semillas aladas que trae el viento desde el bosque de Chiloé; sin medición de lluvia de semillas lejos del bosque",
+    "confianza": "baja"
+  },
+  "notro_semillas_percha_m2_anio": {
+    "valor": 0.0,
+    "unidad": "semillas por m² y año bajo una percha (6 celdas)",
+    "fuente": "no lo traen las aves",
+    "confianza": "media"
+  },
+  "notro_semillas_m2_anio": {
+    "valor": 20,
+    "unidad": "semillas por m² y año junto a un árbol semillero de la isla",
+    "fuente": "sin dato: folículos de ~10 semillas",
+    "confianza": "baja"
+  },
+  "notro_dispersion_m": {
+    "valor": 30,
+    "unidad": "m (la lluvia de semillas cae como e^(−d/esto))",
+    "fuente": "sin dato publicado: semilla alada",
+    "confianza": "baja"
+  },
+  "notro_bajo_quila": {
+    "valor": 0.1,
+    "unidad": "fracción de su establecimiento que queda bajo quila viva",
+    "fuente": "intolerante bajo quila viva (Lusk 2001; Muñoz & González 2009): un décimo",
+    "confianza": "baja"
+  },
+  "notro_establecimiento": {
+    "valor": 0.01,
+    "unidad": "fracción de semillas que llega a plántula en el mejor micrositio (madera podrida, musgo)",
+    "fuente": "PROPUESTA: semillas de viento sobre troncos podridos y musgo prenden mucho más que las de fruto carnoso en pradera (0,04 %, perchas.json); Christie & Armesto 2003; Díaz & Armesto 2007 (el notro sobre Sphagnum)",
+    "confianza": "baja"
+  },
+  "tineo_crecimiento_m_anio": {
+    "valor": 0.2,
+    "unidad": "m de altura por año con luz de claro",
+    "fuente": "sin dato juvenil medido; se propone 20 cm/año en claro",
+    "confianza": "baja"
+  },
+  "tineo_luz_min": {
+    "valor": 0.35,
+    "unidad": "luz relativa mínima para crecer (por debajo, cuenta años a la sombra)",
+    "fuente": "Gutiérrez et al. 2004 (J. Ecol. 92: 598) lo clasifica intolerante en el dosel adulto; semitolerante de joven (propuesta)",
+    "confianza": "baja"
+  },
+  "tineo_altura_max_m": {
+    "valor": 30,
+    "unidad": "m",
+    "fuente": "Rodríguez, Matthei & Quezada 1983, Flora arbórea de Chile",
+    "confianza": "media"
+  },
+  "tineo_edad_semilla_anios": {
+    "valor": 20,
+    "unidad": "años hasta sus primeras semillas",
+    "fuente": "sin dato: árbol longevo (>382 años, Gutiérrez et al. 2004)",
+    "confianza": "baja"
+  },
+  "tineo_por_aves": {
+    "valor": 0,
+    "unidad": "1 si lo dispersan las aves (llega a las perchas)",
+    "fuente": "flora_chiloe.json",
+    "confianza": "alta"
+  },
+  "tineo_llegada_m2_anio": {
+    "valor": 5.0,
+    "unidad": "semillas por m² y año que llegan de afuera",
+    "fuente": "DECISIÓN DE DISEÑO: semilla de ~1 mm con pelos, la que más vuela; sin medición lejos del bosque",
+    "confianza": "baja"
+  },
+  "tineo_semillas_percha_m2_anio": {
+    "valor": 0.0,
+    "unidad": "semillas por m² y año bajo una percha (6 celdas)",
+    "fuente": "no lo traen las aves",
+    "confianza": "media"
+  },
+  "tineo_semillas_m2_anio": {
+    "valor": 100,
+    "unidad": "semillas por m² y año junto a un árbol semillero de la isla",
+    "fuente": "sin dato: cápsulas con muchas semillas finas",
+    "confianza": "baja"
+  },
+  "tineo_dispersion_m": {
+    "valor": 50,
+    "unidad": "m (la lluvia de semillas cae como e^(−d/esto))",
+    "fuente": "sin dato publicado",
+    "confianza": "baja"
+  },
+  "tineo_bajo_quila": {
+    "valor": 0.1,
+    "unidad": "fracción de su establecimiento que queda bajo quila viva",
+    "fuente": "ídem notro",
+    "confianza": "baja"
+  },
+  "tineo_establecimiento": {
+    "valor": 0.01,
+    "unidad": "fracción de semillas que llega a plántula en el mejor micrositio (madera podrida, musgo)",
+    "fuente": "PROPUESTA: semillas de viento sobre troncos podridos y musgo prenden mucho más que las de fruto carnoso en pradera (0,04 %, perchas.json); Christie & Armesto 2003; Díaz & Armesto 2007 (el notro sobre Sphagnum)",
+    "confianza": "baja"
+  },
+  "canelo_crecimiento_m_anio": {
+    "valor": 0.4,
+    "unidad": "m de altura por año con luz de claro",
+    "fuente": "40 cm/año en claros: Muñoz A. & González M. (2009) Rev. Chil. Hist. Nat. 82: 185 (claros tras la muerte de la quila, 10 años; pocos individuos)",
+    "confianza": "media"
+  },
+  "canelo_luz_min": {
+    "valor": 0.2,
+    "unidad": "luz relativa mínima para crecer (por debajo, cuenta años a la sombra)",
+    "fuente": "tolerancia media de plántula (Chacón et al. 2005, NZ J. Bot. 43: 71) e intolerante-media de adulto: Soto D. & Donoso P. (2006) Bosque 27(3): 241 (renovales de canelo en Chiloé)",
+    "confianza": "baja"
+  },
+  "canelo_altura_max_m": {
+    "valor": 30,
+    "unidad": "m",
+    "fuente": "Rodríguez et al. 1983: hasta 30 m en Chiloé",
+    "confianza": "alta"
+  },
+  "canelo_edad_semilla_anios": {
+    "valor": 10,
+    "unidad": "años hasta sus primeras semillas",
+    "fuente": "sin dato",
+    "confianza": "baja"
+  },
+  "canelo_por_aves": {
+    "valor": 1,
+    "unidad": "1 si lo dispersan las aves (llega a las perchas)",
+    "fuente": "flora_chiloe.json",
+    "confianza": "alta"
+  },
+  "canelo_llegada_m2_anio": {
+    "valor": 0.0,
+    "unidad": "semillas por m² y año que llegan de afuera",
+    "fuente": "fruto carnoso: no llega con el viento",
+    "confianza": "media"
+  },
+  "canelo_semillas_percha_m2_anio": {
+    "valor": 3.0,
+    "unidad": "semillas por m² y año bajo una percha (6 celdas)",
+    "fuente": "una parte de la lluvia de semillas de fruto carnoso bajo una percha (perchas.json: ~30/m²/año entre todas las especies)",
+    "confianza": "baja"
+  },
+  "canelo_semillas_m2_anio": {
+    "valor": 10,
+    "unidad": "semillas por m² y año junto a un árbol semillero de la isla",
+    "fuente": "sin dato: bajo su copa (las aves también lo llevan)",
+    "confianza": "baja"
+  },
+  "canelo_dispersion_m": {
+    "valor": 10,
+    "unidad": "m (la lluvia de semillas cae como e^(−d/esto))",
+    "fuente": "≤10 % de los propágulos carnosos llega al borde del parche (lluvia de semillas en Chiloé, Rev. Chil. Hist. Nat.)",
+    "confianza": "baja"
+  },
+  "canelo_bajo_quila": {
+    "valor": 0.3,
+    "unidad": "fracción de su establecimiento que queda bajo quila viva",
+    "fuente": "intolerante-media",
+    "confianza": "baja"
+  },
+  "canelo_establecimiento": {
+    "valor": 0.01,
+    "unidad": "fracción de semillas que llega a plántula en el mejor micrositio (madera podrida, musgo)",
+    "fuente": "PROPUESTA: semillas de viento sobre troncos podridos y musgo prenden mucho más que las de fruto carnoso en pradera (0,04 %, perchas.json); Christie & Armesto 2003; Díaz & Armesto 2007 (el notro sobre Sphagnum)",
+    "confianza": "baja"
+  },
+  "tepa_crecimiento_m_anio": {
+    "valor": 0.29,
+    "unidad": "m de altura por año con luz de claro",
+    "fuente": "29 cm/año de la regeneración avanzada en claros; 22 cm/año las plántulas nuevas: Muñoz A. & González M. (2009) Rev. Chil. Hist. Nat. 82: 185 (claros tras la muerte de la quila, 10 años; pocos individuos)",
+    "confianza": "alta"
+  },
+  "tepa_luz_min": {
+    "valor": 0.03,
+    "unidad": "luz relativa mínima para crecer (por debajo, cuenta años a la sombra)",
+    "fuente": "muy tolerante (Soto D. & Donoso P. (2006) Bosque 27(3): 241 (renovales de canelo en Chiloé)); bajo quila llega ~1,5 % de la luz (Lusk 2001)",
+    "confianza": "media"
+  },
+  "tepa_altura_max_m": {
+    "valor": 40,
+    "unidad": "m",
+    "fuente": "Rodríguez et al. 1983 (hasta ~40 m)",
+    "confianza": "media"
+  },
+  "tepa_edad_semilla_anios": {
+    "valor": 25,
+    "unidad": "años hasta sus primeras semillas",
+    "fuente": "sin dato",
+    "confianza": "baja"
+  },
+  "tepa_por_aves": {
+    "valor": 0,
+    "unidad": "1 si lo dispersan las aves (llega a las perchas)",
+    "fuente": "flora_chiloe.json",
+    "confianza": "alta"
+  },
+  "tepa_llegada_m2_anio": {
+    "valor": 0.5,
+    "unidad": "semillas por m² y año que llegan de afuera",
+    "fuente": "DECISIÓN DE DISEÑO: semilla seca que cae sobre todo en claros del dosel (lluvia de semillas en Chiloé); poca llega lejos",
+    "confianza": "baja"
+  },
+  "tepa_semillas_percha_m2_anio": {
+    "valor": 0.0,
+    "unidad": "semillas por m² y año bajo una percha (6 celdas)",
+    "fuente": "no lo traen las aves",
+    "confianza": "media"
+  },
+  "tepa_semillas_m2_anio": {
+    "valor": 30,
+    "unidad": "semillas por m² y año junto a un árbol semillero de la isla",
+    "fuente": "sin dato",
+    "confianza": "baja"
+  },
+  "tepa_dispersion_m": {
+    "valor": 40,
+    "unidad": "m (la lluvia de semillas cae como e^(−d/esto))",
+    "fuente": "sin dato",
+    "confianza": "baja"
+  },
+  "tepa_bajo_quila": {
+    "valor": 0.6,
+    "unidad": "fracción de su establecimiento que queda bajo quila viva",
+    "fuente": "tolerante: aguanta bajo quila (Soto & Donoso 2006: hasta 23.600 plántulas/ha bajo renovales)",
+    "confianza": "baja"
+  },
+  "tepa_establecimiento": {
+    "valor": 0.01,
+    "unidad": "fracción de semillas que llega a plántula en el mejor micrositio (madera podrida, musgo)",
+    "fuente": "PROPUESTA: semillas de viento sobre troncos podridos y musgo prenden mucho más que las de fruto carnoso en pradera (0,04 %, perchas.json); Christie & Armesto 2003; Díaz & Armesto 2007 (el notro sobre Sphagnum)",
+    "confianza": "baja"
+  }
+}
