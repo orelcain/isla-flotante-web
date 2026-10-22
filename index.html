@@ -45,9 +45,9 @@
     }).catch(function () { iniciar(); });
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/e766adfb4e7d1a44c55849bd1a1be0c9.data.unityweb",
-      frameworkUrl: "Build/46b4ed858499eb0741eac2591e5614fe.framework.js.unityweb",
-      codeUrl: "Build/5bc00c964148703b1bdce57b778f7e3b.wasm.unityweb",
+      dataUrl: "Build/9a80cd5541d7d7b94482732f8654ada2.data.unityweb",
+      frameworkUrl: "Build/7610689e86c1604824b6a29e496b3f05.framework.js.unityweb",
+      codeUrl: "Build/26746d83f3428f7a15b3a4df3e383d04.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Isla Flotante",
       productName: "Isla Flotante",
@@ -56,7 +56,7 @@
       devicePixelRatio: Math.min(window.devicePixelRatio || 1, 1.5),
     };
     var script = document.createElement("script");
-    script.src = "Build/da7df7c7eea0036e60a223d92f27ccac.loader.js";
+    script.src = "Build/c0d4db81882858a64d57dcb2f531a2d2.loader.js";
     script.onload = function () {
       createUnityInstance(lienzo, config, function (p) { barra.style.width = (100 * p) + "%"; })
         .then(function (u) { window.isla = u; carga.remove(); })   // window.isla: para revisar desde la consola (SendMessage)
