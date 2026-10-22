@@ -1,0 +1,99 @@
+{
+  "_descripcion": "Crisis con ventana de decisión (X1, duodécima ronda de jugadores): eventos que llegan anunciados con unos días y que el jugador puede preparar. Por ahora, la helada tardía de primavera. Investigación del 22-10-2026; los valores de Chiloé se ajustan desde Puerto Montt (lo más cercano con serie publicada).",
+  "helada_dias_septiembre": {
+    "valor": 4.7,
+    "unidad": "días con T mínima < 0 °C en septiembre (Puerto Montt, El Tepual)",
+    "fuente": "Dirección Meteorológica de Chile, ficha «Heladas meteorológicas» Puerto Montt, normal 1991-2020 (climatologia.meteochile.gob.cl/publicaciones/heladas/heladas014PUERTOMONTT.pdf), leído del gráfico ±0,3",
+    "confianza": "media"
+  },
+  "helada_dias_octubre": {
+    "valor": 1.3,
+    "unidad": "días con helada en octubre (Puerto Montt)",
+    "fuente": "DMC, ficha de heladas de Puerto Montt (ídem); la última helada del año cae en promedio el 7 de octubre (serie 1961-2025)",
+    "confianza": "media"
+  },
+  "helada_dias_noviembre": {
+    "valor": 0.1,
+    "unidad": "días con helada en noviembre (Puerto Montt)",
+    "fuente": "DMC, ficha de heladas de Puerto Montt (ídem)",
+    "confianza": "media"
+  },
+  "helada_factor_chiloe": {
+    "valor": 0.5,
+    "unidad": "fracción de los días con helada de Puerto Montt que tendría la costa de Chiloé (efecto marítimo)",
+    "fuente": "ESTIMACIÓN: Puerto Montt está en el continente; Chiloé es más oceánica y debería helar menos (entre un tercio y la mitad). Falta la serie diaria de Castro o Ancud (pedirla a la DMC).",
+    "confianza": "baja"
+  },
+  "helada_tmin_tipica_c": {
+    "valor": -1.0,
+    "unidad": "°C, temperatura mínima típica de una helada de octubre",
+    "fuente": "DMC Puerto Montt: en octubre ~72 % de las heladas entre 0 y −1 °C, ~23 % entre −1 y −2 °C, ~5 % entre −2 y −3 °C; se sortea con esa distribución y se sube 0,5 °C por el mar (baja)",
+    "confianza": "media"
+  },
+  "helada_prob_bajo_menos1": {
+    "valor": 0.28,
+    "unidad": "fracción de las heladas de octubre bajo −1 °C",
+    "fuente": "DMC Puerto Montt, ídem (23 % + 5 %)",
+    "confianza": "media"
+  },
+  "helada_prob_bajo_menos2": {
+    "valor": 0.05,
+    "unidad": "fracción de las heladas de octubre bajo −2 °C",
+    "fuente": "DMC Puerto Montt, ídem",
+    "confianza": "media"
+  },
+  "helada_ajuste_mar_c": {
+    "valor": 0.5,
+    "unidad": "°C que el mar suma a la mínima en la costa de Chiloé respecto de Puerto Montt",
+    "fuente": "ESTIMACIÓN (efecto marítimo); sin serie de Chiloé",
+    "confianza": "baja"
+  },
+  "brote_dia": {
+    "valor": 274,
+    "unidad": "día del año en que el coigüe abre sus brotes (1 de octubre); antes, la helada no encuentra hoja nueva",
+    "fuente": "DECISIÓN DE DISEÑO apoyada en la fenología de Nothofagus del sur de Chile (brotación en primavera); sin fecha medida para N. nitida en Chiloé",
+    "confianza": "baja"
+  },
+  "dano_inicio_c": {
+    "valor": -1.0,
+    "unidad": "°C desde los que el brote nuevo (sin endurecer) empieza a dañarse",
+    "fuente": "PROPUESTA: no hay LT50 de brote para N. nitida ni N. dombeyi; brotes de haya europea se dañan a −5 °C y la hoja madura de N. menziesii aguanta −11,7 °C en invierno (Nueva Zelanda 1995): el brote nuevo es mucho más sensible",
+    "confianza": "baja"
+  },
+  "dano_total_c": {
+    "valor": -4.0,
+    "unidad": "°C a los que se pierde todo el brote nuevo",
+    "fuente": "PROPUESTA (ídem)",
+    "confianza": "baja"
+  },
+  "fraccion_hoja_nueva": {
+    "valor": 0.4,
+    "unidad": "fracción de las hojas del coigüe que son de la temporada (las que puede quemar la helada)",
+    "fuente": "Coherente con la longevidad foliar del coigüe (coigue.json: las hojas viven ~2-3 años, se renueva ~1/3-1/2 cada año); daño observado 30-60 % del follaje nuevo con −2 a −3 °C (propuesta, sin medición en N. nitida)",
+    "confianza": "baja"
+  },
+  "mortalidad_plantula_max": {
+    "valor": 0.5,
+    "unidad": "probabilidad de que muera un renoval de menos de 1 m con la helada más dura (daño total)",
+    "fuente": "Donoso et al. 2013 (Bosque 34(1)): N. dombeyi a campo abierto con heladas primaverales: sobrevivió 67 % tras la primera temporada; el dosel parcial protege mucho (Slot et al. 2005)",
+    "confianza": "baja"
+  },
+  "abrigo_c": {
+    "valor": 2.0,
+    "unidad": "°C que gana una tela agrícola liviana sobre la planta en una noche de helada",
+    "fuente": "UF/IFAS, Extension CV106 (tela liviana +1 a +2,5 °C; gruesa +3 a +5 °C)",
+    "confianza": "media"
+  },
+  "abrigo_radio_celdas": {
+    "valor": 2,
+    "unidad": "celdas alrededor del coigüe que cubre la tela (con sus renovales)",
+    "fuente": "DECISIÓN DE DISEÑO: una tela de unos 2 × 2 m",
+    "confianza": "baja"
+  },
+  "aviso_dias": {
+    "valor": 3,
+    "unidad": "días de anticipación con que se pronostica una helada",
+    "fuente": "DECISIÓN DE DISEÑO: los pronósticos de heladas a 3 días son razonables; el tiempo para decidir",
+    "confianza": "baja"
+  }
+}
