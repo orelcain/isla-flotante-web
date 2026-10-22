@@ -95,5 +95,65 @@
     "unidad": "días de anticipación con que se pronostica una helada",
     "fuente": "DECISIÓN DE DISEÑO: los pronósticos de heladas a 3 días son razonables; el tiempo para decidir",
     "confianza": "baja"
+  },
+  "plaga_prob_anio": {
+    "valor": 0.08,
+    "unidad": "probabilidad por año de un brote de cuncunillas (Ormiscodes amphimone) en el coigüe",
+    "fuente": "PROPUESTA: brotes locales cada ~7-15 años (Paritsis et al. 2012; Estay et al. 2023: brotes de 2019 y 2022 en el mismo bosque de Aysén); sin dato para Chiloé ni para N. nitida",
+    "confianza": "baja"
+  },
+  "plaga_altura_min_m": {
+    "valor": 2.0,
+    "unidad": "altura del coigüe desde la que lo encuentran las polillas (un hospedero establecido)",
+    "fuente": "DECISIÓN DE DISEÑO",
+    "confianza": "baja"
+  },
+  "plaga_dia_inicio": {
+    "valor": 335,
+    "unidad": "día del año en que las larvas empiezan a comer (1 de diciembre: larvas de primavera-verano)",
+    "fuente": "Paritsis et al. (revisión): una generación por temporada, larvas en primavera-verano",
+    "confianza": "media"
+  },
+  "plaga_duracion_dias": {
+    "valor": 40,
+    "unidad": "días que dura la defoliación",
+    "fuente": "Chávez et al. 2019 (Remote Sensing): 15.387 ha defoliadas en 40 días (brote 2015-16, Aysén)",
+    "confianza": "alta"
+  },
+  "plaga_defoliacion": {
+    "valor": 0.7,
+    "unidad": "fracción del follaje que comen sin control (sitios afectados)",
+    "fuente": "Chávez et al. 2019: defoliación de 60-80 % y más de 80 % en las zonas afectadas (N. pumilio, Aysén)",
+    "confianza": "media"
+  },
+  "plaga_refoliacion": {
+    "valor": 0.31,
+    "unidad": "fracción de lo comido que el árbol rehace el mismo año (refoliación secundaria)",
+    "fuente": "Paritsis et al. 2009 (NDVI, N. pumilio): ~31 % de refoliación",
+    "confianza": "media"
+  },
+  "plaga_mortalidad_renoval": {
+    "valor": 0.4,
+    "unidad": "probabilidad de que muera un renoval de menos de 2 m en un brote",
+    "fuente": "PROPUESTA: los renovales mueren con densidad moderada de larvas (Paritsis et al., revisión); 30-60 % sin medición directa",
+    "confianza": "baja"
+  },
+  "plaga_aviso_dias": {
+    "valor": 20,
+    "unidad": "días antes del inicio en que se ven los primeros huevos o larvas chicas",
+    "fuente": "DECISIÓN DE DISEÑO: los huevos y las primeras larvas se ven semanas antes del daño fuerte",
+    "confianza": "baja"
+  },
+  "recoger_larvas_eficacia": {
+    "valor": 0.4,
+    "unidad": "fracción de la defoliación que se evita cada jornada recogiendo larvas (o con fajas adhesivas en el tronco)",
+    "fuente": "PROPUESTA: control manual sin eficacia medida; los parasitoides matan ~50 % de las larvas de 3.er estadio y los depredadores ~75 % de las pupas (Paritsis, Quintero, Kitzberger & Veblen 2012, Rev. Chil. Hist. Nat.); las aves, sin efecto significativo (ídem)",
+    "confianza": "baja"
+  },
+  "recoger_control_max": {
+    "valor": 0.8,
+    "unidad": "la defoliación que como máximo se evita a mano (siempre quedan larvas en la copa alta)",
+    "fuente": "DECISIÓN DE DISEÑO",
+    "confianza": "baja"
   }
 }
