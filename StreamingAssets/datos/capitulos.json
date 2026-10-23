@@ -73,7 +73,11 @@
           "pista": "Mira con calma lo que no conoces (detén el mouse encima) o tócalo con la lupa: cada ficha abre también las que se relacionan con ella. En el celular, la lupa."
         }
       ],
-      "estrellas": [4, 5, 7]
+      "estrellas": [
+        4,
+        5,
+        7
+      ]
     },
     {
       "id": "bosquete",
@@ -137,7 +141,170 @@
         3
       ],
       "anios_por_turno": 5,
-      "anios_por_turno_nota": "DECISIÓN DE DISEÑO (evaluación como desarrollador, 15-10: la isla crece centímetros por década): en el capítulo 2 cada turno vale 5 años; lo de mantención del plan (atraer, arrancar, cortar) se repite cada año y lo que se construye se hace una vez. La simulación no cambia: solo cuántos años se viven por turno."
+      "anios_por_turno_nota": "DECISIÓN DE DISEÑO (evaluación como desarrollador, 15-10: la isla crece centímetros por década): en el capítulo 2 cada turno vale 5 años; lo de mantención del plan (atraer, arrancar, cortar) se repite cada año y lo que se construye se hace una vez. La simulación no cambia: solo cuántos años se viven por turno.",
+      "rumbos": [
+        {
+          "id": "bosque",
+          "nombre": "Bosque que se cierra",
+          "que": "Árboles: el coigüe, sus hijos y el bosque chilote que llega (notro, tineo, canelo, tepa). Gana sombra y carbono; pierde luz para las hierbas.",
+          "estrellas": [
+            2,
+            3,
+            4
+          ],
+          "nota": "DECISIÓN DE DISEÑO (X3, 22-10): metas propuestas sin calibrar con el piloto; ajustarlas con PilotoPruebas.",
+          "objetivos": [
+            {
+              "id": "b_vida_55",
+              "texto": "Que la isla guarde 55 kg de carbono vivo",
+              "corto": "55 kg de carbono vivo",
+              "tipo": "vida_kg_c",
+              "meta": 55,
+              "pista": "Todo lo que crece suma: el coigüe, sus raíces, el humus y el bosque que llega."
+            },
+            {
+              "id": "b_nativos_3",
+              "texto": "Tres árboles nativos de más de 2 m",
+              "corto": "3 nativos > 2 m",
+              "tipo": "nativos",
+              "meta": 3,
+              "umbral": 2,
+              "pista": "Deja luz y suelo sin quila: el notro y el tineo llegan con el viento; el canelo, con las aves a una percha."
+            },
+            {
+              "id": "b_coigue_4",
+              "texto": "Que el coigüe llegue a 4 m",
+              "corto": "Coigüe de 4 m",
+              "tipo": "altura_m",
+              "meta": 4,
+              "pista": "Más suelo bajo sus raíces: atrae los fragmentos junto a él."
+            },
+            {
+              "id": "b_hijos_2",
+              "texto": "Que nazcan 2 coigües hijos",
+              "corto": "2 coigües hijos",
+              "tipo": "hijos",
+              "meta": 2,
+              "pista": "Germinan sobre madera podrida o musgo cerca del coigüe."
+            },
+            {
+              "id": "b_encargos",
+              "texto": "Cumplir 10 encargos",
+              "corto": "10 encargos",
+              "tipo": "encargos",
+              "meta": 10,
+              "pista": "Cada encargo es lo que la isla necesita en ese lugar."
+            }
+          ]
+        },
+        {
+          "id": "humedal",
+          "nombre": "Humedal",
+          "que": "Agua: lagunas, musgo que guarda agua como esponja, fijadoras en lo húmedo. Gana agua y vida en sequía; pierde suelo para los árboles.",
+          "estrellas": [
+            2,
+            3,
+            4
+          ],
+          "nota": "DECISIÓN DE DISEÑO (X3, 22-10): metas propuestas sin calibrar con el piloto; ajustarlas con PilotoPruebas.",
+          "objetivos": [
+            {
+              "id": "h_cap_150",
+              "texto": "Hondonadas que guarden 150 L",
+              "corto": "Lagunas de 150 L",
+              "tipo": "laguna_capacidad_l",
+              "meta": 150,
+              "pista": "Cava hoyos donde escurre el agua: junta la lluvia."
+            },
+            {
+              "id": "h_agua_60",
+              "texto": "60 L de agua en las lagunas a la vez",
+              "corto": "60 L guardados",
+              "tipo": "agua_laguna_l",
+              "meta": 60,
+              "pista": "Una laguna con fondo sellado (arcilla) pierde menos."
+            },
+            {
+              "id": "h_musgo_3",
+              "texto": "3 m² cubiertos de musgo",
+              "corto": "3 m² de musgo",
+              "tipo": "musgo_m2",
+              "meta": 3,
+              "pista": "El musgo prende en suelo húmedo y con poca competencia: guarda el agua como una esponja."
+            },
+            {
+              "id": "h_n_300",
+              "texto": "Que las fijadoras tomen 300 g de nitrógeno del aire",
+              "corto": "300 g de N del aire",
+              "tipo": "n_fijado_total_kg",
+              "meta": 0.3,
+              "pista": "La nalca chica y el deu fijan nitrógeno donde hay agua."
+            },
+            {
+              "id": "h_encargos",
+              "texto": "Cumplir 10 encargos",
+              "corto": "10 encargos",
+              "tipo": "encargos",
+              "meta": 10,
+              "pista": "Cada encargo es lo que la isla necesita en ese lugar."
+            }
+          ]
+        },
+        {
+          "id": "mosaico",
+          "nombre": "Mosaico de biodiversidad",
+          "que": "Variedad: muchas especies repartidas, plantas que traen las aves, el bosque en manchas. Gana especies y equilibrio; pierde la isla más grande o el árbol más alto.",
+          "estrellas": [
+            2,
+            3,
+            4
+          ],
+          "nota": "DECISIÓN DE DISEÑO (X3, 22-10): metas propuestas sin calibrar con el piloto; ajustarlas con PilotoPruebas.",
+          "objetivos": [
+            {
+              "id": "m_riqueza_3",
+              "texto": "Tres especies nuevas en la isla",
+              "corto": "3 especies nuevas",
+              "tipo": "riqueza",
+              "meta": 3,
+              "pista": "Siembra fijadoras y pon perchas: las aves traen maqui, murta, michay."
+            },
+            {
+              "id": "m_ave_2",
+              "texto": "Que nazcan 2 plantas traídas por aves",
+              "corto": "2 plantas de ave",
+              "tipo": "arbustos_ave",
+              "meta": 2,
+              "pista": "Una percha junta las semillas; prenden sobre musgo o madera podrida, nunca en pasto denso."
+            },
+            {
+              "id": "m_shannon_12",
+              "texto": "Diversidad de Shannon de 1,2",
+              "corto": "Shannon 1,2",
+              "tipo": "shannon",
+              "meta": 1.2,
+              "pista": "No dejes que una especie lo tape todo (el espinillo, la quila): la diversidad sube cuando la cobertura se reparte."
+            },
+            {
+              "id": "m_nativos_2",
+              "texto": "Dos árboles nativos de cualquier tamaño",
+              "corto": "2 árboles nativos",
+              "tipo": "nativos",
+              "meta": 2,
+              "umbral": 0,
+              "pista": "Deja rincones con luz y suelo sin quila."
+            },
+            {
+              "id": "m_encargos",
+              "texto": "Cumplir 10 encargos",
+              "corto": "10 encargos",
+              "tipo": "encargos",
+              "meta": 10,
+              "pista": "Cada encargo es lo que la isla necesita en ese lugar."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
