@@ -73,12 +73,12 @@
           "confianza": "media"
         },
         "brote_nuevo": {
-          "valor": "rojo-bronce o ciruela en primavera; no aparece en ninguna otra haya austral sudamericana",
+          "valor": "rojo-bronce o ciruela en primavera; Trees and Shrubs Online afirma que no aparece en ninguna otra haya austral sudamericana (afirmación de una sola fuente; el ecólogo de la 14.ª ronda duda de que sea exclusiva y no hallé una segunda fuente, 23-10-2026)",
           "fuente": "Trees and Shrubs Online, nothofagus/nothofagus-nitida/: https://www.treesandshrubsonline.org/articles/",
-          "confianza": "alta"
+          "confianza": "media"
         },
         "corteza": {
-          "valor": "gris oscura, lisa, suavemente agrietada, con bandas horizontales de lenticelas pálidas; más lisa que N. dombeyi y N. betuloides",
+          "valor": "gris oscura, lisa, suavemente agrietada, con bandas horizontales de lenticelas pálidas; más lisa que N. dombeyi (la comparación con N. betuloides no se sostiene: la corteza de N. betuloides también es delgada, gris oscura y de grietas poco profundas, Donoso, Árboles nativos de Chile)",
           "fuente": "Rodríguez R., Matthei O. & Quezada M. (1983) Flora arbórea de Chile; ed. ChileBosque: http://www.chilebosque.cl/fac/fac_nothofagus_nitida.html; Mathiasen et al. 2017, Bosque: https://revistabosque.org/index.php/bosque/article/download/407/265/1753",
           "confianza": "alta"
         },

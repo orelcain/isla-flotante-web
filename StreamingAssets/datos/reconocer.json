@@ -3,7 +3,7 @@
   "nothofagus_nitida": {
     "lejos": "copa en mechones horizontales, en pisos; en bosque, fuste limpio y copa arriba",
     "media": "corteza gris lisa con manchas claras de líquenes y bandas de lenticelas; más lisa que la del coigüe común",
-    "cerca": "hoja romboidal de 2–4 cm, brillante, coriácea, aserrada fina e irregular, base desigual; brotes nuevos rojo-bronce en primavera (ninguna otra haya austral los tiene)",
+    "cerca": "hoja romboidal de 2–4 cm, brillante, coriácea, aserrada fina e irregular, base desigual; brotes nuevos rojo-bronce o ciruela en primavera (Trees and Shrubs Online lo da como exclusivo entre las hayas sudamericanas; sin segunda fuente que lo confirme)",
     "confunde": [
       [
         "Coigüe común (N. dombeyi)",
@@ -11,7 +11,7 @@
       ],
       [
         "Coigüe de Magallanes (N. betuloides)",
-        "hoja ovada más chica, dientes finos de punta roma; corteza gris plateada en escamas"
+        "hoja ovada más chica, dientes finos de punta roma; corteza delgada, gris oscura, con grietas longitudinales poco profundas (Donoso, Árboles nativos de Chile)"
       ]
     ],
     "fuente": "docs/FICHA_VISUAL_COIGUE.md (Trees and Shrubs Online; Rodríguez, Matthei y Quezada 1983; Mathiasen et al. 2017; fotos de campo medidas 11-10-2026)",

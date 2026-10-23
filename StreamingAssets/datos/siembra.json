@@ -58,7 +58,7 @@
   "nalca_prendimiento": {
     "valor": 0.8,
     "unidad": "fracción de rizomas que prenden con la cama húmeda",
-    "fuente": "SIN FUENTE para el rizoma: se plantan en receso (may–ago) y rebrotan en primavera. La única cifra es de semilla: 86 % en un claro de Chiloé y 0 % bajo dosel (Figueroa & Hernández 2001).",
+    "fuente": "SIN FUENTE para el rizoma: se plantan en receso (may–ago) y rebrotan en primavera. La única cifra es de semilla: 86 % en un claro de Chiloé y 0 % bajo dosel (Figueroa & Hernández 2001). OJO (14.ª ronda, 23-10-2026): el prendimiento sólo mira la cama húmeda, no la textura; G. tinctoria vive en suelos constantemente húmedos (riberas, quebradas, claros y bordes de bosque húmedo; sobre todo aluviales o gley delgados: Osborne y col., Irlanda/Chile), así que en un piso arenoso y de agua escasa 80 % es optimista (no hallé fuente con una tasa para arena).",
     "confianza": "baja"
   },
   "nalca_hoyo_cm": {

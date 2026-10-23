@@ -18,7 +18,7 @@
     #barra > div { width: 0; height: 100%; background: #5a4636; transition: width .2s; }
     /* Z4 (decimocuarta ronda): en vertical, la isla se ve detrás (velada) y un teléfono que gira explica qué hacer */
     #girar { display: none; position: fixed; inset: 0; flex-direction: column; align-items: center; justify-content: center; gap: 18px; text-align: center; padding: 24px;
-             font: italic 19px Georgia, serif; color: #4a3c2e; background: rgba(251, 247, 236, 0.86); }
+             font: italic 19px Georgia, serif; color: #4a3c2e; background: rgba(251, 247, 236, 0.95); }
     #girar svg { width: 64px; height: 64px; animation: girar 2.4s ease-in-out infinite; }
     #girar small { font-size: 14px; opacity: .75; }
     #girar button { font: italic 16px Georgia, serif; color: #fbf7ec; background: #3d3226; border: 0; border-radius: 6px; padding: 10px 18px; }
@@ -38,9 +38,9 @@
   <script>
     // Ojo: NO cancelar gesturestart/touchmove en el documento. Se probó (v179) y en el iPhone el juego dejó de recibir el
     // pellizco y el arrastre de dos dedos. touch-action: none (en el CSS) basta para que la página no se mueva.
-    // Versión: construir_web.sh reemplaza v617 · b36f7c6 · claude/blissful-almeida-32de9d · 23-10 10:06 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
+    // Versión: construir_web.sh reemplaza v620 · b7c082b · claude/blissful-almeida-32de9d · 23-10 18:58 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
     // version.txt (pedido sin caché) dice otra cosa, se recarga con una dirección nueva (?v=…) que obliga a bajar la última.
-    var VERSION = "v617 · b36f7c6 · claude/blissful-almeida-32de9d · 23-10 10:06";
+    var VERSION = "v620 · b7c082b · claude/blissful-almeida-32de9d · 23-10 18:58";
     document.getElementById("version").textContent = VERSION.indexOf("__") === 0 ? "" : VERSION;
     // El juego (~18 MB) no empieza a bajar hasta saber si hay que recargar: antes se bajaba entero y se botaba al recargar.
     var iniciado = false;
@@ -60,9 +60,9 @@
     });
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/0fe155ddbb1bc3efc537b8c98ad0d4c1.data.unityweb",
+      dataUrl: "Build/27e90a9c67cfecc551b06ae7f45d86b8.data.unityweb",
       frameworkUrl: "Build/fb143a6112ff390ffd149b91ce79c8df.framework.js.unityweb",
-      codeUrl: "Build/4ef01fb43ebe3500ba09a84eb8503a2f.wasm.unityweb",
+      codeUrl: "Build/9152df17be13b477ea7f23f4fa365220.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Isla Flotante",
       productName: "Isla Flotante",
@@ -71,7 +71,7 @@
       devicePixelRatio: Math.min(window.devicePixelRatio || 1, 1.5),
     };
     var script = document.createElement("script");
-    script.src = "Build/8e5cf885b9d0764b0ee0314bfde9fcd8.loader.js";
+    script.src = "Build/ec77394706db44fdd781e9896e0108af.loader.js";
     script.onload = function () {
       createUnityInstance(lienzo, config, function (p) { barra.style.width = (100 * p) + "%"; })
         .then(function (u) { window.isla = u; carga.remove(); })   // window.isla: para revisar desde la consola (SendMessage)

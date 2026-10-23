@@ -279,7 +279,7 @@
   "tepa_llegada_m2_anio": {
     "valor": 0.5,
     "unidad": "semillas por m² y año que llegan de afuera",
-    "fuente": "DECISIÓN DE DISEÑO: semilla seca que cae sobre todo en claros del dosel (lluvia de semillas en Chiloé); poca llega lejos",
+    "fuente": "DECISIÓN DE DISEÑO, sin medición de llegada lejos del bosque. Dato de apoyo: la semilla de tepa es seca, la dispersa el viento y cae sobre todo en claros del dosel (Armesto, Díaz, Papic & Willson 2001, Austral Ecology 26: 311-320, Chiloé). Es un árbol tolerante a la sombra de bosque maduro (regeneración avanzada bajo quila y renovales: Soto & Donoso 2006), es decir, de sucesión tardía: lo esperable es que llegue DESPUÉS de notro (1,0) y tineo (5,0); que llegue primero en una partida es azar del valor bajo (0,5) más su tolerancia a la luz mínima, no un orden documentado. No se encontró fuente que cuantifique la llegada; se deja 0,5 y confianza baja",
     "confianza": "baja"
   },
   "tepa_semillas_percha_m2_anio": {

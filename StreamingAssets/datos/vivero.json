@@ -1,0 +1,27 @@
+{
+  "nota": "Plantar árboles nativos de vivero (pedido de la decimocuarta ronda: «el rumbo bosque no tiene palanca»). Así se restaura en Chiloé: las praderas de Holcus no dejan nacer árboles desde semilla (Carmona et al. 2010) y se planta. Solo con la sucesión activa (sucesion_activa). El plantín crece y muere con las mismas reglas que los que llegan solos (Sucesion.cs).",
+  "plantin_altura_m": {
+    "valor": 0.3,
+    "unidad": "m de alto del plantín al plantarlo",
+    "fuente": "PROPUESTA: un plantín de vivero de una temporada mide unos 20–40 cm; sin una ficha de vivero chilota verificada",
+    "confianza": "baja"
+  },
+  "plantin_edad_anios": {
+    "valor": 1,
+    "unidad": "años de vivero que trae el plantín",
+    "fuente": "PROPUESTA: plantín de una temporada (el mismo supuesto que su altura)",
+    "confianza": "baja"
+  },
+  "plantin_mortalidad_primer_anio": {
+    "valor": 0.25,
+    "unidad": "fracción de plantines que no prende el primer año",
+    "fuente": "PROPUESTA: en plantaciones de restauración la supervivencia del primer año suele estar entre 60 y 90 %; falta un ensayo con estas especies en Chiloé",
+    "confianza": "baja"
+  },
+  "plantar_jornadas": {
+    "valor": 2,
+    "unidad": "jornadas que cuesta plantar un plantín (cavar la casilla, sacar la champa y plantar)",
+    "fuente": "DECISIÓN DE DISEÑO: más que sembrar (1 jornada): es la palanca fuerte del rumbo bosque y debe competir con las demás",
+    "confianza": "baja"
+  }
+}
