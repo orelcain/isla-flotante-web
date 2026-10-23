@@ -85,9 +85,9 @@
     "confianza": "media"
   },
   "abrigo_radio_celdas": {
-    "valor": 2,
+    "valor": 4,
     "unidad": "celdas alrededor del coigüe que cubre la tela (con sus renovales)",
-    "fuente": "DECISIÓN DE DISEÑO: una tela de unos 2 × 2 m",
+    "fuente": "DECISIÓN DE DISEÑO: una tela de unos 2 × 2 m (radio de 4 celdas de 0,25 m; antes 2 celdas, que daban ~1 m: decimocuarta ronda, Z3)",
     "confianza": "baja"
   },
   "aviso_dias": {
