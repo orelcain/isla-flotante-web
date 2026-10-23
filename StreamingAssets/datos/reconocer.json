@@ -53,7 +53,8 @@
       ]
     ],
     "fuente": "docs/FICHA_CANELO.md (FAC; Smith 1943; fotos de campo medidas 11-10-2026)",
-    "confianza": "alta"
+    "confianza": "alta",
+    "reto": true
   },
   "mitraria_coccinea": {
     "lejos": "trepadora sobre troncos, con puntos rojos colgando",
@@ -259,6 +260,60 @@
     "reto": true,
     "nombre_reto": "Hongo del coigüe (Descolea antarctica)",
     "fuente": "Ministerio del Medio Ambiente de Chile (2014), ficha de antecedentes de Descolea antarctica, que cita a Horak 1980 y Garrido 1988 (clasificacionespecies.mma.gob.cl); Vesterholt & Petersen (1989-90) Fróðskaparrit 38-39 (material traído de Tierra del Fuego). Las diferencias con Cortinarius y Laccaria son rasgos generales de esos géneros, sin fuente que los compare con Descolea (investigación del 21-10-2026).",
+    "confianza": "media"
+  },
+  "embothrium_coccineum": {
+    "lejos": "siempreverde de hasta 15 m; en primavera, racimos de flores de rojo vivo (muy rara vez amarillas o blancas)",
+    "media": "corteza lisa y delgada, gris con manchas claras y oscuras",
+    "cerca": "flores alargadas y tubulares de rojo vivo en racimos; fruto: folículo seco con ~10 semillas aladas",
+    "confunde": [
+      [
+        "Canelo (Drimys winteri)",
+        "flores blancas en umbelas y hoja grande entera con el envés blanco ceroso (ficha del canelo)"
+      ],
+      [
+        "Ulmo (Eucryphia cordifolia)",
+        "flores blancas grandes de 4 pétalos con un anillo de estambres (ficha del ulmo)"
+      ]
+    ],
+    "reto": true,
+    "fuente": "«Árboles Nativos de Chile» (Mineduc, curriculumnacional.cl), ficha «Notro» (Bosque Andino Patagónico); en.wikipedia.org/wiki/Embothrium_coccineum (fruto). La hoja del notro no está verificada en una flora: no se usa como rasgo.",
+    "confianza": "media"
+  },
+  "weinmannia_trichosperma": {
+    "lejos": "siempreverde de follaje claro y copa rala; racimos cilíndricos de flores blanco-crema que se vuelven rojizos con los frutos",
+    "media": "corteza gris clara con fisuras longitudinales y transversales marcadas; hojas opuestas",
+    "cerca": "hoja compuesta y opuesta, con alas triangulares entre los folíolos (cada par de contorno romboidal, como un encaje); folíolos de 0,6–1,6 cm aserrados; cápsula de 6–9 mm que se pone roja, semillas de ~1 mm con pelos",
+    "confunde": [
+      [
+        "Ulmo (Eucryphia cordifolia)",
+        "hoja simple, opuesta, de borde entero en el adulto (ficha del ulmo); el tineo la tiene compuesta con el eje alado"
+      ],
+      [
+        "Canelo (Drimys winteri)",
+        "hoja grande, simple y entera, con el envés blanco ceroso, en rosetas (ficha del canelo)"
+      ]
+    ],
+    "reto": true,
+    "fuente": "«Árboles Nativos de Chile» (Mineduc, curriculumnacional.cl), ficha «Tineo» (Bosque Laurifolio Valdiviano); en.wikipedia.org/wiki/Weinmannia_trichosperma (medidas de hoja, flor y fruto); la diferencia con el ulmo está en su propia ficha (reconocer.json, Eucryphia)",
+    "confianza": "alta"
+  },
+  "laureliopsis_philippiana": {
+    "lejos": "siempreverde de hasta 40 m, dominante en el bosque laurifolio",
+    "media": "corteza delgada, gris clara, lisa o con protuberancias",
+    "cerca": "hoja dura, oblonga y coriácea, muy aromática al estrujarla, con el borde marcadamente aserrado en sus dos tercios superiores y pelos amarillos en el nervio central; flores chicas rojizo-verdosas; aquenio peloso pardo",
+    "confunde": [
+      [
+        "Laurel (Laurelia sempervirens)",
+        "muy parecido, pero con el borde de la hoja menos aserrado (Looser 1949); además parece no hallarse ya en Chiloé"
+      ],
+      [
+        "Canelo (Drimys winteri)",
+        "hojas alternas en roseta, enteras y con el envés blanco (ficha del canelo); la tepa las tiene aserradas"
+      ]
+    ],
+    "reto": true,
+    "fuente": "«Árboles Nativos de Chile» (Mineduc, curriculumnacional.cl), ficha «Tepa» (Bosque Laurifolio Valdiviano); en.wikipedia.org/wiki/Laureliopsis; Looser (1949), citado de segunda mano, para la diferencia con el laurel",
     "confianza": "media"
   }
 }
