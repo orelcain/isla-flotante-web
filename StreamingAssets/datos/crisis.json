@@ -45,7 +45,7 @@
   "helada_ajuste_mar_c": {
     "valor": 0.5,
     "unidad": "°C que el mar suma a la mínima en la costa de Chiloé respecto de Puerto Montt",
-    "fuente": "ESTIMACIÓN (efecto marítimo); sin serie de Chiloé",
+    "fuente": "ESTIMACIÓN (efecto marítimo); sin serie de Chiloé. Se suma a cada mínima sorteada con la distribución de Puerto Montt: desplaza la distribución entera una vez (no se cuenta dos veces) (decimotercera ronda, revisión del naturalista).",
     "confianza": "baja"
   },
   "brote_dia": {
@@ -99,7 +99,7 @@
   "plaga_prob_anio": {
     "valor": 0.08,
     "unidad": "probabilidad por año de un brote de cuncunillas (Ormiscodes amphimone) en el coigüe",
-    "fuente": "PROPUESTA: brotes locales cada ~7-15 años (Paritsis et al. 2012; Estay et al. 2023: brotes de 2019 y 2022 en el mismo bosque de Aysén); sin dato para Chiloé ni para N. nitida",
+    "fuente": "PROPUESTA: brotes locales cada ~7-15 años (Paritsis et al. 2012; Estay et al. 2023: brotes de 2019 y 2022 en el mismo bosque de Aysén); sin dato para Chiloé ni para N. nitida. Los brotes documentados son de N. pumilio y N. antarctica en Aysén y en la Patagonia argentina; no hay brote registrado en el coigüe de Chiloé (decimotercera ronda, revisión del naturalista).",
     "confianza": "baja"
   },
   "plaga_altura_min_m": {
@@ -117,8 +117,8 @@
   "plaga_duracion_dias": {
     "valor": 40,
     "unidad": "días que dura la defoliación",
-    "fuente": "Chávez et al. 2019 (Remote Sensing): 15.387 ha defoliadas en 40 días (brote 2015-16, Aysén)",
-    "confianza": "alta"
+    "fuente": "Chávez et al. 2019 (Remote Sensing): 15.387 ha defoliadas en 40 días (brote 2015-16, Aysén). OJO (decimotercera ronda, revisión del naturalista): los 40 días son lo que tardó el brote en abarcar esa superficie, no lo que dura la defoliación de un árbol; se usa como orden de magnitud.",
+    "confianza": "media"
   },
   "plaga_defoliacion": {
     "valor": 0.7,
@@ -147,13 +147,25 @@
   "recoger_larvas_eficacia": {
     "valor": 0.4,
     "unidad": "fracción de la defoliación que se evita cada jornada recogiendo larvas (o con fajas adhesivas en el tronco)",
-    "fuente": "PROPUESTA: control manual sin eficacia medida; los parasitoides matan ~50 % de las larvas de 3.er estadio y los depredadores ~75 % de las pupas (Paritsis, Quintero, Kitzberger & Veblen 2012, Rev. Chil. Hist. Nat.); las aves, sin efecto significativo (ídem)",
+    "fuente": "PROPUESTA: control manual sin eficacia medida; los parasitoides matan ~50 % de las larvas de 3.er estadio y los depredadores ~75 % de las pupas (Paritsis, Quintero, Kitzberger & Veblen 2012, Rev. Chil. Hist. Nat.); las aves, sin efecto significativo (ídem). Las larvas de Ormiscodes (Saturniidae) tienen pelos urticantes: se recogen con guantes (decimotercera ronda, revisión del naturalista).",
     "confianza": "baja"
   },
   "recoger_control_max": {
     "valor": 0.8,
     "unidad": "la defoliación que como máximo se evita a mano (siempre quedan larvas en la copa alta)",
     "fuente": "DECISIÓN DE DISEÑO",
+    "confianza": "baja"
+  },
+  "pronostico_error_c": {
+    "valor": 1.0,
+    "unidad": "°C de error típico del pronóstico de la mínima a 3 días (la helada real se sortea alrededor del pronóstico)",
+    "fuente": "PROPUESTA: los pronósticos de temperatura mínima a 2-3 días suelen errar en 1-2 °C; sin verificación de la DMC para Chiloé",
+    "confianza": "baja"
+  },
+  "abrigo_altura_m": {
+    "valor": 2.0,
+    "unidad": "m de copa que alcanza a cubrir una tela puesta a mano",
+    "fuente": "DECISIÓN DE DISEÑO: una persona cubre un arbolito; en uno más alto, la tela abriga solo la parte baja (la fracción cubierta)",
     "confianza": "baja"
   }
 }

@@ -39,13 +39,13 @@
   "banco_maximo_m2": {
     "valor": 1045,
     "unidad": "semillas/m²",
-    "fuente": "Banco de 645-1045 semillas/m² en los primeros 5 cm del suelo, España (Plan Agropecuario, Uruguay, revista 113, p. 40).",
+    "fuente": "Banco de 645-1045 semillas/m² en los primeros 5 cm del suelo, España (Plan Agropecuario, Uruguay, revista 113, p. 40).. Probablemente bajo: en Nueva Zelanda se citan bancos de miles de semillas por m² (decimotercera ronda, revisión del naturalista).",
     "confianza": "baja"
   },
   "dispersion_m": {
     "valor": 15,
     "unidad": "m (las vainas estallan y lanzan las semillas)",
-    "fuente": "Plan Agropecuario (Uruguay), revista 113, p. 40",
+    "fuente": "Plan Agropecuario (Uruguay), revista 113, p. 40. La dispersión balística de la vaina es de pocos metros; hormigas y agua la alargan (decimotercera ronda, revisión del naturalista).",
     "confianza": "baja",
     "nota": "En una isla de pocos metros, la lluvia de semillas alcanza a todas las celdas."
   },

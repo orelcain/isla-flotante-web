@@ -148,11 +148,11 @@
           "nombre": "Bosque que se cierra",
           "que": "Árboles: el coigüe, sus hijos y el bosque chilote que llega (notro, tineo, canelo, tepa). Gana sombra y carbono; pierde luz para las hierbas.",
           "estrellas": [
-            2,
             3,
-            4
+            4,
+            5
           ],
-          "nota": "DECISIÓN DE DISEÑO (X3, 22-10): metas propuestas sin calibrar con el piloto; ajustarlas con PilotoPruebas.",
+          "nota": "CALIBRADO (Y4, 23-10-2026) con PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): no jugar 2 metas (0★), solo atraer 4 (2★), piloto cuidadoso 5 (3★). Es una sola isla: la calibración es orientativa.",
           "objetivos": [
             {
               "id": "b_vida_55",
@@ -163,20 +163,20 @@
               "pista": "Todo lo que crece suma: el coigüe, sus raíces, el humus y el bosque que llega."
             },
             {
-              "id": "b_nativos_3",
-              "texto": "Tres árboles nativos de más de 2 m",
-              "corto": "3 nativos > 2 m",
+              "id": "b_nativos_1",
+              "texto": "Un árbol nativo de más de 2 m",
+              "corto": "1 nativo > 2 m",
               "tipo": "nativos",
-              "meta": 3,
+              "meta": 1,
               "umbral": 2,
-              "pista": "Deja luz y suelo sin quila: el notro y el tineo llegan con el viento; el canelo, con las aves a una percha."
+              "pista": "Bajo el pasto cerrado la semilla no toca suelo: en primavera, saca la champa con la pala (mejor cerca de una percha). El pasto que siembras en el borde se extiende y le cierra el paso al bosque."
             },
             {
-              "id": "b_coigue_4",
-              "texto": "Que el coigüe llegue a 4 m",
-              "corto": "Coigüe de 4 m",
+              "id": "b_coigue_39",
+              "texto": "Que el coigüe llegue a 3,9 m",
+              "corto": "Coigüe de 3,9 m",
               "tipo": "altura_m",
-              "meta": 4,
+              "meta": 3.9,
               "pista": "Más suelo bajo sus raíces: atrae los fragmentos junto a él."
             },
             {
@@ -203,25 +203,25 @@
           "que": "Agua: lagunas, musgo que guarda agua como esponja, fijadoras en lo húmedo. Gana agua y vida en sequía; pierde suelo para los árboles.",
           "estrellas": [
             2,
-            3,
-            4
+            4,
+            5
           ],
-          "nota": "DECISIÓN DE DISEÑO (X3, 22-10): metas propuestas sin calibrar con el piloto; ajustarlas con PilotoPruebas.",
+          "nota": "CALIBRADO (Y4, 23-10-2026) con PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): no jugar 1 (0★), solo atraer 2 (1★), piloto que cava hasta la meta 5 (3★). Es una sola isla: la calibración es orientativa.",
           "objetivos": [
             {
-              "id": "h_cap_150",
-              "texto": "Hondonadas que guarden 150 L",
-              "corto": "Lagunas de 150 L",
+              "id": "h_cap_45",
+              "texto": "Hondonadas que guarden 45 L",
+              "corto": "Lagunas de 45 L",
               "tipo": "laguna_capacidad_l",
-              "meta": 150,
+              "meta": 45,
               "pista": "Cava hoyos donde escurre el agua: junta la lluvia."
             },
             {
-              "id": "h_agua_60",
-              "texto": "60 L de agua en las lagunas a la vez",
-              "corto": "60 L guardados",
+              "id": "h_agua_22",
+              "texto": "22 L de agua en las lagunas a la vez",
+              "corto": "22 L guardados",
               "tipo": "agua_laguna_l",
-              "meta": 60,
+              "meta": 22,
               "pista": "Una laguna con fondo sellado (arcilla) pierde menos."
             },
             {
@@ -259,22 +259,22 @@
             3,
             4
           ],
-          "nota": "DECISIÓN DE DISEÑO (X3, 22-10): metas propuestas sin calibrar con el piloto; ajustarlas con PilotoPruebas.",
+          "nota": "CALIBRADO (Y4, 23-10-2026) con PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): no jugar 2 (1★), solo atraer 2 (1★), piloto 4 (3★); nadie juntó 2 arbustos de ave ni 3 fijadoras. Es una sola isla: la calibración es orientativa.",
           "objetivos": [
             {
-              "id": "m_riqueza_3",
-              "texto": "Tres especies nuevas en la isla",
-              "corto": "3 especies nuevas",
+              "id": "m_riqueza_2",
+              "texto": "Dos especies nuevas en la isla",
+              "corto": "2 especies nuevas",
               "tipo": "riqueza",
-              "meta": 3,
+              "meta": 2,
               "pista": "Siembra fijadoras y pon perchas: las aves traen maqui, murta, michay."
             },
             {
-              "id": "m_ave_2",
-              "texto": "Que nazcan 2 plantas traídas por aves",
-              "corto": "2 plantas de ave",
+              "id": "m_ave_1",
+              "texto": "Que nazca 1 planta traída por aves",
+              "corto": "1 planta de ave",
               "tipo": "arbustos_ave",
-              "meta": 2,
+              "meta": 1,
               "pista": "Una percha junta las semillas; prenden sobre musgo o madera podrida, nunca en pasto denso."
             },
             {
@@ -286,13 +286,13 @@
               "pista": "No dejes que una especie lo tape todo (el espinillo, la quila): la diversidad sube cuando la cobertura se reparte."
             },
             {
-              "id": "m_nativos_2",
-              "texto": "Dos árboles nativos de cualquier tamaño",
-              "corto": "2 árboles nativos",
+              "id": "m_nativos_1",
+              "texto": "Un árbol nativo de cualquier tamaño",
+              "corto": "1 árbol nativo",
               "tipo": "nativos",
-              "meta": 2,
+              "meta": 1,
               "umbral": 0,
-              "pista": "Deja rincones con luz y suelo sin quila."
+              "pista": "Deja rincones con luz y suelo sin quila. Bajo el pasto cerrado no prende: saca la champa con la pala en primavera."
             },
             {
               "id": "m_encargos",

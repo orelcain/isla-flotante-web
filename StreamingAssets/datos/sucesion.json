@@ -1,10 +1,10 @@
 {
   "_descripcion": "El bosque que llega (X2, duodécima ronda): notro y tineo (pioneros de luz, viento), canelo (aves, media sombra) y tepa (muy tolerante). Investigación del 22-10-2026; lo no medido va con confianza baja y su razón.",
   "dia_del_anio": {
-    "valor": 200,
-    "unidad": "día del año en que se cuenta la sucesión (una vez al año, a fines del invierno)",
-    "fuente": "DECISIÓN DE DISEÑO",
-    "confianza": "baja"
+    "valor": 270,
+    "unidad": "día del año en que germina y se cuenta la sucesión (una vez al año, fines de septiembre)",
+    "fuente": "Las semillas del bosque templado chileno caen en otoño y germinan en primavera tras el frío del invierno (Figueroa & Lusk 2001, New Phytologist: estratificación fría). El día exacto es DECISIÓN DE DISEÑO (Y4, decimotercera ronda; antes 200)",
+    "confianza": "media"
   },
   "luz_saturacion": {
     "valor": 0.6,
@@ -27,7 +27,7 @@
   "sombra_muerte_anios": {
     "valor": 4,
     "unidad": "años seguidos bajo su luz mínima tras los que muere un árbol",
-    "fuente": "PROPUESTA apoyada en Muñoz & González 2009: los renovales de intolerantes que crecen menos de 4 cm/año quedan bajo la quila y mueren",
+    "fuente": "DECISIÓN DE DISEÑO apoyada en Muñoz & González 2009: los renovales de intolerantes que bajo la quila crecían menos de 4 cm/año murieron; aquí se traduce en morir tras 4 años seguidos bajo su luz mínima (la fuente no da años)",
     "confianza": "baja"
   },
   "suelo_min_cm": {
@@ -63,7 +63,7 @@
   "notro_altura_max_m": {
     "valor": 18,
     "unidad": "m",
-    "fuente": "Smith-Ramírez & Armesto 1998 (Rev. Chil. Hist. Nat. 71: 51): hasta 18 m",
+    "fuente": "Smith-Ramírez & Armesto 1998 (Rev. Chil. Hist. Nat. 71: 51): hasta 18 m; la ficha de «Árboles Nativos de Chile» (Mineduc) da 15 m: el rango es 10-18 m según la fuente",
     "confianza": "media"
   },
   "notro_edad_semilla_anios": {
@@ -111,13 +111,13 @@
   "notro_establecimiento": {
     "valor": 0.01,
     "unidad": "fracción de semillas que llega a plántula en el mejor micrositio (madera podrida, musgo)",
-    "fuente": "PROPUESTA: semillas de viento sobre troncos podridos y musgo prenden mucho más que las de fruto carnoso en pradera (0,04 %, perchas.json); Christie & Armesto 2003; Díaz & Armesto 2007 (el notro sobre Sphagnum)",
+    "fuente": "PROPUESTA: semilla alada que prende mejor sobre cojines de Sphagnum (Díaz & Armesto 2007); mucho más que la de fruto carnoso en pradera (0,04 %, perchas.json)",
     "confianza": "baja"
   },
   "tineo_crecimiento_m_anio": {
     "valor": 0.2,
     "unidad": "m de altura por año con luz de claro",
-    "fuente": "sin dato juvenil medido; se propone 20 cm/año en claro",
+    "fuente": "sin dato juvenil medido; se propone 20 cm/año en claro. Posiblemente mayor: es pionero; falta un ensayo en claros o plantaciones (decimotercera ronda, revisión del naturalista).",
     "confianza": "baja"
   },
   "tineo_luz_min": {
@@ -177,7 +177,7 @@
   "tineo_establecimiento": {
     "valor": 0.01,
     "unidad": "fracción de semillas que llega a plántula en el mejor micrositio (madera podrida, musgo)",
-    "fuente": "PROPUESTA: semillas de viento sobre troncos podridos y musgo prenden mucho más que las de fruto carnoso en pradera (0,04 %, perchas.json); Christie & Armesto 2003; Díaz & Armesto 2007 (el notro sobre Sphagnum)",
+    "fuente": "PROPUESTA: semilla de ~1 mm con pelos que prende sobre troncos en descomposición (Christie & Armesto 2003)",
     "confianza": "baja"
   },
   "canelo_crecimiento_m_anio": {
@@ -241,21 +241,21 @@
     "confianza": "baja"
   },
   "canelo_establecimiento": {
-    "valor": 0.01,
-    "unidad": "fracción de semillas que llega a plántula en el mejor micrositio (madera podrida, musgo)",
-    "fuente": "PROPUESTA: semillas de viento sobre troncos podridos y musgo prenden mucho más que las de fruto carnoso en pradera (0,04 %, perchas.json); Christie & Armesto 2003; Díaz & Armesto 2007 (el notro sobre Sphagnum)",
-    "confianza": "baja"
+    "valor": 0.0004,
+    "unidad": "fracción de semillas que llega a plántula en el mejor micrositio",
+    "fuente": "Semilla de fruto carnoso que dejan las aves: la misma tasa de perchas.json (Almeida et al. 2016: menos de 0,04 %; Carmona et al. 2010: 0 en 4 años en pradera de Chiloé sin sombra) (decimotercera ronda, revisión del naturalista)",
+    "confianza": "media"
   },
   "tepa_crecimiento_m_anio": {
     "valor": 0.29,
     "unidad": "m de altura por año con luz de claro",
-    "fuente": "29 cm/año de la regeneración avanzada en claros; 22 cm/año las plántulas nuevas: Muñoz A. & González M. (2009) Rev. Chil. Hist. Nat. 82: 185 (claros tras la muerte de la quila, 10 años; pocos individuos)",
-    "confianza": "alta"
+    "fuente": "29 cm/año de la regeneración avanzada en claros; 22 cm/año las plántulas nuevas: Muñoz A. & González M. (2009) Rev. Chil. Hist. Nat. 82: 185 (claros tras la muerte de la quila, 10 años; pocos individuos) (la misma fuente que el notro y el canelo: confianza media (decimotercera ronda, revisión del naturalista))",
+    "confianza": "media"
   },
   "tepa_luz_min": {
     "valor": 0.03,
     "unidad": "luz relativa mínima para crecer (por debajo, cuenta años a la sombra)",
-    "fuente": "muy tolerante (Soto D. & Donoso P. (2006) Bosque 27(3): 241 (renovales de canelo en Chiloé)); bajo quila llega ~1,5 % de la luz (Lusk 2001)",
+    "fuente": "muy tolerante: sus plántulas abundan bajo renovales cerrados de canelo (Soto & Donoso 2006: 0-23.600 plántulas de tepa por ha bajo el dosel) y bajo quila llega ~1,5 % de la luz (Lusk 2001)",
     "confianza": "media"
   },
   "tepa_altura_max_m": {
@@ -309,7 +309,19 @@
   "tepa_establecimiento": {
     "valor": 0.01,
     "unidad": "fracción de semillas que llega a plántula en el mejor micrositio (madera podrida, musgo)",
-    "fuente": "PROPUESTA: semillas de viento sobre troncos podridos y musgo prenden mucho más que las de fruto carnoso en pradera (0,04 %, perchas.json); Christie & Armesto 2003; Díaz & Armesto 2007 (el notro sobre Sphagnum)",
+    "fuente": "PROPUESTA: semilla seca que cae sobre todo en claros del dosel (lluvia de semillas en Chiloé); sin tasa medida",
+    "confianza": "baja"
+  },
+  "aviso_semilla_dias": {
+    "valor": 30,
+    "unidad": "días de anticipación con que el cuaderno avisa que el bosque va a germinar",
+    "fuente": "DECISIÓN DE DISEÑO (Y4): alcanza para planear la primavera (turno.json, dia_primavera) y sacar la champa de pasto antes de que el pasto vecino la cierre",
+    "confianza": "baja"
+  },
+  "aviso_pasto_min": {
+    "valor": 0.25,
+    "unidad": "cobertura media de pasto desde la que se avisa",
+    "fuente": "DECISIÓN DE DISEÑO (Y4): el aviso solo tiene sentido si el pasto tapa buena parte de la isla",
     "confianza": "baja"
   }
 }

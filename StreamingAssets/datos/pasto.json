@@ -74,6 +74,28 @@
     "fuente": "DECISIÓN DE DISEÑO sobre lo cualitativo: Lotus tiene rizomas someros que avanzan en horizontal (Tropical Forages, ficha Lotus uliginosus). Permite que tierra dejada junto a un borde con pasto quede amarrada. Falta el avance medido.",
     "confianza": "baja"
   },
-  "lotus_mes_flor_inicio": { "valor": 11, "unidad": "mes", "fuente": "iNaturalist, flores observadas en el sur de Chile (37–56 °S): nov a feb, pico en enero (n = 12)", "confianza": "media" },
-  "lotus_mes_flor_fin": { "valor": 2, "unidad": "mes", "fuente": "iNaturalist, flores observadas en el sur de Chile (37–56 °S): nov a feb, pico en enero (n = 12)", "confianza": "media" }
+  "lotus_mes_flor_inicio": {
+    "valor": 11,
+    "unidad": "mes",
+    "fuente": "iNaturalist, flores observadas en el sur de Chile (37–56 °S): nov a feb, pico en enero (n = 12)",
+    "confianza": "media"
+  },
+  "lotus_mes_flor_fin": {
+    "valor": 2,
+    "unidad": "mes",
+    "fuente": "iNaturalist, flores observadas en el sur de Chile (37–56 °S): nov a feb, pico en enero (n = 12)",
+    "confianza": "media"
+  },
+  "pasto_luz_min": {
+    "valor": 0.3,
+    "unidad": "fracción de luz relativa bajo la que el pasto retrocede",
+    "fuente": "Holcus lanatus tiene indicador de luz de Ellenberg 7 (planta de lugares bien iluminados, rara vez bajo ~30 % de luz relativa; Ellenberg et al. 1991, flora de Europa central). Solo con la sucesión activa (sucesion_activa): el bosque que llega cierra la pradera",
+    "confianza": "media"
+  },
+  "pasto_retroceso_sombra_anio": {
+    "valor": 1.0,
+    "unidad": "fracción por año que pierde la cobertura en sombra total",
+    "fuente": "DECISIÓN DE DISEÑO (Y4, decimotercera ronda): bajo un dosel cerrado la pradera se ralea en unos años; falta una tasa medida",
+    "confianza": "baja"
+  }
 }

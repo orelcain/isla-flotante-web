@@ -263,21 +263,21 @@
     "confianza": "media"
   },
   "embothrium_coccineum": {
-    "lejos": "siempreverde de hasta 15 m; en primavera, racimos de flores de rojo vivo (muy rara vez amarillas o blancas)",
+    "lejos": "siempreverde de 10-18 m (según la fuente); en primavera, racimos de flores de rojo vivo (muy rara vez amarillas o blancas)",
     "media": "corteza lisa y delgada, gris con manchas claras y oscuras",
-    "cerca": "flores alargadas y tubulares de rojo vivo en racimos; fruto: folículo seco con ~10 semillas aladas",
+    "cerca": "hoja simple de borde entero (unos 5-12 cm); flores alargadas y tubulares de rojo vivo en racimos; fruto: folículo seco con ~10 semillas aladas",
     "confunde": [
       [
-        "Canelo (Drimys winteri)",
-        "flores blancas en umbelas y hoja grande entera con el envés blanco ceroso (ficha del canelo)"
+        "Fuinque (Lomatia ferruginea)",
+        "hoja compuesta con aspecto de helecho y pelos pardo-rojizos en los brotes; flor amarillo-verdosa por fuera, nunca rojo vivo"
       ],
       [
-        "Ulmo (Eucryphia cordifolia)",
-        "flores blancas grandes de 4 pétalos con un anillo de estambres (ficha del ulmo)"
+        "Radal (Lomatia hirsuta)",
+        "hoja simple como la del notro pero dura y de borde aserrado; flores chicas color crema; corteza algo rugosa con fisuras"
       ]
     ],
     "reto": true,
-    "fuente": "«Árboles Nativos de Chile» (Mineduc, curriculumnacional.cl), ficha «Notro» (Bosque Andino Patagónico); en.wikipedia.org/wiki/Embothrium_coccineum (fruto). La hoja del notro no está verificada en una flora: no se usa como rasgo.",
+    "fuente": "«Árboles Nativos de Chile» (Mineduc, fichas de notro, fuinque y radal, que citan a García & Ormazábal 2008 y Rodríguez et al. 2018); Wikipedia (Embothrium coccineum, Lomatia ferruginea, Lomatia hirsuta) para las medidas de la hoja. Confusores del naturalista (decimotercera ronda): las otras Proteaceae del bosque. La disposición de la hoja (alterna) no se verificó en una flora.",
     "confianza": "media"
   },
   "weinmannia_trichosperma": {
@@ -305,7 +305,7 @@
     "confunde": [
       [
         "Laurel (Laurelia sempervirens)",
-        "muy parecido, pero con el borde de la hoja menos aserrado (Looser 1949); además parece no hallarse ya en Chiloé"
+        "muy parecido, pero con el borde de la hoja menos aserrado (Looser 1949)"
       ],
       [
         "Canelo (Drimys winteri)",
