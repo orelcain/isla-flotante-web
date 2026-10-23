@@ -1,17 +1,93 @@
 {
   "nota": "Encargos sobre el terreno (nucleo-cs/.../Semilla/Encargos.cs; docs/investigacion_gamificacion.md, mecánica 2). Las metas son METAS DE JUEGO (cuántas celdas, cuántos coigües, el plazo): no son números del modelo y no cambian la simulación. Lo que se mide para cumplirlas (cobertura del pasto, espinillo, árboles) sí sale del modelo.",
-  "reto_arrancar_max": { "valor": 3, "unidad": "matas de espinillo que pide arrancar la meta del año cuando hay más", "fuente": "meta de juego: con 12 jornadas al año y otras tareas, «arrancar todas» con 20+ matas fallaba siempre (segunda ronda de tandas, 19-10)", "confianza": "baja" },
-  "reto_siembras_meta": { "valor": 2, "unidad": "siembras que deben prender en otoño o en primavera", "fuente": "meta de juego (otoño y primavera son las épocas de siembra de los viveros: siembra.json)", "confianza": "baja" },
-  "reto_anual": { "valor": 1, "unidad": "1 = por años, una meta del año propuesta al planear (0 = retos de temporada)", "fuente": "decisión de diseño (17-10): con el plan anual, los retos de temporada cambiaban en medio del año vivido y el jugador no podía planear para ellos", "confianza": "baja" },
-  "reto_premio_jornadas": { "valor": 1, "unidad": "jornadas extra el año siguiente por cumplir la meta del año", "fuente": "meta de juego (como el premio de los encargos)", "confianza": "baja" },
-  "reto_suelo_anio_kg": { "valor": 3, "unidad": "kg de suelo que pueden caer al vacío en el año sin perder la meta", "fuente": "meta de juego (~3 temporales de invierno de ~1 kg)", "confianza": "baja" },
-  "reto_suelo_invierno_kg": { "valor": 1, "unidad": "kg de suelo que pueden caer al vacío en el invierno sin perder el reto", "fuente": "meta de juego", "confianza": "baja" },
-  "radio_celdas": { "valor": 1, "unidad": "celdas alrededor del lugar del encargo (cuadrado de 3 × 3)", "fuente": "meta de juego", "confianza": "baja" },
-  "plazo_anios": { "valor": 3, "unidad": "años para cumplir el encargo", "fuente": "meta de juego: corto frente al plazo del capítulo (25 años)", "confianza": "baja" },
-  "dias_entre_revisiones": { "valor": 30, "unidad": "días entre un encargo cumplido o vencido y el siguiente (a lo más)", "fuente": "meta de juego", "confianza": "baja" },
-  "borde_pasto_cobertura": { "valor": 0.5, "unidad": "fracción de pasto que cuenta como «amarrado» en una celda de borde", "fuente": "meta de juego; las raíces del pasto entran al cálculo del talud y del voladizo (MotorBorde, pasto.json)", "confianza": "baja" },
-  "borde_meta_celdas": { "valor": 3, "unidad": "celdas de borde con pasto", "fuente": "meta de juego", "confianza": "baja" },
-  "fijador_meta_plantas": { "valor": 2, "unidad": "celdas con planta fijadora de nitrógeno", "fuente": "meta de juego", "confianza": "baja" },
-  "bosquete_radio_celdas": { "valor": 2, "unidad": "celdas alrededor del lugar", "fuente": "meta de juego", "confianza": "baja" },
-  "bosquete_meta_arboles": { "valor": 5, "unidad": "coigües vivos", "fuente": "meta de juego (la misma del capítulo 2 planeado: «un bosquete de 5 coigües»)", "confianza": "baja" }
+  "reto_arrancar_max": {
+    "valor": 3,
+    "unidad": "matas de espinillo que pide arrancar la meta del año cuando hay más",
+    "fuente": "meta de juego: con 12 jornadas al año y otras tareas, «arrancar todas» con 20+ matas fallaba siempre (segunda ronda de tandas, 19-10)",
+    "confianza": "baja"
+  },
+  "reto_siembras_meta": {
+    "valor": 2,
+    "unidad": "siembras que deben prender en otoño o en primavera",
+    "fuente": "meta de juego (otoño y primavera son las épocas de siembra de los viveros: siembra.json)",
+    "confianza": "baja"
+  },
+  "reto_anual": {
+    "valor": 1,
+    "unidad": "1 = por años, una meta del año propuesta al planear (0 = retos de temporada)",
+    "fuente": "decisión de diseño (17-10): con el plan anual, los retos de temporada cambiaban en medio del año vivido y el jugador no podía planear para ellos",
+    "confianza": "baja"
+  },
+  "reto_premio_jornadas": {
+    "valor": 1,
+    "unidad": "jornadas extra el año siguiente por cumplir la meta del año",
+    "fuente": "meta de juego (como el premio de los encargos)",
+    "confianza": "baja"
+  },
+  "reto_suelo_anio_kg": {
+    "valor": 3,
+    "unidad": "kg de suelo que pueden caer al vacío en el año sin perder la meta",
+    "fuente": "meta de juego (~3 temporales de invierno de ~1 kg)",
+    "confianza": "baja"
+  },
+  "reto_suelo_invierno_kg": {
+    "valor": 1,
+    "unidad": "kg de suelo que pueden caer al vacío en el invierno sin perder el reto",
+    "fuente": "meta de juego",
+    "confianza": "baja"
+  },
+  "radio_celdas": {
+    "valor": 1,
+    "unidad": "celdas alrededor del lugar del encargo (cuadrado de 3 × 3)",
+    "fuente": "meta de juego",
+    "confianza": "baja"
+  },
+  "plazo_anios": {
+    "valor": 3,
+    "unidad": "años para cumplir el encargo",
+    "fuente": "meta de juego: corto frente al plazo del capítulo (25 años)",
+    "confianza": "baja"
+  },
+  "dias_entre_revisiones": {
+    "valor": 30,
+    "unidad": "días entre un encargo cumplido o vencido y el siguiente (a lo más)",
+    "fuente": "meta de juego",
+    "confianza": "baja"
+  },
+  "borde_pasto_cobertura": {
+    "valor": 0.5,
+    "unidad": "fracción de pasto que cuenta como «amarrado» en una celda de borde",
+    "fuente": "meta de juego; las raíces del pasto entran al cálculo del talud y del voladizo (MotorBorde, pasto.json)",
+    "confianza": "baja"
+  },
+  "borde_meta_celdas": {
+    "valor": 3,
+    "unidad": "celdas de borde con pasto",
+    "fuente": "meta de juego",
+    "confianza": "baja"
+  },
+  "fijador_meta_plantas": {
+    "valor": 2,
+    "unidad": "celdas con planta fijadora de nitrógeno",
+    "fuente": "meta de juego",
+    "confianza": "baja"
+  },
+  "bosquete_radio_celdas": {
+    "valor": 2,
+    "unidad": "celdas alrededor del lugar",
+    "fuente": "meta de juego",
+    "confianza": "baja"
+  },
+  "bosquete_meta_arboles": {
+    "valor": 5,
+    "unidad": "coigües vivos",
+    "fuente": "meta de juego (la misma del capítulo 2 planeado: «un bosquete de 5 coigües»)",
+    "confianza": "baja"
+  },
+  "reto_raiz_mm": {
+    "valor": 5,
+    "unidad": "mm de suelo medio que deben ganar las celdas a 2 o menos del coigüe en el año 0",
+    "fuente": "DECISIÓN DE DISEÑO (Z2, decimocuarta ronda): calibrada con RetoRaizPruebas en 5 semillas (sin hacer nada sube 1,7–3,0 mm; atrayendo junto al coigüe las 4 estaciones, 8,5–9,6 mm)",
+    "confianza": "baja"
+  }
 }
