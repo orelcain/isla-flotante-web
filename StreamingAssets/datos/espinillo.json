@@ -70,8 +70,8 @@
   "cobertura_inicial": {
     "valor": 0.05,
     "unidad": "cobertura de una plántula",
-    "fuente": "decisión de diseño",
-    "confianza": "media"
+    "fuente": "decisión de diseño (valor de partida del dibujo y de la competencia por luz; no hay medición de la cobertura de una plántula de espinillo)",
+    "confianza": "baja"
   },
   "fijacion_n_kg_ha_anio": {
     "valor": 100,
@@ -180,7 +180,7 @@
   "mes_flor_otono_inicio": {
     "valor": 3,
     "unidad": "mes",
-    "fuente": "En Uruguay florece en otoño y primavera (Plan Agropecuario, revista 113); en Chiloé sin dato",
+    "fuente": "En Uruguay florece en otoño y primavera (Plan Agropecuario, revista 113). Fuentes del Cono Sur: «florece en invierno y en primavera» (Flora del Cono Sur, Instituto de Botánica Darwinion, sin fuente ni meses) y «desde fin de invierno hasta fin de la primavera, pudiendo florecer nuevamente en el otoño» (SIB Argentina, sib.gob.ar/especies/ulex-europaeus), que concuerdan con la ventana de primavera (sep-nov) y con una floración secundaria de otoño. No se halló una fuente con meses para Chiloé ni el sur de Chile (consultadas fichas de MMA/SIMBIO y Fundación Philippi: sin fenología); los meses se mantienen como aproximación del hemisferio sur. [C10, 24-10-2026]",
     "confianza": "baja"
   },
   "mes_flor_otono_fin": {

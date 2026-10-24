@@ -40,8 +40,8 @@
     "valor": 4,
     "unidad": "años",
     "fuente": "Hevia F, Minoletti ML, Decker KLM, Boerner REJ (1999) Foliar nitrogen and phosphorus dynamics of three Chilean Nothofagus (Fagaceae) species in relation to leaf lifespan. American Journal of Botany 86(3): 447-455",
-    "confianza": "media",
-    "nota": "Especie real: N. dombeyi (siempreverde), rodal a 1680 m s.n.m. en Chile."
+    "confianza": "baja",
+    "nota": "Especie real: N. dombeyi (siempreverde), rodal a 1680 m s.n.m. en Chile. [C10, 24-10-2026] Baja de media a baja: es de otra especie y de un piso altitudinal muy distinto al nivel del mar de Chiloé (a mayor altitud las hojas duran más); se usa como aproximación para N. nitida hasta hallar su longevidad foliar."
   },
   "n_hoja_pct": {
     "valor": 1.725,

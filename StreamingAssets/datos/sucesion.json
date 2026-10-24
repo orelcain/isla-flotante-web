@@ -210,9 +210,9 @@
   "canelo_por_aves": {
     "valor": 1,
     "unidad": "1 si lo dispersan las aves (llega a las perchas)",
-    "fuente": "flora_chiloe.json",
-    "confianza": "alta",
-    "nota": "[B10, 24-10-2026] Se mantiene en alta (revisión B10, 24-10-2026): Aizen, Vázquez & Smith-Ramírez 2002 (Rev. Chil. Hist. Nat. 75:79-97) documentan en Chiloé a Elaenia albiceps con el 58 % de las visitas a Drimys winteri (Hernández 1995); es medición de campo y no solo morfología. Fuente primaria en flora_chiloe.json."
+    "fuente": "Aizen MA, Vázquez DP & Smith-Ramírez C (2002) Historia natural y conservación de los mutualismos planta-animal del bosque templado de Sudamérica austral. Rev. Chil. Hist. Nat. 75:79-97 (revisión; texto en scielo.conicyt.cl, S0716-078X2002000100008)",
+    "confianza": "media",
+    "nota": "[C10, 24-10-2026] Se corrigió la fuente (antes decía «flora_chiloe.json», un archivo interno) y baja de alta a media. Verificado en el texto: el 58 % de Hernández (1995) es de visitas de Elaenia albiceps a ÁRBOLES de Drimys winteri en un estudio de lluvia de semillas bajo árboles percha (dispersión, no polinización), y el mismo artículo cita semillas de Drimys en las heces de aves (Sabag 1993). Queda en media porque la cifra de Hernández es una tesis de doctorado (U. de Chile) citada de segunda mano y no leída, y son visitas, no frutos consumidos medidos."
   },
   "canelo_llegada_m2_anio": {
     "valor": 0.0,

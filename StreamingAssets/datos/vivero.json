@@ -29,6 +29,6 @@
     "unidad": "fracción máxima de plántulas trasplantadas que sobrevivió (notro y canelo, un sitio de Chiloé)",
     "fuente": "Díaz MF & Armesto JJ (2007) Limitantes físicos y bióticos de la regeneración arbórea en matorrales sucesionales de la Isla Grande de Chiloé. Rev. Chil. Hist. Nat. 80:13-26 (leído solo el resumen: «survivorship of Embothrium and Drimys under Baccharis was < 40 %»)",
     "confianza": "baja",
-    "nota": "SOLO REFERENCIA: el código no la lee. Es una cota superior en un sitio y un tratamiento (bajo Baccharis), con plántulas y no plantines, y sin plazo claro; no sirve como mortalidad del primer año de un plantín. Si el código llegara a leer mortalidad por especie, usaría claves del tipo notro_mortalidad_primer_anio, canelo_…, tineo_…, tepa_… con respaldo en plantin_mortalidad_primer_anio."
+    "nota": "SOLO REFERENCIA: el código no la lee. Es una cota superior en un sitio y un tratamiento (bajo Baccharis), con plántulas y no plantines, y sin plazo claro; no sirve como mortalidad del primer año de un plantín. [C10, 24-10-2026] Sucesion.cs ya lee <especie>_mortalidad_primer_anio (notro_, canelo_, tineo_, tepa_…) con respaldo en plantin_mortalidad_primer_anio; no se agregó ninguna por especie porque no hay cifra con fuente."
   }
 }

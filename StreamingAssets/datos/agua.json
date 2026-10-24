@@ -91,7 +91,7 @@
     "unidad": "mm/año (rango)",
     "fuente": "Frêne C., Núñez-Ávila M., Castro B., Armesto J.J. (2022) Front. For. Glob. Change 4:781663, https://www.frontiersin.org/articles/10.3389/ffgc.2021.781663/full (cita a Díaz et al. 2007)",
     "confianza": "media",
-    "nota": "SOLO REFERENCIA, el modelo NO la usa: medición de pluviómetro en Ancud (41°50'S), unos 100 km al norte de Castro, en la costa norte de Chiloé; 14 % cae en ene-mar. Aparente contradicción con los 1.399 mm: son sitios distintos (Ancud vs. Castro, en la costa oriental más resguardada), instrumentos distintos (pluviómetro vs. reanálisis de ~50 km de celda, que suaviza extremos y subestima) y períodos distintos. No se ha reconciliado con una estación de Castro (Mocopulli, ver pendientes). Consecuencia: el juego es más seco que la lluvia que describe la ecóloga de campo; la cifra de 1.399 mm no debe presentarse al jugador como «la lluvia de Chiloé», sino como la de Castro según el reanálisis."
+    "nota": "SOLO REFERENCIA, el modelo NO la usa: medición de pluviómetro en Ancud (41°50'S), unos 65-70 km al norte de Castro (línea recta: Senda Darwin -41,883/-73,667 según DEIMS contra Castro -42,48/-73,76 da ~67 km; la estación está a 14 km de la ciudad de Ancud según sendadarwin.cl; por carretera es más), en la costa norte de Chiloé; 14 % cae en ene-mar. Aparente contradicción con los 1.399 mm: son sitios distintos (Ancud vs. Castro, en la costa oriental más resguardada), instrumentos distintos (pluviómetro vs. reanálisis de ~50 km de celda, que suaviza extremos y subestima) y períodos distintos. No se ha reconciliado con una estación de Castro (Mocopulli, ver pendientes). Consecuencia: el juego es más seco que la lluvia que describe la ecóloga de campo; la cifra de 1.399 mm no debe presentarse al jugador como «la lluvia de Chiloé», sino como la de Castro según el reanálisis."
   },
   "dias_lluvia_fraccion_mensual": {
     "valor": [
@@ -144,8 +144,8 @@
     "valor": 0.23,
     "unidad": "adimensional",
     "fuente": "Allen, Pereira, Raes & Smith (1998) FAO Irrigation and Drainage Paper 56, cap. 3, ec. 38 Rns=(1-a)Rs: https://www.fao.org/4/x0490e/x0490e07.htm",
-    "confianza": "alta",
-    "nota": "Albedo del cultivo de referencia (pasto). Un dosel de bosque suele tener albedo menor; no se buscó valor para Nothofagus."
+    "confianza": "baja",
+    "nota": "[C10, 24-10-2026] La fuente (FAO-56) confirma 0,23 como albedo del CULTIVO DE REFERENCIA (pasto), no de bosque; por eso la confianza baja de alta a baja al aplicarlo a la isla. Un dosel de bosque suele tener albedo menor; una búsqueda de albedo medido en bosque de Nothofagus o siempreverde templado no halló ningún valor. Reemplazo previsto: albedo medido en torres de flujo (p. ej. Senda Darwin, AmeriFlux CL-SDF) cuando se consulte."
   },
   "radiacion_neta_metodo": {
     "valor": "Rn = Rns - Rnl; Rns = (1-0,23)·Rs (ec. 38); Rnl = sigma·[(Tmax,K^4+Tmin,K^4)/2]·(0,34-0,14·raiz(ea))·(1,35·Rs/Rso-0,35) (ec. 39), sigma = 4,903e-9 MJ K-4 m-2 día-1, Rs/Rso <= 1; Rso = (0,75+2e-5·z)·Ra (ec. 37)",
