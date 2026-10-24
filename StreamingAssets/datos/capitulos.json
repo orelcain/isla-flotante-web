@@ -164,8 +164,8 @@
             },
             {
               "id": "b_nativos_1",
-              "texto": "Un árbol nativo de más de 2 m",
-              "corto": "1 nativo > 2 m",
+              "texto": "Un árbol del bosque que llega (notro, tineo, canelo o tepa) de más de 2 m",
+              "corto": "1 árbol del bosque > 2 m",
               "tipo": "nativos",
               "meta": 1,
               "umbral": 2,
@@ -287,8 +287,8 @@
             },
             {
               "id": "m_nativos_1",
-              "texto": "Un árbol nativo de cualquier tamaño",
-              "corto": "1 árbol nativo",
+              "texto": "Un árbol del bosque que llega (notro, tineo, canelo o tepa)",
+              "corto": "1 árbol del bosque",
               "tipo": "nativos",
               "meta": 1,
               "umbral": 0,

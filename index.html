@@ -38,9 +38,9 @@
   <script>
     // Ojo: NO cancelar gesturestart/touchmove en el documento. Se probó (v179) y en el iPhone el juego dejó de recibir el
     // pellizco y el arrastre de dos dedos. touch-action: none (en el CSS) basta para que la página no se mueva.
-    // Versión: construir_web.sh reemplaza v628 · c363292 · claude/blissful-almeida-32de9d · 23-10 21:24 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
+    // Versión: construir_web.sh reemplaza v629 · 23d767e · claude/blissful-almeida-32de9d · 23-10 21:29 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
     // version.txt (pedido sin caché) dice otra cosa, se recarga con una dirección nueva (?v=…) que obliga a bajar la última.
-    var VERSION = "v628 · c363292 · claude/blissful-almeida-32de9d · 23-10 21:24";
+    var VERSION = "v629 · 23d767e · claude/blissful-almeida-32de9d · 23-10 21:29";
     document.getElementById("version").textContent = VERSION.indexOf("__") === 0 ? "" : VERSION;
     // El juego (~18 MB) no empieza a bajar hasta saber si hay que recargar: antes se bajaba entero y se botaba al recargar.
     var iniciado = false;
@@ -60,9 +60,9 @@
     });
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/afeb374c415c8a315b7d42cf2402d0ab.data.unityweb",
+      dataUrl: "Build/bf43ef2128952514b62bc52ffd5784ca.data.unityweb",
       frameworkUrl: "Build/9dc432d887ff35f652570f6530000cac.framework.js.unityweb",
-      codeUrl: "Build/57ee9c3c1ae71e8af56edf6978a9efb7.wasm.unityweb",
+      codeUrl: "Build/e36e8a33cfda72c77c6cb8d4aa413a53.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Isla Flotante",
       productName: "Isla Flotante",
@@ -80,6 +80,11 @@
           var guardar = function () { try { u.SendMessage("Isla guardado", "Guardar"); } catch (e) {} };
           document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") guardar(); });
           window.addEventListener("pagehide", guardar);
+          // A10: en vertical el velo tapa el juego: el año se detiene (y sigue al volver a apaisado)
+          var vertical = window.matchMedia("(orientation: portrait) and (max-width: 700px)");
+          var avisarVertical = function () { try { u.SendMessage("Isla guardado", "Vertical", vertical.matches ? "1" : "0"); } catch (e) {} };
+          if (vertical.addEventListener) vertical.addEventListener("change", avisarVertical); else if (vertical.addListener) vertical.addListener(avisarVertical);
+          avisarVertical();
         })   // window.isla: para revisar desde la consola (SendMessage)
         .catch(function (e) { carga.textContent = "No se pudo abrir la isla: " + e; });
     };
