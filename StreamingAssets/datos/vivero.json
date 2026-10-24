@@ -1,5 +1,5 @@
 {
-  "nota": "Plantar árboles nativos de vivero (pedido de la decimocuarta ronda: «el rumbo bosque no tiene palanca»). Así se restaura en Chiloé: las praderas de Holcus no dejan nacer árboles desde semilla (Carmona et al. 2010) y se planta. Solo con la sucesión activa (sucesion_activa). El plantín crece y muere con las mismas reglas que los que llegan solos (Sucesion.cs).",
+  "nota": "Plantar árboles nativos de vivero (pedido de la decimocuarta ronda: «el rumbo bosque no tiene palanca»). Así se restaura en Chiloé: las praderas de Holcus no dejan nacer árboles desde semilla (Carmona et al. 2010) y se planta. Solo con la sucesión activa (sucesion_activa). El plantín crece y muere con las mismas reglas que los que llegan solos (Sucesion.cs). El coigüe de Chiloé también se planta en restauración (coigue.json cita un ensayo con plantines); aquí no se ofrece porque ya es el árbol del jugador y nacen sus hijos.",
   "plantin_altura_m": {
     "valor": 0.3,
     "unidad": "m de alto del plantín al plantarlo",
