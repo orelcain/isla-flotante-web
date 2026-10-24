@@ -24,6 +24,8 @@
     #girar button { font: italic 16px Georgia, serif; color: #fbf7ec; background: #3d3226; border: 0; border-radius: 6px; padding: 10px 18px; }
     @keyframes girar { 0%, 25% { transform: rotate(0deg); } 50%, 85% { transform: rotate(-90deg); } 100% { transform: rotate(0deg); } }
     @media (orientation: portrait) and (max-width: 700px) { #girar { display: flex; } }
+    /* D4 (decimoctava ronda: «a 768×1024 el calendario se aplasta»): la tableta en vertical también se gira (solo con pantalla táctil) */
+    @media (orientation: portrait) and (max-width: 1100px) and (pointer: coarse) { #girar { display: flex; } }
   </style>
 </head>
 <body>
@@ -38,9 +40,9 @@
   <script>
     // Ojo: NO cancelar gesturestart/touchmove en el documento. Se probó (v179) y en el iPhone el juego dejó de recibir el
     // pellizco y el arrastre de dos dedos. touch-action: none (en el CSS) basta para que la página no se mueva.
-    // Versión: construir_web.sh reemplaza v659 · e36e293 · claude/blissful-almeida-32de9d · 24-10 08:07 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
+    // Versión: construir_web.sh reemplaza v665 · 94f737c · claude/blissful-almeida-32de9d · 24-10 13:00 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
     // version.txt (pedido sin caché) dice otra cosa, se recarga con una dirección nueva (?v=…) que obliga a bajar la última.
-    var VERSION = "v659 · e36e293 · claude/blissful-almeida-32de9d · 24-10 08:07";
+    var VERSION = "v665 · 94f737c · claude/blissful-almeida-32de9d · 24-10 13:00";
     document.getElementById("version").textContent = VERSION.indexOf("__") === 0 ? "" : VERSION;
     // El juego (~18 MB) no empieza a bajar hasta saber si hay que recargar: antes se bajaba entero y se botaba al recargar.
     var iniciado = false;
@@ -60,9 +62,9 @@
     });
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/4c31ff77bfe6e428fadb6e328b105b6d.data.unityweb",
-      frameworkUrl: "Build/2fd18131b2807a081a9c6397502fd99c.framework.js.unityweb",
-      codeUrl: "Build/4a48c019263e4681d4eb4869e96a2445.wasm.unityweb",
+      dataUrl: "Build/0282582526992ac57b4195943b110aec.data.unityweb",
+      frameworkUrl: "Build/e603f9ebfb46a97449af3398e281a592.framework.js.unityweb",
+      codeUrl: "Build/cdba5ea6cb274e53d298a7b10609c8fc.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Isla Flotante",
       productName: "Isla Flotante",
@@ -81,7 +83,7 @@
           document.addEventListener("visibilitychange", function () { if (document.visibilityState === "hidden") guardar(); });
           window.addEventListener("pagehide", guardar);
           // A10: en vertical el velo tapa el juego: el año se detiene (y sigue al volver a apaisado)
-          var vertical = window.matchMedia("(orientation: portrait) and (max-width: 700px)");
+          var vertical = window.matchMedia("(orientation: portrait) and (max-width: 700px), (orientation: portrait) and (max-width: 1100px) and (pointer: coarse)");
           var avisarVertical = function () { try { u.SendMessage("Isla guardado", "Vertical", vertical.matches ? "1" : "0"); } catch (e) {} };
           if (vertical.addEventListener) vertical.addEventListener("change", avisarVertical); else if (vertical.addListener) vertical.addListener(avisarVertical);
           avisarVertical();
