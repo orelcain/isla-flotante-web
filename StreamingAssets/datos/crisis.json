@@ -69,7 +69,7 @@
   "fraccion_hoja_nueva": {
     "valor": 0.4,
     "unidad": "fracción de las hojas del coigüe que son de la temporada (las que puede quemar la helada)",
-    "fuente": "Coherente con la longevidad foliar del coigüe (coigue.json: las hojas viven ~2-3 años, se renueva ~1/3-1/2 cada año); daño observado 30-60 % del follaje nuevo con −2 a −3 °C (propuesta, sin medición en N. nitida)",
+    "fuente": "PROPUESTA, sin medición en N. nitida. Revisión B10 (24-10-2026): la nota anterior decía que las hojas viven ~2-3 años, pero el único dato medido (coigue.json, longevidad_foliar_anios = 4 años) es de N. dombeyi a 1680 m (Hevia et al. 1999, Am. J. Bot. 86:447), un sitio frío de altura donde las hojas duran más; no hay longevidad foliar medida para N. nitida de la costa de Chiloé. En estado estable la fracción de hoja de la temporada es ~1/L (L = longevidad foliar): L=4 años → 0,25; L=3 → 0,33; L=2,5 → 0,40; L=2 → 0,50. Se conserva 0,4 (L≈2,5 años, plausible para un siempreverde de tierras bajas húmedas) como estimación y NO como dato; el rango razonable es 0,25-0,5. Sensibilidad: con 0,25 el daño por helada bajaría ~37 %. Reemplazar cuando se obtenga la longevidad foliar de N. nitida (Lusk et al. 2008 midieron hojas de juveniles en bosques templados del centro-sur de Chile; no se leyó el texto completo). Daño observado 30-60 % del follaje nuevo con −2 a −3 °C (propuesta, sin medición en N. nitida)",
     "confianza": "baja"
   },
   "mortalidad_plantula_max": {

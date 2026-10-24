@@ -81,7 +81,7 @@
     "unidad": "mm/año",
     "fuente": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR&community=AG&longitude=-73.8&latitude=-42.5&start=20010101&end=20201231&format=JSON",
     "confianza": "media",
-    "nota": "Derivado de NASA POWER 2001-2020."
+    "nota": "USADA POR EL MODELO: el juego simula la lluvia día a día con lluvia_mensual_mm, dias_lluvia_fraccion_mensual y lluvia_por_dia_lluvioso_mm (NASA POWER, Castro, 2001-2020), que suman 1.399 mm/año. Es la ÚNICA cifra anual que entra en el cálculo. Se eligió porque es la única serie diaria con fuente verificable para el sitio y permite sortear días de lluvia; es un reanálisis y probablemente subestima. Derivado de NASA POWER 2001-2020."
   },
   "lluvia_anual_senda_darwin_mm": {
     "valor": [
@@ -91,7 +91,7 @@
     "unidad": "mm/año (rango)",
     "fuente": "Frêne C., Núñez-Ávila M., Castro B., Armesto J.J. (2022) Front. For. Glob. Change 4:781663, https://www.frontiersin.org/articles/10.3389/ffgc.2021.781663/full (cita a Díaz et al. 2007)",
     "confianza": "media",
-    "nota": "Estación Biológica Senda Darwin, Ancud (41°50'S), norte de Chiloé; 14% cae en ene-mar."
+    "nota": "SOLO REFERENCIA, el modelo NO la usa: medición de pluviómetro en Ancud (41°50'S), unos 100 km al norte de Castro, en la costa norte de Chiloé; 14 % cae en ene-mar. Aparente contradicción con los 1.399 mm: son sitios distintos (Ancud vs. Castro, en la costa oriental más resguardada), instrumentos distintos (pluviómetro vs. reanálisis de ~50 km de celda, que suaviza extremos y subestima) y períodos distintos. No se ha reconciliado con una estación de Castro (Mocopulli, ver pendientes). Consecuencia: el juego es más seco que la lluvia que describe la ecóloga de campo; la cifra de 1.399 mm no debe presentarse al jugador como «la lluvia de Chiloé», sino como la de Castro según el reanálisis."
   },
   "dias_lluvia_fraccion_mensual": {
     "valor": [

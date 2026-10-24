@@ -5,15 +5,15 @@
     "valor": 17.4,
     "unidad": "cm/año",
     "fuente": "Bannister JR, Acevedo M, Travieso G, Holz A, Galindo N (2021) The influence of microsite conditions on early performance of planted Nothofagus nitida seedlings when restoring degraded coastal temperate rain forests. Forest Ecology and Management 484: 118957. Resumen: https://initiative20x20.org/node/545",
-    "confianza": "alta",
-    "nota": "N. nitida plantada bajo dosel protector (sombra parcial) en Chiloé: 45 plantaciones de 2014 seguidas 5 años; incremento periódico medio. Mortalidad ~30 %. El crecimiento en altura y diámetro aumenta significativamente con más luz, pero en sitios abiertos también sube el estrés fisiológico en verano. No se encontró un valor numérico separado para claro y para sombra."
+    "confianza": "media",
+    "nota": "N. nitida plantada bajo dosel protector (sombra parcial) en Chiloé: 45 plantaciones de 2014 seguidas 5 años; incremento periódico medio. Mortalidad ~30 %. El crecimiento en altura y diámetro aumenta significativamente con más luz, pero en sitios abiertos también sube el estrés fisiológico en verano. No se encontró un valor numérico separado para claro y para sombra. [B10, 24-10-2026] Confianza alta → media: una sola fuente (Bannister et al. 2021, leída solo en su resumen), un solo sitio y bajo dosel protector; no hay segunda medición independiente de N. nitida plantada."
   },
   "crecimiento_diametro_mm_anio": {
     "valor": 1.7,
     "unidad": "mm/año (diámetro de cuello)",
     "fuente": "Bannister et al. (2021) Forest Ecology and Management 484: 118957",
-    "confianza": "alta",
-    "nota": "N. nitida plantada en Chiloé; diámetro a la altura del cuello de la raíz, no DAP."
+    "confianza": "media",
+    "nota": "N. nitida plantada en Chiloé; diámetro a la altura del cuello de la raíz, no DAP. [B10, 24-10-2026] Confianza alta → media: misma y única fuente que la altura (Bannister et al. 2021), sin segunda medición independiente."
   },
   "razon_raiz_tallo": {
     "valor": 0.2415,
@@ -26,8 +26,8 @@
     "valor": 0.4455,
     "unidad": "g C / g materia seca",
     "fuente": "Gayoso, Guerra y Alarcón (2002), vía Pérez-Quezada et al. (2015) Bosque 36(1): 27-39, Tabla 1",
-    "confianza": "alta",
-    "nota": "N. nitida, biomasa aérea: 44.55 % de C; subterránea: 43.75 %. Gayoso y Guerra (2005, Bosque 26(2): 33-38) reportan un promedio de 43.7 % para 16 especies nativas."
+    "confianza": "media",
+    "nota": "N. nitida, biomasa aérea: 44.55 % de C; subterránea: 43.75 %. Gayoso y Guerra (2005, Bosque 26(2): 33-38) reportan un promedio de 43.7 % para 16 especies nativas. [B10, 24-10-2026] Confianza alta → media: una sola fuente primaria (Gayoso et al. 2002, vía Pérez-Quezada 2015). Es coherente con el rango habitual de la madera (~0,45-0,50), pero esa segunda referencia no se verificó en esta revisión."
   },
   "area_foliar_especifica_m2_kg": {
     "valor": 10.9,
@@ -109,21 +109,22 @@
     ],
     "unidad": "MJ/m²/día, de enero a diciembre",
     "fuente": "NASA POWER climatología 2001-2020, ALLSKY_SFC_SW_DWN, 42.48°S 73.76°W",
-    "confianza": "alta"
+    "confianza": "media",
+    "nota": "[B10, 24-10-2026] Confianza alta → media: es un producto modelado por satélite y reanálisis (NASA POWER), no una medición de estación; no se contrastó con una estación de Castro. Una sola fuente."
   },
   "radiacion_global_enero_mj_m2_dia": {
     "valor": 22.83,
     "unidad": "MJ/m²/día",
     "fuente": "NASA POWER climatología 2001-2020, ALLSKY_SFC_SW_DWN, 42.48°S 73.76°W",
-    "confianza": "alta",
-    "nota": "Diciembre: 22.13."
+    "confianza": "media",
+    "nota": "Diciembre: 22.13. [B10, 24-10-2026] Confianza alta → media: mismo producto NASA POWER (modelado, sin contraste con estación local)."
   },
   "radiacion_global_julio_mj_m2_dia": {
     "valor": 4.91,
     "unidad": "MJ/m²/día",
     "fuente": "NASA POWER climatología 2001-2020, ALLSKY_SFC_SW_DWN, 42.48°S 73.76°W",
-    "confianza": "alta",
-    "nota": "El mínimo es junio: 4.15."
+    "confianza": "media",
+    "nota": "El mínimo es junio: 4.15. [B10, 24-10-2026] Confianza alta → media: mismo producto NASA POWER (modelado, sin contraste con estación local)."
   },
   "fraccion_par": {
     "valor": 0.45,
@@ -136,8 +137,8 @@
     "valor": 78.7,
     "unidad": "g C / g N",
     "fuente": "Pérez CA, Carmona MR, Armesto JJ (2010) Non-symbiotic nitrogen fixation during leaf litter decomposition in an old-growth temperate rain forest of Chiloé Island, southern Chile: effects of single versus mixed species litter. Austral Ecology 35: 148-156, doi:10.1111/j.1442-9993.2009.02020.x",
-    "confianza": "alta",
-    "nota": "Hojarasca de N. nitida en bosque antiguo de Chiloé; lignina 59.27 ± 4.09 %. Es la de peor calidad de las tres especies estudiadas (Drimys winteri 50.6; Podocarpus nubigena 54.4)."
+    "confianza": "media",
+    "nota": "Hojarasca de N. nitida en bosque antiguo de Chiloé; lignina 59.27 ± 4.09 %. Es la de peor calidad de las tres especies estudiadas (Drimys winteri 50.6; Podocarpus nubigena 54.4). [B10, 24-10-2026] Confianza alta → media: una sola medición (Pérez et al. 2010) en un bosque antiguo de Chiloé, con mezcla de especies; sin segunda fuente."
   },
   "descomposicion_k_anio": {
     "valor": 0.47,
@@ -209,8 +210,8 @@
     ],
     "unidad": "Bab (kg) = c + exp(a + b·DAP), DAP 12-47 cm",
     "fuente": "Gayoso J, Guerra J, Alarcón D (2002) Contenido de carbono y funciones de biomasa en especies nativas y exóticas. Informe Proyecto FONDEF D98I1076, Universidad Austral de Chile, 157 p.; ecuación reproducida en la Tabla 1 de Pérez-Quezada JF, Olguín S, Fuentes JP, Galleguillos M (2015) Tree carbon stock in evergreen forests of Chiloé, Chile. Bosque 36(1): 27-39, doi:10.4067/S0717-92002015000100004",
-    "confianza": "alta",
-    "nota": "Solo vale para árboles adultos (DAP 12-47 cm); se usará cuando el coigüe crezca. Para plántulas ver alometria_biomasa_a/b."
+    "confianza": "media",
+    "nota": "Solo vale para árboles adultos (DAP 12-47 cm); se usará cuando el coigüe crezca. Para plántulas ver alometria_biomasa_a/b. [B10, 24-10-2026] Confianza alta → media: una sola fuente (Gayoso et al. 2002, vía Pérez-Quezada 2015), válida solo para DAP 12-47 cm; fuera de ese rango (renovales, árboles muy viejos) es extrapolación."
   },
   "alometria_altura_a": {
     "valor": 1.02,
@@ -256,7 +257,8 @@
     "valor": 2e-05,
     "unidad": "kg de masa seca",
     "fuente": "decisión de diseño (09-10, pedido del humano): el juego parte con el coigüe recién germinado (~10 cm con la alometría juvenil), no con una plántula ya formada",
-    "confianza": "alta"
+    "confianza": "baja",
+    "nota": "[B10, 24-10-2026] Confianza alta → baja: es una decisión de diseño (dónde parte el juego), no un dato natural; la confianza «alta» confundía la certeza de la decisión con la de la naturaleza."
   },
   "radio_copa_por_altura": {
     "valor": 0.25,
@@ -294,7 +296,7 @@
     "confianza": "baja"
   },
   "reserva_maxima_fraccion": {
-    "valor": 0.20,
+    "valor": 0.2,
     "unidad": "fracción de la biomasa (carbohidratos no estructurales: almidón + azúcares)",
     "fuente": "Piper 2011, Annals of Forest Science 68:415–424 (doi:10.1007/s13595-011-0030-1), tabla 2: brinzales de N. nitida y N. dombeyi de 2–3 años, riego normal: NSC ≈ 19 % del peso seco en el tallo y ≈ 16 % en la raíz (máximo medido 22,6 %, tallo de N. dombeyi con sequía). Media global ≈ 10 % (Martínez-Vilalta et al. 2016, Ecol. Monogr. 86:495–516). Sin dato de hojas ni de árbol entero para Nothofagus.",
     "confianza": "media",
@@ -505,8 +507,8 @@
     "valor": 0.1,
     "unidad": "fracción de las semillas caídas que germina",
     "fuente": "Díaz & Armesto 2007, Rev. Chilena de Historia Natural 80:13-26: N. nitida germinó 10 % en promedio en 2003 (0 % en 2002), 83 semillas por compartimento, sin efecto de la humedad (investigacion_plantas_pioneras_sucesion.json)",
-    "confianza": "alta",
-    "nota": "Se aplica a todas las semillas caídas (el ensayo sembró semillas sin separar las viables): no se multiplica además por una viabilidad, para no contar dos veces. Contrafactual: ponerla en 0 → no nacen coigües"
+    "confianza": "media",
+    "nota": "Se aplica a todas las semillas caídas (el ensayo sembró semillas sin separar las viables): no se multiplica además por una viabilidad, para no contar dos veces. Contrafactual: ponerla en 0 → no nacen coigües [B10, 24-10-2026] Confianza alta → media: una sola fuente (Díaz & Armesto 2007) y muy variable entre años (0 % en 2002, 10 % en 2003); el 10 % es el mejor año, no un promedio de largo plazo."
   },
   "mes_germinacion": {
     "valor": 10,
@@ -588,7 +590,7 @@
     "valor": 20,
     "unidad": "coigües nuevos vivos a la vez, como máximo",
     "fuente": "decision de rendimiento (medido 09-10): cada renoval cuesta ~1,5 ms por anio simulado (paso diario completo: celdas de su raiz y de las hifas, luz, agua); con 20 los arboles suman ~30 ms/anio sobre el costo de la isla. Una plantula por celda de 25 cm (0,0625 m2) ya es 16/m2, mas que las 7,2/m2 medidas en bosque secundario (Diaz & Armesto 2007)",
-    "confianza": "alta",
-    "nota": "Las semillas que germinarian por encima del tope no se simulan: su masa queda en la hojarasca. La prueba de rendimiento (<50 ms/anio) mide la isla joven; la isla llena de 256 celdas ya pasa de 50 ms/anio por agua y suelo, sin renovales"
+    "confianza": "baja",
+    "nota": "Las semillas que germinarian por encima del tope no se simulan: su masa queda en la hojarasca. La prueba de rendimiento (<50 ms/anio) mide la isla joven; la isla llena de 256 celdas ya pasa de 50 ms/anio por agua y suelo, sin renovales [B10, 24-10-2026] Confianza alta → baja: es un límite de rendimiento del motor, no un dato natural; sale de una medición de costo de cómputo, no de ecología."
   }
 }

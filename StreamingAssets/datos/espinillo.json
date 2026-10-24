@@ -119,13 +119,15 @@
     "valor": 0.7,
     "unidad": "luz relativa a ras de suelo (0..1) desde la que produce semillas como a pleno sol",
     "fuente": "Atlan A. et al. (2015) 'Phenological plasticity... of Ulex europaeus', PLoS ONE 10(9):e0137500, jardín común en Rennes: con 30 % de sombra (~70 % de luz) la producción de vainas se recupera al nivel de pleno sol.",
-    "confianza": "alta"
+    "confianza": "media",
+    "nota": "[B10, 24-10-2026] Confianza alta → media: una sola fuente (Atlan et al. 2015), un jardín común en Rennes (Francia), no en Chile; no hay medición de luz y vainas de Ulex en el sur de Chile."
   },
   "luz_reproduccion_nula": {
     "valor": 0.35,
     "unidad": "luz relativa bajo la que casi no produce semillas",
     "fuente": "Atlan et al. 2015 (PLoS ONE 10:e0137500): con 65 % de sombra (~35 % de luz) la floración y las vainas cayeron el primer año y casi se detuvieron el segundo; los autores la eligen como la sombra máxima en que se ve la especie en terreno. Entre 35 y 70 % se interpola (supuesto).",
-    "confianza": "alta"
+    "confianza": "media",
+    "nota": "[B10, 24-10-2026] Confianza alta → media: una sola fuente y un solo sitio; el umbral del 35 % lo elegen los autores como la sombra máxima observada en terreno, y entre 35 y 70 % la interpolación es supuesto."
   },
   "luz_declive": {
     "valor": 0.35,

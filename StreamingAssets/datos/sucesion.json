@@ -76,7 +76,8 @@
     "valor": 0,
     "unidad": "1 si lo dispersan las aves (llega a las perchas)",
     "fuente": "flora_chiloe.json",
-    "confianza": "alta"
+    "confianza": "baja",
+    "nota": "[B10, 24-10-2026] Confianza alta → baja: flora_chiloe.json lo deduce de la morfología del fruto (Rodríguez et al. 1983: nuez alada); la dispersión por viento no fue observada. «flora_chiloe.json» no es una fuente primaria."
   },
   "notro_llegada_m2_anio": {
     "valor": 1.0,
@@ -142,7 +143,8 @@
     "valor": 0,
     "unidad": "1 si lo dispersan las aves (llega a las perchas)",
     "fuente": "flora_chiloe.json",
-    "confianza": "alta"
+    "confianza": "baja",
+    "nota": "[B10, 24-10-2026] Confianza alta → baja: flora_chiloe.json lo deduce de la morfología de la semilla (pelos finos, Rodríguez et al. 1983); no fue observado. No es una fuente primaria."
   },
   "tineo_llegada_m2_anio": {
     "valor": 5.0,
@@ -196,7 +198,8 @@
     "valor": 30,
     "unidad": "m",
     "fuente": "Rodríguez et al. 1983: hasta 30 m en Chiloé",
-    "confianza": "alta"
+    "confianza": "media",
+    "nota": "[B10, 24-10-2026] Confianza alta → media: una sola fuente (Rodríguez et al. 1983, flora descriptiva); es un máximo de la especie, no necesariamente alcanzable en la isla."
   },
   "canelo_edad_semilla_anios": {
     "valor": 10,
@@ -208,7 +211,8 @@
     "valor": 1,
     "unidad": "1 si lo dispersan las aves (llega a las perchas)",
     "fuente": "flora_chiloe.json",
-    "confianza": "alta"
+    "confianza": "alta",
+    "nota": "[B10, 24-10-2026] Se mantiene en alta (revisión B10, 24-10-2026): Aizen, Vázquez & Smith-Ramírez 2002 (Rev. Chil. Hist. Nat. 75:79-97) documentan en Chiloé a Elaenia albiceps con el 58 % de las visitas a Drimys winteri (Hernández 1995); es medición de campo y no solo morfología. Fuente primaria en flora_chiloe.json."
   },
   "canelo_llegada_m2_anio": {
     "valor": 0.0,
@@ -274,7 +278,8 @@
     "valor": 0,
     "unidad": "1 si lo dispersan las aves (llega a las perchas)",
     "fuente": "flora_chiloe.json",
-    "confianza": "alta"
+    "confianza": "baja",
+    "nota": "[B10, 24-10-2026] Confianza alta → baja: flora_chiloe.json lo deduce de la morfología del fruto (Rodríguez et al. 1983); no fue observado. No es una fuente primaria."
   },
   "tepa_llegada_m2_anio": {
     "valor": 0.5,

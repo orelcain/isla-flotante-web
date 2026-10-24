@@ -1,5 +1,5 @@
 {
-  "nota": "Plantar árboles nativos de vivero (pedido de la decimocuarta ronda: «el rumbo bosque no tiene palanca»). Así se restaura en Chiloé: las praderas de Holcus no dejan nacer árboles desde semilla (Carmona et al. 2010) y se planta. Solo con la sucesión activa (sucesion_activa). El plantín crece y muere con las mismas reglas que los que llegan solos (Sucesion.cs). El coigüe de Chiloé también se planta en restauración (coigue.json cita un ensayo con plantines); aquí no se ofrece porque ya es el árbol del jugador y nacen sus hijos.",
+  "nota": "Plantar árboles nativos de vivero (pedido de la decimocuarta ronda: «el rumbo bosque no tiene palanca»). Así se restaura en Chiloé: las praderas de Holcus no dejan nacer árboles desde semilla (Carmona et al. 2010) y se planta. Solo con la sucesión activa (sucesion_activa). El plantín crece y muere con las mismas reglas que los que llegan solos (Sucesion.cs). El coigüe de Chiloé también se planta en restauración (coigue.json cita un ensayo con plantines); aquí no se ofrece porque ya es el árbol del jugador y nacen sus hijos. Revisión B10 (24-10-2026): búsqueda de supervivencia de plantines de notro, tineo, canelo y tepa en plantaciones del sur de Chile. No se encontró ningún ensayo con cifras de supervivencia por especie para tineo (Weinmannia trichosperma) ni tepa (Laureliopsis philippiana), ni para notro y canelo plantados de vivero; los reportes de plantaciones comunitarias en Chiloé (p. ej. «Pala en Mano») informan cantidades plantadas, no supervivencia. Único dato cercano, de TRASPLANTE de plántulas (no plantines de vivero) en matorrales de Chiloé: la supervivencia de Embothrium (notro) y Drimys (canelo) bajo Baccharis fue <40 % en uno de los sitios (Díaz & Armesto 2007, Rev. Chil. Hist. Nat. 80:13-26, solo resumen); se guarda abajo como cota de referencia, no como valor del modelo. Para el coigüe sí hay dato (coigue.json: mortalidad ~30 % a 5 años, Bannister et al. 2021). La mortalidad del modelo sigue siendo UNA sola cifra para todas las especies.",
   "plantin_altura_m": {
     "valor": 0.3,
     "unidad": "m de alto del plantín al plantarlo",
@@ -23,5 +23,12 @@
     "unidad": "jornadas que cuesta plantar un plantín (cavar la casilla, sacar la champa y plantar)",
     "fuente": "DECISIÓN DE DISEÑO: más que sembrar (1 jornada): es la palanca fuerte del rumbo bosque y debe competir con las demás",
     "confianza": "baja"
+  },
+  "referencia_notro_canelo_supervivencia_trasplante_baccharis_max": {
+    "valor": 0.4,
+    "unidad": "fracción máxima de plántulas trasplantadas que sobrevivió (notro y canelo, un sitio de Chiloé)",
+    "fuente": "Díaz MF & Armesto JJ (2007) Limitantes físicos y bióticos de la regeneración arbórea en matorrales sucesionales de la Isla Grande de Chiloé. Rev. Chil. Hist. Nat. 80:13-26 (leído solo el resumen: «survivorship of Embothrium and Drimys under Baccharis was < 40 %»)",
+    "confianza": "baja",
+    "nota": "SOLO REFERENCIA: el código no la lee. Es una cota superior en un sitio y un tratamiento (bajo Baccharis), con plántulas y no plantines, y sin plazo claro; no sirve como mortalidad del primer año de un plantín. Si el código llegara a leer mortalidad por especie, usaría claves del tipo notro_mortalidad_primer_anio, canelo_…, tineo_…, tepa_… con respaldo en plantin_mortalidad_primer_anio."
   }
 }
