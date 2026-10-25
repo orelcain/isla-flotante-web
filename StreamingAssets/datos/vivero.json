@@ -16,7 +16,8 @@
     "valor": 0.25,
     "unidad": "fracción de plantines que no prende el primer año",
     "fuente": "PROPUESTA: en plantaciones de restauración la supervivencia del primer año suele estar entre 60 y 90 %; falta un ensayo con estas especies en Chiloé",
-    "confianza": "baja"
+    "confianza": "baja",
+    "nota": "[D15, 24-10-2026] Segunda búsqueda de cifras por especie (notro, tineo, canelo, tepa; plantación, enriquecimiento o restauración en el sur de Chile, en español e inglés): tampoco apareció ninguna supervivencia de plantines de vivero con cifra y fuente (solo estudios de regeneración natural y el trasplante de Díaz & Armesto 2007, ver la referencia de abajo). Por eso NO se agregó ninguna <especie>_mortalidad_primer_anio: todas las especies usan este 25 % (rango típico de restauración: 10-40 %), que es una propuesta de confianza baja. Reemplazo previsto: el ensayo de plantación en Chiloé o Los Lagos que se encuentre (INFOR, CONAF, Bosque)."
   },
   "plantar_jornadas": {
     "valor": 2,
