@@ -112,7 +112,7 @@
         },
         {
           "id": "encargos_15",
-          "texto": "Cumplir 15 encargos de la isla",
+          "texto": "Cumplir 15 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
           "corto": "15 encargos",
           "tipo": "encargos",
           "meta": 15,
@@ -189,7 +189,7 @@
             },
             {
               "id": "b_encargos",
-              "texto": "Cumplir 10 encargos",
+              "texto": "Cumplir 10 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
               "corto": "10 encargos",
               "tipo": "encargos",
               "meta": 10,
@@ -242,7 +242,7 @@
             },
             {
               "id": "h_encargos",
-              "texto": "Cumplir 10 encargos",
+              "texto": "Cumplir 10 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
               "corto": "10 encargos",
               "tipo": "encargos",
               "meta": 10,
@@ -296,7 +296,7 @@
             },
             {
               "id": "m_encargos",
-              "texto": "Cumplir 10 encargos",
+              "texto": "Cumplir 10 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
               "corto": "10 encargos",
               "tipo": "encargos",
               "meta": 10,
