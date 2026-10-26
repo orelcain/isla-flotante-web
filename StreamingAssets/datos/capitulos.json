@@ -147,6 +147,10 @@
           "id": "bosque",
           "nombre": "Bosque que se cierra",
           "que": "Árboles: el coigüe, sus hijos y el bosque chilote que llega (notro, tineo, canelo, tepa). Gana sombra y carbono; pierde luz para las hierbas.",
+          "apoyo": {
+            "texto": "El vivero te apoya: cada plantín nativo te cuesta 1 jornada (no 2) y la ficha te dice dónde tiene la luz que pide.",
+            "plantar_jornadas": 1
+          },
           "estrellas": [
             2,
             4,
@@ -194,12 +198,17 @@
               "meta": 25,
               "pista": "Cada encargo es lo que la isla necesita en ese lugar."
             }
-          ]
+          ],
+          "nota_apoyo": "F3 (vigésima ronda, 25-10-2026): «apoyo» es DECISIÓN DE DISEÑO (el rumbo como programa con apoyo), no física: elegir un rumbo no cambia cómo crece nada. Se da gratis al empezar el capítulo, antes de tomar la base de las metas (lo que trae no cuenta para ellas)."
         },
         {
           "id": "humedal",
           "nombre": "Humedal",
           "que": "Agua: lagunas, musgo que guarda agua como esponja, fijadoras en lo húmedo. Gana agua y vida en sequía; pierde suelo para los árboles.",
+          "apoyo": {
+            "texto": "Una cuadrilla te apoya: empiezas con una hondonada cavada (3 paladas) donde junta el agua.",
+            "paladas": 3
+          },
           "estrellas": [
             2,
             4,
@@ -247,12 +256,17 @@
               "meta": 25,
               "pista": "Cada encargo es lo que la isla necesita en ese lugar."
             }
-          ]
+          ],
+          "nota_apoyo": "F3 (vigésima ronda, 25-10-2026): «apoyo» es DECISIÓN DE DISEÑO (el rumbo como programa con apoyo), no física: elegir un rumbo no cambia cómo crece nada. Se da gratis al empezar el capítulo, antes de tomar la base de las metas (lo que trae no cuenta para ellas)."
         },
         {
           "id": "mosaico",
           "nombre": "Mosaico de biodiversidad",
           "que": "Variedad: muchas especies repartidas, plantas que traen las aves, el bosque en manchas. Gana especies y equilibrio; pierde la isla más grande o el árbol más alto.",
+          "apoyo": {
+            "texto": "Un grupo de observadores de aves te apoya: empiezas con 2 perchas puestas, repartidas en la isla.",
+            "perchas": 2
+          },
           "estrellas": [
             2,
             4,
@@ -300,7 +314,8 @@
               "meta": 25,
               "pista": "Cada encargo es lo que la isla necesita en ese lugar."
             }
-          ]
+          ],
+          "nota_apoyo": "F3 (vigésima ronda, 25-10-2026): «apoyo» es DECISIÓN DE DISEÑO (el rumbo como programa con apoyo), no física: elegir un rumbo no cambia cómo crece nada. Se da gratis al empezar el capítulo, antes de tomar la base de las metas (lo que trae no cuenta para ellas)."
         }
       ]
     }
