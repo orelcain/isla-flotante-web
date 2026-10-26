@@ -26,6 +26,9 @@
     @media (orientation: portrait) and (max-width: 700px) { #girar { display: flex; } }
     /* D4 (decimoctava ronda: «a 768×1024 el calendario se aplasta»): la tableta en vertical también se gira (solo con pantalla táctil) */
     @media (orientation: portrait) and (max-width: 1100px) and (pointer: coarse) { #girar { display: flex; } }
+    /* H14 (vigésima segunda ronda: «en 768×1024 el velo dice "teléfono"»): de 600 px de ancho para arriba, «la tableta» */
+    #girar .tab { display: none; }
+    @media (min-width: 600px) { #girar .cel { display: none; } #girar .tab { display: inline; } }
   </style>
 </head>
 <body>
@@ -33,16 +36,16 @@
   <div id="carga"><div>La isla se está formando…</div><div id="barra"><div></div></div><div id="version" style="font-size:12px;font-style:normal;opacity:.7"></div></div>
   <div id="girar">
     <svg viewBox="0 0 64 64" fill="none" stroke="#4a3c2e" stroke-width="3"><rect x="20" y="6" width="24" height="52" rx="4"/><line x1="28" y1="51" x2="36" y2="51"/></svg>
-    <div>Gira el teléfono:<br>la isla se mira de lado.</div>
+    <div>Gira <span class="cel">el teléfono</span><span class="tab">la tableta</span>:<br>la isla se mira de lado.</div>
     <small>El año queda en pausa hasta que lo gires.</small>
     <button id="pantallaCompleta" type="button">jugar a pantalla completa</button>
   </div>
   <script>
     // Ojo: NO cancelar gesturestart/touchmove en el documento. Se probó (v179) y en el iPhone el juego dejó de recibir el
     // pellizco y el arrastre de dos dedos. touch-action: none (en el CSS) basta para que la página no se mueva.
-    // Versión: construir_web.sh reemplaza v695 · 8b24abd · claude/blissful-almeida-32de9d · 26-10 09:57 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
+    // Versión: construir_web.sh reemplaza v702 · 751ad44 · claude/blissful-almeida-32de9d · 26-10 14:48 al publicar. Safari (y más el ícono de inicio) guarda esta página: si
     // version.txt (pedido sin caché) dice otra cosa, se recarga con una dirección nueva (?v=…) que obliga a bajar la última.
-    var VERSION = "v695 · 8b24abd · claude/blissful-almeida-32de9d · 26-10 09:57";
+    var VERSION = "v702 · 751ad44 · claude/blissful-almeida-32de9d · 26-10 14:48";
     document.getElementById("version").textContent = VERSION.indexOf("__") === 0 ? "" : VERSION;
     // El juego (~18 MB) no empieza a bajar hasta saber si hay que recargar: antes se bajaba entero y se botaba al recargar.
     var iniciado = false;
@@ -62,9 +65,9 @@
     });
     var lienzo = document.querySelector("#lienzo"), carga = document.querySelector("#carga"), barra = document.querySelector("#barra > div");
     var config = {
-      dataUrl: "Build/f98631a159dbffca0525e6c77d7ebaf5.data.unityweb",
-      frameworkUrl: "Build/f43a1b3805c016ddab18085359fc271d.framework.js.unityweb",
-      codeUrl: "Build/d9cf95777815738e0485215f01910a76.wasm.unityweb",
+      dataUrl: "Build/a16bd5cf581e19d003f76db121f10f1a.data.unityweb",
+      frameworkUrl: "Build/c3a292a7867524f781b2b4d1daae31b2.framework.js.unityweb",
+      codeUrl: "Build/5276262594254941b168ca681f1067ff.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Isla Flotante",
       productName: "Isla Flotante",

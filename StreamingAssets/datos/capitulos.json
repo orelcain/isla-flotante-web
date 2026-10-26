@@ -156,7 +156,7 @@
             4,
             5
           ],
-          "nota": "RECALIBRADO (F4, vigésima ronda, 25-10-2026) con SondaEstrellasTemp y PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): las metas que salían gratis sin jugar (hijos nacidos, nativos que llegan solos, musgo, planta de ave) se cambiaron por nativos plantados y espinillo a raya; encargos 10 → 25 (solo atrayendo se cumplen 17). Mismas estrellas en los tres rumbos (2/4/5): no jugar 0 (0★), solo atraer 2–3 (1★), piloto 5 (3★). Es una sola isla: la calibración es orientativa.",
+          "nota": "RECALIBRADO (F4, vigésima ronda, 25-10-2026) con SondaEstrellasTemp y PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): las metas que salían gratis sin jugar (hijos nacidos, nativos que llegan solos, musgo, planta de ave) se cambiaron por nativos plantados y espinillo a raya; encargos 10 → 25 (solo atrayendo se cumplen 17). Mismas estrellas en los tres rumbos (2/4/5): no jugar 0 (0★), solo atraer 2–3 (1★), piloto 5 (3★). Es una sola isla: la calibración es orientativa. H2 (vigésima segunda ronda, 26-10-2026: «en el humedal no jugar da 1★ y jugar 0★; nadie pasa de 1★»): recalibrado con EstrellasBotsPruebas, que juega como los bots de las rondas (turnos de 5 años, capítulo 1 sin jugar, 3 semillas): las metas del humedal miden solo lo cavado por el jugador (las hondonadas que forma el polvo daban 50 L sin tocar nada y el que atraía las rellenaba); encargos 25 → 4 (uno a la vez y con turnos de 5 años caben ~5; el 25 venía del piloto que juega año a año) y «Lo que pide la isla» ahora trae el encargo y la jugada del rumbo; bosque 6 → 4 plantines; mosaico 2 → 4 especies nuevas (2 salían sin jugar). Resultado: no jugar 0★ en los 9 casos; atraer y sembrar al azar 0–1★; seguir los pedidos 1★ (2–3 metas); 2★ pide además arrancar el espinillo o fijar nitrógeno.",
           "objetivos": [
             {
               "id": "b_vida_55",
@@ -176,27 +176,27 @@
             },
             {
               "id": "b_plantados_6",
-              "texto": "Plantar 6 árboles nativos de vivero (notro, tineo, canelo o tepa)",
-              "corto": "6 nativos plantados",
+              "texto": "Plantar 4 árboles nativos de vivero (notro, tineo, canelo o tepa)",
+              "corto": "4 nativos plantados",
               "tipo": "nativos_plantados",
-              "meta": 6,
+              "meta": 4,
               "pista": "Plántalos donde tengan la luz que piden (la ficha lo dice); el primer año muere cerca de 1 de cada 4 plantines."
             },
             {
               "id": "b_espinillo_70",
               "texto": "Que el espinillo no tape más de un 30 % de la isla",
-              "corto": "espinillo a raya (70 % libre)",
+              "corto": "espinillo a raya",
               "tipo": "sin_espinillo_frac",
               "meta": 0.7,
               "pista": "Arranca primero las matas que ya florecen (las que sueltan semilla) y cierra el borde con pasto; bajo la sombra de los árboles el espinillo pierde vigor."
             },
             {
               "id": "b_encargos",
-              "texto": "Cumplir 25 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
-              "corto": "25 encargos",
+              "texto": "Cumplir 4 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
+              "corto": "4 encargos",
               "tipo": "encargos",
-              "meta": 25,
-              "pista": "Cada encargo es lo que la isla necesita en ese lugar."
+              "meta": 4,
+              "pista": "Cada encargo es lo que la isla necesita en ese lugar: «Lo que pide la isla» lo planea con un toque."
             }
           ],
           "nota_apoyo": "F3 (vigésima ronda, 25-10-2026): «apoyo» es DECISIÓN DE DISEÑO (el rumbo como programa con apoyo), no física: elegir un rumbo no cambia cómo crece nada. Se da gratis al empezar el capítulo, antes de tomar la base de las metas (lo que trae no cuenta para ellas)."
@@ -214,23 +214,23 @@
             4,
             5
           ],
-          "nota": "RECALIBRADO (F4, vigésima ronda, 25-10-2026) con SondaEstrellasTemp y PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): las metas que salían gratis sin jugar (hijos nacidos, nativos que llegan solos, musgo, planta de ave) se cambiaron por nativos plantados y espinillo a raya; encargos 10 → 25 (solo atrayendo se cumplen 17). Mismas estrellas en los tres rumbos (2/4/5): no jugar 0 (0★), solo atraer 2–3 (1★), piloto 5 (3★). Es una sola isla: la calibración es orientativa. G3 (vigésima primera ronda, 26-10: «sin hacer nada el humedal da 1★: la hondonada del apoyo cumple dos metas»): capacidad 45 → 50 L y agua 22 → 24 L (no jugar: 38,7 L y 18,5 L; piloto: 53,6 L y 25,4 L).",
+          "nota": "RECALIBRADO (F4, vigésima ronda, 25-10-2026) con SondaEstrellasTemp y PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): las metas que salían gratis sin jugar (hijos nacidos, nativos que llegan solos, musgo, planta de ave) se cambiaron por nativos plantados y espinillo a raya; encargos 10 → 25 (solo atrayendo se cumplen 17). Mismas estrellas en los tres rumbos (2/4/5): no jugar 0 (0★), solo atraer 2–3 (1★), piloto 5 (3★). Es una sola isla: la calibración es orientativa. G3 (vigésima primera ronda, 26-10: «sin hacer nada el humedal da 1★: la hondonada del apoyo cumple dos metas»): capacidad 45 → 50 L y agua 22 → 24 L (no jugar: 38,7 L y 18,5 L; piloto: 53,6 L y 25,4 L). H2 (vigésima segunda ronda, 26-10-2026: «en el humedal no jugar da 1★ y jugar 0★; nadie pasa de 1★»): recalibrado con EstrellasBotsPruebas, que juega como los bots de las rondas (turnos de 5 años, capítulo 1 sin jugar, 3 semillas): las metas del humedal miden solo lo cavado por el jugador (las hondonadas que forma el polvo daban 50 L sin tocar nada y el que atraía las rellenaba); encargos 25 → 4 (uno a la vez y con turnos de 5 años caben ~5; el 25 venía del piloto que juega año a año) y «Lo que pide la isla» ahora trae el encargo y la jugada del rumbo; bosque 6 → 4 plantines; mosaico 2 → 4 especies nuevas (2 salían sin jugar). Resultado: no jugar 0★ en los 9 casos; atraer y sembrar al azar 0–1★; seguir los pedidos 1★ (2–3 metas); 2★ pide además arrancar el espinillo o fijar nitrógeno.",
           "objetivos": [
             {
               "id": "h_cap_50",
-              "texto": "Hondonadas que guarden 50 L",
-              "corto": "Lagunas de 50 L",
-              "tipo": "laguna_capacidad_l",
-              "meta": 50,
-              "pista": "Cava hoyos donde escurre el agua: junta la lluvia."
+              "texto": "Cavar hondonadas que guarden 6 L",
+              "corto": "6 L cavados",
+              "tipo": "laguna_cavada_l",
+              "meta": 6,
+              "pista": "Cava con la pala donde escurre el agua: cada palada ahonda la celda y sube el reborde. Cuenta solo lo que cavas tú (no la hondonada de la cuadrilla); el polvo que atraes la vuelve a llenar."
             },
             {
               "id": "h_agua_24",
-              "texto": "24 L de agua en las lagunas a la vez",
-              "corto": "24 L guardados",
-              "tipo": "agua_laguna_l",
-              "meta": 24,
-              "pista": "Una laguna con fondo sellado (arcilla) pierde menos."
+              "texto": "5 L de agua a la vez en lo que cavaste",
+              "corto": "5 L en tus hondonadas",
+              "tipo": "agua_cavada_l",
+              "meta": 5,
+              "pista": "Una laguna con fondo sellado (arcilla) pierde menos; en invierno se llena, en verano se seca."
             },
             {
               "id": "h_n_300",
@@ -243,18 +243,18 @@
             {
               "id": "h_espinillo_70",
               "texto": "Que el espinillo no tape más de un 30 % de la isla",
-              "corto": "espinillo a raya (70 % libre)",
+              "corto": "espinillo a raya",
               "tipo": "sin_espinillo_frac",
               "meta": 0.7,
               "pista": "Arranca primero las matas que ya florecen (las que sueltan semilla) y cierra el borde con pasto; bajo la sombra de los árboles el espinillo pierde vigor."
             },
             {
               "id": "h_encargos",
-              "texto": "Cumplir 25 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
-              "corto": "25 encargos",
+              "texto": "Cumplir 4 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
+              "corto": "4 encargos",
               "tipo": "encargos",
-              "meta": 25,
-              "pista": "Cada encargo es lo que la isla necesita en ese lugar."
+              "meta": 4,
+              "pista": "Cada encargo es lo que la isla necesita en ese lugar: «Lo que pide la isla» lo planea con un toque."
             }
           ],
           "nota_apoyo": "F3 (vigésima ronda, 25-10-2026): «apoyo» es DECISIÓN DE DISEÑO (el rumbo como programa con apoyo), no física: elegir un rumbo no cambia cómo crece nada. Se da gratis al empezar el capítulo, antes de tomar la base de las metas (lo que trae no cuenta para ellas)."
@@ -272,14 +272,14 @@
             4,
             5
           ],
-          "nota": "RECALIBRADO (F4, vigésima ronda, 25-10-2026) con SondaEstrellasTemp y PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): las metas que salían gratis sin jugar (hijos nacidos, nativos que llegan solos, musgo, planta de ave) se cambiaron por nativos plantados y espinillo a raya; encargos 10 → 25 (solo atrayendo se cumplen 17). Mismas estrellas en los tres rumbos (2/4/5): no jugar 0 (0★), solo atraer 2–3 (1★), piloto 5 (3★). Es una sola isla: la calibración es orientativa.",
+          "nota": "RECALIBRADO (F4, vigésima ronda, 25-10-2026) con SondaEstrellasTemp y PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): las metas que salían gratis sin jugar (hijos nacidos, nativos que llegan solos, musgo, planta de ave) se cambiaron por nativos plantados y espinillo a raya; encargos 10 → 25 (solo atrayendo se cumplen 17). Mismas estrellas en los tres rumbos (2/4/5): no jugar 0 (0★), solo atraer 2–3 (1★), piloto 5 (3★). Es una sola isla: la calibración es orientativa. H2 (vigésima segunda ronda, 26-10-2026: «en el humedal no jugar da 1★ y jugar 0★; nadie pasa de 1★»): recalibrado con EstrellasBotsPruebas, que juega como los bots de las rondas (turnos de 5 años, capítulo 1 sin jugar, 3 semillas): las metas del humedal miden solo lo cavado por el jugador (las hondonadas que forma el polvo daban 50 L sin tocar nada y el que atraía las rellenaba); encargos 25 → 4 (uno a la vez y con turnos de 5 años caben ~5; el 25 venía del piloto que juega año a año) y «Lo que pide la isla» ahora trae el encargo y la jugada del rumbo; bosque 6 → 4 plantines; mosaico 2 → 4 especies nuevas (2 salían sin jugar). Resultado: no jugar 0★ en los 9 casos; atraer y sembrar al azar 0–1★; seguir los pedidos 1★ (2–3 metas); 2★ pide además arrancar el espinillo o fijar nitrógeno.",
           "objetivos": [
             {
               "id": "m_riqueza_2",
-              "texto": "Dos especies nuevas en la isla",
-              "corto": "2 especies nuevas",
+              "texto": "Cuatro especies nuevas en la isla",
+              "corto": "4 especies nuevas",
               "tipo": "riqueza",
-              "meta": 2,
+              "meta": 4,
               "pista": "Siembra fijadoras y pon perchas: las aves traen maqui, murta, michay."
             },
             {
@@ -301,18 +301,18 @@
             {
               "id": "m_espinillo_70",
               "texto": "Que el espinillo no tape más de un 30 % de la isla",
-              "corto": "espinillo a raya (70 % libre)",
+              "corto": "espinillo a raya",
               "tipo": "sin_espinillo_frac",
               "meta": 0.7,
               "pista": "Arranca primero las matas que ya florecen (las que sueltan semilla) y cierra el borde con pasto; bajo la sombra de los árboles el espinillo pierde vigor."
             },
             {
               "id": "m_encargos",
-              "texto": "Cumplir 25 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
-              "corto": "25 encargos",
+              "texto": "Cumplir 4 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
+              "corto": "4 encargos",
               "tipo": "encargos",
-              "meta": 25,
-              "pista": "Cada encargo es lo que la isla necesita en ese lugar."
+              "meta": 4,
+              "pista": "Cada encargo es lo que la isla necesita en ese lugar: «Lo que pide la isla» lo planea con un toque."
             }
           ],
           "nota_apoyo": "F3 (vigésima ronda, 25-10-2026): «apoyo» es DECISIÓN DE DISEÑO (el rumbo como programa con apoyo), no física: elegir un rumbo no cambia cómo crece nada. Se da gratis al empezar el capítulo, antes de tomar la base de las metas (lo que trae no cuenta para ellas)."

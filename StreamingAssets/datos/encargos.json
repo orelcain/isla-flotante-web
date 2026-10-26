@@ -84,6 +84,12 @@
     "fuente": "meta de juego (la misma del capítulo 2 planeado: «un bosquete de 5 coigües»)",
     "confianza": "baja"
   },
+  "reto_cavar_l": {
+    "valor": 6,
+    "unidad": "litros que deben ganar las hondonadas en el año cuando la meta del año del humedal pide cavar",
+    "fuente": "DECISIÓN DE DISEÑO (H3, vigésima segunda ronda): «cava una hondonada» ya venía cumplida por la del apoyo; calibrada con EstrellasBotsPruebas (litros que suma una tanda de paladas)",
+    "confianza": "baja"
+  },
   "reto_raiz_mm": {
     "valor": 5,
     "unidad": "mm de suelo medio que deben ganar las celdas a 2 o menos del coigüe en el año 0",
