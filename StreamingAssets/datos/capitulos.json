@@ -148,11 +148,11 @@
           "nombre": "Bosque que se cierra",
           "que": "Árboles: el coigüe, sus hijos y el bosque chilote que llega (notro, tineo, canelo, tepa). Gana sombra y carbono; pierde luz para las hierbas.",
           "estrellas": [
-            3,
+            2,
             4,
             5
           ],
-          "nota": "CALIBRADO (Y4, 23-10-2026) con PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): no jugar 2 metas (0★), solo atraer 4 (2★), piloto cuidadoso 5 (3★). Es una sola isla: la calibración es orientativa.",
+          "nota": "RECALIBRADO (F4, vigésima ronda, 25-10-2026) con SondaEstrellasTemp y PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): las metas que salían gratis sin jugar (hijos nacidos, nativos que llegan solos, musgo, planta de ave) se cambiaron por nativos plantados y espinillo a raya; encargos 10 → 25 (solo atrayendo se cumplen 17). Mismas estrellas en los tres rumbos (2/4/5): no jugar 0 (0★), solo atraer 2–3 (1★), piloto 5 (3★). Es una sola isla: la calibración es orientativa.",
           "objetivos": [
             {
               "id": "b_vida_55",
@@ -163,15 +163,6 @@
               "pista": "Todo lo que crece suma: el coigüe, sus raíces, el humus y el bosque que llega."
             },
             {
-              "id": "b_nativos_1",
-              "texto": "Un árbol del bosque que llega (notro, tineo, canelo o tepa) de más de 2 m",
-              "corto": "1 árbol del bosque > 2 m",
-              "tipo": "nativos",
-              "meta": 1,
-              "umbral": 2,
-              "pista": "Bajo el pasto cerrado la semilla no toca suelo: en primavera, saca la champa con la pala (mejor cerca de una percha). El pasto que siembras en el borde se extiende y le cierra el paso al bosque."
-            },
-            {
               "id": "b_coigue_39",
               "texto": "Que el coigüe llegue a 3,9 m",
               "corto": "Coigüe de 3,9 m",
@@ -180,19 +171,27 @@
               "pista": "Más suelo bajo sus raíces: atrae los fragmentos junto a él."
             },
             {
-              "id": "b_hijos_2",
-              "texto": "Que nazcan 2 coigües hijos",
-              "corto": "2 coigües hijos",
-              "tipo": "hijos",
-              "meta": 2,
-              "pista": "Germinan sobre madera podrida o musgo cerca del coigüe."
+              "id": "b_plantados_6",
+              "texto": "Plantar 6 árboles nativos de vivero (notro, tineo, canelo o tepa)",
+              "corto": "6 nativos plantados",
+              "tipo": "nativos_plantados",
+              "meta": 6,
+              "pista": "Plántalos donde tengan la luz que piden (la ficha lo dice); el primer año muere cerca de 1 de cada 4 plantines."
+            },
+            {
+              "id": "b_espinillo_70",
+              "texto": "Que el espinillo no tape más de un 30 % de la isla",
+              "corto": "espinillo a raya (70 % libre)",
+              "tipo": "sin_espinillo_frac",
+              "meta": 0.7,
+              "pista": "Arranca primero las matas que ya florecen (las que sueltan semilla) y cierra el borde con pasto; bajo la sombra de los árboles el espinillo pierde vigor."
             },
             {
               "id": "b_encargos",
-              "texto": "Cumplir 10 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
-              "corto": "10 encargos",
+              "texto": "Cumplir 25 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
+              "corto": "25 encargos",
               "tipo": "encargos",
-              "meta": 10,
+              "meta": 25,
               "pista": "Cada encargo es lo que la isla necesita en ese lugar."
             }
           ]
@@ -206,7 +205,7 @@
             4,
             5
           ],
-          "nota": "CALIBRADO (Y4, 23-10-2026) con PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): no jugar 1 (0★), solo atraer 2 (1★), piloto que cava hasta la meta 5 (3★). Es una sola isla: la calibración es orientativa.",
+          "nota": "RECALIBRADO (F4, vigésima ronda, 25-10-2026) con SondaEstrellasTemp y PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): las metas que salían gratis sin jugar (hijos nacidos, nativos que llegan solos, musgo, planta de ave) se cambiaron por nativos plantados y espinillo a raya; encargos 10 → 25 (solo atrayendo se cumplen 17). Mismas estrellas en los tres rumbos (2/4/5): no jugar 0 (0★), solo atraer 2–3 (1★), piloto 5 (3★). Es una sola isla: la calibración es orientativa.",
           "objetivos": [
             {
               "id": "h_cap_45",
@@ -225,14 +224,6 @@
               "pista": "Una laguna con fondo sellado (arcilla) pierde menos."
             },
             {
-              "id": "h_musgo_3",
-              "texto": "3 m² cubiertos de musgo",
-              "corto": "3 m² de musgo",
-              "tipo": "musgo_m2",
-              "meta": 3,
-              "pista": "El musgo prende en suelo húmedo y con poca competencia: guarda el agua como una esponja."
-            },
-            {
               "id": "h_n_300",
               "texto": "Que las fijadoras tomen 300 g de nitrógeno del aire",
               "corto": "300 g de N del aire",
@@ -241,11 +232,19 @@
               "pista": "La nalca chica y el deu fijan nitrógeno donde hay agua."
             },
             {
+              "id": "h_espinillo_70",
+              "texto": "Que el espinillo no tape más de un 30 % de la isla",
+              "corto": "espinillo a raya (70 % libre)",
+              "tipo": "sin_espinillo_frac",
+              "meta": 0.7,
+              "pista": "Arranca primero las matas que ya florecen (las que sueltan semilla) y cierra el borde con pasto; bajo la sombra de los árboles el espinillo pierde vigor."
+            },
+            {
               "id": "h_encargos",
-              "texto": "Cumplir 10 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
-              "corto": "10 encargos",
+              "texto": "Cumplir 25 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
+              "corto": "25 encargos",
               "tipo": "encargos",
-              "meta": 10,
+              "meta": 25,
               "pista": "Cada encargo es lo que la isla necesita en ese lugar."
             }
           ]
@@ -256,10 +255,10 @@
           "que": "Variedad: muchas especies repartidas, plantas que traen las aves, el bosque en manchas. Gana especies y equilibrio; pierde la isla más grande o el árbol más alto.",
           "estrellas": [
             2,
-            3,
-            4
+            4,
+            5
           ],
-          "nota": "CALIBRADO (Y4, 23-10-2026) con PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): no jugar 2 (1★), solo atraer 2 (1★), piloto 4 (3★); nadie juntó 2 arbustos de ave ni 3 fijadoras. Es una sola isla: la calibración es orientativa.",
+          "nota": "RECALIBRADO (F4, vigésima ronda, 25-10-2026) con SondaEstrellasTemp y PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): las metas que salían gratis sin jugar (hijos nacidos, nativos que llegan solos, musgo, planta de ave) se cambiaron por nativos plantados y espinillo a raya; encargos 10 → 25 (solo atrayendo se cumplen 17). Mismas estrellas en los tres rumbos (2/4/5): no jugar 0 (0★), solo atraer 2–3 (1★), piloto 5 (3★). Es una sola isla: la calibración es orientativa.",
           "objetivos": [
             {
               "id": "m_riqueza_2",
@@ -270,36 +269,35 @@
               "pista": "Siembra fijadoras y pon perchas: las aves traen maqui, murta, michay."
             },
             {
-              "id": "m_ave_1",
-              "texto": "Que nazca 1 planta traída por aves",
-              "corto": "1 planta de ave",
-              "tipo": "arbustos_ave",
-              "meta": 1,
-              "pista": "Una percha junta las semillas; prenden sobre musgo o madera podrida, nunca en pasto denso."
-            },
-            {
-              "id": "m_shannon_12",
-              "texto": "Diversidad de Shannon de 1,2",
-              "corto": "Shannon 1,2",
+              "id": "m_shannon_13",
+              "texto": "Diversidad de Shannon de 1,3",
+              "corto": "Shannon 1,3",
               "tipo": "shannon",
-              "meta": 1.2,
+              "meta": 1.3,
               "pista": "No dejes que una especie lo tape todo (el espinillo, la quila): la diversidad sube cuando la cobertura se reparte."
             },
             {
-              "id": "m_nativos_1",
-              "texto": "Un árbol del bosque que llega (notro, tineo, canelo o tepa)",
-              "corto": "1 árbol del bosque",
-              "tipo": "nativos",
-              "meta": 1,
-              "umbral": 0,
-              "pista": "Deja rincones con luz y suelo sin quila. Bajo el pasto cerrado no prende: saca la champa con la pala en primavera."
+              "id": "m_plantados_4",
+              "texto": "Plantar 4 árboles nativos de vivero (notro, tineo, canelo o tepa)",
+              "corto": "4 nativos plantados",
+              "tipo": "nativos_plantados",
+              "meta": 4,
+              "pista": "Plántalos donde tengan la luz que piden (la ficha lo dice); el primer año muere cerca de 1 de cada 4 plantines."
+            },
+            {
+              "id": "m_espinillo_70",
+              "texto": "Que el espinillo no tape más de un 30 % de la isla",
+              "corto": "espinillo a raya (70 % libre)",
+              "tipo": "sin_espinillo_frac",
+              "meta": 0.7,
+              "pista": "Arranca primero las matas que ya florecen (las que sueltan semilla) y cierra el borde con pasto; bajo la sombra de los árboles el espinillo pierde vigor."
             },
             {
               "id": "m_encargos",
-              "texto": "Cumplir 10 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
-              "corto": "10 encargos",
+              "texto": "Cumplir 25 encargos (las tareas con plazo que aparecen marcadas en un rincón de la isla)",
+              "corto": "25 encargos",
               "tipo": "encargos",
-              "meta": 10,
+              "meta": 25,
               "pista": "Cada encargo es lo que la isla necesita en ese lugar."
             }
           ]

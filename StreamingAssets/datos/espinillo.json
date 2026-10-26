@@ -24,6 +24,12 @@
     "fuente": "Weedbusters NZ, ficha de Ulex europaeus (weedbusters.org.nz): las plántulas se arrancan a mano; las matas establecidas hay que cortarlas y tratar el tocón o sacar la raíz entera (grubbing), un trabajo mucho mayor. El doble de jornadas es DECISIÓN DE DISEÑO (N3, quinta ronda: «que no alcance de verdad»): se reemplaza con horas-persona por m² medidas en faenas de control.",
     "confianza": "baja"
   },
+  "celdas_por_jornada": {
+    "valor": 4,
+    "unidad": "celdas de espinillo joven que se arrancan en una jornada (una mata que ya florece cuenta jornadas_arrancar_adulto); la jornada sigue con las matas vecinas",
+    "fuente": "DECISIÓN DE DISEÑO (F5, vigésima ronda: «pide 333 jornadas, quedan 6»: arrancar de a una celda no escalaba). Es conservador: una celda mide ~0,05 m² y una persona con azadón despeja mucho más que 0,2 m² de espinillo joven al día. Se reemplaza con horas-persona por m² medidas en faenas de control (Weedbusters NZ, ficha de Ulex europaeus).",
+    "confianza": "baja"
+  },
   "edad_reproductiva_anios": {
     "valor": 1.5,
     "unidad": "años desde que brota hasta que florece y suelta semillas (la VENTANA para arrancarlo sin dejar banco)",
