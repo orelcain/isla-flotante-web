@@ -214,22 +214,22 @@
             4,
             5
           ],
-          "nota": "RECALIBRADO (F4, vigésima ronda, 25-10-2026) con SondaEstrellasTemp y PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): las metas que salían gratis sin jugar (hijos nacidos, nativos que llegan solos, musgo, planta de ave) se cambiaron por nativos plantados y espinillo a raya; encargos 10 → 25 (solo atrayendo se cumplen 17). Mismas estrellas en los tres rumbos (2/4/5): no jugar 0 (0★), solo atraer 2–3 (1★), piloto 5 (3★). Es una sola isla: la calibración es orientativa.",
+          "nota": "RECALIBRADO (F4, vigésima ronda, 25-10-2026) con SondaEstrellasTemp y PilotoPruebas.Capitulo_2_cada_rumbo_premia_al_que_cuida (semilla fija, sin rocas errantes, crisis y sucesión activas): las metas que salían gratis sin jugar (hijos nacidos, nativos que llegan solos, musgo, planta de ave) se cambiaron por nativos plantados y espinillo a raya; encargos 10 → 25 (solo atrayendo se cumplen 17). Mismas estrellas en los tres rumbos (2/4/5): no jugar 0 (0★), solo atraer 2–3 (1★), piloto 5 (3★). Es una sola isla: la calibración es orientativa. G3 (vigésima primera ronda, 26-10: «sin hacer nada el humedal da 1★: la hondonada del apoyo cumple dos metas»): capacidad 45 → 50 L y agua 22 → 24 L (no jugar: 38,7 L y 18,5 L; piloto: 53,6 L y 25,4 L).",
           "objetivos": [
             {
-              "id": "h_cap_45",
-              "texto": "Hondonadas que guarden 45 L",
-              "corto": "Lagunas de 45 L",
+              "id": "h_cap_50",
+              "texto": "Hondonadas que guarden 50 L",
+              "corto": "Lagunas de 50 L",
               "tipo": "laguna_capacidad_l",
-              "meta": 45,
+              "meta": 50,
               "pista": "Cava hoyos donde escurre el agua: junta la lluvia."
             },
             {
-              "id": "h_agua_22",
-              "texto": "22 L de agua en las lagunas a la vez",
-              "corto": "22 L guardados",
+              "id": "h_agua_24",
+              "texto": "24 L de agua en las lagunas a la vez",
+              "corto": "24 L guardados",
               "tipo": "agua_laguna_l",
-              "meta": 22,
+              "meta": 24,
               "pista": "Una laguna con fondo sellado (arcilla) pierde menos."
             },
             {
