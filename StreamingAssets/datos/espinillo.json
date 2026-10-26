@@ -206,5 +206,11 @@
     "unidad": "mes",
     "fuente": "Ídem",
     "confianza": "baja"
+  },
+  "laguna_impide_brote_l": {
+    "valor": 1,
+    "unidad": "litros de agua libre en la celda (Laguna.cs) desde los que el espinillo no brota ni llega",
+    "fuente": "SUPUESTO (G5, vigésima primera ronda): una plántula de matorral no se establece bajo agua estancada; apoyo indirecto: el espinillo es de suelos bien drenados (RHS, ficha de Ulex europaeus: «well-drained»). No se encontró un estudio de tolerancia a la inundación de Ulex europaeus; se reemplaza con uno si aparece.",
+    "confianza": "baja"
   }
 }
